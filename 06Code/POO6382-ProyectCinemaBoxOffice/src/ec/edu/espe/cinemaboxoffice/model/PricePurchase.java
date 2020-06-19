@@ -12,6 +12,7 @@ package ec.edu.espe.cinemaboxoffice.model;
 public class PricePurchase {
     private float pricePurchase;
     private int numberTickets;
+    private String typePromotion;
     
     Bill bills[];
     

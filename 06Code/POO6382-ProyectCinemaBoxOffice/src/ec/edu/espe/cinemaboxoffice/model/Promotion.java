@@ -14,10 +14,10 @@ public class Promotion {
     private Ticket ticket;
     private String keyPromotion;
     private String dayPromotion;
-    private FoodCombo foodCombo;
     private float pricePromotionFood;
     
     PricePurchase pricePurchases[];
+    FoodCombo foodCombos[];
 
     public void showPromotionData(){
         

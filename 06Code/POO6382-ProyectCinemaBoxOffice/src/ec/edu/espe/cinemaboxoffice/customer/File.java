@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.cinemaboxoffice.model;
+package ec.edu.espe.cinemaboxoffice.customer;
 
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Seat {
-    private String numberSeat;
-    private String seatType;
-    private float priceSeat;
-    private float priceSeatVPI;
+public class File {
+    
 }

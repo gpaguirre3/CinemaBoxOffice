@@ -10,8 +10,8 @@ package ec.edu.espe.cinemaboxoffice.model;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class Room {
-    private int numRoom;
-    private int numSeats;
+    private int numberRoom;
+    private int numberSeats;
     private String formatRoom;
     private float priceTypeRoom;
 }
