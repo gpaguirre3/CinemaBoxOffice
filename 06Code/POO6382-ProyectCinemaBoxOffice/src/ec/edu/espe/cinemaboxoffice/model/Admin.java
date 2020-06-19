@@ -16,19 +16,21 @@ public class Admin {
     private String userName;
     private int keyUser;
 
-    Keyboard in;
-
     private Billboard billboard[];
 
+    Keyboard in = new Keyboard();
+
     public Admin(String userName, int keyUser) {
-        this.userName = userName;
-        this.keyUser = keyUser;
+        this.userName = userName = "Kevin0936";
+        this.keyUser = keyUser = 1234568;
     }
 
     public void menu() {
         int option = 0;
         boolean repeat = false;
         while (repeat == false) {
+            System.out.println(" 1: Enter \n 2: Organize movie list \n 3: organize promotions \n 4: exit");
+            option = in.getInt("enter the option: ", 1);
             switch (option) {
                 case 1:
                     enterUser();
@@ -41,18 +43,30 @@ public class Admin {
                     break;
                 case 4:
                     exitUser();
+                    repeat = true;
+                    break;
+                default:
+                    System.out.println("incorrect option");
                     break;
             }
         }
     }
 
     public void enterUser() {
-        userName = in.getString("Ingrese el Nombre de Usuario: ");
-        keyUser = in.getInt("Ingrese la clave: ", 7);
+        String userName2;
+        int keyUser2;
+        do {
+            userName2 = in.getString("Ingrese el Nombre de Usuario: ");
+
+        } while (!userName2.equals(userName));
+
+        do {
+            keyUser2 = in.getInt("Ingrese la clave: ", 7);
+        } while (keyUser2 != keyUser);
     }
 
     public void organizeMovieList() {
-        
+
     }
 
     public void organizePromotions() {
@@ -60,7 +74,7 @@ public class Admin {
     }
 
     public void exitUser() {
-        
+
     }
 
     /**

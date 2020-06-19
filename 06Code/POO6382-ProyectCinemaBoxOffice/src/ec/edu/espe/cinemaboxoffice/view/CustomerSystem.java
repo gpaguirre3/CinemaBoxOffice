@@ -5,16 +5,15 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
-import ec.edu.espe.cinemaboxoffice.model.Admin;
+import ec.edu.espe.cinemaboxoffice.model.Customer;
 
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class AdminSystem {
-
-    public void manager() {
-        Admin admin = new Admin("", 0);
-        admin.menu();
+public class CustomerSystem {
+    public void buyer(){
+        Customer customer = new Customer();
+        customer.enterBillboard();
     }
 }

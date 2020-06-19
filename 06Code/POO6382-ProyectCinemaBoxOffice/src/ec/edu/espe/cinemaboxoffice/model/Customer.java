@@ -15,7 +15,8 @@ public class Customer {
     private int age;
     
     public void enterBillboard(){
-        
+        Billboard billboard = new Billboard();
+        billboard.menu();
     }
     
     public void exitBillboard(){
