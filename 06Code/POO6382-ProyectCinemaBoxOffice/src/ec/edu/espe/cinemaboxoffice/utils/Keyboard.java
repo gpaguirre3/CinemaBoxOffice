@@ -27,6 +27,18 @@ public class Keyboard {
         }
         return data;
     }
+    
+    public String getStringAnswer(String title) {
+        String data = "";
+        while (data.equals("")) {
+            System.out.print(title);
+            data = string.nextLine();
+            if (!"yes".equals(data) & !"no".equals(data)) {
+                data = "";
+            }
+        }
+        return data;
+    }
 
     public int getInt(String title, int characters) {
         String data = "";
@@ -35,8 +47,21 @@ public class Keyboard {
             data = string.nextLine();
             if (!data.matches("[0-9]{" + characters + "}")) {
                 data = "";
+                System.out.println("\nIncorrect data, please repeat the ");
             }
         }
         return Integer.parseInt(data);
+    }
+    
+     public float getFloat(String title, int characters) {
+        String data = "";
+        while (data.equals("")) {
+            System.out.println(title);
+            data = string.nextLine();
+            if (!data.matches("[[0-9][,]]{" + characters + "}")) {
+                data = "";
+            }
+        }
+        return Float.parseFloat(data);
     }
 }

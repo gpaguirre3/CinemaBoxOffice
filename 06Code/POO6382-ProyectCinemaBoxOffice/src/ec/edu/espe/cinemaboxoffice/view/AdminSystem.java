@@ -15,6 +15,7 @@ public class AdminSystem {
 
     public void manager() {
         Admin admin = new Admin("", 0);
+        admin.enterUser();
         admin.menu();
     }
 }

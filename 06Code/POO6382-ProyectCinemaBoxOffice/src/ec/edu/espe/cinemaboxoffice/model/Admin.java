@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import ec.edu.espe.cinemaboxoffice.controller.FileManager;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 
 /**
@@ -19,29 +20,31 @@ public class Admin {
     private Billboard billboard[];
 
     Keyboard in = new Keyboard();
+    FileManager fileManager = new FileManager();
 
     public Admin(String userName, int keyUser) {
-        this.userName = userName = "Kevin0936";
+        this.userName = userName = "Kevin";
         this.keyUser = keyUser = 1234568;
+    }
+
+    public Admin() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public void menu() {
         int option = 0;
         boolean repeat = false;
         while (repeat == false) {
-            System.out.println(" 1: Enter \n 2: Organize movie list \n 3: organize promotions \n 4: exit");
+            System.out.println(" 1: Organize movie list \n 2: organize promotions \n 3: exit");
             option = in.getInt("enter the option: ", 1);
             switch (option) {
                 case 1:
-                    enterUser();
-                    break;
-                case 2:
                     organizeMovieList();
                     break;
-                case 3:
+                case 2:
                     organizePromotions();
                     break;
-                case 4:
+                case 3:
                     exitUser();
                     repeat = true;
                     break;
@@ -66,7 +69,21 @@ public class Admin {
     }
 
     public void organizeMovieList() {
-
+        boolean repeat = false;
+        do {
+            System.out.println(" 1: Create Movie \n 2: Delete Movie \n 3: Exit");
+            int option = in.getInt("enter the option: ", 1);
+            switch (option) {
+                case 1:
+                    fileManager.createMovie();
+                    break;
+                case 2:
+                    fileManager.deleteMovie();
+                    break;
+                case 3: 
+                    repeat = true;
+            }
+        } while (repeat == false);
     }
 
     public void organizePromotions() {
