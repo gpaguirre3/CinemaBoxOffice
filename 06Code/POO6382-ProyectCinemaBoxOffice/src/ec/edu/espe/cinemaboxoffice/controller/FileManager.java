@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.controller;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Promotion;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import java.io.IOException;
 
 /**
  *
@@ -18,13 +19,15 @@ public class FileManager {
     private Promotion promotion;
     Keyboard in = new Keyboard();
     
-    public void createMovie(){
+    public void createMovie() throws IOException{
+        File file = new File();
         boolean repeat =false;
         do{
         String titleMovie = in.getString("enter the title movie");
         String durationMovie = in.getString("enter the duration movie [hour.min.seg]");
         String genderMovie = in.getString("enter the gender movie: ");
-        float priceTheMovie = in.getFloat("enter the price movie: ", 5);
+        float priceTheMovie = 1.50f;
+        file.writeInFile();
         String answer = in.getStringAnswer("enter other movie[yes/no]");
         if("no".equals(answer)){
             repeat = true;
