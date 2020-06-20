@@ -6,6 +6,7 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.model.Admin;
+import java.io.IOException;
 
 /**
  *
@@ -13,7 +14,7 @@ import ec.edu.espe.cinemaboxoffice.model.Admin;
  */
 public class AdminSystem {
 
-    public void manager() {
+    public void manager() throws IOException {
         Admin admin = new Admin("", 0);
         admin.enterUser();
         admin.menu();

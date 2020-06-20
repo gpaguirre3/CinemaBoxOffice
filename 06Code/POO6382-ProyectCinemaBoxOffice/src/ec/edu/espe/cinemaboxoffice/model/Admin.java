@@ -7,6 +7,7 @@ package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.controller.FileManager;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import java.io.IOException;
 
 /**
  *
@@ -31,7 +32,7 @@ public class Admin {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void menu() {
+    public void menu() throws IOException {
         int option = 0;
         boolean repeat = false;
         while (repeat == false) {
@@ -68,7 +69,7 @@ public class Admin {
         } while (keyUser2 != keyUser);
     }
 
-    public void organizeMovieList() {
+    public void organizeMovieList() throws IOException {
         boolean repeat = false;
         do {
             System.out.println(" 1: Create Movie \n 2: Delete Movie \n 3: Exit");
