@@ -34,7 +34,7 @@ public class Billboard {
             switch (option) {
                 case 1:
                     showMoviesList();
-                    String selection = in.getString("choose the title movie: ");
+                    String selection = in.getString("Choose the movie title: ");
                     chooseMovieAndSeat(selection);
                     ticket = new Ticket(selection, selection, "", 0);
                     break;
@@ -65,7 +65,7 @@ public class Billboard {
         onScreen.writeControlSeats(selection, seats);
         onScreen.printControlSeats(selection, seats);
         do {
-            chosenSeat = in.getString("choose the number of seat: ");
+            chosenSeat = in.getString("Choose the seat number: ");
             int aux = Integer.parseInt(chosenSeat);
             if (aux > 0 & aux < 51) {
                 chosenSeat = chosenSeat + "VPI";
@@ -78,7 +78,7 @@ public class Billboard {
                 repeat = true;
             }
             if (aux>100 | aux<1){
-                System.out.println("incorrect number seat, please log in again");
+                System.out.println("Incorrect seat number, please log in again");
             }
         } while (repeat = false);
         onScreen.writeControlSeats(selection, seats);
