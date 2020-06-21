@@ -35,8 +35,8 @@ public class Billboard {
                 case 1:
                     showMoviesList();
                     String selection = in.getString("choose the title movie: ");
-                    ticket = new Ticket(chooseMovieAndSeat(selection), selection, "", 0);
-                    System.out.println(ticket.toString());
+                    chooseMovieAndSeat(selection);
+                    ticket = new Ticket(selection, selection, "", 0);
                     break;
                 case 2:
                     showPromotions();
@@ -59,7 +59,7 @@ public class Billboard {
         onScreen.printInConsole2(promotions);
     }
 
-    public String chooseMovieAndSeat(String selection) {
+    public void chooseMovieAndSeat(String selection) {
         boolean repeat = false;
         String chosenSeat;
         onScreen.writeControlSeats(selection, seats);
@@ -82,7 +82,6 @@ public class Billboard {
             }
         } while (repeat = false);
         onScreen.writeControlSeats(selection, seats);
-        return chosenSeat;
     }
 
     public void showPriceRoomAndSeat() {

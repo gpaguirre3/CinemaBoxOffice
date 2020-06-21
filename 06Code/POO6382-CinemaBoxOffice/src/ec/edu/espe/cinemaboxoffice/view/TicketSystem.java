@@ -16,6 +16,12 @@ public class TicketSystem {
 
     public static void main(String[] args) throws IOException {
         
+        //CARATULA//
+        Cover cover = new Cover();
+        cover.cover();
+        //CARATULA//
+        
+        
         Keyboard in = new Keyboard();
         
         AdminSystem adminSystem = new AdminSystem();
@@ -38,7 +44,7 @@ public class TicketSystem {
                     repeat = true;
                     break;
                 default:
-                    System.out.println("incorrect option");
+                    System.out.println("Incorrect option");
                     break;
             }
         } while (repeat == false);

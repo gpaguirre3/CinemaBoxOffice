@@ -80,7 +80,7 @@ public class Admin {
         int option;
         do {   
             System.out.println(" 1: Create Movie \n 2: Delete Movie \n 3: Exit");
-            option = in.getInt("enter the option: ", 1);
+            option = in.getInt("Enter an option: ", 1);
             
             switch (option) {
                 case 1:
@@ -100,7 +100,7 @@ public class Admin {
         int option;
         do {   
             System.out.println(" 1: Save Promotion \n 2: Delete Promotion \n 3: Exit");
-            option = in.getInt("enter the option: ", 1);
+            option = in.getInt("Enter an option: ", 1);
             
             switch (option) {
                 case 1:
