@@ -25,7 +25,7 @@ public class Admin {
     
     public Admin(String userName, int keyUser) {
         this.userName = userName = "Kevin";
-        this.keyUser = keyUser = 1234568;
+        this.keyUser = keyUser = 123;
     }
 
     public Admin() {
@@ -35,7 +35,7 @@ public class Admin {
     
     public void adminMenu() throws IOException {
         
-        int option = 0;
+        int option;
         boolean repeat = false;
         
         while (repeat == false) {
@@ -70,13 +70,12 @@ public class Admin {
 
         
         do {
-            keyUser2 = in.getInt("Password: ", 7);
+            keyUser2 = in.getInt("Password: ", 3);
         } while (keyUser2 != keyUser);
         
     }
 
     public void organizeMovieList() throws IOException {
-        
         boolean repeat = false;
         int option;
         do {   
@@ -96,8 +95,24 @@ public class Admin {
         } while (repeat == false);
     }
 
-    public void organizePromotions() {
-
+    public void organizePromotions() throws IOException{
+        boolean repeat = false;
+        int option;
+        do {   
+            System.out.println(" 1: Save Promotion \n 2: Delete Promotion \n 3: Exit");
+            option = in.getInt("enter the option: ", 1);
+            
+            switch (option) {
+                case 1:
+                    fileManager.createPromotion();
+                    break;
+                case 2:
+                    fileManager.deletePromotion();
+                    break;
+                case 3: 
+                    repeat = true;
+            }
+        } while (repeat == false);
     }
 
     public void exitUser() {

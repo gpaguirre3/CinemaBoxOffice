@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.model;
 import ec.edu.espe.cinemaboxoffice.controller.CreateFile;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
+import java.util.ArrayList;
 
 /**
  *
@@ -18,8 +19,9 @@ public class Billboard {
     private Room room;
     private Admin admin;
 
-    Movie movies[];
-    Promotion promotions[];
+    ArrayList<Movie> movies = new ArrayList();
+    ArrayList<Promotion> promotions = new ArrayList();
+    
     CreateFile onScreen = new CreateFile();
     Keyboard in = new Keyboard();
     
@@ -48,11 +50,11 @@ public class Billboard {
     }
     
     public void showMoviesList() {
-        onScreen.printInConsole();
+        onScreen.printInConsole(movies);
     }
 
     public void showPromotions() {
-
+        onScreen.printInConsole2(promotions);
     }
 
     public void showPriceRoomAndSeat() {

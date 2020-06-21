@@ -5,11 +5,13 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Movie {
+public class Movie implements Serializable{
     private String movieTitle;
     private String movieDuration;
     private String movieGender;
@@ -35,6 +37,11 @@ public class Movie {
         System.out.println("Price: "+moviePrice);
     }
 
+    @Override
+    public String toString() {
+        return "Movie{" + "movieTitle=" + movieTitle + ", movieDuration=" + movieDuration + ", movieGender=" + movieGender + ", moviePrice=" + moviePrice + ", rooms=" + rooms + '}';
+    }
+    
     /**
      * @return the title
      */
