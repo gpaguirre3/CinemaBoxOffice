@@ -40,12 +40,15 @@ public class FileManager {
             movieDuration = in.getString("Enter the movie duration (hour.mins.secs)");
             movieGender = in.getString("Enter the movie gender: ");
             moviePrice = in.getString("Enter the price of the movie ticket: ");
+            
             Movie movie = new Movie(movieTitle, movieDuration, movieGender, moviePrice);
             create.writeInFile(movie);
+            
             answer = in.getStringAnswer("Add more movies[yes/no]");
             if("no".equals(answer)){
                 repeat = true;
             } 
+            
         } while (repeat == false);
     }
     

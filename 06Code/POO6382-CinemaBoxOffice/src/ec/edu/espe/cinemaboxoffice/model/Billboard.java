@@ -18,16 +18,17 @@ public class Billboard {
     private Room room;
     private Admin admin;
 
-    //Movie movies[];
+    Movie movies[];
     Promotion promotions[];
     CreateFile onScreen = new CreateFile();
     Keyboard in = new Keyboard();
     
-    public void menu() {
+    public void billboardMenu() {
+        
         boolean repeat = false;
         do {
             System.out.println(" 1: List movies \n 2: Promotions \n 3: Exit");
-            int option = in.getInt("enter the option: ", 1);
+            int option = in.getInt("Please, enter an option: ", 1);
             switch (option) {
                 case 1:
                     showMoviesList();
@@ -40,7 +41,7 @@ public class Billboard {
                     repeat = true;
                     break;
                 default:
-                    System.out.println("incorrect option");
+                    System.out.println("Incorrect option");
                     break;
             }
         } while (repeat == false);

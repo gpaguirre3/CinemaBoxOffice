@@ -15,8 +15,10 @@ import java.io.IOException;
 public class AdminSystem {
 
     public void manager() throws IOException {
+        
         Admin admin = new Admin("", 0);
+        
         admin.enterUser();
-        admin.menu();
+        admin.adminMenu();
     }
 }

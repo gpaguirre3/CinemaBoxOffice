@@ -16,7 +16,7 @@ public class Customer {
     
     public void enterBillboard(){
         Billboard billboard = new Billboard();
-        billboard.menu();
+        billboard.billboardMenu();
     }
     
     public void exitBillboard(){

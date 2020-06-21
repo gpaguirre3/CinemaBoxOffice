@@ -17,27 +17,30 @@ public class Admin {
 
     private String userName;
     private int keyUser;
-
     private Billboard billboard[];
 
     Keyboard in = new Keyboard();
     FileManager fileManager = new FileManager();
 
+    
     public Admin(String userName, int keyUser) {
         this.userName = userName = "Kevin";
         this.keyUser = keyUser = 1234568;
     }
 
     public Admin() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public void menu() throws IOException {
+    
+    public void adminMenu() throws IOException {
+        
         int option = 0;
         boolean repeat = false;
+        
         while (repeat == false) {
             System.out.println(" 1: Organize movie list \n 2: Organize promotions \n 3: Exit");
-            option = in.getInt("Enter the option: ", 1);
+            option = in.getInt("Enter an option: ", 1);
             switch (option) {
                 case 1:
                     organizeMovieList();
@@ -73,10 +76,13 @@ public class Admin {
     }
 
     public void organizeMovieList() throws IOException {
+        
         boolean repeat = false;
-        do {
+        int option;
+        do {   
             System.out.println(" 1: Create Movie \n 2: Delete Movie \n 3: Exit");
-            int option = in.getInt("enter the option: ", 1);
+            option = in.getInt("enter the option: ", 1);
+            
             switch (option) {
                 case 1:
                     fileManager.createMovie();

@@ -12,6 +12,7 @@ import ec.edu.espe.cinemaboxoffice.model.Customer;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class CustomerSystem {
+    
     public void buyer(){
         Customer customer = new Customer();
         customer.enterBillboard();

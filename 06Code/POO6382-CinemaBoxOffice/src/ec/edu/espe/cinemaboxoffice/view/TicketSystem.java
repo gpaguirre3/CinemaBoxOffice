@@ -12,16 +12,21 @@ import java.io.IOException;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class FarmSystem {
+public class TicketSystem {
 
     public static void main(String[] args) throws IOException {
+        
         Keyboard in = new Keyboard();
-        boolean repeat = false;
+        
         AdminSystem adminSystem = new AdminSystem();
         CustomerSystem customerSystem = new CustomerSystem();
+        
+        boolean repeat = false;
+        
         do {
+            System.out.println("----CINEMA BOX OFFICE----");
             System.out.println(" 1: Admin \n 2: Customer \n 3: Exit");
-            int option2 = in.getInt("enter option: ", 1);
+            int option2 = in.getInt("Enter an option: ", 1);
             switch (option2) {
                 case 1:
                     adminSystem.manager();
