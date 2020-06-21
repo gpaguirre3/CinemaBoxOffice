@@ -7,6 +7,7 @@ package ec.edu.espe.cinemaboxoffice.controller;
 
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Promotion;
+import ec.edu.espe.cinemaboxoffice.model.Seat;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -75,13 +76,12 @@ public class CreateFile {
             }
         }
     }
-    
+
     public void writeInFile2(ArrayList<Promotion> promotions) {
         try {
             salida = new FileOutputStream(file2);
             writer = new ObjectOutputStream(salida);
             writer.writeObject(promotions);
-
         } catch (IOException ex) {
             System.err.println(ex.getMessage());
         } finally {
@@ -117,6 +117,55 @@ public class CreateFile {
                     }
                 } catch (IOException ex) {
                     Logger.getLogger(Promotion.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    }
+
+    public void writeControlSeats(String selection, ArrayList<Seat> seats) {
+        String name = selection + ".txt";
+        File file3 = new File(name);
+        try {
+            salida = new FileOutputStream(file3);
+            writer = new ObjectOutputStream(salida);
+            writer.writeObject(seats);
+        } catch (IOException ex) {
+            System.err.println(ex.getMessage());
+        } finally {
+            if (salida != null) {
+                try {
+                    salida.close();
+                    if (writer != null) {
+                        writer.close();
+                    }
+                } catch (IOException ex) {
+                    System.err.println(ex.getMessage());
+                }
+            }
+        }
+    }
+    
+    public void printControlSeats(String selection, ArrayList<Seat> seats) {
+        String name = selection + ".txt";
+        File file3 = new File(name);
+        try {
+            entrada = new FileInputStream(file3);
+            reader = new ObjectInputStream(entrada);
+            seats = (ArrayList<Seat>) reader.readObject();
+            for (Seat variable : seats) {
+                System.out.println(variable.toString());
+            }
+        } catch (IOException | ClassNotFoundException ex) {
+            System.err.println(ex.getMessage());
+        } finally {
+            if (entrada != null) {
+                try {
+                    entrada.close();
+                    if (reader != null) {
+                        reader.close();
+                    }
+                } catch (IOException ex) {
+                    Logger.getLogger(Seat.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         }

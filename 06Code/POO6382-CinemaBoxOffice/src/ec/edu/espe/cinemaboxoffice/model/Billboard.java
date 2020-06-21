@@ -7,7 +7,6 @@ package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.controller.CreateFile;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
-import ec.edu.espe.cinemaboxoffice.model.Movie;
 import java.util.ArrayList;
 
 /**
@@ -21,12 +20,13 @@ public class Billboard {
 
     ArrayList<Movie> movies = new ArrayList();
     ArrayList<Promotion> promotions = new ArrayList();
-    
+    ArrayList<Seat> seats = new ArrayList();
+
     CreateFile onScreen = new CreateFile();
     Keyboard in = new Keyboard();
-    
+
     public void billboardMenu() {
-        
+        Ticket ticket;
         boolean repeat = false;
         do {
             System.out.println(" 1: List movies \n 2: Promotions \n 3: Exit");
@@ -34,7 +34,9 @@ public class Billboard {
             switch (option) {
                 case 1:
                     showMoviesList();
-                    
+                    String selection = in.getString("choose the title movie: ");
+                    chooseMovieAndSeat(selection);
+                    ticket = new Ticket(selection, selection, "", 0);
                     break;
                 case 2:
                     showPromotions();
@@ -48,7 +50,7 @@ public class Billboard {
             }
         } while (repeat == false);
     }
-    
+
     public void showMoviesList() {
         onScreen.printInConsole(movies);
     }
@@ -57,15 +59,36 @@ public class Billboard {
         onScreen.printInConsole2(promotions);
     }
 
+    public void chooseMovieAndSeat(String selection) {
+        boolean repeat = false;
+        String chosenSeat;
+        onScreen.writeControlSeats(selection, seats);
+        onScreen.printControlSeats(selection, seats);
+        do {
+            chosenSeat = in.getString("choose the number of seat: ");
+            int aux = Integer.parseInt(chosenSeat);
+            if (aux > 0 & aux < 51) {
+                chosenSeat = chosenSeat + "VPI";
+                seats.add(new Seat(selection, chosenSeat, true));
+                repeat = true;
+            }
+            if (aux > 50 & aux < 101) {
+                chosenSeat = chosenSeat + "STD";
+                seats.add(new Seat(selection, chosenSeat, true));
+                repeat = true;
+            }
+            if (aux>100 | aux<1){
+                System.out.println("incorrect number seat, please log in again");
+            }
+        } while (repeat = false);
+        onScreen.writeControlSeats(selection, seats);
+    }
+
     public void showPriceRoomAndSeat() {
 
     }
 
     public void choosePromotion() {
-
-    }
-
-    public void chooseMovie() {
 
     }
 
