@@ -5,13 +5,11 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import java.io.Serializable;
-
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Promotion implements Serializable{
+public class Promotion{
 
     private Ticket ticket;
     private String keyPromotion;

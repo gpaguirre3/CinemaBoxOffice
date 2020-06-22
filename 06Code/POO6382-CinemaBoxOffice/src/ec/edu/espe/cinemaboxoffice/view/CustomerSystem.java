@@ -6,6 +6,7 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.model.Customer;
+import java.io.IOException;
 
 /**
  *
@@ -13,7 +14,7 @@ import ec.edu.espe.cinemaboxoffice.model.Customer;
  */
 public class CustomerSystem {
     
-    public void buyer(){
+    public void buyer() throws IOException{
         Customer customer = new Customer();
         customer.enterBillboard();
     }

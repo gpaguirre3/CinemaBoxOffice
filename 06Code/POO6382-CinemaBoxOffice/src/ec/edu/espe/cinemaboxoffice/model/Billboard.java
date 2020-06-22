@@ -8,7 +8,6 @@ package ec.edu.espe.cinemaboxoffice.model;
 import ec.edu.espe.cinemaboxoffice.controller.CreateFile;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  *
@@ -18,28 +17,27 @@ public class Billboard {
 
     private Room room;
     private Admin admin;
-
-    ArrayList<Movie> movies = new ArrayList();
-    ArrayList<Promotion> promotions = new ArrayList();
-    ArrayList<Seat> seats = new ArrayList();
     
     Keyboard in = new Keyboard();
+    CreateFile createFile;
+    Seat seat;
 
     public void billboardMenu() throws IOException {
-        Ticket ticket;
         boolean repeat = false;
+        String selection;
         do {
             System.out.println(" 1: List movies \n 2: Promotions \n 3: Exit");
             int option = in.getInt("Please, enter an option: ", 1);
             switch (option) {
                 case 1:
                     showMoviesList();
-                    String selection = in.getString("choose the title movie: ");
+                    selection = in.getString("choose the title movie: ");
                     chooseMovieAndSeat(selection);
-                    ticket = new Ticket(selection, selection, "", 0);
                     break;
                 case 2:
                     showPromotions();
+                    selection = in.getString("choose the promotion: ");
+                    choosePromotion(selection);
                     break;
                 case 3:
                     repeat = true;
@@ -52,48 +50,51 @@ public class Billboard {
     }
 
     public void showMoviesList(){
-        CreateFile create = new CreateFile("MovieList.txt");
-        create.readFile("MovieList.txt");
+        createFile = new CreateFile("MovieList.txt");
+        createFile.readFile();
     }
 
     public void showPromotions(){
-        CreateFile create = new CreateFile("PromotionsList.txt");
-        create.readFile("PromotionsList.txt");
+        createFile = new CreateFile("PromotionsList.txt");
+        createFile.readFile();
     }
 
-    public String chooseMovieAndSeat(String selection){
-        CreateFile create = new CreateFile(selection);
+    public void chooseMovieAndSeat(String selection){
+        createFile = new CreateFile(selection + ".txt");
         boolean repeat = false;
+        Ticket ticket;
         String chosenSeat;
-        create.writeFile(selection);
-        create.readFile(selection);
+        createFile.readFile();
         do {
             chosenSeat = in.getString("choose the number of seat: ");
             int aux = Integer.parseInt(chosenSeat);
             if (aux > 0 & aux < 51) {
                 chosenSeat = chosenSeat + "VPI";
-                seats.add(new Seat(selection, chosenSeat, true));
+                seat = new Seat(selection, chosenSeat, true);
+                createFile.writeFile(seat.toString());
                 repeat = true;
             }
             if (aux > 50 & aux < 101) {
                 chosenSeat = chosenSeat + "STD";
-                seats.add(new Seat(selection, chosenSeat, true));
+                seat = new Seat(selection, chosenSeat, true);
+                createFile.writeFile(seat.toString());
                 repeat = true;
             }
             if (aux>100 | aux<1){
                 System.out.println("incorrect number seat, please log in again");
+                repeat = false;
             }
         } while (repeat = false);
-        create.writeFile(selection);
-        return chosenSeat;
+        ticket = new Ticket(chosenSeat, selection, "", 0);
+        ticket.showDataTicket();
     }
 
     public void showPriceRoomAndSeat() {
 
     }
 
-    public void choosePromotion() {
-
+    public void choosePromotion(String promotion) {
+        chooseMovieAndSeat(promotion);
     }
 
     public void chooseSeat() {

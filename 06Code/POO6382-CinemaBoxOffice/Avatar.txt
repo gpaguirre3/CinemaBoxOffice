@@ -1,0 +1,1 @@
+Seat{seatMovie=Avatar, numberSeat=36VPI, freeOrOccupied=true}

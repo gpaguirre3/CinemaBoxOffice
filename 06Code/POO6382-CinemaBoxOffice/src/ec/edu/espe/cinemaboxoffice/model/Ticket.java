@@ -33,6 +33,10 @@ public class Ticket {
     public String toString() {
         return "Ticket{" + "key=" + getKey() + ", seat=" + getSeat() + ", titleMovie=" + getTitleMovie() + ", roomAssignment=" + getRoomAssignment() + ", priceTicket=" + getPriceTicket() + ", pricePurchase=" + getPricePurchase() + '}';
     }
+    
+    public void showDataTicket(){
+        System.out.println(toString());
+    }
 
     /**
      * @return the indexCounter

@@ -5,14 +5,13 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import java.io.Serializable;
-
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Seat implements Serializable{
-      private String seatMovie;
+public class Seat{
+
+    private String seatMovie;
     private String numberSeat;
     private boolean freeOrOccupied;
     private float priceSeat;
@@ -26,11 +25,9 @@ public class Seat implements Serializable{
 
     @Override
     public String toString() {
-        return "Seat{" + "seatMovie=" + seatMovie + ", numberSeat=" + numberSeat
-                + ", freeOrOccupied=" + freeOrOccupied + ", priceSeat=" + 
-                priceSeat + ", priceSeatVPI=" + priceSeatVPI + '}';
+        return "Seat{" + "seatMovie=" + seatMovie + ", numberSeat=" + numberSeat + ", freeOrOccupied=" + freeOrOccupied + '}';
     }
-    
+
     /**
      * @return the seatMovie
      */
@@ -101,7 +98,4 @@ public class Seat implements Serializable{
         this.priceSeatVPI = priceSeatVPI;
     }
 
-    
-    
-    
 }

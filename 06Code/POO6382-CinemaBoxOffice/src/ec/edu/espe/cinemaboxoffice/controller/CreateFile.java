@@ -39,10 +39,10 @@ public final class CreateFile {
         }
     }
 
-    public void writeFile(String content) {
+    public void writeFile(String informationToSave) {
         try (FileWriter toWriter = new FileWriter(file, true);
                 PrintWriter toWriterLine = new PrintWriter(toWriter)) {
-            toWriterLine.println(content);
+            toWriterLine.println(informationToSave);
             toWriterLine.close();
             try {
                 toWriter.close();
@@ -54,7 +54,7 @@ public final class CreateFile {
         }
     }
 
-    public void readFile(String content) {
+    public void readFile() {
         try {
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
