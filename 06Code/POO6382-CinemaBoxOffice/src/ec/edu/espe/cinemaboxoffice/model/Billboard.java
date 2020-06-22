@@ -7,6 +7,7 @@ package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.controller.CreateFile;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -21,11 +22,10 @@ public class Billboard {
     ArrayList<Movie> movies = new ArrayList();
     ArrayList<Promotion> promotions = new ArrayList();
     ArrayList<Seat> seats = new ArrayList();
-
-    CreateFile onScreen = new CreateFile();
+    
     Keyboard in = new Keyboard();
 
-    public void billboardMenu() {
+    public void billboardMenu() throws IOException {
         Ticket ticket;
         boolean repeat = false;
         do {
@@ -51,19 +51,22 @@ public class Billboard {
         } while (repeat == false);
     }
 
-    public void showMoviesList() {
-        onScreen.printInConsole(movies);
+    public void showMoviesList(){
+        CreateFile create = new CreateFile("MovieList.txt");
+        create.readFile("MovieList.txt");
     }
 
-    public void showPromotions() {
-        onScreen.printInConsole2(promotions);
+    public void showPromotions(){
+        CreateFile create = new CreateFile("PromotionsList.txt");
+        create.readFile("PromotionsList.txt");
     }
 
-    public void chooseMovieAndSeat(String selection) {
+    public String chooseMovieAndSeat(String selection){
+        CreateFile create = new CreateFile(selection);
         boolean repeat = false;
         String chosenSeat;
-        onScreen.writeControlSeats(selection, seats);
-        onScreen.printControlSeats(selection, seats);
+        create.writeFile(selection);
+        create.readFile(selection);
         do {
             chosenSeat = in.getString("choose the number of seat: ");
             int aux = Integer.parseInt(chosenSeat);
@@ -81,7 +84,8 @@ public class Billboard {
                 System.out.println("incorrect number seat, please log in again");
             }
         } while (repeat = false);
-        onScreen.writeControlSeats(selection, seats);
+        create.writeFile(selection);
+        return chosenSeat;
     }
 
     public void showPriceRoomAndSeat() {

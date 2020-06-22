@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import java.io.IOException;
+
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
@@ -14,7 +16,7 @@ public class Customer {
     private String name;
     private int age;
     
-    public void enterBillboard(){
+    public void enterBillboard() throws IOException{
         Billboard billboard = new Billboard();
         billboard.billboardMenu();
     }

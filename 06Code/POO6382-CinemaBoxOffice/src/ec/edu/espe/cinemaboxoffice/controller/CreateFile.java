@@ -5,16 +5,12 @@
  */
 package ec.edu.espe.cinemaboxoffice.controller;
 
-import ec.edu.espe.cinemaboxoffice.model.Movie;
-import ec.edu.espe.cinemaboxoffice.model.Promotion;
-import ec.edu.espe.cinemaboxoffice.model.Seat;
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.ArrayList;
+import java.io.PrintWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,152 +18,54 @@ import java.util.logging.Logger;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class CreateFile {
+public final class CreateFile {
 
-    File file = new File("MovieList.txt");
-    File file2 = new File("PromotionList.txt");
-    FileOutputStream salida = null;
-    FileInputStream entrada = null;
-    ObjectOutputStream writer = null;
-    ObjectInputStream reader = null;
+    String fileName;
+    File file;
 
-    public void writeInFile(ArrayList<Movie> movies) {
+    public CreateFile(String fileName) {
+        this.fileName = fileName;
+        createFile();
+    }
+
+    public void createFile() {
+        file = new File(fileName);
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException ex) {
+                Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+
+    public void writeFile(String content) {
+        try (FileWriter toWriter = new FileWriter(file, true);
+                PrintWriter toWriterLine = new PrintWriter(toWriter)) {
+            toWriterLine.println(content);
+            toWriterLine.close();
+            try {
+                toWriter.close();
+            } catch (IOException ex) {
+                Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void readFile(String content) {
         try {
-            salida = new FileOutputStream(file);
-            writer = new ObjectOutputStream(salida);
-            writer.writeObject(movies);
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            String a;
+            do {
+                a = br.readLine();
+                System.out.println(a);
+            } while (a != null);
 
         } catch (IOException ex) {
-            System.err.println(ex.getMessage());
-        } finally {
-            if (salida != null) {
-                try {
-                    salida.close();
-                    if (writer != null) {
-                        writer.close();
-                    }
-                } catch (IOException ex) {
-                    System.err.println(ex.getMessage());
-                }
-            }
-        }
-    }
-
-    public void printInConsole(ArrayList<Movie> movies) {
-        try {
-            entrada = new FileInputStream(file);
-            reader = new ObjectInputStream(entrada);
-            movies = (ArrayList<Movie>) reader.readObject();
-            for (Movie variable : movies) {
-                System.out.println(variable.toString());
-            }
-        } catch (IOException | ClassNotFoundException ex) {
-            System.err.println(ex.getMessage());
-        } finally {
-            if (entrada != null) {
-                try {
-                    entrada.close();
-                    if (reader != null) {
-                        reader.close();
-                    }
-                } catch (IOException ex) {
-                    Logger.getLogger(Movie.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-        }
-    }
-
-    public void writeInFile2(ArrayList<Promotion> promotions) {
-        try {
-            salida = new FileOutputStream(file2);
-            writer = new ObjectOutputStream(salida);
-            writer.writeObject(promotions);
-        } catch (IOException ex) {
-            System.err.println(ex.getMessage());
-        } finally {
-            if (salida != null) {
-                try {
-                    salida.close();
-                    if (writer != null) {
-                        writer.close();
-                    }
-                } catch (IOException ex) {
-                    System.err.println(ex.getMessage());
-                }
-            }
-        }
-    }
-
-    public void printInConsole2(ArrayList<Promotion> promotions) {
-        try {
-            entrada = new FileInputStream(file2);
-            reader = new ObjectInputStream(entrada);
-            promotions = (ArrayList<Promotion>) reader.readObject();
-            for (Promotion variable : promotions) {
-                System.out.println(variable.toString());
-            }
-        } catch (IOException | ClassNotFoundException ex) {
-            System.err.println(ex.getMessage());
-        } finally {
-            if (entrada != null) {
-                try {
-                    entrada.close();
-                    if (reader != null) {
-                        reader.close();
-                    }
-                } catch (IOException ex) {
-                    Logger.getLogger(Promotion.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-        }
-    }
-
-    public void writeControlSeats(String selection, ArrayList<Seat> seats) {
-        String name = selection + ".txt";
-        File file3 = new File(name);
-        try {
-            salida = new FileOutputStream(file3);
-            writer = new ObjectOutputStream(salida);
-            writer.writeObject(seats);
-        } catch (IOException ex) {
-            System.err.println(ex.getMessage());
-        } finally {
-            if (salida != null) {
-                try {
-                    salida.close();
-                    if (writer != null) {
-                        writer.close();
-                    }
-                } catch (IOException ex) {
-                    System.err.println(ex.getMessage());
-                }
-            }
-        }
-    }
-    
-    public void printControlSeats(String selection, ArrayList<Seat> seats) {
-        String name = selection + ".txt";
-        File file3 = new File(name);
-        try {
-            entrada = new FileInputStream(file3);
-            reader = new ObjectInputStream(entrada);
-            seats = (ArrayList<Seat>) reader.readObject();
-            for (Seat variable : seats) {
-                System.out.println(variable.toString());
-            }
-        } catch (IOException | ClassNotFoundException ex) {
-            System.err.println(ex.getMessage());
-        } finally {
-            if (entrada != null) {
-                try {
-                    entrada.close();
-                    if (reader != null) {
-                        reader.close();
-                    }
-                } catch (IOException ex) {
-                    Logger.getLogger(Seat.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
+            Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

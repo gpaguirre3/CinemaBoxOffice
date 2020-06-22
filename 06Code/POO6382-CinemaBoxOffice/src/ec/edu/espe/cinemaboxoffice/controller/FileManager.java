@@ -9,7 +9,6 @@ import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Promotion;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  *
@@ -19,8 +18,6 @@ public class FileManager {
 
     private Movie movie;
     private Promotion promotion;
-
-    CreateFile create = new CreateFile();
 
     Keyboard in = new Keyboard();
 
@@ -33,22 +30,21 @@ public class FileManager {
         String movieGender;
         String moviePrice;
         String answer;
-
-        ArrayList<Movie> movies = new ArrayList();
-
+        CreateFile file = new CreateFile("MovieList.txt");
         do {
             movieTitle = in.getString("Enter the movie title");
             movieDuration = in.getString("Enter the movie duration (hour.mins.secs)");
             movieGender = in.getString("Enter the movie gender: ");
             moviePrice = in.getString("Enter the price of the movie ticket: ");
-            movies.add(new Movie(movieTitle, movieDuration, movieGender, moviePrice));
+            movie = new Movie(movieTitle, movieDuration, movieGender, moviePrice);
+            file.writeFile(movie.toString());
             answer = in.getStringAnswer("Add more movies[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
             }
 
         } while (repeat == false);
-        create.writeInFile(movies);
+
     }
 
     public void deleteMovie() {
@@ -61,20 +57,18 @@ public class FileManager {
         String day;
         float price;
         String answer;
-
-        ArrayList<Promotion> promotions = new ArrayList();
-
+        CreateFile file2 = new CreateFile("PromotionsList.txt");
         do {
             key = in.getString("Enter the key promotion: ");
             day = in.getString("Enter the day promotion: ");
             price = in.getInt("Enter the price promotion: ", 1);
-            promotions.add(new Promotion(key, day, price));
+            promotion = new Promotion(key, day, price);
+            file2.writeFile(promotion.toString());
             answer = in.getStringAnswer("Add more movies[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
             }
         } while (repeat == false);
-        create.writeInFile2(promotions);
     }
 
     public void deletePromotion() {
