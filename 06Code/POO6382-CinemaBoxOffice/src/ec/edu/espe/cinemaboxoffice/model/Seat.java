@@ -26,7 +26,9 @@ public class Seat implements Serializable{
 
     @Override
     public String toString() {
-        return "Seat{" + "seatMovie=" + seatMovie + ", numberSeat=" + numberSeat + ", freeOrOccupied=" + freeOrOccupied + ", priceSeat=" + priceSeat + ", priceSeatVPI=" + priceSeatVPI + '}';
+        return "Seat{" + "seatMovie=" + seatMovie + ", numberSeat=" + numberSeat
+                + ", freeOrOccupied=" + freeOrOccupied + ", priceSeat=" + 
+                priceSeat + ", priceSeatVPI=" + priceSeatVPI + '}';
     }
     
     /**

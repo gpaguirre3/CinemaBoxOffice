@@ -14,6 +14,7 @@ import java.io.IOException;
 public class Customer {
     private int id;
     private String name;
+    private String identificationCard;
     private int age;
     
     public void enterBillboard() throws IOException{

@@ -13,6 +13,7 @@ public class Payment {
     private Customer customer;
     private String card;
     
+    
     public void pay(){
         
     }
