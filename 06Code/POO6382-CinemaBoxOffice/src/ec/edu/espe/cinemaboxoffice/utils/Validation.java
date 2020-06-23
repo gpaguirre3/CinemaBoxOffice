@@ -40,7 +40,9 @@ public class Validation {
     } 
     
     /*
-    System.out.println("enter the identificationCard: ");
+    String identificationCard;
+        boolean valid;
+        System.out.println("enter the identificationCard: ");
         identificationCard = scanner.next();
         valid=validation.verifyID(identificationCard);
         if(valid){
@@ -48,40 +50,32 @@ public class Validation {
         }else 
             System.out.println("the identificationCard is incorrect : ");
     */
-        public static boolean verifyID(String identificationCard){
-        if (identificationCard.length() != 10) {
-        return false;
-        }
-        for (int i = 0; i < 10; i++) {
-           if (!Character.isDigit(identificationCard.charAt(i))) {
-                return false;
-            }
-        }
-
-        int ultimo_digito = Character.getNumericValue((identificationCard.charAt
-        (identificationCard.length() - 1)));
-        int digito;
-        int suma_pares = 0;
-        int suma_impares = 0;
-
-         for (int i = 0; i < 9; i++) {
-            digito = Character.getNumericValue(identificationCard.charAt(i));
-
-            if ((i + 1) % 2 == 0) {
-                suma_pares += digito;
-            } else {
-                suma_impares += (digito * 2) > 9 ? (digito * 2) - 9 : (digito * 2);
-            }
-        }
-
-        int total = suma_pares + suma_impares;
-        int superior = (10 - (total % 10)) + total;
-
-        if ((total % 10) == 0) {
-            return ultimo_digito == 0;
-        }
-
-        return ultimo_digito == (superior - total);
-            }
-
+        public static boolean verifyID(String identificationCard){ 
+     int total = 0;  
+     int sizeCardLength = 10;  
+     int[] coefficient = {2, 1, 2, 1, 2, 1, 2, 1, 2};  
+     int provinceNumber = 24;  
+     int thirdDigit = 6;  
+     
+     if (identificationCard.matches("[0-9]*") && identificationCard.length() == sizeCardLength) {  
+       int province = Integer.parseInt(identificationCard.charAt(0) + "" + identificationCard.charAt(1));  
+       int digitThree = Integer.parseInt(identificationCard.charAt(2) + "");  
+       
+       if ((province > 0 && province <= provinceNumber) && digitThree < thirdDigit) {  
+         int verifiedDigit = Integer.parseInt(identificationCard.charAt(9) + ""); 
+         
+         for (int i = 0; i < coefficient.length; i++) {  
+           int value = Integer.parseInt(coefficient[i] + "") * Integer.parseInt(identificationCard.charAt(i) + "");  
+           total = value >= 10 ? total + (value - 9) : total + value;  
+         } 
+         
+         int verifiedDigitObtained = total >= 10 ? (total % 10) != 0 ? 10 - (total % 10) : (total % 10) : total;  
+         if (verifiedDigitObtained == verifiedDigit) {  
+           return true;  
+         }  
+       }  
+       return false;  
+     }  
+     return false;  
+   } 
 }

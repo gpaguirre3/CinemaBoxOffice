@@ -35,7 +35,7 @@ public class Promotion{
 
     @Override
     public String toString() {
-        return "Promotion{" + "keyPromotion=" + keyPromotion + ", namePromotion=" + namePromotion + ", dayPromotion=" + dayPromotion + ", pricePromotionFood=" + pricePromotionFood + '}';
+        return  keyPromotion + "," + namePromotion + "," + dayPromotion + "," + pricePromotionFood;
     }
 
     /**

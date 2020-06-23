@@ -6,6 +6,7 @@
 package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.controller.FileManager;
+import ec.edu.espe.cinemaboxoffice.controller.InformationRecord;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import java.io.IOException;
 
@@ -20,7 +21,7 @@ public class Admin {
     private Billboard billboard[];
 
     Keyboard in = new Keyboard();
-    FileManager fileManager = new FileManager();
+    InformationRecord fileManager = new InformationRecord();
 
     
     public Admin(String userName, int keyUser) {
@@ -49,7 +50,6 @@ public class Admin {
                     organizePromotions();
                     break;
                 case 3:
-                    exitUser();
                     repeat = true;
                     break;
                 default:
@@ -87,7 +87,10 @@ public class Admin {
                     fileManager.createMovie();
                     break;
                 case 2:
-                    fileManager.deleteMovie();
+                    FileManager file = new FileManager("MovieList.txt");
+                    file.readFile();
+                    String fileName = in.getString("enter the name of file for delete: ");
+                    fileManager.deleteMovie(fileName + ".txt");
                     break;
                 case 3: 
                     repeat = true;
@@ -107,16 +110,15 @@ public class Admin {
                     fileManager.createPromotion();
                     break;
                 case 2:
-                    fileManager.deletePromotion();
+                    FileManager file = new FileManager("PromotionsList.txt");
+                    file.readFile();
+                    String fileName = in.getString("enter the name of file for delete: ");
+                    fileManager.deletePromotion(fileName);
                     break;
                 case 3: 
                     repeat = true;
             }
         } while (repeat == false);
-    }
-
-    public void exitUser() {
-
     }
 
     /**

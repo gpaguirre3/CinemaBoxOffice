@@ -33,6 +33,7 @@ public class TicketSystem {
             System.out.println("----CINEMA BOX OFFICE----");
             System.out.println(" 1: Admin \n 2: Customer \n 3: Exit");
             int option2 = in.getInt("Enter an option: ", 1);
+            Runtime.getRuntime().exec("cls");
             switch (option2) {
                 case 1:
                     adminSystem.manager();

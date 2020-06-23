@@ -1,2 +1,0 @@
-Seat{seatMovie=Avatar, numberSeat=36VPI, freeOrOccupied=true}
-Seat{seatMovie=avatar, numberSeat=25VPI, freeOrOccupied=true}

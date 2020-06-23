@@ -5,76 +5,82 @@
  */
 package ec.edu.espe.cinemaboxoffice.controller;
 
-import ec.edu.espe.cinemaboxoffice.model.FoodCombo;
-import ec.edu.espe.cinemaboxoffice.model.Movie;
-import ec.edu.espe.cinemaboxoffice.model.Promotion;
-import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class FileManager {
+public final class FileManager {
 
-    private Movie movie;
-    private Promotion promotion;
+    String fileName;
+    File file;
 
-    Keyboard in = new Keyboard();
+    public FileManager(String fileName) {
+        this.fileName = fileName;
+        createFile();
+    }
 
-    public void createMovie() throws IOException {
-
-        boolean repeat = false;
-
-        String movieTitle;
-        String movieDuration;
-        String movieGender;
-        String moviePrice;
-        String answer;
-        CreateFile file = new CreateFile("MovieList.txt");
-        do {
-            movieTitle = in.getString("Enter the movie title");
-            movieDuration = in.getString("Enter the movie duration (hour.mins.secs)");
-            movieGender = in.getString("Enter the movie gender: ");
-            moviePrice = in.getString("Enter the price of the movie ticket: ");
-            movie = new Movie(movieTitle, movieDuration, movieGender, moviePrice);
-            file.writeFile(movie.toString());
-            answer = in.getStringAnswer("Add more movies[yes/no]: ");
-            if ("no".equals(answer)) {
-                repeat = true;
+    public void createFile() {
+        file = new File(fileName);
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException ex) {
+                Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
             }
-
-        } while (repeat == false);
-
+        }
     }
 
-    public void deleteMovie() {
-
-    }
-
-    public void createPromotion() throws IOException {
-        CreateFile file2 = new CreateFile("PromotionsList.txt");
-        FoodCombo foodCombo = new FoodCombo("", "", "", 0);
-        boolean repeat = false;
-        String name;
-        String day;
-        int price;
-        String answer;
-        do {
-            foodCombo.menuCombo();
-            name = "Combo" + Integer.toString(foodCombo.menuCombo());
-            day = in.getString("Enter the day promotion: ");
-            price = in.getInt("Enter the price promotion: ", 2);
-            answer = in.getStringAnswer("Add more movies[yes/no]: ");
-            if ("no".equals(answer)) {
-                repeat = true;
+    public boolean writeFile(String informationToSave) {
+        boolean answer = true;
+        try (FileWriter fileWriter = new FileWriter(file, true);
+                PrintWriter printWriter = new PrintWriter(fileWriter)) {
+            printWriter.println(informationToSave);
+            printWriter.close();
+            try {
+                fileWriter.close();
+            } catch (IOException ex) {
+                Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+                answer = false;
             }
-        } while (repeat == false);
-        promotion = new Promotion(name, day, price);
-        file2.writeFile(promotion.toString());
+        } catch (IOException ex) {
+            Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+            answer = false;
+        }
+        return answer;
     }
 
-    public void deletePromotion() {
-
+    public void readFile() {
+        try {
+            FileReader fileReader = new FileReader(file);
+            BufferedReader bufferReader = new BufferedReader(fileReader);
+            String stringData = "";
+            while (stringData != null) {
+                System.out.println(stringData);
+                stringData = bufferReader.readLine();
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
+    
+    public void deleteFile(){
+        if (!file.exists()) {
+            file.delete();
+            System.out.println("The file " + file + " was delete");
+        }
+        else{
+            System.out.println("The file " + file + " don't exist");
+        }
+    }
+    
+    
 }

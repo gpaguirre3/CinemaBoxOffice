@@ -25,7 +25,7 @@ public class Seat{
 
     @Override
     public String toString() {
-        return "Seat{" + "seatMovie=" + seatMovie + ", numberSeat=" + numberSeat + ", freeOrOccupied=" + freeOrOccupied + '}';
+        return seatMovie + "," + numberSeat + "," + freeOrOccupied;
     }
 
     /**

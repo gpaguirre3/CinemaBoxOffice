@@ -5,7 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.controller.CreateFile;
+import ec.edu.espe.cinemaboxoffice.controller.FileManager;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import java.io.IOException;
 
@@ -19,7 +19,7 @@ public class Billboard {
     private Admin admin;
     
     Keyboard in = new Keyboard();
-    CreateFile createFile;
+    FileManager createFile;
     Seat seat;
 
     public void billboardMenu() throws IOException {
@@ -50,17 +50,17 @@ public class Billboard {
     }
 
     public void showMoviesList(){
-        createFile = new CreateFile("MovieList.txt");
+        createFile = new FileManager("MovieList.txt");
         createFile.readFile();
     }
 
     public void showPromotions(){
-        createFile = new CreateFile("PromotionsList.txt");
+        createFile = new FileManager("PromotionsList.txt");
         createFile.readFile();
     }
 
     public void chooseMovieAndSeat(String selection){
-        createFile = new CreateFile(selection + ".txt");
+        createFile = new FileManager(selection + ".txt");
         boolean repeat = false;
         Ticket ticket;
         String chosenSeat;
@@ -69,7 +69,7 @@ public class Billboard {
             chosenSeat = in.getString("choose the number of seat: ");
             int aux = Integer.parseInt(chosenSeat);
             if (aux > 0 & aux < 51) {
-                chosenSeat = chosenSeat + "VPI";
+                chosenSeat = chosenSeat + "VIP";
                 seat = new Seat(selection, chosenSeat, true);
                 createFile.writeFile(seat.toString());
                 repeat = true;
@@ -90,7 +90,7 @@ public class Billboard {
     }
 
     public void showPriceRoomAndSeat() {
-
+        
     }
 
     public void choosePromotion(String promotion) {
