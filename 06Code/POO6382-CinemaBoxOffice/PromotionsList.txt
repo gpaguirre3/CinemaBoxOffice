@@ -3,3 +3,4 @@ Promotion{ticket=null, keyPromotion=Cangreburger + CocaCola, dayPromotion=Saturd
 Promotion{keyPromotion=1001, namePromotion=Combo1, dayPromotion=sunday, pricePromotionFood=9.0}
 Promotion{keyPromotion=2, namePromotion=Combo1, dayPromotion=Sunday, pricePromotionFood=23.0}
 Promotion{keyPromotion=1001, namePromotion=Combo1, dayPromotion=Sunday, pricePromotionFood=36.0}
+Promotion{keyPromotion=1001, namePromotion=Combo7, dayPromotion=monday, pricePromotionFood=20.0}
