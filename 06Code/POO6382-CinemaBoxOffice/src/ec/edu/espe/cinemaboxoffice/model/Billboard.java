@@ -36,7 +36,7 @@ public class Billboard {
                     break;
                 case 2:
                     showPromotions();
-                    selection = in.getString("choose the promotion: ");
+                    selection = in.getString("choose the name promotion: ");
                     choosePromotion(selection);
                     break;
                 case 3:

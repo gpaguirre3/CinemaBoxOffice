@@ -58,11 +58,11 @@ public final class CreateFile {
         try {
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
-            String a;
-            do {
-                a = br.readLine();
+            String a = "";
+            while (a != null){
                 System.out.println(a);
-            } while (a != null);
+                a = br.readLine();
+            }
 
         } catch (IOException ex) {
             Logger.getLogger(FileManager.class.getName()).log(Level.SEVERE, null, ex);

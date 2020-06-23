@@ -5,13 +5,11 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import java.io.Serializable;
-
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Movie implements Serializable{
+public class Movie{
     private String movieTitle;
     private String movieDuration;
     private String movieGender;

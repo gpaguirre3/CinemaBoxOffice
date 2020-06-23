@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.controller;
 
+import ec.edu.espe.cinemaboxoffice.model.FoodCombo;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Promotion;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
@@ -52,23 +53,25 @@ public class FileManager {
     }
 
     public void createPromotion() throws IOException {
-        boolean repeat = false;
-        String key;
-        String day;
-        float price;
-        String answer;
         CreateFile file2 = new CreateFile("PromotionsList.txt");
+        FoodCombo foodCombo = new FoodCombo("", "", "", 0);
+        boolean repeat = false;
+        String name;
+        String day;
+        int price;
+        String answer;
         do {
-            key = in.getString("Enter the key promotion: ");
+            foodCombo.menuCombo();
+            name = "Combo" + Integer.toString(foodCombo.menuCombo());
             day = in.getString("Enter the day promotion: ");
-            price = in.getInt("Enter the price promotion: ", 1);
-            promotion = new Promotion(key, day, price);
-            file2.writeFile(promotion.toString());
+            price = in.getInt("Enter the price promotion: ", 2);
             answer = in.getStringAnswer("Add more movies[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
             }
         } while (repeat == false);
+        promotion = new Promotion(name, day, price);
+        file2.writeFile(promotion.toString());
     }
 
     public void deletePromotion() {

@@ -22,7 +22,7 @@ public class Ticket {
 
     public Ticket(String seat, String titleMovie, String roomAssignment, float priceTicket) {
         this.key = indexCounter + 1;
-        Ticket.indexCounter = Ticket.indexCounter + 1;
+        indexCounter = indexCounter + 1;
         this.seat = seat;
         this.titleMovie = titleMovie;
         this.roomAssignment = roomAssignment;

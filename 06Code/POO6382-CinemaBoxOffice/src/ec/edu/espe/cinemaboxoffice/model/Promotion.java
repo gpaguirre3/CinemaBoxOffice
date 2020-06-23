@@ -11,57 +11,73 @@ package ec.edu.espe.cinemaboxoffice.model;
  */
 public class Promotion{
 
-    private Ticket ticket;
-    private String keyPromotion;
+    private static int indexEnumerator = 1000;
+    private int keyPromotion;
+    private String namePromotion;
     private String dayPromotion;
     private float pricePromotionFood;
+    private Ticket ticket;
     
     private PricePurchase pricePurchases[];
     private FoodCombo foodCombos[];
 
-    public Promotion(String keyPromotion, String dayPromotion, float pricePromotionFood) {
-        this.keyPromotion = keyPromotion;
+    public Promotion(String namePromotion, String dayPromotion, float pricePromotionFood) {
+        this.keyPromotion = indexEnumerator + 1;
+        indexEnumerator = indexEnumerator + 1;
+        this.namePromotion = namePromotion;
         this.dayPromotion = dayPromotion;
         this.pricePromotionFood = pricePromotionFood;
     }
     
-    
-
     public void showPromotionData(){
         
     }
 
     @Override
     public String toString() {
-        return "Promotion{" + "ticket=" + getTicket() + ", keyPromotion=" + getKeyPromotion() + ", dayPromotion=" + getDayPromotion() + ", pricePromotionFood=" + getPricePromotionFood() + ", pricePurchases=" + getPricePurchases() + ", foodCombos=" + getFoodCombos() + '}';
+        return "Promotion{" + "keyPromotion=" + keyPromotion + ", namePromotion=" + namePromotion + ", dayPromotion=" + dayPromotion + ", pricePromotionFood=" + pricePromotionFood + '}';
     }
 
     /**
-     * @return the ticket
+     * @return the indexEnumerator
      */
-    public Ticket getTicket() {
-        return ticket;
+    public static int getIndexEnumerator() {
+        return indexEnumerator;
     }
 
     /**
-     * @param ticket the ticket to set
+     * @param aIndexEnumerator the indexEnumerator to set
      */
-    public void setTicket(Ticket ticket) {
-        this.ticket = ticket;
+    public static void setIndexEnumerator(int aIndexEnumerator) {
+        indexEnumerator = aIndexEnumerator;
     }
 
     /**
      * @return the keyPromotion
      */
-    public String getKeyPromotion() {
+    public int getKeyPromotion() {
         return keyPromotion;
     }
 
     /**
      * @param keyPromotion the keyPromotion to set
      */
-    public void setKeyPromotion(String keyPromotion) {
+    public void setKeyPromotion(int keyPromotion) {
         this.keyPromotion = keyPromotion;
+    }
+
+    /**
+     * @return the namePromotion
+     */
+    public String getNamePromotion() {
+        return namePromotion;
+    }
+
+    /**
+     * @param namePromotion the namePromotion to set
+     */
+    public void setNamePromotion(String namePromotion) {
+        this.namePromotion = namePromotion;
     }
 
     /**
@@ -93,6 +109,20 @@ public class Promotion{
     }
 
     /**
+     * @return the ticket
+     */
+    public Ticket getTicket() {
+        return ticket;
+    }
+
+    /**
+     * @param ticket the ticket to set
+     */
+    public void setTicket(Ticket ticket) {
+        this.ticket = ticket;
+    }
+
+    /**
      * @return the pricePurchases
      */
     public PricePurchase[] getPricePurchases() {
@@ -120,5 +150,5 @@ public class Promotion{
         this.foodCombos = foodCombos;
     }
     
-    
+  
 }
