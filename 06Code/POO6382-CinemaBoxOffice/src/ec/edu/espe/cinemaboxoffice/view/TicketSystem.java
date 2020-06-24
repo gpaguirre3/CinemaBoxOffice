@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.controller.FileManager;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import java.io.IOException;
 
@@ -15,6 +16,9 @@ import java.io.IOException;
 public class TicketSystem {
 
     public static void main(String[] args) throws IOException {
+        
+        FileManager f = new FileManager("MovieList.txt");
+        f.findRecord("prueba");
         
         //CARATULA//
         Cover cover = new Cover();

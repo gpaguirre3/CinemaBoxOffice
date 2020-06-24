@@ -22,6 +22,7 @@ public final class FileManager {
 
     String fileName;
     File file;
+    boolean answer = true;
 
     public FileManager(String fileName) {
         this.fileName = fileName;
@@ -40,7 +41,6 @@ public final class FileManager {
     }
 
     public boolean writeFile(String informationToSave) {
-        boolean answer = true;
         try (FileWriter fileWriter = new FileWriter(file, true);
                 PrintWriter printWriter = new PrintWriter(fileWriter)) {
             printWriter.println(informationToSave);
@@ -58,7 +58,7 @@ public final class FileManager {
         return answer;
     }
 
-    public void readFile() {
+    public boolean readFile() {
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferReader = new BufferedReader(fileReader);
@@ -69,18 +69,40 @@ public final class FileManager {
             }
         } catch (IOException ex) {
             Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+            answer = false;
         }
+        return answer;
     }
-    
-    public void deleteFile(){
+
+    public void deleteFile() {
         if (!file.exists()) {
             file.delete();
             System.out.println("The file " + file + " was delete");
-        }
-        else{
+        } else {
             System.out.println("The file " + file + " don't exist");
         }
     }
-    
-    
+
+    public boolean findRecord(String seeker) {
+        boolean flat = false;
+        try {
+            FileReader fileReader = new FileReader(file);
+            BufferedReader bufferReader = new BufferedReader(fileReader);
+            String linea;
+            while ((linea = bufferReader.readLine()) != null) {
+                String[] contacto = linea.split(",");
+                if (contacto[0].equals(seeker)) {
+                    System.out.println(linea);
+                    flat = true;
+                }
+            }
+            if (flat == false) {
+                System.out.println("the word don't exist");
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+            answer = false;
+        }
+        return answer;
+    }
 }
