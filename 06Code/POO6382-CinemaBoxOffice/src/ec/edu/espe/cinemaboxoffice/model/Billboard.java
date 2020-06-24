@@ -27,6 +27,7 @@ public class Billboard {
     public void billboardMenu() throws IOException {
         boolean repeat = false;
         String selection;
+        String selectionRoom;
         int election;
         do {
             System.out.println(" 1: List movies \n 2: Promotions \n 3: Exit");
@@ -37,6 +38,7 @@ public class Billboard {
                     showMoviesList();
                     selection = in.getString("choose the title movie: ");
                     chooseMovie(selection);
+                    selectionRoom = in.getString("choose the room: ");
                     break;
                 case 2:
                     cls.cleanScreen();
