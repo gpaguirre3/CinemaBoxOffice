@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.utils;
 
+import java.util.StringTokenizer;
+
 /**
  *
  * @author Gabriel Aguirre
@@ -13,8 +15,6 @@ public class Validation {
     /*
     String card;
     boolean valid;
-    System.out.println("Enter the card: ");
-    card = scanner.next();
     valid=Validation.checkCard(card);
     if(valid){
     System.out.println("the card ir : " +card);
@@ -42,8 +42,6 @@ public class Validation {
     /*
         String identificationCard;
         boolean valid;  
-        System.out.println("enter the identificationCard: ");
-        identificationCard = scanner.next();
         valid=validation.verifyID(identificationCard);
         if(valid){
             System.out.println("the identificationCard is : " +identificationCard);
@@ -84,4 +82,19 @@ public class Validation {
 
     return lastDigit == (higher - total);
     } 
+    
+    public static boolean validateTime(String time){
+        if(time.length() <0){ 
+            return false;
+        }
+        return true;
+    }
+    
+    public static boolean validateWord(final String word){
+        final String character = "1234567890}{,.+-=)(Â¿?Â¡!#@$%&/'*";
+        StringTokenizer compareWord = new StringTokenizer(character, word);
+        String ret = compareWord.hasMoreTokens() ? character.substring(compareWord.nextToken().length()) : null;
+        return false;
+    }
+
 }

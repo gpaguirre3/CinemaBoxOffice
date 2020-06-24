@@ -1,2 +1,8 @@
-a,5VIP,true
-a,6VIP,true
+a,20VIP,true
+a,10VIP,true
+a,10VIP,true
+a,20VIP,true
+a,21VIP,true
+a,20VIP,true
+A,20VIP,true
+A,20VIP,true

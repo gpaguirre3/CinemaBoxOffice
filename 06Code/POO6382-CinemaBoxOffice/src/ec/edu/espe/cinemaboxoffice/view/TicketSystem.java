@@ -31,10 +31,10 @@ public class TicketSystem {
             System.out.println("----CINEMA BOX OFFICE----");
             System.out.println(" 1: Admin \n 2: Customer \n 3: Exit");
             int option2 = in.getInt("Enter an option: ", 1);
-<<<<<<< HEAD
+/**<<<<<<< HEAD
             
 =======
->>>>>>> 544bcb6c4b459c37ff6db3cf81c860801f613952
+>>>>>>> 544bcb6c4b459c37ff6db3cf81c860801f613952*/
             switch (option2) {
                 case 1:
                     cls.cleanScreen();
