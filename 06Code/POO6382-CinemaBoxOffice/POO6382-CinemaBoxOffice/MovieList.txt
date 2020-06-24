@@ -1,0 +1,4 @@
+Avatar,2.36.25,Action,7
+Titanic,2.36.23,Real life,4.50
+Avengers,2.36.23,Fiction,6
+prueba,12.36.23,prueba,2
