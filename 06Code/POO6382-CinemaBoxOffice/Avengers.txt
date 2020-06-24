@@ -1,2 +1,0 @@
-Seat{seatMovie=Avengers, numberSeat=36VPI, freeOrOccupied=true}
-Seat{seatMovie=Avengers, numberSeat=100STD, freeOrOccupied=true}

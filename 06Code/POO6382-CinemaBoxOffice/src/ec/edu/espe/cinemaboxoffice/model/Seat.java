@@ -97,5 +97,4 @@ public class Seat{
     public void setPriceSeatVPI(float priceSeatVPI) {
         this.priceSeatVPI = priceSeatVPI;
     }
-
 }

@@ -117,7 +117,7 @@ public class Admin {
                     FileManager file = new FileManager("PromotionsList.txt");
                     file.readFile();
                     String fileName = in.getString("enter the name of file for delete: ");
-                    fileManager.deletePromotion(fileName);
+                    fileManager.deletePromotion(fileName + ".txt");
                     break;
                 case 3: 
                     repeat = true;
