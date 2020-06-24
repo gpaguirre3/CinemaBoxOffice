@@ -35,7 +35,7 @@ public final class FileManager {
             try {
                 file.createNewFile();
             } catch (IOException ex) {
-                Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -48,11 +48,11 @@ public final class FileManager {
             try {
                 fileWriter.close();
             } catch (IOException ex) {
-                Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
                 answer = false;
             }
         } catch (IOException ex) {
-            Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
             answer = false;
         }
         return answer;
@@ -68,17 +68,18 @@ public final class FileManager {
                 stringData = bufferReader.readLine();
             }
         } catch (IOException ex) {
-            Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
             answer = false;
         }
         return answer;
     }
 
     public void deleteFile() {
-        if (!file.exists()) {
+        if (file.exists()) {
             file.delete();
             System.out.println("The file " + file + " was delete");
-        } else {
+        } 
+        else {
             System.out.println("The file " + file + " don't exist");
         }
     }
@@ -100,7 +101,7 @@ public final class FileManager {
                 System.out.println("the word don't exist");
             }
         } catch (IOException ex) {
-            Logger.getLogger(InformationRecord.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
             answer = false;
         }
         return answer;

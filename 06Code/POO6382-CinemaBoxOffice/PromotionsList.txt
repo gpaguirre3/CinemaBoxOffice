@@ -1,5 +1,0 @@
-Promotion{ticket=null, keyPromotion=Potatoes + CocaCola, dayPromotion=Saturday, pricePromotionFood=9.0, pricePurchases=null, foodCombos=null}
-Promotion{ticket=null, keyPromotion=Cangreburger + CocaCola, dayPromotion=Saturday, pricePromotionFood=6.0, pricePurchases=null, foodCombos=null}
-Promotion{keyPromotion=1001, namePromotion=Combo1, dayPromotion=sunday, pricePromotionFood=9.0}
-Promotion{keyPromotion=2, namePromotion=Combo1, dayPromotion=Sunday, pricePromotionFood=23.0}
-Promotion{keyPromotion=1001, namePromotion=Combo1, dayPromotion=Sunday, pricePromotionFood=36.0}

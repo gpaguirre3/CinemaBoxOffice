@@ -18,15 +18,17 @@ public class Billboard {
 
     private Room room;
     private Admin admin;
-    
+
     Keyboard in = new Keyboard();
     Screen cls = new Screen();
-    FileManager createFile;
+    FileManager fileManager;
     Seat seat;
 
     public void billboardMenu() throws IOException {
         boolean repeat = false;
         String selection;
+        String selectionRoom;
+        int election;
         do {
             System.out.println(" 1: List movies \n 2: Promotions \n 3: Exit");
             int option = in.getInt("Please, enter an option: ", 1);
@@ -35,13 +37,14 @@ public class Billboard {
                     cls.cleanScreen();
                     showMoviesList();
                     selection = in.getString("choose the title movie: ");
-                    chooseMovieAndSeat(selection);
+                    chooseMovie(selection);
+                    selectionRoom = in.getString("choose the room: ");
                     break;
                 case 2:
                     cls.cleanScreen();
                     showPromotions();
-                    selection = in.getString("choose the name promotion: ");
-                    choosePromotion(selection);
+                    election = in.getInt("choose the number of promotion[100n]: ", 4);
+                    choosePromotion(election);
                     break;
                 case 3:
                     repeat = true;
@@ -53,59 +56,62 @@ public class Billboard {
         } while (repeat == false);
     }
 
-    public void showMoviesList(){
-        createFile = new FileManager("MovieList.txt");
-        createFile.readFile();
+    public void showMoviesList() {
+        fileManager = new FileManager("MovieList.txt");
+        fileManager.readFile();
     }
 
-    public void showPromotions(){
-        createFile = new FileManager("PromotionsList.txt");
-        createFile.readFile();
+    public void showPromotions() {
+        fileManager = new FileManager("PromotionsList.txt");
+        fileManager.readFile();
     }
 
-    public void chooseMovieAndSeat(String selection){
-        createFile = new FileManager(selection + ".txt");
-        boolean repeat = false;
+    public void chooseMovie(String selection) {
+        fileManager = new FileManager(selection + ".txt");
         Ticket ticket;
+        fileManager.readFile();
+        chooseSeat(selection);
+        generateTicket(chooseSeat(selection), selection);
+    }
+
+    public void choosePromotion(int numberPromotion) {
+        String selection = in.getString("choose the title movie: ");
+        fileManager = new FileManager(selection + ".txt");
+        Ticket ticket;
+        fileManager.readFile();
+        chooseSeat(selection);
+        generateTicket(chooseSeat(selection), selection);
+    }
+
+    public String chooseSeat(String selection) {
+        boolean repeat = false;
         String chosenSeat;
-        createFile.readFile();
+        int aux;
         do {
             chosenSeat = in.getString("choose the number of seat: ");
-            int aux = Integer.parseInt(chosenSeat);
+            aux = Integer.parseInt(chosenSeat);
             if (aux > 0 & aux < 51) {
                 chosenSeat = chosenSeat + "VIP";
                 seat = new Seat(selection, chosenSeat, true);
-                createFile.writeFile(seat.toString());
+                fileManager.writeFile(seat.toString());
                 repeat = true;
             }
             if (aux > 50 & aux < 101) {
                 chosenSeat = chosenSeat + "STD";
                 seat = new Seat(selection, chosenSeat, true);
-                createFile.writeFile(seat.toString());
+                fileManager.writeFile(seat.toString());
                 repeat = true;
             }
-            if (aux>100 | aux<1){
+            if (aux > 100 | aux < 1) {
                 System.out.println("incorrect number seat, please log in again");
                 repeat = false;
             }
         } while (repeat = false);
-        ticket = new Ticket(chosenSeat, selection, "", 0);
+        return chosenSeat;
+    }
+
+    public void generateTicket(String seat, String selection) {
+        Ticket ticket = new Ticket(seat, selection, "", 0);
         ticket.showDataTicket();
-    }
-
-    public void showPriceRoomAndSeat() {
-        
-    }
-
-    public void choosePromotion(String promotion) {
-        chooseMovieAndSeat(promotion);
-    }
-
-    public void chooseSeat() {
-
-    }
-
-    public void generateTicket() {
-
     }
 }
