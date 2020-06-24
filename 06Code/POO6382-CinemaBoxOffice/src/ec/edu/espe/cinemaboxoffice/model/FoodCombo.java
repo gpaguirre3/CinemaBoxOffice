@@ -14,16 +14,14 @@ import java.util.ArrayList;
  */
 public class FoodCombo {
 
-    private static int indexCounter = -1;
     private int numberCombo;
     private String drink;
     private String snack;
     private String fastFood;
     private float priceFood;
 
-    public FoodCombo(String drink, String snack, String fastFood, float priceFood) {
-        this.numberCombo = indexCounter + 1;
-        indexCounter = indexCounter + 1;
+    public FoodCombo(int numberCombo, String drink, String snack, String fastFood, float priceFood) {
+        this.numberCombo = numberCombo;
         this.drink = drink;
         this.snack = snack;
         this.fastFood = fastFood;
@@ -32,15 +30,15 @@ public class FoodCombo {
 
     public int menuCombo() {
         Keyboard in = new Keyboard();
-        ArrayList<FoodCombo> combos = new ArrayList();
-        boolean repeat;
+        ArrayList<FoodCombo> combos = new ArrayList<>();
+        boolean repeat = false;
         int election;
-        combos.add(new FoodCombo("CocaCola", "1", "cangreburger", 2.50F));
-        combos.add(new FoodCombo("CocaCola", "2", "hot dog", 2.50F));
-        combos.add(new FoodCombo("CocaCola", "3", "pizza", 2.50F));
-        combos.add(new FoodCombo("CocaCola", "4", "chips", 2.50F));
-        combos.add(new FoodCombo("CocaCola", "5", "cangreburger", 2.50F));
-        System.out.println(combos.toString());
+        combos.add(new FoodCombo(1,"CocaCola", "1", "cangreburger", 2.50F));
+        combos.add(new FoodCombo(2,"CocaCola", "2", "hot dog", 2.50F));
+        combos.add(new FoodCombo(3,"CocaCola", "3", "pizza", 2.50F));
+        combos.add(new FoodCombo(4,"CocaCola", "4", "chips", 2.50F));
+        combos.add(new FoodCombo(5,"CocaCola", "5", "cangreburger", 2.50F));
+        System.out.println(combos);
         do {
             election = in.getInt("Choose the number of combo: ", 1);
             if (election < 5 & election > 0) {
@@ -57,7 +55,6 @@ public class FoodCombo {
 
     @Override
     public String toString() {
-        return "\n numberCombo= " + numberCombo + " drink= " + drink + " snack= " + snack + " fastFood= " + fastFood + " priceFood= " + priceFood;
+        return "\n" + numberCombo + "," + drink + "," + snack + "," + fastFood + "," + priceFood;
     }
-    
 }

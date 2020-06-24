@@ -1,3 +1,0 @@
-A,1,2,2
-b,2,3,2
-Transformers,02.30.10,action,7.50

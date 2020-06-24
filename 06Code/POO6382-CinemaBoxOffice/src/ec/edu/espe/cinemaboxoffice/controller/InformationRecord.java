@@ -54,15 +54,14 @@ public class InformationRecord {
     }
 
     public void createPromotion() throws IOException {
-        FileManager file2 = new FileManager("PromotionsList.txt");
-        FoodCombo foodCombo = new FoodCombo("", "", "", 0);
+        FileManager file = new FileManager("PromotionsList.txt");
+        FoodCombo foodCombo = new FoodCombo(0,"", "", "", 0);
         boolean repeat = false;
         String name;
         String day;
         int price;
         String answer;
         do {
-            foodCombo.menuCombo();
             name = "Combo" + Integer.toString(foodCombo.menuCombo());
             day = in.getString("Enter the day promotion: ");
             price = in.getInt("Enter the price promotion: ", 2);
@@ -72,7 +71,7 @@ public class InformationRecord {
             }
         } while (repeat == false);
         promotion = new Promotion(name, day, price);
-        file2.writeFile(promotion.toString());
+        file.writeFile(promotion.toString());
     }
 
     public void deletePromotion(String fileName) {

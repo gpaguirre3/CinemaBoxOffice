@@ -19,38 +19,29 @@ public class Admin {
 
     private String userName;
     private int keyUser;
-    private Billboard billboard[];
 
     Keyboard in = new Keyboard();
     Screen cls = new Screen();
-    InformationRecord fileManager = new InformationRecord();
+    InformationRecord infoRecord = new InformationRecord();
 
-    
     public Admin(String userName, int keyUser) {
         this.userName = userName = "Kevin";
         this.keyUser = keyUser = 123;
     }
 
-    public Admin() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    
     public void adminMenu() throws IOException {
-        
         int option;
         boolean repeat = false;
-        
         while (repeat == false) {
             System.out.println(" 1: Organize movie list \n 2: Organize promotions \n 3: Exit");
             option = in.getInt("Enter an option: ", 1);
             switch (option) {
                 case 1:
-                    cls.cleanScreen();
+
                     organizeMovieList();
                     break;
                 case 2:
-                    cls.cleanScreen();
+
                     organizePromotions();
                     break;
                 case 3:
@@ -64,63 +55,68 @@ public class Admin {
     }
 
     public void enterUser() {
-        String userName2;
+        String userName;
         int keyUser2;
-        
+
         do {
-            userName2 = in.getString("Username: ");
+            userName = in.getString("Username: ");
 
-        } while (!userName2.equals(userName));
+        } while (!userName.equals(userName));
 
-        
         do {
             keyUser2 = in.getInt("Password: ", 3);
         } while (keyUser2 != keyUser);
-        
+
     }
 
     public void organizeMovieList() throws IOException {
+        FileManager file = new FileManager("MovieList.txt");
         boolean repeat = false;
         int option;
-        do {   
+        String fileName;
+        do {
             System.out.println(" 1: Create Movie \n 2: Delete Movie \n 3: Exit");
             option = in.getInt("Enter an option: ", 1);
-            
+
             switch (option) {
                 case 1:
-                    fileManager.createMovie();
+                    infoRecord.createMovie();
                     break;
                 case 2:
-                    FileManager file = new FileManager("MovieList.txt");
                     file.readFile();
-                    String fileName = in.getString("enter the name of file for delete: ");
-                    fileManager.deleteMovie(fileName + ".txt");
+                    fileName = in.getString("enter the name of file for delete: ");
+                    infoRecord.deleteMovie(fileName + ".txt");
                     break;
-                case 3: 
+                case 3:
                     repeat = true;
+                    break;
             }
         } while (repeat == false);
     }
 
-    public void organizePromotions() throws IOException{
+    public void organizePromotions() throws IOException {
+        FileManager file = new FileManager("PromotionsList.txt");
         boolean repeat = false;
+        String fileName;
         int option;
-        do {   
+        do {
             System.out.println(" 1: Save Promotion \n 2: Delete Promotion \n 3: Exit");
             option = in.getInt("Enter an option: ", 1);
-            
+
             switch (option) {
                 case 1:
-                    fileManager.createPromotion();
+                    infoRecord.createPromotion();
                     break;
                 case 2:
-                    FileManager file = new FileManager("PromotionsList.txt");
                     file.readFile();
-                    String fileName = in.getString("enter the name of file for delete: ");
-                    fileManager.deletePromotion(fileName + ".txt");
+                    fileName = in.getStringAnswer("you want to delete the movie list[yes/no]: ");
+                    if ("yes".equals(fileName)) {
+                        infoRecord.deletePromotion("PromotionsList.txt");
+                    }
                     break;
-                case 3: 
+                case 3:
                     repeat = true;
+                    break;
             }
         } while (repeat == false);
     }
@@ -151,19 +147,5 @@ public class Admin {
      */
     public void setKeyUser(int keyUser) {
         this.keyUser = keyUser;
-    }
-
-    /**
-     * @return the billboard
-     */
-    public Billboard[] getBillboard() {
-        return billboard;
-    }
-
-    /**
-     * @param billboard the billboard to set
-     */
-    public void setBillboard(Billboard[] billboard) {
-        this.billboard = billboard;
     }
 }

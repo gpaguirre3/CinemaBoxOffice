@@ -30,23 +30,28 @@ public class Billboard {
         String selectionRoom;
         int election;
         do {
-            System.out.println(" 1: List movies \n 2: Promotions \n 3: Exit");
+            System.out.println("1: Search movie \n 2: List movies \n 3: Promotions \n 4: Exit");
             int option = in.getInt("Please, enter an option: ", 1);
             switch (option) {
                 case 1:
+                    fileManager = new FileManager("MovieList.txt");
+                    selection = in.getString("Search: ");
+                    fileManager.findRecord(selection);
+                    break;
+                case 2:
                     cls.cleanScreen();
                     showMoviesList();
                     selection = in.getString("choose the title movie: ");
                     chooseMovie(selection);
                     selectionRoom = in.getString("choose the room: ");
                     break;
-                case 2:
+                case 3:
                     cls.cleanScreen();
                     showPromotions();
                     election = in.getInt("choose the number of promotion[100n]: ", 4);
                     choosePromotion(election);
                     break;
-                case 3:
+                case 4:
                     repeat = true;
                     break;
                 default:

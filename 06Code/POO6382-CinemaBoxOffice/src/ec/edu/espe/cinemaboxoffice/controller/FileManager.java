@@ -20,27 +20,29 @@ import java.util.logging.Logger;
  */
 public final class FileManager {
 
-    String fileName;
-    File file;
-    boolean answer = true;
+    private String fileName;
+    private File file;
+    private boolean answer = true;
 
     public FileManager(String fileName) {
         this.fileName = fileName;
-        createFile();
     }
 
-    public void createFile() {
+    public boolean createFile() {
         file = new File(fileName);
         if (!file.exists()) {
             try {
                 file.createNewFile();
             } catch (IOException ex) {
                 Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
+                answer = false;
             }
         }
+        return answer;
     }
 
     public boolean writeFile(String informationToSave) {
+        createFile();
         try (FileWriter fileWriter = new FileWriter(file, true);
                 PrintWriter printWriter = new PrintWriter(fileWriter)) {
             printWriter.println(informationToSave);
@@ -59,6 +61,7 @@ public final class FileManager {
     }
 
     public boolean readFile() {
+        createFile();
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferReader = new BufferedReader(fileReader);
@@ -75,24 +78,25 @@ public final class FileManager {
     }
 
     public void deleteFile() {
+        file = new File(fileName);
         if (file.exists()) {
             file.delete();
             System.out.println("The file " + file + " was delete");
-        } 
-        else {
+        } else {
             System.out.println("The file " + file + " don't exist");
         }
     }
 
     public boolean findRecord(String seeker) {
+        createFile();
         boolean flat = false;
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferReader = new BufferedReader(fileReader);
             String linea;
             while ((linea = bufferReader.readLine()) != null) {
-                String[] contacto = linea.split(",");
-                if (contacto[0].equals(seeker)) {
+                String[] searchWord = linea.split(",");
+                if (searchWord[0].equals(seeker)) {
                     System.out.println(linea);
                     flat = true;
                 }
