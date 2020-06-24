@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.model;
 import ec.edu.espe.cinemaboxoffice.controller.FileManager;
 import ec.edu.espe.cinemaboxoffice.controller.InformationRecord;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.Screen;
 import java.io.IOException;
 
 /**
@@ -21,6 +22,7 @@ public class Admin {
     private Billboard billboard[];
 
     Keyboard in = new Keyboard();
+    Screen cls = new Screen();
     InformationRecord fileManager = new InformationRecord();
 
     
@@ -44,9 +46,11 @@ public class Admin {
             option = in.getInt("Enter an option: ", 1);
             switch (option) {
                 case 1:
+                    cls.cleanScreen();
                     organizeMovieList();
                     break;
                 case 2:
+                    cls.cleanScreen();
                     organizePromotions();
                     break;
                 case 3:

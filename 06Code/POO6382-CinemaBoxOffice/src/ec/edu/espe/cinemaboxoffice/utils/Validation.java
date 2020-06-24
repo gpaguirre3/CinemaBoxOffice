@@ -40,8 +40,8 @@ public class Validation {
     } 
     
     /*
-    String identificationCard;
-        boolean valid;
+        String identificationCard;
+        boolean valid;  
         System.out.println("enter the identificationCard: ");
         identificationCard = scanner.next();
         valid=validation.verifyID(identificationCard);
@@ -50,32 +50,38 @@ public class Validation {
         }else 
             System.out.println("the identificationCard is incorrect : ");
     */
-        public static boolean verifyID(String identificationCard){ 
-     int total = 0;  
-     int sizeCardLength = 10;  
-     int[] coefficient = {2, 1, 2, 1, 2, 1, 2, 1, 2};  
-     int provinceNumber = 24;  
-     int thirdDigit = 6;  
-     
-     if (identificationCard.matches("[0-9]*") && identificationCard.length() == sizeCardLength) {  
-       int province = Integer.parseInt(identificationCard.charAt(0) + "" + identificationCard.charAt(1));  
-       int digitThree = Integer.parseInt(identificationCard.charAt(2) + "");  
-       
-       if ((province > 0 && province <= provinceNumber) && digitThree < thirdDigit) {  
-         int verifiedDigit = Integer.parseInt(identificationCard.charAt(9) + ""); 
-         
-         for (int i = 0; i < coefficient.length; i++) {  
-           int value = Integer.parseInt(coefficient[i] + "") * Integer.parseInt(identificationCard.charAt(i) + "");  
-           total = value >= 10 ? total + (value - 9) : total + value;  
-         } 
-         
-         int verifiedDigitObtained = total >= 10 ? (total % 10) != 0 ? 10 - (total % 10) : (total % 10) : total;  
-         if (verifiedDigitObtained == verifiedDigit) {  
-           return true;  
-         }  
-       }  
-       return false;  
-     }  
-     return false;  
-   } 
+    public static boolean validateCI(String CI) {
+    if (CI.length() != 10) {
+        return false;
+    }
+    for (int i = 0; i < 10; i++) {
+        if (!Character.isDigit(CI.charAt(i))) {
+            return false;
+        }
+    }
+
+    int lastDigit = Character.getNumericValue((CI.charAt(CI.length() - 1)));
+    int digit;
+    int sumPairs = 0;
+    int oddSum = 0;
+
+    for (int i = 0; i < 9; i++) {
+        digit = Character.getNumericValue(CI.charAt(i));
+
+        if ((i + 1) % 2 == 0) {
+            sumPairs += digit;
+        } else {
+            oddSum += (digit * 2) > 9 ? (digit * 2) - 9 : (digit * 2);
+        }
+    }
+
+    int total = sumPairs + oddSum;
+    int higher = (10 - (total % 10)) + total;
+
+    if ((total % 10) == 0) {
+        return lastDigit == 0;
+    }
+
+    return lastDigit == (higher - total);
+    } 
 }

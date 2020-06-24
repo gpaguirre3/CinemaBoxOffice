@@ -7,6 +7,7 @@ package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.controller.FileManager;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.Screen;
 import java.io.IOException;
 
 /**
@@ -20,14 +21,11 @@ public class TicketSystem {
         FileManager f = new FileManager("MovieList.txt");
         f.findRecord("prueba");
         
-        //CARATULA//
         Cover cover = new Cover();
         cover.cover();
-        //CARATULA//
-        
         
         Keyboard in = new Keyboard();
-        
+        Screen cls = new Screen();
         AdminSystem adminSystem = new AdminSystem();
         CustomerSystem customerSystem = new CustomerSystem();
         
@@ -40,9 +38,11 @@ public class TicketSystem {
             Runtime.getRuntime().exec("cls");
             switch (option2) {
                 case 1:
+                    cls.cleanScreen();
                     adminSystem.manager();
                     break;
                 case 2:
+                    cls.cleanScreen();
                     customerSystem.buyer();
                     break;
                 case 3:
