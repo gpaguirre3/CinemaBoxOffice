@@ -16,7 +16,7 @@ public class PricePurchase {
     
     Bill bills;
     
-    public void calculatePriceTicket(String ticketData){
+    public static void calculatePriceTicket(String ticketData){
         
     }
     

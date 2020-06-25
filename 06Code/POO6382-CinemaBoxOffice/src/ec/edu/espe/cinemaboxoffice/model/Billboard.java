@@ -85,14 +85,14 @@ public class Billboard {
     public void chooseMovie(String selection) {
         fileManagerLib = new FileManagerLib(selection + ".txt");
         FileManagerLib.readFile();
-        ticket.generateTicket(chooseSeat(selection), selection);
+        Ticket.generateTicket(chooseSeat(selection), selection);
     }
 
     public void choosePromotion(int numberPromotion) {
         String selection = in.getString("choose the title movie: ");
         fileManagerLib = new FileManagerLib(selection + ".txt");
         FileManagerLib.readFile();
-        ticket.generateTicket(chooseSeat(selection), selection);
+        Ticket.generateTicket(chooseSeat(selection), selection);
     }
 
     public String chooseSeat(String selection) {

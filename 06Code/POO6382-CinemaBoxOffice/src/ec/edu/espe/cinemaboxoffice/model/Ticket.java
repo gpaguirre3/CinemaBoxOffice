@@ -34,10 +34,10 @@ public class Ticket {
         return "Ticket{" + "key=" + getKey() + ", seat=" + getSeat() + ", titleMovie=" + getTitleMovie() + ", roomAssignment=" + getRoomAssignment() + ", priceTicket=" + getPriceTicket() + ", pricePurchase=" + getPricePurchase() + '}';
     }
     
-    public void generateTicket(String seat, String selection) {
+    public static void generateTicket(String seat, String selection) {
         Ticket ticket = new Ticket(seat, selection, "", 0);
         ticket.showDataTicket();
-        pricePurchase.calculatePriceTicket(ticket.toString());
+        PricePurchase.calculatePriceTicket(ticket.toString());
     }
     
     public void showDataTicket(){
