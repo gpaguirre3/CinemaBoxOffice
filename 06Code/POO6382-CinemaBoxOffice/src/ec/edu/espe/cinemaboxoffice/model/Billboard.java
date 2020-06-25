@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.model;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import ec.edu.espe.cinemaboxoffice.utils.Screen;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+import java.io.File;
 import java.io.IOException;
 
 /**
@@ -27,10 +28,10 @@ public class Billboard {
 
     public void billboardMenu() throws IOException {
         boolean repeat = false;
-        String selection;
+        String selection = "";
         int election;
         do {
-            System.out.println("1: Search movie \n 2: List movies \n 3: Promotions \n 4: Exit");
+            System.out.println("1: Search a movie \n 2: See Billboard \n 3: Promotions \n 4: Exit");
             int option = in.getInt("Please, enter an option: ", 1);
             switch (option) {
                 case 1:
@@ -40,10 +41,7 @@ public class Billboard {
                     break;
                 case 2:
                     Screen.cleanScreen();
-                    showMoviesList();
-                    selection = in.getString("choose the title movie: ");
-                    chooseMovie(selection);
-                    
+                    checkEmptyness(selection);
                     break;
                 case 3:
                     Screen.cleanScreen();
@@ -61,6 +59,19 @@ public class Billboard {
         } while (repeat == false);
     }
 
+    public void checkEmptyness(String selection) {
+        File f = new File("MovieList.txt");
+        do {
+            if (f.length() == 0) {
+                System.out.println("No movies have been registered yet");
+            } else {
+                showMoviesList();
+                selection = in.getString("What movie do you want to watch?: ");
+                chooseMovie(selection);
+            }
+        } while (f.length() != 0);
+    }
+    
     public void showMoviesList() {
         fileManagerLib = new FileManagerLib("MovieList.txt");
         FileManagerLib.readFile();
@@ -96,9 +107,8 @@ public class Billboard {
                 seat = new Seat(selection, chosenSeat, true);
                 FileManagerLib.writeFile(seat.toString());
                 repeat = true;
-                
-            }
-           else {
+
+            } else {
                 System.out.println(aux);
                 System.out.println("incorrect number seat, please log in again");
                 repeat = false;

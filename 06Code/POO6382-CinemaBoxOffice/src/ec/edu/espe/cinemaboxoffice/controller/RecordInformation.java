@@ -16,7 +16,7 @@ import java.io.IOException;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class InformationRecord {
+public class RecordInformation {
 
     private Movie movie;
     private Promotion promotion;
@@ -44,7 +44,7 @@ public class InformationRecord {
                 moviePrice = moviePrice + 3.50f;
             }
             if ("3D".equals(roomFormatForMovie)){
-                moviePrice = moviePrice + 3.50f;
+                moviePrice = moviePrice + 5.0f;
             }
             movie = new Movie(movieTitle, movieGender, roomNumberForMovie, roomFormatForMovie, moviePrice);
             System.out.println(file.writeFile(movie.toString()));
@@ -54,9 +54,9 @@ public class InformationRecord {
             }
 
         } while (repeat == false);
-
+        
     }
-
+    
     public void deleteMovie(String fileName) {
         FileManager file = new FileManager(fileName);
         file.deleteFile();

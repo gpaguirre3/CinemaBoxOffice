@@ -5,7 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.controller.InformationRecord;
+import ec.edu.espe.cinemaboxoffice.controller.RecordInformation;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import ec.edu.espe.cinemaboxoffice.utils.Screen;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
@@ -22,7 +22,7 @@ public class Admin {
 
     Keyboard in = new Keyboard();
     Screen cls = new Screen();
-    InformationRecord infoRecord = new InformationRecord();
+    RecordInformation infoRecord = new RecordInformation();
 
     public Admin(String userName, int keyUser) {
         this.userName = userName = "Kevin";
@@ -58,6 +58,9 @@ public class Admin {
         int keyUser2;
         do {
             loginName = in.getString("Username: ");
+            if (!loginName.equals(userName)) {
+                System.out.println("Incorrect Username. Please enter again");
+            }
         } while (!loginName.equals(userName));
 
         do {

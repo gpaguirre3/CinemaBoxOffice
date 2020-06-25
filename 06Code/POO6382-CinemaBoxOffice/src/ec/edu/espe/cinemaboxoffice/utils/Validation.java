@@ -12,32 +12,35 @@ import java.util.StringTokenizer;
  * @author Gabriel Aguirre
  */
 public class Validation {
+
     /*
     String card;
     boolean valid;
     valid=Validation.checkCard(card);
     if(valid){
     System.out.println("the card ir : " +card);
-    */
-    public static boolean checkCard(String card){
-    if(card.length() != 16){
-        return false;
-    }
-    int number =0 ,sum = 0;
-    for(int i = 0; i < 16; i++){
-        if(i%2 == 0){
-            number = Integer.valueOf(card.charAt(i)) * 2;
-            if(number >= 10)
-                number = (number - 10) + 1;
+     */
+    public static boolean checkCard(String card) {
+        if (card.length() != 16) {
+            return false;
         }
-        number = Integer.valueOf(card.charAt(i));
-        sum = sum + number;
+        int number = 0, sum = 0;
+        for (int i = 0; i < 16; i++) {
+            if (i % 2 == 0) {
+                number = Integer.valueOf(card.charAt(i)) * 2;
+                if (number >= 10) {
+                    number = (number - 10) + 1;
+                }
+            }
+            number = Integer.valueOf(card.charAt(i));
+            sum = sum + number;
+        }
+        if (sum % 10 == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
-    if(sum%10 == 0){
-        return true;
-    }else
-    return false;
-    } 
     
     /*
         String identificationCard;
@@ -47,50 +50,50 @@ public class Validation {
             System.out.println("the identificationCard is : " +identificationCard);
         }else 
             System.out.println("the identificationCard is incorrect : ");
-    */
+     */
     public static boolean validateCI(String CI) {
-    if (CI.length() != 10) {
-        return false;
-    }
-    for (int i = 0; i < 10; i++) {
-        if (!Character.isDigit(CI.charAt(i))) {
+        if (CI.length() != 10) {
             return false;
         }
-    }
-
-    int lastDigit = Character.getNumericValue((CI.charAt(CI.length() - 1)));
-    int digit;
-    int sumPairs = 0;
-    int oddSum = 0;
-
-    for (int i = 0; i < 9; i++) {
-        digit = Character.getNumericValue(CI.charAt(i));
-
-        if ((i + 1) % 2 == 0) {
-            sumPairs += digit;
-        } else {
-            oddSum += (digit * 2) > 9 ? (digit * 2) - 9 : (digit * 2);
+        for (int i = 0; i < 10; i++) {
+            if (!Character.isDigit(CI.charAt(i))) {
+                return false;
+            }
         }
+
+        int lastDigit = Character.getNumericValue((CI.charAt(CI.length() - 1)));
+        int digit;
+        int sumPairs = 0;
+        int oddSum = 0;
+
+        for (int i = 0; i < 9; i++) {
+            digit = Character.getNumericValue(CI.charAt(i));
+
+            if ((i + 1) % 2 == 0) {
+                sumPairs += digit;
+            } else {
+                oddSum += (digit * 2) > 9 ? (digit * 2) - 9 : (digit * 2);
+            }
+        }
+
+        int total = sumPairs + oddSum;
+        int higher = (10 - (total % 10)) + total;
+
+        if ((total % 10) == 0) {
+            return lastDigit == 0;
+        }
+
+        return lastDigit == (higher - total);
     }
 
-    int total = sumPairs + oddSum;
-    int higher = (10 - (total % 10)) + total;
-
-    if ((total % 10) == 0) {
-        return lastDigit == 0;
-    }
-
-    return lastDigit == (higher - total);
-    } 
-    
-    public static boolean validateTime(String time){
-        if(time.length() <0){ 
+    public static boolean validateTime(String time) {
+        if (time.length() < 0) {
             return false;
         }
         return true;
     }
-    
-    public static boolean validateWord(final String word){
+
+    public static boolean validateWord(final String word) {
         final String character = "1234567890}{,.+-=)(Â¿?Â¡!#@$%&/'*";
         StringTokenizer compareWord = new StringTokenizer(character, word);
         String ret = compareWord.hasMoreTokens() ? character.substring(compareWord.nextToken().length()) : null;

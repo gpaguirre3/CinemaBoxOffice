@@ -14,7 +14,9 @@ import java.util.Scanner;
 public class Keyboard {
 
     Scanner string;
-
+    
+    Validation validate = new Validation();
+    
     public Keyboard() {
         string = new Scanner(System.in);
     }
@@ -24,7 +26,12 @@ public class Keyboard {
         while (data.equals("")) {
             System.out.println(title);
             data = string.nextLine();
+            if((!data.matches("^[ A-Za-z0-9]+$"))){
+                data = "";
+                System.out.println("Special Characters Not Allowed");
+            }
         }
+        validate.checkCard(data);
         return data;
     }
     

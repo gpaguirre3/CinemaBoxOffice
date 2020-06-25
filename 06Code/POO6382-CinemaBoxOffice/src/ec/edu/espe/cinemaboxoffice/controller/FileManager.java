@@ -104,7 +104,8 @@ public final class FileManager {
                 }
             }
             if (flat == false) {
-                System.out.println("the word don't exist");
+                System.out.println("Non-existent movie or unregistered movies on "
+                        + "billboard");
             }
         } catch (IOException ex) {
             Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
