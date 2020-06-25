@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
@@ -31,13 +33,15 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket{" + "key=" + getKey() + ", seat=" + getSeat() + ", titleMovie=" + getTitleMovie() + ", roomAssignment=" + getRoomAssignment() + '}';
+        return "Ticket{" + "key=" + getKey() + ", seat=" + getSeat() + ", titleMovie=" + getTitleMovie() +  '}';
     }
     
     public static void generateTicket(int seat, String selection) {
+        FileManagerLib file = new FileManagerLib("MovieList.txt");
+        FileManagerLib.findRecord(selection);
         Ticket ticket = new Ticket(seat, selection, "", 0);
         ticket.showDataTicket();
-        PricePurchase.calculatePriceTicket(ticket.toString());
+        PricePurchase.calculatePriceTicket(selection);
     }
     
     public void showDataTicket(){

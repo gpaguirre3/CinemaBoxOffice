@@ -18,8 +18,6 @@ import java.util.logging.Logger;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-
-
 public final class FileManager {
 
     private String fileName;
@@ -89,19 +87,21 @@ public final class FileManager {
         }
     }
 
-    public boolean findRecord(String seeker) {
+    public String[] findRecord(String seeker) {
         createFile();
         boolean flat = false;
+        String linea ;
+        String searchWord[] = null;
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferReader = new BufferedReader(fileReader);
-            String linea;
             while ((linea = bufferReader.readLine()) != null) {
-                String[] searchWord = linea.split(",");
+                searchWord = linea.split(",");
+                System.out.println(searchWord);
                 if (searchWord[0].equals(seeker)) {
-                    System.out.println(linea);
                     flat = true;
                 }
+
             }
             if (flat == false) {
                 System.out.println("Non-existent movie or unregistered movies on "
@@ -111,6 +111,6 @@ public final class FileManager {
             Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
             answer = false;
         }
-        return answer;
+        return searchWord;
     }
 }

@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import ec.edu.espe.cinemaboxoffice.controller.FileManager;
+
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
@@ -17,7 +19,17 @@ public class PricePurchase {
     Bill bills;
     
     public static void calculatePriceTicket(String ticketData){
-        
+        String line = null;
+        String foundLine[];
+        int a = 0;
+        FileManager file = new FileManager("MovieList.txt");
+        foundLine = file.findRecord(ticketData);
+        System.out.println(foundLine);
+        while (a == 3) {
+                String[] searchWord = line.split(",");
+                System.out.println(searchWord[3]); 
+                a++;                
+            }
     }
     
     public void calculatePricePromotion(){
