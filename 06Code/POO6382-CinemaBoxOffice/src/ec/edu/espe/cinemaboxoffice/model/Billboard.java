@@ -61,7 +61,6 @@ public class Billboard {
 
     public void checkEmptyness(String selection) {
         File f = new File("MovieList.txt");
-        do {
             if (f.length() == 0) {
                 System.out.println("No movies have been registered yet");
             } else {
@@ -69,7 +68,6 @@ public class Billboard {
                 selection = in.getString("What movie do you want to watch?: ");
                 chooseMovie(selection);
             }
-        } while (f.length() != 0);
     }
     
     public void showMoviesList() {
@@ -95,25 +93,20 @@ public class Billboard {
         Ticket.generateTicket(chooseSeat(selection), selection);
     }
 
-    public String chooseSeat(String selection) {
+    public int chooseSeat(String selection) {
         boolean repeat;
-        String chosenSeat;
-        int aux;
+        int chosenSeat;
+        int aux = 0;
         do {
-            chosenSeat = in.getString("choose the number of seat: ");
-            aux = Integer.parseInt(chosenSeat);
-            if (aux > 0 & aux < 101) {
-                System.out.println(aux);
+            chosenSeat = in.getInt("choose the number of seat: ", 2);
+            if (chosenSeat > 0 & chosenSeat < 51) {
                 seat = new Seat(selection, chosenSeat, true);
                 FileManagerLib.writeFile(seat.toString());
                 repeat = true;
-
             } else {
-                System.out.println(aux);
-                System.out.println("incorrect number seat, please log in again");
+                System.out.println("incorrect seat number");
                 repeat = false;
             }
-            System.out.println(repeat);
         } while (repeat == false);
         return chosenSeat;
     }

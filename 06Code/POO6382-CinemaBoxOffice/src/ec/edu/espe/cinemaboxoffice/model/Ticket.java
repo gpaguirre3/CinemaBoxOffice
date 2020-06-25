@@ -13,14 +13,14 @@ public class Ticket {
 
     private static int indexCounter = 1000;
     private int key;
-    private String seat;
+    private int seat;
     private String titleMovie;
     private String roomAssignment;
     private float priceTicket;
 
     private PricePurchase pricePurchase;
 
-    public Ticket(String seat, String titleMovie, String roomAssignment, float priceTicket) {
+    public Ticket(int seat, String titleMovie, String roomAssignment, float priceTicket) {
         this.key = indexCounter + 1;
         indexCounter = indexCounter + 1;
         this.seat = seat;
@@ -31,10 +31,10 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket{" + "key=" + getKey() + ", seat=" + getSeat() + ", titleMovie=" + getTitleMovie() + ", roomAssignment=" + getRoomAssignment() + ", priceTicket=" + getPriceTicket() + ", pricePurchase=" + getPricePurchase() + '}';
+        return "Ticket{" + "key=" + getKey() + ", seat=" + getSeat() + ", titleMovie=" + getTitleMovie() + ", roomAssignment=" + getRoomAssignment() + '}';
     }
     
-    public static void generateTicket(String seat, String selection) {
+    public static void generateTicket(int seat, String selection) {
         Ticket ticket = new Ticket(seat, selection, "", 0);
         ticket.showDataTicket();
         PricePurchase.calculatePriceTicket(ticket.toString());
@@ -75,14 +75,14 @@ public class Ticket {
     /**
      * @return the seat
      */
-    public String getSeat() {
+    public int getSeat() {
         return seat;
     }
 
     /**
      * @param seat the seat to set
      */
-    public void setSeat(String seat) {
+    public void setSeat(int seat) {
         this.seat = seat;
     }
 
@@ -141,6 +141,6 @@ public class Ticket {
     public void setPricePurchase(PricePurchase pricePurchase) {
         this.pricePurchase = pricePurchase;
     }
-    
-    
+
+   
 }

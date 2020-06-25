@@ -30,7 +30,7 @@ public class RecordInformation {
         String movieTitle;
         String movieGender;
         int roomNumberForMovie;
-        String roomFormatForMovie;
+        String roomFormatForMovie = "";
         float moviePrice = 3.0f;
         FileManager file = new FileManager("MovieList.txt");
         do {
@@ -38,25 +38,44 @@ public class RecordInformation {
             movieTitle = in.getString("Enter the movie title");
             movieGender = in.getString("Enter the movie gender: ");
             room.showDataRoom();
-            roomNumberForMovie = in.getInt("Enter the movie room: )", 1);
-            roomFormatForMovie = in.getString("Enter the movie format: ");
-            if ("2D".equals(roomFormatForMovie)){
-                moviePrice = moviePrice + 3.50f;
-            }
-            if ("3D".equals(roomFormatForMovie)){
-                moviePrice = moviePrice + 5.0f;
-            }
+            roomNumberForMovie = in.getInt("Enter the number movie room: )", 1);
+            roomFormatForMovie = defineFormatRoom(roomNumberForMovie, roomFormatForMovie, moviePrice);
+            moviePrice = calculatePriceMovie(roomFormatForMovie, moviePrice);
             movie = new Movie(movieTitle, movieGender, roomNumberForMovie, roomFormatForMovie, moviePrice);
             System.out.println(file.writeFile(movie.toString()));
             answer = in.getStringAnswer("Add more movies[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
             }
-
         } while (repeat == false);
-        
     }
-    
+
+    public String defineFormatRoom(int roomNumberForMovie, String roomFormatForMovie, float moviePrice) {
+        boolean repeat = false;
+        do {
+            if (roomNumberForMovie < 7 & roomNumberForMovie > 0) {
+                if (roomNumberForMovie > 0 & roomNumberForMovie < 3) {
+                    roomFormatForMovie = "2D";
+                } else {
+                    roomFormatForMovie = "3D";
+                }
+                repeat = true;
+            } else {
+                System.out.println("the room don't exist");
+            }
+        } while (repeat == false);
+        return roomFormatForMovie;
+    }
+
+    public float calculatePriceMovie(String roomFormatForMovie, float moviePrice) {
+        if ("2D".equals(roomFormatForMovie)) {
+            moviePrice = moviePrice + 3.50f;
+        } else {
+            moviePrice = moviePrice + 5.0f;
+        }
+        return moviePrice;
+    }
+
     public void deleteMovie(String fileName) {
         FileManager file = new FileManager(fileName);
         file.deleteFile();

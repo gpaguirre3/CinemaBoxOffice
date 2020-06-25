@@ -3,28 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Movie.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Customer.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Ticket.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/Cover.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/FoodCombo.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Seat.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/RecordInformation.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/Validation.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/AdminSystem.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Bill.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Billboard.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/Keyboard.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Admin.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/FileManager.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/Screen.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/PricePurchase.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/CustomerSystem.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/PremierMovie.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/TicketSystem.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Payment.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Promotion.java</file>
-            <file>file:/C:/Users/nicol/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Room.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/RecordInformation.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Seat.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Billboard.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/FileManager.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Room.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Ticket.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/Keyboard.java</file>
         </group>
     </open-files>
 </project-private>

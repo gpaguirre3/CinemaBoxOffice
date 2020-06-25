@@ -54,7 +54,7 @@ public class Keyboard {
             data = string.nextLine();
             if (!data.matches("[0-9]{" + characters + "}")) {
                 data = "";
-                System.out.println("\nIncorrect data, please repeat the ");
+                System.out.println("\nIncorrect data, numbers only ");
             }
         }
         return Integer.parseInt(data);

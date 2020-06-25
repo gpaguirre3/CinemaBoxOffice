@@ -1,0 +1,7 @@
+Avatar,26,true
+Avatar,24,true
+Avatar,25,true
+Avatar,89,true
+Avatar,48,true
+Avatar,50,true
+Avatar,50,true

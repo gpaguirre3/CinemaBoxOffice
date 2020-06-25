@@ -34,7 +34,9 @@ public class Room {
         ArrayList<Room> rooms = new ArrayList<>();
         for (int i = 0; i<3; i++){
             rooms.add(new Room(i+1, 100, "2D", 3.50f));
-            rooms.add(new Room(4+i, 100, "3D", 5.0f));
+        }
+        for (int j = 0; j<3; j++){
+            rooms.add(new Room(j+1, 100, "3D", 5.00f));
         }
         System.out.println(rooms);
     }
