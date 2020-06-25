@@ -22,7 +22,7 @@ public class PricePurchase {
         String line = null;
         String foundLine[];
         int a = 0;
-        FileManager file = new FileManager("MovieList.txt");
+        FileManager file = new FileManager("MovieList.csv");
         foundLine = file.findRecord(ticketData);
         System.out.println(foundLine);
         while (a == 3) {

@@ -35,7 +35,7 @@ public class Billboard {
             int option = in.getInt("Please, enter an option: ", 1);
             switch (option) {
                 case 1:
-                    fileManagerLib = new FileManagerLib("MovieList.txt");
+                    fileManagerLib = new FileManagerLib("MovieList.csv");
                     selection = in.getString("Search: ");
                     FileManagerLib.findRecord(selection);
                     break;
@@ -60,7 +60,7 @@ public class Billboard {
     }
 
     public void checkEmptyness(String selection) {
-        File f = new File("MovieList.txt");
+        File f = new File("MovieList.csv");
             if (f.length() == 0) {
                 System.out.println("No movies have been registered yet");
             } else {
@@ -71,24 +71,24 @@ public class Billboard {
     }
     
     public void showMoviesList() {
-        fileManagerLib = new FileManagerLib("MovieList.txt");
+        fileManagerLib = new FileManagerLib("MovieList.csv");
         FileManagerLib.readFile();
     }
 
     public void showPromotions() {
-        fileManagerLib = new FileManagerLib("PromotionsList.txt");
+        fileManagerLib = new FileManagerLib("PromotionsList.csv");
         FileManagerLib.readFile();
     }
 
     public void chooseMovie(String selection) {
-        fileManagerLib = new FileManagerLib(selection + ".txt");
+        fileManagerLib = new FileManagerLib(selection + ".csv");
         FileManagerLib.readFile();
         Ticket.generateTicket(chooseSeat(selection), selection);
     }
 
     public void choosePromotion(int numberPromotion) {
         String selection = in.getString("choose the title movie: ");
-        fileManagerLib = new FileManagerLib(selection + ".txt");
+        fileManagerLib = new FileManagerLib(selection + ".csv");
         FileManagerLib.readFile();
         Ticket.generateTicket(chooseSeat(selection), selection);
     }

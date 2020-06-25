@@ -37,7 +37,7 @@ public class Ticket {
     }
     
     public static void generateTicket(int seat, String selection) {
-        FileManagerLib file = new FileManagerLib("MovieList.txt");
+        FileManagerLib file = new FileManagerLib("MovieList.csv");
         FileManagerLib.findRecord(selection);
         Ticket ticket = new Ticket(seat, selection, "", 0);
         ticket.showDataTicket();

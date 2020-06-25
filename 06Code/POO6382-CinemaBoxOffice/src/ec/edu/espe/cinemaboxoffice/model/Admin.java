@@ -70,7 +70,7 @@ public class Admin {
     }
 
     public void organizeMovieList() throws IOException {
-        FileManagerLib file = new FileManagerLib("MovieList.txt");
+        FileManagerLib file = new FileManagerLib("MovieList.csv");
         boolean repeat = false;
         int option;
         String fileName;
@@ -85,7 +85,7 @@ public class Admin {
                 case 2:
                     FileManagerLib.readFile();
                     fileName = in.getString("enter the name of file for delete: ");
-                    infoRecord.deleteMovie(fileName + ".txt");
+                    infoRecord.deleteMovie(fileName + ".csv");
                     break;
                 case 3:
                     repeat = true;
@@ -95,7 +95,7 @@ public class Admin {
     }
 
     public void organizePromotions() throws IOException {
-        FileManagerLib file = new FileManagerLib("PromotionsList.txt");
+        FileManagerLib file = new FileManagerLib("PromotionsList.csv");
         boolean repeat = false;
         String fileName;
         int option;
@@ -111,7 +111,7 @@ public class Admin {
                     FileManagerLib.readFile();
                     fileName = in.getStringAnswer("you want to delete the promotion list[yes/no]: ");
                     if ("yes".equals(fileName)) {
-                        infoRecord.deletePromotion("PromotionsList.txt");
+                        infoRecord.deletePromotion("PromotionsList.csv");
                     }
                     break;
                 case 3:

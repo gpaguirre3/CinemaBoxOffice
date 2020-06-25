@@ -28,7 +28,7 @@ public class Payment {
         String customerId;
         String customerName;
         int customerAge;
-        file = new FileManagerLib("Bill.txt");
+        file = new FileManagerLib("Bill.csv");
         
         do{
             cardNumber = in.getString("Enter your card number: ");

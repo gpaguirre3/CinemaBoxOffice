@@ -32,7 +32,7 @@ public class RecordInformation {
         int roomNumberForMovie;
         String roomFormatForMovie = "";
         float moviePrice = 3.0f;
-        FileManager file = new FileManager("MovieList.txt");
+        FileManager file = new FileManager("MovieList.csv");
         do {
             Room room = new Room();
             movieTitle = in.getString("Enter the movie title");
@@ -82,7 +82,7 @@ public class RecordInformation {
     }
 
     public void createPromotion() throws IOException {
-        FileManager file = new FileManager("PromotionsList.txt");
+        FileManager file = new FileManager("PromotionsList.csv");
         FoodCombo foodCombo = new FoodCombo(0, "", "", "", 0);
         boolean repeat = false;
         String name;
