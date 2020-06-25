@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
@@ -24,9 +26,22 @@ public class Room {
         this.priceTypeRoom = priceTypeRoom;
 
     }
+    
+    public Room() {
+    }
 
     public void showDataRoom() {
-        System.out.println(toString());
+        ArrayList<Room> rooms = new ArrayList<>();
+        for (int i = 0; i<3; i++){
+            rooms.add(new Room(i+1, 100, "2D", 3.50f));
+            rooms.add(new Room(4+i, 100, "3D", 5.0f));
+        }
+        System.out.println(rooms);
+    }
+    
+    @Override
+    public String toString() {
+        return "\nnumberRoom=" + numberRoom + ", numberSeats=" + numberSeats + ", formatRoom=" + formatRoom + ", priceTypeRoom=" + priceTypeRoom;
     }
 
     public int getNumberRoom() {
@@ -61,10 +76,4 @@ public class Room {
     public void setPriceTypeRoom(float priceTypeRoom) {
         this.priceTypeRoom = priceTypeRoom;
     }
-
-    @Override
-    public String toString() {
-        return "Room{" + "numberRoom=" + numberRoom + ", numberSeats=" + numberSeats + ", formatRoom=" + formatRoom + ", priceTypeRoom=" + priceTypeRoom + '}';
-    }
-
 }

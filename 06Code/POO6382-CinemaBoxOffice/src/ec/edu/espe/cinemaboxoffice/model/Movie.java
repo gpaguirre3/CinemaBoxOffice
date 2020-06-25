@@ -9,92 +9,66 @@ package ec.edu.espe.cinemaboxoffice.model;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Movie{
+public class Movie {
+
     private String movieTitle;
-    private String movieDuration;
     private String movieGender;
-    private String moviePrice;
-    
-    Room rooms[];
-    
-    
-    public Movie(String movieTitle, String movieDuration, String movieGender, String moviePrice) {
+    private int roomNumberForMovie;
+    private String roomFormatForMovie;
+    private float moviePrice;
+
+    public Movie(String movieTitle, String movieGender, int roomNumberForMovie, String roomFormatForMovie, float moviePrice) {
         this.movieTitle = movieTitle;
-        this.movieDuration = movieDuration;
         this.movieGender = movieGender;
+        this.roomNumberForMovie = roomNumberForMovie;
+        this.roomFormatForMovie = roomFormatForMovie;
         this.moviePrice = moviePrice;
-    }
-    
-    
-    
-    
-    public void showDataMovie(){
-        System.out.println("Movie name: "+movieTitle);
-        System.out.println("Duration: "+movieDuration);
-        System.out.println("Gender: "+movieGender);
-        System.out.println("Price: "+moviePrice);
     }
 
     @Override
     public String toString() {
-        return movieTitle + "," + movieDuration + "," + movieGender + "," + moviePrice;
+        return movieTitle + "," + movieGender + "," + roomNumberForMovie + "," + roomFormatForMovie + "," + moviePrice;
     }
-    
-    /**
-     * @return the title
-     */
-    
-    public String getTitle() {
+
+    public String getMovieTitle() {
         return movieTitle;
     }
 
-    /**
-     * @param title the title to set
-     */
-    public void setTitle(String title) {
-        this.movieTitle = title;
+    public void setMovieTitle(String movieTitle) {
+        this.movieTitle = movieTitle;
     }
 
-    /**
-     * @return the duration
-     */
-    public String getDuration() {
-        return movieDuration;
-    }
-
-    /**
-     * @param duration the duration to set
-     */
-    public void setDuration(String duration) {
-        this.movieDuration = duration;
-    }
-
-    /**
-     * @return the gender
-     */
-    public String getGender() {
+    public String getMovieGender() {
         return movieGender;
     }
 
-    /**
-     * @param gender the gender to set
-     */
-    public void setGender(String gender) {
-        this.movieGender = gender;
+    public void setMovieGender(String movieGender) {
+        this.movieGender = movieGender;
     }
 
-    /**
-     * @return the priceMovie
-     */
-    public String getPriceMovie() {
+    public int getRoomNumberForMovie() {
+        return roomNumberForMovie;
+    }
+
+    public void setRoomNumberForMovie(int roomNumberForMovie) {
+        this.roomNumberForMovie = roomNumberForMovie;
+    }
+
+    public String getRoomFormatForMovie() {
+        return roomFormatForMovie;
+    }
+
+    public void setRoomFormatForMovie(String roomFormatForMovie) {
+        this.roomFormatForMovie = roomFormatForMovie;
+    }
+
+    public float getMoviePrice() {
         return moviePrice;
     }
 
-    /**
-     * @param priceMovie the priceMovie to set
-     */
-    public void setPriceMovie(String priceMovie) {
+    public void setMoviePrice(float moviePrice) {
         this.moviePrice = moviePrice;
     }
+
     
 }

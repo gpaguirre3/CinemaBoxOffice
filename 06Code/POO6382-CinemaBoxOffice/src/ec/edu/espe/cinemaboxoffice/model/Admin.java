@@ -5,10 +5,10 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.controller.FileManager;
 import ec.edu.espe.cinemaboxoffice.controller.InformationRecord;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import ec.edu.espe.cinemaboxoffice.utils.Screen;
+import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 import java.io.IOException;
 
 /**
@@ -37,7 +37,6 @@ public class Admin {
             option = in.getInt("Enter an option: ", 1);
             switch (option) {
                 case 1:
-
                     organizeMovieList();
                     break;
                 case 2:
@@ -55,13 +54,11 @@ public class Admin {
     }
 
     public void enterUser() {
-        String userName;
+        String loginName;
         int keyUser2;
-
         do {
-            userName = in.getString("Username: ");
-
-        } while (!userName.equals(userName));
+            loginName = in.getString("Username: ");
+        } while (!loginName.equals(userName));
 
         do {
             keyUser2 = in.getInt("Password: ", 3);
@@ -70,7 +67,7 @@ public class Admin {
     }
 
     public void organizeMovieList() throws IOException {
-        FileManager file = new FileManager("MovieList.txt");
+        FileManagerLib file = new FileManagerLib("MovieList.txt");
         boolean repeat = false;
         int option;
         String fileName;
@@ -83,7 +80,7 @@ public class Admin {
                     infoRecord.createMovie();
                     break;
                 case 2:
-                    file.readFile();
+                    FileManagerLib.readFile();
                     fileName = in.getString("enter the name of file for delete: ");
                     infoRecord.deleteMovie(fileName + ".txt");
                     break;
@@ -95,7 +92,7 @@ public class Admin {
     }
 
     public void organizePromotions() throws IOException {
-        FileManager file = new FileManager("PromotionsList.txt");
+        FileManagerLib file = new FileManagerLib("PromotionsList.txt");
         boolean repeat = false;
         String fileName;
         int option;
@@ -108,8 +105,8 @@ public class Admin {
                     infoRecord.createPromotion();
                     break;
                 case 2:
-                    file.readFile();
-                    fileName = in.getStringAnswer("you want to delete the movie list[yes/no]: ");
+                    FileManagerLib.readFile();
+                    fileName = in.getStringAnswer("you want to delete the promotion list[yes/no]: ");
                     if ("yes".equals(fileName)) {
                         infoRecord.deletePromotion("PromotionsList.txt");
                     }
@@ -122,14 +119,14 @@ public class Admin {
     }
 
     /**
-     * @return the userName
+     * @return the loginName
      */
     public String getUserName() {
         return userName;
     }
 
     /**
-     * @param userName the userName to set
+     * @param userName the loginName to set
      */
     public void setUserName(String userName) {
         this.userName = userName;

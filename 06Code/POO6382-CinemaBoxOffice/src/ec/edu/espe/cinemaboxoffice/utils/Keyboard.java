@@ -53,7 +53,7 @@ public class Keyboard {
         return Integer.parseInt(data);
     }
     
-     public float getFloat(String title, int characters) {
+    public float getFloat(String title, int characters) {
         String data = "";
         while (data.equals("")) {
             System.out.println(title);

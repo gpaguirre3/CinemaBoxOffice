@@ -18,6 +18,8 @@ import java.util.logging.Logger;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
+
+
 public final class FileManager {
 
     private String fileName;

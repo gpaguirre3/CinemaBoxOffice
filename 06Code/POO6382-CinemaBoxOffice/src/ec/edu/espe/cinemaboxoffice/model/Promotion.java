@@ -21,12 +21,11 @@ public class Promotion{
     private PricePurchase pricePurchases[];
     private FoodCombo foodCombos[];
 
-    public Promotion(String namePromotion, String dayPromotion, float pricePromotionFood) {
+    public Promotion(String namePromotion, String dayPromotion) {
         this.keyPromotion = indexEnumerator + 1;
         indexEnumerator = indexEnumerator + 1;
         this.namePromotion = namePromotion;
         this.dayPromotion = dayPromotion;
-        this.pricePromotionFood = pricePromotionFood;
     }
     
     public void showPromotionData(){

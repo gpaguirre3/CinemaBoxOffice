@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.controller;
 import ec.edu.espe.cinemaboxoffice.model.FoodCombo;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Promotion;
+import ec.edu.espe.cinemaboxoffice.model.Room;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 import java.io.IOException;
 
@@ -25,19 +26,27 @@ public class InformationRecord {
     public void createMovie() throws IOException {
 
         boolean repeat = false;
-
-        String movieTitle;
-        String movieDuration;
-        String movieGender;
-        String moviePrice;
         String answer;
+        String movieTitle;
+        String movieGender;
+        int roomNumberForMovie;
+        String roomFormatForMovie;
+        float moviePrice = 3.0f;
         FileManager file = new FileManager("MovieList.txt");
         do {
+            Room room = new Room();
             movieTitle = in.getString("Enter the movie title");
-            movieDuration = in.getString("Enter the movie duration (hour.mins.secs)");
             movieGender = in.getString("Enter the movie gender: ");
-            moviePrice = in.getString("Enter the price of the movie ticket: ");
-            movie = new Movie(movieTitle, movieDuration, movieGender, moviePrice);
+            room.showDataRoom();
+            roomNumberForMovie = in.getInt("Enter the movie room: )", 1);
+            roomFormatForMovie = in.getString("Enter the movie format: ");
+            if ("2D".equals(roomFormatForMovie)){
+                moviePrice = moviePrice + 3.50f;
+            }
+            if ("3D".equals(roomFormatForMovie)){
+                moviePrice = moviePrice + 3.50f;
+            }
+            movie = new Movie(movieTitle, movieGender, roomNumberForMovie, roomFormatForMovie, moviePrice);
             System.out.println(file.writeFile(movie.toString()));
             answer = in.getStringAnswer("Add more movies[yes/no]: ");
             if ("no".equals(answer)) {
@@ -55,22 +64,20 @@ public class InformationRecord {
 
     public void createPromotion() throws IOException {
         FileManager file = new FileManager("PromotionsList.txt");
-        FoodCombo foodCombo = new FoodCombo(0,"", "", "", 0);
+        FoodCombo foodCombo = new FoodCombo(0, "", "", "", 0);
         boolean repeat = false;
         String name;
         String day;
-        int price;
         String answer;
         do {
             name = "Combo" + Integer.toString(foodCombo.menuCombo());
             day = in.getString("Enter the day promotion: ");
-            price = in.getInt("Enter the price promotion: ", 2);
             answer = in.getStringAnswer("Add more movies[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
             }
         } while (repeat == false);
-        promotion = new Promotion(name, day, price);
+        promotion = new Promotion(name, day);
         file.writeFile(promotion.toString());
     }
 

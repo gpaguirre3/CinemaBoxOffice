@@ -14,9 +14,9 @@ public class PricePurchase {
     private int numberTickets;
     private String typePromotion;
     
-    Bill bills[];
+    Bill bills;
     
-    public void calculatePriceTicket(){
+    public void calculatePriceTicket(String ticketData){
         
     }
     

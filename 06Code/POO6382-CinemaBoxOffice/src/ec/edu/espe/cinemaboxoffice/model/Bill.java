@@ -21,6 +21,8 @@ public class Bill {
         this.priceToPay = priceToPay;
         this.payment = payment;
     }
+    
+    
 
     public Customer getCustomer() {
         return customer;

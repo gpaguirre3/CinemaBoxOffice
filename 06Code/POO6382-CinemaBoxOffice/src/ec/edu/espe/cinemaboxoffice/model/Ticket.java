@@ -18,7 +18,7 @@ public class Ticket {
     private String roomAssignment;
     private float priceTicket;
 
-    private PricePurchase pricePurchase[];
+    private PricePurchase pricePurchase;
 
     public Ticket(String seat, String titleMovie, String roomAssignment, float priceTicket) {
         this.key = indexCounter + 1;
@@ -32,6 +32,12 @@ public class Ticket {
     @Override
     public String toString() {
         return "Ticket{" + "key=" + getKey() + ", seat=" + getSeat() + ", titleMovie=" + getTitleMovie() + ", roomAssignment=" + getRoomAssignment() + ", priceTicket=" + getPriceTicket() + ", pricePurchase=" + getPricePurchase() + '}';
+    }
+    
+    public void generateTicket(String seat, String selection) {
+        Ticket ticket = new Ticket(seat, selection, "", 0);
+        ticket.showDataTicket();
+        pricePurchase.calculatePriceTicket(ticket.toString());
     }
     
     public void showDataTicket(){
@@ -125,14 +131,14 @@ public class Ticket {
     /**
      * @return the pricePurchase
      */
-    public PricePurchase[] getPricePurchase() {
+    public PricePurchase getPricePurchase() {
         return pricePurchase;
     }
 
     /**
      * @param pricePurchase the pricePurchase to set
      */
-    public void setPricePurchase(PricePurchase[] pricePurchase) {
+    public void setPricePurchase(PricePurchase pricePurchase) {
         this.pricePurchase = pricePurchase;
     }
     
