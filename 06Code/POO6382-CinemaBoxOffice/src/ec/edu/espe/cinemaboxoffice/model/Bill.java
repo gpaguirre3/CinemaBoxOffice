@@ -17,8 +17,8 @@ public class Bill {
     private Customer customer;
     private int idBill;
     private float priceToPay;
-    private Payment payment;
-
+    
+    Payment payment = new Payment();
     Keyboard in = new Keyboard();
     FileManagerLib file;
 
@@ -30,19 +30,19 @@ public class Bill {
 
     public String showBillData(float moviePriceTicket) {
 
-        boolean repeat = false;
         String customerId;
         String customerName;
         int customerAge;
-
+        boolean statement = false;
         customerId = in.getString("Enter your ID:");
         customerName = in.getString("Enter your name:");
         customerAge = in.getInt("Enter your age", 2);
         customer = new Customer(customerId, customerName, customerAge);
-        payment.createPayment();
-        if () {
+        payment.createPayment(statement);
+        if (statement = true) {
             file = new FileManagerLib(customerName + ".csv");
             FileManagerLib.writeFile(customer.toString());
+            FileManagerLib.writeFile(payment.toString());
             FileManagerLib.writeFile("The price to cancel is:" + moviePriceTicket);
         } else {
             System.out.println("Bill not created because the payment wasn't succesful");

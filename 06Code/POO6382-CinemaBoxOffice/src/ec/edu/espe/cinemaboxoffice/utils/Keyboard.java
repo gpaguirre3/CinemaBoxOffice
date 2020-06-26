@@ -58,6 +58,18 @@ public class Keyboard {
         return Integer.parseInt(data);
     }
     
+    public long getLong(String title, long characters) {
+        String data = "";
+        while(data.equals("")) {
+            System.out.println(title);
+            data = string.nextLine();
+            if(!data.matches("[0-9]{" + characters + "}")) {
+                data = "";
+                System.out.println("Incorrect Data. Please type again");
+            }
+        }
+        return Long.parseLong(data);
+    }
     public float getFloat(String title, int characters) {
         String data = "";
         while (data.equals("")) {

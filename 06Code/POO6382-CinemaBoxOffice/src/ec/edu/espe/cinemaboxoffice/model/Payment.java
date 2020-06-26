@@ -15,12 +15,44 @@ import ec.edu.espe.filemanagerlibrary.FileManagerLib;
  */
 public class Payment {
     private Customer customer;
-    //private String card;
+    private String cardHolder;
+    private long creditCard;
+    private int year;
+    private int month;
     
     Keyboard in = new Keyboard();
     FileManagerLib file;
+
+    public Payment(String cardHolder, long creditCard, int year, int month) {
+        this.cardHolder = cardHolder;
+        this.creditCard = creditCard;
+        this.year = year;
+        this.month = month;
+    }
     
-    public boolean createPayment() {
+    Payment() {
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Payment{" + "cardHolder=" + cardHolder + ", creditCard=" + creditCard + ", year=" + year + ", month=" + month + '}';
+    }
+    
+    
+    public boolean createPayment(boolean condition) {
+        
+        String answer;
+        cardHolder = in.getString("Enter the card holder: ");
+        creditCard = in.getLong("Enter the credit card number: ", 16);
+        year = in.getInt("Enter the credit card expiration year", 4);
+        month = in.getInt("Enter the credit card expiration month(In numbers)", 2);
+        
+        answer = in.getString("Pay?[yes/no]");
+        if(answer.equals("yes")) {
+            return true;
+        }
+        
         return false;
         
     }
