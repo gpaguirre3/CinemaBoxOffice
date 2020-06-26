@@ -16,7 +16,7 @@ import ec.edu.espe.cinemaboxoffice.utils.SpecialValidation;
 public class Bill {
 
     private Customer customer;
-    private int idBill;
+    private int billId;
     private float priceToPay;
 
     Payment payment = new Payment();
@@ -25,7 +25,7 @@ public class Bill {
 
     public Bill(Customer customer, int idBill, float priceToPay) {
         this.customer = customer;
-        this.idBill = idBill;
+        this.billId = idBill;
         this.priceToPay = priceToPay;
     }
 
@@ -63,12 +63,12 @@ public class Bill {
         this.customer = customer;
     }
 
-    public int getIdBill() {
-        return idBill;
+    public int getBillId() {
+        return billId;
     }
 
-    public void setIdBill(int idBill) {
-        this.idBill = idBill;
+    public void setBillId(int billId) {
+        this.billId = billId;
     }
 
     public float getPriceToPay() {

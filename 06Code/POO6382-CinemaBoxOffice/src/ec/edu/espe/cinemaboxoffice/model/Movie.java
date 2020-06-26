@@ -13,21 +13,21 @@ public class Movie {
 
     private String movieTitle;
     private String movieGender;
-    private int roomNumberForMovie;
-    private String roomFormatForMovie;
+    private int roomNumber;
+    private String movieFormat;
     private float moviePrice;
 
     public Movie(String movieTitle, String movieGender, int roomNumberForMovie, String roomFormatForMovie, float moviePrice) {
         this.movieTitle = movieTitle;
         this.movieGender = movieGender;
-        this.roomNumberForMovie = roomNumberForMovie;
-        this.roomFormatForMovie = roomFormatForMovie;
+        this.roomNumber = roomNumberForMovie;
+        this.movieFormat = roomFormatForMovie;
         this.moviePrice = moviePrice;
     }
 
     @Override
     public String toString() {
-        return movieTitle + "," + movieGender + "," + roomNumberForMovie + "," + roomFormatForMovie + "," + moviePrice;
+        return movieTitle + "," + movieGender + "," + roomNumber + "," + movieFormat + "," + moviePrice;
     }
 
     public String getMovieTitle() {
@@ -46,20 +46,20 @@ public class Movie {
         this.movieGender = movieGender;
     }
 
-    public int getRoomNumberForMovie() {
-        return roomNumberForMovie;
+    public int getRoomNumber() {
+        return roomNumber;
     }
 
-    public void setRoomNumberForMovie(int roomNumberForMovie) {
-        this.roomNumberForMovie = roomNumberForMovie;
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
-    public String getRoomFormatForMovie() {
-        return roomFormatForMovie;
+    public String getMovieFormat() {
+        return movieFormat;
     }
 
-    public void setRoomFormatForMovie(String roomFormatForMovie) {
-        this.roomFormatForMovie = roomFormatForMovie;
+    public void setMovieFormat(String movieFormat) {
+        this.movieFormat = movieFormat;
     }
 
     public float getMoviePrice() {

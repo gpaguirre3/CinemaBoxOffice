@@ -16,7 +16,7 @@ public class Ticket {
     private int seat;
     private String titleMovie;
     private String roomAssignment;
-    private float priceTicket;
+    private float ticketPrice;
 
     PurchasePrice pricePurchase;
 
@@ -26,12 +26,12 @@ public class Ticket {
         this.seat = seat;
         this.titleMovie = titleMovie;
         this.roomAssignment = roomAssignment;
-        this.priceTicket = priceTicket;
+        this.ticketPrice = priceTicket;
     }
 
     @Override
     public String toString() {
-        return "Ticket{" + "key=" + key + ", seat=" + seat + ", titleMovie=" + titleMovie + ", roomAssignment=" + roomAssignment + ", priceTicket=" + priceTicket + '}';
+        return "Ticket{" + "key=" + key + ", seat=" + seat + ", titleMovie=" + titleMovie + ", roomAssignment=" + roomAssignment + ", priceTicket=" + ticketPrice + '}';
     }
     
     public static void generateTicket(int seat, String selection) {
@@ -39,11 +39,11 @@ public class Ticket {
         String priceOfTheTicket = PurchasePrice.searchTicketData("MovieList.csv", selection, 4);
         float priceTheTicket = Float.parseFloat(priceOfTheTicket);
         Ticket ticket = new Ticket(seat, selection, numberRomm, priceTheTicket);
-        ticket.showDataTicket();
+        ticket.showTicketData();
         PurchasePrice.calculateTicketPrice(selection);
     }
     
-    public void showDataTicket(){
+    public void showTicketData(){
         System.out.println(toString());
     }
 
@@ -118,17 +118,17 @@ public class Ticket {
     }
 
     /**
-     * @return the priceTicket
+     * @return the ticketPrice
      */
-    public float getPriceTicket() {
-        return priceTicket;
+    public float getTicketPrice() {
+        return ticketPrice;
     }
 
     /**
-     * @param priceTicket the priceTicket to set
+     * @param ticketPrice the ticketPrice to set
      */
-    public void setPriceTicket(float priceTicket) {
-        this.priceTicket = priceTicket;
+    public void setTicketPrice(float ticketPrice) {
+        this.ticketPrice = ticketPrice;
     }
 
     /**

@@ -21,10 +21,6 @@ import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
  */
 public class PurchasePrice {
 
-    private float pricePurchase;
-    private int numberTickets;
-    private String typePromotion;
-
     Bill bills;
 
     public static void calculateTicketPrice(String ticketTitleMovie) {

@@ -17,7 +17,7 @@ public class TicketSystem {
     public static void main(String[] args) throws IOException {
      
         Cover cover = new Cover();
-        cover.cover();
+        cover.run();
         
         DataValidation in = new DataValidation();
         AdminSystem adminSystem = new AdminSystem();

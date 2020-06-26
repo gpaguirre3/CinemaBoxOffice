@@ -12,84 +12,84 @@ package ec.edu.espe.cinemaboxoffice.model;
 public class Promotion{
 
     private static int indexEnumerator = 1000;
-    private int keyPromotion;
-    private String namePromotion;
-    private String dayPromotion;
-    private float pricePromotionFood;
+    private int promotionKey;
+    private String promotionName;
+    private String promotionDay;
+    private float foodPricePromotion;
     
     private PurchasePrice pricePurchases[];
     private FoodCombo foodCombos[];
 
     public Promotion(String namePromotion, String dayPromotion, float pricePromotionFood) {
-        this.keyPromotion = indexEnumerator + 1;
+        this.promotionKey = indexEnumerator + 1;
         indexEnumerator = indexEnumerator + 1;
-        this.namePromotion = namePromotion;
-        this.dayPromotion = dayPromotion;
-        this.pricePromotionFood = pricePromotionFood;
+        this.promotionName = namePromotion;
+        this.promotionDay = dayPromotion;
+        this.foodPricePromotion = pricePromotionFood;
     }
 
   
 
     @Override
     public String toString() {
-        return keyPromotion + "," + namePromotion + "," + dayPromotion + "," + pricePromotionFood + '}';
+        return promotionKey + "," + promotionName + "," + promotionDay + "," + foodPricePromotion + '}';
     }
 
 
     /**
-     * @return the keyPromotion
+     * @return the promotionKey
      */
-    public int getKeyPromotion() {
-        return keyPromotion;
+    public int getPromotionKey() {
+        return promotionKey;
     }
 
     /**
-     * @param keyPromotion the keyPromotion to set
+     * @param promotionKey the promotionKey to set
      */
-    public void setKeyPromotion(int keyPromotion) {
-        this.keyPromotion = keyPromotion;
+    public void setPromotionKey(int promotionKey) {
+        this.promotionKey = promotionKey;
     }
 
     /**
-     * @return the namePromotion
+     * @return the promotionName
      */
-    public String getNamePromotion() {
-        return namePromotion;
+    public String getPromotionName() {
+        return promotionName;
     }
 
     /**
-     * @param namePromotion the namePromotion to set
+     * @param promotionName the promotionName to set
      */
-    public void setNamePromotion(String namePromotion) {
-        this.namePromotion = namePromotion;
+    public void setPromotionName(String promotionName) {
+        this.promotionName = promotionName;
     }
 
     /**
-     * @return the dayPromotion
+     * @return the promotionDay
      */
-    public String getDayPromotion() {
-        return dayPromotion;
+    public String getPromotionDay() {
+        return promotionDay;
     }
 
     /**
-     * @param dayPromotion the dayPromotion to set
+     * @param promotionDay the promotionDay to set
      */
-    public void setDayPromotion(String dayPromotion) {
-        this.dayPromotion = dayPromotion;
+    public void setPromotionDay(String promotionDay) {
+        this.promotionDay = promotionDay;
     }
 
     /**
-     * @return the pricePromotionFood
+     * @return the foodPricePromotion
      */
-    public float getPricePromotionFood() {
-        return pricePromotionFood;
+    public float getFoodPricePromotion() {
+        return foodPricePromotion;
     }
 
     /**
-     * @param pricePromotionFood the pricePromotionFood to set
+     * @param foodPricePromotion the foodPricePromotion to set
      */
-    public void setPricePromotionFood(float pricePromotionFood) {
-        this.pricePromotionFood = pricePromotionFood;
+    public void setFoodPricePromotion(float foodPricePromotion) {
+        this.foodPricePromotion = foodPricePromotion;
     }
 
     /**

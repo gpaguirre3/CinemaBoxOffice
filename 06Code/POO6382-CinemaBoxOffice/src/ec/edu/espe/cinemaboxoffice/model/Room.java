@@ -13,17 +13,17 @@ import java.util.ArrayList;
  */
 public class Room {
 
-    private int numberRoom;
-    private int numberSeats;
-    private String formatRoom;
-    private float priceTypeRoom;
+    private int roomNumber;
+    private int seatNumber;
+    private String roomFormat;
+    private float roomTypePrice;
 
     public Room(int numberRoom, int numberSeats, String formatRoom, float priceTypeRoom) {
 
-        this.numberRoom = numberRoom;
-        this.numberSeats = numberSeats;
-        this.formatRoom = formatRoom;
-        this.priceTypeRoom = priceTypeRoom;
+        this.roomNumber = numberRoom;
+        this.seatNumber = numberSeats;
+        this.roomFormat = formatRoom;
+        this.roomTypePrice = priceTypeRoom;
 
     }
     
@@ -43,39 +43,39 @@ public class Room {
     
     @Override
     public String toString() {
-        return "\nnumberRoom=" + numberRoom + ", numberSeats=" + numberSeats + ", formatRoom=" + formatRoom + ", priceTypeRoom=" + priceTypeRoom;
+        return "\nnumberRoom=" + roomNumber + ", numberSeats=" + seatNumber + ", formatRoom=" + roomFormat + ", priceTypeRoom=" + roomTypePrice;
     }
 
-    public int getNumberRoom() {
-        return numberRoom;
+    public int getRoomNumber() {
+        return roomNumber;
     }
 
-    public void setNumberRoom(int numberRoom) {
-        this.numberRoom = numberRoom;
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
-    public int getNumberSeats() {
-        return numberSeats;
+    public int getSeatNumber() {
+        return seatNumber;
     }
 
-    public void setNumberSeats(int numberSeats) {
-        this.numberSeats = numberSeats;
+    public void setSeatNumber(int seatNumber) {
+        this.seatNumber = seatNumber;
     }
 
-    public String getFormatRoom() {
-        return formatRoom;
+    public String getRoomFormat() {
+        return roomFormat;
     }
 
-    public void setFormatRoom(String formatRoom) {
+    public void setRoomFormat(String roomFormat) {
 
-        this.formatRoom = formatRoom;
+        this.roomFormat = roomFormat;
     }
 
-    public float getPriceTypeRoom() {
-        return priceTypeRoom;
+    public float getRoomTypePrice() {
+        return roomTypePrice;
     }
 
-    public void setPriceTypeRoom(float priceTypeRoom) {
-        this.priceTypeRoom = priceTypeRoom;
+    public void setRoomTypePrice(float roomTypePrice) {
+        this.roomTypePrice = roomTypePrice;
     }
 }

@@ -11,18 +11,18 @@ package ec.edu.espe.cinemaboxoffice.model;
  */
 public class Seat{
 
-    private String seatMovie;
-    private int numberSeat;
-    private boolean freeOrOccupied;
+    private String movieSeat;
+    private int seatNumber;
+    private boolean availability;
 
     public Seat(String seatMovie, int numberSeat, boolean freeOrOccupied) {
-        this.seatMovie = seatMovie;
-        this.numberSeat = numberSeat;
-        this.freeOrOccupied = freeOrOccupied;
+        this.movieSeat = seatMovie;
+        this.seatNumber = numberSeat;
+        this.availability = freeOrOccupied;
     }
 
     @Override
     public String toString() {
-        return seatMovie + "," + numberSeat + "," + freeOrOccupied;
+        return movieSeat + "," + seatNumber + "," + availability;
     }   
 }

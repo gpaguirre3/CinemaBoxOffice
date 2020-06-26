@@ -14,18 +14,18 @@ import java.util.ArrayList;
  */
 public class FoodCombo {
 
-    private int numberCombo;
+    private int comboNumber;
     private String drink;
     private String snack;
     private String fastFood;
-    private float priceFood;
+    private float foodPrice;
 
     public FoodCombo(int numberCombo, String drink, String snack, String fastFood, float priceFood) {
-        this.numberCombo = numberCombo;
+        this.comboNumber = numberCombo;
         this.drink = drink;
         this.snack = snack;
         this.fastFood = fastFood;
-        this.priceFood = priceFood;
+        this.foodPrice = priceFood;
     }
 
     public int menuCombo() {
@@ -54,6 +54,6 @@ public class FoodCombo {
 
     @Override
     public String toString() {
-        return "\n" + numberCombo + "," + drink + "," + snack + "," + fastFood + "," + priceFood;
+        return "\n" + comboNumber + "," + drink + "," + snack + "," + fastFood + "," + foodPrice;
     }
 }

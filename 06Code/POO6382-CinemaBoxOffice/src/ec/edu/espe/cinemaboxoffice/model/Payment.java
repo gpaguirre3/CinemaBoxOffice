@@ -17,7 +17,7 @@ public class Payment {
 
     private Customer customer;
     private String cardHolder;
-    private String creditCard;
+    private String cardNumber;
     private int year;
     private int month;
 
@@ -26,26 +26,25 @@ public class Payment {
 
     public Payment(String cardHolder, String creditCard, int year, int month) {
         this.cardHolder = cardHolder;
-        this.creditCard = creditCard;
+        this.cardNumber = creditCard;
         this.year = year;
         this.month = month;
     }
 
     Payment() {
-
     }
 
     @Override
     public String toString() {
-        return "Payment{" + "cardHolder=" + cardHolder + ", creditCard=" + creditCard + ", year=" + year + ", month=" + month + '}';
+        return "Payment{" + "cardHolder=" + cardHolder + ", creditCard=" + cardNumber + ", year=" + year + ", month=" + month + '}';
     }
 
     public boolean createPayment(boolean condition) {
 
         String answer;
         do {
-            creditCard = in.getString("Enter the credit card number: ");
-        } while (!SpecialValidation.checkCard(creditCard));
+            cardNumber = in.getString("Enter the credit card number: ");
+        } while (!SpecialValidation.checkCard(cardNumber));
         cardHolder = in.getString("Enter the card holder: ");
         year = in.getInt("Enter the credit card expiration year", 4);
         month = in.getInt("Enter the credit card expiration month(In numbers)", 2);
@@ -54,8 +53,6 @@ public class Payment {
         if (answer.equals("yes")) {
             return true;
         }
-
         return false;
-
     }
 }

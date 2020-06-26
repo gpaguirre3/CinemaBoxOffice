@@ -11,7 +11,7 @@ package ec.edu.espe.cinemaboxoffice.view;
  */
 public class Cover {
 
-    public void cover() {
+    public void run() {
 
         System.out.println("(= =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =)");
         System.out.println("(=                                                             =)");
