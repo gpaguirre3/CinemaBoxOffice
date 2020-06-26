@@ -11,12 +11,12 @@ import java.util.Scanner;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Keyboard {
+public class DataValidation {
 
     Scanner string;
     
     
-    public Keyboard() {
+    public DataValidation() {
         string = new Scanner(System.in);
     }
 

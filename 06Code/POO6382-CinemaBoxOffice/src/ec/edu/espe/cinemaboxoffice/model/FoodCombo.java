@@ -5,7 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 import java.util.ArrayList;
 
 /**
@@ -29,7 +29,7 @@ public class FoodCombo {
     }
 
     public int menuCombo() {
-        Keyboard in = new Keyboard();
+        DataValidation in = new DataValidation();
         ArrayList<FoodCombo> combos = new ArrayList<>();
         boolean repeat = false;
         int election;

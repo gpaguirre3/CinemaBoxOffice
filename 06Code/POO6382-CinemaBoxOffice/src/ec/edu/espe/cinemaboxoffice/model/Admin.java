@@ -6,7 +6,7 @@
 package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.controller.RecordInformation;
-import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 import java.io.IOException;
 
@@ -19,7 +19,7 @@ public class Admin {
     private String userName;
     private int keyUser;
 
-    Keyboard in = new Keyboard();
+    DataValidation in = new DataValidation();
     RecordInformation infoRecord = new RecordInformation();
 
     public Admin(String userName, int keyUser) {

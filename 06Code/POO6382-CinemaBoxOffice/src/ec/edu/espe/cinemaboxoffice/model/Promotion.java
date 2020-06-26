@@ -17,7 +17,7 @@ public class Promotion{
     private String dayPromotion;
     private float pricePromotionFood;
     
-    private PricePurchase pricePurchases[];
+    private PurchasePrice pricePurchases[];
     private FoodCombo foodCombos[];
 
     public Promotion(String namePromotion, String dayPromotion, float pricePromotionFood) {
@@ -95,7 +95,7 @@ public class Promotion{
     /**
      * @param pricePurchases the pricePurchases to set
      */
-    public void setPricePurchases(PricePurchase[] pricePurchases) {
+    public void setPricePurchases(PurchasePrice[] pricePurchases) {
         this.pricePurchases = pricePurchases;
     }
 

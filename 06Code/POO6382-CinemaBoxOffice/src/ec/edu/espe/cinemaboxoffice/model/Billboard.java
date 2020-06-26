@@ -5,7 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 import java.io.File;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class Billboard {
     private Room room;
     private Admin admin;
 
-    Keyboard in = new Keyboard();
+    DataValidation in = new DataValidation();
     FileManagerLib fileManagerLib;
     Seat seat;
     Ticket ticket;
@@ -32,7 +32,7 @@ public class Billboard {
             int option = in.getInt("Please, enter an option: ", 1);
             switch (option) {
                 case 1:
-                    showMoviesList();
+                    showBillboard();
                     break;
                 case 2:
                     showPromotions();
@@ -47,7 +47,7 @@ public class Billboard {
         } while (repeat == false);
     }
 
-    public void showMoviesList() {
+    public void showBillboard() {
         String selection;
         fileManagerLib = new FileManagerLib("MovieList.csv");
         FileManagerLib.readFile();
@@ -74,7 +74,7 @@ public class Billboard {
         Ticket.generateTicket(chooseSeat(selection), selection);
     }
 
-    public void choosePromotion(int numberPromotion) {
+    public void choosePromotion(int PromotionNumber) {
         String selection = in.getString("choose the title movie: ");
         fileManagerLib = new FileManagerLib(selection + ".csv");
         FileManagerLib.readFile();
@@ -86,7 +86,7 @@ public class Billboard {
         int chosenSeat;
         int aux = 0;
         do {
-            chosenSeat = in.getInt("choose the number of seat: ", 2);
+            chosenSeat = in.getInt("Choose the number of seat[1-50]: ", 2);
             if (chosenSeat > 0 & chosenSeat < 51) {
                 seat = new Seat(selection, chosenSeat, true);
                 FileManagerLib.writeFile(seat.toString());

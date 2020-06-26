@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Temp
 
 import ec.edu.espe.cinemaboxoffice.controller.FileManager;
-import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 
 /**
  *
@@ -13,13 +13,13 @@ import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
 package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.controller.FileManager;
-import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class PricePurchase {
+public class PurchasePrice {
 
     private float pricePurchase;
     private int numberTickets;
@@ -27,9 +27,9 @@ public class PricePurchase {
 
     Bill bills;
 
-    public static void calculatePriceTicket(String ticketTitleMovie) {
-        Keyboard in = new Keyboard();
-        float moviePriceTicket = Float.parseFloat(searchDataTicket("MovieList.csv", ticketTitleMovie, 4));
+    public static void calculateTicketPrice(String ticketTitleMovie) {
+        DataValidation in = new DataValidation();
+        float moviePriceTicket = Float.parseFloat(searchTicketData("MovieList.csv", ticketTitleMovie, 4));
         
         String purchaseAnswer;
         purchaseAnswer = in.getString("Would you like to purchase the movie ticket?[yes/no]");
@@ -39,7 +39,7 @@ public class PricePurchase {
         }
     }
 
-    public static String searchDataTicket(String nameFile, String titleMovie, int positionData) {
+    public static String searchTicketData(String nameFile, String titleMovie, int positionData) {
         String[] searchWord  = null;
         int a = 0;
         FileManager file = new FileManager(nameFile, "");

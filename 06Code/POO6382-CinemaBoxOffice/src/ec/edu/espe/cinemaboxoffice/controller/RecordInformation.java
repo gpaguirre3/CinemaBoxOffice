@@ -9,7 +9,7 @@ import ec.edu.espe.cinemaboxoffice.model.FoodCombo;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Promotion;
 import ec.edu.espe.cinemaboxoffice.model.Room;
-import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 import java.io.IOException;
 
@@ -21,7 +21,7 @@ public class RecordInformation {
 
     private Movie movie;
 
-    Keyboard in = new Keyboard();
+    DataValidation in = new DataValidation();
 
     public void createMovie() throws IOException {
 
@@ -39,8 +39,8 @@ public class RecordInformation {
             movieGender = in.getString("Enter the movie gender: ");
             room.showRoomData();
             roomNumberForMovie = in.getInt("Enter the number movie room: )", 1);
-            roomFormatForMovie = defineFormatRoom(roomNumberForMovie, roomFormatForMovie, moviePrice);
-            moviePrice = calculatePriceMovie(roomFormatForMovie, moviePrice);
+            roomFormatForMovie = defineRoomFormat(roomNumberForMovie, roomFormatForMovie, moviePrice);
+            moviePrice = calculateMoviePrice(roomFormatForMovie, moviePrice);
             movie = new Movie(movieTitle, movieGender, roomNumberForMovie, roomFormatForMovie, moviePrice);
             System.out.println(FileManagerLib.writeFile(movie.toString()));
             answer = in.getStringAnswer("Add more promotions[yes/no]: ");
@@ -50,7 +50,7 @@ public class RecordInformation {
         } while (repeat == false);
     }
 
-    public String defineFormatRoom(int roomNumberForMovie, String roomFormatForMovie, float moviePrice) {
+    public String defineRoomFormat(int roomNumberForMovie, String roomFormatForMovie, float moviePrice) {
         boolean repeat = false;
         do {
             if (roomNumberForMovie < 7 & roomNumberForMovie > 0) {
@@ -67,7 +67,7 @@ public class RecordInformation {
         return roomFormatForMovie;
     }
 
-    public float calculatePriceMovie(String roomFormatForMovie, float moviePrice) {
+    public float calculateMoviePrice(String roomFormatForMovie, float moviePrice) {
         if ("2D".equals(roomFormatForMovie)) {
             moviePrice = 6.50f;
         } else {

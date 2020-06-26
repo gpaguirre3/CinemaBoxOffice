@@ -18,7 +18,7 @@ public class Ticket {
     private String roomAssignment;
     private float priceTicket;
 
-    PricePurchase pricePurchase;
+    PurchasePrice pricePurchase;
 
     public Ticket(int seat, String titleMovie, String roomAssignment, float priceTicket) {
         this.key = indexCounter + 1;
@@ -35,12 +35,12 @@ public class Ticket {
     }
     
     public static void generateTicket(int seat, String selection) {
-        String numberRomm = PricePurchase.searchDataTicket("MovieList.csv", selection, 2);
-        String priceOfTheTicket = PricePurchase.searchDataTicket("MovieList.csv", selection, 4);
+        String numberRomm = PurchasePrice.searchTicketData("MovieList.csv", selection, 2);
+        String priceOfTheTicket = PurchasePrice.searchTicketData("MovieList.csv", selection, 4);
         float priceTheTicket = Float.parseFloat(priceOfTheTicket);
         Ticket ticket = new Ticket(seat, selection, numberRomm, priceTheTicket);
         ticket.showDataTicket();
-        PricePurchase.calculatePriceTicket(selection);
+        PurchasePrice.calculateTicketPrice(selection);
     }
     
     public void showDataTicket(){
@@ -134,14 +134,14 @@ public class Ticket {
     /**
      * @return the pricePurchase
      */
-    public PricePurchase getPricePurchase() {
+    public PurchasePrice getPricePurchase() {
         return pricePurchase;
     }
 
     /**
      * @param pricePurchase the pricePurchase to set
      */
-    public void setPricePurchase(PricePurchase pricePurchase) {
+    public void setPricePurchase(PurchasePrice pricePurchase) {
         this.pricePurchase = pricePurchase;
     }
 

@@ -5,8 +5,9 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+import ec.edu.espe.cinemaboxoffice.utils.SpecialValidation;
 
 /**
  *
@@ -17,9 +18,9 @@ public class Bill {
     private Customer customer;
     private int idBill;
     private float priceToPay;
-    
+
     Payment payment = new Payment();
-    Keyboard in = new Keyboard();
+    DataValidation in = new DataValidation();
     FileManagerLib file;
 
     public Bill(Customer customer, int idBill, float priceToPay) {
@@ -34,7 +35,10 @@ public class Bill {
         String customerName;
         int customerAge;
         boolean statement = false;
-        customerId = in.getString("Enter your ID:");
+
+        do {
+            customerId = in.getString("Enter your ID:");
+        } while (!SpecialValidation.validateCI(customerId));
         customerName = in.getString("Enter your name:");
         customerAge = in.getInt("Enter your age", 2);
         customer = new Customer(customerId, customerName, customerAge);
@@ -48,10 +52,6 @@ public class Bill {
             System.out.println("Bill not created because the payment wasn't succesful");
         }
         return null;
-
-    }
-
-    public void saveBill() {
 
     }
 

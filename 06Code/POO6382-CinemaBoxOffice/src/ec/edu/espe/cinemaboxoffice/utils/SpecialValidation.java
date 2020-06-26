@@ -11,15 +11,8 @@ import java.util.StringTokenizer;
  *
  * @author Gabriel Aguirre
  */
-public class Validation {
+public class SpecialValidation {
 
-    /*
-    String card;
-    boolean valid;
-    valid=Validation.checkCard(card);
-    if(valid){
-    System.out.println("the card ir : " +card);
-     */
     public static boolean checkCard(String card) {
         if (card.length() != 16) {
             return false;
@@ -41,16 +34,7 @@ public class Validation {
             return false;
         }
     }
-    
-    /*
-        String identificationCard;
-        boolean valid;  
-        valid=validation.verifyID(identificationCard);
-        if(valid){
-            System.out.println("the identificationCard is : " +identificationCard);
-        }else 
-            System.out.println("the identificationCard is incorrect : ");
-     */
+
     public static boolean validateCI(String CI) {
         if (CI.length() != 10) {
             return false;
@@ -60,7 +44,6 @@ public class Validation {
                 return false;
             }
         }
-
         int lastDigit = Character.getNumericValue((CI.charAt(CI.length() - 1)));
         int digit;
         int sumPairs = 0;
@@ -75,7 +58,6 @@ public class Validation {
                 oddSum += (digit * 2) > 9 ? (digit * 2) - 9 : (digit * 2);
             }
         }
-
         int total = sumPairs + oddSum;
         int higher = (10 - (total % 10)) + total;
 
@@ -85,19 +67,4 @@ public class Validation {
 
         return lastDigit == (higher - total);
     }
-
-    public static boolean validateTime(String time) {
-        if (time.length() < 0) {
-            return false;
-        }
-        return true;
-    }
-
-    public static boolean validateWord(final String word) {
-        final String character = "1234567890}{,.+-=)(Â¿?Â¡!#@$%&/'*";
-        StringTokenizer compareWord = new StringTokenizer(character, word);
-        String ret = compareWord.hasMoreTokens() ? character.substring(compareWord.nextToken().length()) : null;
-        return false;
-    }
-
 }

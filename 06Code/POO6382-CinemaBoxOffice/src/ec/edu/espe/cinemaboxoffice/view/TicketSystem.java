@@ -5,7 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
-import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 import java.io.IOException;
 
 /**
@@ -19,7 +19,7 @@ public class TicketSystem {
         Cover cover = new Cover();
         cover.cover();
         
-        Keyboard in = new Keyboard();
+        DataValidation in = new DataValidation();
         AdminSystem adminSystem = new AdminSystem();
         CustomerSystem customerSystem = new CustomerSystem();
         
@@ -29,10 +29,6 @@ public class TicketSystem {
             System.out.println("----CINEMA BOX OFFICE----");
             System.out.println(" 1: Admin \n 2: Customer \n 3: Exit");
             int option2 = in.getInt("Enter an option: ", 1);
-/**<<<<<<< HEAD
-            
-=======
->>>>>>> 544bcb6c4b459c37ff6db3cf81c860801f613952*/
             switch (option2) {
                 case 1:
                     adminSystem.manager();
