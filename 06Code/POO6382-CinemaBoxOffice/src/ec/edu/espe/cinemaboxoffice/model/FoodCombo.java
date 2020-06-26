@@ -33,23 +33,22 @@ public class FoodCombo {
         ArrayList<FoodCombo> combos = new ArrayList<>();
         boolean repeat = false;
         int election;
-        combos.add(new FoodCombo(1,"CocaCola", "1", "cangreburger", 2.50F));
-        combos.add(new FoodCombo(2,"CocaCola", "2", "hot dog", 2.50F));
-        combos.add(new FoodCombo(3,"CocaCola", "3", "pizza", 2.50F));
-        combos.add(new FoodCombo(4,"CocaCola", "4", "chips", 2.50F));
-        combos.add(new FoodCombo(5,"CocaCola", "5", "cangreburger", 2.50F));
+        combos.add(new FoodCombo(1, "CocaCola", "Chocolate Bar", "Pop-Corn", 2.50F));
+        combos.add(new FoodCombo(2, "Sprite", "Candies", "Hot-Dog", 2.50F));
+        combos.add(new FoodCombo(3, "Fanta", "Gummies", "Pizza", 2.50F));
+        combos.add(new FoodCombo(4, "Seven Up", "Doritos", "Chips", 2.50F));
+        combos.add(new FoodCombo(5, "Fiora Vanti", "Ice-Cream", "Nachos", 2.50F));
         System.out.println(combos);
         do {
-            election = in.getInt("Choose the number of combo: ", 1);
-            if (election < 5 & election > 0) {
+            election = in.getInt("Choose the combo you want to add: ", 1);
+            if (election <= 5 & election > 0) {
                 combos.get(election);
                 repeat = true;
-            }
-            else{
-                System.out.println("The combo don't exist");
+            } else {
+                System.out.println("The combo doesn' exist");
                 repeat = false;
             }
-        } while(repeat = false); 
+        } while (repeat = false);
         return election;
     }
 

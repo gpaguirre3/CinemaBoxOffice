@@ -27,7 +27,7 @@ public class Keyboard {
             data = string.nextLine();
             if((!data.matches("^[ A-Za-z0-9]+$"))){
                 data = "";
-                System.out.println("Special Characters Not Allowed");
+                System.out.println("Special Characters Not Allowed\n");
             }
         }
         return data;
@@ -52,7 +52,7 @@ public class Keyboard {
             data = string.nextLine();
             if (!data.matches("[0-9]{" + characters + "}")) {
                 data = "";
-                System.out.println("\nIncorrect data, numbers only ");
+                System.out.println("\nIncorrect data, numbers only\n");
             }
         }
         return Integer.parseInt(data);

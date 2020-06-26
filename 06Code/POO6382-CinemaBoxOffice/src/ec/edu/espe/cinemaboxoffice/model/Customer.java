@@ -12,46 +12,35 @@ import java.io.IOException;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class Customer {
-    
-    private String cardNumber;
+
     private String id;
     private String name;
     private int age;
 
-    public Customer(String cardNumber, String id, String name, int age) {
-        this.cardNumber = cardNumber;
+    public Customer(String id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
     }
 
     public Customer() {
-       
+        
     }
 
     @Override
     public String toString() {
-        return "Customer{" + "cardNumber=" + cardNumber + ", id=" + id + ", name=" + name + ", age=" + age + '}';
+        return "Client data:{" +id + ", name=" + name + ", age=" + age + '}';
     }
 
     
     
-    
-    public void enterBillboard() throws IOException{
+    public void enterBillboard() throws IOException {
         Billboard billboard = new Billboard();
         billboard.billboardMenu();
     }
-    
-    public void exitBillboard(){
-        
-    }
 
-    public String getCardNumber() {
-        return cardNumber;
-    }
+    public void exitBillboard() {
 
-    public void setCardNumber(String cardNumber) {
-        this.cardNumber = cardNumber;
     }
 
     public String getId() {
@@ -77,7 +66,5 @@ public class Customer {
     public void setAge(int age) {
         this.age = age;
     }
-    
-    
-    
+
 }

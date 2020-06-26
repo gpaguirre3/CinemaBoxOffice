@@ -21,11 +21,11 @@ public final class FileManager {
     private String fileName;
     private boolean answer;
     private File file;
-    private String test;
+    private String dataSeekerLine;
 
-    public FileManager(String fileName, String test) {
+    public FileManager(String fileName, String dataSeekerLine) {
         this.fileName = fileName;
-        this.test = test;
+        this.dataSeekerLine = dataSeekerLine;
     }
 
     public boolean createFile() {
@@ -52,7 +52,7 @@ public final class FileManager {
                 String searchWord[] = line.split(",");
                 if (searchWord[0].equals(seeker)) {
                     flat = true;
-                    setTest(line);
+                    setDataSeekerLine(line);
                 }
             }
             if (flat == false) {
@@ -64,19 +64,14 @@ public final class FileManager {
         }        
     }
 
-    /**
-     * @return the test
-     */
-    public String getTest() {
-        return test;
+    public String getDataSeekerLine() {
+        return dataSeekerLine;
     }
 
-    /**
-     * @param test the test to set
-     */
-    public void setTest(String test) {
-        this.test = test;
+    public void setDataSeekerLine(String dataSeekerLine) {
+        this.dataSeekerLine = dataSeekerLine;
     }
+
     
     
 }

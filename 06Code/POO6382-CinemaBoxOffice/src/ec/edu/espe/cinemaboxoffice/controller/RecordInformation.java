@@ -31,7 +31,7 @@ public class RecordInformation {
         String movieGender;
         int roomNumberForMovie;
         String roomFormatForMovie = "";
-        float moviePrice = 3.0f;
+        float moviePrice = 0f;
         FileManagerLib file = new FileManagerLib("MovieList.csv");
         do {
             Room room = new Room();
@@ -61,7 +61,7 @@ public class RecordInformation {
                 }
                 repeat = true;
             } else {
-                System.out.println("the room don't exist");
+                System.out.println("The room doesn't exist");
             }
         } while (repeat == false);
         return roomFormatForMovie;
@@ -69,9 +69,9 @@ public class RecordInformation {
 
     public float calculatePriceMovie(String roomFormatForMovie, float moviePrice) {
         if ("2D".equals(roomFormatForMovie)) {
-            moviePrice = moviePrice + 3.50f;
+            moviePrice = 6.50f;
         } else {
-            moviePrice = moviePrice + 5.0f;
+            moviePrice = 8.0f;
         }
         return moviePrice;
     }
@@ -90,8 +90,8 @@ public class RecordInformation {
         String answer;
         do {
             name = "Combo" + Integer.toString(foodCombo.menuCombo());
-            day = in.getString("Enter the day promotion: ");
-            answer = in.getStringAnswer("Add more movies[yes/no]: ");
+            day = in.getString("Enter the promotion day: ");
+            answer = in.getStringAnswer("Add another combo?[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
                 Promotion promotion = new Promotion(name, day, 2.50f);
