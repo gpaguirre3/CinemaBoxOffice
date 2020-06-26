@@ -28,7 +28,7 @@ public class Billboard {
         boolean repeat = false;
         int election;
         do {
-            System.out.println("1: See Billboard \n 2: Promotions \n 3: Exit");
+            System.out.println(" 1: See Billboard \n 2: Promotions \n 3: Exit");
             int option = in.getInt("Please, enter an option: ", 1);
             switch (option) {
                 case 1:
@@ -55,7 +55,7 @@ public class Billboard {
         if (f.length() == 0) {
             System.out.println("No movies have been registered yet");
         } else {
-            selection = in.getString("What movie do you want to watch?: ");
+            selection = in.getString("\nWhat movie do you want to watch?: ");
             chooseMovie(selection);
         }
     }
@@ -64,7 +64,7 @@ public class Billboard {
         int election;
         fileManagerLib = new FileManagerLib("PromotionsList.csv");
         FileManagerLib.readFile();
-        election = in.getInt("choose the number of promotion[100n]: ", 4);
+        election = in.getInt("\nchoose the number of promotion[100-]: ", 4);
         choosePromotion(election);
     }
 
@@ -86,7 +86,7 @@ public class Billboard {
         int chosenSeat;
         int aux = 0;
         do {
-            chosenSeat = in.getInt("Choose the number of seat[1-50]: ", 2);
+            chosenSeat = in.getInt("\nChoose the number of seat[1-50]: ", 2);
             if (chosenSeat > 0 & chosenSeat < 51) {
                 seat = new Seat(selection, chosenSeat, true);
                 FileManagerLib.writeFile(seat.toString());

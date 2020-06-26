@@ -32,7 +32,7 @@ public class Promotion{
 
     @Override
     public String toString() {
-        return promotionKey + "," + promotionName + "," + promotionDay + "," + foodPricePromotion + '}';
+        return promotionKey + "," + promotionName + "," + promotionDay + "," + foodPricePromotion;
     }
 
 

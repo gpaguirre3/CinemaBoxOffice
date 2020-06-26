@@ -52,7 +52,7 @@ public class DataValidation {
             data = string.nextLine();
             if (!data.matches("[0-9]{" + characters + "}")) {
                 data = "";
-                System.out.println("\nIncorrect data, numbers only\n");
+                System.out.println("\nIncorrect data\n");
             }
         }
         return Integer.parseInt(data);
