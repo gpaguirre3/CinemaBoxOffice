@@ -10,9 +10,9 @@ package ec.edu.espe.cinemaboxoffice.view;
  * @author Josue
  */
 public class Cover {
-    
-    public void cover(){
-        
+
+    public void cover() {
+
         System.out.println("(= =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =) =)");
         System.out.println("(=                                                             =)");
         System.out.println("(=                                                             =)");
@@ -38,5 +38,5 @@ public class Cover {
         System.out.println("\n\n");
 
     }
-    
+
 }

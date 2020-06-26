@@ -7,7 +7,6 @@ package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.controller.RecordInformation;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
-import ec.edu.espe.cinemaboxoffice.utils.Screen;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 import java.io.IOException;
 
@@ -21,12 +20,11 @@ public class Admin {
     private int keyUser;
 
     Keyboard in = new Keyboard();
-    Screen cls = new Screen();
     RecordInformation infoRecord = new RecordInformation();
 
     public Admin(String userName, int keyUser) {
-        this.userName = userName = "Kevin";
-        this.keyUser = keyUser = 123;
+        this.userName = userName = "Cinema";
+        this.keyUser = keyUser = 321;
     }
 
     public void adminMenu() throws IOException {

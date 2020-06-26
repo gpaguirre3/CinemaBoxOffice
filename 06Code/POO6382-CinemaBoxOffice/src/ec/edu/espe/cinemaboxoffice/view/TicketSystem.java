@@ -6,7 +6,6 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
-import ec.edu.espe.cinemaboxoffice.utils.Screen;
 import java.io.IOException;
 
 /**
@@ -21,7 +20,6 @@ public class TicketSystem {
         cover.cover();
         
         Keyboard in = new Keyboard();
-        Screen cls = new Screen();
         AdminSystem adminSystem = new AdminSystem();
         CustomerSystem customerSystem = new CustomerSystem();
         
@@ -37,11 +35,9 @@ public class TicketSystem {
 >>>>>>> 544bcb6c4b459c37ff6db3cf81c860801f613952*/
             switch (option2) {
                 case 1:
-                    cls.cleanScreen();
                     adminSystem.manager();
                     break;
                 case 2:
-                    cls.cleanScreen();
                     customerSystem.buyer();
                     break;
                 case 3:

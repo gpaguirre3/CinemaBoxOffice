@@ -6,7 +6,6 @@
 package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
-import ec.edu.espe.cinemaboxoffice.utils.Screen;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +20,6 @@ public class Billboard {
     private Admin admin;
 
     Keyboard in = new Keyboard();
-    Screen cls = new Screen();
     FileManagerLib fileManagerLib;
     Seat seat;
     Ticket ticket;
@@ -40,11 +38,9 @@ public class Billboard {
                     FileManagerLib.findRecord(selection);
                     break;
                 case 2:
-                    Screen.cleanScreen();
                     checkEmptyness(selection);
                     break;
                 case 3:
-                    Screen.cleanScreen();
                     showPromotions();
                     election = in.getInt("choose the number of promotion[100n]: ", 4);
                     choosePromotion(election);

@@ -15,7 +15,6 @@ public class Keyboard {
 
     Scanner string;
     
-    Validation validate = new Validation();
     
     public Keyboard() {
         string = new Scanner(System.in);
@@ -31,7 +30,6 @@ public class Keyboard {
                 System.out.println("Special Characters Not Allowed");
             }
         }
-        validate.checkCard(data);
         return data;
     }
     
