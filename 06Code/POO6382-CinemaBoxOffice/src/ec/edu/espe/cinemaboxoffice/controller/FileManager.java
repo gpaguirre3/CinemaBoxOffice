@@ -23,9 +23,11 @@ public final class FileManager {
     private String fileName;
     private File file;
     private boolean answer = true;
+    private String test;
 
-    public FileManager(String fileName) {
+    public FileManager(String fileName, String test) {
         this.fileName = fileName;
+        this.test = test;
     }
 
     public boolean createFile() {
@@ -87,19 +89,18 @@ public final class FileManager {
         }
     }
 
-    public String[] findRecord(String seeker) {
+    public String findRecord(String seeker) {
         createFile();
         boolean flat = false;
-        String linea ;
-        String searchWord[] = null;
+        String line = null;
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferReader = new BufferedReader(fileReader);
-            while ((linea = bufferReader.readLine()) != null) {
-                searchWord = linea.split(",");
-                System.out.println(searchWord);
+            while ((line = bufferReader.readLine()) != null) {
+                String searchWord[] = line.split(",");
                 if (searchWord[0].equals(seeker)) {
                     flat = true;
+
                 }
 
             }
@@ -111,6 +112,23 @@ public final class FileManager {
             Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
             answer = false;
         }
-        return searchWord;
+        test = line;        
+        return test;
     }
+
+    @Override
+    public String toString() {
+        return test;
+    }
+
+    public String getTest() {
+        return test;
+    }
+
+    public void setTest(String test) {
+        this.test = test;
+    }
+    
+    
+    
 }

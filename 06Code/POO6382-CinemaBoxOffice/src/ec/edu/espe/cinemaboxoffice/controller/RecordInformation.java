@@ -32,12 +32,12 @@ public class RecordInformation {
         int roomNumberForMovie;
         String roomFormatForMovie = "";
         float moviePrice = 3.0f;
-        FileManager file = new FileManager("MovieList.csv");
+        FileManager file = new FileManager("MovieList.csv", "");
         do {
             Room room = new Room();
             movieTitle = in.getString("Enter the movie title");
             movieGender = in.getString("Enter the movie gender: ");
-            room.showDataRoom();
+            room.showRoomData();
             roomNumberForMovie = in.getInt("Enter the number movie room: )", 1);
             roomFormatForMovie = defineFormatRoom(roomNumberForMovie, roomFormatForMovie, moviePrice);
             moviePrice = calculatePriceMovie(roomFormatForMovie, moviePrice);
@@ -77,12 +77,12 @@ public class RecordInformation {
     }
 
     public void deleteMovie(String fileName) {
-        FileManager file = new FileManager(fileName);
+        FileManager file = new FileManager(fileName, "");
         file.deleteFile();
     }
 
     public void createPromotion() throws IOException {
-        FileManager file = new FileManager("PromotionsList.csv");
+        FileManager file = new FileManager("PromotionsList.csv",  "");
         FoodCombo foodCombo = new FoodCombo(0, "", "", "", 0);
         boolean repeat = false;
         String name;
@@ -101,7 +101,7 @@ public class RecordInformation {
     }
 
     public void deletePromotion(String fileName) {
-        FileManager file = new FileManager(fileName);
+        FileManager file = new FileManager(fileName, "");
         file.deleteFile();
     }
 }

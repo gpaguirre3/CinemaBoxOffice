@@ -30,13 +30,13 @@ public class Room {
     public Room() {
     }
 
-    public void showDataRoom() {
+    public void showRoomData() {
         ArrayList<Room> rooms = new ArrayList<>();
         for (int i = 0; i<3; i++){
-            rooms.add(new Room(i+1, 100, "2D", 3.50f));
+            rooms.add(new Room(i+1, 50, "2D", 3.50f));
         }
-        for (int j = 0; j<3; j++){
-            rooms.add(new Room(j+1, 100, "3D", 5.00f));
+        for (int j = 3; j<6; j++){
+            rooms.add(new Room(j+1, 50, "3D", 5.00f));
         }
         System.out.println(rooms);
     }
