@@ -19,18 +19,21 @@ public class PricePurchase {
 
     Bill bills;
 
-    public static void calculatePriceTicket(String ticketData) {
-
-        String foundLine;
+    public static void calculatePriceTicket(String ticketTitleMovie) {
+        System.out.println("the price ticket is: " + searchDataTicket("MovieList.csv", ticketTitleMovie, 4));
+    }
+    
+    public  static String searchDataTicket(String nameFile, String titleMovie, int positionData){
+        String[] searchWord = null;
         int a = 0;
-        FileManager file = new FileManager("MovieList.csv", "");
-        foundLine = file.getTest();
-        System.out.println(foundLine);
-        while (a == 3) {
-            String[] searchWord = foundLine.split(",");
-            System.out.println(searchWord[3]);
+        FileManager file = new FileManager(nameFile, "");
+        file.findRecord(titleMovie);
+        file.getTest();
+        while (a < positionData) {
+            searchWord = file.getTest().split(",");
             a++;
         }
+        return searchWord[positionData];
     }
 
     public void calculatePricePromotion() {

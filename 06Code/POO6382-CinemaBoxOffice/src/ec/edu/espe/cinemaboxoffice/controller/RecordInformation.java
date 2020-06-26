@@ -10,6 +10,7 @@ import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Promotion;
 import ec.edu.espe.cinemaboxoffice.model.Room;
 import ec.edu.espe.cinemaboxoffice.utils.Keyboard;
+import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 import java.io.IOException;
 
 /**
@@ -19,7 +20,6 @@ import java.io.IOException;
 public class RecordInformation {
 
     private Movie movie;
-    private Promotion promotion;
 
     Keyboard in = new Keyboard();
 
@@ -32,7 +32,7 @@ public class RecordInformation {
         int roomNumberForMovie;
         String roomFormatForMovie = "";
         float moviePrice = 3.0f;
-        FileManager file = new FileManager("MovieList.csv", "");
+        FileManagerLib file = new FileManagerLib("MovieList.csv");
         do {
             Room room = new Room();
             movieTitle = in.getString("Enter the movie title");
@@ -42,8 +42,8 @@ public class RecordInformation {
             roomFormatForMovie = defineFormatRoom(roomNumberForMovie, roomFormatForMovie, moviePrice);
             moviePrice = calculatePriceMovie(roomFormatForMovie, moviePrice);
             movie = new Movie(movieTitle, movieGender, roomNumberForMovie, roomFormatForMovie, moviePrice);
-            System.out.println(file.writeFile(movie.toString()));
-            answer = in.getStringAnswer("Add more movies[yes/no]: ");
+            System.out.println(FileManagerLib.writeFile(movie.toString()));
+            answer = in.getStringAnswer("Add more promotions[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
             }
@@ -77,12 +77,12 @@ public class RecordInformation {
     }
 
     public void deleteMovie(String fileName) {
-        FileManager file = new FileManager(fileName, "");
-        file.deleteFile();
+        FileManagerLib file = new FileManagerLib(fileName);
+        FileManagerLib.deleteFile();
     }
 
     public void createPromotion() throws IOException {
-        FileManager file = new FileManager("PromotionsList.csv",  "");
+        FileManagerLib file = new FileManagerLib("PromotionsList.csv");
         FoodCombo foodCombo = new FoodCombo(0, "", "", "", 0);
         boolean repeat = false;
         String name;
@@ -94,14 +94,14 @@ public class RecordInformation {
             answer = in.getStringAnswer("Add more movies[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
+                Promotion promotion = new Promotion(name, day, 2.50f);
+                FileManagerLib.writeFile(promotion.toString());
             }
         } while (repeat == false);
-        promotion = new Promotion(name, day);
-        file.writeFile(promotion.toString());
     }
 
     public void deletePromotion(String fileName) {
-        FileManager file = new FileManager(fileName, "");
-        file.deleteFile();
+        FileManagerLib file = new FileManagerLib(fileName);
+        FileManagerLib.deleteFile();
     }
 }

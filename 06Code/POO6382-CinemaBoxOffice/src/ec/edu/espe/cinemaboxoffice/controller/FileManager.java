@@ -8,9 +8,7 @@ package ec.edu.espe.cinemaboxoffice.controller;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -21,8 +19,8 @@ import java.util.logging.Logger;
 public final class FileManager {
 
     private String fileName;
+    private boolean answer;
     private File file;
-    private boolean answer = true;
     private String test;
 
     public FileManager(String fileName, String test) {
@@ -43,56 +41,10 @@ public final class FileManager {
         return answer;
     }
 
-    public boolean writeFile(String informationToSave) {
-        createFile();
-        try (FileWriter fileWriter = new FileWriter(file, true);
-                PrintWriter printWriter = new PrintWriter(fileWriter)) {
-            printWriter.println(informationToSave);
-            printWriter.close();
-            try {
-                fileWriter.close();
-            } catch (IOException ex) {
-                Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
-                answer = false;
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
-            answer = false;
-        }
-        return answer;
-    }
-
-    public boolean readFile() {
-        createFile();
-        try {
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferReader = new BufferedReader(fileReader);
-            String stringData = "";
-            while (stringData != null) {
-                System.out.println(stringData);
-                stringData = bufferReader.readLine();
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
-            answer = false;
-        }
-        return answer;
-    }
-
-    public void deleteFile() {
-        file = new File(fileName);
-        if (file.exists()) {
-            file.delete();
-            System.out.println("The file " + file + " was delete");
-        } else {
-            System.out.println("The file " + file + " don't exist");
-        }
-    }
-
-    public String findRecord(String seeker) {
+    public void findRecord(String seeker) {
         createFile();
         boolean flat = false;
-        String line = null;
+        String line;
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferReader = new BufferedReader(fileReader);
@@ -100,9 +52,8 @@ public final class FileManager {
                 String searchWord[] = line.split(",");
                 if (searchWord[0].equals(seeker)) {
                     flat = true;
-
+                    setTest(line);
                 }
-
             }
             if (flat == false) {
                 System.out.println("Non-existent movie or unregistered movies on "
@@ -110,25 +61,22 @@ public final class FileManager {
             }
         } catch (IOException ex) {
             Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
-            answer = false;
-        }
-        test = line;        
-        return test;
+        }        
     }
 
-    @Override
-    public String toString() {
-        return test;
-    }
-
+    /**
+     * @return the test
+     */
     public String getTest() {
         return test;
     }
 
+    /**
+     * @param test the test to set
+     */
     public void setTest(String test) {
         this.test = test;
     }
-    
     
     
 }

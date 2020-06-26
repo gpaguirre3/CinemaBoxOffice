@@ -5,8 +5,6 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.filemanagerlibrary.FileManagerLib;
-
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
@@ -20,7 +18,7 @@ public class Ticket {
     private String roomAssignment;
     private float priceTicket;
 
-    private PricePurchase pricePurchase;
+    PricePurchase pricePurchase;
 
     public Ticket(int seat, String titleMovie, String roomAssignment, float priceTicket) {
         this.key = indexCounter + 1;
@@ -33,13 +31,14 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket{" + "key=" + getKey() + ", seat=" + getSeat() + ", titleMovie=" + getTitleMovie() +  '}';
+        return "Ticket{" + "key=" + key + ", seat=" + seat + ", titleMovie=" + titleMovie + ", roomAssignment=" + roomAssignment + ", priceTicket=" + priceTicket + '}';
     }
     
     public static void generateTicket(int seat, String selection) {
-        FileManagerLib file = new FileManagerLib("MovieList.csv");
-        FileManagerLib.findRecord(selection);
-        Ticket ticket = new Ticket(seat, selection, "", 0);
+        String numberRomm = PricePurchase.searchDataTicket("MovieList.csv", selection, 2);
+        String priceOfTheTicket = PricePurchase.searchDataTicket("MovieList.csv", selection, 4);
+        float priceTheTicket = Float.parseFloat(priceOfTheTicket);
+        Ticket ticket = new Ticket(seat, selection, numberRomm, priceTheTicket);
         ticket.showDataTicket();
         PricePurchase.calculatePriceTicket(selection);
     }

@@ -16,40 +16,25 @@ public class Promotion{
     private String namePromotion;
     private String dayPromotion;
     private float pricePromotionFood;
-    private Ticket ticket;
     
     private PricePurchase pricePurchases[];
     private FoodCombo foodCombos[];
 
-    public Promotion(String namePromotion, String dayPromotion) {
+    public Promotion(String namePromotion, String dayPromotion, float pricePromotionFood) {
         this.keyPromotion = indexEnumerator + 1;
         indexEnumerator = indexEnumerator + 1;
         this.namePromotion = namePromotion;
         this.dayPromotion = dayPromotion;
+        this.pricePromotionFood = pricePromotionFood;
     }
-    
-    public void showPromotionData(){
-        
-    }
+
+  
 
     @Override
     public String toString() {
-        return  keyPromotion + "," + namePromotion + "," + dayPromotion + "," + pricePromotionFood;
+        return keyPromotion + "," + namePromotion + "," + dayPromotion + "," + pricePromotionFood + '}';
     }
 
-    /**
-     * @return the indexEnumerator
-     */
-    public static int getIndexEnumerator() {
-        return indexEnumerator;
-    }
-
-    /**
-     * @param aIndexEnumerator the indexEnumerator to set
-     */
-    public static void setIndexEnumerator(int aIndexEnumerator) {
-        indexEnumerator = aIndexEnumerator;
-    }
 
     /**
      * @return the keyPromotion
@@ -108,38 +93,10 @@ public class Promotion{
     }
 
     /**
-     * @return the ticket
-     */
-    public Ticket getTicket() {
-        return ticket;
-    }
-
-    /**
-     * @param ticket the ticket to set
-     */
-    public void setTicket(Ticket ticket) {
-        this.ticket = ticket;
-    }
-
-    /**
-     * @return the pricePurchases
-     */
-    public PricePurchase[] getPricePurchases() {
-        return pricePurchases;
-    }
-
-    /**
      * @param pricePurchases the pricePurchases to set
      */
     public void setPricePurchases(PricePurchase[] pricePurchases) {
         this.pricePurchases = pricePurchases;
-    }
-
-    /**
-     * @return the foodCombos
-     */
-    public FoodCombo[] getFoodCombos() {
-        return foodCombos;
     }
 
     /**
@@ -148,6 +105,6 @@ public class Promotion{
     public void setFoodCombos(FoodCombo[] foodCombos) {
         this.foodCombos = foodCombos;
     }
-    
-  
+
+   
 }

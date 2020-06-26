@@ -26,26 +26,18 @@ public class Billboard {
 
     public void billboardMenu() throws IOException {
         boolean repeat = false;
-        String selection = "";
         int election;
         do {
-            System.out.println("1: Search a movie \n 2: See Billboard \n 3: Promotions \n 4: Exit");
+            System.out.println("1: See Billboard \n 2: Promotions \n 3: Exit");
             int option = in.getInt("Please, enter an option: ", 1);
             switch (option) {
                 case 1:
-                    fileManagerLib = new FileManagerLib("MovieList.csv");
-                    selection = in.getString("Search: ");
-                    FileManagerLib.findRecord(selection);
+                    showMoviesList();
                     break;
                 case 2:
-                    checkEmptyness(selection);
+                    showPromotions();
                     break;
                 case 3:
-                    showPromotions();
-                    election = in.getInt("choose the number of promotion[100n]: ", 4);
-                    choosePromotion(election);
-                    break;
-                case 4:
                     repeat = true;
                     break;
                 default:
@@ -55,25 +47,25 @@ public class Billboard {
         } while (repeat == false);
     }
 
-    public void checkEmptyness(String selection) {
-        File f = new File("MovieList.csv");
-            if (f.length() == 0) {
-                System.out.println("No movies have been registered yet");
-            } else {
-                showMoviesList();
-                selection = in.getString("What movie do you want to watch?: ");
-                chooseMovie(selection);
-            }
-    }
-    
     public void showMoviesList() {
+        String selection;
         fileManagerLib = new FileManagerLib("MovieList.csv");
         FileManagerLib.readFile();
+        File f = new File("MovieList.csv");
+        if (f.length() == 0) {
+            System.out.println("No movies have been registered yet");
+        } else {
+            selection = in.getString("What movie do you want to watch?: ");
+            chooseMovie(selection);
+        }
     }
 
     public void showPromotions() {
+        int election;
         fileManagerLib = new FileManagerLib("PromotionsList.csv");
         FileManagerLib.readFile();
+        election = in.getInt("choose the number of promotion[100n]: ", 4);
+        choosePromotion(election);
     }
 
     public void chooseMovie(String selection) {
