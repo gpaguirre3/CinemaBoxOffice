@@ -17,8 +17,12 @@ public class AdminSystem {
     public void manager() throws IOException {
 
         Admin admin = new Admin("", 0);
-
-        admin.enterUser();
-        admin.adminMenu();
+        boolean permission = false;
+        while (permission == false) {
+            permission = admin.enterUser();
+            if (permission == true) {
+                admin.adminMenu();
+            }
+        }
     }
 }

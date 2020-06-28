@@ -27,6 +27,11 @@ public final class FileManager {
         this.fileName = fileName;
         this.dataSeekerLine = dataSeekerLine;
     }
+    
+    public FileManager(String fileName) {
+        this.fileName = fileName;
+        createFile();
+    }
 
     public boolean createFile() {
         file = new File(fileName);
@@ -41,27 +46,41 @@ public final class FileManager {
         return answer;
     }
 
-    public void findRecord(String seeker) {
-        createFile();
-        boolean flat = false;
-        String line;
+    public boolean findUsername(String seeker) {
+        boolean finder = false;
         try {
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferReader = new BufferedReader(fileReader);
-            while ((line = bufferReader.readLine()) != null) {
-                String searchWord[] = line.split(",");
-                if (searchWord[0].equals(seeker)) {
-                    flat = true;
-                    setDataSeekerLine(line);
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] contacto = line.split(",");
+                if ((contacto[0].equals(seeker)) | (contacto[1].equals(seeker))) {
+                    finder = true;
                 }
             }
-            if (flat == false) {
-                System.out.println("Non-existent movie or unregistered movies on "
-                        + "billboard");
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+        return finder;
+    }
+
+    public boolean findPassword(String seeker) {
+        boolean correctPass = false;
+        try {
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] contact = line.split(",");
+                if (contact[1].equals(seeker)) {
+
+                    correctPass = true;
+                }
             }
-        } catch (IOException ex) {
-            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
-        }        
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+        return correctPass;
     }
 
     public String getDataSeekerLine() {
@@ -72,6 +91,4 @@ public final class FileManager {
         this.dataSeekerLine = dataSeekerLine;
     }
 
-    
-    
 }

@@ -39,7 +39,7 @@ public class PurchasePrice {
         String[] searchWord  = null;
         int a = 0;
         FileManager file = new FileManager(nameFile, "");
-        file.findRecord(titleMovie);
+        file.findUsername(titleMovie);
         file.getDataSeekerLine();
         while (a < positionData) {
             searchWord = file.getDataSeekerLine().split(",");
