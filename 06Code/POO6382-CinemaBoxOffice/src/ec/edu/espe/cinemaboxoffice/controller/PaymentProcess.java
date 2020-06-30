@@ -3,18 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.cinemaboxoffice.model;
-
+package ec.edu.espe.cinemaboxoffice.controller;
 
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Billboard {
-    private String openingTime; 
-    private String closingTime;
-    private Admin admin;
-    private Movie movie;
-    private Promotion promotion;
+public class PaymentProcess {
     
 }

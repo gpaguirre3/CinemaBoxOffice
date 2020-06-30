@@ -32,13 +32,6 @@ public class Customer {
         return "Client data:{" +id + ", name=" + name + ", age=" + age + '}';
     }
 
-    
-    
-    public void enterBillboard() throws IOException {
-        Billboard billboard = new Billboard();
-        billboard.billboardMenu();
-    }
-
     public void exitBillboard() {
 
     }

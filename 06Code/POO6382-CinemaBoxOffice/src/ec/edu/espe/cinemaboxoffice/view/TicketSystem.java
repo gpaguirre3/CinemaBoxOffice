@@ -34,7 +34,7 @@ public class TicketSystem {
                     adminSystem.manager();
                     break;
                 case 2:
-                    customerSystem.buyer();
+                    customerSystem.seeBillboard();
                     break;
                 case 3:
                     repeat = true;

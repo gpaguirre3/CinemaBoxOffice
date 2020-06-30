@@ -23,9 +23,9 @@ public class Bill {
     DataValidation in = new DataValidation();
     FileManagerLib file;
 
-    public Bill(Customer customer, int idBill, float priceToPay) {
+    public Bill(Customer customer, int billId, float priceToPay) {
         this.customer = customer;
-        this.billId = idBill;
+        this.billId = billId;
         this.priceToPay = priceToPay;
     }
 
@@ -37,13 +37,13 @@ public class Bill {
         boolean statement = false;
 
         do {
-            customerId = in.getString("Enter your ID:");
+            customerId = in.getString("Enter your ID: ");
         } while (!SpecialValidation.validateCI(customerId));
-        customerName = in.getString("Enter your name:");
-        customerAge = in.getInt("Enter your age", 2);
+        customerName = in.getString("Enter your name: ");
+        customerAge = in.getInt("Enter your age: ", 2);
         customer = new Customer(customerId, customerName, customerAge);
         payment.createPayment(statement);
-        if (statement = true) {
+        if (statement == true) {
             file = new FileManagerLib(customerName + ".csv");
             FileManagerLib.writeFile(customer.toString());
             FileManagerLib.writeFile(payment.toString());
@@ -53,29 +53,5 @@ public class Bill {
         }
         return null;
 
-    }
-
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
-
-    public int getBillId() {
-        return billId;
-    }
-
-    public void setBillId(int billId) {
-        this.billId = billId;
-    }
-
-    public float getPriceToPay() {
-        return priceToPay;
-    }
-
-    public void setPriceToPay(float priceToPay) {
-        this.priceToPay = priceToPay;
     }
 }

@@ -40,7 +40,6 @@ public class Admin {
                     organizeMovieList();
                     break;
                 case 2:
-
                     organizePromotions();
                     break;
                 case 3:
@@ -162,33 +161,5 @@ public class Admin {
                     break;
             }
         } while (repeat == false);
-    }
-
-    /**
-     * @return the loginName
-     */
-    public String getUserName() {
-        return userName;
-    }
-
-    /**
-     * @param userName the loginName to set
-     */
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    /**
-     * @return the keyUser
-     */
-    public int getKeyUser() {
-        return keyUser;
-    }
-
-    /**
-     * @param keyUser the keyUser to set
-     */
-    public void setKeyUser(int keyUser) {
-        this.keyUser = keyUser;
     }
 }

@@ -5,7 +5,10 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.controller.MovieSelection;
+import ec.edu.espe.cinemaboxoffice.controller.PromotionSelection;
 import ec.edu.espe.cinemaboxoffice.model.Customer;
+import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 import java.io.IOException;
 
 /**
@@ -13,9 +16,30 @@ import java.io.IOException;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class CustomerSystem {
-    
-    public void buyer() throws IOException{
+
+    DataValidation in = new DataValidation();
+
+    public void seeBillboard() throws IOException {
         Customer customer = new Customer();
-        customer.enterBillboard();
+        boolean repeat = false;
+        int election;
+        do {
+            System.out.println(" 1: See Billboard \n 2: Promotions \n 3: Exit");
+            int option = in.getInt("Please, enter an option: ", 1);
+            switch (option) {
+                case 1:
+                    MovieSelection.showMovieList();
+                    break;
+                case 2:
+                    PromotionSelection.showPromotions();
+                    break;
+                case 3:
+                    repeat = true;
+                    break;
+                default:
+                    System.out.println("Incorrect option");
+                    break;
+            }
+        } while (repeat == false);
     }
 }
