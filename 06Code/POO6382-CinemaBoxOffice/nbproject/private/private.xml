@@ -5,15 +5,16 @@
         <group>
             <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/MovieSelection.java</file>
             <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/PromotionSelection.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/AdminSystem.java</file>
             <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/FileManager.java</file>
             <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Customer.java</file>
             <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Admin.java</file>
-            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/PasswordEncryptor.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/PasswordEncryptor.java</file>
             <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/TicketSystem.java</file>
             <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/CustomerSystem.java</file>
             <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Seat.java</file>
             <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/PurchasePrice.java</file>
-            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/PaymentProcess.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/Proyect_POO6382/06Code/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/BillboardManager.java</file>
         </group>
     </open-files>
 </project-private>
