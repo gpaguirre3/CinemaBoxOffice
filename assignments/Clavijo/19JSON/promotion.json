@@ -1,0 +1,9 @@
+{
+ "promotion": [
+   { "promotionKey": "One", "promotionName": "vip", "promotionDay": 1, "foodPricePromotion": 10.28 },
+   { "promotionKey": "two", "promotionName": "normal", "promotionDay": 2, "foodPricePromotion": 5.23 },
+   { "promotionKey": "three", "promotionName": "vip 2", "promotionDay": 3, "foodPricePromotion":8.28 },
+   { "promotionKey": "four", "promotionName": "principal", "promotionDay": 4, "foodPricePromotion": 12.12 }
+
+ ]
+}
