@@ -1,4 +1,4 @@
-<promotion>
+<promotions>
  <promotion promotionKey="One">
    <promotionName>vip</promotionName>
    <promotionDay>1</promotionDay>
@@ -9,7 +9,7 @@
    <promotionDay>2</promotionDay>
    <foodPricePromotion>5.23</foodPricePromotion>
  </promotion>
- <<promotion promotionKey="three">
+ <promotion promotionKey="three">
    <promotionName>vip2</promotionName>
    <promotionDay>3</promotionDay>
    <foodPricePromotion>8.28</foodPricePromotion>
@@ -19,3 +19,4 @@
    <promotionDay>4</promotionDay>
    <foodPricePromotion>12.12</foodPricePromotion>
  </promotion>
+</promotions>
