@@ -7,7 +7,7 @@ package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.cinemaboxoffice.utils.CardAndCIValidation;
-import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+import ec.edu.espe.filemanagerlibrary.FileManager;
 
 /**
  *
@@ -22,7 +22,7 @@ public class Payment {
     private int month;
 
     InputValidation in = new InputValidation();
-    FileManagerLib file;
+    FileManager file;
 
     public Payment(String cardHolder, String creditCard, int year, int month) {
         this.cardHolder = cardHolder;

@@ -5,12 +5,10 @@
  */
 package ec.edu.espe.cinemaboxoffice.controller;
 
-import ec.edu.espe.cinemaboxoffice.utils.PasswordEncryptor;
 import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
-import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+import ec.edu.espe.filemanagerlibrary.FileManager;
 import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
 
 /**
  *
@@ -20,13 +18,13 @@ public class BillboardManager {
 
     InputValidation in = new InputValidation();
     RecordInformation infoRecord = new RecordInformation();
-
+    
     public void showBillboard() {
-        FileManagerLib fileManagerLib;
+        FileManager fileManager;
         String selection;
-        fileManagerLib = new FileManagerLib("MovieList.csv");
-        FileManagerLib.readFile();
-        File f = new File("MovieList.csv");
+        fileManager = new FileManager("MovieList.json");
+        System.out.println(FileManager.readFile().toString());
+        File f = new File("MovieList.json");
         if (f.length() == 0) {
             System.out.println("No movies have been registered yet");
         }
@@ -34,7 +32,7 @@ public class BillboardManager {
     }
 
     public void organizeMovieList() throws IOException {
-        FileManagerLib file = new FileManagerLib("MovieList.csv");
+        FileManager file = new FileManager("MovieList.json");
         boolean repeat = false;
         int option;
         String fileName;
@@ -48,9 +46,9 @@ public class BillboardManager {
                     infoRecord.createMovie();
                     break;
                 case 2:
-                    FileManagerLib.readFile();
+                    FileManager.readFile();
                     fileName = in.getString("Movie to delete: ");
-                    infoRecord.deleteMovie(fileName + ".csv");
+                    infoRecord.deleteMovie(fileName + ".json");
                     break;
                 case 3:
                     showBillboard();
@@ -62,7 +60,7 @@ public class BillboardManager {
     }
 
     public void organizePromotions() throws IOException {
-        FileManagerLib file = new FileManagerLib("PromotionsList.csv");
+        FileManager file = new FileManager("PromotionsList.json");
         boolean repeat = false;
         String fileName;
         int option;
@@ -75,11 +73,11 @@ public class BillboardManager {
                     infoRecord.createPromotion();
                     break;
                 case 2:
-                    FileManagerLib.readFile();
+                    FileManager.readFile();
                     fileName = in.getStringAnswer("Do you want to delete the "
                                                 + "promotion list[yes/no]: ");
                     if ("yes".equals(fileName)) {
-                        infoRecord.deletePromotion("PromotionsList.csv");
+                        infoRecord.deletePromotion("PromotionsList.json");
                     }
                     break;
                 case 3:

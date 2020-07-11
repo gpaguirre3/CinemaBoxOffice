@@ -5,9 +5,12 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
-import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+import ec.edu.espe.filemanagerlibrary.FileManager;
 import ec.edu.espe.cinemaboxoffice.utils.CardAndCIValidation;
+import java.util.ArrayList;
 
 /**
  *
@@ -21,7 +24,7 @@ public class Bill {
 
     Payment payment = new Payment();
     InputValidation in = new InputValidation();
-    FileManagerLib file;
+    FileManager file;
 
     public Bill(Customer customer, int billId, float priceToPay) {
         this.customer = customer;
@@ -30,7 +33,8 @@ public class Bill {
     }
 
     public String showBillData(float moviePriceTicket) {
-
+        
+        Gson gson =new GsonBuilder().setPrettyPrinting().create();
         String customerId;
         String customerName;
         int customerAge;
@@ -41,13 +45,16 @@ public class Bill {
         } while (!CardAndCIValidation.validateCI(customerId));
         customerName = in.getString("Enter your name: ");
         customerAge = in.getInt("Enter your age: ", 2);
-        customer = new Customer(customerId, customerName, customerAge);
+        ArrayList<Customer> bills = new ArrayList<>();
+        bills.add(new Customer(customerId, customerName, customerAge));
         payment.createPayment(statement);
         if (statement == true) {
-            file = new FileManagerLib(customerName + ".csv");
-            FileManagerLib.writeFile(customer.toString());
-            FileManagerLib.writeFile(payment.toString());
-            FileManagerLib.writeFile("The price to cancel is:" + moviePriceTicket);
+            file = new FileManager(customerName + ".json");
+            String JsonString = gson.toJson(bills);
+            FileManager.writeFile(JsonString);
+            String JsonStringPayment = gson.toJson(payment);
+            FileManager.writeFile(JsonStringPayment);
+            FileManager.writeFile("The price to cancel is:" + moviePriceTicket);
         } else {
             System.out.println("Bill not created because the payment wasn't succesful");
         }

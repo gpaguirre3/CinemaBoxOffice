@@ -8,7 +8,7 @@ package ec.edu.espe.cinemaboxoffice.controller;
 import ec.edu.espe.cinemaboxoffice.model.Seat;
 import ec.edu.espe.cinemaboxoffice.model.Ticket;
 import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
-import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+import ec.edu.espe.filemanagerlibrary.FileManager;
 import java.io.File;
 
 /**
@@ -19,11 +19,11 @@ public class MovieSelection {
 
     public static void showMovieList() {
         InputValidation in = new InputValidation();
-        FileManagerLib fileManagerLib;
+        FileManager fileManager;
         String selection;
-        fileManagerLib = new FileManagerLib("MovieList.csv");
-        FileManagerLib.readFile();
-        File f = new File("MovieList.csv");
+        fileManager = new FileManager("MovieList.json");
+        System.out.println(FileManager.readFile());
+        File f = new File("MovieList.json");
         if (f.length() == 0) {
             System.out.println("No movies have been registered yet");
         } else {
@@ -34,9 +34,9 @@ public class MovieSelection {
 
     public static void chooseMovie(String selection) {
         Seat seat = new Seat(selection, 0, true);
-        FileManagerLib fileManagerLib;
-        fileManagerLib = new FileManagerLib(selection + ".csv");
-        FileManagerLib.readFile();
+        FileManager fileManagerLib;
+        fileManagerLib = new FileManager(selection + ".json");
+        FileManager.readFile();
         Ticket.generateTicket(seat.chooseSeat(selection), selection);
     }
 }

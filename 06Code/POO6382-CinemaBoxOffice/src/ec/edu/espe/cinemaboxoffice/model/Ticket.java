@@ -35,8 +35,8 @@ public class Ticket {
     }
     
     public static void generateTicket(int seat, String selection) {
-        String numberRomm = PurchasePrice.searchTicketData("MovieList.csv", selection, 2);
-        String priceOfTheTicket = PurchasePrice.searchTicketData("MovieList.csv", selection, 4);
+        String numberRomm = PurchasePrice.searchTicketData("MovieList.json", selection, 2);
+        String priceOfTheTicket = PurchasePrice.searchTicketData("MovieList.json", selection, 4);
         float priceTheTicket = Float.parseFloat(priceOfTheTicket);
         Ticket ticket = new Ticket(seat, selection, numberRomm, priceTheTicket);
         ticket.showTicketData();

@@ -25,7 +25,7 @@ public class PurchasePrice {
 
     public static void calculateTicketPrice(String ticketTitleMovie) {
         InputValidation in = new InputValidation();
-        float moviePriceTicket = Float.parseFloat(searchTicketData("MovieList.csv", ticketTitleMovie, 4));
+        float moviePriceTicket = Float.parseFloat(searchTicketData("MovieList.json", ticketTitleMovie, 4));
         
         String purchaseAnswer;
         purchaseAnswer = in.getString("Would you like to purchase the movie ticket?[yes/no]");

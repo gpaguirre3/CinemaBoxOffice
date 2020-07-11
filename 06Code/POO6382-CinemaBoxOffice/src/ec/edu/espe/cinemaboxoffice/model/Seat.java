@@ -6,7 +6,7 @@
 package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
-import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+import ec.edu.espe.filemanagerlibrary.FileManager;
 
 /**
  *
@@ -38,7 +38,7 @@ public class Seat {
             chosenSeat = in.getInt("\nChoose the number of seat[01-50]: ", 2);
             if (chosenSeat > 0 & chosenSeat < 51) {
                 Seat seat = new Seat(selection, chosenSeat, true);
-                FileManagerLib.writeFile(seat.toString());
+                FileManager.writeFile(seat.toString());
                 repeat = true;
             } else {
                 System.out.println("incorrect seat number");

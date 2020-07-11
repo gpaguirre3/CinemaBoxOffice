@@ -5,13 +5,16 @@
  */
 package ec.edu.espe.cinemaboxoffice.controller;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import ec.edu.espe.cinemaboxoffice.model.FoodCombo;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Promotion;
 import ec.edu.espe.cinemaboxoffice.model.Room;
 import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
-import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+import ec.edu.espe.filemanagerlibrary.FileManager;
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  *
@@ -19,9 +22,8 @@ import java.io.IOException;
  */
 public class RecordInformation {
 
-    private Movie movie;
-
     InputValidation in = new InputValidation();
+    Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
     public void createMovie() throws IOException {
 
@@ -32,8 +34,9 @@ public class RecordInformation {
         int roomNumberForMovie;
         String roomFormatForMovie = "";
         float moviePrice = 0f;
-        FileManagerLib file = new FileManagerLib("MovieList.csv");
+        FileManager file = new FileManager("MovieList.json");
         do {
+            ArrayList<Movie> movie = new ArrayList<>();
             Room room = new Room();
             movieTitle = in.getString("Enter the movie title");
             movieGender = in.getString("Enter the movie gender: ");
@@ -41,9 +44,11 @@ public class RecordInformation {
             roomNumberForMovie = in.getInt("Enter the number movie room: )", 1);
             roomFormatForMovie = defineRoomFormat(roomNumberForMovie, roomFormatForMovie, moviePrice);
             moviePrice = calculateMoviePrice(roomFormatForMovie, moviePrice);
-            movie = new Movie(movieTitle, movieGender, roomNumberForMovie, roomFormatForMovie, moviePrice);
-            System.out.println(FileManagerLib.writeFile(movie.toString()));
-            answer = in.getStringAnswer("Add more promotions[yes/no]: ");
+            movie.add(new Movie(movieTitle, movieGender, roomNumberForMovie, roomFormatForMovie, moviePrice));
+            String JsonString = "";
+            JsonString = gson.toJson(movie);
+            FileManager.writeFile(JsonString);
+            answer = in.getStringAnswer("Record more movies?[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
             }
@@ -77,31 +82,34 @@ public class RecordInformation {
     }
 
     public void deleteMovie(String fileName) {
-        FileManagerLib file = new FileManagerLib(fileName);
-        FileManagerLib.deleteFile();
+        FileManager file = new FileManager(fileName);
+        FileManager.deleteFile();
     }
 
     public void createPromotion() throws IOException {
-        FileManagerLib file = new FileManagerLib("PromotionsList.csv");
+        FileManager file = new FileManager("PromotionsList.json");
         FoodCombo foodCombo = new FoodCombo(0, "", "", "", 0);
         boolean repeat = false;
         String name;
         String day;
         String answer;
         do {
+            ArrayList<Promotion> promo = new ArrayList<>();
             name = "Combo" + Integer.toString(foodCombo.menuCombo());
             day = in.getString("Enter the promotion day: ");
+            promo.add(new Promotion(name, day, 2.50f));
+            String JsonString = "";
+            JsonString = gson.toJson(promo);
+            FileManager.writeFile(JsonString);
             answer = in.getStringAnswer("Add another combo?[yes/no]: ");
             if ("no".equals(answer)) {
                 repeat = true;
-                Promotion promotion = new Promotion(name, day, 2.50f);
-                FileManagerLib.writeFile(promotion.toString());
             }
         } while (repeat == false);
     }
 
     public void deletePromotion(String fileName) {
-        FileManagerLib file = new FileManagerLib(fileName);
-        FileManagerLib.deleteFile();
+        FileManager file = new FileManager(fileName);
+        FileManager.deleteFile();
     }
 }
