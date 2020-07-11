@@ -9,7 +9,7 @@ import ec.edu.espe.cinemaboxoffice.model.FoodCombo;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Promotion;
 import ec.edu.espe.cinemaboxoffice.model.Room;
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 import java.io.IOException;
 
@@ -21,7 +21,7 @@ public class RecordInformation {
 
     private Movie movie;
 
-    DataValidation in = new DataValidation();
+    InputValidation in = new InputValidation();
 
     public void createMovie() throws IOException {
 

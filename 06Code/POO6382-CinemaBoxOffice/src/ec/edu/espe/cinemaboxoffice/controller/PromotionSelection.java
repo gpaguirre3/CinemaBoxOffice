@@ -7,7 +7,7 @@ package ec.edu.espe.cinemaboxoffice.controller;
 
 import ec.edu.espe.cinemaboxoffice.model.Seat;
 import ec.edu.espe.cinemaboxoffice.model.Ticket;
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 
 /**
@@ -17,20 +17,20 @@ import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 public class PromotionSelection {
 
     public static void showPromotions() {
-        DataValidation in = new DataValidation();
+        InputValidation in = new InputValidation();
         FileManagerLib fileManagerLib;
         int election;
         fileManagerLib = new FileManagerLib("PromotionsList.csv");
         FileManagerLib.readFile();
-        election = in.getInt("\nchoose the number of promotion[100-]: ", 4);
+        election = in.getInt("\nChoose the number of promotion[100-]: ", 4);
         choosePromotion(election);
     }
 
     public static void choosePromotion(int PromotionNumber) {
-        DataValidation in = new DataValidation();
+        InputValidation in = new InputValidation();
         FileManagerLib fileManagerLib;
         Seat seat = new Seat("", PromotionNumber, true);
-        String selection = in.getString("choose the title movie: ");
+        String selection = in.getString("Choose the title movie: ");
         fileManagerLib = new FileManagerLib(selection + ".csv");
         FileManagerLib.readFile();
         Ticket.generateTicket(seat.chooseSeat(selection), selection);

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Temp
 
 import ec.edu.espe.cinemaboxoffice.controller.FileManager;
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 
 /**
  *
@@ -13,7 +13,7 @@ import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
 package ec.edu.espe.cinemaboxoffice.model;
 
 import ec.edu.espe.cinemaboxoffice.controller.FileManager;
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 
 /**
  *
@@ -24,7 +24,7 @@ public class PurchasePrice {
     Bill bills;
 
     public static void calculateTicketPrice(String ticketTitleMovie) {
-        DataValidation in = new DataValidation();
+        InputValidation in = new InputValidation();
         float moviePriceTicket = Float.parseFloat(searchTicketData("MovieList.csv", ticketTitleMovie, 4));
         
         String purchaseAnswer;

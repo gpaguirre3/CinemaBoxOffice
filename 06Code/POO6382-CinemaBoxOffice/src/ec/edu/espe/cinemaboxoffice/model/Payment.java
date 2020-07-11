@@ -5,8 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
-import ec.edu.espe.cinemaboxoffice.utils.SpecialValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
+import ec.edu.espe.cinemaboxoffice.utils.CardAndCIValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 
 /**
@@ -21,7 +21,7 @@ public class Payment {
     private int year;
     private int month;
 
-    DataValidation in = new DataValidation();
+    InputValidation in = new InputValidation();
     FileManagerLib file;
 
     public Payment(String cardHolder, String creditCard, int year, int month) {
@@ -44,7 +44,7 @@ public class Payment {
         String answer;
         do {
             cardNumber = in.getString("Enter the credit card number: ");
-        } while (!SpecialValidation.checkCard(cardNumber));
+        } while (!CardAndCIValidation.checkCard(cardNumber));
         cardHolder = in.getString("Enter the card holder: ");
         year = in.getInt("Enter the credit card expiration year", 4);
         month = in.getInt("Enter the credit card expiration month(In numbers)", 2);

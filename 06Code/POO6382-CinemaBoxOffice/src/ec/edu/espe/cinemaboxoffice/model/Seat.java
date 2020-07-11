@@ -5,7 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 
 /**
@@ -30,7 +30,7 @@ public class Seat {
     }
 
     public int chooseSeat(String selection) {
-        DataValidation in = new DataValidation();
+        InputValidation in = new InputValidation();
         boolean repeat;
         int chosenSeat;
         int aux = 0;

@@ -5,9 +5,9 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
-import ec.edu.espe.cinemaboxoffice.utils.SpecialValidation;
+import ec.edu.espe.cinemaboxoffice.utils.CardAndCIValidation;
 
 /**
  *
@@ -20,7 +20,7 @@ public class Bill {
     private float priceToPay;
 
     Payment payment = new Payment();
-    DataValidation in = new DataValidation();
+    InputValidation in = new InputValidation();
     FileManagerLib file;
 
     public Bill(Customer customer, int billId, float priceToPay) {
@@ -38,7 +38,7 @@ public class Bill {
 
         do {
             customerId = in.getString("Enter your ID: ");
-        } while (!SpecialValidation.validateCI(customerId));
+        } while (!CardAndCIValidation.validateCI(customerId));
         customerName = in.getString("Enter your name: ");
         customerAge = in.getInt("Enter your age: ", 2);
         customer = new Customer(customerId, customerName, customerAge);

@@ -5,8 +5,9 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.controller.AdminLogIn;
 import ec.edu.espe.cinemaboxoffice.controller.BillboardManager;
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import java.io.IOException;
 
 /**
@@ -15,13 +16,11 @@ import java.io.IOException;
  */
 public class AdminSystem {
 
-    
-
     public void manager() throws IOException {
-        BillboardManager billboard = new BillboardManager();
+        AdminLogIn logIn = new AdminLogIn();
         boolean permission = false;
         while (permission == false) {
-            permission = billboard.enterUser();
+            permission = logIn.enterUser();
             if (permission == true) {
                 adminMenu();
             }
@@ -30,7 +29,7 @@ public class AdminSystem {
 
     public void adminMenu() throws IOException {
         BillboardManager billboard = new BillboardManager();
-        DataValidation in = new DataValidation();
+        InputValidation in = new InputValidation();
         int option;
         boolean repeat = false;
         while (repeat == false) {

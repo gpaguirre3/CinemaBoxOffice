@@ -6,8 +6,9 @@
 package ec.edu.espe.cinemaboxoffice.controller;
 
 import ec.edu.espe.cinemaboxoffice.utils.PasswordEncryptor;
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
+import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -17,66 +18,19 @@ import java.util.Scanner;
  */
 public class BillboardManager {
 
-    DataValidation in = new DataValidation();
+    InputValidation in = new InputValidation();
     RecordInformation infoRecord = new RecordInformation();
 
-    public boolean enterUser() {
-
-        PasswordEncryptor c = new PasswordEncryptor();
-        FileManager file = new FileManager("AdminAccount.csv");
-
-        boolean correctUser = false;
-        boolean correctPass = false;
-        boolean correctAcc = false;
-
-        Scanner scanner = new Scanner(System.in);
-        boolean repeat = false;
-        boolean usernameFinder = false;
-        String username;
-        String password;
-        while (repeat == false) {
-            do {
-                System.out.println("Username: ");
-                username = scanner.nextLine();
-                usernameFinder = file.findUsername(username);
-
-                if (usernameFinder == true) {
-                    System.out.println("Correct username!");
-                    usernameFinder = false;
-                    correctUser = true;
-                } else {
-                    System.out.println("Incorrect or not registered account");
-                    usernameFinder = true;
-                }
-            } while (usernameFinder != false);
-
-            boolean findPass = false;
-            boolean foundPass = false;
-            do {
-                System.out.println("Password: ");
-                password = scanner.nextLine();
-                String compareInFile = c.comparePassword(password);
-                foundPass = file.findPassword(compareInFile);
-                try {
-                    if (foundPass == true) {
-                        System.out.println("Correct Password");
-                        findPass = true;
-                        correctPass = true;
-                    } else {
-                        System.out.println("Incorrect Password");
-                    }
-                } catch (Exception e) {
-                    System.out.println(e);
-                }
-
-            } while (findPass == false);
-
-            repeat = true;
+    public void showBillboard() {
+        FileManagerLib fileManagerLib;
+        String selection;
+        fileManagerLib = new FileManagerLib("MovieList.csv");
+        FileManagerLib.readFile();
+        File f = new File("MovieList.csv");
+        if (f.length() == 0) {
+            System.out.println("No movies have been registered yet");
         }
-        if ((correctUser == true) & (correctPass == true)) {
-            correctAcc = true;
-        }
-        return correctAcc;
+        System.out.println("");
     }
 
     public void organizeMovieList() throws IOException {
@@ -85,7 +39,8 @@ public class BillboardManager {
         int option;
         String fileName;
         do {
-            System.out.println(" 1: Create Movie \n 2: Delete Movie \n 3: Exit");
+            System.out.println(" 1: Create Movie \n 2: Delete Movie \n 3: "
+                    + "See Billboard \n 4: Exit");
             option = in.getInt("Enter an option: ", 1);
 
             switch (option) {
@@ -94,10 +49,12 @@ public class BillboardManager {
                     break;
                 case 2:
                     FileManagerLib.readFile();
-                    fileName = in.getString("enter the name of file for delete: ");
+                    fileName = in.getString("Movie to delete: ");
                     infoRecord.deleteMovie(fileName + ".csv");
                     break;
                 case 3:
+                    showBillboard();
+                case 4:
                     repeat = true;
                     break;
             }
@@ -119,7 +76,8 @@ public class BillboardManager {
                     break;
                 case 2:
                     FileManagerLib.readFile();
-                    fileName = in.getStringAnswer("you want to delete the promotion list[yes/no]: ");
+                    fileName = in.getStringAnswer("Do you want to delete the "
+                                                + "promotion list[yes/no]: ");
                     if ("yes".equals(fileName)) {
                         infoRecord.deletePromotion("PromotionsList.csv");
                     }

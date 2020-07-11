@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  *
  * @author Gabriel Aguirre
  */
-public class SpecialValidation {
+public class CardAndCIValidation {
 
     public static boolean checkCard(String card) {
         if (card.length() != 16) {

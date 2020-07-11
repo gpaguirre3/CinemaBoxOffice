@@ -7,7 +7,7 @@ package ec.edu.espe.cinemaboxoffice.controller;
 
 import ec.edu.espe.cinemaboxoffice.model.Seat;
 import ec.edu.espe.cinemaboxoffice.model.Ticket;
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.filemanagerlibrary.FileManagerLib;
 import java.io.File;
 
@@ -18,7 +18,7 @@ import java.io.File;
 public class MovieSelection {
 
     public static void showMovieList() {
-        DataValidation in = new DataValidation();
+        InputValidation in = new InputValidation();
         FileManagerLib fileManagerLib;
         String selection;
         fileManagerLib = new FileManagerLib("MovieList.csv");

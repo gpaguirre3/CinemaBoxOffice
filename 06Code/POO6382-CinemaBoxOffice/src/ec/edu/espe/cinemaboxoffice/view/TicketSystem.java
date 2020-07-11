@@ -5,7 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
-import ec.edu.espe.cinemaboxoffice.utils.DataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import java.io.IOException;
 
 /**
@@ -19,7 +19,7 @@ public class TicketSystem {
         Cover cover = new Cover();
         cover.run();
         
-        DataValidation in = new DataValidation();
+        InputValidation in = new InputValidation();
         AdminSystem adminSystem = new AdminSystem();
         CustomerSystem customerSystem = new CustomerSystem();
         

@@ -11,12 +11,12 @@ import java.util.Scanner;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class DataValidation {
+public class InputValidation {
 
     Scanner string;
     
     
-    public DataValidation() {
+    public InputValidation() {
         string = new Scanner(System.in);
     }
 
