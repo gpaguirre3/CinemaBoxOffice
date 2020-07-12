@@ -31,7 +31,8 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket{" + "key=" + key + ", seat=" + seat + ", titleMovie=" + titleMovie + ", roomAssignment=" + roomAssignment + ", priceTicket=" + ticketPrice + '}';
+        return "Ticket{" + "key=" + key + ", seat=" + seat + ", titleMovie=" + 
+                titleMovie + ", roomAssignment=" + roomAssignment + ", priceTicket=" + ticketPrice + '}';
     }
     
     public static void generateTicket(int seat, String selection) {
@@ -143,7 +144,5 @@ public class Ticket {
      */
     public void setPricePurchase(PurchasePrice pricePurchase) {
         this.pricePurchase = pricePurchase;
-    }
-
-   
+    }  
 }

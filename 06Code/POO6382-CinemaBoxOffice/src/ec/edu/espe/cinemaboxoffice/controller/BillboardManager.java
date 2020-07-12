@@ -46,9 +46,8 @@ public class BillboardManager {
                     infoRecord.createMovie();
                     break;
                 case 2:
-                    FileManager.readFile();
-                    fileName = in.getString("Movie to delete: ");
-                    infoRecord.deleteMovie(fileName + ".json");
+                    String title = in.getString("Movie to delete: ");
+                    infoRecord.deleteMovie(title);
                     break;
                 case 3:
                     showBillboard();

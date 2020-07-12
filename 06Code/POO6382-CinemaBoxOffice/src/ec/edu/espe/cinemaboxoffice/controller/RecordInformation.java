@@ -14,7 +14,13 @@ import ec.edu.espe.cinemaboxoffice.model.Room;
 import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.filemanagerlibrary.FileManager;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -36,7 +42,16 @@ public class RecordInformation {
         float moviePrice = 0f;
         FileManager file = new FileManager("MovieList.json");
         do {
-            ArrayList<Movie> movie = new ArrayList<>();
+            String moviesJson = new String(Files.readAllBytes(Paths.get("MovieList.json")));
+            System.out.println(moviesJson);
+            Movie[] movies = gson.fromJson(moviesJson, Movie[].class);
+            List<Movie> movie;
+            if(movies == null){
+                movie = new ArrayList <>();
+            }else{
+                movie = new ArrayList<>(Arrays.asList(movies));
+            }
+            //List<Movie> movie = Arrays.asList(movies);
             Room room = new Room();
             movieTitle = in.getString("Enter the movie title");
             movieGender = in.getString("Enter the movie gender: ");
@@ -47,6 +62,8 @@ public class RecordInformation {
             movie.add(new Movie(movieTitle, movieGender, roomNumberForMovie, roomFormatForMovie, moviePrice));
             String JsonString = "";
             JsonString = gson.toJson(movie);
+            FileManager.deleteFile();
+            FileManager.createFile();
             FileManager.writeFile(JsonString);
             answer = in.getStringAnswer("Record more movies?[yes/no]: ");
             if ("no".equals(answer)) {
@@ -81,9 +98,23 @@ public class RecordInformation {
         return moviePrice;
     }
 
-    public void deleteMovie(String fileName) {
-        FileManager file = new FileManager(fileName);
-        FileManager.deleteFile();
+    public void deleteMovie(String title) throws IOException {
+        FileManager file = new FileManager("MovieList.json");
+        String moviesJson = new String(Files.readAllBytes(Paths.get("MovieList.json")));
+        System.out.println(moviesJson);
+        Movie[] moviesArray = gson.fromJson(moviesJson, Movie[].class);
+        List<Movie> movies;
+        if(moviesArray == null){
+            movies = new ArrayList <>();
+        }else{
+            movies = new ArrayList<>(Arrays.asList(moviesArray));
+        }
+        movies = movies
+                .stream()
+                .filter(movie -> !movie.getMovieTitle().equalsIgnoreCase(title))
+                .collect(Collectors.toList());
+        String jsonString = gson.toJson(movies);
+        Files.write(Paths.get("MovieList.json"), jsonString.getBytes());
     }
 
     public void createPromotion() throws IOException {

@@ -1,27 +1,30 @@
 [
   {
-    "movieTitle": "Thor",
-    "movieGender": "Action",
-    "roomNumber": 1,
-    "movieFormat": "2D",
-    "moviePrice": 6.5
-  }
-]
-[
-  {
-    "movieTitle": "The Hobbit",
-    "movieGender": "Adventure",
-    "roomNumber": 2,
-    "movieFormat": "2D",
-    "moviePrice": 6.5
-  }
-]
-[
-  {
-    "movieTitle": "Star Wars",
-    "movieGender": "Fiction",
+    "movieTitle": "Iron man2",
+    "movieGender": "action",
     "roomNumber": 3,
     "movieFormat": "3D",
     "moviePrice": 8.0
+  },
+  {
+    "movieTitle": "Scooby Doo",
+    "movieGender": "action",
+    "roomNumber": 6,
+    "movieFormat": "3D",
+    "moviePrice": 8.0
+  },
+  {
+    "movieTitle": "Iron man",
+    "movieGender": "action",
+    "roomNumber": 1,
+    "movieFormat": "2D",
+    "moviePrice": 6.5
+  },
+  {
+    "movieTitle": "Avenger End Game",
+    "movieGender": "action",
+    "roomNumber": 2,
+    "movieFormat": "2D",
+    "moviePrice": 6.5
   }
 ]
