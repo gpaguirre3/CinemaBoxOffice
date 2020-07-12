@@ -12,7 +12,7 @@ import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.controller.FileManager;
+import ec.edu.espe.cinemaboxoffice.controller.FileManagerLib;
 import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 
 /**
@@ -38,7 +38,7 @@ public class PurchasePrice {
     public static String searchTicketData(String nameFile, String titleMovie, int positionData) {
         String[] searchWord  = null;
         int a = 0;
-        FileManager file = new FileManager(nameFile, "");
+        FileManagerLib file = new FileManagerLib(nameFile, "");
         file.findUsername(titleMovie);
         file.getDataSeekerLine();
         while (a < positionData) {

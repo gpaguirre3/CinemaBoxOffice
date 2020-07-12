@@ -20,7 +20,7 @@ public class AdminLogIn {
     public boolean enterUser() {
 
         PasswordEncryptor c = new PasswordEncryptor();
-        FileManager file = new FileManager("AdminAccount.csv");
+        FileManagerLib file = new FileManagerLib("AdminAccount.csv");
 
         boolean correctUser = false;
         boolean correctPass = false;

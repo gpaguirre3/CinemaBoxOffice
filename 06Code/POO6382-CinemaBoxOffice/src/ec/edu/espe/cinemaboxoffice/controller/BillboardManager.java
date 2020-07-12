@@ -22,8 +22,8 @@ public class BillboardManager {
     public void showBillboard() {
         FileManager fileManager;
         String selection;
-        fileManager = new FileManager("MovieList.json");
-        System.out.println(FileManager.readFile().toString());
+        fileManager = new FileManager();
+        System.out.println(FileManager.readFile("MovieList.json").toString());
         File f = new File("MovieList.json");
         if (f.length() == 0) {
             System.out.println("No movies have been registered yet");
@@ -32,7 +32,7 @@ public class BillboardManager {
     }
 
     public void organizeMovieList() throws IOException {
-        FileManager file = new FileManager("MovieList.json");
+        FileManager file = new FileManager();
         boolean repeat = false;
         int option;
         String fileName;
@@ -40,14 +40,14 @@ public class BillboardManager {
             System.out.println(" 1: Create Movie \n 2: Delete Movie \n 3: "
                     + "See Billboard \n 4: Exit");
             option = in.getInt("Enter an option: ", 1);
-
             switch (option) {
                 case 1:
                     infoRecord.createMovie();
                     break;
                 case 2:
-                    String title = in.getString("Movie to delete: ");
-                    infoRecord.deleteMovie(title);
+                    FileManager.readFile("MovieList.json");
+                    fileName = in.getString("Movie to delete: ");
+                    infoRecord.deleteMovie(fileName + ".json");
                     break;
                 case 3:
                     showBillboard();
@@ -59,7 +59,7 @@ public class BillboardManager {
     }
 
     public void organizePromotions() throws IOException {
-        FileManager file = new FileManager("PromotionsList.json");
+        FileManager file = new FileManager();
         boolean repeat = false;
         String fileName;
         int option;
@@ -72,8 +72,8 @@ public class BillboardManager {
                     infoRecord.createPromotion();
                     break;
                 case 2:
-                    FileManager.readFile();
-                    fileName = in.getStringAnswer("Do you want to delete the "
+                    FileManager.readFile("PromotionsList.json");
+                    fileName = in.getYesOrNo("Do you want to delete the "
                                                 + "promotion list[yes/no]: ");
                     if ("yes".equals(fileName)) {
                         infoRecord.deletePromotion("PromotionsList.json");

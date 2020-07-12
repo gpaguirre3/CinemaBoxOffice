@@ -1,29 +1,57 @@
 [
   {
-    "movieTitle": "Iron man2",
-    "movieGender": "action",
-    "roomNumber": 3,
-    "movieFormat": "3D",
-    "moviePrice": 8.0
-  },
-  {
-    "movieTitle": "Scooby Doo",
-    "movieGender": "action",
-    "roomNumber": 6,
-    "movieFormat": "3D",
-    "moviePrice": 8.0
-  },
-  {
-    "movieTitle": "Iron man",
-    "movieGender": "action",
-    "roomNumber": 1,
+    "movieTitle": "q",
+    "movieGender": "w",
+    "roomNumber": 2.0,
     "movieFormat": "2D",
     "moviePrice": 6.5
   },
   {
-    "movieTitle": "Avenger End Game",
-    "movieGender": "action",
-    "roomNumber": 2,
+    "movieTitle": "s",
+    "movieGender": "d",
+    "roomNumber": 1.0,
+    "movieFormat": "2D",
+    "moviePrice": 6.5
+  },
+  {
+    "movieTitle": "3",
+    "movieGender": "6",
+    "roomNumber": 2.0,
+    "movieFormat": "2D",
+    "moviePrice": 6.5
+  },
+  {
+    "movieTitle": "a",
+    "movieGender": "w",
+    "roomNumber": 3.0,
+    "movieFormat": "3D",
+    "moviePrice": 8.0
+  },
+  {
+    "movieTitle": "1",
+    "movieGender": "1",
+    "roomNumber": 1.0,
+    "movieFormat": "2D",
+    "moviePrice": 6.5
+  },
+  {
+    "movieTitle": "2",
+    "movieGender": "2",
+    "roomNumber": 2.0,
+    "movieFormat": "2D",
+    "moviePrice": 6.5
+  },
+  {
+    "movieTitle": "2",
+    "movieGender": "2",
+    "roomNumber": 8.0,
+    "movieFormat": "3D",
+    "moviePrice": 8.0
+  },
+  {
+    "movieTitle": "2",
+    "movieGender": "6",
+    "roomNumber": 0,
     "movieFormat": "2D",
     "moviePrice": 6.5
   }

@@ -32,11 +32,11 @@ public class Room {
 
     public void showRoomData() {
         ArrayList<Room> rooms = new ArrayList<>();
-        for (int i = 0; i<3; i++){
-            rooms.add(new Room(i+1, 50, "2D", 6.50f));
+        for (int i = 0; i<5; i++){
+            rooms.add(new Room(i, 50, "2D", 6.50f));
         }
-        for (int j = 3; j<6; j++){
-            rooms.add(new Room(j+1, 50, "3D", 8.0f));
+        for (int j = 5; j<10; j++){
+            rooms.add(new Room(j, 50, "3D", 8.0f));
         }
         System.out.println(rooms);
     }

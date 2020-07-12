@@ -3,26 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/AdminSystem.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Bill.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/BillboardManager.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Ticket.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Payment.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/PasswordEncryptor.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/FoodCombo.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Admin.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/PaymentProcess.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/FileManager.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/AdminLogIn.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/PromotionSelection.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/Cover.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/CustomerSystem.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/MovieSelection.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Seat.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/TicketSystem.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/CardAndCIValidation.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/RecordInformation.java</file>
-            <file>file:/C:/Users/josue/Desktop/11-7-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Billboard.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/11-07-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/RecordInformation.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/11-07-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/PromotionSelection.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/11-07-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Seat.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/11-07-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Bill.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/11-07-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/AdminLogIn.java</file>
+            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/11-07-2020/POO6382-CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/InputValidation.java</file>
         </group>
     </open-files>
 </project-private>

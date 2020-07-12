@@ -16,19 +16,19 @@ import java.util.logging.Logger;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public final class FileManager {
+public final class FileManagerLib {
 
     private String fileName;
     private boolean answer;
     private File file;
     private String dataSeekerLine;
 
-    public FileManager(String fileName, String dataSeekerLine) {
+    public FileManagerLib(String fileName, String dataSeekerLine) {
         this.fileName = fileName;
         this.dataSeekerLine = dataSeekerLine;
     }
     
-    public FileManager(String fileName) {
+    public FileManagerLib(String fileName) {
         this.fileName = fileName;
         createFile();
     }

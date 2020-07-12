@@ -9,6 +9,7 @@ import ec.edu.espe.cinemaboxoffice.model.Seat;
 import ec.edu.espe.cinemaboxoffice.model.Ticket;
 import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.filemanagerlibrary.FileManager;
+import java.io.IOException;
 
 /**
  *
@@ -16,23 +17,19 @@ import ec.edu.espe.filemanagerlibrary.FileManager;
  */
 public class PromotionSelection {
 
-    public static void showPromotions() {
+    public static void showPromotions() throws IOException {
         InputValidation in = new InputValidation();
-        FileManager fileManager;
         int election;
-        fileManager = new FileManager("PromotionsList.json");
-        FileManager.readFile();
+        FileManager.readFile("PromotionsList.json");
         election = in.getInt("\nChoose the number of promotion[100-]: ", 4);
         choosePromotion(election);
     }
 
-    public static void choosePromotion(int PromotionNumber) {
+    public static void choosePromotion(int PromotionNumber) throws IOException {
         InputValidation in = new InputValidation();
-        FileManager fileManager;
         Seat seat = new Seat("", PromotionNumber, true);
         String selection = in.getString("Choose the title movie: ");
-        fileManager = new FileManager(selection + ".json");
-        FileManager.readFile();
+        FileManager.readFile(selection + ".json");
         Ticket.generateTicket(seat.chooseSeat(selection), selection);
     }
 }

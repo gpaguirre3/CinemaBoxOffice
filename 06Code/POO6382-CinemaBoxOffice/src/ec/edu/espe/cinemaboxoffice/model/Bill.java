@@ -49,12 +49,12 @@ public class Bill {
         bills.add(new Customer(customerId, customerName, customerAge));
         payment.createPayment(statement);
         if (statement == true) {
-            file = new FileManager(customerName + ".json");
+            file = new FileManager();
             String JsonString = gson.toJson(bills);
-            FileManager.writeFile(JsonString);
+            FileManager.writeFile(customerName + ".json", JsonString);
             String JsonStringPayment = gson.toJson(payment);
-            FileManager.writeFile(JsonStringPayment);
-            FileManager.writeFile("The price to cancel is:" + moviePriceTicket);
+            FileManager.writeFile(customerName + ".json", JsonStringPayment);
+            FileManager.writeFile(customerName + ".json", "The price to cancel is:" + moviePriceTicket);
         } else {
             System.out.println("Bill not created because the payment wasn't succesful");
         }

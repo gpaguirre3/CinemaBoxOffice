@@ -68,5 +68,7 @@ public class Movie {
 
     public void setMoviePrice(float moviePrice) {
         this.moviePrice = moviePrice;
-    }  
+    }
+
+    
 }

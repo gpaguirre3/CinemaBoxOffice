@@ -41,7 +41,8 @@ public class FoodCombo {
         System.out.println(combos);
         do {
             election = in.getInt("Choose the combo you want to add: ", 1);
-            if (election <= 5 & election > 0) {
+            if (election < 6 & election > 0) {
+                election --;
                 combos.get(election);
                 repeat = true;
             } else {

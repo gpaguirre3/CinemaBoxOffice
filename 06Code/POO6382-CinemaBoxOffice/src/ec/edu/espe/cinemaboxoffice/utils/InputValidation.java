@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.utils;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -33,7 +34,7 @@ public class InputValidation {
         return data;
     }
     
-    public String getStringAnswer(String title) {
+    public String getYesOrNo(String title) {
         String data = "";
         while (data.equals("")) {
             System.out.print(title);
@@ -80,5 +81,10 @@ public class InputValidation {
             }
         }
         return Float.parseFloat(data);
+    }
+    
+    public void getPrint(ArrayList<String> arrayList){
+        for (int i=0; i<arrayList.size(); i++)
+            System.out.println(arrayList.get(i));
     }
 }
