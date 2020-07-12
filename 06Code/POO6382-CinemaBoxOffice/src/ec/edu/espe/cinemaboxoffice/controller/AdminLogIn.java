@@ -5,74 +5,78 @@
  */
 package ec.edu.espe.cinemaboxoffice.controller;
 
-import ec.edu.espe.cinemaboxoffice.utils.InputValidation;
 import ec.edu.espe.cinemaboxoffice.utils.PasswordEncryptor;
 import java.util.Scanner;
 
 /**
  *
- * @author Josue
+ * @author Josue Aleman, ESPE.
  */
 public class AdminLogIn {
 
-    InputValidation in = new InputValidation();
+    Scanner scanner = new Scanner(System.in);
+    FileManagerLib file = new FileManagerLib("AdminAccount.csv");
 
-    public boolean enterUser() {
+    public boolean verifyAccount() {
 
-        PasswordEncryptor c = new PasswordEncryptor();
-        FileManagerLib file = new FileManagerLib("AdminAccount.csv");
+        boolean username = false;
+        boolean password = false;
+        boolean permissionToEnter = false;
 
-        boolean correctUser = false;
-        boolean correctPass = false;
-        boolean correctAcc = false;
-
-        Scanner scanner = new Scanner(System.in);
         boolean repeat = false;
-        boolean usernameFinder = false;
-        String username;
-        String password;
         while (repeat == false) {
-            do {
-                System.out.println("Username: ");
-                username = scanner.nextLine();
-                usernameFinder = file.findUsername(username);
-
-                if (usernameFinder == true) {
-                    System.out.println("Correct username!");
-                    usernameFinder = false;
-                    correctUser = true;
-                } else {
-                    System.out.println("Incorrect account");
-                    usernameFinder = true;
-                }
-            } while (usernameFinder != false);
-
-            boolean findPass = false;
-            boolean foundPass = false;
-            do {
-                System.out.println("Password: ");
-                password = scanner.nextLine();
-                String compareInFile = c.comparePassword(password);
-                foundPass = file.findPassword(compareInFile);
-                try {
-                    if (foundPass == true) {
-                        System.out.println("Correct Password");
-                        findPass = true;
-                        correctPass = true;
-                    } else {
-                        System.out.println("Incorrect Password");
-                    }
-                } catch (Exception e) {
-                    System.out.println(e);
-                }
-
-            } while (findPass == false);
-
-            repeat = true;
+            username = enterUsername();
+            password = enterPassword();
+            if ((username == true) & (password == true)) {
+                repeat = true;
+            }
         }
-        if ((correctUser == true) & (correctPass == true)) {
-            correctAcc = true;
+        permissionToEnter = allowAccess(username, password);
+        return permissionToEnter;
+    }
+
+    public boolean enterUsername() {
+        String username;
+        boolean usernameFinder = false;
+        do {
+            System.out.println("Username: ");
+            username = scanner.nextLine();
+            usernameFinder = file.findUsername(username);
+
+            if (usernameFinder == true) {
+                System.out.println("Correct username!");
+            } else {
+                System.out.println("Incorrect account");
+            }
+        } while (usernameFinder != true);
+        return true;
+    }
+
+    public boolean enterPassword() {
+        PasswordEncryptor c = new PasswordEncryptor();
+        String password;
+        boolean passwordFinder = false;
+        do {
+            System.out.println("Password: ");
+            password = scanner.nextLine();
+            String compareInFile = c.decryptPassword(password);
+            passwordFinder = file.findPassword(compareInFile);
+
+            if (passwordFinder == true) {
+                System.out.println("Correct Password");
+            } else {
+                System.out.println("Incorrect Password");
+            }
+
+        } while (passwordFinder != true);
+        return true;
+    }
+
+    public boolean allowAccess(boolean username, boolean password) {
+        boolean permissionToEnter = false;
+        if ((username == true) & (password == true)) {
+            permissionToEnter = true;
         }
-        return correctAcc;
+        return permissionToEnter;
     }
 }

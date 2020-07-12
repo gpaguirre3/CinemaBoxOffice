@@ -26,7 +26,7 @@ public class PasswordEncryptor {
 
     }
 
-    public String comparePassword(String comparedPassword) {
+    public String decryptPassword(String comparedPassword) {
         boolean findPass = false;
 
         char[] charExtraction = comparedPassword.toCharArray();

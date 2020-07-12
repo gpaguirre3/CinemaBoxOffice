@@ -40,7 +40,7 @@ public class RecordInformation {
             room.showRoomData();
             roomNumber = in.getInt("Enter the number movie room: )", 1);
             formatMovie = defineRoomFormat(roomNumber);
-            movies.add(new Movie(in.getString("Enter the movie title"), 
+            movies.add(new Movie(in.getString("Enter the movie title"),
                     in.getString("Enter the movie gender: "), roomNumber,
                     defineRoomFormat(roomNumber), calculateMoviePrice(formatMovie)));
             FileManager.deleteFile("MovieList.json");

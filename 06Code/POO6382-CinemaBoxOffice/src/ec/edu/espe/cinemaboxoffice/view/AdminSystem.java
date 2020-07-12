@@ -20,7 +20,7 @@ public class AdminSystem {
         AdminLogIn logIn = new AdminLogIn();
         boolean permission = false;
         while (permission == false) {
-            permission = logIn.enterUser();
+            permission = logIn.verifyAccount();
             if (permission == true) {
                 adminMenu();
             }
