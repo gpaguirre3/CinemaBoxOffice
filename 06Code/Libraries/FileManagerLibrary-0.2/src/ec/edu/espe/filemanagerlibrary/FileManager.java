@@ -26,33 +26,23 @@ import java.util.logging.Logger;
  */
 public class FileManager {
 
-    private static String fileName;
     private static File file;
-    private static boolean answer = true;
-
-    /**
-     * This Este método es el constructor de la clase FileManagerLib que nos
-     * permite crear un objeto con el nombre del archivo
-     *
-     * @param fileName file name with file type extension for
-     */
-    public FileManager(String fileName) {
-        this.fileName = fileName;
-    }
+    private static boolean answer = false;
 
     /**
      * This method is used to create a file verifying if it exists
      *
+     * @param fileName
      * @return false if the file it was not create
      */
-    public static boolean createFile() {
+    public static boolean createFile(String fileName) {
         file = new File(fileName);
         if (!file.exists()) {
             try {
                 file.createNewFile();
+                answer = true;
             } catch (IOException ex) {
                 Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
-                answer = false;
             }
         }
         return answer;
@@ -61,38 +51,39 @@ public class FileManager {
     /**
      * This method is used to delete a file verifying if it exists
      *
+     * @param fileName
+     * @return
      */
-    public static void deleteFile() {
+    public static boolean deleteFile(String fileName) {
         file = new File(fileName);
         if (file.exists()) {
             file.delete();
-            System.out.println("The file " + file + " was delete");
-        } else {
-            System.out.println("The file " + file + " don't exist");
+            answer = true;
         }
+        return answer;
     }
 
     /**
      * This method is used to write a text string to a file
      *
+     * @param fileName
      * @param informationToSave is the String of characters to save for
      * @return false if the could not write or find file
      */
-    public static boolean writeFile(String informationToSave) {
-        createFile();
+    public static boolean writeFile(String fileName, String informationToSave) {
+        createFile(fileName);
         try (FileWriter fileWriter = new FileWriter(file, true);
                 PrintWriter printWriter = new PrintWriter(fileWriter)) {
             printWriter.println(informationToSave);
             printWriter.close();
+            answer = true;
             try {
                 fileWriter.close();
             } catch (IOException ex) {
                 Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
-                answer = false;
             }
         } catch (IOException ex) {
             Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
-            answer = false;
         }
         return answer;
     }
@@ -100,20 +91,22 @@ public class FileManager {
     /**
      * This method is used to read the information contained in a file
      *
+     * @param fileName
      * @return false if could not read the file
      */
-    public static ArrayList<String> readFile() {
-        createFile();
+    public static ArrayList<String> readFile(String fileName) {
+        createFile(fileName);
         ArrayList<String> arrayList = new ArrayList<>();
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferReader = new BufferedReader(fileReader);
-            while (bufferReader.readLine() != null) {
-                arrayList.add(bufferReader.readLine());
+            answer = true;
+            String line;
+            while ((line = bufferReader.readLine()) != null) {
+                arrayList.add(line);
             }
         } catch (IOException ex) {
             Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
-            answer = false;
         }
         return arrayList;
     }
