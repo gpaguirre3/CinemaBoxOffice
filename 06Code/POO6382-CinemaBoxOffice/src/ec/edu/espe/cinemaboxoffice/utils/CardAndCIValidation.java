@@ -19,13 +19,13 @@ public class CardAndCIValidation {
         }
         int number = 0, sum = 0;
         for (int i = 0; i < 16; i++) {
+            number = Character.getNumericValue(card.charAt(i));
             if (i % 2 == 0) {
-                number = Integer.valueOf(card.charAt(i)) * 2;
-                if (number >= 10) {
-                    number = (number - 10) + 1;
+                number *= 2;
+                if(number > 9){
+                    number=number-9;                
                 }
             }
-            number = Integer.valueOf(card.charAt(i));
             sum = sum + number;
         }
         if (sum % 10 == 0) {
