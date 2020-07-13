@@ -61,13 +61,15 @@ public class RecordInformation {
         return "The room doesn't exist";
     }
 
-    public float calculateMoviePrice(String roomFormatForMovie) {
-        if ("2D".equals(roomFormatForMovie)) {
-            return 6.50f;
-        } else {
-            return 8.0f;
+    public float calculateMoviePrice(String roomFormatForMovie){
+        float moviePrice;
+            if ("2D".equals(roomFormatForMovie)) {
+                moviePrice= 6.50f;
+            } else {
+                moviePrice = 8.0f;
+            }
+            return moviePrice;
         }
-    }
 
     public void deleteMovie(String fileName) {
         FileManager file = new FileManager();
