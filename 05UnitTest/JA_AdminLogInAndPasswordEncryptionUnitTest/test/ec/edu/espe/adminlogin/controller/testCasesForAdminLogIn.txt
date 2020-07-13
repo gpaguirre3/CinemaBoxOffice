@@ -1,0 +1,15 @@
+INPUT1              INPUT2          EXPECTED RESULT
+
+verifyAccount(String, String) : String
+
+username            password        
+Cinema              cinema          false
+Josue               Aleman          true
+brothers            sisters         false
+humanboundary       war             false
+12412               123901          false
+boss                beta            false
+african             continent       false
+need                rath            false
+sex                 passion         false
+cinema              Cinema          false
