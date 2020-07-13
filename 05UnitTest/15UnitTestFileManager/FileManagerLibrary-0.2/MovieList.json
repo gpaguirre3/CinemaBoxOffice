@@ -1,0 +1,16 @@
+[
+  {
+    "movieTitle": "A",
+    "movieGender": "B",
+    "roomNumber": 1,
+    "movieFormat": "2D",
+    "moviePrice": 6.5
+  },
+  {
+    "movieTitle": "D",
+    "movieGender": "E",
+    "roomNumber": 2,
+    "movieFormat": "2D",
+    "moviePrice": 6.5
+  }
+]

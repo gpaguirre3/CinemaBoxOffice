@@ -1,0 +1,54 @@
+testCreateFile(String): boolean
+input1               expectedResult
+fileName             answer
+file.txt             true
+flie.csv             true
+file.json            true
+file.txt             false
+flie.csv             false
+file.json            false
+-                    false
+file                 true
+.txt                 true
+file text.txt        true
+
+
+testDeleteFile(String): boolean
+input1               expectedResult
+fileName             answer
+file.txt             true
+flie.csv             true
+file.json            true
+file.txt             false
+flie.csv             false
+file.json            false
+-                    false
+file                 true
+.txt                 true
+file text.txt        true
+
+testWriteFile(String, String): boolean
+input1               input2                      expectedResult
+fileName             informationToSave           answer
+file.txt             software                    true
+flie.csv             software                    true
+file.txt             code, test                  true   
+flie.csv             /*-+                        true
+file.txt             <,.-{}+´¿'                  true
+flie.csv             12364                       true
+-                    software                    false
+file                 software                    true
+.txt                 software                    true
+file text.txt        software,13+|               true
+
+testReadFile(String): ArrayList<String>
+input1               expectedResult
+fileName             answer
+file.txt             !null
+flie.csv             !null
+file.json            null
+file.xml             null
+-                    null
+file                 !null
+.txt                 !null
+file text.txt        !null
