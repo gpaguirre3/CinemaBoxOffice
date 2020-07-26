@@ -28,6 +28,6 @@ public class Customer extends Person {
     }
 
     public void cinemaMenu() {
-        
+
     }
 }
