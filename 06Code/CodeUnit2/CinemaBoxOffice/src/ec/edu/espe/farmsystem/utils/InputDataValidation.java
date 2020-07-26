@@ -43,7 +43,7 @@ public class InputDataValidation {
         }
         return data;
     }
-    
+
     public int getInt(String title, int characters) {
         String data = "";
         while (data.equals("")) {
@@ -56,13 +56,13 @@ public class InputDataValidation {
         }
         return Integer.parseInt(data);
     }
-    
+
     public float getFloat(String title) {
         System.out.println(title);
         String data = string.nextLine();
         return Float.parseFloat(data);
     }
-    
+
     public static boolean checkCard(String card) {
         if (card.length() != 16) {
             return false;
@@ -72,8 +72,9 @@ public class InputDataValidation {
             number = Character.getNumericValue(card.charAt(i));
             if (i % 2 == 0) {
                 number *= 2;
-                if(number > 9){
-                    number=number-9;                
+                if (number > 9) {
+                    number = number - 9;
+
                 }
             }
             sum = sum + number;
@@ -95,7 +96,7 @@ public class InputDataValidation {
             }
         }
         int lastDigit = Character.getNumericValue((CI.charAt(CI.length() - 1)));
-        int digit,sumPairs = 0, oddSum = 0;
+        int digit, sumPairs = 0, oddSum = 0;
 
         for (int i = 0; i < 9; i++) {
             digit = Character.getNumericValue(CI.charAt(i));

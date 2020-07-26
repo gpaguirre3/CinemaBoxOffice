@@ -14,6 +14,8 @@ import ec.edu.espe.cinemaboxoffice.model.Promotion;
 public class PromotionRecord {
     
     public boolean recordPromotion(Promotion promotion){
+        
+        
         return true;
     }
     
