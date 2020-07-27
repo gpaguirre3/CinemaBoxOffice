@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <script>
+
+            class FarmAnimal {
+                farmAnimal(id, breed) {
+                    this.id = id;
+                    this.breed = breed;
+                }
+
+            }
+
+            //FarmAnimal.prototype.getProductPrice = function () {
+             //   console.log(this.nombre + 'hace un ruido.');
+            //}
+
+            class Chicken extends FarmAnimal {
+                chicken(id, breed, layEggs, eggsNumber) {
+                    super.farmAnimal(id, breed);
+                    this.layEggs = layEggs;
+                    this.eggsNumber = eggsNumber;
+                }
+            }
+
+            class Cow extends FarmAnimal {
+                cow(id, breed, itProduceMilk, litersOfMilk) {
+                    super.farmAnimal(id, breed);
+                    this.itProduceMilk = itProduceMilk;
+                    this.litersofmilk = litersOfMilk;
+                }
+            }
+
+            class Sheep extends FarmAnimal {
+                sheep(id, breed, hasWool, weightWool) {
+                    super.farmAnimal(id, breed);
+                    this.hasWool = hasWool;
+                    this.weightWool = weightWool;
+                }
+            }
+
+
+            var chicken = new Chicken;
+            chicken.chicken(1235, "Ponedora", true, 25);
+            console.log(chicken);
+            var cow = new Cow;
+            cow.cow(1236, "Lechera", true, 14);
+            console.log(cow);
+            var sheep = new Sheep;
+            sheep.sheep(1237, "Dorper", true, 5);
+            console.log(sheep);
+        </script>
+    </body>
+</html>
