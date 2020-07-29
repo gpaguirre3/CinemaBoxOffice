@@ -17,7 +17,6 @@ public class MoviePremier extends Movie{
     private ArrayList<Date> dates;
     private float pricePremier;
     private CinemaRoom room;
-    
 
     public MoviePremier(String title, String gender, int ageRestriction, String 
             sinopsis, ArrayList<Date> dates, float pricePremier, CinemaRoom room) {

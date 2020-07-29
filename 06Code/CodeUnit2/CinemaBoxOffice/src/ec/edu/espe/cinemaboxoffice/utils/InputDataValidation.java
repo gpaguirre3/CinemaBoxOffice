@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.farmsystem.utils;
+package ec.edu.espe.cinemaboxoffice.utils;
 
 import java.util.Scanner;
 
@@ -12,8 +12,7 @@ import java.util.Scanner;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class InputDataValidation {
-
-    Scanner string;
+     Scanner string;
 
     public InputDataValidation() {
         string = new Scanner(System.in);

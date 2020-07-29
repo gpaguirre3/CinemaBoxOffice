@@ -16,25 +16,27 @@ public class Cinema {
 
     private Date openingDate;
     private Date closingDate;
+    private ArrayList<Movie> movies;
 
-    public Cinema(Date openingDate, Date closingDate) {
+    public Cinema(Date openingDate, Date closingDate, ArrayList<Movie> movies) {
         this.openingDate = openingDate;
         this.closingDate = closingDate;
+        this.movies = movies;
     }
 
-    public boolean showListBillboard(ArrayList<Movie> movies){
+    public boolean showListBillboard() {
         return true;
     }
-    
-    public boolean showListMoviePremiere(ArrayList<Movie> premieres){
+
+    public boolean showListMoviePremiere() {
         return true;
     }
-    
-    public boolean showLisNextPremiere(ArrayList<Movie> nextPremiers){
+
+    public boolean showLisNextPremieres() {
         return true;
     }
-    
-    public boolean showPromotions(ArrayList<Promotion> promotions){
+
+    public boolean showPromotions() {
         return true;
     }
 }

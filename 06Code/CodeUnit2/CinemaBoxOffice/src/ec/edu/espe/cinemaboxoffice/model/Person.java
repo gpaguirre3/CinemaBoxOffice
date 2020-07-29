@@ -10,6 +10,7 @@ package ec.edu.espe.cinemaboxoffice.model;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public abstract class Person {
+
     private int id;
     protected String name;
 

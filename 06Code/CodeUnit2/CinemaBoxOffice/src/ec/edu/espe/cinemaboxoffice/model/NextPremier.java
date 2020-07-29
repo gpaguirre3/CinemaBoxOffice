@@ -13,10 +13,10 @@ import java.util.Date;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class NextPremier extends Movie{
-    
+
     private Date premierDate;
 
-    public NextPremier(String title, String gender, int ageRestriction, 
+    public NextPremier(String title, String gender, int ageRestriction,
             String sinopsis, Date premierDate) {
         super(title, gender, ageRestriction, sinopsis);
         this.premierDate = premierDate;

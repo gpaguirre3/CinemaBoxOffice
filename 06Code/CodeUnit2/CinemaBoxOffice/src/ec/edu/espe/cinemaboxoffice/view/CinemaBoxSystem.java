@@ -5,15 +5,14 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
-import ec.edu.espe.farmsystem.utils.InputDataValidation;
+import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
 import java.io.IOException;
 
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class CinemaBoxOfficeSystem {
-
+public class CinemaBoxSystem {
     public static void main(String[] args) throws IOException {
         InputDataValidation in = new InputDataValidation();
         AdminSystem adminSystem = new AdminSystem();
@@ -27,10 +26,10 @@ public class CinemaBoxOfficeSystem {
             int option2 = in.getInt("Enter an option: ", 1);
             switch (option2) {
                 case 1:
-                    adminSystem.verifyAccount();
+                    adminSystem.adminMenu();
                     break;
                 case 2:
-                    customerSystem.seeBillboard();
+                    customerSystem.CinemaMenu();
                     break;
                 case 3:
                     repeat = true;

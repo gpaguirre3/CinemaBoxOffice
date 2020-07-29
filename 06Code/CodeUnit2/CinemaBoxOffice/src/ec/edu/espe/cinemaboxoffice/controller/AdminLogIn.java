@@ -4,17 +4,17 @@
  * and open the template in the editor.
  */
 package ec.edu.espe.cinemaboxoffice.controller;
-
+/*
 import ec.edu.espe.farmsystem.utils.PasswordEncryptor;
-import java.util.Scanner;
+import java.util.Scanner;*/
 
 /**
  *
- * @author Josue Aleman.
+ * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class AdminLogIn {
+public class AdminLogin {
 
-    Scanner scanner = new Scanner(System.in);
+    /*Scanner scanner = new Scanner(System.in);
     LoginFileManager file = new LoginFileManager("AdminAccount.txt");
 
     public boolean verifyAccount() {
@@ -78,5 +78,5 @@ public class AdminLogIn {
             permissionToEnter = true;
         }
         return permissionToEnter;
-    }
+    }*/
 }

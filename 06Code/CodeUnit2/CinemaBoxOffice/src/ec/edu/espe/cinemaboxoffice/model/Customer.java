@@ -9,7 +9,7 @@ package ec.edu.espe.cinemaboxoffice.model;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Customer extends Person {
+public class Customer extends Person{
 
     private int age;
     private PaymentCard card;

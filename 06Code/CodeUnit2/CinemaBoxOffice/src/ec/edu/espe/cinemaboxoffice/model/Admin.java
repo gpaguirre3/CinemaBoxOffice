@@ -5,15 +5,11 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.controller.AdminLogIn;
-import ec.edu.espe.farmsystem.utils.InputDataValidation;
-import java.io.IOException;
-
 /**
  *
  * @author Josue Aleman, ESPE
  */
-public class Admin extends Person {
+public class Admin extends Person{
 
     private String userName;
     private String keyUser;
@@ -23,6 +19,4 @@ public class Admin extends Person {
         this.userName = userName;
         this.keyUser = keyUser;
     }
-
-
 }

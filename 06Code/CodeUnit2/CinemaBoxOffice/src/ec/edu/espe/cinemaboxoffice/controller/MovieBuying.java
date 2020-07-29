@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package ec.edu.espe.cinemaboxoffice.controller;
-
 import ec.edu.espe.cinemaboxoffice.model.Bill;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.Ticket;
@@ -14,9 +13,8 @@ import java.util.ArrayList;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class BuyingTheMovie {
-
-    public Movie chooseMovie() {
+public class MovieBuying {
+      public Movie chooseMovie() {
         return null;
     }
 

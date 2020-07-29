@@ -5,8 +5,10 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
-import ec.edu.espe.cinemaboxoffice.controller.AdminLogIn;
-import ec.edu.espe.farmsystem.utils.InputDataValidation;
+import ec.edu.espe.cinemaboxoffice.controller.AdminLogin;
+import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
+import ec.edu.espe.cinemaboxoffice.controller.PromotionRecord;
+import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
 import java.io.IOException;
 
 /**
@@ -14,12 +16,12 @@ import java.io.IOException;
  * @author Josue Aleman, ESPE
  */
 public class AdminSystem {
-
+ 
     public void verifyAccount() throws IOException {
-        AdminLogIn logIn = new AdminLogIn();
+        AdminLogin logIn = new AdminLogin();
         boolean permission = false;
         while (permission == false) {
-            permission = logIn.verifyAccount();
+            //permission = logIn.verifyAccount();
             if (permission == true) {
                 adminMenu();
             }
@@ -27,30 +29,24 @@ public class AdminSystem {
     }
 
     public void adminMenu() throws IOException {
-
         InputDataValidation in = new InputDataValidation();
+        MovieRecord record = new MovieRecord();
+        PromotionRecord precord = new PromotionRecord();
         int option;
-        boolean repeat = false;
-        while (repeat == false) {
-            System.out.println(" 1: Organize movie list \n 2: Organize promotions \n 3: Exit");
+        do {
+            System.out.println(" 1: Manage movie list \n 2: Manage promotions \n 3: Exit");
             option = in.getInt("Enter an option: ", 1);
             switch (option) {
                 case 1:
-                    System.out.println("\nOrganizing movie list\n");
-                    //billboard.organizeMovieList();
+                    record.manageCinema();
                     break;
                 case 2:
-                    System.out.println("\nOrganizing promotions\n");
-                    //billboard.organizePromotions();
-                    break;
-                case 3:
-                    repeat = true;
+                    precord.managePromotion();
                     break;
                 default:
                     System.out.println("Incorrect option");
                     break;
             }
-        }
+        } while (option != 3);
     }
-
 }

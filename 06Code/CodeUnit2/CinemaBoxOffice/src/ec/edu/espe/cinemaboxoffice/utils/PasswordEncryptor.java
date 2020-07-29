@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.farmsystem.utils;
+package ec.edu.espe.cinemaboxoffice.utils;
 
 /**
  *
  * @author Josue
  */
 public class PasswordEncryptor {
-
-    public String encryptPassword(String newPassword) {
+      public String encryptPassword(String newPassword) {
 
         char[] charExtraction = newPassword.toCharArray();
 

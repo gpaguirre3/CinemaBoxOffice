@@ -12,7 +12,6 @@ import java.util.ArrayList;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public abstract class Movie {
-
     protected String title;
     protected String gender;
     protected int ageRestriction;
