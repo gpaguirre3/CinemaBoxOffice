@@ -21,7 +21,7 @@ public class PasswordEncryptor {
         }
 
         newPassword = String.copyValueOf(charExtraction);
-        return null;
+        return newPassword;
 
     }
 
