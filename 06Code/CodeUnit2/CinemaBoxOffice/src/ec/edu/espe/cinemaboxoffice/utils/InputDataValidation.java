@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.utils;
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -12,7 +14,8 @@ import java.util.Scanner;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class InputDataValidation {
-     Scanner string;
+
+    Scanner string;
 
     public InputDataValidation() {
         string = new Scanner(System.in);
@@ -113,5 +116,23 @@ public class InputDataValidation {
             return lastDigit == 0;
         }
         return lastDigit == (higher - total);
+    }
+
+    public Date getDate() {
+        int day = getInt("Enter the day: ", 2);
+        int month = getInt("Enter the month: ", 2);
+        int year = getInt("Enter the year: ", 4);
+        return new Date(year - 1900, month - 1, day);
+    }
+
+    public ArrayList<Date> getDates() {
+        ArrayList<Date> dates = new ArrayList<>();
+        do {
+            int day = getInt("Enter the day: ", 2);
+            int month = getInt("Enter the month: ", 2);
+            int year = getInt("Enter the year: ", 4);
+            dates.add(new Date(year, month, day));
+        } while ("yes".equals(getYesOrNo("You want to add another date: ")));
+        return dates;
     }
 }

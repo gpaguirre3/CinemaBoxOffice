@@ -25,4 +25,9 @@ public abstract class Movie {
     }
     
     public abstract ArrayList<Movie> consultMovies(String fileName);
+
+    @Override
+    public String toString() {
+        return "Movie{" + "title=" + title + ", gender=" + gender + ", ageRestriction=" + ageRestriction + ", sinopsis=" + sinopsis + '}';
+    }
 }

@@ -20,4 +20,12 @@ public class CinemaRoom {
         this.roomFormat = roomFormat;
         this.seats = seats;
     }
+
+    public static Seat[] buildSeat() {
+        Seat[] buildSeats = new Seat[149];
+        for (int i = 0; i < 149; i++) {
+            buildSeats[i] = new Seat(i);
+        }
+        return buildSeats;
+    }
 }

@@ -30,4 +30,9 @@ public class MovieBillboard extends Movie {
     public ArrayList<Movie> consultMovies(String fileName) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public String toString() {
+        return "MovieBillboard{" + super.toString() + "date=" + date + ", price=" + price + ", room=" + room + '}';
+    }
 }

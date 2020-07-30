@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.model;
 import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
 import ec.edu.espe.cinemaboxoffice.controller.PromotionRecord;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
+import java.io.IOException;
 
 /**
  *
@@ -24,7 +25,7 @@ public class Admin extends Person {
         this.password = keyUser;
     }
 
-    public void manageCinema() {
+    public void manageCinema() throws IOException {
         InputDataValidation in = new InputDataValidation();
         MovieRecord record = new MovieRecord();
         PromotionRecord precord = new PromotionRecord();
