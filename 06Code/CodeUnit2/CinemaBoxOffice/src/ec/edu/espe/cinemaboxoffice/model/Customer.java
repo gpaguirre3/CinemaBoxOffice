@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
+
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
@@ -12,22 +14,26 @@ package ec.edu.espe.cinemaboxoffice.model;
 public class Customer extends Person{
 
     private int age;
-    private PaymentCard card;
-    private Bill bill;
+    
+    InputDataValidation in = new InputDataValidation();
 
-    public Customer(int id, String name, int age) {
-        super(id, name);
+    public Customer(String CI, String name, int age) {
+        super(CI, name);
         this.age = age;
     }
-
-    public Customer(int id, String name, int age, PaymentCard card, Bill bill) {
-        super(id, name);
-        this.age = age;
-        this.card = card;
-        this.bill = bill;
+    
+    public void custormerData(){
+        
+        name = in.getString("Enter the full name: ");
+        do{
+            CI = in.getString("Enter your CI: ");
+        }while(!in.validateCI(CI));
+        age = in.getInt("Enter the age: ", 2);
     }
-
+    
     public void cinemaMenu() {
 
     }
+    
+    
 }

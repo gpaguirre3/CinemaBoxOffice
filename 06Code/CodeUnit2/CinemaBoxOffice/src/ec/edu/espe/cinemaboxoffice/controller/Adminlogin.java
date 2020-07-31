@@ -12,17 +12,14 @@ import java.util.Scanner;*/
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class AdminLogin {
+public class Adminlogin {
 
     /*Scanner scanner = new Scanner(System.in);
     LoginFileManager file = new LoginFileManager("AdminAccount.txt");
-
     public boolean verifyAccount() {
-
         boolean username = false;
         boolean password = false;
         boolean permissionToEnter = false;
-
         boolean repeat = false;
         while (repeat == false) {
             username = enterUsername();
@@ -34,7 +31,6 @@ public class AdminLogin {
         permissionToEnter = allowAccess(username, password);
         return permissionToEnter;
     }
-
     public boolean enterUsername() {
         String username;
         boolean usernameFinder = false;
@@ -42,7 +38,6 @@ public class AdminLogin {
             System.out.println("Username: ");
             username = scanner.nextLine();
             usernameFinder = file.findUsername(username);
-
             if (usernameFinder == true) {
                 System.out.println("Correct username!");
             } else {
@@ -51,7 +46,6 @@ public class AdminLogin {
         } while (usernameFinder != true);
         return true;
     }
-
     public boolean enterPassword() {
         PasswordEncryptor encryptor = new PasswordEncryptor();
         String password;
@@ -61,17 +55,14 @@ public class AdminLogin {
             password = scanner.nextLine();
             String compareInFile = encryptor.decryptPassword(password);
             passwordFinder = file.findPassword(compareInFile);
-
             if (passwordFinder == true) {
                 System.out.println("Correct Password");
             } else {
                 System.out.println("Incorrect Password");
             }
-
         } while (passwordFinder != true);
         return true;
     }
-
     public boolean allowAccess(boolean username, boolean password) {
         boolean permissionToEnter = false;
         if ((username == true) & (password == true)) {

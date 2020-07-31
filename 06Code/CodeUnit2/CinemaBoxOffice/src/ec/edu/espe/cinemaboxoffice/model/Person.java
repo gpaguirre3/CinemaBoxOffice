@@ -11,16 +11,16 @@ package ec.edu.espe.cinemaboxoffice.model;
  */
 public abstract class Person {
 
-    private int id;
+    protected String CI;
     protected String name;
 
-    public Person(int id, String name) {
-        this.id = id;
+    public Person(String id, String name) {
+        this.CI = CI;
         this.name = name;
     }
 
-    public int getId() {
-        return id;
+    public String getCI() {
+        return CI;
     }
 
     public String getName() {

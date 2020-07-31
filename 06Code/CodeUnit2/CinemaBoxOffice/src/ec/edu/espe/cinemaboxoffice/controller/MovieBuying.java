@@ -13,8 +13,8 @@ import java.util.ArrayList;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class MovieBuying {
-      public Movie chooseMovie() {
+public class MovieBuying { 
+    public Movie chooseMovie() {
         return null;
     }
 
