@@ -5,35 +5,50 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
-
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Customer extends Person{
-
+public class Customer extends Person {
     private int age;
-    
-    InputDataValidation in = new InputDataValidation();
+    private String CI;
 
-    public Customer(String CI, String name, int age) {
-        super(CI, name);
+    public Customer(int id, String name, int age, String CI) {
+        super(id, name);
+        this.age = age;
+        this.CI = CI;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
         this.age = age;
     }
-    
-    public void custormerData(){
-        
-        name = in.getString("Enter the full name: ");
-        do{
-            CI = in.getString("Enter your CI: ");
-        }while(!in.validateCI(CI));
-        age = in.getInt("Enter the age: ", 2);
-    }
-    
-    public void cinemaMenu() {
 
+    public String getCI() {
+        return CI;
     }
-    
-    
+
+    public void setCI(String CI) {
+        this.CI = CI;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }

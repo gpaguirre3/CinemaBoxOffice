@@ -10,22 +10,19 @@ package ec.edu.espe.cinemaboxoffice.model;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public abstract class Person {
-
-    protected String CI;
+    protected int id;
     protected String name;
 
-    public Person(String id, String name) {
-        this.CI = CI;
+    public Person(int id, String name){
         this.name = name;
+        this.id = id;
     }
 
-    public String getCI() {
-        return CI;
+    public int getId() {
+        return id;
     }
 
     public String getName() {
         return name;
-    }
-    
-    
+    } 
 }

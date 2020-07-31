@@ -5,8 +5,6 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
-
 
 /**
  *
@@ -19,29 +17,42 @@ public class PaymentCard {
     private int month;
     private int year;
     
-    InputDataValidation in = new InputDataValidation();
-    
     public PaymentCard(String cardNumber, int segurityCode, int month, int year) {
         this.cardNumber = cardNumber;
         this.segurityCode = segurityCode;
         this.month = month;
         this.year = year;
     }
-    
-    public boolean confirmCard(){
-        
-        boolean validconfirmation = true;
-        
-        do{
-            cardNumber = in.getString("Enter your Number Card: ");
-        }while(!in.checkCard(cardNumber));
-        
-        segurityCode = in.getInt("Enter your segurity code: ", 3);
-        month = in.getInt("Expiration date of month", 2);
-        year = in.getInt("Expiration date of year", 2);
-        return validconfirmation;
+
+    public String getCardNumber() {
+        return cardNumber;
     }
-    
-    
-    
+
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    public int getSegurityCode() {
+        return segurityCode;
+    }
+
+    public void setSegurityCode(int segurityCode) {
+        this.segurityCode = segurityCode;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
 }

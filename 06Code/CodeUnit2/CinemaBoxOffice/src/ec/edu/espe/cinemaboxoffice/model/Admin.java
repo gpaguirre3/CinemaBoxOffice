@@ -19,8 +19,8 @@ public class Admin extends Person {
     private String userName;
     private String password;
 
-    public Admin(String CI, String name, String userName, String keyUser) {
-        super(CI, name);
+    public Admin(int id, String name, String userName, String keyUser) {
+        super(id, name);
         this.userName = userName;
         this.password = keyUser;
     }
@@ -49,7 +49,7 @@ public class Admin extends Person {
 
     @Override
     public String toString() {
-        String admin = userName + "," + password + "," + name + "," + getCI();
+        String admin = userName + "," + password + "," + name + "," + getId();
 
         return admin;
     }

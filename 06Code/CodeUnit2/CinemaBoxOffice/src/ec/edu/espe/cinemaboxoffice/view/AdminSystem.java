@@ -48,7 +48,7 @@ public class AdminSystem {
     }
 
     public void verifyAccount() throws IOException {
-        Admin admin = new Admin("", "", "", "");
+        Admin admin = new Admin(0, "", "", "");
         boolean permission = false;
         while (permission == false) {
             permission = logInAdmin();

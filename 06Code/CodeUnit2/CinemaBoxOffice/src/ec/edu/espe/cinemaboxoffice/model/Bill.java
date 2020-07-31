@@ -15,37 +15,15 @@ import java.nio.file.Paths;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class Bill extends Person{
+public class Bill {
 
     private int id;
-    private float buyPrice;
     private Customer customer;
-    private Gson gson;
-    private File invoiceCreated;
-
-    public Bill(String CI, String name,int id, float buyPrice) {
-        super(CI, name);
+    private float buyPrice;
+    
+    public Bill(int id, Customer customer, float buyPrice) {
         this.id = id;
+        this.customer = customer;
         this.buyPrice = buyPrice;
     }
-    
-    public void keepingInvoice(){
-        gson = new GsonBuilder().setPrettyPrinting().create();
-        invoiceCreated = Paths.get("data/bill.json").toFile();
-        
-        if (!invoiceCreated.exists()) {
-            try {
-                invoiceCreated.createNewFile();
-                Files.write(invoiceCreated.toPath(), "[]".getBytes());
-            } catch (Exception exception) {
-                exception.printStackTrace();
-            }
-        }
-    }
-    
-    public void invoiceCreate(){
-        
-    }
-    
-
 }
