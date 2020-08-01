@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class MoviePremier extends Movie{
+public class MoviePremier extends Movie {
 
     private ArrayList<Date> dates;
     private float pricePremier;
@@ -27,7 +27,7 @@ public class MoviePremier extends Movie{
     }
 
     @Override
-    public ArrayList<Movie> consultMovies(String fileName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getTitle() {
+        return title;
     }
 }

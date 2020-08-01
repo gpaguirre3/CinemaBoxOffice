@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -24,7 +25,12 @@ public class Cinema {
         this.movies = movies;
     }
 
-    public boolean showListBillboard() {
+    public boolean showListBillboard(String fileName) throws IOException {
+        ArrayList<Movie> movies;
+        movies = Movie.consultMovies(fileName);
+        for (int i=0; i<movies.size(); i++){
+            System.out.println(movies.get(i));
+        }
         return true;
     }
 

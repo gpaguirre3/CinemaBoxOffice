@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import java.util.Date;
+
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
@@ -12,10 +14,10 @@ package ec.edu.espe.cinemaboxoffice.model;
 public class Promotion {
 
     private String promotionDescription;
-    private String promotionDate;
+    private Date promotionDate;
     private float promotionPrice;
 
-    public Promotion(String promotionDescription, String promotionDate, float promotionPrice) {
+    public Promotion(String promotionDescription, Date promotionDate, float promotionPrice) {
         this.promotionDescription = promotionDescription;
         this.promotionDate = promotionDate;
         this.promotionPrice = promotionPrice;

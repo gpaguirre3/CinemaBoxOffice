@@ -15,6 +15,11 @@ public class CinemaRoom {
     private String roomFormat;
     private Seat[] seats = new Seat[149];
 
+    public CinemaRoom(int roomNumber, String roomFormat) {
+        this.roomNumber = roomNumber;
+        this.roomFormat = roomFormat;
+    }
+    
     public CinemaRoom(int roomNumber, String roomFormat, Seat[] seats) {
         this.roomNumber = roomNumber;
         this.roomFormat = roomFormat;

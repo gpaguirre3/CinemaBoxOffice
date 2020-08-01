@@ -18,21 +18,20 @@ public class MovieBillboard extends Movie {
     private float price;
     private CinemaRoom room;
 
-    public MovieBillboard(String title, String gender, int ageRestriction,
-            String sinopsis, Date date, float price, CinemaRoom room) {
+    public MovieBillboard(String title, String gender, int ageRestriction, 
+            String sinopsis, Date date, float price) {
         super(title, gender, ageRestriction, sinopsis);
         this.date = date;
         this.price = price;
-        this.room = room;
-    }
-
-    @Override
-    public ArrayList<Movie> consultMovies(String fileName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public String toString() {
         return "MovieBillboard{" + super.toString() + "date=" + date + ", price=" + price + ", room=" + room + '}';
+    }
+
+    @Override
+    public String getTitle() {
+        return title;
     }
 }

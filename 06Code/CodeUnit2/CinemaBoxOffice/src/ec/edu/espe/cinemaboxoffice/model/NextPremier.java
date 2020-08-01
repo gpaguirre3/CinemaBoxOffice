@@ -21,9 +21,9 @@ public class NextPremier extends Movie{
         super(title, gender, ageRestriction, sinopsis);
         this.premierDate = premierDate;
     }
-
+    
     @Override
-    public ArrayList<Movie> consultMovies(String fileName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getTitle() {
+        return title;
     }
 }
