@@ -3,20 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Bill.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/CinemaRoom.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/AdminSystem.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/CustomerController.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/MovieBuying.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Customer.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Person.java</file>
             <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Admin.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/MovieRecord.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/PaymentController.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/PaymentCard.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/DBController.java</file>
-            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Cinema.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/PromotionRecord.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/CustomerController.java</file>
             <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/InputDataValidation.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/AdminSystem.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Bill.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Customer.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/MovieRecord.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/CinemaRoom.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Person.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/PaymentController.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/MovieBuying.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Cinema.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/DBController.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/PaymentCard.java</file>
+            <file>file:/C:/Users/patri/OneDrive/Escritorio/ESPE_POO/proyect%20version%202/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/Adminlogin.java</file>
         </group>
     </open-files>
 </project-private>
