@@ -13,6 +13,7 @@ import java.io.IOException;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class CinemaBoxSystem {
+
     public static void main(String[] args) throws IOException {
         InputDataValidation in = new InputDataValidation();
         AdminSystem adminSystem = new AdminSystem();
@@ -38,6 +39,6 @@ public class CinemaBoxSystem {
                     System.out.println("Incorrect option");
                     break;
             }
-        } while (repeat == false);    
+        } while (repeat == false);
     }
 }
