@@ -52,7 +52,7 @@ public class FrCreateMovie extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
 
-        pnlCreatMovie.setBackground(new java.awt.Color(0, 0, 102));
+        pnlCreatMovie.setBackground(new java.awt.Color(0, 0, 51));
 
         lblLogo.setFont(new java.awt.Font("Arial Rounded MT Bold", 2, 14)); // NOI18N
         lblLogo.setForeground(new java.awt.Color(255, 255, 255));

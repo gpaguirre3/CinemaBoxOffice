@@ -34,7 +34,7 @@ public class FrRecordAnotherMovie extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 51));
 
         btnYesAnother.setText("Yes");
         btnYesAnother.addActionListener(new java.awt.event.ActionListener() {
