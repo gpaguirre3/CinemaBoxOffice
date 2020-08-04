@@ -6,6 +6,9 @@
 package ec.edu.espe.cinemaboxoffice.view.j.frm;
 
 import java.awt.HeadlessException;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -62,7 +65,7 @@ public class FrBillboard extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
-    public FrBillboard() {
+    public FrBillboard() throws IOException {
         initComponents();
         this.setLocationRelativeTo(null);
 
@@ -95,14 +98,14 @@ public class FrBillboard extends javax.swing.JFrame {
         lblJoker = new javax.swing.JLabel();
         lblShrek = new javax.swing.JLabel();
         lblPulpF = new javax.swing.JLabel();
-        btnLotr = new javax.swing.JButton();
-        btnJoker = new javax.swing.JButton();
-        btnPulp = new javax.swing.JButton();
-        btnShrek = new javax.swing.JButton();
         lblRidge = new javax.swing.JLabel();
         lblRyan = new javax.swing.JLabel();
-        btnRidge = new javax.swing.JButton();
-        btnRyan = new javax.swing.JButton();
+        btnMovie1 = new javax.swing.JButton();
+        btnMovie4 = new javax.swing.JButton();
+        btnMovie2 = new javax.swing.JButton();
+        btnMovie5 = new javax.swing.JButton();
+        btnMovie6 = new javax.swing.JButton();
+        btnMovie3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("BILLBOARD");
@@ -117,92 +120,61 @@ public class FrBillboard extends javax.swing.JFrame {
 
         lblPulpF.setText("Pulp Fiction");
 
-        btnLotr.setText("View More");
-        btnLotr.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLotrActionPerformed(evt);
-            }
-        });
-
-        btnJoker.setText("View More");
-        btnJoker.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnJokerActionPerformed(evt);
-            }
-        });
-
-        btnPulp.setText("View More");
-        btnPulp.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPulpActionPerformed(evt);
-            }
-        });
-
-        btnShrek.setText("View More");
-        btnShrek.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnShrekActionPerformed(evt);
-            }
-        });
-
         lblRidge.setText("Hacksaw Ridge");
 
         lblRyan.setText("Saving Private Ryan");
 
-        btnRidge.setText("View More");
-        btnRidge.addActionListener(new java.awt.event.ActionListener() {
+        btnMovie1.setText("View More");
+        btnMovie1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRidgeActionPerformed(evt);
+                btnMovie1ActionPerformed(evt);
             }
         });
 
-        btnRyan.setText("View More");
-        btnRyan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRyanActionPerformed(evt);
-            }
-        });
+        btnMovie4.setText("View More");
+
+        btnMovie2.setText("View More");
+
+        btnMovie5.setText("View More");
+
+        btnMovie6.setText("View More");
+
+        btnMovie3.setText("View More");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(111, 111, 111)
-                        .addComponent(btnLotr)
-                        .addGap(322, 322, 322)
-                        .addComponent(btnShrek)
-                        .addGap(331, 331, 331)
-                        .addComponent(btnRidge))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(32, 32, 32)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblLotr)
-                                    .addComponent(lblJoker, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(113, 113, 113)
-                                .addComponent(btnJoker)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(191, 191, 191)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblShrek, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblPulpF, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(191, 191, 191)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblRidge, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblRyan, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(260, 260, 260)
-                                .addComponent(btnPulp)
-                                .addGap(332, 332, 332)
-                                .addComponent(btnRyan)))
-                        .addGap(46, 46, 46)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblLotr)
+                    .addComponent(lblJoker, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(191, 191, 191)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblShrek, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPulpF, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(191, 191, 191)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblRidge, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblRyan, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(46, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(102, 102, 102)
+                .addComponent(btnMovie4)
+                .addGap(357, 357, 357)
+                .addComponent(btnMovie5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnMovie6)
+                .addGap(109, 109, 109))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(101, 101, 101)
+                .addComponent(btnMovie1)
+                .addGap(353, 353, 353)
+                .addComponent(btnMovie2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnMovie3)
+                .addGap(111, 111, 111))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -214,20 +186,20 @@ public class FrBillboard extends javax.swing.JFrame {
                     .addComponent(lblRidge))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnLotr)
-                    .addComponent(btnShrek)
-                    .addComponent(btnRidge))
+                    .addComponent(btnMovie1)
+                    .addComponent(btnMovie2)
+                    .addComponent(btnMovie3))
                 .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblJoker)
                     .addComponent(lblPulpF)
                     .addComponent(lblRyan))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnJoker)
-                    .addComponent(btnPulp)
-                    .addComponent(btnRyan))
-                .addContainerGap(384, Short.MAX_VALUE))
+                    .addComponent(btnMovie4)
+                    .addComponent(btnMovie5)
+                    .addComponent(btnMovie6))
+                .addContainerGap(377, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -255,66 +227,14 @@ public class FrBillboard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnLotrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLotrActionPerformed
+    private void btnMovie1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMovie1ActionPerformed
         // TODO add your handling code here:
-        FrMovie movie = new FrMovie();
-        movie.setVisible(true);
-        String name = "The Lord of the Rings: The Return of the King";
-        String duration = "3h20m";
-        String age = "13";
-        movie.showMovie(imageLotr, name, duration, age);
-
-    }//GEN-LAST:event_btnLotrActionPerformed
-
-    private void btnJokerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJokerActionPerformed
-        // TODO add your handling code here:
-        FrMovie movie = new FrMovie();
-        movie.setVisible(true);
-        String name = "The Joker";
-        String duration = "2h2m";
-        String age = "18";
-        movie.showMovie(imageJoker, name, duration, age);
-    }//GEN-LAST:event_btnJokerActionPerformed
-
-    private void btnShrekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShrekActionPerformed
-        // TODO add your handling code here:
-        FrMovie movie = new FrMovie();
-        movie.setVisible(true);
-        String name = "Shrek";
-        String duration = "1h35m";
-        String age = "All public";
-        movie.showMovie(imageShrek, name, duration, age);
-    }//GEN-LAST:event_btnShrekActionPerformed
-
-    private void btnPulpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPulpActionPerformed
-        // TODO add your handling code here:
-        FrMovie movie = new FrMovie();
-        movie.setVisible(true);
-        String name = "Pulp Fiction";
-        String duration = "2h58m";
-        String age = "18";
-        movie.showMovie(imagePulp, name, duration, age);
-    }//GEN-LAST:event_btnPulpActionPerformed
-
-    private void btnRidgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRidgeActionPerformed
-        // TODO add your handling code here:
-        FrMovie movie = new FrMovie();
-        movie.setVisible(true);
-        String name = "hacksaw Ridge";
-        String duration = "2h19m";
-        String age = "18";
-        movie.showMovie(imageHacksaw, name, duration, age);
-    }//GEN-LAST:event_btnRidgeActionPerformed
-
-    private void btnRyanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRyanActionPerformed
-        // TODO add your handling code here:
-        FrMovie movie = new FrMovie();
-        movie.setVisible(true);
-        String name = "Saving Private Ryan";
-        String duration = "2h50m";
-        String age = "18";
-        movie.showMovie(imageRyan, name, duration, age);
-    }//GEN-LAST:event_btnRyanActionPerformed
+        String title = ("The Lord of the Rings: The Return of the King");
+        int imagePosition = 0;
+        FrMovie s = new FrMovie();
+        s.setVisible(true);
+        s.showMovie(title, imagePosition);
+    }//GEN-LAST:event_btnMovie1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -353,18 +273,22 @@ public class FrBillboard extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrBillboard().setVisible(true);
+                try {
+                    new FrBillboard().setVisible(true);
+                } catch (IOException ex) {
+                    Logger.getLogger(FrBillboard.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnJoker;
-    private javax.swing.JButton btnLotr;
-    private javax.swing.JButton btnPulp;
-    private javax.swing.JButton btnRidge;
-    private javax.swing.JButton btnRyan;
-    private javax.swing.JButton btnShrek;
+    private javax.swing.JButton btnMovie1;
+    private javax.swing.JButton btnMovie2;
+    private javax.swing.JButton btnMovie3;
+    private javax.swing.JButton btnMovie4;
+    private javax.swing.JButton btnMovie5;
+    private javax.swing.JButton btnMovie6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblJoker;

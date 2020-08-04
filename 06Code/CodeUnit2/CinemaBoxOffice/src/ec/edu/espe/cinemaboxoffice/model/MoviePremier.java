@@ -18,8 +18,7 @@ public class MoviePremier extends Movie {
     private float pricePremier;
     private CinemaRoom room;
 
-    public MoviePremier(String title, String gender, int ageRestriction, String 
-            sinopsis, ArrayList<Date> dates, float pricePremier, CinemaRoom room) {
+    public MoviePremier(String title, String gender, int ageRestriction, String sinopsis, ArrayList<Date> dates, float pricePremier, CinemaRoom room) {
         super(title, gender, ageRestriction, sinopsis);
         this.dates = dates;
         this.pricePremier = pricePremier;

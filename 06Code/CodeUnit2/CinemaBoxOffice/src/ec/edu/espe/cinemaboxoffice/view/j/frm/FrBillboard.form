@@ -59,53 +59,40 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
-                          <Component id="btnLotr" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="322" max="-2" attributes="0"/>
-                          <Component id="btnShrek" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="331" max="-2" attributes="0"/>
-                          <Component id="btnRidge" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblLotr" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblJoker" alignment="0" min="-2" pref="221" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
-                                  <Component id="btnJoker" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="lblShrek" min="-2" pref="221" max="-2" attributes="0"/>
-                                      <Component id="lblPulpF" min="-2" pref="221" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="lblRidge" min="-2" pref="221" max="-2" attributes="0"/>
-                                      <Component id="lblRyan" min="-2" pref="221" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="260" max="-2" attributes="0"/>
-                                  <Component id="btnPulp" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="332" max="-2" attributes="0"/>
-                                  <Component id="btnRyan" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="lblLotr" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblJoker" alignment="0" min="-2" pref="221" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="lblShrek" min="-2" pref="221" max="-2" attributes="0"/>
+                      <Component id="lblPulpF" min="-2" pref="221" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="lblRidge" min="-2" pref="221" max="-2" attributes="0"/>
+                      <Component id="lblRyan" min="-2" pref="221" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="46" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                  <Component id="btnMovie4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="357" max="-2" attributes="0"/>
+                  <Component id="btnMovie5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+                  <Component id="btnMovie6" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                  <Component id="btnMovie1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="353" max="-2" attributes="0"/>
+                  <Component id="btnMovie2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="btnMovie3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -120,9 +107,9 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnLotr" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnShrek" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnRidge" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnMovie1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnMovie2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnMovie3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -130,13 +117,13 @@
                       <Component id="lblPulpF" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblRyan" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnJoker" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnPulp" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnRyan" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnMovie4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnMovie5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnMovie6" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="384" max="32767" attributes="0"/>
+                  <EmptySpace pref="377" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -162,38 +149,6 @@
             <Property name="text" type="java.lang.String" value="Pulp Fiction"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnLotr">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="View More"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLotrActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnJoker">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="View More"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnJokerActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnPulp">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="View More"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPulpActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnShrek">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="View More"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnShrekActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JLabel" name="lblRidge">
           <Properties>
             <Property name="text" type="java.lang.String" value="Hacksaw Ridge"/>
@@ -204,21 +159,38 @@
             <Property name="text" type="java.lang.String" value="Saving Private Ryan"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnRidge">
+        <Component class="javax.swing.JButton" name="btnMovie1">
           <Properties>
             <Property name="text" type="java.lang.String" value="View More"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRidgeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMovie1ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnRyan">
+        <Component class="javax.swing.JButton" name="btnMovie4">
           <Properties>
             <Property name="text" type="java.lang.String" value="View More"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRyanActionPerformed"/>
-          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMovie2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="View More"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMovie5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="View More"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMovie6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="View More"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnMovie3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="View More"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

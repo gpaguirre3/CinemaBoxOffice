@@ -18,12 +18,16 @@ public class MovieBillboard extends Movie {
     private float price;
     private CinemaRoom room;
 
-    public MovieBillboard(String title, String gender, int ageRestriction, 
-            String sinopsis, Date date, float price) {
+    public MovieBillboard(String title, String gender, int ageRestriction, String sinopsis, Date date,
+            float price) {
         super(title, gender, ageRestriction, sinopsis);
         this.date = date;
         this.price = price;
     }
+
+
+
+
 
     @Override
     public String toString() {

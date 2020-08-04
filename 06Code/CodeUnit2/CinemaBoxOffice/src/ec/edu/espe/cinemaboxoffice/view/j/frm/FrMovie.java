@@ -5,6 +5,14 @@
  */
 package ec.edu.espe.cinemaboxoffice.view.j.frm;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import ec.edu.espe.cinemaboxoffice.model.Movie;
+import ec.edu.espe.filemanagerlibrary.FileManager;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.ArrayList;
 import javax.swing.ImageIcon;
 
 /**
@@ -13,8 +21,9 @@ import javax.swing.ImageIcon;
  */
 public class FrMovie extends javax.swing.JFrame {
 
-    ImageIcon icon = new ImageIcon();
-    FrBillboard movies = new FrBillboard();
+    String[] moviesImages = {"lotr.png", "shrek.png", "hacksawridge.png", "thejoker.png",
+        "pulpfiction.png", "privateryan.png"};
+    ImageIcon[] images = new ImageIcon[moviesImages.length];
 
     /**
      * Creates new form Movie
@@ -27,13 +36,61 @@ public class FrMovie extends javax.swing.JFrame {
         lblDuration.setText("");
         lblAge.setText("");
         lblMovie.setText("");
+        lblGender.setText("");
     }
 
-    public void showMovie(javax.swing.ImageIcon image, String name, String duration, String age) {
-        lblMovie.setIcon(image);
-        lblName.setText("Movie: " + name);
-        lblDuration.setText("Duration: " + duration);
-        lblAge.setText("Age restriction: " + age);
+    public void showMovie(String title, int movieImage) {
+        ArrayList<Movie2> movies = new ArrayList<>();
+        movies = createMovieList();
+        for (Movie2 movie : movies) {
+            if ((movie.getTitle().equals(title))) {
+                images[movieImage] = new ImageIcon(moviesImages[movieImage]);
+                lblMovie.setIcon(images[movieImage]);
+                lblName.setText("MOVIE: " + movie.getTitle());
+                lblDuration.setText("DURATION: " + movie.getDuration());
+                lblAge.setText("AGE RESTRICTION: " + movie.getAgeRestriction());
+                lblGender.setText("GENDER: " + movie.getGender());
+                txtSinopsis.setText("SINOPSIS: " + movie.getSinopsis());
+            }
+        }
+    }
+
+    public String passJsonContentToAString() {
+        File f = null;
+        FileReader fr = null;
+        BufferedReader br = null;
+        String jsonMovies = "";
+        try {
+            f = new File("Movies.json");
+            fr = new FileReader(f);
+            br = new BufferedReader(fr);
+            String line;
+            while ((line = br.readLine()) != null) {
+                jsonMovies = jsonMovies + line;
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (null != fr) {
+                    fr.close();
+                }
+            } catch (Exception e2) {
+                System.out.println(e2);
+            }
+        }
+        return jsonMovies;
+    }
+
+    public ArrayList<Movie2> createMovieList() {
+        String jsonMovies = "";
+        ArrayList<Movie2> movies = new ArrayList<>();
+        Gson gson = new Gson();
+        jsonMovies = passJsonContentToAString();
+        java.lang.reflect.Type movieName = new TypeToken<ArrayList<Movie>>() {
+        }.getType();
+        movies = gson.fromJson(jsonMovies, movieName);
+        return movies;
     }
 
     /**
@@ -52,6 +109,9 @@ public class FrMovie extends javax.swing.JFrame {
         lblAge = new javax.swing.JLabel();
         btnSelectMovie = new javax.swing.JButton();
         btnExit = new javax.swing.JButton();
+        lblGender = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtSinopsis = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Select Movie");
@@ -78,6 +138,12 @@ public class FrMovie extends javax.swing.JFrame {
             }
         });
 
+        lblGender.setText("jLabel2");
+
+        txtSinopsis.setColumns(20);
+        txtSinopsis.setRows(5);
+        jScrollPane1.setViewportView(txtSinopsis);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -95,12 +161,14 @@ public class FrMovie extends javax.swing.JFrame {
                             .addComponent(lblAge, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(50, 50, 50)
-                                .addComponent(lblMovie, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(lblMovie, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblGender, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(144, 144, 144)
+                        .addGap(124, 124, 124)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnSelectMovie, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnExit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -117,10 +185,14 @@ public class FrMovie extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(lblAge)
                 .addGap(18, 18, 18)
+                .addComponent(lblGender, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(btnSelectMovie)
                 .addGap(18, 18, 18)
                 .addComponent(btnExit)
-                .addContainerGap(368, Short.MAX_VALUE))
+                .addContainerGap(180, Short.MAX_VALUE))
         );
 
         pack();
@@ -189,9 +261,12 @@ public class FrMovie extends javax.swing.JFrame {
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnSelectMovie;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblAge;
     private javax.swing.JLabel lblDuration;
+    private javax.swing.JLabel lblGender;
     private javax.swing.JLabel lblMovie;
     private javax.swing.JLabel lblName;
+    private javax.swing.JTextArea txtSinopsis;
     // End of variables declaration//GEN-END:variables
 }

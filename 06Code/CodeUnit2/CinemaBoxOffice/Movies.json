@@ -1,0 +1,44 @@
+[
+  {
+      "title": "The Lord of the Rings: The Return of the King",
+	  "gender": "Action, Fantasy",
+      "duration": "3h20m",
+      "ageRestriction": "13",
+	  "sinopsis": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
+  },
+  {
+      "title": "Shrek",
+	  "gender": "Comedy",
+      "duration": "1h35m",
+      "ageRestriction": "All public",
+	  "sinopsis": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back."
+  },
+  {
+      "title": "Hacksaw Ridge",
+	  "gender": "Action, Real Life",
+      "duration": "2h19m",
+      "ageRestriction": "18",
+	  "sinopsis": "World War II American Army Medic Desmond T. Doss, who served during the Battle of Okinawa, refuses to kill people, and becomes the first man in American history to receive the Medal of Honor without firing a shot."
+  },
+  {
+      "title": "The Joker",
+	  "gender": "Drama",
+      "duration": "2h2m",
+      "ageRestriction": "18",
+	  "sinopsis": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker."
+  },
+  {
+      "title": "Pulp Fiction",
+	  "gender": "Action, comedy",
+      "duration": "2h58m",
+      "ageRestriction": "18",
+	  "sinopsis": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+  },
+  {
+      "title": "Saving Private Ryan",
+	  "gender": "Action",
+      "duration": "2h50m",
+      "ageRestriction": "18",
+	  "sinopsis": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action."
+  }
+]

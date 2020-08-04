@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class NextPremier extends Movie{
+public class NextPremier extends Movie {
 
     private Date premierDate;
 
@@ -21,7 +21,7 @@ public class NextPremier extends Movie{
         super(title, gender, ageRestriction, sinopsis);
         this.premierDate = premierDate;
     }
-    
+
     @Override
     public String getTitle() {
         return title;
