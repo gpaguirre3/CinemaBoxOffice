@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "title": "Spiderman",
+        "synopsis": "On a school trip, high school senior Peter Parker visits a Columbia University genetics laboratory with his friend Harry Osborn and his crush Mary Jane Watson. There, Peter is bitten by a genetically engineered \"super spider\" and seemingly falls ill after returning home. Meanwhile, Harry's scientist father Norman Osborn, owner of Oscorp, tries to secure an important military contract. He experiments on himself with an unstable performance-enhancing chemical and goes insane, killing his assistant.",
+        "duration": 5400,
+        "genres": [
+            {"id": 1, "name": "action"},
+            {"id": 2, "name": "comedy"}
+        ],
+        "price": 7.0
+    },
+    {
+        "id": 2,
+        "title": "The avengers",
+        "synopsis": "Iron Man, Captain America, Mass and Thor unite against a common enemy that poses a grave threat to the world. Nick Fury, director of the SHIELD agency, which maintains peace on Earth, gathers the greatest heroes to counter Loki's plans.",
+        "duration": 7300,
+        "genres": [
+            {"id": 1, "name": "action"},
+            {"id": 2, "name": "comedy"}
+        ],
+        "price": 9.0
+    },
+    {
+        "id": 3,
+        "title": "Transformers",
+        "synopsis": "Many centuries ago, two races of alien robots, the Autobots and the Decepticons, started a war for the fate of the universe. While Autobots believe in tolerance and the sanctity of life, Decepticons cling to the survival of their gender by exterminating biological life. In a hard search for the only source of energy that can ensure their survival - the Allspark - the battle reaches Earth, endangering the future of humanity.",
+        "duration": 5600,
+        "genres": [
+            {"id": 1, "name": "action"},
+            {"id": 2, "name": "comedy"}
+        ],
+        "price": 8.5
+    },
+    {
+        "id": 4,
+        "title": "Bad Boys for Life",
+        "synopsis": "The Miami Police Department's police team must embark on a mission to shoot down the head of a drug cartel, named Armando Follón. However, this does not seem like an easy task, as Armando is an experienced assassin who is committed to his work in the cartel.",
+        "duration": 7600,
+        "genres": [
+            {"id": 1, "name": "action"},
+            {"id": 2, "name": "comedy"},
+            {"id": 2, "name": "drama"},
+            {"id": 2, "name": "Thriller"}
+        ],
+        "price": 7.0
+    },
+    {
+        "id": 5,
+        "title": "Batman",
+        "synopsis": "Bat",
+        "duration": 7600,
+        "genres": [
+            {"id": 1, "name": "action"},
+            {"id": 2, "name": "drama"},
+        ],
+        "price": 7.0
+    },
+    {
+        "id": 6,
+        "title": "back to the future",
+        "synopsis": "non sense",
+        "duration": 7600,
+        "genres": [
+            {"id": 1, "name": "action"},
+            {"id": 2, "name": "Sci-Fi"},
+        ],
+        "price": 7.0
+    }
+]

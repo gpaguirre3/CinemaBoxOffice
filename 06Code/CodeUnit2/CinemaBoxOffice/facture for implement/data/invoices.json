@@ -1,0 +1,86 @@
+[
+  {
+    "lastCreditCardDigits": "3429",
+    "identifyCard": "1727620054",
+    "movie": {
+      "id": 1,
+      "title": "Spiderman",
+      "duration": 5400,
+      "synopsis": "On a school trip, high school senior Peter Parker visits a Columbia University genetics laboratory with his friend Harry Osborn and his crush Mary Jane Watson. There, Peter is bitten by a genetically engineered \"super spider\" and seemingly falls ill after returning home. Meanwhile, Harry\u0027s scientist father Norman Osborn, owner of Oscorp, tries to secure an important military contract. He experiments on himself with an unstable performance-enhancing chemical and goes insane, killing his assistant.",
+      "genres": [
+        {
+          "id": 1,
+          "name": "action"
+        },
+        {
+          "id": 2,
+          "name": "comedy"
+        }
+      ],
+      "price": 7.0
+    }
+  },
+  {
+    "lastCreditCardDigits": "3429",
+    "identifyCard": "1708740962",
+    "movie": {
+      "id": 2,
+      "title": "The avengers",
+      "duration": 7300,
+      "synopsis": "Iron Man, Captain America, Mass and Thor unite against a common enemy that poses a grave threat to the world. Nick Fury, director of the SHIELD agency, which maintains peace on Earth, gathers the greatest heroes to counter Loki\u0027s plans.",
+      "genres": [
+        {
+          "id": 1,
+          "name": "action"
+        },
+        {
+          "id": 2,
+          "name": "comedy"
+        }
+      ],
+      "price": 9.0
+    }
+  },
+  {
+    "lastCreditCardDigits": "3429",
+    "identifyCard": "1727620054",
+    "movie": {
+      "id": 1,
+      "title": "Spiderman",
+      "duration": 5400,
+      "synopsis": "On a school trip, high school senior Peter Parker visits a Columbia University genetics laboratory with his friend Harry Osborn and his crush Mary Jane Watson. There, Peter is bitten by a genetically engineered \"super spider\" and seemingly falls ill after returning home. Meanwhile, Harry\u0027s scientist father Norman Osborn, owner of Oscorp, tries to secure an important military contract. He experiments on himself with an unstable performance-enhancing chemical and goes insane, killing his assistant.",
+      "genres": [
+        {
+          "id": 1,
+          "name": "action"
+        },
+        {
+          "id": 2,
+          "name": "comedy"
+        }
+      ],
+      "price": 7.0
+    }
+  },
+  {
+    "lastCreditCardDigits": "3429",
+    "identifyCard": "1727620054",
+    "movie": {
+      "id": 3,
+      "title": "Transformers",
+      "duration": 5600,
+      "synopsis": "Many centuries ago, two races of alien robots, the Autobots and the Decepticons, started a war for the fate of the universe. While Autobots believe in tolerance and the sanctity of life, Decepticons cling to the survival of their gender by exterminating biological life. In a hard search for the only source of energy that can ensure their survival - the Allspark - the battle reaches Earth, endangering the future of humanity.",
+      "genres": [
+        {
+          "id": 1,
+          "name": "action"
+        },
+        {
+          "id": 2,
+          "name": "comedy"
+        }
+      ],
+      "price": 8.5
+    }
+  }
+]
