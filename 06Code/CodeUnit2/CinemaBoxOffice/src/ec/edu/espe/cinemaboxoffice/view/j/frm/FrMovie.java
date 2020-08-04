@@ -8,10 +8,10 @@ package ec.edu.espe.cinemaboxoffice.view.j.frm;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
-import ec.edu.espe.filemanagerlibrary.FileManager;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 
@@ -40,14 +40,14 @@ public class FrMovie extends javax.swing.JFrame {
     }
 
     public void showMovie(String title, int movieImage) {
-        ArrayList<Movie2> movies = new ArrayList<>();
+        ArrayList<Movie> movies = new ArrayList<>();
         movies = createMovieList();
-        for (Movie2 movie : movies) {
+        for (Movie movie : movies) {
             if ((movie.getTitle().equals(title))) {
                 images[movieImage] = new ImageIcon(moviesImages[movieImage]);
                 lblMovie.setIcon(images[movieImage]);
                 lblName.setText("MOVIE: " + movie.getTitle());
-                lblDuration.setText("DURATION: " + movie.getDuration());
+               // lblDuration.setText("DURATION: " + movie.getDuration());
                 lblAge.setText("AGE RESTRICTION: " + movie.getAgeRestriction());
                 lblGender.setText("GENDER: " + movie.getGender());
                 txtSinopsis.setText("SINOPSIS: " + movie.getSinopsis());
@@ -68,23 +68,23 @@ public class FrMovie extends javax.swing.JFrame {
             while ((line = br.readLine()) != null) {
                 jsonMovies = jsonMovies + line;
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println(e);
         } finally {
             try {
                 if (null != fr) {
                     fr.close();
                 }
-            } catch (Exception e2) {
+            } catch (IOException e2) {
                 System.out.println(e2);
             }
         }
         return jsonMovies;
     }
 
-    public ArrayList<Movie2> createMovieList() {
+    public ArrayList<Movie> createMovieList() {
         String jsonMovies = "";
-        ArrayList<Movie2> movies = new ArrayList<>();
+        ArrayList<Movie> movies = new ArrayList<>();
         Gson gson = new Gson();
         jsonMovies = passJsonContentToAString();
         java.lang.reflect.Type movieName = new TypeToken<ArrayList<Movie>>() {

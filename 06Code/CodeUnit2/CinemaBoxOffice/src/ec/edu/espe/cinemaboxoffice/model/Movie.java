@@ -41,7 +41,38 @@ public abstract class Movie {
         return null;
     }
 
-    public abstract String getTitle();
+    //public abstract String getTitle();
+
+    public String getTitle() {
+        return title;
+    }
+    
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public int getAgeRestriction() {
+        return ageRestriction;
+    }
+
+    public void setAgeRestriction(int ageRestriction) {
+        this.ageRestriction = ageRestriction;
+    }
+
+    public String getSinopsis() {
+        return sinopsis;
+    }
+
+    public void setSinopsis(String sinopsis) {
+        this.sinopsis = sinopsis;
+    }
+    
+    
     
     @Override
     public String toString() {
