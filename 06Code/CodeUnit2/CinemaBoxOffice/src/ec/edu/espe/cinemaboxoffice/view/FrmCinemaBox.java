@@ -117,6 +117,8 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel2.setBackground(new java.awt.Color(0, 0, 51));
+
         lblMoviePoster1.setText("jLabel1");
 
         btnMovie1.setText("View More");
@@ -348,6 +350,8 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                     .addComponent(lblMoviePoster4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
+
+        pnlBillboard6.setBackground(new java.awt.Color(0, 0, 51));
 
         lblMoviePoster6.setText("jLabel6");
 
