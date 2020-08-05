@@ -35,15 +35,42 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         tpnNextPremier = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
-        jPanel8 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
+        pnlBillboard1 = new javax.swing.JPanel();
+        lblMoviePoster1 = new javax.swing.JLabel();
+        btnMovie1 = new javax.swing.JButton();
+        lblMovieTitle1 = new javax.swing.JLabel();
+        lblMovieGender1 = new javax.swing.JLabel();
+        lblMovieAgeRestriction1 = new javax.swing.JLabel();
+        pnlBillboard2 = new javax.swing.JPanel();
+        lblMoviePoster2 = new javax.swing.JLabel();
+        btnMovie2 = new javax.swing.JButton();
+        lblMovieTitle2 = new javax.swing.JLabel();
+        lblMovieGender2 = new javax.swing.JLabel();
+        lblMovieAgeRestriction2 = new javax.swing.JLabel();
+        pnlBillboard3 = new javax.swing.JPanel();
+        lblMoviePoster3 = new javax.swing.JLabel();
+        btnMovie3 = new javax.swing.JButton();
+        lblMovieTitle3 = new javax.swing.JLabel();
+        lblMovieGender3 = new javax.swing.JLabel();
+        lblMovieAgeRestriction3 = new javax.swing.JLabel();
+        pnlBillboard5 = new javax.swing.JPanel();
+        lblMoviePoster5 = new javax.swing.JLabel();
+        btnMovie5 = new javax.swing.JButton();
+        lblMovieTitle5 = new javax.swing.JLabel();
+        lblMovieGender5 = new javax.swing.JLabel();
+        lblMovieAgeRestriction5 = new javax.swing.JLabel();
+        pnlBillboard4 = new javax.swing.JPanel();
+        lblMoviePoster4 = new javax.swing.JLabel();
+        btnMovie4 = new javax.swing.JButton();
+        lblMovieTitle4 = new javax.swing.JLabel();
+        lblMovieGender4 = new javax.swing.JLabel();
+        lblMovieAgeRestriction4 = new javax.swing.JLabel();
+        pnlBillboard6 = new javax.swing.JPanel();
+        lblMoviePoster6 = new javax.swing.JLabel();
+        btnMovie6 = new javax.swing.JButton();
+        lblMovieTitle6 = new javax.swing.JLabel();
+        lblMovieGender6 = new javax.swing.JLabel();
+        lblMovieAgeRestriction6 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         pnlPremier1 = new javax.swing.JPanel();
         lblPremierPoster1 = new javax.swing.JLabel();
@@ -90,94 +117,283 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("jLabel1");
+        lblMoviePoster1.setText("jLabel1");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        btnMovie1.setText("View More");
+
+        lblMovieTitle1.setText("jLabel7");
+
+        lblMovieGender1.setText("jLabel8");
+
+        lblMovieAgeRestriction1.setText("jLabel9");
+
+        javax.swing.GroupLayout pnlBillboard1Layout = new javax.swing.GroupLayout(pnlBillboard1);
+        pnlBillboard1.setLayout(pnlBillboard1Layout);
+        pnlBillboard1Layout.setHorizontalGroup(
+            pnlBillboard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBillboard1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(274, Short.MAX_VALUE))
+                .addComponent(lblMoviePoster1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlBillboard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBillboard1Layout.createSequentialGroup()
+                        .addGap(96, 96, 96)
+                        .addComponent(btnMovie1))
+                    .addGroup(pnlBillboard1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(pnlBillboard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMovieGender1)
+                            .addComponent(lblMovieTitle1)
+                            .addComponent(lblMovieAgeRestriction1))))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        pnlBillboard1Layout.setVerticalGroup(
+            pnlBillboard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBillboard1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(pnlBillboard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlBillboard1Layout.createSequentialGroup()
+                        .addComponent(lblMovieTitle1)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieGender1)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieAgeRestriction1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnMovie1))
+                    .addComponent(lblMoviePoster1, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
-        jLabel2.setText("jLabel2");
+        lblMoviePoster2.setText("jLabel2");
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        btnMovie2.setText("View More");
+
+        lblMovieTitle2.setText("jLabel10");
+
+        lblMovieGender2.setText("jLabel11");
+
+        lblMovieAgeRestriction2.setText("jLabel12");
+
+        javax.swing.GroupLayout pnlBillboard2Layout = new javax.swing.GroupLayout(pnlBillboard2);
+        pnlBillboard2.setLayout(pnlBillboard2Layout);
+        pnlBillboard2Layout.setHorizontalGroup(
+            pnlBillboard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBillboard2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(274, Short.MAX_VALUE))
+                .addComponent(lblMoviePoster2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlBillboard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBillboard2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
+                        .addComponent(btnMovie2)
+                        .addGap(97, 97, 97))
+                    .addGroup(pnlBillboard2Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(pnlBillboard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMovieGender2)
+                            .addComponent(lblMovieTitle2)
+                            .addComponent(lblMovieAgeRestriction2))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        pnlBillboard2Layout.setVerticalGroup(
+            pnlBillboard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBillboard2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
+                .addGroup(pnlBillboard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlBillboard2Layout.createSequentialGroup()
+                        .addComponent(lblMovieTitle2)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieGender2)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieAgeRestriction2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnMovie2))
+                    .addComponent(lblMoviePoster2, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
-        jLabel3.setText("jLabel3");
+        lblMoviePoster3.setText("jLabel3");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        btnMovie3.setText("View More");
+
+        lblMovieTitle3.setText("jLabel13");
+
+        lblMovieGender3.setText("jLabel14");
+
+        lblMovieAgeRestriction3.setText("jLabel15");
+
+        javax.swing.GroupLayout pnlBillboard3Layout = new javax.swing.GroupLayout(pnlBillboard3);
+        pnlBillboard3.setLayout(pnlBillboard3Layout);
+        pnlBillboard3Layout.setHorizontalGroup(
+            pnlBillboard3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBillboard3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(274, Short.MAX_VALUE))
+                .addComponent(lblMoviePoster3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlBillboard3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBillboard3Layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(btnMovie3))
+                    .addGroup(pnlBillboard3Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(pnlBillboard3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMovieGender3)
+                            .addComponent(lblMovieTitle3)
+                            .addComponent(lblMovieAgeRestriction3))))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        pnlBillboard3Layout.setVerticalGroup(
+            pnlBillboard3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBillboard3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(pnlBillboard3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlBillboard3Layout.createSequentialGroup()
+                        .addComponent(lblMovieTitle3)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieGender3)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieAgeRestriction3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnMovie3))
+                    .addComponent(lblMoviePoster3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
+        lblMoviePoster5.setText("jLabel5");
+
+        btnMovie5.setText("View More");
+
+        lblMovieTitle5.setText("jLabel19");
+
+        lblMovieGender5.setText("jLabel20");
+
+        lblMovieAgeRestriction5.setText("jLabel21");
+
+        javax.swing.GroupLayout pnlBillboard5Layout = new javax.swing.GroupLayout(pnlBillboard5);
+        pnlBillboard5.setLayout(pnlBillboard5Layout);
+        pnlBillboard5Layout.setHorizontalGroup(
+            pnlBillboard5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBillboard5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblMoviePoster5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlBillboard5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBillboard5Layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(btnMovie5))
+                    .addGroup(pnlBillboard5Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(pnlBillboard5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMovieTitle5)
+                            .addComponent(lblMovieGender5)
+                            .addComponent(lblMovieAgeRestriction5))))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 150, Short.MAX_VALUE)
+        pnlBillboard5Layout.setVerticalGroup(
+            pnlBillboard5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBillboard5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlBillboard5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlBillboard5Layout.createSequentialGroup()
+                        .addComponent(lblMovieTitle5)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieGender5)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieAgeRestriction5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addComponent(btnMovie5))
+                    .addComponent(lblMoviePoster5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        lblMoviePoster4.setText("jLabel4");
+
+        btnMovie4.setText("View More");
+
+        lblMovieTitle4.setText("jLabel16");
+
+        lblMovieGender4.setText("jLabel17");
+
+        lblMovieAgeRestriction4.setText("jLabel18");
+
+        javax.swing.GroupLayout pnlBillboard4Layout = new javax.swing.GroupLayout(pnlBillboard4);
+        pnlBillboard4.setLayout(pnlBillboard4Layout);
+        pnlBillboard4Layout.setHorizontalGroup(
+            pnlBillboard4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBillboard4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblMoviePoster4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlBillboard4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBillboard4Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnMovie4)
+                        .addGap(92, 92, 92))
+                    .addGroup(pnlBillboard4Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(pnlBillboard4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMovieGender4)
+                            .addComponent(lblMovieTitle4)
+                            .addComponent(lblMovieAgeRestriction4))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 150, Short.MAX_VALUE)
+        pnlBillboard4Layout.setVerticalGroup(
+            pnlBillboard4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBillboard4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlBillboard4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlBillboard4Layout.createSequentialGroup()
+                        .addComponent(lblMovieTitle4)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieGender4)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieAgeRestriction4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addComponent(btnMovie4))
+                    .addComponent(lblMoviePoster4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        lblMoviePoster6.setText("jLabel6");
+
+        btnMovie6.setText("View More");
+
+        lblMovieTitle6.setText("jLabel22");
+
+        lblMovieGender6.setText("jLabel23");
+
+        lblMovieAgeRestriction6.setText("jLabel24");
+
+        javax.swing.GroupLayout pnlBillboard6Layout = new javax.swing.GroupLayout(pnlBillboard6);
+        pnlBillboard6.setLayout(pnlBillboard6Layout);
+        pnlBillboard6Layout.setHorizontalGroup(
+            pnlBillboard6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBillboard6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblMoviePoster6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlBillboard6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBillboard6Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnMovie6)
+                        .addGap(89, 89, 89))
+                    .addGroup(pnlBillboard6Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(pnlBillboard6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMovieGender6)
+                            .addComponent(lblMovieTitle6)
+                            .addComponent(lblMovieAgeRestriction6))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        pnlBillboard6Layout.setVerticalGroup(
+            pnlBillboard6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBillboard6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlBillboard6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlBillboard6Layout.createSequentialGroup()
+                        .addComponent(lblMovieTitle6)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieGender6)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieAgeRestriction6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnMovie6))
+                    .addComponent(lblMoviePoster6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -187,14 +403,14 @@ public class FrmCinemaBox extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                    .addComponent(pnlBillboard1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlBillboard3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlBillboard5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnlBillboard2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlBillboard4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlBillboard6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -202,16 +418,16 @@ public class FrmCinemaBox extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnlBillboard2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlBillboard1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnlBillboard4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlBillboard3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnlBillboard5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlBillboard6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(26, 26, 26))
         );
 
@@ -590,7 +806,36 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         });
     }
     
-    public void showDataNextPremier() throws IOException{
+    public void showBillboard() throws IOException{
+        ArrayList<Movie> movies;
+        movies = Movie.consultMovies("Billboard.json");
+        lblMoviePoster1.setIcon(showPicture(movies.get(0).getNamePoster()));
+        lblMoviePoster2.setIcon(showPicture(movies.get(1).getNamePoster()));
+        lblMoviePoster3.setIcon(showPicture(movies.get(2).getNamePoster()));
+        lblMoviePoster4.setIcon(showPicture(movies.get(3).getNamePoster()));
+        lblMoviePoster5.setIcon(showPicture(movies.get(4).getNamePoster()));
+        lblMoviePoster6.setIcon(showPicture(movies.get(5).getNamePoster()));
+        lblMovieTitle1.setText(movies.get(0).getTitle());
+        lblMovieTitle2.setText(movies.get(1).getTitle());
+        lblMovieTitle3.setText(movies.get(2).getTitle());
+        lblMovieTitle4.setText(movies.get(3).getTitle());
+        lblMovieTitle5.setText(movies.get(4).getTitle());
+        lblMovieTitle6.setText(movies.get(5).getTitle());
+        lblMovieGender1.setText(movies.get(0).getGender());
+        lblMovieGender2.setText(movies.get(1).getGender());
+        lblMovieGender3.setText(movies.get(2).getGender());
+        lblMovieGender4.setText(movies.get(3).getGender());
+        lblMovieGender5.setText(movies.get(4).getGender());
+        lblMovieGender6.setText(movies.get(5).getGender());
+        lblMovieAgeRestriction1.setText(movies.get(0).getAgeRestriction());
+        lblMovieAgeRestriction2.setText(movies.get(1).getAgeRestriction());
+        lblMovieAgeRestriction3.setText(movies.get(2).getAgeRestriction());
+        lblMovieAgeRestriction4.setText(movies.get(3).getAgeRestriction());
+        lblMovieAgeRestriction5.setText(movies.get(4).getAgeRestriction());
+        lblMovieAgeRestriction6.setText(movies.get(5).getAgeRestriction());
+    }
+
+    public void showDataNextPremier() throws IOException {
         ArrayList<Movie> movies;
         movies = Movie.consultNextPremier("NextPremier.json");
         lblPremierPoster1.setIcon(showPicture(movies.get(0).getNamePoster()));
@@ -623,32 +868,53 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblPremierMonth4.setText(movies.get(3).getMonth());
         lblPremierMonth5.setText(movies.get(4).getMonth());
         lblPremierMonth6.setText(movies.get(5).getMonth());
-   }
-    
-    public ImageIcon showPicture(String namePicture){
+    }
+
+    public ImageIcon showPicture(String namePicture) {
         ImageIcon image = new ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/" + namePicture));
         ImageIcon icon = new ImageIcon(image.getImage().getScaledInstance(100, 150, Image.SCALE_DEFAULT));
         return icon;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton btnMovie1;
+    private javax.swing.JButton btnMovie2;
+    private javax.swing.JButton btnMovie3;
+    private javax.swing.JButton btnMovie4;
+    private javax.swing.JButton btnMovie5;
+    private javax.swing.JButton btnMovie6;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JLabel lblMovieAgeRestriction1;
+    private javax.swing.JLabel lblMovieAgeRestriction2;
+    private javax.swing.JLabel lblMovieAgeRestriction3;
+    private javax.swing.JLabel lblMovieAgeRestriction4;
+    private javax.swing.JLabel lblMovieAgeRestriction5;
+    private javax.swing.JLabel lblMovieAgeRestriction6;
+    private javax.swing.JLabel lblMovieGender1;
+    private javax.swing.JLabel lblMovieGender2;
+    private javax.swing.JLabel lblMovieGender3;
+    private javax.swing.JLabel lblMovieGender4;
+    private javax.swing.JLabel lblMovieGender5;
+    private javax.swing.JLabel lblMovieGender6;
+    private javax.swing.JLabel lblMoviePoster1;
+    private javax.swing.JLabel lblMoviePoster2;
+    private javax.swing.JLabel lblMoviePoster3;
+    private javax.swing.JLabel lblMoviePoster4;
+    private javax.swing.JLabel lblMoviePoster5;
+    private javax.swing.JLabel lblMoviePoster6;
+    private javax.swing.JLabel lblMovieTitle1;
+    private javax.swing.JLabel lblMovieTitle2;
+    private javax.swing.JLabel lblMovieTitle3;
+    private javax.swing.JLabel lblMovieTitle4;
+    private javax.swing.JLabel lblMovieTitle5;
+    private javax.swing.JLabel lblMovieTitle6;
     private javax.swing.JLabel lblPremierDuration1;
     private javax.swing.JLabel lblPremierDuration2;
     private javax.swing.JLabel lblPremierDuration3;
@@ -679,6 +945,12 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     private javax.swing.JLabel lblPremierTitle4;
     private javax.swing.JLabel lblPremierTitle5;
     private javax.swing.JLabel lblPremierTitle6;
+    private javax.swing.JPanel pnlBillboard1;
+    private javax.swing.JPanel pnlBillboard2;
+    private javax.swing.JPanel pnlBillboard3;
+    private javax.swing.JPanel pnlBillboard4;
+    private javax.swing.JPanel pnlBillboard5;
+    private javax.swing.JPanel pnlBillboard6;
     private javax.swing.JPanel pnlPremier1;
     private javax.swing.JPanel pnlPremier2;
     private javax.swing.JPanel pnlPremier3;
