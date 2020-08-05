@@ -5,7 +5,6 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -18,16 +17,13 @@ public class MovieBillboard extends Movie {
     private float price;
     private CinemaRoom room;
 
-    public MovieBillboard(String title, String gender, int ageRestriction, String sinopsis, Date date,
-            float price) {
-        super(title, gender, ageRestriction, sinopsis);
+    public MovieBillboard(String title, String gender, int ageRestriction, int 
+            duration, String namePoster, Date date, float price, CinemaRoom room) {
+        super(title, gender, ageRestriction, duration, namePoster);
         this.date = date;
         this.price = price;
+        this.room = room;
     }
-
-
-
-
 
     @Override
     public String toString() {
@@ -37,5 +33,10 @@ public class MovieBillboard extends Movie {
     @Override
     public String getTitle() {
         return title;
+    }    
+
+    @Override
+    public String getMonth() {
+        return "";
     }
 }

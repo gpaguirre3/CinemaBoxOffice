@@ -7,10 +7,10 @@ package ec.edu.espe.cinemaboxoffice.controller;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import ec.edu.espe.cinemaboxoffice.model.CinemaRoom;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
-import ec.edu.espe.cinemaboxoffice.model.MoviePremier;
 import ec.edu.espe.cinemaboxoffice.model.NextPremier;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
 import ec.edu.espe.filemanagerlibrary.FileManager;
@@ -31,9 +31,8 @@ public class MovieRecord {
         int option;
         do {
             System.out.println(" 1: recordMovieBillboard \n 2: deleteMovieBillboard");
-            System.out.println(" 3: recordMoviePremiere \n 4: deleteMoviePremiere");
-            System.out.println(" 5: recordNextPremiere \n 6: deleteNextPremiere");
-            System.out.println(" 7: Exit");
+            System.out.println(" 3: recordNextPremiere \n 4: deleteNextPremiere");
+            System.out.println(" 5: Exit");
             option = in.getInt("Enter an option: ", 1);
             switch (option) {
                 case 1:
@@ -43,25 +42,20 @@ public class MovieRecord {
                     deleteMovie("Billboard.json");
                     break;
                 case 3:
-                    recordMovie("Premier.json", recordPremier());
-                    break;
-                case 4:
-                    deleteMovie("Premier.json");
-                    break;
-                case 5:
                     recordMovie("NextPremier.json", recordNextPremier());
                     break;
-                case 6:
+                case 4:
                     deleteMovie("NextPremier.json");
                     break;
                 default:
                     System.out.println("Incorrect option");
                     break;
             }
-        } while (option != 7);
+        } while (option != 5);
     }
 
     public boolean recordMovie(String fileName, Movie movie) throws IOException {
+        System.out.println(movie);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         ArrayList<Movie> movies = new ArrayList<>();
         FileManager.createFile(fileName);
@@ -79,49 +73,42 @@ public class MovieRecord {
         String title = in.getString("Enter the title movie: ");
         String gender = in.getString("Enter the gender movie: ");
         int age = in.getInt("Enter the age restricction: ", 2);
-        String sinopsis = in.getString("Enter the sinopsis: ");
-        Float price = in.getFloat("Enter the price: ");
+        int duration = in.getInt("Enter the duration in minutes: ", 3);
+        String namePoster = in.getString("Enter the name of the picture: ");
+        float price = in.getFloat("Enter the price: ");
         int roomNumber = in.getInt("Enter the room number; ", 1);
-        MovieBillboard movie = new MovieBillboard(title, gender, age, sinopsis, in.getDate(), price);
+        CinemaRoom room = new CinemaRoom(roomNumber, "Num Room", CinemaRoom.buildSeat());
+        MovieBillboard movie = new MovieBillboard(title, gender, age, duration, namePoster, in.getDate(), price, room);
         return movie;
-    }
-
-    public Movie recordPremier() {
-        String title = in.getString("Enter the title movie: ");
-        String gender = in.getString("Enter the gender movie: ");
-        int age = in.getInt("Enter the age restricction: ", 2);
-        String sinopsis = in.getString("Enter the sinopsis: ");
-        Float price = in.getFloat("Enter the price: ");
-        int roomNumber = in.getInt("Enter the room number; ", 1);
-        CinemaRoom room = new CinemaRoom(roomNumber, "falta corregir");
-        Movie premier = new MoviePremier(title, gender, age, sinopsis, in.getDates(), price, room);
-        return premier;
     }
 
     public Movie recordNextPremier() {
         String title = in.getString("Enter the title movie: ");
         String gender = in.getString("Enter the gender movie: ");
         int age = in.getInt("Enter the age restricction: ", 2);
-        String sinopsis = in.getString("Enter the sinopsis: ");
-        Movie nextPremier = new NextPremier(title, gender, age, sinopsis, in.getDate());
+        int duration = in.getInt("Enter the duration in minutes: ", 3);
+        String namePoster = in.getString("Enter the name of the picture: ");
+        String month = in.getString("Emter the month of premier: ");
+        Movie nextPremier = new NextPremier(title, gender, age, duration, namePoster, month);
         return nextPremier;
     }
 
     public boolean deleteMovie(String fileName) throws IOException {
         String title = in.getString("Enter the name of the movie: ");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        ArrayList<Movie> movies;
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
         if (gson.fromJson(moviesJson, ArrayList.class) != null) {
-            movies = gson.fromJson(moviesJson, ArrayList.class);
+            java.lang.reflect.Type typeMovies = new TypeToken<ArrayList<MovieBillboard>>() {
+            }.getType();
+            ArrayList<Movie> movies = gson.fromJson(moviesJson, typeMovies);
             delete(title, movies);
             FileManager.deleteFile(fileName);
             FileManager.writeFile(fileName, gson.toJson(delete(title, movies)));
         }
         return true;
     }
-    //corregir
+
     public ArrayList<Movie> delete(String title, ArrayList<Movie> movies) {
         System.out.println("-->" + movies.size());
         System.out.println("-->" + movies.get(0));

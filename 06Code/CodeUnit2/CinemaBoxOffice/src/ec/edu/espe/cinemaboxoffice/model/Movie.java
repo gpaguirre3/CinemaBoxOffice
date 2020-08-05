@@ -7,6 +7,7 @@ package ec.edu.espe.cinemaboxoffice.model;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import ec.edu.espe.filemanagerlibrary.FileManager;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -18,64 +19,67 @@ import java.util.ArrayList;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public abstract class Movie {
+
     protected String title;
     protected String gender;
     protected int ageRestriction;
-    protected String sinopsis;
+    protected int duration;
+    protected String namePoster;
 
-    public Movie(String title, String gender, int ageRestriction, String sinopsis) {
+    public Movie(String title, String gender, int ageRestriction, int 
+            duration, String namePoster) {
         this.title = title;
         this.gender = gender;
         this.ageRestriction = ageRestriction;
-        this.sinopsis = sinopsis;
+        this.duration = duration;
+        this.namePoster = namePoster;
     }
-    
-    public static ArrayList<Movie> consultMovies(String fileName) throws IOException{
+
+    public static ArrayList<Movie> consultMovies(String fileName) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        ArrayList<Movie> movies;
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
         if (gson.fromJson(moviesJson, ArrayList.class) != null) {
-            ArrayList<Movie> movies = gson.fromJson(moviesJson, ArrayList.class);
+            java.lang.reflect.Type typeMovies = new TypeToken<ArrayList<MovieBillboard>>() {
+            }.getType();
+            movies = gson.fromJson(moviesJson, typeMovies);
+            return movies;
+        }
+        return null;
+    }
+    
+    public static ArrayList<Movie> consultNextPremier(String fileName) throws IOException {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        ArrayList<Movie> movies;
+        FileManager.createFile(fileName);
+        String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
+        if (gson.fromJson(moviesJson, ArrayList.class) != null) {
+            java.lang.reflect.Type typeMovies = new TypeToken<ArrayList<NextPremier>>() {
+            }.getType();
+            movies = gson.fromJson(moviesJson, typeMovies);
             return movies;
         }
         return null;
     }
 
-    //public abstract String getTitle();
-
-    public String getTitle() {
-        return title;
-    }
+    public abstract String getTitle();
     
+    public abstract String getMonth();
 
     public String getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public String getAgeRestriction() {
+        return ageRestriction+"";
     }
 
-    public int getAgeRestriction() {
-        return ageRestriction;
+    public String getDuration() {
+        return duration+"";
     }
 
-    public void setAgeRestriction(int ageRestriction) {
-        this.ageRestriction = ageRestriction;
-    }
-
-    public String getSinopsis() {
-        return sinopsis;
-    }
-
-    public void setSinopsis(String sinopsis) {
-        this.sinopsis = sinopsis;
-    }
-    
-    
-    
-    @Override
-    public String toString() {
-        return "Movie{" + "title=" + title + ", gender=" + gender + ", ageRestriction=" + ageRestriction + ", sinopsis=" + sinopsis + '}';
+    public String getNamePoster() {
+        return namePoster;
     }
 }

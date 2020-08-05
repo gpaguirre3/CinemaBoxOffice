@@ -5,6 +5,9 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
+import ec.edu.espe.cinemaboxoffice.model.Movie;
+import ec.edu.espe.cinemaboxoffice.model.NextPremier;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
 import java.io.IOException;
 
@@ -13,9 +16,8 @@ import java.io.IOException;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class CinemaBoxSystem {
-
     public static void main(String[] args) throws IOException {
-        InputDataValidation in = new InputDataValidation();
+        /*InputDataValidation in = new InputDataValidation();
         AdminSystem adminSystem = new AdminSystem();
         CustomerSystem customerSystem = new CustomerSystem();
 
@@ -30,7 +32,7 @@ public class CinemaBoxSystem {
                     adminSystem.adminMenu();
                     break;
                 case 2:
-                    customerSystem.CinemaMenu();
+                    new FrmCinemaBox().setVisible(true);
                     break;
                 case 3:
                     repeat = true;
@@ -39,6 +41,11 @@ public class CinemaBoxSystem {
                     System.out.println("Incorrect option");
                     break;
             }
-        } while (repeat == false);
+        } while (repeat == false);    */
+        
+        
+        FrmCinemaBox cinema = new FrmCinemaBox();
+        cinema.showDataNextPremier();
+        cinema.setVisible(true);
     }
 }

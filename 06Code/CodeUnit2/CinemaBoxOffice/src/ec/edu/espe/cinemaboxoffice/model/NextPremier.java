@@ -5,25 +5,27 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class NextPremier extends Movie {
+public class NextPremier extends Movie{
 
-    private Date premierDate;
+    private String month;
 
     public NextPremier(String title, String gender, int ageRestriction,
-            String sinopsis, Date premierDate) {
-        super(title, gender, ageRestriction, sinopsis);
-        this.premierDate = premierDate;
+            int duration, String namePoster, String month) {
+        super(title, gender, ageRestriction, duration, namePoster);
+        this.month = month;
     }
-
+    
     @Override
     public String getTitle() {
         return title;
+    }
+
+    @Override
+    public String getMonth() {
+        return month;
     }
 }

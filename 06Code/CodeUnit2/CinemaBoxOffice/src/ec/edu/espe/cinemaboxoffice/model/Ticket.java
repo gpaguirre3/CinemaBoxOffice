@@ -13,15 +13,9 @@ public class Ticket {
 
     private int code;
     private MovieBillboard movie;
-    private MoviePremier premiere;
 
     public Ticket(int code, MovieBillboard movie) {
         this.code = code;
         this.movie = movie;
-    }
-
-    public Ticket(int code, MoviePremier premiere) {
-        this.code = code;
-        this.premiere = premiere;
     }
 }

@@ -24,26 +24,22 @@ public class CustomerSystem {
         Cinema cinema = new Cinema(open, close, null);
         System.out.println("Hour of open: " + open + "Hour Of close: " + close);
         do {
-            System.out.println(" 1: Billboard \n 2: Premieres \n 3: NextPremier"
-                    + "es \n 4: Promotions \n 5: Exit");
+            System.out.println(" 1: Billboard \n 2: NextPremieres \n 3: Promotions \n 4: Exit");
             option = in.getInt("Please, enter an option: ", 1);
             switch (option) {
                 case 1:
                     cinema.showListBillboard("Billboard.json");
                     break;
                 case 2:
-                    cinema.showListBillboard("Premier.json");
-                    break;
-                case 3:
                     cinema.showListBillboard("NextPremier.json");
                     break;
-                case 4:
+                case 3:
                     cinema.showPromotions();
                     break;
                 default:
                     System.out.println("Incorrect option");
                     break;
             }
-        } while (option != 5);
+        } while (option != 4);
     }
 }

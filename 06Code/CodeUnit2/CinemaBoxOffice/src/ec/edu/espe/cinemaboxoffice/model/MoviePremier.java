@@ -5,28 +5,10 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class MoviePremier extends Movie {
+public class MoviePremier {
 
-    private ArrayList<Date> dates;
-    private float pricePremier;
-    private CinemaRoom room;
-
-    public MoviePremier(String title, String gender, int ageRestriction, String sinopsis, ArrayList<Date> dates, float pricePremier, CinemaRoom room) {
-        super(title, gender, ageRestriction, sinopsis);
-        this.dates = dates;
-        this.pricePremier = pricePremier;
-        this.room = room;
-    }
-
-    @Override
-    public String getTitle() {
-        return title;
-    }
 }
