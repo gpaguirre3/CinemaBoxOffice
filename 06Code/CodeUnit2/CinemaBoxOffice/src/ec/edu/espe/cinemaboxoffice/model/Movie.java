@@ -22,11 +22,11 @@ public abstract class Movie {
 
     protected String title;
     protected String gender;
-    protected int ageRestriction;
+    protected String ageRestriction;
     protected int duration;
     protected String namePoster;
 
-    public Movie(String title, String gender, int ageRestriction, int 
+    public Movie(String title, String gender, String ageRestriction, int 
             duration, String namePoster) {
         this.title = title;
         this.gender = gender;
@@ -72,7 +72,7 @@ public abstract class Movie {
     }
 
     public String getAgeRestriction() {
-        return ageRestriction+"";
+        return ageRestriction;
     }
 
     public String getDuration() {

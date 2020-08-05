@@ -17,7 +17,7 @@ public class MovieBillboard extends Movie {
     private float price;
     private CinemaRoom room;
 
-    public MovieBillboard(String title, String gender, int ageRestriction, int 
+    public MovieBillboard(String title, String gender, String ageRestriction, int 
             duration, String namePoster, Date date, float price, CinemaRoom room) {
         super(title, gender, ageRestriction, duration, namePoster);
         this.date = date;

@@ -13,7 +13,7 @@ public class NextPremier extends Movie{
 
     private String month;
 
-    public NextPremier(String title, String gender, int ageRestriction,
+    public NextPremier(String title, String gender, String ageRestriction,
             int duration, String namePoster, String month) {
         super(title, gender, ageRestriction, duration, namePoster);
         this.month = month;

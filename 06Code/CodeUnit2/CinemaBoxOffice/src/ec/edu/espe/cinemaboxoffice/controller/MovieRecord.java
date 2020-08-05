@@ -72,7 +72,7 @@ public class MovieRecord {
     public MovieBillboard recordBillboard() {
         String title = in.getString("Enter the title movie: ");
         String gender = in.getString("Enter the gender movie: ");
-        int age = in.getInt("Enter the age restricction: ", 2);
+        String age = in.getString("Enter the age restricction: " );
         int duration = in.getInt("Enter the duration in minutes: ", 3);
         String namePoster = in.getString("Enter the name of the picture: ");
         float price = in.getFloat("Enter the price: ");
@@ -85,7 +85,7 @@ public class MovieRecord {
     public Movie recordNextPremier() {
         String title = in.getString("Enter the title movie: ");
         String gender = in.getString("Enter the gender movie: ");
-        int age = in.getInt("Enter the age restricction: ", 2);
+        String age = in.getString("Enter the age restricction: " );
         int duration = in.getInt("Enter the duration in minutes: ", 3);
         String namePoster = in.getString("Enter the name of the picture: ");
         String month = in.getString("Emter the month of premier: ");
