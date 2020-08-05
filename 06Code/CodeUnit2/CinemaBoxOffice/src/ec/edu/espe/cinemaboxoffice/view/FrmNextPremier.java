@@ -16,6 +16,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
      */
     public FrmNextPremier() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

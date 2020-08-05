@@ -16,6 +16,7 @@ public class FrmBill extends javax.swing.JFrame {
      */
     public FrmBill() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
