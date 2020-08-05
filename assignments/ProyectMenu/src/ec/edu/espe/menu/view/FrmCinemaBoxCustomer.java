@@ -22,12 +22,17 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
     ImageIcon ww = new ImageIcon("ww.png");
     ImageIcon bw = new ImageIcon("bw.png");
     ImageIcon mk = new ImageIcon("mortalkombat.png");
+    ImageIcon pr1 = new ImageIcon("promotion1.png");
+    ImageIcon pr2 = new ImageIcon("promotion2.png");
+    ImageIcon pr3 = new ImageIcon("promotion3.png");
+    ImageIcon pr4 = new ImageIcon("promotion4.png");
 
     /**
      * Creates new form CinemaBox
      */
     public FrmCinemaBoxCustomer() {
         initComponents();
+        setLocationRelativeTo(null);
         //BILLBOARD
         lblMovie1.setText("");
         lblMovie2.setText("");
@@ -50,6 +55,11 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
         lblNext2.setIcon(bw);
         lblNext3.setIcon(mk);
         
+        //PROMOTION
+        lblPromotion1.setIcon(pr1);
+        lblPromotion2.setIcon(pr2);
+        lblPromotion3.setIcon(pr3);
+        lblPromotion4.setIcon(pr4);
     }
 
     /**
@@ -71,11 +81,15 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
         lblMovie4 = new javax.swing.JLabel();
         lblMovie5 = new javax.swing.JLabel();
         lblMovie6 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         lblNext1 = new javax.swing.JLabel();
         lblNext2 = new javax.swing.JLabel();
         lblNext3 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        lblPromotion1 = new javax.swing.JLabel();
+        lblPromotion2 = new javax.swing.JLabel();
+        lblPromotion3 = new javax.swing.JLabel();
+        lblPromotion4 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -83,7 +97,6 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CUSTOMER MENU");
         setBackground(new java.awt.Color(240, 21, 34));
-        setPreferredSize(new java.awt.Dimension(800, 600));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -95,6 +108,8 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
+
+        jPanel3.setBackground(new java.awt.Color(0, 0, 51));
 
         lblMovie1.setText("jLabel1");
 
@@ -125,7 +140,7 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(lblMovie6, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                     .addComponent(lblMovie3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(134, Short.MAX_VALUE))
+                .addContainerGap(189, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -140,23 +155,12 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
                     .addComponent(lblMovie4)
                     .addComponent(lblMovie5)
                     .addComponent(lblMovie6))
-                .addContainerGap(387, Short.MAX_VALUE))
+                .addContainerGap(396, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Billboard", jPanel3);
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 795, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 551, Short.MAX_VALUE)
-        );
-
-        jTabbedPane2.addTab("Promotions", jPanel4);
+        jPanel5.setBackground(new java.awt.Color(0, 0, 51));
 
         lblNext1.setText("jLabel1");
 
@@ -175,7 +179,7 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
                 .addComponent(lblNext2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lblNext3, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(174, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -185,10 +189,51 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
                     .addComponent(lblNext1)
                     .addComponent(lblNext2)
                     .addComponent(lblNext3))
-                .addContainerGap(491, Short.MAX_VALUE))
+                .addContainerGap(501, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Coming soon", jPanel5);
+
+        jPanel4.setBackground(new java.awt.Color(0, 0, 51));
+
+        lblPromotion1.setText("jLabel1");
+
+        lblPromotion2.setText("jLabel1");
+
+        lblPromotion3.setText("jLabel1");
+
+        lblPromotion4.setText("jLabel1");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblPromotion1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPromotion3, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 193, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblPromotion2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPromotion4, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(112, 112, 112))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPromotion1)
+                    .addComponent(lblPromotion2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 230, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPromotion3)
+                    .addComponent(lblPromotion4))
+                .addGap(251, 251, 251))
+        );
+
+        jTabbedPane2.addTab("Promotions", jPanel4);
 
         jMenu1.setText("CinemaBoxOffice");
 
@@ -270,5 +315,9 @@ public class FrmCinemaBoxCustomer extends javax.swing.JFrame {
     private javax.swing.JLabel lblNext1;
     private javax.swing.JLabel lblNext2;
     private javax.swing.JLabel lblNext3;
+    private javax.swing.JLabel lblPromotion1;
+    private javax.swing.JLabel lblPromotion2;
+    private javax.swing.JLabel lblPromotion3;
+    private javax.swing.JLabel lblPromotion4;
     // End of variables declaration//GEN-END:variables
 }
