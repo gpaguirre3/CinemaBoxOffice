@@ -117,16 +117,27 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        tpnNextPremier.setFont(new java.awt.Font("Comic Sans MS", 3, 14)); // NOI18N
+
         jPanel2.setBackground(new java.awt.Color(0, 0, 51));
 
+        pnlBillboard1.setBackground(new java.awt.Color(0, 0, 51));
+
+        lblMoviePoster1.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster1.setText("jLabel1");
 
         btnMovie1.setText("View More");
 
+        lblMovieTitle1.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieTitle1.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieTitle1.setText("jLabel7");
 
+        lblMovieGender1.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieGender1.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieGender1.setText("jLabel8");
 
+        lblMovieAgeRestriction1.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieAgeRestriction1.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieAgeRestriction1.setText("jLabel9");
 
         javax.swing.GroupLayout pnlBillboard1Layout = new javax.swing.GroupLayout(pnlBillboard1);
@@ -161,18 +172,27 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                         .addComponent(lblMovieAgeRestriction1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnMovie1))
-                    .addComponent(lblMoviePoster1, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                    .addComponent(lblMoviePoster1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
+        pnlBillboard2.setBackground(new java.awt.Color(0, 0, 51));
+
+        lblMoviePoster2.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster2.setText("jLabel2");
 
         btnMovie2.setText("View More");
 
+        lblMovieTitle2.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieTitle2.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieTitle2.setText("jLabel10");
 
+        lblMovieGender2.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieGender2.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieGender2.setText("jLabel11");
 
+        lblMovieAgeRestriction2.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieAgeRestriction2.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieAgeRestriction2.setText("jLabel12");
 
         javax.swing.GroupLayout pnlBillboard2Layout = new javax.swing.GroupLayout(pnlBillboard2);
@@ -208,18 +228,27 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                         .addComponent(lblMovieAgeRestriction2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnMovie2))
-                    .addComponent(lblMoviePoster2, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                    .addComponent(lblMoviePoster2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
+        pnlBillboard3.setBackground(new java.awt.Color(0, 0, 51));
+
+        lblMoviePoster3.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster3.setText("jLabel3");
 
         btnMovie3.setText("View More");
 
+        lblMovieTitle3.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieTitle3.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieTitle3.setText("jLabel13");
 
+        lblMovieGender3.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieGender3.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieGender3.setText("jLabel14");
 
+        lblMovieAgeRestriction3.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieAgeRestriction3.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieAgeRestriction3.setText("jLabel15");
 
         javax.swing.GroupLayout pnlBillboard3Layout = new javax.swing.GroupLayout(pnlBillboard3);
@@ -258,14 +287,23 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        pnlBillboard5.setBackground(new java.awt.Color(0, 0, 51));
+
+        lblMoviePoster5.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster5.setText("jLabel5");
 
         btnMovie5.setText("View More");
 
+        lblMovieTitle5.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieTitle5.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieTitle5.setText("jLabel19");
 
+        lblMovieGender5.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieGender5.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieGender5.setText("jLabel20");
 
+        lblMovieAgeRestriction5.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieAgeRestriction5.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieAgeRestriction5.setText("jLabel21");
 
         javax.swing.GroupLayout pnlBillboard5Layout = new javax.swing.GroupLayout(pnlBillboard5);
@@ -304,14 +342,24 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        pnlBillboard4.setBackground(new java.awt.Color(0, 0, 51));
+        pnlBillboard4.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblMoviePoster4.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster4.setText("jLabel4");
 
         btnMovie4.setText("View More");
 
+        lblMovieTitle4.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieTitle4.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieTitle4.setText("jLabel16");
 
+        lblMovieGender4.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieGender4.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieGender4.setText("jLabel17");
 
+        lblMovieAgeRestriction4.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieAgeRestriction4.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieAgeRestriction4.setText("jLabel18");
 
         javax.swing.GroupLayout pnlBillboard4Layout = new javax.swing.GroupLayout(pnlBillboard4);
@@ -353,14 +401,21 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         pnlBillboard6.setBackground(new java.awt.Color(0, 0, 51));
 
+        lblMoviePoster6.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster6.setText("jLabel6");
 
         btnMovie6.setText("View More");
 
+        lblMovieTitle6.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieTitle6.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieTitle6.setText("jLabel22");
 
+        lblMovieGender6.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieGender6.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieGender6.setText("jLabel23");
 
+        lblMovieAgeRestriction6.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        lblMovieAgeRestriction6.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieAgeRestriction6.setText("jLabel24");
 
         javax.swing.GroupLayout pnlBillboard6Layout = new javax.swing.GroupLayout(pnlBillboard6);
@@ -439,8 +494,10 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         lblPremierPoster1.setText("jLabel1");
 
+        lblPremierTitle1.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
         lblPremierTitle1.setText("jLabel7");
 
+        lblPremierGender1.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
         lblPremierGender1.setText("jLabel8");
 
         lblPremierMonth1.setText("jLabel9");
@@ -728,7 +785,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(pnlPremier5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         tpnNextPremier.addTab("Next Premier", jPanel3);
@@ -741,12 +798,13 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 524, Short.MAX_VALUE)
+            .addGap(0, 549, Short.MAX_VALUE)
         );
 
         tpnNextPremier.addTab("Promotions", jPanel10);
 
         jMenu3.setText("Cinema");
+        jMenu3.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
 
         jMenuItem1.setText("Admin");
         jMenu3.add(jMenuItem1);
@@ -757,6 +815,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         jMenuBar2.add(jMenu3);
 
         jMenu4.setText("Settings");
+        jMenu4.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
         jMenuBar2.add(jMenu4);
 
         setJMenuBar(jMenuBar2);
