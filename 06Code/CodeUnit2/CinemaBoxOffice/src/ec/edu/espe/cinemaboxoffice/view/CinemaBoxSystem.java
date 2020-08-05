@@ -47,5 +47,6 @@ public class CinemaBoxSystem {
         FrmCinemaBox cinema = new FrmCinemaBox();
         cinema.showDataNextPremier();
         cinema.setVisible(true);
+   
     }
 }

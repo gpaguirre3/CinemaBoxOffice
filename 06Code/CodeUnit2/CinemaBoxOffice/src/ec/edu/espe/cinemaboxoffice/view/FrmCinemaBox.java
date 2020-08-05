@@ -111,9 +111,9 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblPremierDuration6 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        mnuCinema = new javax.swing.JMenu();
+        mnuCinemaAdmin = new javax.swing.JMenuItem();
+        mniCinemaExit = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -870,16 +870,26 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         tpnNextPremier.addTab("Promotions", jPanel10);
 
-        jMenu3.setText("Cinema");
-        jMenu3.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
+        mnuCinema.setText("Cinema");
+        mnuCinema.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
 
-        jMenuItem1.setText("Admin");
-        jMenu3.add(jMenuItem1);
+        mnuCinemaAdmin.setText("Admin");
+        mnuCinemaAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuCinemaAdminActionPerformed(evt);
+            }
+        });
+        mnuCinema.add(mnuCinemaAdmin);
 
-        jMenuItem2.setText("Exit");
-        jMenu3.add(jMenuItem2);
+        mniCinemaExit.setText("Exit");
+        mniCinemaExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniCinemaExitActionPerformed(evt);
+            }
+        });
+        mnuCinema.add(mniCinemaExit);
 
-        jMenuBar2.add(jMenu3);
+        jMenuBar2.add(mnuCinema);
 
         jMenu4.setText("Settings");
         jMenu4.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
@@ -900,6 +910,16 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mniCinemaExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniCinemaExitActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_mniCinemaExitActionPerformed
+
+    private void mnuCinemaAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCinemaAdminActionPerformed
+        this.setVisible(true);
+        FrmAdminLogin frmLogin = new FrmAdminLogin();
+        frmLogin.setVisible(true);
+    }//GEN-LAST:event_mnuCinemaAdminActionPerformed
 
     /**
      * @param args the command line arguments
@@ -935,8 +955,8 @@ public class FrmCinemaBox extends javax.swing.JFrame {
             }
         });
     }
-    
-    public void showBillboard() throws IOException{
+
+    public void showBillboard() throws IOException {
         ArrayList<Movie> movies;
         movies = Movie.consultMovies("Billboard.json");
         lblMoviePoster1.setIcon(showPicture(movies.get(0).getNamePoster()));
@@ -1013,11 +1033,8 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     private javax.swing.JButton btnMovie4;
     private javax.swing.JButton btnMovie5;
     private javax.swing.JButton btnMovie6;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -1075,6 +1092,9 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     private javax.swing.JLabel lblPremierTitle4;
     private javax.swing.JLabel lblPremierTitle5;
     private javax.swing.JLabel lblPremierTitle6;
+    private javax.swing.JMenuItem mniCinemaExit;
+    private javax.swing.JMenu mnuCinema;
+    private javax.swing.JMenuItem mnuCinemaAdmin;
     private javax.swing.JPanel pnlBillboard1;
     private javax.swing.JPanel pnlBillboard2;
     private javax.swing.JPanel pnlBillboard3;
