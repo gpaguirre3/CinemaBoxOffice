@@ -500,19 +500,19 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblPremierPoster1.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierPoster1.setText("jLabel1");
 
-        lblPremierTitle1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierTitle1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle1.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierTitle1.setText("jLabel7");
 
-        lblPremierGender1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierGender1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender1.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierGender1.setText("jLabel8");
 
-        lblPremierMonth1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierMonth1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth1.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierMonth1.setText("jLabel9");
 
-        lblPremierDuration1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierDuration1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration1.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierDuration1.setText("jLabel1");
 
@@ -554,19 +554,19 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblPremierPoster2.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierPoster2.setText("jLabel3");
 
-        lblPremierTitle2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierTitle2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle2.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierTitle2.setText("jLabel10");
 
-        lblPremierGender2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierGender2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender2.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierGender2.setText("jLabel11");
 
-        lblPremierMonth2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierMonth2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth2.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierMonth2.setText("jLabel12");
 
-        lblPremierDuration2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierDuration2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration2.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierDuration2.setText("jLabel2");
 
@@ -609,19 +609,19 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblPremierPoster3.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierPoster3.setText("jLabel4");
 
-        lblPremierTitle3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierTitle3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle3.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierTitle3.setText("jLabel13");
 
-        lblPremierGender3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierGender3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender3.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierGender3.setText("jLabel14");
 
-        lblPremierMonth3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierMonth3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth3.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierMonth3.setText("jLabel15");
 
-        lblPremierDuration3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierDuration3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration3.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierDuration3.setText("jLabel3");
 
@@ -663,19 +663,19 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblPremierPoster5.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierPoster5.setText("jLabel5");
 
-        lblPremierTitle5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierTitle5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle5.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierTitle5.setText("jLabel22");
 
-        lblPremierGender5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierGender5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender5.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierGender5.setText("jLabel23");
 
-        lblPremierMonth5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierMonth5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth5.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierMonth5.setText("jLabel24");
 
-        lblPremierDuration5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierDuration5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration5.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierDuration5.setText("jLabel5");
 
@@ -717,19 +717,19 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblPremierPoster4.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierPoster4.setText("jLabel2");
 
-        lblPremierTitle4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierTitle4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle4.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierTitle4.setText("jLabel16");
 
-        lblPremierGender4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierGender4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender4.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierGender4.setText("jLabel17");
 
-        lblPremierMonth4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierMonth4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth4.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierMonth4.setText("jLabel18");
 
-        lblPremierDuration4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierDuration4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration4.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierDuration4.setText("jLabel4");
 
@@ -771,19 +771,19 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblPremierPoster6.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierPoster6.setText("jLabel6");
 
-        lblPremierTitle6.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierTitle6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle6.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierTitle6.setText("jLabel19");
 
-        lblPremierGender6.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierGender6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender6.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierGender6.setText("jLabel20");
 
-        lblPremierMonth6.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierMonth6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth6.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierMonth6.setText("jLabel21");
 
-        lblPremierDuration6.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        lblPremierDuration6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration6.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierDuration6.setText("jLabel7");
 
@@ -830,7 +830,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                     .addComponent(pnlPremier5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(pnlPremier4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -865,7 +865,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+            .addGap(0, 606, Short.MAX_VALUE)
         );
 
         tpnNextPremier.addTab("Promotions", jPanel10);
@@ -913,6 +913,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
     private void mniCinemaExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniCinemaExitActionPerformed
         this.setVisible(false);
+        dispose();
     }//GEN-LAST:event_mniCinemaExitActionPerformed
 
     private void mnuCinemaAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCinemaAdminActionPerformed
