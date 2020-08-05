@@ -37,6 +37,7 @@ public class FrmCinemaBoxAdmin extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -84,6 +85,9 @@ public class FrmCinemaBoxAdmin extends javax.swing.JFrame {
         );
 
         jMenu1.setText("CinemaBoxOffice");
+
+        jMenuItem10.setText("Admin");
+        jMenu1.add(jMenuItem10);
 
         jMenuItem1.setText("Exit");
         jMenu1.add(jMenuItem1);
@@ -215,6 +219,7 @@ public class FrmCinemaBoxAdmin extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
