@@ -6,6 +6,7 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.controller.LogInController;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -93,6 +94,18 @@ public class FrmAdminLogin extends javax.swing.JFrame {
         lblAminkey.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblAminkey.setForeground(new java.awt.Color(255, 255, 255));
         lblAminkey.setText("Password:");
+
+        txtUsername.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtUsernameKeyTyped(evt);
+            }
+        });
+
+        pwfPass.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                pwfPassKeyTyped(evt);
+            }
+        });
 
         btnAdminLogin.setText("Login");
         btnAdminLogin.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -223,6 +236,16 @@ public class FrmAdminLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
     }//GEN-LAST:event_btnExitActionPerformed
+
+    private void txtUsernameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsernameKeyTyped
+        char c = evt.getKeyChar();
+        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'0') | c>'9' && (c<'Ñ'))  evt.consume();
+    }//GEN-LAST:event_txtUsernameKeyTyped
+
+    private void pwfPassKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwfPassKeyTyped
+        char c = evt.getKeyChar();
+        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'0') | c>'9' && (c<'Ñ'))  evt.consume();
+    }//GEN-LAST:event_pwfPassKeyTyped
 
     /**
      * @param args the command line arguments

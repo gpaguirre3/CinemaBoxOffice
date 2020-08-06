@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.view;
 import ec.edu.espe.cinemaboxoffice.controller.LogInController;
 import ec.edu.espe.cinemaboxoffice.controller.NewAccountsController;
 import ec.edu.espe.cinemaboxoffice.utils.PasswordEncryptor;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -24,6 +25,7 @@ public class FrmNewAccounts extends javax.swing.JFrame {
      */
     public FrmNewAccounts() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     public boolean verify(String id) throws IOException {
@@ -159,9 +161,32 @@ public class FrmNewAccounts extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Enter a password:");
 
+        txtId.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtIdKeyTyped(evt);
+            }
+        });
+
+        txtName.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNameKeyTyped(evt);
+            }
+        });
+
         txtUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsernameActionPerformed(evt);
+            }
+        });
+        txtUsername.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtUsernameKeyTyped(evt);
+            }
+        });
+
+        pwfPass.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                pwfPassKeyTyped(evt);
             }
         });
 
@@ -319,6 +344,26 @@ public class FrmNewAccounts extends javax.swing.JFrame {
         this.setVisible(false);
         new FrmAdmin().setVisible(true);
     }//GEN-LAST:event_btnExitActionPerformed
+
+    private void txtIdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIdKeyTyped
+        char c = evt.getKeyChar();
+        if(c<'0' || c>'9') evt.consume();
+    }//GEN-LAST:event_txtIdKeyTyped
+
+    private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyTyped
+        char c = evt.getKeyChar();
+        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'Ñ') && c !=KeyEvent.VK_SPACE)  evt.consume();
+    }//GEN-LAST:event_txtNameKeyTyped
+
+    private void txtUsernameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsernameKeyTyped
+        char c = evt.getKeyChar();
+        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'0') | c>'9' && (c<'Ñ'))  evt.consume();
+    }//GEN-LAST:event_txtUsernameKeyTyped
+
+    private void pwfPassKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwfPassKeyTyped
+        char c = evt.getKeyChar();
+        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'0') | c>'9' && (c<'Ñ'))  evt.consume();
+    }//GEN-LAST:event_pwfPassKeyTyped
 
     /**
      * @param args the command line arguments
