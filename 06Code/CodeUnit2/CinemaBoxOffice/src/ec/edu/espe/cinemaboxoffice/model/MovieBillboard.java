@@ -57,4 +57,8 @@ public class MovieBillboard extends Movie {
     public String getPrice() {
         return price+"";
     }
+    
+    public float getPriceValue() {
+        return price;
+    }
 }

@@ -84,6 +84,10 @@ public abstract class Movie {
     public String getDuration() {
         return duration+"";
     }
+    
+    public int getDurationValue() {
+        return duration;
+    }
 
     public String getNamePoster() {
         return namePoster;

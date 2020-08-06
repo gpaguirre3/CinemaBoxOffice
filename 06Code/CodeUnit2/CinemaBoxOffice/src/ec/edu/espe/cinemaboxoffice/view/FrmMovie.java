@@ -6,22 +6,26 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.model.Movie;
+import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
 import java.awt.Image;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class FrmMovie extends javax.swing.JFrame {
-
+    private int numberMovie;
+    
     /**
      * Creates new form FrmMovie
      */
     public FrmMovie() {
         initComponents();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -62,8 +66,18 @@ public class FrmMovie extends javax.swing.JFrame {
         jScrollPane1.setViewportView(txaMovieSinopsis);
 
         btnMovieBuy.setText("Buy");
+        btnMovieBuy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMovieBuyActionPerformed(evt);
+            }
+        });
 
         btnMovieExit.setText("Exit");
+        btnMovieExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMovieExitActionPerformed(evt);
+            }
+        });
 
         lblMovieAgeRestriction.setText("jLabel1");
 
@@ -150,59 +164,37 @@ public class FrmMovie extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnMovieBuyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMovieBuyActionPerformed
+        try {
+            MovieBillboard movie = (MovieBillboard)Movie.consultMovies("Billboard.json").get(this.numberMovie);
+            FrmBill bill = new FrmBill(movie);
+            bill.setVisible(true);
+            bill.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        } catch (IOException ex) {}
+    }//GEN-LAST:event_btnMovieBuyActionPerformed
+
+    private void btnMovieExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMovieExitActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnMovieExitActionPerformed
+
     
     
     public int getNumberMovie(int numberMovie){
         return numberMovie;
     }
     
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmMovie.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmMovie.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmMovie.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmMovie.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FrmMovie().setVisible(true);
-            }
-        });
-    }
-    
     public void showDataMovie(int numberMovie) throws IOException{
         ArrayList<Movie> movies;
-        numberMovie = numberMovie -1;
+        this.numberMovie = numberMovie -1;
         movies = Movie.consultMovies("Billboard.json");
-        lblMoviePoster.setIcon(showPicture(movies.get(numberMovie).getNamePoster()));
-        lblMovieTitle.setText(movies.get(numberMovie).getTitle());
-        lblMoviegender.setText(movies.get(numberMovie).getGender());
-        lblMovieAgeRestriction.setText(movies.get(numberMovie).getAgeRestriction());
-        lblMovieDuration.setText(movies.get(numberMovie).getDuration());
-        lblMovieDate.setText(movies.get(numberMovie).getDate());
-        lblMoviePrice.setText(movies.get(numberMovie).getPrice());
-        txaMovieSinopsis.setText(movies.get(numberMovie).getSinopsis());
+        lblMoviePoster.setIcon(showPicture(movies.get(this.numberMovie).getNamePoster()));
+        lblMovieTitle.setText(movies.get(this.numberMovie).getTitle());
+        lblMoviegender.setText(movies.get(this.numberMovie).getGender());
+        lblMovieAgeRestriction.setText(movies.get(this.numberMovie).getAgeRestriction());
+        lblMovieDuration.setText(movies.get(this.numberMovie).getDuration());
+        lblMovieDate.setText(movies.get(this.numberMovie).getDate());
+        lblMoviePrice.setText(movies.get(this.numberMovie).getPrice());
+        txaMovieSinopsis.setText(movies.get(this.numberMovie).getSinopsis());
     }
 
     public ImageIcon showPicture(String namePicture) {

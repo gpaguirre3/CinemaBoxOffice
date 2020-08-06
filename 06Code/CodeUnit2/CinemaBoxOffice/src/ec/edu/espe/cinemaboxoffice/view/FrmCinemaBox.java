@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.view;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import java.awt.Image;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -1121,7 +1122,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     }
 
     public ImageIcon showPicture(String namePicture) {
-        ImageIcon image = new ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/" + namePicture));
+        ImageIcon image = new ImageIcon(Paths.get("pictures/" + namePicture).toString());
         ImageIcon icon = new ImageIcon(image.getImage().getScaledInstance(100, 148, Image.SCALE_DEFAULT));
         return icon;
     }

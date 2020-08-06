@@ -153,11 +153,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Buy"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMovieBuyActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnMovieExit">
           <Properties>
             <Property name="text" type="java.lang.String" value="Exit"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMovieExitActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblMovieAgeRestriction">
           <Properties>
