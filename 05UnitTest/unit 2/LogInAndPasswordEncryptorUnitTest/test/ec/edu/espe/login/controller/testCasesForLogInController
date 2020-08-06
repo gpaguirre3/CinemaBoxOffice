@@ -1,0 +1,20 @@
+findUser(String, String) : String
+
+INPUT1          INPUT2          EXPECTED RESULT
+
+gpaguirre       cinema1         true    
+jjaleman        cinema2         true
+jhoeld          cinema3         true
+kevinc          cinema4         true
+jajajaja        xdxdxdx         false
+
+
+
+findId(String, String) : String
+
+INPUT1                           EXPECTED RESULT
+1                                true
+2                                true
+3                                true
+4                                true
+91                               false
