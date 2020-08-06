@@ -7,7 +7,7 @@ package ec.edu.espe.cinemaboxoffice.utils;
 
 /**
  *
- * @author Josue
+ * @author Josue Aleman, ESPE
  */
 public class PasswordEncryptor {
       public String encryptPassword(String newPassword) {

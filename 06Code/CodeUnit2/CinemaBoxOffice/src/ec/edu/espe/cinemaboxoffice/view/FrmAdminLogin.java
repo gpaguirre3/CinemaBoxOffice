@@ -6,6 +6,9 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.controller.LogInController;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -20,6 +23,39 @@ public class FrmAdminLogin extends javax.swing.JFrame {
     public FrmAdminLogin() {
         initComponents();
         setLocationRelativeTo(null);
+    }
+
+    public void verifyAccount(String username, String password) {
+        
+        LogInController veryfier = new LogInController();
+        boolean accountFound = false;
+        
+        try {
+            accountFound = veryfier.findUser(username, password);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmAdminLogin.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        if (accountFound == true) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Correct account!",
+                    "Success",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+            this.setVisible(false);
+            new FrmAdmin().setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Incorrect Account",
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            txtUsername.setText("");
+            pwfPass.setText("");
+
+        }
     }
 
     /**
@@ -157,7 +193,6 @@ public class FrmAdminLogin extends javax.swing.JFrame {
 
     private void btnAdminLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminLoginActionPerformed
         // TODO add your handling code here:
-        LogInController veryfier = new LogInController();
         String username = txtUsername.getText();
         String password = pwfPass.getText();
 
@@ -181,28 +216,7 @@ public class FrmAdminLogin extends javax.swing.JFrame {
             return;
         }
 
-        boolean accountFound = false;
-        accountFound = veryfier.findUser(username, password);
-        if (accountFound == true) {
-            JOptionPane.showMessageDialog(
-                    null,
-                    "Correct account!",
-                    "Success",
-                    JOptionPane.INFORMATION_MESSAGE
-            );
-            this.setVisible(false);
-            new FrmAdmin().setVisible(true);
-        } else {
-            JOptionPane.showMessageDialog(
-                    null,
-                    "Incorrect Account",
-                    "Error",
-                    JOptionPane.ERROR_MESSAGE
-            );
-            txtUsername.setText("");
-            pwfPass.setText("");
-            
-        }
+        verifyAccount(username, password);
     }//GEN-LAST:event_btnAdminLoginActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed

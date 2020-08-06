@@ -53,6 +53,7 @@ public class FrmAdmin extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
+        btnBack = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuAdminCinema = new javax.swing.JMenu();
         mnuRecord = new javax.swing.JMenu();
@@ -66,7 +67,6 @@ public class FrmAdmin extends javax.swing.JFrame {
         mniAdminExit = new javax.swing.JMenuItem();
         mnuAdmin = new javax.swing.JMenu();
         mnuNewAdmin = new javax.swing.JMenuItem();
-        mnuUpdateAdmin = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -231,6 +231,13 @@ public class FrmAdmin extends javax.swing.JFrame {
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("jLabel19");
 
+        btnBack.setText("Back");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -249,6 +256,10 @@ public class FrmAdmin extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel15)
                 .addGap(104, 104, 104))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(249, 249, 249)
+                .addComponent(btnBack)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -263,7 +274,9 @@ public class FrmAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
                     .addComponent(jLabel19))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnBack)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         mnuAdminCinema.setText("Cinema");
@@ -318,11 +331,13 @@ public class FrmAdmin extends javax.swing.JFrame {
         mnuAdmin.setText("Admin");
         mnuAdmin.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
 
-        mnuNewAdmin.setText("New");
+        mnuNewAdmin.setText("Sign up");
+        mnuNewAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuNewAdminActionPerformed(evt);
+            }
+        });
         mnuAdmin.add(mnuNewAdmin);
-
-        mnuUpdateAdmin.setText("Update");
-        mnuAdmin.add(mnuUpdateAdmin);
 
         jMenuBar1.add(mnuAdmin);
 
@@ -342,8 +357,9 @@ public class FrmAdmin extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -364,6 +380,17 @@ public class FrmAdmin extends javax.swing.JFrame {
     private void mniAdminExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniAdminExitActionPerformed
         dispose();
     }//GEN-LAST:event_mniAdminExitActionPerformed
+
+    private void mnuNewAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuNewAdminActionPerformed
+        // TODO add your handling code here:
+        new FrmNewAccounts().setVisible(true);
+    }//GEN-LAST:event_mnuNewAdminActionPerformed
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        new FrmCinemaBox().setVisible(true);
+    }//GEN-LAST:event_btnBackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -401,6 +428,7 @@ public class FrmAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBack;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -436,6 +464,5 @@ public class FrmAdmin extends javax.swing.JFrame {
     private javax.swing.JMenu mnuDelete;
     private javax.swing.JMenuItem mnuNewAdmin;
     private javax.swing.JMenu mnuRecord;
-    private javax.swing.JMenuItem mnuUpdateAdmin;
     // End of variables declaration//GEN-END:variables
 }

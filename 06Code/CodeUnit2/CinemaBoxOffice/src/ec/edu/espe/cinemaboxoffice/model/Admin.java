@@ -18,6 +18,7 @@ public class Admin extends Person {
 
     private String userName;
     private String password;
+    
 
     public Admin(String id, String name, String userName, String keyUser) {
         super(id, name);
@@ -69,5 +70,23 @@ public class Admin extends Person {
     public String getName() {
         return name;
     }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    
 
 }
