@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -1123,6 +1123,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
     public ImageIcon showPicture(String namePicture) {
         ImageIcon image = new ImageIcon(Paths.get("pictures/" + namePicture).toString());
+        System.out.println(Paths.get("pictures/" + namePicture).toString());
         ImageIcon icon = new ImageIcon(image.getImage().getScaledInstance(100, 148, Image.SCALE_DEFAULT));
         return icon;
     }
