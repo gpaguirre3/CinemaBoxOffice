@@ -5,9 +5,12 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.controller.LogInController;
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author Kevin Chuquimarca ESPE-DCCO
+ * @author Josue Aleman, ESPE
  */
 public class FrmAdminLogin extends javax.swing.JFrame {
 
@@ -32,11 +35,12 @@ public class FrmAdminLogin extends javax.swing.JFrame {
         lblAdmin = new javax.swing.JLabel();
         lblAdminUser = new javax.swing.JLabel();
         lblAminkey = new javax.swing.JLabel();
-        txfUserName = new javax.swing.JTextField();
-        pwfKeyuser = new javax.swing.JPasswordField();
+        txtUsername = new javax.swing.JTextField();
+        pwfPass = new javax.swing.JPasswordField();
         btnAdminLogin = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        btnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,18 +58,26 @@ public class FrmAdminLogin extends javax.swing.JFrame {
         lblAminkey.setForeground(new java.awt.Color(255, 255, 255));
         lblAminkey.setText("Password:");
 
-        txfUserName.setText("jTextField1");
-
-        pwfKeyuser.setText("jPasswordField1");
-
         btnAdminLogin.setText("Login");
         btnAdminLogin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdminLoginMouseClicked(evt);
             }
         });
+        btnAdminLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAdminLoginActionPerformed(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/smallCinemaLogo.png"))); // NOI18N
+
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -78,47 +90,51 @@ public class FrmAdminLogin extends javax.swing.JFrame {
                     .addComponent(lblAminkey))
                 .addGap(43, 43, 43)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txfUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pwfKeyuser, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pwfPass, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(106, 106, 106))
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel1)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel2))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(111, 111, 111)
-                                .addComponent(lblAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(242, 242, 242)
-                        .addComponent(btnAdminLogin)))
+                        .addGap(111, 111, 111)
+                        .addComponent(lblAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(142, 142, 142)
+                .addComponent(btnAdminLogin)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(118, 118, 118))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
-                        .addComponent(lblAdmin)))
+                        .addComponent(lblAdmin))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel2)
+                        .addComponent(jLabel1)))
                 .addGap(91, 91, 91)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txfUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblAdminUser))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(pwfKeyuser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pwfPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblAminkey))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                .addComponent(btnAdminLogin)
-                .addGap(49, 49, 49))
+                .addGap(52, 52, 52)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAdminLogin)
+                    .addComponent(btnExit))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -136,11 +152,63 @@ public class FrmAdminLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAdminLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdminLoginMouseClicked
-        this.setVisible(false);
-        FrmAdmin frmAdmin = new FrmAdmin();
-        frmAdmin.setVisible(true);
-        setLocationRelativeTo(null);
+
     }//GEN-LAST:event_btnAdminLoginMouseClicked
+
+    private void btnAdminLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminLoginActionPerformed
+        // TODO add your handling code here:
+        LogInController veryfier = new LogInController();
+        String username = txtUsername.getText();
+        String password = pwfPass.getText();
+
+        if (username.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Please, enter an username",
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE
+            );
+
+            return;
+        }
+        if (password.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Please, enter a password",
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            return;
+        }
+
+        boolean accountFound = false;
+        accountFound = veryfier.findUser(username, password);
+        if (accountFound == true) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Correct account!",
+                    "Success",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+            this.setVisible(false);
+            new FrmAdmin().setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Incorrect Account",
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            txtUsername.setText("");
+            pwfPass.setText("");
+            
+        }
+    }//GEN-LAST:event_btnAdminLoginActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_btnExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,13 +247,14 @@ public class FrmAdminLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdminLogin;
+    private javax.swing.JButton btnExit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblAdmin;
     private javax.swing.JLabel lblAdminUser;
     private javax.swing.JLabel lblAminkey;
-    private javax.swing.JPasswordField pwfKeyuser;
-    private javax.swing.JTextField txfUserName;
+    private javax.swing.JPasswordField pwfPass;
+    private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
 }

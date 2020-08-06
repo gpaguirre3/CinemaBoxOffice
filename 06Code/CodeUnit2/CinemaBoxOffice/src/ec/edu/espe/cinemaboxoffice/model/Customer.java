@@ -13,7 +13,7 @@ public class Customer extends Person {
     private int age;
     private String CI;
 
-    public Customer(int id, String name, int age, String CI) {
+    public Customer(String id, String name, int age, String CI) {
         super(id, name);
         this.age = age;
         this.CI = CI;
@@ -35,11 +35,11 @@ public class Customer extends Person {
         this.CI = CI;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

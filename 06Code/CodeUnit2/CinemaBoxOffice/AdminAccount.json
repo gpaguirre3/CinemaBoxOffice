@@ -1,50 +1,20 @@
 [
-  {
-    "admin": {
-      "password": "234",
+	{
+	  "id": "1",
       "name": "Gabriel Aguirre",
-      "id": 1.0,
-      "userName": "gpaguirre"
-    }
-  },
-  {
-    "admin": {
-      "password": "3216",
+      "userName": "gpaguirre",
+	  "password": "234"
+	},
+	{
+	  "id": "2",
       "name": "Josue Aleman",
-      "id": 2.0,
-      "userName": "jjaleman"
-    }
-  },
-  {
-    "admin": {
-      "password": "234",
+      "userName": "jjaleman",
+	  "password": "2105"
+	},
+	{
+	  "id": "3",
       "name": "Jhoel Chicaiza",
-      "id": 3.0,
-      "userName": "joel"
-    }
-  },
-  {
-    "admin": {
-      "password": "234",
-      "name": "Kevin Chuquimarca",
-      "id": 4.0,
-      "userName": "kevin"
-    }
-  },
-  {
-    "admin": {
-      "password": "234",
-      "name": "Alisson Clavijo",
-      "id": 5.0,
-      "userName": "clavijo"
-    }
-  },
-  {
-    "admin": {
-      "password": "234",
-      "name": "Edison Lascano",
-      "id": 6,
-      "userName": "elascano"
-    }
-  }
+      "userName": "joel",
+	  "password": "234"
+	}
 ]
