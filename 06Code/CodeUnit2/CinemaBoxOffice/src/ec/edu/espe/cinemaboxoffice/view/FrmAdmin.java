@@ -5,7 +5,10 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.model.Movie;
 import java.awt.Color;
+import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  *
@@ -32,28 +35,27 @@ public class FrmAdmin extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        lblMovies = new javax.swing.JLabel();
+        lblMovieTitle2 = new javax.swing.JLabel();
+        lblMovieTitle3 = new javax.swing.JLabel();
+        lblMovieTitle1 = new javax.swing.JLabel();
+        lblMovieTitle4 = new javax.swing.JLabel();
+        lblMovieTitle5 = new javax.swing.JLabel();
+        lblMovieTitle6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        lblPremiers = new javax.swing.JLabel();
+        lblPremierTitle2 = new javax.swing.JLabel();
+        lblPremierTitle1 = new javax.swing.JLabel();
+        lblPremierTitle3 = new javax.swing.JLabel();
+        lblPremierTitle4 = new javax.swing.JLabel();
+        lblPremierTitle6 = new javax.swing.JLabel();
+        lblPremierTitle5 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        btnBack = new javax.swing.JButton();
+        lblPromotionsDate = new javax.swing.JLabel();
+        lblPromotionDate2 = new javax.swing.JLabel();
+        lblPromotionDate1 = new javax.swing.JLabel();
+        lblPromotionDate4 = new javax.swing.JLabel();
+        lblPromotionDate3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuAdminCinema = new javax.swing.JMenu();
         mnuRecord = new javax.swing.JMenu();
@@ -73,33 +75,33 @@ public class FrmAdmin extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 51));
 
-        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Movies");
+        lblMovies.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblMovies.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovies.setText("Movies");
 
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("jLabel2");
+        lblMovieTitle2.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblMovieTitle2.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieTitle2.setText("jLabel2");
 
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("jLabel3");
+        lblMovieTitle3.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblMovieTitle3.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieTitle3.setText("jLabel3");
 
-        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("jLabel4");
+        lblMovieTitle1.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblMovieTitle1.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieTitle1.setText("jLabel4");
 
-        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("jLabel5");
+        lblMovieTitle4.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblMovieTitle4.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieTitle4.setText("jLabel5");
 
-        jLabel6.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("jLabel6");
+        lblMovieTitle5.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblMovieTitle5.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieTitle5.setText("jLabel6");
 
-        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("jLabel7");
+        lblMovieTitle6.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblMovieTitle6.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieTitle6.setText("jLabel7");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -108,69 +110,69 @@ public class FrmAdmin extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(89, 89, 89)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel6))
+                    .addComponent(lblMovieTitle1)
+                    .addComponent(lblMovieTitle3)
+                    .addComponent(lblMovieTitle5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 249, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel2))
+                    .addComponent(lblMovieTitle6)
+                    .addComponent(lblMovieTitle4)
+                    .addComponent(lblMovieTitle2))
                 .addGap(138, 138, 138))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(255, 255, 255)
-                .addComponent(jLabel1)
+                .addComponent(lblMovies)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(lblMovies)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4))
+                    .addComponent(lblMovieTitle2)
+                    .addComponent(lblMovieTitle1))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel5))
+                    .addComponent(lblMovieTitle3)
+                    .addComponent(lblMovieTitle4))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblMovieTitle5)
+                    .addComponent(lblMovieTitle6))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 51));
 
-        jLabel8.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Next Premieres");
+        lblPremiers.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPremiers.setForeground(new java.awt.Color(255, 255, 255));
+        lblPremiers.setText("Next Premieres");
 
-        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("jLabel9");
+        lblPremierTitle2.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPremierTitle2.setForeground(new java.awt.Color(255, 255, 255));
+        lblPremierTitle2.setText("jLabel9");
 
-        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("jLabel10");
+        lblPremierTitle1.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPremierTitle1.setForeground(new java.awt.Color(255, 255, 255));
+        lblPremierTitle1.setText("jLabel10");
 
-        jLabel11.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("jLabel11");
+        lblPremierTitle3.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPremierTitle3.setForeground(new java.awt.Color(255, 255, 255));
+        lblPremierTitle3.setText("jLabel11");
 
-        jLabel12.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("jLabel12");
+        lblPremierTitle4.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPremierTitle4.setForeground(new java.awt.Color(255, 255, 255));
+        lblPremierTitle4.setText("jLabel12");
 
-        jLabel13.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("jLabel13");
+        lblPremierTitle6.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPremierTitle6.setForeground(new java.awt.Color(255, 255, 255));
+        lblPremierTitle6.setText("jLabel13");
 
-        jLabel14.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("jLabel14");
+        lblPremierTitle5.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPremierTitle5.setForeground(new java.awt.Color(255, 255, 255));
+        lblPremierTitle5.setText("jLabel14");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -179,68 +181,61 @@ public class FrmAdmin extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(85, 85, 85)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel14))
+                    .addComponent(lblPremierTitle1)
+                    .addComponent(lblPremierTitle3)
+                    .addComponent(lblPremierTitle5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel9))
+                    .addComponent(lblPremierTitle6)
+                    .addComponent(lblPremierTitle4)
+                    .addComponent(lblPremierTitle2))
                 .addGap(131, 131, 131))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(235, 235, 235)
-                .addComponent(jLabel8)
+                .addComponent(lblPremiers)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel8)
+                .addComponent(lblPremiers)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10))
+                    .addComponent(lblPremierTitle2)
+                    .addComponent(lblPremierTitle1))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel12))
+                    .addComponent(lblPremierTitle3)
+                    .addComponent(lblPremierTitle4))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel14))
-                .addContainerGap(32, Short.MAX_VALUE))
+                    .addComponent(lblPremierTitle6)
+                    .addComponent(lblPremierTitle5))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 51));
 
-        jLabel15.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("Promotions Date");
+        lblPromotionsDate.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPromotionsDate.setForeground(new java.awt.Color(255, 255, 255));
+        lblPromotionsDate.setText("Promotions Date");
 
-        jLabel16.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("jLabel16");
+        lblPromotionDate2.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPromotionDate2.setForeground(new java.awt.Color(255, 255, 255));
+        lblPromotionDate2.setText("jLabel16");
 
-        jLabel17.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("jLabel17");
+        lblPromotionDate1.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPromotionDate1.setForeground(new java.awt.Color(255, 255, 255));
+        lblPromotionDate1.setText("jLabel17");
 
-        jLabel18.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("jLabel18");
+        lblPromotionDate4.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPromotionDate4.setForeground(new java.awt.Color(255, 255, 255));
+        lblPromotionDate4.setText("jLabel18");
 
-        jLabel19.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("jLabel19");
-
-        btnBack.setText("Back");
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
-            }
-        });
+        lblPromotionDate3.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblPromotionDate3.setForeground(new java.awt.Color(255, 255, 255));
+        lblPromotionDate3.setText("jLabel19");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -249,38 +244,31 @@ public class FrmAdmin extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel17)
-                    .addComponent(jLabel19))
+                    .addComponent(lblPromotionDate1)
+                    .addComponent(lblPromotionDate3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 248, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel16))
+                    .addComponent(lblPromotionDate4)
+                    .addComponent(lblPromotionDate2))
                 .addGap(132, 132, 132))
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(249, 249, 249)
-                        .addComponent(btnBack))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(233, 233, 233)
-                        .addComponent(jLabel15)))
+                .addGap(233, 233, 233)
+                .addComponent(lblPromotionsDate)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel15)
+                .addComponent(lblPromotionsDate)
                 .addGap(24, 24, 24)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(jLabel17))
+                    .addComponent(lblPromotionDate2)
+                    .addComponent(lblPromotionDate1))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel19))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnBack)
-                .addContainerGap(23, Short.MAX_VALUE))
+                    .addComponent(lblPromotionDate4)
+                    .addComponent(lblPromotionDate3))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         mnuAdminCinema.setText("Cinema");
@@ -359,9 +347,9 @@ public class FrmAdmin extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -381,19 +369,14 @@ public class FrmAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_mniRecorMovieActionPerformed
 
     private void mniAdminExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniAdminExitActionPerformed
-        dispose();
+        this.setVisible(false);
+        new FrmCinemaBox().setVisible(true);
     }//GEN-LAST:event_mniAdminExitActionPerformed
 
     private void mnuNewAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuNewAdminActionPerformed
         // TODO add your handling code here:
         new FrmNewAccounts().setVisible(true);
     }//GEN-LAST:event_mnuNewAdminActionPerformed
-
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        // TODO add your handling code here:
-        this.setVisible(false);
-        new FrmCinemaBox().setVisible(true);
-    }//GEN-LAST:event_btnBackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -429,28 +412,26 @@ public class FrmAdmin extends javax.swing.JFrame {
             }
         });
     }
+    
+    public void showNamesMovies() throws IOException{
+        ArrayList<Movie> movies;
+        movies = Movie.consultMovies("Billboard.json");
+        lblMovieTitle1.setText(movies.get(0).getTitle());
+        lblMovieTitle2.setText(movies.get(1).getTitle());
+        lblMovieTitle3.setText(movies.get(2).getTitle());
+        lblMovieTitle4.setText(movies.get(3).getTitle());
+        lblMovieTitle5.setText(movies.get(4).getTitle());
+        lblMovieTitle6.setText(movies.get(5).getTitle());
+        movies = Movie.consultMovies("NextPremier.json");
+        lblPremierTitle1.setText(movies.get(0).getTitle());
+        lblPremierTitle2.setText(movies.get(1).getTitle());
+        lblPremierTitle3.setText(movies.get(2).getTitle());
+        lblPremierTitle4.setText(movies.get(3).getTitle());
+        lblPremierTitle5.setText(movies.get(4).getTitle());
+        lblPremierTitle6.setText(movies.get(5).getTitle());
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
@@ -459,6 +440,25 @@ public class FrmAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel lblMovieTitle1;
+    private javax.swing.JLabel lblMovieTitle2;
+    private javax.swing.JLabel lblMovieTitle3;
+    private javax.swing.JLabel lblMovieTitle4;
+    private javax.swing.JLabel lblMovieTitle5;
+    private javax.swing.JLabel lblMovieTitle6;
+    private javax.swing.JLabel lblMovies;
+    private javax.swing.JLabel lblPremierTitle1;
+    private javax.swing.JLabel lblPremierTitle2;
+    private javax.swing.JLabel lblPremierTitle3;
+    private javax.swing.JLabel lblPremierTitle4;
+    private javax.swing.JLabel lblPremierTitle5;
+    private javax.swing.JLabel lblPremierTitle6;
+    private javax.swing.JLabel lblPremiers;
+    private javax.swing.JLabel lblPromotionDate1;
+    private javax.swing.JLabel lblPromotionDate2;
+    private javax.swing.JLabel lblPromotionDate3;
+    private javax.swing.JLabel lblPromotionDate4;
+    private javax.swing.JLabel lblPromotionsDate;
     private javax.swing.JMenuItem mniAdminExit;
     private javax.swing.JMenuItem mniRecorMovie;
     private javax.swing.JMenuItem mniRecordNextPremier;

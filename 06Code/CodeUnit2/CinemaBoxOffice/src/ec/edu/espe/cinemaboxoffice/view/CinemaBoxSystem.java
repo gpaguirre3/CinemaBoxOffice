@@ -13,10 +13,9 @@ import java.io.IOException;
  */
 public class CinemaBoxSystem {
     public static void main(String[] args) throws IOException {
-        FrmCinemaBox cinema = new FrmCinemaBox();
-        cinema.showBillboard();
-        cinema.showDataNextPremier();
-        cinema.setVisible(true);
-   
+        FrmCinemaBox frmCinema = new FrmCinemaBox();
+        frmCinema.showBillboard();
+        frmCinema.showDataNextPremier();
+        frmCinema.setVisible(true);
     }
 }

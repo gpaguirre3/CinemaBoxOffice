@@ -206,6 +206,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="View More"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie1MouseClicked"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieTitle1">
                   <Properties>
@@ -308,6 +311,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="View More"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie2MouseClicked"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieTitle2">
                   <Properties>
@@ -409,6 +415,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="View More"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie3MouseClicked"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieTitle3">
                   <Properties>
@@ -510,6 +519,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="View More"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie5MouseClicked"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieTitle5">
                   <Properties>
@@ -615,6 +627,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="View More"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie4MouseClicked"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieTitle4">
                   <Properties>
@@ -717,6 +732,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="View More"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie6MouseClicked"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieTitle6">
                   <Properties>

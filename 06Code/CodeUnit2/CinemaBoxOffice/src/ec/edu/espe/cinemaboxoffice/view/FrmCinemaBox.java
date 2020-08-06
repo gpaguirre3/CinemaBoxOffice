@@ -9,6 +9,8 @@ import ec.edu.espe.cinemaboxoffice.model.Movie;
 import java.awt.Image;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 
 /**
@@ -128,6 +130,11 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster1.setText("jLabel1");
 
         btnMovie1.setText("View More");
+        btnMovie1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnMovie1MouseClicked(evt);
+            }
+        });
 
         lblMovieTitle1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         lblMovieTitle1.setForeground(new java.awt.Color(255, 255, 255));
@@ -183,6 +190,11 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster2.setText("jLabel2");
 
         btnMovie2.setText("View More");
+        btnMovie2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnMovie2MouseClicked(evt);
+            }
+        });
 
         lblMovieTitle2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         lblMovieTitle2.setForeground(new java.awt.Color(255, 255, 255));
@@ -239,6 +251,11 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster3.setText("jLabel3");
 
         btnMovie3.setText("View More");
+        btnMovie3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnMovie3MouseClicked(evt);
+            }
+        });
 
         lblMovieTitle3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         lblMovieTitle3.setForeground(new java.awt.Color(255, 255, 255));
@@ -294,6 +311,11 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster5.setText("jLabel5");
 
         btnMovie5.setText("View More");
+        btnMovie5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnMovie5MouseClicked(evt);
+            }
+        });
 
         lblMovieTitle5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         lblMovieTitle5.setForeground(new java.awt.Color(255, 255, 255));
@@ -350,6 +372,11 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster4.setText("jLabel4");
 
         btnMovie4.setText("View More");
+        btnMovie4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnMovie4MouseClicked(evt);
+            }
+        });
 
         lblMovieTitle4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         lblMovieTitle4.setForeground(new java.awt.Color(255, 255, 255));
@@ -406,6 +433,11 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster6.setText("jLabel6");
 
         btnMovie6.setText("View More");
+        btnMovie6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnMovie6MouseClicked(evt);
+            }
+        });
 
         lblMovieTitle6.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         lblMovieTitle6.setForeground(new java.awt.Color(255, 255, 255));
@@ -912,6 +944,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mniCinemaExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniCinemaExitActionPerformed
+        new FrmAdmin().setVisible(false);
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_mniCinemaExitActionPerformed
@@ -921,6 +954,72 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         FrmAdminLogin frmLogin = new FrmAdminLogin();
         frmLogin.setVisible(true);
     }//GEN-LAST:event_mnuCinemaAdminActionPerformed
+
+    private void btnMovie1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie1MouseClicked
+        this.setVisible(true);
+        FrmMovie frmMovie = new FrmMovie();
+        try {
+            frmMovie.showDataMovie(1);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmMovie.setVisible(true);
+    }//GEN-LAST:event_btnMovie1MouseClicked
+
+    private void btnMovie2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie2MouseClicked
+        this.setVisible(true);
+        FrmMovie frmMovie = new FrmMovie();
+        try {
+            frmMovie.showDataMovie(2);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmMovie.setVisible(true);
+    }//GEN-LAST:event_btnMovie2MouseClicked
+
+    private void btnMovie3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie3MouseClicked
+        this.setVisible(true);
+        FrmMovie frmMovie = new FrmMovie();
+        try {
+            frmMovie.showDataMovie(3);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmMovie.setVisible(true);
+    }//GEN-LAST:event_btnMovie3MouseClicked
+
+    private void btnMovie4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie4MouseClicked
+        this.setVisible(true);
+        FrmMovie frmMovie = new FrmMovie();
+        try {
+            frmMovie.showDataMovie(4);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmMovie.setVisible(true);
+    }//GEN-LAST:event_btnMovie4MouseClicked
+
+    private void btnMovie5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie5MouseClicked
+        this.setVisible(true);
+        FrmMovie frmMovie = new FrmMovie();
+        try {
+            frmMovie.showDataMovie(5);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmMovie.setVisible(true);
+    }//GEN-LAST:event_btnMovie5MouseClicked
+
+    private void btnMovie6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie6MouseClicked
+        this.setVisible(true);
+        FrmMovie frmMovie = new FrmMovie();
+        try {
+            frmMovie.showDataMovie(6);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmMovie.setVisible(true);
+    }//GEN-LAST:event_btnMovie6MouseClicked
 
     /**
      * @param args the command line arguments

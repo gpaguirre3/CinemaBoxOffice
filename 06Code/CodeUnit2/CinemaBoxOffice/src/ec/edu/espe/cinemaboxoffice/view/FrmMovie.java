@@ -5,6 +5,12 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.model.Movie;
+import java.awt.Image;
+import java.io.IOException;
+import java.util.ArrayList;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
@@ -28,56 +34,78 @@ public class FrmMovie extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblMoviePoster = new javax.swing.JLabel();
+        lblMovieDuration = new javax.swing.JLabel();
+        lblMoviegender = new javax.swing.JLabel();
+        lblMovieTitle = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        txaMovieSinopsis = new javax.swing.JTextArea();
+        btnMovieBuy = new javax.swing.JButton();
+        btnMovieExit = new javax.swing.JButton();
+        lblMovieAgeRestriction = new javax.swing.JLabel();
+        lblMovieDate = new javax.swing.JLabel();
+        lblMoviePrice = new javax.swing.JLabel();
+        lblMovieSinopsis = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("jLabel1");
+        lblMoviePoster.setText("jLabel1");
 
-        jLabel4.setText("jLabel4");
+        lblMovieDuration.setText("jLabel4");
 
-        jLabel3.setText("jLabel3");
+        lblMoviegender.setText("jLabel3");
 
-        jLabel2.setText("jLabel2");
+        lblMovieTitle.setText("jLabel2");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txaMovieSinopsis.setColumns(20);
+        txaMovieSinopsis.setRows(5);
+        jScrollPane1.setViewportView(txaMovieSinopsis);
 
-        jButton1.setText("jButton1");
+        btnMovieBuy.setText("Buy");
 
-        jButton2.setText("jButton2");
+        btnMovieExit.setText("Exit");
+
+        lblMovieAgeRestriction.setText("jLabel1");
+
+        lblMovieDate.setText("jLabel2");
+
+        lblMoviePrice.setText("jLabel1");
+
+        lblMovieSinopsis.setText("Sinopsis:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                            .addComponent(jScrollPane1)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblMoviePoster, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblMoviegender)
+                                    .addComponent(lblMovieTitle)
+                                    .addComponent(lblMovieAgeRestriction)
+                                    .addComponent(lblMovieDate)
+                                    .addComponent(lblMovieDuration)
+                                    .addComponent(lblMoviePrice))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(78, 78, 78)
+                                .addComponent(btnMovieBuy, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(94, 94, 94)
+                                .addComponent(btnMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblMovieSinopsis)))
+                        .addGap(0, 94, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(jButton1)
-                .addGap(76, 76, 76)
-                .addComponent(jButton2)
-                .addContainerGap(101, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,19 +113,27 @@ public class FrmMovie extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(lblMovieTitle)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
+                        .addComponent(lblMoviegender)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel4))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblMovieAgeRestriction)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieDuration)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMovieDate)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMoviePrice))
+                    .addComponent(lblMoviePoster, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+                .addComponent(lblMovieSinopsis)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap(53, Short.MAX_VALUE))
+                    .addComponent(btnMovieExit)
+                    .addComponent(btnMovieBuy))
+                .addGap(20, 20, 20))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -114,6 +150,12 @@ public class FrmMovie extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    
+    public int getNumberMovie(int numberMovie){
+        return numberMovie;
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -148,16 +190,40 @@ public class FrmMovie extends javax.swing.JFrame {
             }
         });
     }
+    
+    public void showDataMovie(int numberMovie) throws IOException{
+        ArrayList<Movie> movies;
+        numberMovie = numberMovie -1;
+        movies = Movie.consultMovies("Billboard.json");
+        lblMoviePoster.setIcon(showPicture(movies.get(numberMovie).getNamePoster()));
+        lblMovieTitle.setText(movies.get(numberMovie).getTitle());
+        lblMoviegender.setText(movies.get(numberMovie).getGender());
+        lblMovieAgeRestriction.setText(movies.get(numberMovie).getAgeRestriction());
+        lblMovieDuration.setText(movies.get(numberMovie).getDuration());
+        lblMovieDate.setText(movies.get(numberMovie).getDate());
+        lblMoviePrice.setText(movies.get(numberMovie).getPrice());
+        txaMovieSinopsis.setText(movies.get(numberMovie).getSinopsis());
+    }
+
+    public ImageIcon showPicture(String namePicture) {
+        ImageIcon image = new ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/" + namePicture));
+        ImageIcon icon = new ImageIcon(image.getImage().getScaledInstance(200, 270, Image.SCALE_DEFAULT));
+        return icon;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JButton btnMovieBuy;
+    private javax.swing.JButton btnMovieExit;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel lblMovieAgeRestriction;
+    private javax.swing.JLabel lblMovieDate;
+    private javax.swing.JLabel lblMovieDuration;
+    private javax.swing.JLabel lblMoviePoster;
+    private javax.swing.JLabel lblMoviePrice;
+    private javax.swing.JLabel lblMovieSinopsis;
+    private javax.swing.JLabel lblMovieTitle;
+    private javax.swing.JLabel lblMoviegender;
+    private javax.swing.JTextArea txaMovieSinopsis;
     // End of variables declaration//GEN-END:variables
 }

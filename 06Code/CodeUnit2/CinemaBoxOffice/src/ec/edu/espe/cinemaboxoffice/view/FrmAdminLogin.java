@@ -6,7 +6,6 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.controller.LogInController;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -26,7 +25,7 @@ public class FrmAdminLogin extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
 
-    public void verifyAccount(String username, String password) {
+    public void verifyAccount(String username, String password) throws IOException {
 
         LogInController veryfier = new LogInController();
         boolean accountFound = false;
@@ -45,7 +44,9 @@ public class FrmAdminLogin extends javax.swing.JFrame {
                     JOptionPane.INFORMATION_MESSAGE
             );
             this.setVisible(false);
-            new FrmAdmin().setVisible(true);
+            FrmAdmin frmAdmin = new FrmAdmin();
+            frmAdmin.showNamesMovies();
+            frmAdmin.setVisible(true);
         } else {
             JOptionPane.showMessageDialog(
                     null,
@@ -205,10 +206,8 @@ public class FrmAdminLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAdminLoginMouseClicked
 
     private void btnAdminLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminLoginActionPerformed
-        // TODO add your handling code here:
         String username = txtUsername.getText();
         String password = pwfPass.getText();
-
         if (username.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
                     null,
@@ -228,7 +227,11 @@ public class FrmAdminLogin extends javax.swing.JFrame {
             );
             return;
         }
-        verifyAccount(username, password);
+        try {
+            verifyAccount(username, password);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmAdminLogin.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_btnAdminLoginActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
