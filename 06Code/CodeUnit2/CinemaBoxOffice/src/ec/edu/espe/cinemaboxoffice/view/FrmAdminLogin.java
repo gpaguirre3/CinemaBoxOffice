@@ -27,10 +27,10 @@ public class FrmAdminLogin extends javax.swing.JFrame {
     }
 
     public void verifyAccount(String username, String password) {
-        
+
         LogInController veryfier = new LogInController();
         boolean accountFound = false;
-        
+
         try {
             accountFound = veryfier.findUser(username, password);
         } catch (IOException ex) {
@@ -228,23 +228,26 @@ public class FrmAdminLogin extends javax.swing.JFrame {
             );
             return;
         }
-
         verifyAccount(username, password);
     }//GEN-LAST:event_btnAdminLoginActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        // TODO add your handling code here:
         this.setVisible(false);
+        new FrmCinemaBox().setVisible(true);
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void txtUsernameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsernameKeyTyped
         char c = evt.getKeyChar();
-        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'0') | c>'9' && (c<'Ñ'))  evt.consume();
+        if ((c < 'a' || c > 'z') && (c < 'A') | c > 'Z' && (c < '0') | c > '9' && (c < 'Ñ')) {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtUsernameKeyTyped
 
     private void pwfPassKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwfPassKeyTyped
         char c = evt.getKeyChar();
-        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'0') | c>'9' && (c<'Ñ'))  evt.consume();
+        if ((c < 'a' || c > 'z') && (c < 'A') | c > 'Z' && (c < '0') | c > '9' && (c < 'Ñ')) {
+            evt.consume();
+        }
     }//GEN-LAST:event_pwfPassKeyTyped
 
     /**

@@ -116,11 +116,4 @@ public class InputDataValidation {
         }
         return lastDigit == (higher - total);
     }
-
-    public Date getDate() {
-        int day = getInt("Enter the day: ", 2);
-        int month = getInt("Enter the month: ", 2);
-        int year = getInt("Enter the year: ", 4);
-        return new Date(year - 1900, month - 1, day);
-    }
 }

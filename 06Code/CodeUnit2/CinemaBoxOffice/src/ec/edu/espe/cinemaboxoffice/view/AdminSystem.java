@@ -53,7 +53,7 @@ public class AdminSystem {
         while (permission == false) {
             permission = logInAdmin();
             if (permission == true) {
-                admin.manageCinema();
+                //admin.manageCinema();
             }
         }
     }

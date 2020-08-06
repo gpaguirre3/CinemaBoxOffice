@@ -24,25 +24,6 @@ public class PromotionRecord {
 
     InputDataValidation in = new InputDataValidation();
 
-    public void managePromotion() throws IOException {
-        int option;
-        do {
-            System.out.println(" 1: Record Promotion \n 2: Delete promotion \n 3: Exit");
-            option = in.getInt("Enter an option: ", 1);
-            switch (option) {
-                case 1:
-                    recordPromotion(recordData());
-                    break;
-                case 2:
-                    deletePromotion();
-                    break;
-                default:
-                    System.out.println("Incorrect option");
-                    break;
-            }
-        } while (option != 3);
-    }
-
     public boolean recordPromotion(Promotion promotion) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         ArrayList<Promotion> promotions = new ArrayList<>();
@@ -82,11 +63,5 @@ public class PromotionRecord {
             }*/
         }
         return null;
-    }
-
-    public Promotion recordData() {
-        String description = in.getString("Enter the description of promotion: ");
-        float price = in.getFloat("Enter the price: ");
-        return new Promotion(description, in.getDate(), price);
     }
 }

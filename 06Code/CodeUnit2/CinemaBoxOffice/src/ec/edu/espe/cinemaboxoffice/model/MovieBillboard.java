@@ -13,16 +13,19 @@ import java.util.Date;
  */
 public class MovieBillboard extends Movie {
 
+    private String sinopsis; 
     private Date date;
     private float price;
     private CinemaRoom room;
 
-    public MovieBillboard(String title, String gender, String ageRestriction, int 
-            duration, String namePoster, Date date, float price, CinemaRoom room) {
+    public MovieBillboard(String title, String gender, String ageRestriction, 
+            int duration, String namePoster, String sinopsis, Date date, float 
+                    price, CinemaRoom room) {
         super(title, gender, ageRestriction, duration, namePoster);
         this.date = date;
         this.price = price;
         this.room = room;
+        this.sinopsis = sinopsis;
     }
 
     @Override
@@ -38,5 +41,20 @@ public class MovieBillboard extends Movie {
     @Override
     public String getMonth() {
         return "";
+    }
+
+    @Override
+    public String getSinopsis() {
+        return sinopsis;
+    }
+
+    @Override
+    public String getDate() {
+        return date.toGMTString();
+    }
+
+    @Override
+    public String getPrice() {
+        return price+"";
     }
 }

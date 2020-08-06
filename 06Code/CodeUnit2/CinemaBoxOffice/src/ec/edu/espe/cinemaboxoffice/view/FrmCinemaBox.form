@@ -102,18 +102,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="pnlBillboard3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="pnlBillboard1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="pnlBillboard5" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="pnlBillboard1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="pnlBillboard3" min="-2" max="-2" attributes="0"/>
-                          <Component id="pnlBillboard5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="pnlBillboard4" min="-2" max="-2" attributes="0"/>
+                          <Component id="pnlBillboard6" min="-2" max="-2" attributes="0"/>
+                          <Component id="pnlBillboard2" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="pnlBillboard2" max="32767" attributes="0"/>
-                          <Component id="pnlBillboard4" max="32767" attributes="0"/>
-                          <Component id="pnlBillboard6" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace pref="26" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -122,20 +122,20 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="pnlBillboard2" max="32767" attributes="0"/>
-                          <Component id="pnlBillboard1" max="32767" attributes="0"/>
+                          <Component id="pnlBillboard2" min="-2" max="-2" attributes="0"/>
+                          <Component id="pnlBillboard1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="pnlBillboard4" max="32767" attributes="0"/>
                           <Component id="pnlBillboard3" max="32767" attributes="0"/>
+                          <Component id="pnlBillboard4" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="pnlBillboard5" max="32767" attributes="0"/>
-                          <Component id="pnlBillboard6" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="pnlBillboard5" min="-2" max="-2" attributes="0"/>
+                          <Component id="pnlBillboard6" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <EmptySpace pref="16" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -168,7 +168,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="105" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -183,7 +183,7 @@
                                   <Component id="lblMovieGender1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblMovieAgeRestriction1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="30" max="32767" attributes="0"/>
                                   <Component id="btnMovie1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="lblMoviePoster1" max="32767" attributes="0"/>
@@ -257,7 +257,7 @@
                           <Component id="lblMoviePoster2" min="-2" pref="100" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace pref="104" max="32767" attributes="0"/>
+                                  <EmptySpace pref="88" max="32767" attributes="0"/>
                                   <Component id="btnMovie2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
                               </Group>
@@ -285,7 +285,7 @@
                                   <Component id="lblMovieGender2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblMovieAgeRestriction2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="40" max="32767" attributes="0"/>
                                   <Component id="btnMovie2" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="lblMoviePoster2" max="32767" attributes="0"/>
@@ -371,7 +371,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="103" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -386,7 +386,7 @@
                                   <Component id="lblMovieGender3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblMovieAgeRestriction3" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="26" max="32767" attributes="0"/>
                                   <Component id="btnMovie3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="lblMoviePoster3" max="32767" attributes="0"/>
@@ -472,7 +472,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="101" max="32767" attributes="0"/>
+                          <EmptySpace pref="85" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -564,7 +564,7 @@
                           <Component id="lblMoviePoster4" min="-2" pref="100" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="93" max="32767" attributes="0"/>
                                   <Component id="btnMovie4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                               </Group>
@@ -592,7 +592,7 @@
                                   <Component id="lblMovieGender4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblMovieAgeRestriction4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="26" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Component id="btnMovie4" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="lblMoviePoster4" max="32767" attributes="0"/>
@@ -666,7 +666,7 @@
                           <Component id="lblMoviePoster6" min="-2" pref="100" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="96" max="32767" attributes="0"/>
                                   <Component id="btnMovie6" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
                               </Group>
@@ -694,7 +694,7 @@
                                   <Component id="lblMovieGender6" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblMovieAgeRestriction6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="26" max="32767" attributes="0"/>
                                   <Component id="btnMovie6" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="lblMoviePoster6" max="32767" attributes="0"/>
@@ -774,18 +774,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="pnlPremier3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="pnlPremier1" alignment="0" max="32767" attributes="0"/>
                           <Component id="pnlPremier5" max="32767" attributes="0"/>
-                          <Component id="pnlPremier1" max="32767" attributes="0"/>
-                          <Component id="pnlPremier3" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="15" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="pnlPremier4" max="32767" attributes="0"/>
-                          <Component id="pnlPremier2" max="32767" attributes="0"/>
+                      <EmptySpace pref="25" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="pnlPremier4" alignment="0" max="32767" attributes="0"/>
+                          <Component id="pnlPremier2" alignment="0" max="32767" attributes="0"/>
                           <Component id="pnlPremier6" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -794,20 +794,20 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="pnlPremier2" max="32767" attributes="0"/>
                           <Component id="pnlPremier1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="pnlPremier3" max="32767" attributes="0"/>
-                          <Component id="pnlPremier4" max="32767" attributes="0"/>
+                          <Component id="pnlPremier2" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="pnlPremier5" max="32767" attributes="0"/>
-                          <Component id="pnlPremier6" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="pnlPremier4" min="-2" max="-2" attributes="0"/>
+                          <Component id="pnlPremier3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="pnlPremier5" min="-2" max="-2" attributes="0"/>
+                          <Component id="pnlPremier6" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="18" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -851,7 +851,7 @@
                                   <Component id="lblPremierMonth1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblPremierDuration1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -1054,7 +1054,7 @@
                                   <Component id="lblPremierMonth3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblPremierDuration3" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                               <Component id="lblPremierPoster3" max="32767" attributes="0"/>
                           </Group>
@@ -1138,7 +1138,7 @@
                               <Component id="lblPremierMonth5" min="-2" max="-2" attributes="0"/>
                               <Component id="lblPremierDuration5" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="208" max="32767" attributes="0"/>
+                          <EmptySpace pref="192" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1155,7 +1155,7 @@
                                   <Component id="lblPremierMonth5" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblPremierDuration5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                               <Component id="lblPremierPoster5" max="32767" attributes="0"/>
                           </Group>
@@ -1239,7 +1239,7 @@
                               <Component id="lblPremierMonth4" min="-2" max="-2" attributes="0"/>
                               <Component id="lblPremierDuration4" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="208" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1256,7 +1256,7 @@
                                   <Component id="lblPremierMonth4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblPremierDuration4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                               <Component id="lblPremierPoster4" max="32767" attributes="0"/>
                           </Group>
@@ -1340,7 +1340,7 @@
                               <Component id="lblPremierMonth6" min="-2" max="-2" attributes="0"/>
                               <Component id="lblPremierDuration6" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="192" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1357,7 +1357,7 @@
                                   <Component id="lblPremierMonth6" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblPremierDuration6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                               <Component id="lblPremierPoster6" max="32767" attributes="0"/>
                           </Group>
@@ -1440,7 +1440,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="606" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="540" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>

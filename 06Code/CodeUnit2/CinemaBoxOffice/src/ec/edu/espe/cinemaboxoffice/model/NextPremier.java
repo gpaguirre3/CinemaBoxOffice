@@ -28,4 +28,19 @@ public class NextPremier extends Movie{
     public String getMonth() {
         return month;
     }
+
+    @Override
+    public String getSinopsis() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    @Override
+    public String getDate() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    @Override
+    public String getPrice() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
 }

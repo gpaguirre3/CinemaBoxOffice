@@ -66,6 +66,12 @@ public abstract class Movie {
     public abstract String getTitle();
     
     public abstract String getMonth();
+    
+    public abstract String getSinopsis();
+    
+    public abstract String getDate();
+    
+    public abstract String getPrice();
 
     public String getGender() {
         return gender;
