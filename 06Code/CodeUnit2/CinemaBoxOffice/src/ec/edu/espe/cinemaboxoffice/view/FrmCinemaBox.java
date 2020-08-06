@@ -112,7 +112,6 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblPremierGender6 = new javax.swing.JLabel();
         lblPremierMonth6 = new javax.swing.JLabel();
         lblPremierDuration6 = new javax.swing.JLabel();
-        jPanel10 = new javax.swing.JPanel();
         jMenuBar2 = new javax.swing.JMenuBar();
         mnuCinema = new javax.swing.JMenu();
         mnuCinemaAdmin = new javax.swing.JMenuItem();
@@ -890,19 +889,6 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         tpnNextPremier.addTab("Next Premier", jPanel3);
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 540, Short.MAX_VALUE)
-        );
-
-        tpnNextPremier.addTab("Promotions", jPanel10);
-
         mnuCinema.setText("Cinema");
         mnuCinema.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
 
@@ -956,38 +942,16 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         frmLogin.setVisible(true);
     }//GEN-LAST:event_mnuCinemaAdminActionPerformed
 
-    private void btnMovie1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie1MouseClicked
+    private void btnMovie6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie6MouseClicked
         this.setVisible(true);
         FrmMovie frmMovie = new FrmMovie();
         try {
-            frmMovie.showDataMovie(1);
+            frmMovie.showDataMovie(6);
         } catch (IOException ex) {
             Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
         }
         frmMovie.setVisible(true);
-    }//GEN-LAST:event_btnMovie1MouseClicked
-
-    private void btnMovie2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie2MouseClicked
-        this.setVisible(true);
-        FrmMovie frmMovie = new FrmMovie();
-        try {
-            frmMovie.showDataMovie(2);
-        } catch (IOException ex) {
-            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        frmMovie.setVisible(true);
-    }//GEN-LAST:event_btnMovie2MouseClicked
-
-    private void btnMovie3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie3MouseClicked
-        this.setVisible(true);
-        FrmMovie frmMovie = new FrmMovie();
-        try {
-            frmMovie.showDataMovie(3);
-        } catch (IOException ex) {
-            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        frmMovie.setVisible(true);
-    }//GEN-LAST:event_btnMovie3MouseClicked
+    }//GEN-LAST:event_btnMovie6MouseClicked
 
     private void btnMovie4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie4MouseClicked
         this.setVisible(true);
@@ -1011,16 +975,38 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         frmMovie.setVisible(true);
     }//GEN-LAST:event_btnMovie5MouseClicked
 
-    private void btnMovie6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie6MouseClicked
+    private void btnMovie3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie3MouseClicked
         this.setVisible(true);
         FrmMovie frmMovie = new FrmMovie();
         try {
-            frmMovie.showDataMovie(6);
+            frmMovie.showDataMovie(3);
         } catch (IOException ex) {
             Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
         }
         frmMovie.setVisible(true);
-    }//GEN-LAST:event_btnMovie6MouseClicked
+    }//GEN-LAST:event_btnMovie3MouseClicked
+
+    private void btnMovie2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie2MouseClicked
+        this.setVisible(true);
+        FrmMovie frmMovie = new FrmMovie();
+        try {
+            frmMovie.showDataMovie(2);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmMovie.setVisible(true);
+    }//GEN-LAST:event_btnMovie2MouseClicked
+
+    private void btnMovie1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie1MouseClicked
+        this.setVisible(true);
+        FrmMovie frmMovie = new FrmMovie();
+        try {
+            frmMovie.showDataMovie(1);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmMovie.setVisible(true);
+    }//GEN-LAST:event_btnMovie1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -1137,7 +1123,6 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     private javax.swing.JButton btnMovie6;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblMovieAgeRestriction1;
