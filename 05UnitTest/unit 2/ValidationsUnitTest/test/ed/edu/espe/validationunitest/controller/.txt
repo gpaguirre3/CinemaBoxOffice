@@ -1,0 +1,19 @@
+CreditCardAndCI
+
+checkCard(String card)
+
+    Imput               Expected Result
+4048598412673666             TRUE
+4608003816501748             TRUE        
+4618681820176819             TRUE
+4835774663674896             TRUE
+4528804794441477             TRUE
+
+validateCI(String CI)
+
+  Imput           Expected Result
+1727620054             TRUE 
+1721482998             TRUE
+1751364819             TRUE
+0952465334             TRUE
+1708740962             TRUE
