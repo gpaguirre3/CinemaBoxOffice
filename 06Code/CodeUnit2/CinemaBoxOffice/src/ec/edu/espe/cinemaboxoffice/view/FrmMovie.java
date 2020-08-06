@@ -61,6 +61,7 @@ public class FrmMovie extends javax.swing.JFrame {
 
         lblMovieTitle.setText("jLabel2");
 
+        txaMovieSinopsis.setEditable(false);
         txaMovieSinopsis.setColumns(20);
         txaMovieSinopsis.setRows(5);
         jScrollPane1.setViewportView(txaMovieSinopsis);

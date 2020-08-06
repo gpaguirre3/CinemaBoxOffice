@@ -59,7 +59,6 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         cbxBillboardYear = new javax.swing.JComboBox<>();
         spnDuration = new javax.swing.JSpinner();
         jLabel7 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         btnBillboardExit = new javax.swing.JButton();
         cbxBillboardHour = new javax.swing.JComboBox<>();
         cbxBillboardMin = new javax.swing.JComboBox<>();
@@ -68,6 +67,8 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         lblBillboardYear = new javax.swing.JLabel();
         lblBillboardHour = new javax.swing.JLabel();
         lblBillboardMin = new javax.swing.JLabel();
+        jSpinner1 = new javax.swing.JSpinner();
+        jSpinner2 = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Movie Billboard");
@@ -129,18 +130,16 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
 
         cbxBillboardMonth.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
 
-        cbxBillboardYear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025" }));
+        cbxBillboardYear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2020", "2021", "2022", "2023", "2024", "2025" }));
         cbxBillboardYear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbxBillboardYearActionPerformed(evt);
             }
         });
 
-        spnDuration.setModel(new javax.swing.SpinnerNumberModel(1, 1, 60, 1));
+        spnDuration.setModel(new javax.swing.SpinnerNumberModel(1, 1, 9, 1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/cinema logo.png"))); // NOI18N
-
-        jLabel9.setText("Min");
 
         btnBillboardExit.setText("Exit");
         btnBillboardExit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -153,15 +152,24 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
 
         cbxBillboardMin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "15", "30", "45" }));
 
+        lblBillboardDay.setForeground(new java.awt.Color(255, 255, 255));
         lblBillboardDay.setText("day");
 
+        lblBillboardMonth.setForeground(new java.awt.Color(255, 255, 255));
         lblBillboardMonth.setText("month");
 
+        lblBillboardYear.setForeground(new java.awt.Color(255, 255, 255));
         lblBillboardYear.setText("year");
 
+        lblBillboardHour.setForeground(new java.awt.Color(255, 255, 255));
         lblBillboardHour.setText("hour");
 
+        lblBillboardMin.setForeground(new java.awt.Color(255, 255, 255));
         lblBillboardMin.setText("min");
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, 60, 1));
+
+        jSpinner2.setModel(new javax.swing.SpinnerNumberModel(1, 1, 60, 1));
 
         javax.swing.GroupLayout pnlMovieBillboardLayout = new javax.swing.GroupLayout(pnlMovieBillboard);
         pnlMovieBillboard.setLayout(pnlMovieBillboardLayout);
@@ -185,8 +193,9 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(spnDuration, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel9)))
-                        .addGap(12, 12, 12))
+                                .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(pnlMovieBillboardLayout.createSequentialGroup()
                         .addGap(234, 234, 234)
                         .addComponent(btnBilboradDiscard)
@@ -279,7 +288,8 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                     .addComponent(cbxAgeRestriction, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblBillboardDuration)
                     .addComponent(spnDuration, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9))
+                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
                 .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblBillboardGender)
@@ -407,7 +417,8 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbxBillboardRoom;
     private javax.swing.JComboBox<String> cbxBillboardYear;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner2;
     private javax.swing.JLabel lblBillboardAge;
     private javax.swing.JLabel lblBillboardDate;
     private javax.swing.JLabel lblBillboardDay;

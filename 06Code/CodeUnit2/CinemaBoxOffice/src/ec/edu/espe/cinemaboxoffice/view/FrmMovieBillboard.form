@@ -64,10 +64,11 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="spnDuration" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jSpinner1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jSpinner2" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
@@ -183,7 +184,8 @@
                       <Component id="cbxAgeRestriction" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblBillboardDuration" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="spnDuration" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jSpinner1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jSpinner2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -451,18 +453,13 @@
         <Component class="javax.swing.JComboBox" name="cbxBillboardYear">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="11">
-                <StringItem index="0" value="2015"/>
-                <StringItem index="1" value="2016"/>
-                <StringItem index="2" value="2017"/>
-                <StringItem index="3" value="2018"/>
-                <StringItem index="4" value="2019"/>
-                <StringItem index="5" value="2020"/>
-                <StringItem index="6" value="2021"/>
-                <StringItem index="7" value="2022"/>
-                <StringItem index="8" value="2023"/>
-                <StringItem index="9" value="2024"/>
-                <StringItem index="10" value="2025"/>
+              <StringArray count="6">
+                <StringItem index="0" value="2020"/>
+                <StringItem index="1" value="2021"/>
+                <StringItem index="2" value="2022"/>
+                <StringItem index="3" value="2023"/>
+                <StringItem index="4" value="2024"/>
+                <StringItem index="5" value="2025"/>
               </StringArray>
             </Property>
           </Properties>
@@ -476,7 +473,7 @@
         <Component class="javax.swing.JSpinner" name="spnDuration">
           <Properties>
             <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
-              <SpinnerModel initial="1" maximum="60" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
+              <SpinnerModel initial="1" maximum="9" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
             </Property>
           </Properties>
         </Component>
@@ -485,11 +482,6 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/ec/edu/espe/cinemaboxoffice/pictures/cinema logo.png"/>
             </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel9">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Min"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnBillboardExit">
@@ -552,27 +544,56 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblBillboardDay">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="day"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblBillboardMonth">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="month"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblBillboardYear">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="year"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblBillboardHour">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="hour"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblBillboardMin">
           <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="min"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jSpinner1">
+          <Properties>
+            <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+              <SpinnerModel initial="1" maximum="60" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jSpinner2">
+          <Properties>
+            <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+              <SpinnerModel initial="1" maximum="60" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
