@@ -52,18 +52,28 @@ public class FrmMovie extends javax.swing.JFrame {
         lblMovieSinopsis = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Synopsis");
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 51));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
         lblMoviePoster.setText("jLabel1");
 
+        lblMovieDuration.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieDuration.setText("jLabel4");
 
+        lblMoviegender.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviegender.setText("jLabel3");
 
+        lblMovieTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieTitle.setText("jLabel2");
 
         txaMovieSinopsis.setEditable(false);
+        txaMovieSinopsis.setBackground(new java.awt.Color(153, 255, 255));
         txaMovieSinopsis.setColumns(20);
+        txaMovieSinopsis.setLineWrap(true);
         txaMovieSinopsis.setRows(5);
+        txaMovieSinopsis.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txaMovieSinopsis);
 
         btnMovieBuy.setText("Buy");
@@ -80,12 +90,16 @@ public class FrmMovie extends javax.swing.JFrame {
             }
         });
 
+        lblMovieAgeRestriction.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieAgeRestriction.setText("jLabel1");
 
+        lblMovieDate.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieDate.setText("jLabel2");
 
+        lblMoviePrice.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePrice.setText("jLabel1");
 
+        lblMovieSinopsis.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieSinopsis.setText("Sinopsis:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

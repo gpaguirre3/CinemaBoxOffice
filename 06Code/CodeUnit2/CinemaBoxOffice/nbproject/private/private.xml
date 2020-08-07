@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/07-08-2020/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmMovieBillboard.java</file>
-            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/07-08-2020/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmAdminLogin.java</file>
-            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/07-08-2020/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/MovieBillboard.java</file>
-            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/07-08-2020/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/MovieDaily.java</file>
-            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/07-08-2020/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmMovie.java</file>
-            <file>file:/C:/Users/santi/Desktop/ProyectCinema/ProyectCode/07-08-2020/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Movie.java</file>
+            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmMovie.java</file>
+            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmMovieBillboard.java</file>
+            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmBill.java</file>
+            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmNewAccounts.java</file>
+            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmAdminLogin.java</file>
+            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmNextPremier.java</file>
+            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/data/invoices.json</file>
         </group>
     </open-files>
 </project-private>

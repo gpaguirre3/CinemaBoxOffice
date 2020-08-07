@@ -120,6 +120,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         mnuCalendar = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Billboard");
 
         tpnCinema.setFont(new java.awt.Font("Comic Sans MS", 3, 14)); // NOI18N
 

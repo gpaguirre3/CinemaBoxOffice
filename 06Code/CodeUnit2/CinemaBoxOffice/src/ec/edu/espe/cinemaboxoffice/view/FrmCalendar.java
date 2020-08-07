@@ -36,6 +36,7 @@ public class FrmCalendar extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calendar");
 
         jButton1.setText("Ok");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {

@@ -101,6 +101,7 @@ public class FrmBill extends javax.swing.JFrame {
         btnCancel = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Invoice");
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 51));
 
@@ -178,7 +179,9 @@ public class FrmBill extends javax.swing.JFrame {
         txaSinopsis.setEditable(false);
         txaSinopsis.setBackground(new java.awt.Color(153, 255, 255));
         txaSinopsis.setColumns(20);
+        txaSinopsis.setLineWrap(true);
         txaSinopsis.setRows(5);
+        txaSinopsis.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txaSinopsis);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

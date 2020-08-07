@@ -73,6 +73,7 @@ public class FrmNewAccounts extends javax.swing.JFrame {
         pwfPass = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Create Account");
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 51));
 
