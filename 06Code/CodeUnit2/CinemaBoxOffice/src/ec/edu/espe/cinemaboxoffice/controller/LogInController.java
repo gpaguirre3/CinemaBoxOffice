@@ -19,7 +19,6 @@ import java.util.ArrayList;
  * @author Josue Aleman, ESPE
  */
 public class LogInController {
-
     public boolean findUser(String username, String pass) throws IOException {
         PasswordEncryptor decryptor = new PasswordEncryptor();
         boolean foundUser = false;
@@ -31,7 +30,6 @@ public class LogInController {
                 foundUser = true;
             }
         }
-
         return foundUser;
     }
     

@@ -10,11 +10,9 @@ package ec.edu.espe.cinemaboxoffice.model;
  * @author Josue Aleman, ESPE
  */
 public class Admin extends Person {
-
     private String userName;
     private String password;
     
-
     public Admin(String id, String name, String userName, String keyUser) {
         super(id, name);
         this.userName = userName;
@@ -59,7 +57,4 @@ public class Admin extends Person {
     public void setName(String name) {
         this.name = name;
     }
-    
-    
-
 }

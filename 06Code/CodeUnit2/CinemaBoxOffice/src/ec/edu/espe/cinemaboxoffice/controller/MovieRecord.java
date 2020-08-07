@@ -23,7 +23,6 @@ import java.util.ArrayList;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class MovieRecord {
-
     InputDataValidation in = new InputDataValidation();
 
     public boolean recordMovie(String fileName, Movie movie) throws IOException {

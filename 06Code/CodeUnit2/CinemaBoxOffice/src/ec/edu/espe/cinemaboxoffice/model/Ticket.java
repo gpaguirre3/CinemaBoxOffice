@@ -10,7 +10,6 @@ package ec.edu.espe.cinemaboxoffice.model;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class Ticket {
-
     private int code;
     private MovieBillboard movie;
 

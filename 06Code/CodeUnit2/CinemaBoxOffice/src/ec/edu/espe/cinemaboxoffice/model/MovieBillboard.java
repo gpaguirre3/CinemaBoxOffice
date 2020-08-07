@@ -12,7 +12,6 @@ import java.util.Date;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class MovieBillboard extends Movie {
-
     private String sinopsis; 
     private Date date;
     private float price;
@@ -30,7 +29,8 @@ public class MovieBillboard extends Movie {
 
     @Override
     public String toString() {
-        return "MovieBillboard{" + super.toString() + "date=" + date + ", price=" + price + ", room=" + room + '}';
+        return "MovieBillboard{" + super.toString() + "date=" + date + ", "
+                + "price=" + price + ", room=" + room + '}';
     }
 
     @Override

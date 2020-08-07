@@ -20,7 +20,6 @@ import java.util.List;
  * @author Josue Aleman, ESPE.
  */
 public class NewAccountsController {
-
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
     public List<Admin> getAllAccounts() {
@@ -46,7 +45,6 @@ public class NewAccountsController {
         try {
             String json = gson.toJson(accounts);
             Files.write(Paths.get("AdminAccount.json"), json.getBytes());
-        } catch (Exception e) {
-        }
+        } catch (Exception e) {}
     }
 }

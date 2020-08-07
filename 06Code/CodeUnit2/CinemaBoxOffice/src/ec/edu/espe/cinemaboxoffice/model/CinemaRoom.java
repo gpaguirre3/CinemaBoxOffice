@@ -10,7 +10,6 @@ package ec.edu.espe.cinemaboxoffice.model;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class CinemaRoom {
-
     private int roomNumber;
     private String roomFormat;
     private Seat[] seats = new Seat[149];

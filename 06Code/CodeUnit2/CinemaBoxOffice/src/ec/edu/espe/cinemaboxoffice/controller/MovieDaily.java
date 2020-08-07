@@ -13,10 +13,9 @@ import java.util.ArrayList;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class MovieDaily {
-
     public static ArrayList<Movie> getMoviesDaily(ArrayList<Movie> movies, int day) {
         ArrayList<Movie> moviesDaily = new ArrayList<>();
-        if (movies != null) {
+        if (movies != null) {   
             for (int i = 0; i < movies.size(); i++) {
                 if (i == 0 & day == movies.get(i).getDateMovie().getDay()) {
                     moviesDaily.add(movies.get(i));

@@ -12,7 +12,6 @@ import java.util.Date;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class NextPremier extends Movie{
-
     private String month;
 
     public NextPremier(String title, String gender, String ageRestriction,
@@ -33,21 +32,21 @@ public class NextPremier extends Movie{
 
     @Override
     public String getSinopsis() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return null;
     }
 
     @Override
     public String getDate() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return null;
     }
 
     @Override
     public String getPrice() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return null;
     }
 
     @Override
     public Date getDateMovie() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return null;
     }
 }

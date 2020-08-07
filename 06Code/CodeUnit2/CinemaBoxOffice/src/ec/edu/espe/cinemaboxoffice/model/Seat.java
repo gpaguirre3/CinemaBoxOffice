@@ -10,7 +10,6 @@ package ec.edu.espe.cinemaboxoffice.model;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class Seat {
-
     private int seatNumber;
     
     public Seat(int seatNumber) {

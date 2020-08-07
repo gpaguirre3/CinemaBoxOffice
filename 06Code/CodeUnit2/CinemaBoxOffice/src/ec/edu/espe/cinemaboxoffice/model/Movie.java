@@ -20,7 +20,6 @@ import java.util.Date;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public abstract class Movie {
-
     protected String title;
     protected String gender;
     protected String ageRestriction;

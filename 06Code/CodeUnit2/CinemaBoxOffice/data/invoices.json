@@ -26,5 +26,12 @@
     "lastCreditCardDigits": "3742",
     "movieTitle": "Jojo Rabbit",
     "price": 3.56
+  },
+  {
+    "customerName": "Maria Guanoluisa",
+    "identifyCard": "1708740962",
+    "lastCreditCardDigits": "7550",
+    "movieTitle": "Spiderman",
+    "price": 5.36
   }
 ]

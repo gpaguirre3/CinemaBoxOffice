@@ -11,12 +11,10 @@ package ec.edu.espe.cinemaboxoffice.model;
  */
 public class Customer extends Person {
     private int age;
-    private String CI;
 
-    public Customer(String id, String name, int age, String CI) {
+    public Customer(String id, String name, int age) {
         super(id, name);
         this.age = age;
-        this.CI = CI;
     }
 
     public int getAge() {
@@ -26,15 +24,7 @@ public class Customer extends Person {
     public void setAge(int age) {
         this.age = age;
     }
-
-    public String getCI() {
-        return CI;
-    }
-
-    public void setCI(String CI) {
-        this.CI = CI;
-    }
-
+    
     public String getId() {
         return id;
     }
@@ -50,5 +40,4 @@ public class Customer extends Person {
     public void setName(String name) {
         this.name = name;
     }
-
 }
