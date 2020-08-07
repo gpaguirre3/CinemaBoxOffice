@@ -33,5 +33,12 @@
     "lastCreditCardDigits": "7550",
     "movieTitle": "Spiderman",
     "price": 5.36
+  },
+  {
+    "customerName": "Richard Perez",
+    "identifyCard": "1718384199",
+    "lastCreditCardDigits": "2950",
+    "movieTitle": "Spiderman",
+    "price": 5.36
   }
 ]
