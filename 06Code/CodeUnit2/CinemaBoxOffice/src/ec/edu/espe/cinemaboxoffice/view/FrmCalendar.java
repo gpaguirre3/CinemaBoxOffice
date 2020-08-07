@@ -81,9 +81,9 @@ public class FrmCalendar extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    int day;
+    static int day;
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        this.day = cldMovie.getDate().getDay();
+        FrmCalendar.day = cldMovie.getDate().getDay();
         FrmCinemaBox frmCinema = new FrmCinemaBox();
         try {
             frmCinema.showBillboard(getdayCalendar());
@@ -128,7 +128,7 @@ public class FrmCalendar extends javax.swing.JFrame {
         });
     }
 
-    public int getdayCalendar() {
+    public static int getdayCalendar() {
         return day;
     }
 

@@ -5,7 +5,6 @@ package ec.edu.espe.cinemaboxoffice.model;
  * @author Gabriel Aguirre
  */
 public class Invoice {
-    
     private String customerName;
     private String identifyCard;
     private String lastCreditCardDigits;

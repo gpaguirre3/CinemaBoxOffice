@@ -17,10 +17,7 @@ public class MovieDaily {
         ArrayList<Movie> moviesDaily = new ArrayList<>();
         if (movies != null) {   
             for (int i = 0; i < movies.size(); i++) {
-                if (i == 0 & day == movies.get(i).getDateMovie().getDay()) {
-                    moviesDaily.add(movies.get(i));
-                }
-                if (i != 0 & day + 1 == movies.get(i).getDateMovie().getDay()) {
+                if (day == movies.get(i).getDateMovie().getDay()) {
                     moviesDaily.add(movies.get(i));
                 }
             }

@@ -9,6 +9,7 @@ import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
 import java.awt.Image;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -206,14 +207,14 @@ public class FrmMovie extends javax.swing.JFrame {
         lblMovieTitle.setText(movies.get(this.numberMovie).getTitle());
         lblMoviegender.setText(movies.get(this.numberMovie).getGender());
         lblMovieAgeRestriction.setText(movies.get(this.numberMovie).getAgeRestriction());
-        lblMovieDuration.setText(movies.get(this.numberMovie).getDuration());
+        lblMovieDuration.setText(movies.get(this.numberMovie).getDuration()+" min");
         lblMovieDate.setText(movies.get(this.numberMovie).getDate());
-        lblMoviePrice.setText(movies.get(this.numberMovie).getPrice());
+        lblMoviePrice.setText("$ " + movies.get(this.numberMovie).getPrice());
         txaMovieSinopsis.setText(movies.get(this.numberMovie).getSinopsis());
     }
 
     public ImageIcon showPicture(String namePicture) {
-        ImageIcon image = new ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/" + namePicture));
+        ImageIcon image = new ImageIcon(Paths.get("pictures/" + namePicture).toString());
         ImageIcon icon = new ImageIcon(image.getImage().getScaledInstance(200, 270, Image.SCALE_DEFAULT));
         return icon;
     }

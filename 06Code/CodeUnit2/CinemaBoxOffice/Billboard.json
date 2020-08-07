@@ -1,2780 +1,2780 @@
 [
   {
     "sinopsis": "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
-    "date": "Aug 7, 2020 11:00:00 PM",
+    "date": "Aug 7, 2020 11:00:00 AM",
     "price": 5.36,
     "room": {
-      "roomNumber": 1,
+      "roomNumber": 1.0,
       "roomFormat": "2D",
       "seats": [
         {
-          "seatNumber": 0
+          "seatNumber": 0.0
         },
         {
-          "seatNumber": 1
+          "seatNumber": 1.0
         },
         {
-          "seatNumber": 2
+          "seatNumber": 2.0
         },
         {
-          "seatNumber": 3
+          "seatNumber": 3.0
         },
         {
-          "seatNumber": 4
+          "seatNumber": 4.0
         },
         {
-          "seatNumber": 5
+          "seatNumber": 5.0
         },
         {
-          "seatNumber": 6
+          "seatNumber": 6.0
         },
         {
-          "seatNumber": 7
+          "seatNumber": 7.0
         },
         {
-          "seatNumber": 8
+          "seatNumber": 8.0
         },
         {
-          "seatNumber": 9
+          "seatNumber": 9.0
         },
         {
-          "seatNumber": 10
+          "seatNumber": 10.0
         },
         {
-          "seatNumber": 11
+          "seatNumber": 11.0
         },
         {
-          "seatNumber": 12
+          "seatNumber": 12.0
         },
         {
-          "seatNumber": 13
+          "seatNumber": 13.0
         },
         {
-          "seatNumber": 14
+          "seatNumber": 14.0
         },
         {
-          "seatNumber": 15
+          "seatNumber": 15.0
         },
         {
-          "seatNumber": 16
+          "seatNumber": 16.0
         },
         {
-          "seatNumber": 17
+          "seatNumber": 17.0
         },
         {
-          "seatNumber": 18
+          "seatNumber": 18.0
         },
         {
-          "seatNumber": 19
+          "seatNumber": 19.0
         },
         {
-          "seatNumber": 20
+          "seatNumber": 20.0
         },
         {
-          "seatNumber": 21
+          "seatNumber": 21.0
         },
         {
-          "seatNumber": 22
+          "seatNumber": 22.0
         },
         {
-          "seatNumber": 23
+          "seatNumber": 23.0
         },
         {
-          "seatNumber": 24
+          "seatNumber": 24.0
         },
         {
-          "seatNumber": 25
+          "seatNumber": 25.0
         },
         {
-          "seatNumber": 26
+          "seatNumber": 26.0
         },
         {
-          "seatNumber": 27
+          "seatNumber": 27.0
         },
         {
-          "seatNumber": 28
+          "seatNumber": 28.0
         },
         {
-          "seatNumber": 29
+          "seatNumber": 29.0
         },
         {
-          "seatNumber": 30
+          "seatNumber": 30.0
         },
         {
-          "seatNumber": 31
+          "seatNumber": 31.0
         },
         {
-          "seatNumber": 32
+          "seatNumber": 32.0
         },
         {
-          "seatNumber": 33
+          "seatNumber": 33.0
         },
         {
-          "seatNumber": 34
+          "seatNumber": 34.0
         },
         {
-          "seatNumber": 35
+          "seatNumber": 35.0
         },
         {
-          "seatNumber": 36
+          "seatNumber": 36.0
         },
         {
-          "seatNumber": 37
+          "seatNumber": 37.0
         },
         {
-          "seatNumber": 38
+          "seatNumber": 38.0
         },
         {
-          "seatNumber": 39
+          "seatNumber": 39.0
         },
         {
-          "seatNumber": 40
+          "seatNumber": 40.0
         },
         {
-          "seatNumber": 41
+          "seatNumber": 41.0
         },
         {
-          "seatNumber": 42
+          "seatNumber": 42.0
         },
         {
-          "seatNumber": 43
+          "seatNumber": 43.0
         },
         {
-          "seatNumber": 44
+          "seatNumber": 44.0
         },
         {
-          "seatNumber": 45
+          "seatNumber": 45.0
         },
         {
-          "seatNumber": 46
+          "seatNumber": 46.0
         },
         {
-          "seatNumber": 47
+          "seatNumber": 47.0
         },
         {
-          "seatNumber": 48
+          "seatNumber": 48.0
         },
         {
-          "seatNumber": 49
+          "seatNumber": 49.0
         },
         {
-          "seatNumber": 50
+          "seatNumber": 50.0
         },
         {
-          "seatNumber": 51
+          "seatNumber": 51.0
         },
         {
-          "seatNumber": 52
+          "seatNumber": 52.0
         },
         {
-          "seatNumber": 53
+          "seatNumber": 53.0
         },
         {
-          "seatNumber": 54
+          "seatNumber": 54.0
         },
         {
-          "seatNumber": 55
+          "seatNumber": 55.0
         },
         {
-          "seatNumber": 56
+          "seatNumber": 56.0
         },
         {
-          "seatNumber": 57
+          "seatNumber": 57.0
         },
         {
-          "seatNumber": 58
+          "seatNumber": 58.0
         },
         {
-          "seatNumber": 59
+          "seatNumber": 59.0
         },
         {
-          "seatNumber": 60
+          "seatNumber": 60.0
         },
         {
-          "seatNumber": 61
+          "seatNumber": 61.0
         },
         {
-          "seatNumber": 62
+          "seatNumber": 62.0
         },
         {
-          "seatNumber": 63
+          "seatNumber": 63.0
         },
         {
-          "seatNumber": 64
+          "seatNumber": 64.0
         },
         {
-          "seatNumber": 65
+          "seatNumber": 65.0
         },
         {
-          "seatNumber": 66
+          "seatNumber": 66.0
         },
         {
-          "seatNumber": 67
+          "seatNumber": 67.0
         },
         {
-          "seatNumber": 68
+          "seatNumber": 68.0
         },
         {
-          "seatNumber": 69
+          "seatNumber": 69.0
         },
         {
-          "seatNumber": 70
+          "seatNumber": 70.0
         },
         {
-          "seatNumber": 71
+          "seatNumber": 71.0
         },
         {
-          "seatNumber": 72
+          "seatNumber": 72.0
         },
         {
-          "seatNumber": 73
+          "seatNumber": 73.0
         },
         {
-          "seatNumber": 74
+          "seatNumber": 74.0
         },
         {
-          "seatNumber": 75
+          "seatNumber": 75.0
         },
         {
-          "seatNumber": 76
+          "seatNumber": 76.0
         },
         {
-          "seatNumber": 77
+          "seatNumber": 77.0
         },
         {
-          "seatNumber": 78
+          "seatNumber": 78.0
         },
         {
-          "seatNumber": 79
+          "seatNumber": 79.0
         },
         {
-          "seatNumber": 80
+          "seatNumber": 80.0
         },
         {
-          "seatNumber": 81
+          "seatNumber": 81.0
         },
         {
-          "seatNumber": 82
+          "seatNumber": 82.0
         },
         {
-          "seatNumber": 83
+          "seatNumber": 83.0
         },
         {
-          "seatNumber": 84
+          "seatNumber": 84.0
         },
         {
-          "seatNumber": 85
+          "seatNumber": 85.0
         },
         {
-          "seatNumber": 86
+          "seatNumber": 86.0
         },
         {
-          "seatNumber": 87
+          "seatNumber": 87.0
         },
         {
-          "seatNumber": 88
+          "seatNumber": 88.0
         },
         {
-          "seatNumber": 89
+          "seatNumber": 89.0
         },
         {
-          "seatNumber": 90
+          "seatNumber": 90.0
         },
         {
-          "seatNumber": 91
+          "seatNumber": 91.0
         },
         {
-          "seatNumber": 92
+          "seatNumber": 92.0
         },
         {
-          "seatNumber": 93
+          "seatNumber": 93.0
         },
         {
-          "seatNumber": 94
+          "seatNumber": 94.0
         },
         {
-          "seatNumber": 95
+          "seatNumber": 95.0
         },
         {
-          "seatNumber": 96
+          "seatNumber": 96.0
         },
         {
-          "seatNumber": 97
+          "seatNumber": 97.0
         },
         {
-          "seatNumber": 98
+          "seatNumber": 98.0
         },
         {
-          "seatNumber": 99
+          "seatNumber": 99.0
         },
         {
-          "seatNumber": 100
+          "seatNumber": 100.0
         },
         {
-          "seatNumber": 101
+          "seatNumber": 101.0
         },
         {
-          "seatNumber": 102
+          "seatNumber": 102.0
         },
         {
-          "seatNumber": 103
+          "seatNumber": 103.0
         },
         {
-          "seatNumber": 104
+          "seatNumber": 104.0
         },
         {
-          "seatNumber": 105
+          "seatNumber": 105.0
         },
         {
-          "seatNumber": 106
+          "seatNumber": 106.0
         },
         {
-          "seatNumber": 107
+          "seatNumber": 107.0
         },
         {
-          "seatNumber": 108
+          "seatNumber": 108.0
         },
         {
-          "seatNumber": 109
+          "seatNumber": 109.0
         },
         {
-          "seatNumber": 110
+          "seatNumber": 110.0
         },
         {
-          "seatNumber": 111
+          "seatNumber": 111.0
         },
         {
-          "seatNumber": 112
+          "seatNumber": 112.0
         },
         {
-          "seatNumber": 113
+          "seatNumber": 113.0
         },
         {
-          "seatNumber": 114
+          "seatNumber": 114.0
         },
         {
-          "seatNumber": 115
+          "seatNumber": 115.0
         },
         {
-          "seatNumber": 116
+          "seatNumber": 116.0
         },
         {
-          "seatNumber": 117
+          "seatNumber": 117.0
         },
         {
-          "seatNumber": 118
+          "seatNumber": 118.0
         },
         {
-          "seatNumber": 119
+          "seatNumber": 119.0
         },
         {
-          "seatNumber": 120
+          "seatNumber": 120.0
         },
         {
-          "seatNumber": 121
+          "seatNumber": 121.0
         },
         {
-          "seatNumber": 122
+          "seatNumber": 122.0
         },
         {
-          "seatNumber": 123
+          "seatNumber": 123.0
         },
         {
-          "seatNumber": 124
+          "seatNumber": 124.0
         },
         {
-          "seatNumber": 125
+          "seatNumber": 125.0
         },
         {
-          "seatNumber": 126
+          "seatNumber": 126.0
         },
         {
-          "seatNumber": 127
+          "seatNumber": 127.0
         },
         {
-          "seatNumber": 128
+          "seatNumber": 128.0
         },
         {
-          "seatNumber": 129
+          "seatNumber": 129.0
         },
         {
-          "seatNumber": 130
+          "seatNumber": 130.0
         },
         {
-          "seatNumber": 131
+          "seatNumber": 131.0
         },
         {
-          "seatNumber": 132
+          "seatNumber": 132.0
         },
         {
-          "seatNumber": 133
+          "seatNumber": 133.0
         },
         {
-          "seatNumber": 134
+          "seatNumber": 134.0
         },
         {
-          "seatNumber": 135
+          "seatNumber": 135.0
         },
         {
-          "seatNumber": 136
+          "seatNumber": 136.0
         },
         {
-          "seatNumber": 137
+          "seatNumber": 137.0
         },
         {
-          "seatNumber": 138
+          "seatNumber": 138.0
         },
         {
-          "seatNumber": 139
+          "seatNumber": 139.0
         },
         {
-          "seatNumber": 140
+          "seatNumber": 140.0
         },
         {
-          "seatNumber": 141
+          "seatNumber": 141.0
         },
         {
-          "seatNumber": 142
+          "seatNumber": 142.0
         },
         {
-          "seatNumber": 143
+          "seatNumber": 143.0
         },
         {
-          "seatNumber": 144
+          "seatNumber": 144.0
         },
         {
-          "seatNumber": 145
+          "seatNumber": 145.0
         },
         {
-          "seatNumber": 146
+          "seatNumber": 146.0
         },
         {
-          "seatNumber": 147
+          "seatNumber": 147.0
         },
         {
-          "seatNumber": 148
+          "seatNumber": 148.0
         }
       ]
     },
     "title": "Spiderman",
     "gender": "science fiction",
     "ageRestriction": "All public",
-    "duration": 145,
+    "duration": 145.0,
     "namePoster": "Spiderman.jpg"
   },
   {
     "sinopsis": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager.",
-    "date": "Aug 7, 2020 15:00:00 PM",
+    "date": "Aug 7, 2020 3:00:00 PM",
     "price": 4.26,
     "room": {
-      "roomNumber": 2,
+      "roomNumber": 2.0,
       "roomFormat": "2D",
       "seats": [
         {
-          "seatNumber": 0
+          "seatNumber": 0.0
         },
         {
-          "seatNumber": 1
+          "seatNumber": 1.0
         },
         {
-          "seatNumber": 2
+          "seatNumber": 2.0
         },
         {
-          "seatNumber": 3
+          "seatNumber": 3.0
         },
         {
-          "seatNumber": 4
+          "seatNumber": 4.0
         },
         {
-          "seatNumber": 5
+          "seatNumber": 5.0
         },
         {
-          "seatNumber": 6
+          "seatNumber": 6.0
         },
         {
-          "seatNumber": 7
+          "seatNumber": 7.0
         },
         {
-          "seatNumber": 8
+          "seatNumber": 8.0
         },
         {
-          "seatNumber": 9
+          "seatNumber": 9.0
         },
         {
-          "seatNumber": 10
+          "seatNumber": 10.0
         },
         {
-          "seatNumber": 11
+          "seatNumber": 11.0
         },
         {
-          "seatNumber": 12
+          "seatNumber": 12.0
         },
         {
-          "seatNumber": 13
+          "seatNumber": 13.0
         },
         {
-          "seatNumber": 14
+          "seatNumber": 14.0
         },
         {
-          "seatNumber": 15
+          "seatNumber": 15.0
         },
         {
-          "seatNumber": 16
+          "seatNumber": 16.0
         },
         {
-          "seatNumber": 17
+          "seatNumber": 17.0
         },
         {
-          "seatNumber": 18
+          "seatNumber": 18.0
         },
         {
-          "seatNumber": 19
+          "seatNumber": 19.0
         },
         {
-          "seatNumber": 20
+          "seatNumber": 20.0
         },
         {
-          "seatNumber": 21
+          "seatNumber": 21.0
         },
         {
-          "seatNumber": 22
+          "seatNumber": 22.0
         },
         {
-          "seatNumber": 23
+          "seatNumber": 23.0
         },
         {
-          "seatNumber": 24
+          "seatNumber": 24.0
         },
         {
-          "seatNumber": 25
+          "seatNumber": 25.0
         },
         {
-          "seatNumber": 26
+          "seatNumber": 26.0
         },
         {
-          "seatNumber": 27
+          "seatNumber": 27.0
         },
         {
-          "seatNumber": 28
+          "seatNumber": 28.0
         },
         {
-          "seatNumber": 29
+          "seatNumber": 29.0
         },
         {
-          "seatNumber": 30
+          "seatNumber": 30.0
         },
         {
-          "seatNumber": 31
+          "seatNumber": 31.0
         },
         {
-          "seatNumber": 32
+          "seatNumber": 32.0
         },
         {
-          "seatNumber": 33
+          "seatNumber": 33.0
         },
         {
-          "seatNumber": 34
+          "seatNumber": 34.0
         },
         {
-          "seatNumber": 35
+          "seatNumber": 35.0
         },
         {
-          "seatNumber": 36
+          "seatNumber": 36.0
         },
         {
-          "seatNumber": 37
+          "seatNumber": 37.0
         },
         {
-          "seatNumber": 38
+          "seatNumber": 38.0
         },
         {
-          "seatNumber": 39
+          "seatNumber": 39.0
         },
         {
-          "seatNumber": 40
+          "seatNumber": 40.0
         },
         {
-          "seatNumber": 41
+          "seatNumber": 41.0
         },
         {
-          "seatNumber": 42
+          "seatNumber": 42.0
         },
         {
-          "seatNumber": 43
+          "seatNumber": 43.0
         },
         {
-          "seatNumber": 44
+          "seatNumber": 44.0
         },
         {
-          "seatNumber": 45
+          "seatNumber": 45.0
         },
         {
-          "seatNumber": 46
+          "seatNumber": 46.0
         },
         {
-          "seatNumber": 47
+          "seatNumber": 47.0
         },
         {
-          "seatNumber": 48
+          "seatNumber": 48.0
         },
         {
-          "seatNumber": 49
+          "seatNumber": 49.0
         },
         {
-          "seatNumber": 50
+          "seatNumber": 50.0
         },
         {
-          "seatNumber": 51
+          "seatNumber": 51.0
         },
         {
-          "seatNumber": 52
+          "seatNumber": 52.0
         },
         {
-          "seatNumber": 53
+          "seatNumber": 53.0
         },
         {
-          "seatNumber": 54
+          "seatNumber": 54.0
         },
         {
-          "seatNumber": 55
+          "seatNumber": 55.0
         },
         {
-          "seatNumber": 56
+          "seatNumber": 56.0
         },
         {
-          "seatNumber": 57
+          "seatNumber": 57.0
         },
         {
-          "seatNumber": 58
+          "seatNumber": 58.0
         },
         {
-          "seatNumber": 59
+          "seatNumber": 59.0
         },
         {
-          "seatNumber": 60
+          "seatNumber": 60.0
         },
         {
-          "seatNumber": 61
+          "seatNumber": 61.0
         },
         {
-          "seatNumber": 62
+          "seatNumber": 62.0
         },
         {
-          "seatNumber": 63
+          "seatNumber": 63.0
         },
         {
-          "seatNumber": 64
+          "seatNumber": 64.0
         },
         {
-          "seatNumber": 65
+          "seatNumber": 65.0
         },
         {
-          "seatNumber": 66
+          "seatNumber": 66.0
         },
         {
-          "seatNumber": 67
+          "seatNumber": 67.0
         },
         {
-          "seatNumber": 68
+          "seatNumber": 68.0
         },
         {
-          "seatNumber": 69
+          "seatNumber": 69.0
         },
         {
-          "seatNumber": 70
+          "seatNumber": 70.0
         },
         {
-          "seatNumber": 71
+          "seatNumber": 71.0
         },
         {
-          "seatNumber": 72
+          "seatNumber": 72.0
         },
         {
-          "seatNumber": 73
+          "seatNumber": 73.0
         },
         {
-          "seatNumber": 74
+          "seatNumber": 74.0
         },
         {
-          "seatNumber": 75
+          "seatNumber": 75.0
         },
         {
-          "seatNumber": 76
+          "seatNumber": 76.0
         },
         {
-          "seatNumber": 77
+          "seatNumber": 77.0
         },
         {
-          "seatNumber": 78
+          "seatNumber": 78.0
         },
         {
-          "seatNumber": 79
+          "seatNumber": 79.0
         },
         {
-          "seatNumber": 80
+          "seatNumber": 80.0
         },
         {
-          "seatNumber": 81
+          "seatNumber": 81.0
         },
         {
-          "seatNumber": 82
+          "seatNumber": 82.0
         },
         {
-          "seatNumber": 83
+          "seatNumber": 83.0
         },
         {
-          "seatNumber": 84
+          "seatNumber": 84.0
         },
         {
-          "seatNumber": 85
+          "seatNumber": 85.0
         },
         {
-          "seatNumber": 86
+          "seatNumber": 86.0
         },
         {
-          "seatNumber": 87
+          "seatNumber": 87.0
         },
         {
-          "seatNumber": 88
+          "seatNumber": 88.0
         },
         {
-          "seatNumber": 89
+          "seatNumber": 89.0
         },
         {
-          "seatNumber": 90
+          "seatNumber": 90.0
         },
         {
-          "seatNumber": 91
+          "seatNumber": 91.0
         },
         {
-          "seatNumber": 92
+          "seatNumber": 92.0
         },
         {
-          "seatNumber": 93
+          "seatNumber": 93.0
         },
         {
-          "seatNumber": 94
+          "seatNumber": 94.0
         },
         {
-          "seatNumber": 95
+          "seatNumber": 95.0
         },
         {
-          "seatNumber": 96
+          "seatNumber": 96.0
         },
         {
-          "seatNumber": 97
+          "seatNumber": 97.0
         },
         {
-          "seatNumber": 98
+          "seatNumber": 98.0
         },
         {
-          "seatNumber": 99
+          "seatNumber": 99.0
         },
         {
-          "seatNumber": 100
+          "seatNumber": 100.0
         },
         {
-          "seatNumber": 101
+          "seatNumber": 101.0
         },
         {
-          "seatNumber": 102
+          "seatNumber": 102.0
         },
         {
-          "seatNumber": 103
+          "seatNumber": 103.0
         },
         {
-          "seatNumber": 104
+          "seatNumber": 104.0
         },
         {
-          "seatNumber": 105
+          "seatNumber": 105.0
         },
         {
-          "seatNumber": 106
+          "seatNumber": 106.0
         },
         {
-          "seatNumber": 107
+          "seatNumber": 107.0
         },
         {
-          "seatNumber": 108
+          "seatNumber": 108.0
         },
         {
-          "seatNumber": 109
+          "seatNumber": 109.0
         },
         {
-          "seatNumber": 110
+          "seatNumber": 110.0
         },
         {
-          "seatNumber": 111
+          "seatNumber": 111.0
         },
         {
-          "seatNumber": 112
+          "seatNumber": 112.0
         },
         {
-          "seatNumber": 113
+          "seatNumber": 113.0
         },
         {
-          "seatNumber": 114
+          "seatNumber": 114.0
         },
         {
-          "seatNumber": 115
+          "seatNumber": 115.0
         },
         {
-          "seatNumber": 116
+          "seatNumber": 116.0
         },
         {
-          "seatNumber": 117
+          "seatNumber": 117.0
         },
         {
-          "seatNumber": 118
+          "seatNumber": 118.0
         },
         {
-          "seatNumber": 119
+          "seatNumber": 119.0
         },
         {
-          "seatNumber": 120
+          "seatNumber": 120.0
         },
         {
-          "seatNumber": 121
+          "seatNumber": 121.0
         },
         {
-          "seatNumber": 122
+          "seatNumber": 122.0
         },
         {
-          "seatNumber": 123
+          "seatNumber": 123.0
         },
         {
-          "seatNumber": 124
+          "seatNumber": 124.0
         },
         {
-          "seatNumber": 125
+          "seatNumber": 125.0
         },
         {
-          "seatNumber": 126
+          "seatNumber": 126.0
         },
         {
-          "seatNumber": 127
+          "seatNumber": 127.0
         },
         {
-          "seatNumber": 128
+          "seatNumber": 128.0
         },
         {
-          "seatNumber": 129
+          "seatNumber": 129.0
         },
         {
-          "seatNumber": 130
+          "seatNumber": 130.0
         },
         {
-          "seatNumber": 131
+          "seatNumber": 131.0
         },
         {
-          "seatNumber": 132
+          "seatNumber": 132.0
         },
         {
-          "seatNumber": 133
+          "seatNumber": 133.0
         },
         {
-          "seatNumber": 134
+          "seatNumber": 134.0
         },
         {
-          "seatNumber": 135
+          "seatNumber": 135.0
         },
         {
-          "seatNumber": 136
+          "seatNumber": 136.0
         },
         {
-          "seatNumber": 137
+          "seatNumber": 137.0
         },
         {
-          "seatNumber": 138
+          "seatNumber": 138.0
         },
         {
-          "seatNumber": 139
+          "seatNumber": 139.0
         },
         {
-          "seatNumber": 140
+          "seatNumber": 140.0
         },
         {
-          "seatNumber": 141
+          "seatNumber": 141.0
         },
         {
-          "seatNumber": 142
+          "seatNumber": 142.0
         },
         {
-          "seatNumber": 143
+          "seatNumber": 143.0
         },
         {
-          "seatNumber": 144
+          "seatNumber": 144.0
         },
         {
-          "seatNumber": 145
+          "seatNumber": 145.0
         },
         {
-          "seatNumber": 146
+          "seatNumber": 146.0
         },
         {
-          "seatNumber": 147
+          "seatNumber": 147.0
         },
         {
-          "seatNumber": 148
+          "seatNumber": 148.0
         }
       ]
     },
     "title": "TransFormers",
     "gender": "science fiction",
     "ageRestriction": "Over 18",
-    "duration": 154,
+    "duration": 154.0,
     "namePoster": "TransFormers.jpg"
   },
   {
     "sinopsis": "Twenty-seven years after their first encounter with the terrifying Pennywise, the Losers Club have grown up and moved away, until a devastating phone call brings them back.",
-    "date": "Aug 7, 2020 18:45:00 PM",
+    "date": "Aug 7, 2020 6:45:00 PM",
     "price": 4.46,
     "room": {
-      "roomNumber": 3,
+      "roomNumber": 3.0,
       "roomFormat": "2D",
       "seats": [
         {
-          "seatNumber": 0
+          "seatNumber": 0.0
         },
         {
-          "seatNumber": 1
+          "seatNumber": 1.0
         },
         {
-          "seatNumber": 2
+          "seatNumber": 2.0
         },
         {
-          "seatNumber": 3
+          "seatNumber": 3.0
         },
         {
-          "seatNumber": 4
+          "seatNumber": 4.0
         },
         {
-          "seatNumber": 5
+          "seatNumber": 5.0
         },
         {
-          "seatNumber": 6
+          "seatNumber": 6.0
         },
         {
-          "seatNumber": 7
+          "seatNumber": 7.0
         },
         {
-          "seatNumber": 8
+          "seatNumber": 8.0
         },
         {
-          "seatNumber": 9
+          "seatNumber": 9.0
         },
         {
-          "seatNumber": 10
+          "seatNumber": 10.0
         },
         {
-          "seatNumber": 11
+          "seatNumber": 11.0
         },
         {
-          "seatNumber": 12
+          "seatNumber": 12.0
         },
         {
-          "seatNumber": 13
+          "seatNumber": 13.0
         },
         {
-          "seatNumber": 14
+          "seatNumber": 14.0
         },
         {
-          "seatNumber": 15
+          "seatNumber": 15.0
         },
         {
-          "seatNumber": 16
+          "seatNumber": 16.0
         },
         {
-          "seatNumber": 17
+          "seatNumber": 17.0
         },
         {
-          "seatNumber": 18
+          "seatNumber": 18.0
         },
         {
-          "seatNumber": 19
+          "seatNumber": 19.0
         },
         {
-          "seatNumber": 20
+          "seatNumber": 20.0
         },
         {
-          "seatNumber": 21
+          "seatNumber": 21.0
         },
         {
-          "seatNumber": 22
+          "seatNumber": 22.0
         },
         {
-          "seatNumber": 23
+          "seatNumber": 23.0
         },
         {
-          "seatNumber": 24
+          "seatNumber": 24.0
         },
         {
-          "seatNumber": 25
+          "seatNumber": 25.0
         },
         {
-          "seatNumber": 26
+          "seatNumber": 26.0
         },
         {
-          "seatNumber": 27
+          "seatNumber": 27.0
         },
         {
-          "seatNumber": 28
+          "seatNumber": 28.0
         },
         {
-          "seatNumber": 29
+          "seatNumber": 29.0
         },
         {
-          "seatNumber": 30
+          "seatNumber": 30.0
         },
         {
-          "seatNumber": 31
+          "seatNumber": 31.0
         },
         {
-          "seatNumber": 32
+          "seatNumber": 32.0
         },
         {
-          "seatNumber": 33
+          "seatNumber": 33.0
         },
         {
-          "seatNumber": 34
+          "seatNumber": 34.0
         },
         {
-          "seatNumber": 35
+          "seatNumber": 35.0
         },
         {
-          "seatNumber": 36
+          "seatNumber": 36.0
         },
         {
-          "seatNumber": 37
+          "seatNumber": 37.0
         },
         {
-          "seatNumber": 38
+          "seatNumber": 38.0
         },
         {
-          "seatNumber": 39
+          "seatNumber": 39.0
         },
         {
-          "seatNumber": 40
+          "seatNumber": 40.0
         },
         {
-          "seatNumber": 41
+          "seatNumber": 41.0
         },
         {
-          "seatNumber": 42
+          "seatNumber": 42.0
         },
         {
-          "seatNumber": 43
+          "seatNumber": 43.0
         },
         {
-          "seatNumber": 44
+          "seatNumber": 44.0
         },
         {
-          "seatNumber": 45
+          "seatNumber": 45.0
         },
         {
-          "seatNumber": 46
+          "seatNumber": 46.0
         },
         {
-          "seatNumber": 47
+          "seatNumber": 47.0
         },
         {
-          "seatNumber": 48
+          "seatNumber": 48.0
         },
         {
-          "seatNumber": 49
+          "seatNumber": 49.0
         },
         {
-          "seatNumber": 50
+          "seatNumber": 50.0
         },
         {
-          "seatNumber": 51
+          "seatNumber": 51.0
         },
         {
-          "seatNumber": 52
+          "seatNumber": 52.0
         },
         {
-          "seatNumber": 53
+          "seatNumber": 53.0
         },
         {
-          "seatNumber": 54
+          "seatNumber": 54.0
         },
         {
-          "seatNumber": 55
+          "seatNumber": 55.0
         },
         {
-          "seatNumber": 56
+          "seatNumber": 56.0
         },
         {
-          "seatNumber": 57
+          "seatNumber": 57.0
         },
         {
-          "seatNumber": 58
+          "seatNumber": 58.0
         },
         {
-          "seatNumber": 59
+          "seatNumber": 59.0
         },
         {
-          "seatNumber": 60
+          "seatNumber": 60.0
         },
         {
-          "seatNumber": 61
+          "seatNumber": 61.0
         },
         {
-          "seatNumber": 62
+          "seatNumber": 62.0
         },
         {
-          "seatNumber": 63
+          "seatNumber": 63.0
         },
         {
-          "seatNumber": 64
+          "seatNumber": 64.0
         },
         {
-          "seatNumber": 65
+          "seatNumber": 65.0
         },
         {
-          "seatNumber": 66
+          "seatNumber": 66.0
         },
         {
-          "seatNumber": 67
+          "seatNumber": 67.0
         },
         {
-          "seatNumber": 68
+          "seatNumber": 68.0
         },
         {
-          "seatNumber": 69
+          "seatNumber": 69.0
         },
         {
-          "seatNumber": 70
+          "seatNumber": 70.0
         },
         {
-          "seatNumber": 71
+          "seatNumber": 71.0
         },
         {
-          "seatNumber": 72
+          "seatNumber": 72.0
         },
         {
-          "seatNumber": 73
+          "seatNumber": 73.0
         },
         {
-          "seatNumber": 74
+          "seatNumber": 74.0
         },
         {
-          "seatNumber": 75
+          "seatNumber": 75.0
         },
         {
-          "seatNumber": 76
+          "seatNumber": 76.0
         },
         {
-          "seatNumber": 77
+          "seatNumber": 77.0
         },
         {
-          "seatNumber": 78
+          "seatNumber": 78.0
         },
         {
-          "seatNumber": 79
+          "seatNumber": 79.0
         },
         {
-          "seatNumber": 80
+          "seatNumber": 80.0
         },
         {
-          "seatNumber": 81
+          "seatNumber": 81.0
         },
         {
-          "seatNumber": 82
+          "seatNumber": 82.0
         },
         {
-          "seatNumber": 83
+          "seatNumber": 83.0
         },
         {
-          "seatNumber": 84
+          "seatNumber": 84.0
         },
         {
-          "seatNumber": 85
+          "seatNumber": 85.0
         },
         {
-          "seatNumber": 86
+          "seatNumber": 86.0
         },
         {
-          "seatNumber": 87
+          "seatNumber": 87.0
         },
         {
-          "seatNumber": 88
+          "seatNumber": 88.0
         },
         {
-          "seatNumber": 89
+          "seatNumber": 89.0
         },
         {
-          "seatNumber": 90
+          "seatNumber": 90.0
         },
         {
-          "seatNumber": 91
+          "seatNumber": 91.0
         },
         {
-          "seatNumber": 92
+          "seatNumber": 92.0
         },
         {
-          "seatNumber": 93
+          "seatNumber": 93.0
         },
         {
-          "seatNumber": 94
+          "seatNumber": 94.0
         },
         {
-          "seatNumber": 95
+          "seatNumber": 95.0
         },
         {
-          "seatNumber": 96
+          "seatNumber": 96.0
         },
         {
-          "seatNumber": 97
+          "seatNumber": 97.0
         },
         {
-          "seatNumber": 98
+          "seatNumber": 98.0
         },
         {
-          "seatNumber": 99
+          "seatNumber": 99.0
         },
         {
-          "seatNumber": 100
+          "seatNumber": 100.0
         },
         {
-          "seatNumber": 101
+          "seatNumber": 101.0
         },
         {
-          "seatNumber": 102
+          "seatNumber": 102.0
         },
         {
-          "seatNumber": 103
+          "seatNumber": 103.0
         },
         {
-          "seatNumber": 104
+          "seatNumber": 104.0
         },
         {
-          "seatNumber": 105
+          "seatNumber": 105.0
         },
         {
-          "seatNumber": 106
+          "seatNumber": 106.0
         },
         {
-          "seatNumber": 107
+          "seatNumber": 107.0
         },
         {
-          "seatNumber": 108
+          "seatNumber": 108.0
         },
         {
-          "seatNumber": 109
+          "seatNumber": 109.0
         },
         {
-          "seatNumber": 110
+          "seatNumber": 110.0
         },
         {
-          "seatNumber": 111
+          "seatNumber": 111.0
         },
         {
-          "seatNumber": 112
+          "seatNumber": 112.0
         },
         {
-          "seatNumber": 113
+          "seatNumber": 113.0
         },
         {
-          "seatNumber": 114
+          "seatNumber": 114.0
         },
         {
-          "seatNumber": 115
+          "seatNumber": 115.0
         },
         {
-          "seatNumber": 116
+          "seatNumber": 116.0
         },
         {
-          "seatNumber": 117
+          "seatNumber": 117.0
         },
         {
-          "seatNumber": 118
+          "seatNumber": 118.0
         },
         {
-          "seatNumber": 119
+          "seatNumber": 119.0
         },
         {
-          "seatNumber": 120
+          "seatNumber": 120.0
         },
         {
-          "seatNumber": 121
+          "seatNumber": 121.0
         },
         {
-          "seatNumber": 122
+          "seatNumber": 122.0
         },
         {
-          "seatNumber": 123
+          "seatNumber": 123.0
         },
         {
-          "seatNumber": 124
+          "seatNumber": 124.0
         },
         {
-          "seatNumber": 125
+          "seatNumber": 125.0
         },
         {
-          "seatNumber": 126
+          "seatNumber": 126.0
         },
         {
-          "seatNumber": 127
+          "seatNumber": 127.0
         },
         {
-          "seatNumber": 128
+          "seatNumber": 128.0
         },
         {
-          "seatNumber": 129
+          "seatNumber": 129.0
         },
         {
-          "seatNumber": 130
+          "seatNumber": 130.0
         },
         {
-          "seatNumber": 131
+          "seatNumber": 131.0
         },
         {
-          "seatNumber": 132
+          "seatNumber": 132.0
         },
         {
-          "seatNumber": 133
+          "seatNumber": 133.0
         },
         {
-          "seatNumber": 134
+          "seatNumber": 134.0
         },
         {
-          "seatNumber": 135
+          "seatNumber": 135.0
         },
         {
-          "seatNumber": 136
+          "seatNumber": 136.0
         },
         {
-          "seatNumber": 137
+          "seatNumber": 137.0
         },
         {
-          "seatNumber": 138
+          "seatNumber": 138.0
         },
         {
-          "seatNumber": 139
+          "seatNumber": 139.0
         },
         {
-          "seatNumber": 140
+          "seatNumber": 140.0
         },
         {
-          "seatNumber": 141
+          "seatNumber": 141.0
         },
         {
-          "seatNumber": 142
+          "seatNumber": 142.0
         },
         {
-          "seatNumber": 143
+          "seatNumber": 143.0
         },
         {
-          "seatNumber": 144
+          "seatNumber": 144.0
         },
         {
-          "seatNumber": 145
+          "seatNumber": 145.0
         },
         {
-          "seatNumber": 146
+          "seatNumber": 146.0
         },
         {
-          "seatNumber": 147
+          "seatNumber": 147.0
         },
         {
-          "seatNumber": 148
+          "seatNumber": 148.0
         }
       ]
     },
     "title": "IT Chapter Two",
     "gender": "Horror",
     "ageRestriction": "Over 18",
-    "duration": 144,
+    "duration": 144.0,
     "namePoster": "It.jpg"
   },
   {
-    "sinopsis": "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age in 1969 Los Angeles.",
-    "date": "Aug 7, 2020 17:00:00 PM",
+    "sinopsis": "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood\u0027s Golden Age in 1969 Los Angeles.",
+    "date": "Aug 7, 2020 5:00:00 PM",
     "price": 3.96,
     "room": {
-      "roomNumber": 4,
+      "roomNumber": 4.0,
       "roomFormat": "3D",
       "seats": [
         {
-          "seatNumber": 0
+          "seatNumber": 0.0
         },
         {
-          "seatNumber": 1
+          "seatNumber": 1.0
         },
         {
-          "seatNumber": 2
+          "seatNumber": 2.0
         },
         {
-          "seatNumber": 3
+          "seatNumber": 3.0
         },
         {
-          "seatNumber": 4
+          "seatNumber": 4.0
         },
         {
-          "seatNumber": 5
+          "seatNumber": 5.0
         },
         {
-          "seatNumber": 6
+          "seatNumber": 6.0
         },
         {
-          "seatNumber": 7
+          "seatNumber": 7.0
         },
         {
-          "seatNumber": 8
+          "seatNumber": 8.0
         },
         {
-          "seatNumber": 9
+          "seatNumber": 9.0
         },
         {
-          "seatNumber": 10
+          "seatNumber": 10.0
         },
         {
-          "seatNumber": 11
+          "seatNumber": 11.0
         },
         {
-          "seatNumber": 12
+          "seatNumber": 12.0
         },
         {
-          "seatNumber": 13
+          "seatNumber": 13.0
         },
         {
-          "seatNumber": 14
+          "seatNumber": 14.0
         },
         {
-          "seatNumber": 15
+          "seatNumber": 15.0
         },
         {
-          "seatNumber": 16
+          "seatNumber": 16.0
         },
         {
-          "seatNumber": 17
+          "seatNumber": 17.0
         },
         {
-          "seatNumber": 18
+          "seatNumber": 18.0
         },
         {
-          "seatNumber": 19
+          "seatNumber": 19.0
         },
         {
-          "seatNumber": 20
+          "seatNumber": 20.0
         },
         {
-          "seatNumber": 21
+          "seatNumber": 21.0
         },
         {
-          "seatNumber": 22
+          "seatNumber": 22.0
         },
         {
-          "seatNumber": 23
+          "seatNumber": 23.0
         },
         {
-          "seatNumber": 24
+          "seatNumber": 24.0
         },
         {
-          "seatNumber": 25
+          "seatNumber": 25.0
         },
         {
-          "seatNumber": 26
+          "seatNumber": 26.0
         },
         {
-          "seatNumber": 27
+          "seatNumber": 27.0
         },
         {
-          "seatNumber": 28
+          "seatNumber": 28.0
         },
         {
-          "seatNumber": 29
+          "seatNumber": 29.0
         },
         {
-          "seatNumber": 30
+          "seatNumber": 30.0
         },
         {
-          "seatNumber": 31
+          "seatNumber": 31.0
         },
         {
-          "seatNumber": 32
+          "seatNumber": 32.0
         },
         {
-          "seatNumber": 33
+          "seatNumber": 33.0
         },
         {
-          "seatNumber": 34
+          "seatNumber": 34.0
         },
         {
-          "seatNumber": 35
+          "seatNumber": 35.0
         },
         {
-          "seatNumber": 36
+          "seatNumber": 36.0
         },
         {
-          "seatNumber": 37
+          "seatNumber": 37.0
         },
         {
-          "seatNumber": 38
+          "seatNumber": 38.0
         },
         {
-          "seatNumber": 39
+          "seatNumber": 39.0
         },
         {
-          "seatNumber": 40
+          "seatNumber": 40.0
         },
         {
-          "seatNumber": 41
+          "seatNumber": 41.0
         },
         {
-          "seatNumber": 42
+          "seatNumber": 42.0
         },
         {
-          "seatNumber": 43
+          "seatNumber": 43.0
         },
         {
-          "seatNumber": 44
+          "seatNumber": 44.0
         },
         {
-          "seatNumber": 45
+          "seatNumber": 45.0
         },
         {
-          "seatNumber": 46
+          "seatNumber": 46.0
         },
         {
-          "seatNumber": 47
+          "seatNumber": 47.0
         },
         {
-          "seatNumber": 48
+          "seatNumber": 48.0
         },
         {
-          "seatNumber": 49
+          "seatNumber": 49.0
         },
         {
-          "seatNumber": 50
+          "seatNumber": 50.0
         },
         {
-          "seatNumber": 51
+          "seatNumber": 51.0
         },
         {
-          "seatNumber": 52
+          "seatNumber": 52.0
         },
         {
-          "seatNumber": 53
+          "seatNumber": 53.0
         },
         {
-          "seatNumber": 54
+          "seatNumber": 54.0
         },
         {
-          "seatNumber": 55
+          "seatNumber": 55.0
         },
         {
-          "seatNumber": 56
+          "seatNumber": 56.0
         },
         {
-          "seatNumber": 57
+          "seatNumber": 57.0
         },
         {
-          "seatNumber": 58
+          "seatNumber": 58.0
         },
         {
-          "seatNumber": 59
+          "seatNumber": 59.0
         },
         {
-          "seatNumber": 60
+          "seatNumber": 60.0
         },
         {
-          "seatNumber": 61
+          "seatNumber": 61.0
         },
         {
-          "seatNumber": 62
+          "seatNumber": 62.0
         },
         {
-          "seatNumber": 63
+          "seatNumber": 63.0
         },
         {
-          "seatNumber": 64
+          "seatNumber": 64.0
         },
         {
-          "seatNumber": 65
+          "seatNumber": 65.0
         },
         {
-          "seatNumber": 66
+          "seatNumber": 66.0
         },
         {
-          "seatNumber": 67
+          "seatNumber": 67.0
         },
         {
-          "seatNumber": 68
+          "seatNumber": 68.0
         },
         {
-          "seatNumber": 69
+          "seatNumber": 69.0
         },
         {
-          "seatNumber": 70
+          "seatNumber": 70.0
         },
         {
-          "seatNumber": 71
+          "seatNumber": 71.0
         },
         {
-          "seatNumber": 72
+          "seatNumber": 72.0
         },
         {
-          "seatNumber": 73
+          "seatNumber": 73.0
         },
         {
-          "seatNumber": 74
+          "seatNumber": 74.0
         },
         {
-          "seatNumber": 75
+          "seatNumber": 75.0
         },
         {
-          "seatNumber": 76
+          "seatNumber": 76.0
         },
         {
-          "seatNumber": 77
+          "seatNumber": 77.0
         },
         {
-          "seatNumber": 78
+          "seatNumber": 78.0
         },
         {
-          "seatNumber": 79
+          "seatNumber": 79.0
         },
         {
-          "seatNumber": 80
+          "seatNumber": 80.0
         },
         {
-          "seatNumber": 81
+          "seatNumber": 81.0
         },
         {
-          "seatNumber": 82
+          "seatNumber": 82.0
         },
         {
-          "seatNumber": 83
+          "seatNumber": 83.0
         },
         {
-          "seatNumber": 84
+          "seatNumber": 84.0
         },
         {
-          "seatNumber": 85
+          "seatNumber": 85.0
         },
         {
-          "seatNumber": 86
+          "seatNumber": 86.0
         },
         {
-          "seatNumber": 87
+          "seatNumber": 87.0
         },
         {
-          "seatNumber": 88
+          "seatNumber": 88.0
         },
         {
-          "seatNumber": 89
+          "seatNumber": 89.0
         },
         {
-          "seatNumber": 90
+          "seatNumber": 90.0
         },
         {
-          "seatNumber": 91
+          "seatNumber": 91.0
         },
         {
-          "seatNumber": 92
+          "seatNumber": 92.0
         },
         {
-          "seatNumber": 93
+          "seatNumber": 93.0
         },
         {
-          "seatNumber": 94
+          "seatNumber": 94.0
         },
         {
-          "seatNumber": 95
+          "seatNumber": 95.0
         },
         {
-          "seatNumber": 96
+          "seatNumber": 96.0
         },
         {
-          "seatNumber": 97
+          "seatNumber": 97.0
         },
         {
-          "seatNumber": 98
+          "seatNumber": 98.0
         },
         {
-          "seatNumber": 99
+          "seatNumber": 99.0
         },
         {
-          "seatNumber": 100
+          "seatNumber": 100.0
         },
         {
-          "seatNumber": 101
+          "seatNumber": 101.0
         },
         {
-          "seatNumber": 102
+          "seatNumber": 102.0
         },
         {
-          "seatNumber": 103
+          "seatNumber": 103.0
         },
         {
-          "seatNumber": 104
+          "seatNumber": 104.0
         },
         {
-          "seatNumber": 105
+          "seatNumber": 105.0
         },
         {
-          "seatNumber": 106
+          "seatNumber": 106.0
         },
         {
-          "seatNumber": 107
+          "seatNumber": 107.0
         },
         {
-          "seatNumber": 108
+          "seatNumber": 108.0
         },
         {
-          "seatNumber": 109
+          "seatNumber": 109.0
         },
         {
-          "seatNumber": 110
+          "seatNumber": 110.0
         },
         {
-          "seatNumber": 111
+          "seatNumber": 111.0
         },
         {
-          "seatNumber": 112
+          "seatNumber": 112.0
         },
         {
-          "seatNumber": 113
+          "seatNumber": 113.0
         },
         {
-          "seatNumber": 114
+          "seatNumber": 114.0
         },
         {
-          "seatNumber": 115
+          "seatNumber": 115.0
         },
         {
-          "seatNumber": 116
+          "seatNumber": 116.0
         },
         {
-          "seatNumber": 117
+          "seatNumber": 117.0
         },
         {
-          "seatNumber": 118
+          "seatNumber": 118.0
         },
         {
-          "seatNumber": 119
+          "seatNumber": 119.0
         },
         {
-          "seatNumber": 120
+          "seatNumber": 120.0
         },
         {
-          "seatNumber": 121
+          "seatNumber": 121.0
         },
         {
-          "seatNumber": 122
+          "seatNumber": 122.0
         },
         {
-          "seatNumber": 123
+          "seatNumber": 123.0
         },
         {
-          "seatNumber": 124
+          "seatNumber": 124.0
         },
         {
-          "seatNumber": 125
+          "seatNumber": 125.0
         },
         {
-          "seatNumber": 126
+          "seatNumber": 126.0
         },
         {
-          "seatNumber": 127
+          "seatNumber": 127.0
         },
         {
-          "seatNumber": 128
+          "seatNumber": 128.0
         },
         {
-          "seatNumber": 129
+          "seatNumber": 129.0
         },
         {
-          "seatNumber": 130
+          "seatNumber": 130.0
         },
         {
-          "seatNumber": 131
+          "seatNumber": 131.0
         },
         {
-          "seatNumber": 132
+          "seatNumber": 132.0
         },
         {
-          "seatNumber": 133
+          "seatNumber": 133.0
         },
         {
-          "seatNumber": 134
+          "seatNumber": 134.0
         },
         {
-          "seatNumber": 135
+          "seatNumber": 135.0
         },
         {
-          "seatNumber": 136
+          "seatNumber": 136.0
         },
         {
-          "seatNumber": 137
+          "seatNumber": 137.0
         },
         {
-          "seatNumber": 138
+          "seatNumber": 138.0
         },
         {
-          "seatNumber": 139
+          "seatNumber": 139.0
         },
         {
-          "seatNumber": 140
+          "seatNumber": 140.0
         },
         {
-          "seatNumber": 141
+          "seatNumber": 141.0
         },
         {
-          "seatNumber": 142
+          "seatNumber": 142.0
         },
         {
-          "seatNumber": 143
+          "seatNumber": 143.0
         },
         {
-          "seatNumber": 144
+          "seatNumber": 144.0
         },
         {
-          "seatNumber": 145
+          "seatNumber": 145.0
         },
         {
-          "seatNumber": 146
+          "seatNumber": 146.0
         },
         {
-          "seatNumber": 147
+          "seatNumber": 147.0
         },
         {
-          "seatNumber": 148
+          "seatNumber": 148.0
         }
       ]
     },
     "title": "Once Upon A Time in Hollywood",
     "gender": "Comedy",
     "ageRestriction": "All public",
-    "duration": 135,
+    "duration": 135.0,
     "namePoster": "Once.jpg"
   },
   {
-    "sinopsis": "A young boy in Hitler's army finds out his mother is hiding a Jewish girl in their home.",
-    "date": "Aug 7, 2020 20:30:00 PM",
+    "sinopsis": "A young boy in Hitler\u0027s army finds out his mother is hiding a Jewish girl in their home.",
+    "date": "Aug 7, 2020 8:30:00 PM",
     "price": 3.56,
     "room": {
-      "roomNumber": 5,
+      "roomNumber": 5.0,
       "roomFormat": "3D",
       "seats": [
         {
-          "seatNumber": 0
+          "seatNumber": 0.0
         },
         {
-          "seatNumber": 1
+          "seatNumber": 1.0
         },
         {
-          "seatNumber": 2
+          "seatNumber": 2.0
         },
         {
-          "seatNumber": 3
+          "seatNumber": 3.0
         },
         {
-          "seatNumber": 4
+          "seatNumber": 4.0
         },
         {
-          "seatNumber": 5
+          "seatNumber": 5.0
         },
         {
-          "seatNumber": 6
+          "seatNumber": 6.0
         },
         {
-          "seatNumber": 7
+          "seatNumber": 7.0
         },
         {
-          "seatNumber": 8
+          "seatNumber": 8.0
         },
         {
-          "seatNumber": 9
+          "seatNumber": 9.0
         },
         {
-          "seatNumber": 10
+          "seatNumber": 10.0
         },
         {
-          "seatNumber": 11
+          "seatNumber": 11.0
         },
         {
-          "seatNumber": 12
+          "seatNumber": 12.0
         },
         {
-          "seatNumber": 13
+          "seatNumber": 13.0
         },
         {
-          "seatNumber": 14
+          "seatNumber": 14.0
         },
         {
-          "seatNumber": 15
+          "seatNumber": 15.0
         },
         {
-          "seatNumber": 16
+          "seatNumber": 16.0
         },
         {
-          "seatNumber": 17
+          "seatNumber": 17.0
         },
         {
-          "seatNumber": 18
+          "seatNumber": 18.0
         },
         {
-          "seatNumber": 19
+          "seatNumber": 19.0
         },
         {
-          "seatNumber": 20
+          "seatNumber": 20.0
         },
         {
-          "seatNumber": 21
+          "seatNumber": 21.0
         },
         {
-          "seatNumber": 22
+          "seatNumber": 22.0
         },
         {
-          "seatNumber": 23
+          "seatNumber": 23.0
         },
         {
-          "seatNumber": 24
+          "seatNumber": 24.0
         },
         {
-          "seatNumber": 25
+          "seatNumber": 25.0
         },
         {
-          "seatNumber": 26
+          "seatNumber": 26.0
         },
         {
-          "seatNumber": 27
+          "seatNumber": 27.0
         },
         {
-          "seatNumber": 28
+          "seatNumber": 28.0
         },
         {
-          "seatNumber": 29
+          "seatNumber": 29.0
         },
         {
-          "seatNumber": 30
+          "seatNumber": 30.0
         },
         {
-          "seatNumber": 31
+          "seatNumber": 31.0
         },
         {
-          "seatNumber": 32
+          "seatNumber": 32.0
         },
         {
-          "seatNumber": 33
+          "seatNumber": 33.0
         },
         {
-          "seatNumber": 34
+          "seatNumber": 34.0
         },
         {
-          "seatNumber": 35
+          "seatNumber": 35.0
         },
         {
-          "seatNumber": 36
+          "seatNumber": 36.0
         },
         {
-          "seatNumber": 37
+          "seatNumber": 37.0
         },
         {
-          "seatNumber": 38
+          "seatNumber": 38.0
         },
         {
-          "seatNumber": 39
+          "seatNumber": 39.0
         },
         {
-          "seatNumber": 40
+          "seatNumber": 40.0
         },
         {
-          "seatNumber": 41
+          "seatNumber": 41.0
         },
         {
-          "seatNumber": 42
+          "seatNumber": 42.0
         },
         {
-          "seatNumber": 43
+          "seatNumber": 43.0
         },
         {
-          "seatNumber": 44
+          "seatNumber": 44.0
         },
         {
-          "seatNumber": 45
+          "seatNumber": 45.0
         },
         {
-          "seatNumber": 46
+          "seatNumber": 46.0
         },
         {
-          "seatNumber": 47
+          "seatNumber": 47.0
         },
         {
-          "seatNumber": 48
+          "seatNumber": 48.0
         },
         {
-          "seatNumber": 49
+          "seatNumber": 49.0
         },
         {
-          "seatNumber": 50
+          "seatNumber": 50.0
         },
         {
-          "seatNumber": 51
+          "seatNumber": 51.0
         },
         {
-          "seatNumber": 52
+          "seatNumber": 52.0
         },
         {
-          "seatNumber": 53
+          "seatNumber": 53.0
         },
         {
-          "seatNumber": 54
+          "seatNumber": 54.0
         },
         {
-          "seatNumber": 55
+          "seatNumber": 55.0
         },
         {
-          "seatNumber": 56
+          "seatNumber": 56.0
         },
         {
-          "seatNumber": 57
+          "seatNumber": 57.0
         },
         {
-          "seatNumber": 58
+          "seatNumber": 58.0
         },
         {
-          "seatNumber": 59
+          "seatNumber": 59.0
         },
         {
-          "seatNumber": 60
+          "seatNumber": 60.0
         },
         {
-          "seatNumber": 61
+          "seatNumber": 61.0
         },
         {
-          "seatNumber": 62
+          "seatNumber": 62.0
         },
         {
-          "seatNumber": 63
+          "seatNumber": 63.0
         },
         {
-          "seatNumber": 64
+          "seatNumber": 64.0
         },
         {
-          "seatNumber": 65
+          "seatNumber": 65.0
         },
         {
-          "seatNumber": 66
+          "seatNumber": 66.0
         },
         {
-          "seatNumber": 67
+          "seatNumber": 67.0
         },
         {
-          "seatNumber": 68
+          "seatNumber": 68.0
         },
         {
-          "seatNumber": 69
+          "seatNumber": 69.0
         },
         {
-          "seatNumber": 70
+          "seatNumber": 70.0
         },
         {
-          "seatNumber": 71
+          "seatNumber": 71.0
         },
         {
-          "seatNumber": 72
+          "seatNumber": 72.0
         },
         {
-          "seatNumber": 73
+          "seatNumber": 73.0
         },
         {
-          "seatNumber": 74
+          "seatNumber": 74.0
         },
         {
-          "seatNumber": 75
+          "seatNumber": 75.0
         },
         {
-          "seatNumber": 76
+          "seatNumber": 76.0
         },
         {
-          "seatNumber": 77
+          "seatNumber": 77.0
         },
         {
-          "seatNumber": 78
+          "seatNumber": 78.0
         },
         {
-          "seatNumber": 79
+          "seatNumber": 79.0
         },
         {
-          "seatNumber": 80
+          "seatNumber": 80.0
         },
         {
-          "seatNumber": 81
+          "seatNumber": 81.0
         },
         {
-          "seatNumber": 82
+          "seatNumber": 82.0
         },
         {
-          "seatNumber": 83
+          "seatNumber": 83.0
         },
         {
-          "seatNumber": 84
+          "seatNumber": 84.0
         },
         {
-          "seatNumber": 85
+          "seatNumber": 85.0
         },
         {
-          "seatNumber": 86
+          "seatNumber": 86.0
         },
         {
-          "seatNumber": 87
+          "seatNumber": 87.0
         },
         {
-          "seatNumber": 88
+          "seatNumber": 88.0
         },
         {
-          "seatNumber": 89
+          "seatNumber": 89.0
         },
         {
-          "seatNumber": 90
+          "seatNumber": 90.0
         },
         {
-          "seatNumber": 91
+          "seatNumber": 91.0
         },
         {
-          "seatNumber": 92
+          "seatNumber": 92.0
         },
         {
-          "seatNumber": 93
+          "seatNumber": 93.0
         },
         {
-          "seatNumber": 94
+          "seatNumber": 94.0
         },
         {
-          "seatNumber": 95
+          "seatNumber": 95.0
         },
         {
-          "seatNumber": 96
+          "seatNumber": 96.0
         },
         {
-          "seatNumber": 97
+          "seatNumber": 97.0
         },
         {
-          "seatNumber": 98
+          "seatNumber": 98.0
         },
         {
-          "seatNumber": 99
+          "seatNumber": 99.0
         },
         {
-          "seatNumber": 100
+          "seatNumber": 100.0
         },
         {
-          "seatNumber": 101
+          "seatNumber": 101.0
         },
         {
-          "seatNumber": 102
+          "seatNumber": 102.0
         },
         {
-          "seatNumber": 103
+          "seatNumber": 103.0
         },
         {
-          "seatNumber": 104
+          "seatNumber": 104.0
         },
         {
-          "seatNumber": 105
+          "seatNumber": 105.0
         },
         {
-          "seatNumber": 106
+          "seatNumber": 106.0
         },
         {
-          "seatNumber": 107
+          "seatNumber": 107.0
         },
         {
-          "seatNumber": 108
+          "seatNumber": 108.0
         },
         {
-          "seatNumber": 109
+          "seatNumber": 109.0
         },
         {
-          "seatNumber": 110
+          "seatNumber": 110.0
         },
         {
-          "seatNumber": 111
+          "seatNumber": 111.0
         },
         {
-          "seatNumber": 112
+          "seatNumber": 112.0
         },
         {
-          "seatNumber": 113
+          "seatNumber": 113.0
         },
         {
-          "seatNumber": 114
+          "seatNumber": 114.0
         },
         {
-          "seatNumber": 115
+          "seatNumber": 115.0
         },
         {
-          "seatNumber": 116
+          "seatNumber": 116.0
         },
         {
-          "seatNumber": 117
+          "seatNumber": 117.0
         },
         {
-          "seatNumber": 118
+          "seatNumber": 118.0
         },
         {
-          "seatNumber": 119
+          "seatNumber": 119.0
         },
         {
-          "seatNumber": 120
+          "seatNumber": 120.0
         },
         {
-          "seatNumber": 121
+          "seatNumber": 121.0
         },
         {
-          "seatNumber": 122
+          "seatNumber": 122.0
         },
         {
-          "seatNumber": 123
+          "seatNumber": 123.0
         },
         {
-          "seatNumber": 124
+          "seatNumber": 124.0
         },
         {
-          "seatNumber": 125
+          "seatNumber": 125.0
         },
         {
-          "seatNumber": 126
+          "seatNumber": 126.0
         },
         {
-          "seatNumber": 127
+          "seatNumber": 127.0
         },
         {
-          "seatNumber": 128
+          "seatNumber": 128.0
         },
         {
-          "seatNumber": 129
+          "seatNumber": 129.0
         },
         {
-          "seatNumber": 130
+          "seatNumber": 130.0
         },
         {
-          "seatNumber": 131
+          "seatNumber": 131.0
         },
         {
-          "seatNumber": 132
+          "seatNumber": 132.0
         },
         {
-          "seatNumber": 133
+          "seatNumber": 133.0
         },
         {
-          "seatNumber": 134
+          "seatNumber": 134.0
         },
         {
-          "seatNumber": 135
+          "seatNumber": 135.0
         },
         {
-          "seatNumber": 136
+          "seatNumber": 136.0
         },
         {
-          "seatNumber": 137
+          "seatNumber": 137.0
         },
         {
-          "seatNumber": 138
+          "seatNumber": 138.0
         },
         {
-          "seatNumber": 139
+          "seatNumber": 139.0
         },
         {
-          "seatNumber": 140
+          "seatNumber": 140.0
         },
         {
-          "seatNumber": 141
+          "seatNumber": 141.0
         },
         {
-          "seatNumber": 142
+          "seatNumber": 142.0
         },
         {
-          "seatNumber": 143
+          "seatNumber": 143.0
         },
         {
-          "seatNumber": 144
+          "seatNumber": 144.0
         },
         {
-          "seatNumber": 145
+          "seatNumber": 145.0
         },
         {
-          "seatNumber": 146
+          "seatNumber": 146.0
         },
         {
-          "seatNumber": 147
+          "seatNumber": 147.0
         },
         {
-          "seatNumber": 148
+          "seatNumber": 148.0
         }
       ]
     },
     "title": "Jojo Rabbit",
     "gender": "Comedy",
     "ageRestriction": "All public",
-    "duration": 139,
+    "duration": 139.0,
     "namePoster": "Jojo.jpg"
   },
   {
     "sinopsis": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
-    "date": "Aug 7, 2020 20:00:00 PM",
+    "date": "Aug 7, 2020 8:00:00 PM",
     "price": 5.85,
     "room": {
-      "roomNumber": 6,
+      "roomNumber": 6.0,
       "roomFormat": "3D",
       "seats": [
         {
-          "seatNumber": 0
+          "seatNumber": 0.0
         },
         {
-          "seatNumber": 1
+          "seatNumber": 1.0
         },
         {
-          "seatNumber": 2
+          "seatNumber": 2.0
         },
         {
-          "seatNumber": 3
+          "seatNumber": 3.0
         },
         {
-          "seatNumber": 4
+          "seatNumber": 4.0
         },
         {
-          "seatNumber": 5
+          "seatNumber": 5.0
         },
         {
-          "seatNumber": 6
+          "seatNumber": 6.0
         },
         {
-          "seatNumber": 7
+          "seatNumber": 7.0
         },
         {
-          "seatNumber": 8
+          "seatNumber": 8.0
         },
         {
-          "seatNumber": 9
+          "seatNumber": 9.0
         },
         {
-          "seatNumber": 10
+          "seatNumber": 10.0
         },
         {
-          "seatNumber": 11
+          "seatNumber": 11.0
         },
         {
-          "seatNumber": 12
+          "seatNumber": 12.0
         },
         {
-          "seatNumber": 13
+          "seatNumber": 13.0
         },
         {
-          "seatNumber": 14
+          "seatNumber": 14.0
         },
         {
-          "seatNumber": 15
+          "seatNumber": 15.0
         },
         {
-          "seatNumber": 16
+          "seatNumber": 16.0
         },
         {
-          "seatNumber": 17
+          "seatNumber": 17.0
         },
         {
-          "seatNumber": 18
+          "seatNumber": 18.0
         },
         {
-          "seatNumber": 19
+          "seatNumber": 19.0
         },
         {
-          "seatNumber": 20
+          "seatNumber": 20.0
         },
         {
-          "seatNumber": 21
+          "seatNumber": 21.0
         },
         {
-          "seatNumber": 22
+          "seatNumber": 22.0
         },
         {
-          "seatNumber": 23
+          "seatNumber": 23.0
         },
         {
-          "seatNumber": 24
+          "seatNumber": 24.0
         },
         {
-          "seatNumber": 25
+          "seatNumber": 25.0
         },
         {
-          "seatNumber": 26
+          "seatNumber": 26.0
         },
         {
-          "seatNumber": 27
+          "seatNumber": 27.0
         },
         {
-          "seatNumber": 28
+          "seatNumber": 28.0
         },
         {
-          "seatNumber": 29
+          "seatNumber": 29.0
         },
         {
-          "seatNumber": 30
+          "seatNumber": 30.0
         },
         {
-          "seatNumber": 31
+          "seatNumber": 31.0
         },
         {
-          "seatNumber": 32
+          "seatNumber": 32.0
         },
         {
-          "seatNumber": 33
+          "seatNumber": 33.0
         },
         {
-          "seatNumber": 34
+          "seatNumber": 34.0
         },
         {
-          "seatNumber": 35
+          "seatNumber": 35.0
         },
         {
-          "seatNumber": 36
+          "seatNumber": 36.0
         },
         {
-          "seatNumber": 37
+          "seatNumber": 37.0
         },
         {
-          "seatNumber": 38
+          "seatNumber": 38.0
         },
         {
-          "seatNumber": 39
+          "seatNumber": 39.0
         },
         {
-          "seatNumber": 40
+          "seatNumber": 40.0
         },
         {
-          "seatNumber": 41
+          "seatNumber": 41.0
         },
         {
-          "seatNumber": 42
+          "seatNumber": 42.0
         },
         {
-          "seatNumber": 43
+          "seatNumber": 43.0
         },
         {
-          "seatNumber": 44
+          "seatNumber": 44.0
         },
         {
-          "seatNumber": 45
+          "seatNumber": 45.0
         },
         {
-          "seatNumber": 46
+          "seatNumber": 46.0
         },
         {
-          "seatNumber": 47
+          "seatNumber": 47.0
         },
         {
-          "seatNumber": 48
+          "seatNumber": 48.0
         },
         {
-          "seatNumber": 49
+          "seatNumber": 49.0
         },
         {
-          "seatNumber": 50
+          "seatNumber": 50.0
         },
         {
-          "seatNumber": 51
+          "seatNumber": 51.0
         },
         {
-          "seatNumber": 52
+          "seatNumber": 52.0
         },
         {
-          "seatNumber": 53
+          "seatNumber": 53.0
         },
         {
-          "seatNumber": 54
+          "seatNumber": 54.0
         },
         {
-          "seatNumber": 55
+          "seatNumber": 55.0
         },
         {
-          "seatNumber": 56
+          "seatNumber": 56.0
         },
         {
-          "seatNumber": 57
+          "seatNumber": 57.0
         },
         {
-          "seatNumber": 58
+          "seatNumber": 58.0
         },
         {
-          "seatNumber": 59
+          "seatNumber": 59.0
         },
         {
-          "seatNumber": 60
+          "seatNumber": 60.0
         },
         {
-          "seatNumber": 61
+          "seatNumber": 61.0
         },
         {
-          "seatNumber": 62
+          "seatNumber": 62.0
         },
         {
-          "seatNumber": 63
+          "seatNumber": 63.0
         },
         {
-          "seatNumber": 64
+          "seatNumber": 64.0
         },
         {
-          "seatNumber": 65
+          "seatNumber": 65.0
         },
         {
-          "seatNumber": 66
+          "seatNumber": 66.0
         },
         {
-          "seatNumber": 67
+          "seatNumber": 67.0
         },
         {
-          "seatNumber": 68
+          "seatNumber": 68.0
         },
         {
-          "seatNumber": 69
+          "seatNumber": 69.0
         },
         {
-          "seatNumber": 70
+          "seatNumber": 70.0
         },
         {
-          "seatNumber": 71
+          "seatNumber": 71.0
         },
         {
-          "seatNumber": 72
+          "seatNumber": 72.0
         },
         {
-          "seatNumber": 73
+          "seatNumber": 73.0
         },
         {
-          "seatNumber": 74
+          "seatNumber": 74.0
         },
         {
-          "seatNumber": 75
+          "seatNumber": 75.0
         },
         {
-          "seatNumber": 76
+          "seatNumber": 76.0
         },
         {
-          "seatNumber": 77
+          "seatNumber": 77.0
         },
         {
-          "seatNumber": 78
+          "seatNumber": 78.0
         },
         {
-          "seatNumber": 79
+          "seatNumber": 79.0
         },
         {
-          "seatNumber": 80
+          "seatNumber": 80.0
         },
         {
-          "seatNumber": 81
+          "seatNumber": 81.0
         },
         {
-          "seatNumber": 82
+          "seatNumber": 82.0
         },
         {
-          "seatNumber": 83
+          "seatNumber": 83.0
         },
         {
-          "seatNumber": 84
+          "seatNumber": 84.0
         },
         {
-          "seatNumber": 85
+          "seatNumber": 85.0
         },
         {
-          "seatNumber": 86
+          "seatNumber": 86.0
         },
         {
-          "seatNumber": 87
+          "seatNumber": 87.0
         },
         {
-          "seatNumber": 88
+          "seatNumber": 88.0
         },
         {
-          "seatNumber": 89
+          "seatNumber": 89.0
         },
         {
-          "seatNumber": 90
+          "seatNumber": 90.0
         },
         {
-          "seatNumber": 91
+          "seatNumber": 91.0
         },
         {
-          "seatNumber": 92
+          "seatNumber": 92.0
         },
         {
-          "seatNumber": 93
+          "seatNumber": 93.0
         },
         {
-          "seatNumber": 94
+          "seatNumber": 94.0
         },
         {
-          "seatNumber": 95
+          "seatNumber": 95.0
         },
         {
-          "seatNumber": 96
+          "seatNumber": 96.0
         },
         {
-          "seatNumber": 97
+          "seatNumber": 97.0
         },
         {
-          "seatNumber": 98
+          "seatNumber": 98.0
         },
         {
-          "seatNumber": 99
+          "seatNumber": 99.0
         },
         {
-          "seatNumber": 100
+          "seatNumber": 100.0
         },
         {
-          "seatNumber": 101
+          "seatNumber": 101.0
         },
         {
-          "seatNumber": 102
+          "seatNumber": 102.0
         },
         {
-          "seatNumber": 103
+          "seatNumber": 103.0
         },
         {
-          "seatNumber": 104
+          "seatNumber": 104.0
         },
         {
-          "seatNumber": 105
+          "seatNumber": 105.0
         },
         {
-          "seatNumber": 106
+          "seatNumber": 106.0
         },
         {
-          "seatNumber": 107
+          "seatNumber": 107.0
         },
         {
-          "seatNumber": 108
+          "seatNumber": 108.0
         },
         {
-          "seatNumber": 109
+          "seatNumber": 109.0
         },
         {
-          "seatNumber": 110
+          "seatNumber": 110.0
         },
         {
-          "seatNumber": 111
+          "seatNumber": 111.0
         },
         {
-          "seatNumber": 112
+          "seatNumber": 112.0
         },
         {
-          "seatNumber": 113
+          "seatNumber": 113.0
         },
         {
-          "seatNumber": 114
+          "seatNumber": 114.0
         },
         {
-          "seatNumber": 115
+          "seatNumber": 115.0
         },
         {
-          "seatNumber": 116
+          "seatNumber": 116.0
         },
         {
-          "seatNumber": 117
+          "seatNumber": 117.0
         },
         {
-          "seatNumber": 118
+          "seatNumber": 118.0
         },
         {
-          "seatNumber": 119
+          "seatNumber": 119.0
         },
         {
-          "seatNumber": 120
+          "seatNumber": 120.0
         },
         {
-          "seatNumber": 121
+          "seatNumber": 121.0
         },
         {
-          "seatNumber": 122
+          "seatNumber": 122.0
         },
         {
-          "seatNumber": 123
+          "seatNumber": 123.0
         },
         {
-          "seatNumber": 124
+          "seatNumber": 124.0
         },
         {
-          "seatNumber": 125
+          "seatNumber": 125.0
         },
         {
-          "seatNumber": 126
+          "seatNumber": 126.0
         },
         {
-          "seatNumber": 127
+          "seatNumber": 127.0
         },
         {
-          "seatNumber": 128
+          "seatNumber": 128.0
         },
         {
-          "seatNumber": 129
+          "seatNumber": 129.0
         },
         {
-          "seatNumber": 130
+          "seatNumber": 130.0
         },
         {
-          "seatNumber": 131
+          "seatNumber": 131.0
         },
         {
-          "seatNumber": 132
+          "seatNumber": 132.0
         },
         {
-          "seatNumber": 133
+          "seatNumber": 133.0
         },
         {
-          "seatNumber": 134
+          "seatNumber": 134.0
         },
         {
-          "seatNumber": 135
+          "seatNumber": 135.0
         },
         {
-          "seatNumber": 136
+          "seatNumber": 136.0
         },
         {
-          "seatNumber": 137
+          "seatNumber": 137.0
         },
         {
-          "seatNumber": 138
+          "seatNumber": 138.0
         },
         {
-          "seatNumber": 139
+          "seatNumber": 139.0
         },
         {
-          "seatNumber": 140
+          "seatNumber": 140.0
         },
         {
-          "seatNumber": 141
+          "seatNumber": 141.0
         },
         {
-          "seatNumber": 142
+          "seatNumber": 142.0
         },
         {
-          "seatNumber": 143
+          "seatNumber": 143.0
         },
         {
-          "seatNumber": 144
+          "seatNumber": 144.0
         },
         {
-          "seatNumber": 145
+          "seatNumber": 145.0
         },
         {
-          "seatNumber": 146
+          "seatNumber": 146.0
         },
         {
-          "seatNumber": 147
+          "seatNumber": 147.0
         },
         {
-          "seatNumber": 148
+          "seatNumber": 148.0
         }
       ]
     },
     "title": "Joker",
     "gender": "science fiction",
     "ageRestriction": "Over 18",
-    "duration": 158,
+    "duration": 158.0,
     "namePoster": "Joker.jpg"
   }
 ]

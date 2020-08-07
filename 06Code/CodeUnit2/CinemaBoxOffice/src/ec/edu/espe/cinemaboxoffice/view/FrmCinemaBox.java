@@ -11,6 +11,7 @@ import java.awt.Image;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
@@ -944,7 +945,6 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     }//GEN-LAST:event_mniCinemaExitActionPerformed
 
     private void mnuCinemaAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCinemaAdminActionPerformed
-        this.setVisible(false);
         FrmAdminLogin frmLogin = new FrmAdminLogin();
         frmLogin.setVisible(true);
     }//GEN-LAST:event_mnuCinemaAdminActionPerformed
