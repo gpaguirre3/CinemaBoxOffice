@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -72,6 +73,8 @@ public abstract class Movie {
     public abstract String getDate();
     
     public abstract String getPrice();
+    
+    public abstract Date getDateMovie();
 
     public String getGender() {
         return gender;

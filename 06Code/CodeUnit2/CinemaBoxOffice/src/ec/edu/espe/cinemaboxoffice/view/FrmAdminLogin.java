@@ -236,7 +236,13 @@ public class FrmAdminLogin extends javax.swing.JFrame {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         this.setVisible(false);
-        new FrmCinemaBox().setVisible(true);
+        FrmCinemaBox frm = new FrmCinemaBox();
+        try {
+            frm.showBillboard(5);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmAdminLogin.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frm.setVisible(true);
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void txtUsernameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsernameKeyTyped

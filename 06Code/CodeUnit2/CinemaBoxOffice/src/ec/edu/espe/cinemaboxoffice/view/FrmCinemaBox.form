@@ -30,13 +30,16 @@
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu4">
+        <Menu class="javax.swing.JMenu" name="mnuCalendar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Settings"/>
+            <Property name="text" type="java.lang.String" value="Calendar"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Comic Sans MS" size="12" style="3"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mnuCalendarMouseClicked"/>
+          </Events>
         </Menu>
       </SubComponents>
     </Menu>
@@ -64,17 +67,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="tpnNextPremier" alignment="0" max="32767" attributes="0"/>
+          <Component id="tpnCinema" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="tpnNextPremier" alignment="1" max="32767" attributes="0"/>
+          <Component id="tpnCinema" alignment="1" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JTabbedPane" name="tpnNextPremier">
+    <Container class="javax.swing.JTabbedPane" name="tpnCinema">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Comic Sans MS" size="14" style="3"/>
@@ -83,7 +86,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel2">
+        <Container class="javax.swing.JPanel" name="pnlBillboard">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="0" type="rgb"/>
@@ -199,7 +202,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel1"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie1">
@@ -218,7 +221,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel7"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieGender1">
@@ -229,7 +232,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel8"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieAgeRestriction1">
@@ -240,7 +243,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel9"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -304,7 +307,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel2"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie2">
@@ -323,7 +326,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel10"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieGender2">
@@ -334,7 +337,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel11"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieAgeRestriction2">
@@ -345,7 +348,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel12"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -408,7 +411,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel3"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie3">
@@ -427,7 +430,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel13"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieGender3">
@@ -438,7 +441,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel14"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieAgeRestriction3">
@@ -449,7 +452,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel15"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -512,7 +515,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel5"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie5">
@@ -531,7 +534,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel19"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieGender5">
@@ -542,7 +545,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel20"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieAgeRestriction5">
@@ -553,7 +556,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel21"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -620,7 +623,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel4"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie4">
@@ -639,7 +642,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel16"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieGender4">
@@ -650,7 +653,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel17"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieAgeRestriction4">
@@ -661,7 +664,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel18"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -725,7 +728,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel6"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie6">
@@ -744,7 +747,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel22"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieGender6">
@@ -755,7 +758,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel23"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblMovieAgeRestriction6">
@@ -766,14 +769,14 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="jLabel24"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                 </Component>
               </SubComponents>
             </Container>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanel3">
+        <Container class="javax.swing.JPanel" name="pnlNextPremier">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="0" type="rgb"/>

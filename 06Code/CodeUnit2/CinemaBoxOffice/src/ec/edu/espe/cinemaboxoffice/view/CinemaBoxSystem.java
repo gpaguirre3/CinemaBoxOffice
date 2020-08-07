@@ -6,6 +6,7 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import java.io.IOException;
+import java.util.Date;
 
 /**
  *
@@ -14,7 +15,8 @@ import java.io.IOException;
 public class CinemaBoxSystem {
     public static void main(String[] args) throws IOException {
         FrmCinemaBox frmCinema = new FrmCinemaBox();
-        frmCinema.showBillboard();
+        java.util.Date dayActually = new Date();
+        frmCinema.showBillboard(dayActually.getDay());
         frmCinema.showDataNextPremier();
         frmCinema.setVisible(true);
     }

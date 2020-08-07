@@ -52,6 +52,11 @@ public class MovieBillboard extends Movie {
     public String getDate() {
         return date.toGMTString();
     }
+    
+    @Override
+    public Date getDateMovie() {
+        return date;
+    }
 
     @Override
     public String getPrice() {

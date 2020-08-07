@@ -52,17 +52,6 @@ public class MovieRecord {
         return "-";
     }
 
-    public Movie recordNextPremier() {
-        String title = in.getString("Enter the title movie: ");
-        String gender = in.getString("Enter the gender movie: ");
-        String age = in.getString("Enter the age restricction: ");
-        int duration = in.getInt("Enter the duration in minutes: ", 3);
-        String namePoster = in.getString("Enter the name of the picture: ");
-        String month = in.getString("Emter the month of premier: ");
-        Movie nextPremier = new NextPremier(title, gender, age, duration, namePoster, month);
-        return nextPremier;
-    }
-
     public boolean deleteMovie(String fileName) throws IOException {
         String title = in.getString("Enter the name of the movie: ");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();

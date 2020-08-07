@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.cinemaboxoffice.model;
 
+import java.util.Date;
+
 /**
  *
  * @author Kevin Chuquimarca ESPE-DCCO
@@ -41,6 +43,11 @@ public class NextPremier extends Movie{
 
     @Override
     public String getPrice() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    @Override
+    public Date getDateMovie() {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
