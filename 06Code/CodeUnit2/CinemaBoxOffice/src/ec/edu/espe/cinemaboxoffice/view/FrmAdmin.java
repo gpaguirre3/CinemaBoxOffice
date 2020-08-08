@@ -57,7 +57,7 @@ public class FrmAdmin extends javax.swing.JFrame {
         mniRecordNextPremier = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         mnuDelete = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        mnuDaleteMovie = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
         mniAdminExit = new javax.swing.JMenuItem();
@@ -247,8 +247,13 @@ public class FrmAdmin extends javax.swing.JFrame {
 
         mnuDelete.setText("Delete");
 
-        jMenuItem5.setText("Movie");
-        mnuDelete.add(jMenuItem5);
+        mnuDaleteMovie.setText("Movie");
+        mnuDaleteMovie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuDaleteMovieActionPerformed(evt);
+            }
+        });
+        mnuDelete.add(mnuDaleteMovie);
 
         jMenuItem6.setText("Next Premier");
         mnuDelete.add(jMenuItem6);
@@ -322,6 +327,11 @@ public class FrmAdmin extends javax.swing.JFrame {
         new FrmNewAccounts().setVisible(true);
     }//GEN-LAST:event_mnuNewAdminActionPerformed
 
+    private void mnuDaleteMovieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuDaleteMovieActionPerformed
+        this.setVisible(false);
+        new FrmDeleteMovie().setVisible(false);
+    }//GEN-LAST:event_mnuDaleteMovieActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -356,8 +366,8 @@ public class FrmAdmin extends javax.swing.JFrame {
             }
         });
     }
-    
-    public void showNamesMovies() throws IOException{
+
+    public void showNamesMovies() throws IOException {
         ArrayList<Movie> movies;
         movies = Movie.consultMovies("Billboard.json");
         lblMovieTitle1.setText(movies.get(0).getTitle());
@@ -378,7 +388,6 @@ public class FrmAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JPanel jPanel1;
@@ -402,6 +411,7 @@ public class FrmAdmin extends javax.swing.JFrame {
     private javax.swing.JMenuItem mniRecordNextPremier;
     private javax.swing.JMenu mnuAdmin;
     private javax.swing.JMenu mnuAdminCinema;
+    private javax.swing.JMenuItem mnuDaleteMovie;
     private javax.swing.JMenu mnuDelete;
     private javax.swing.JMenuItem mnuNewAdmin;
     private javax.swing.JMenu mnuRecord;

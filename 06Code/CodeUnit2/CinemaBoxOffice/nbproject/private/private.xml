@@ -3,33 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/LogInController.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/MovieBillboard.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmMovieBillboard.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmAdminLogin.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/CinemaRoom.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Customer.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/NewAccountsController.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmAdmin.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/MovieDaily.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmBill.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Seat.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmNewAccounts.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/NextPremier.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmCinemaBox.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/controller/MovieRecord.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmCalendar.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/AdminSystem.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Person.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Admin.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Ticket.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmNextPremier.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/data/invoices.json</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/utils/PasswordEncryptor.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Invoice.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/model/Movie.java</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/AdminAccount.json</file>
-            <file>file:/C:/Users/gabri/Desktop/ESPE/POO/proyect/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmMovie.java</file>
+            <file>file:/C:/Users/nicol/OneDrive/Escritorio/ESPE202001_POO6382llSEMESTRE/Proyect_POO6382/06Code/CodeUnit2/CinemaBoxOffice/src/ec/edu/espe/cinemaboxoffice/view/FrmDeleteMovie.java</file>
         </group>
     </open-files>
 </project-private>
