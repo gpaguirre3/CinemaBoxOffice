@@ -11,7 +11,6 @@ import java.awt.Image;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
@@ -22,6 +21,7 @@ import javax.swing.ImageIcon;
  */
 public class FrmCinemaBox extends javax.swing.JFrame {
 
+    private ArrayList<Movie> movies;
     /**
      * Creates new form FrmCinemaBox
      */
@@ -953,7 +953,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         this.setVisible(true);
         FrmMovie frmMovie = new FrmMovie();
         try {
-            frmMovie.showDataMovie(6);
+            frmMovie.showDataMovie(6, movies);
         } catch (IOException ex) {
             Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -964,7 +964,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         this.setVisible(true);
         FrmMovie frmMovie = new FrmMovie();
         try {
-            frmMovie.showDataMovie(4);
+            frmMovie.showDataMovie(4, movies);
         } catch (IOException ex) {
             Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -975,7 +975,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         this.setVisible(true);
         FrmMovie frmMovie = new FrmMovie();
         try {
-            frmMovie.showDataMovie(5);
+            frmMovie.showDataMovie(5, movies);
         } catch (IOException ex) {
             Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -986,7 +986,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         this.setVisible(true);
         FrmMovie frmMovie = new FrmMovie();
         try {
-            frmMovie.showDataMovie(3);
+            frmMovie.showDataMovie(3, movies);
         } catch (IOException ex) {
             Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -997,7 +997,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         this.setVisible(true);
         FrmMovie frmMovie = new FrmMovie();
         try {
-            frmMovie.showDataMovie(2);
+            frmMovie.showDataMovie(2, movies);
         } catch (IOException ex) {
             Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1008,7 +1008,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         this.setVisible(true);
         FrmMovie frmMovie = new FrmMovie();
         try {
-            frmMovie.showDataMovie(1);
+            frmMovie.showDataMovie(1 , movies);
         } catch (IOException ex) {
             Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1056,7 +1056,6 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     }
 
     public void showBillboard(int day) throws IOException {
-        ArrayList<Movie> movies;
         movies = MovieDaily.getMoviesDaily(Movie.consultMovies("Billboard.json"), day);
         if (movies.size() > 0) {
             lblMoviePoster1.setIcon(showPicture(movies.get(0).getNamePoster()));

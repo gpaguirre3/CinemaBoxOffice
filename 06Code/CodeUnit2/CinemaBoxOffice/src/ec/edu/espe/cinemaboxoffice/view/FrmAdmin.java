@@ -9,6 +9,8 @@ import ec.edu.espe.cinemaboxoffice.model.Movie;
 import java.awt.Color;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -328,7 +330,13 @@ public class FrmAdmin extends javax.swing.JFrame {
 
     private void mnuDaleteMovieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuDaleteMovieActionPerformed
         this.setVisible(false);
-        new FrmDeleteMovie().setVisible(false);
+        FrmDeleteMovie frmDeleteMovie = new FrmDeleteMovie();
+        try {
+            frmDeleteMovie.showListMovies();
+        } catch (IOException ex) {
+            Logger.getLogger(FrmAdmin.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmDeleteMovie.setVisible(true);
     }//GEN-LAST:event_mnuDaleteMovieActionPerformed
 
     /**

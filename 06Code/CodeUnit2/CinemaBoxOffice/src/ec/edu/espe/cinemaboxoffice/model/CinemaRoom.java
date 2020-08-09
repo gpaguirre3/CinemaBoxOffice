@@ -11,7 +11,7 @@ package ec.edu.espe.cinemaboxoffice.model;
  */
 public class CinemaRoom {
     private int roomNumber;
-    private String roomFormat;
+    private static String roomFormat;
     private Seat[] seats = new Seat[149];
     
     public CinemaRoom(int roomNumber, String roomFormat, Seat[] seats) {
@@ -26,5 +26,9 @@ public class CinemaRoom {
             buildSeats[i] = new Seat(i);
         }
         return buildSeats;
+    }
+
+    public int getRoomNumber() {
+        return roomNumber;
     }
 }

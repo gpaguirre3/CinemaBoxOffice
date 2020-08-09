@@ -13,11 +13,30 @@ import java.util.ArrayList;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class MovieDaily {
+
     public static ArrayList<Movie> getMoviesDaily(ArrayList<Movie> movies, int day) {
+        ArrayList<Movie> moviesDaily = new ArrayList<>();
+        if (movies != null) {
+            for (int i = 0; i < movies.size(); i++) {
+                if (day == movies.get(i).getDateMovie().getDay()) {
+                    moviesDaily.add(movies.get(i));
+                }
+            }
+        }
+        return moviesDaily;
+    }
+    
+    public static ArrayList<Movie> getMovies(ArrayList<Movie> movies, int day) {
         ArrayList<Movie> moviesDaily = new ArrayList<>();
         if (movies != null) {   
             for (int i = 0; i < movies.size(); i++) {
                 if (day == movies.get(i).getDateMovie().getDay()) {
+                    moviesDaily.add(movies.get(i));
+                }
+                if (day + 1== movies.get(i).getDateMovie().getDay()) {
+                    moviesDaily.add(movies.get(i));
+                }
+                if (day + 2== movies.get(i).getDateMovie().getDay()) {
                     moviesDaily.add(movies.get(i));
                 }
             }

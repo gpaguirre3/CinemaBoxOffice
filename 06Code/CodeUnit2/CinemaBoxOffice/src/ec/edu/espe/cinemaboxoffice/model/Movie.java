@@ -74,6 +74,8 @@ public abstract class Movie {
     public abstract String getPrice();
     
     public abstract Date getDateMovie();
+    
+    public abstract CinemaRoom getRoom();
 
     public String getGender() {
         return gender;

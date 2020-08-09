@@ -62,7 +62,12 @@ public class MovieBillboard extends Movie {
     public String getPrice() {
         return price+"";
     }
-    
+
+    @Override
+    public CinemaRoom getRoom() {
+        return room;
+    }
+   
     public float getPriceValue() {
         return price;
     }

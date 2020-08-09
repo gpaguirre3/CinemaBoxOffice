@@ -216,10 +216,9 @@ public class FrmMovie extends javax.swing.JFrame {
         return numberMovie;
     }
     
-    public void showDataMovie(int numberMovie) throws IOException{
-        ArrayList<Movie> movies;
+    public void showDataMovie(int numberMovie, ArrayList<Movie> movies ) throws IOException{
         this.numberMovie = numberMovie -1;
-        movies = Movie.consultMovies("Billboard.json");
+        for (int i=0; i<movies.size(); i++){
         lblMoviePoster.setIcon(showPicture(movies.get(this.numberMovie).getNamePoster()));
         lblMovieTitle.setText(movies.get(this.numberMovie).getTitle());
         lblMoviegender.setText(movies.get(this.numberMovie).getGender());
@@ -228,6 +227,7 @@ public class FrmMovie extends javax.swing.JFrame {
         lblMovieDate.setText(movies.get(this.numberMovie).getDate());
         lblMoviePrice.setText("$ " + movies.get(this.numberMovie).getPrice());
         txaMovieSinopsis.setText(movies.get(this.numberMovie).getSinopsis());
+        }
     }
 
     public ImageIcon showPicture(String namePicture) {

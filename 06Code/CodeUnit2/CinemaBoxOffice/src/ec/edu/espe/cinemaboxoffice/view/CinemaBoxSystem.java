@@ -15,8 +15,7 @@ import java.util.Date;
 public class CinemaBoxSystem {
     public static void main(String[] args) throws IOException {
         FrmCinemaBox frmCinema = new FrmCinemaBox();
-        java.util.Date dayActually = new Date();
-        frmCinema.showBillboard(dayActually.getDay());
+        frmCinema.showBillboard(new Date().getDay());
         frmCinema.showDataNextPremier();
         frmCinema.setVisible(true);
     }

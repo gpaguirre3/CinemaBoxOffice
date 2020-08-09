@@ -49,4 +49,9 @@ public class NextPremier extends Movie{
     public Date getDateMovie() {
         return null;
     }
+
+    @Override
+    public CinemaRoom getRoom() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
