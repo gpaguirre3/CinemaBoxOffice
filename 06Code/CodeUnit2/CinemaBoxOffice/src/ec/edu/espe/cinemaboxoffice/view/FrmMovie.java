@@ -26,6 +26,7 @@ public class FrmMovie extends javax.swing.JFrame {
      */
     public FrmMovie() {
         initComponents();
+        setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
@@ -51,6 +52,7 @@ public class FrmMovie extends javax.swing.JFrame {
         lblMovieDate = new javax.swing.JLabel();
         lblMoviePrice = new javax.swing.JLabel();
         lblMovieSinopsis = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Synopsis");
@@ -60,18 +62,22 @@ public class FrmMovie extends javax.swing.JFrame {
 
         lblMoviePoster.setText("jLabel1");
 
+        lblMovieDuration.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieDuration.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieDuration.setText("jLabel4");
 
+        lblMoviegender.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMoviegender.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviegender.setText("jLabel3");
 
+        lblMovieTitle.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieTitle.setText("jLabel2");
 
         txaMovieSinopsis.setEditable(false);
-        txaMovieSinopsis.setBackground(new java.awt.Color(153, 255, 255));
+        txaMovieSinopsis.setBackground(new java.awt.Color(204, 204, 255));
         txaMovieSinopsis.setColumns(20);
+        txaMovieSinopsis.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         txaMovieSinopsis.setLineWrap(true);
         txaMovieSinopsis.setRows(5);
         txaMovieSinopsis.setWrapStyleWord(true);
@@ -91,17 +97,24 @@ public class FrmMovie extends javax.swing.JFrame {
             }
         });
 
+        lblMovieAgeRestriction.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieAgeRestriction.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieAgeRestriction.setText("jLabel1");
 
+        lblMovieDate.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieDate.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieDate.setText("jLabel2");
 
+        lblMoviePrice.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMoviePrice.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePrice.setText("jLabel1");
 
+        lblMovieSinopsis.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblMovieSinopsis.setForeground(new java.awt.Color(255, 255, 255));
-        lblMovieSinopsis.setText("Sinopsis:");
+        lblMovieSinopsis.setText(" Synopsis");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/synopsisIcon.png"))); // NOI18N
+        jLabel1.setToolTipText("");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -123,18 +136,20 @@ public class FrmMovie extends javax.swing.JFrame {
                                     .addComponent(lblMovieDate)
                                     .addComponent(lblMovieDuration)
                                     .addComponent(lblMoviePrice))
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                                .addGap(0, 123, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(78, 78, 78)
+                                .addGap(14, 14, 14)
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblMovieSinopsis))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(90, 90, 90)
                                 .addComponent(btnMovieBuy, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(94, 94, 94)
-                                .addComponent(btnMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(lblMovieSinopsis)))
-                        .addGap(0, 94, Short.MAX_VALUE)))
+                                .addComponent(btnMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -156,8 +171,10 @@ public class FrmMovie extends javax.swing.JFrame {
                         .addComponent(lblMoviePrice))
                     .addComponent(lblMoviePoster, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(lblMovieSinopsis)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblMovieSinopsis)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -222,6 +239,7 @@ public class FrmMovie extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMovieBuy;
     private javax.swing.JButton btnMovieExit;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblMovieAgeRestriction;

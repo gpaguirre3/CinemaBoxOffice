@@ -83,7 +83,7 @@
                           <Component id="lblAdmin" min="-2" pref="62" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="51" max="32767" attributes="0"/>
+                  <EmptySpace pref="47" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -105,12 +105,14 @@
                               <Component id="jLabel3" min="-2" pref="21" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblAminkey" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pwfPass" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblAminkey" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pwfPass" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace pref="52" max="32767" attributes="0"/>
+                          <EmptySpace pref="48" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="btnAdminLogin" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnExit" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -207,7 +209,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/ec/edu/espe/cinemaboxoffice/pictures/paswordIcon.png"/>
+              <Image iconType="3" name="/ec/edu/espe/cinemaboxoffice/pictures/passwordIcon.png"/>
             </Property>
           </Properties>
         </Component>
