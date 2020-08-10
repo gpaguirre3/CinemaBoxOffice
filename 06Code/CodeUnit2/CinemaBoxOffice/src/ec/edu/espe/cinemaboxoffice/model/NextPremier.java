@@ -11,23 +11,24 @@ import java.util.Date;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class NextPremier extends Movie{
-    private String month;
+public class NextPremier extends Movie {
+
+    private Date dateNextPremier;
 
     public NextPremier(String title, String gender, String ageRestriction,
-            int duration, String namePoster, String month) {
+            int duration, String namePoster, Date dateNextPremier) {
         super(title, gender, ageRestriction, duration, namePoster);
-        this.month = month;
+        this.dateNextPremier = dateNextPremier;
     }
-    
+
     @Override
     public String getTitle() {
         return title;
     }
 
     @Override
-    public String getMonth() {
-        return month;
+    public Date getDateNextPremier() {
+        return dateNextPremier;
     }
 
     @Override

@@ -14,9 +14,9 @@ import java.util.ArrayList;
  */
 public class MovieDaily {
 
-    public static ArrayList<Movie> getMoviesDaily(ArrayList<Movie> movies, int day) {
+    public static ArrayList<Movie> getMoviesToday(ArrayList<Movie> movies, int day) {
         ArrayList<Movie> moviesDaily = new ArrayList<>();
-        if (movies != null) {
+        if (!movies.isEmpty()) {
             for (int i = 0; i < movies.size(); i++) {
                 if (day == movies.get(i).getDateMovie().getDay()) {
                     moviesDaily.add(movies.get(i));
@@ -25,22 +25,34 @@ public class MovieDaily {
         }
         return moviesDaily;
     }
-    
+
     public static ArrayList<Movie> getMovies(ArrayList<Movie> movies, int day) {
         ArrayList<Movie> moviesDaily = new ArrayList<>();
-        if (movies != null) {   
+        if (!movies.isEmpty()) {
             for (int i = 0; i < movies.size(); i++) {
                 if (day == movies.get(i).getDateMovie().getDay()) {
                     moviesDaily.add(movies.get(i));
                 }
-                if (day + 1== movies.get(i).getDateMovie().getDay()) {
+                if (day + 1 == movies.get(i).getDateMovie().getDay()) {
                     moviesDaily.add(movies.get(i));
                 }
-                if (day + 2== movies.get(i).getDateMovie().getDay()) {
+                if (day + 2 == movies.get(i).getDateMovie().getDay()) {
                     moviesDaily.add(movies.get(i));
                 }
             }
         }
         return moviesDaily;
+    }
+
+    public static ArrayList<Movie> getMoviesForMonths(ArrayList<Movie> movies, int month) {
+        ArrayList<Movie> moviesOfTheMonth = new ArrayList<>();
+        if (!movies.isEmpty()) {
+            for (int i = 0; i < movies.size(); i++) {
+                if (month <= movies.get(i).getDateNextPremier().getMonth()) {
+                    moviesOfTheMonth.add(movies.get(i));
+                }
+            }
+        }
+        return moviesOfTheMonth;
     }
 }

@@ -39,11 +39,6 @@ public class MovieBillboard extends Movie {
     }    
 
     @Override
-    public String getMonth() {
-        return "";
-    }
-
-    @Override
     public String getSinopsis() {
         return sinopsis;
     }
@@ -70,5 +65,10 @@ public class MovieBillboard extends Movie {
    
     public float getPriceValue() {
         return price;
+    }
+
+    @Override
+    public Date getDateNextPremier() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }

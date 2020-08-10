@@ -22,6 +22,7 @@ import javax.swing.ImageIcon;
 public class FrmCinemaBox extends javax.swing.JFrame {
 
     private ArrayList<Movie> movies;
+
     /**
      * Creates new form FrmCinemaBox
      */
@@ -1008,7 +1009,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         this.setVisible(true);
         FrmMovie frmMovie = new FrmMovie();
         try {
-            frmMovie.showDataMovie(1 , movies);
+            frmMovie.showDataMovie(1, movies);
         } catch (IOException ex) {
             Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1056,7 +1057,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     }
 
     public void showBillboard(int day) throws IOException {
-        movies = MovieDaily.getMoviesDaily(Movie.consultMovies("Billboard.json"), day);
+        movies = MovieDaily.getMoviesToday(Movie.consultMovies("Billboard.json"), day);
         if (movies.size() > 0) {
             lblMoviePoster1.setIcon(showPicture(movies.get(0).getNamePoster()));
             lblMovieTitle1.setText(movies.get(0).getTitle());
@@ -1096,38 +1097,49 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     }
 
     public void showDataNextPremier() throws IOException {
-        ArrayList<Movie> movies;
-        movies = Movie.consultNextPremier("NextPremier.json");
-        lblPremierPoster1.setIcon(showPicture(movies.get(0).getNamePoster()));
-        lblPremierPoster2.setIcon(showPicture(movies.get(1).getNamePoster()));
-        lblPremierPoster3.setIcon(showPicture(movies.get(2).getNamePoster()));
-        lblPremierPoster4.setIcon(showPicture(movies.get(3).getNamePoster()));
-        lblPremierPoster5.setIcon(showPicture(movies.get(4).getNamePoster()));
-        lblPremierPoster6.setIcon(showPicture(movies.get(5).getNamePoster()));
-        lblPremierTitle1.setText(movies.get(0).getTitle());
-        lblPremierTitle2.setText(movies.get(1).getTitle());
-        lblPremierTitle3.setText(movies.get(2).getTitle());
-        lblPremierTitle4.setText(movies.get(3).getTitle());
-        lblPremierTitle5.setText(movies.get(4).getTitle());
-        lblPremierTitle6.setText(movies.get(5).getTitle());
-        lblPremierGender1.setText(movies.get(0).getGender());
-        lblPremierGender2.setText(movies.get(1).getGender());
-        lblPremierGender3.setText(movies.get(2).getGender());
-        lblPremierGender4.setText(movies.get(3).getGender());
-        lblPremierGender5.setText(movies.get(4).getGender());
-        lblPremierGender6.setText(movies.get(5).getGender());
-        lblPremierDuration1.setText(movies.get(0).getDuration());
-        lblPremierDuration2.setText(movies.get(1).getDuration());
-        lblPremierDuration3.setText(movies.get(2).getDuration());
-        lblPremierDuration4.setText(movies.get(3).getDuration());
-        lblPremierDuration5.setText(movies.get(4).getDuration());
-        lblPremierDuration6.setText(movies.get(5).getDuration());
-        lblPremierMonth1.setText(movies.get(0).getMonth());
-        lblPremierMonth2.setText(movies.get(1).getMonth());
-        lblPremierMonth3.setText(movies.get(2).getMonth());
-        lblPremierMonth4.setText(movies.get(3).getMonth());
-        lblPremierMonth5.setText(movies.get(4).getMonth());
-        lblPremierMonth6.setText(movies.get(5).getMonth());
+        ArrayList<Movie> premiers = Movie.consultNextPremier("NextPremier.json");
+        if (premiers.size() > 0) {
+            lblPremierPoster1.setIcon(showPicture(premiers.get(0).getNamePoster()));
+            lblPremierTitle1.setText(premiers.get(0).getTitle());
+            lblPremierGender1.setText(premiers.get(0).getGender());
+            lblPremierDuration1.setText(premiers.get(0).getDuration());
+            lblPremierMonth1.setText(premiers.get(0).getDateNextPremier().toGMTString());
+        }
+        if (premiers.size() > 1) {
+            lblPremierPoster2.setIcon(showPicture(premiers.get(1).getNamePoster()));
+            lblPremierTitle2.setText(premiers.get(1).getTitle());
+            lblPremierGender2.setText(premiers.get(1).getGender());
+            lblPremierDuration2.setText(premiers.get(1).getDuration());
+            lblPremierMonth2.setText(premiers.get(1).getDateNextPremier().toGMTString());
+        }
+        if (premiers.size() > 2) {
+            lblPremierPoster3.setIcon(showPicture(premiers.get(2).getNamePoster()));
+            lblPremierTitle3.setText(premiers.get(2).getTitle());
+            lblPremierGender3.setText(premiers.get(2).getGender());
+            lblPremierDuration3.setText(premiers.get(2).getDuration());
+            lblPremierMonth3.setText(premiers.get(2).getDateNextPremier().toGMTString());
+        }
+        if (premiers.size() > 3) {
+            lblPremierPoster4.setIcon(showPicture(premiers.get(3).getNamePoster()));
+            lblPremierTitle4.setText(premiers.get(3).getTitle());
+            lblPremierGender4.setText(premiers.get(3).getGender());
+            lblPremierDuration4.setText(premiers.get(3).getDuration());
+            lblPremierMonth4.setText(premiers.get(3).getDateNextPremier().toGMTString());
+        }
+        if (premiers.size() > 4) {
+            lblPremierPoster5.setIcon(showPicture(premiers.get(4).getNamePoster()));
+            lblPremierTitle5.setText(premiers.get(4).getTitle());
+            lblPremierGender5.setText(premiers.get(4).getGender());
+            lblPremierDuration5.setText(premiers.get(4).getDuration());
+            lblPremierMonth5.setText(premiers.get(4).getDateNextPremier().toGMTString());
+        }
+        if (premiers.size() > 5) {
+            lblPremierPoster6.setIcon(showPicture(premiers.get(5).getNamePoster()));
+            lblPremierTitle6.setText(premiers.get(5).getTitle());
+            lblPremierGender6.setText(premiers.get(5).getGender());
+            lblPremierDuration6.setText(premiers.get(5).getDuration());
+            lblPremierMonth6.setText(premiers.get(5).getDateNextPremier().toGMTString());
+        }
     }
 
     public ImageIcon showPicture(String namePicture) {

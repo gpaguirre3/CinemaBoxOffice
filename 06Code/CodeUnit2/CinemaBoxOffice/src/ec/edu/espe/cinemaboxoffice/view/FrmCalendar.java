@@ -87,6 +87,7 @@ public class FrmCalendar extends javax.swing.JFrame {
         FrmCinemaBox frmCinema = new FrmCinemaBox();
         try {
             frmCinema.showBillboard(day);
+            frmCinema.showDataNextPremier();
             frmCinema.setVisible(true);
         } catch (IOException ex) {
             Logger.getLogger(FrmCalendar.class.getName()).log(Level.SEVERE, null, ex);

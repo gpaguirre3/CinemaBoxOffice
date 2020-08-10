@@ -10,6 +10,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
+import ec.edu.espe.cinemaboxoffice.model.NextPremier;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
 import ec.edu.espe.filemanagerlibrary.FileManager;
 import java.io.IOException;
@@ -22,10 +23,10 @@ import java.util.ArrayList;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class MovieRecord {
+
     InputDataValidation in = new InputDataValidation();
 
     public boolean recordMovie(String fileName, Movie movie) throws IOException {
-        System.out.println(movie);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         ArrayList<Movie> movies = new ArrayList<>();
         FileManager.createFile(fileName);
@@ -34,9 +35,9 @@ public class MovieRecord {
             movies = gson.fromJson(moviesJson, ArrayList.class);
         }
         movies.add(movie);
-            FileManager.deleteFile(fileName);
-            FileManager.writeFile(fileName, gson.toJson(movies));
-            return true;
+        FileManager.deleteFile(fileName);
+        FileManager.writeFile(fileName, gson.toJson(movies));
+        return true;
     }
 
     public String defineRoom(int numberRoom) {
@@ -55,8 +56,14 @@ public class MovieRecord {
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
         if (gson.fromJson(moviesJson, ArrayList.class) != null) {
-            java.lang.reflect.Type typeMovies = new TypeToken<ArrayList<MovieBillboard>>() {
-            }.getType();
+            java.lang.reflect.Type typeMovies;
+            if ("Billboard.json".equals(fileName)) {
+                typeMovies = new TypeToken<ArrayList<MovieBillboard>>() {
+                }.getType();
+            } else {
+                typeMovies = new TypeToken<ArrayList<NextPremier>>() {
+                }.getType();
+            }
             ArrayList<Movie> movies = gson.fromJson(moviesJson, typeMovies);
             FileManager.deleteFile(fileName);
             FileManager.writeFile(fileName, gson.toJson(delete(titleMovie, movies)));

@@ -1,6 +1,6 @@
 [
   {
-    "month": "December",
+    "dateNextPremier": "Nov 28, 1900 12:00:00 AM",
     "title": "The new mutants",
     "gender": "Action",
     "ageRestriction": 18,
@@ -8,7 +8,7 @@
     "namePoster": "Mutants.jpg"
   },
   {
-    "month": "August",
+    "dateNextPremier": "Nov 28, 1900 12:00:00 AM",
     "title": "Peter Rabbit 2",
     "gender": "Action",
     "ageRestriction": 0,
@@ -16,7 +16,7 @@
     "namePoster": "Peter.jpg"
   },
   {
-    "month": "April",
+    "dateNextPremier": "Nov 28, 1900 12:00:00 AM",
     "title": "The Lovebirds",
     "gender": "Action",
     "ageRestriction": 12,
@@ -24,7 +24,7 @@
     "namePoster": "Lovebirds.jpg"
   },
   {
-    "month": "December",
+    "dateNextPremier": "Nov 28, 1900 12:00:00 AM",
     "title": "Trolls 2",
     "gender": "Action",
     "ageRestriction": 0,
@@ -32,7 +32,7 @@
     "namePoster": "Trolls.jpg"
   },
   {
-    "month": "September",
+    "dateNextPremier": "Nov 28, 1900 12:00:00 AM",
     "title": "No Time to Die",
     "gender": "Action",
     "ageRestriction": 18,
@@ -40,7 +40,7 @@
     "namePoster": "Die.jpg"
   },
   {
-    "month": "April",
+    "dateNextPremier": "Nov 28, 1900 12:00:00 AM",
     "title": "Antlers",
     "gender": "Action",
     "ageRestriction": 18,

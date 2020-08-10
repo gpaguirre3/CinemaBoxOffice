@@ -202,15 +202,25 @@ public class FrmDeleteMovie extends javax.swing.JFrame {
         });
     }
 
-    public void showListMovies() throws IOException {
+    public void showListMovies(String fileName) throws IOException {
         ArrayList<Movie> movies;
         CinemaRoom room;
-        movies = MovieDaily.getMovies(Movie.consultMovies("Billboard.json"), new Date().getDay());
+        movies = MovieDaily.getMovies(Movie.consultMovies(fileName), new Date().getDay());
         for (int i = 0; i < movies.size(); i++) {
             room = movies.get(i).getRoom();
             tblViewMoviesDelete.setValueAt(movies.get(i).getTitle(), i, 0);
             tblViewMoviesDelete.setValueAt(movies.get(i).getDate(), i, 1);
             tblViewMoviesDelete.setValueAt(room.getRoomNumber(), i, 2);
+        }
+    }
+
+    public void showListNextPremieres(String fileName) throws IOException {
+        ArrayList<Movie> movies;
+        movies = MovieDaily.getMoviesForMonths(Movie.consultNextPremier(fileName), new Date().getMonth());
+        for (int i = 0; i < movies.size(); i++) {
+            tblViewMoviesDelete.setValueAt(movies.get(i).getTitle(), i, 0);
+            tblViewMoviesDelete.setValueAt(movies.get(i).getDate(), i, 1);
+            tblViewMoviesDelete.setValueAt(movies.get(i).getGender(), i, 2);
         }
     }
 

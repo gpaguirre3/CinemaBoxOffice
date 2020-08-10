@@ -57,11 +57,9 @@ public class FrmAdmin extends javax.swing.JFrame {
         mnuRecord = new javax.swing.JMenu();
         mniRecorMovie = new javax.swing.JMenuItem();
         mniRecordNextPremier = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
         mnuDelete = new javax.swing.JMenu();
         mnuDaleteMovie = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
+        mniDeletePremier = new javax.swing.JMenuItem();
         mniAdminExit = new javax.swing.JMenuItem();
         mnuAdmin = new javax.swing.JMenu();
         mnuNewAdmin = new javax.swing.JMenuItem();
@@ -241,9 +239,6 @@ public class FrmAdmin extends javax.swing.JFrame {
         });
         mnuRecord.add(mniRecordNextPremier);
 
-        jMenuItem4.setText("Promotion");
-        mnuRecord.add(jMenuItem4);
-
         mnuAdminCinema.add(mnuRecord);
 
         mnuDelete.setText("Delete");
@@ -256,11 +251,13 @@ public class FrmAdmin extends javax.swing.JFrame {
         });
         mnuDelete.add(mnuDaleteMovie);
 
-        jMenuItem6.setText("Next Premier");
-        mnuDelete.add(jMenuItem6);
-
-        jMenuItem7.setText("Promotion");
-        mnuDelete.add(jMenuItem7);
+        mniDeletePremier.setText("Next Premier");
+        mniDeletePremier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniDeletePremierActionPerformed(evt);
+            }
+        });
+        mnuDelete.add(mniDeletePremier);
 
         mnuAdminCinema.add(mnuDelete);
 
@@ -324,7 +321,6 @@ public class FrmAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_mniAdminExitActionPerformed
 
     private void mnuNewAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuNewAdminActionPerformed
-        // TODO add your handling code here:
         new FrmNewAccounts().setVisible(true);
     }//GEN-LAST:event_mnuNewAdminActionPerformed
 
@@ -332,12 +328,23 @@ public class FrmAdmin extends javax.swing.JFrame {
         this.setVisible(false);
         FrmDeleteMovie frmDeleteMovie = new FrmDeleteMovie();
         try {
-            frmDeleteMovie.showListMovies();
+            frmDeleteMovie.showListMovies("Billboard.json");
         } catch (IOException ex) {
             Logger.getLogger(FrmAdmin.class.getName()).log(Level.SEVERE, null, ex);
         }
         frmDeleteMovie.setVisible(true);
     }//GEN-LAST:event_mnuDaleteMovieActionPerformed
+
+    private void mniDeletePremierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniDeletePremierActionPerformed
+        this.setVisible(false);
+        FrmDeleteMovie frmDeleteMovie = new FrmDeleteMovie();
+        try {
+            frmDeleteMovie.showListNextPremieres("NextPremier.json");
+        } catch (IOException ex) {
+            Logger.getLogger(FrmAdmin.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        frmDeleteMovie.setVisible(true);
+    }//GEN-LAST:event_mniDeletePremierActionPerformed
 
     /**
      * @param args the command line arguments
@@ -377,26 +384,27 @@ public class FrmAdmin extends javax.swing.JFrame {
     public void showNamesMovies() throws IOException {
         ArrayList<Movie> movies;
         movies = Movie.consultMovies("Billboard.json");
-        lblMovieTitle1.setText(movies.get(0).getTitle());
-        lblMovieTitle2.setText(movies.get(1).getTitle());
-        lblMovieTitle3.setText(movies.get(2).getTitle());
-        lblMovieTitle4.setText(movies.get(3).getTitle());
-        lblMovieTitle5.setText(movies.get(4).getTitle());
-        lblMovieTitle6.setText(movies.get(5).getTitle());
-        movies = Movie.consultMovies("NextPremier.json");
-        lblPremierTitle1.setText(movies.get(0).getTitle());
-        lblPremierTitle2.setText(movies.get(1).getTitle());
-        lblPremierTitle3.setText(movies.get(2).getTitle());
-        lblPremierTitle4.setText(movies.get(3).getTitle());
-        lblPremierTitle5.setText(movies.get(4).getTitle());
-        lblPremierTitle6.setText(movies.get(5).getTitle());
+        if (movies.size() > 5) {
+            lblMovieTitle1.setText(movies.get(0).getTitle());
+            lblMovieTitle2.setText(movies.get(1).getTitle());
+            lblMovieTitle3.setText(movies.get(2).getTitle());
+            lblMovieTitle4.setText(movies.get(3).getTitle());
+            lblMovieTitle5.setText(movies.get(4).getTitle());
+            lblMovieTitle6.setText(movies.get(5).getTitle());
+        }
+        movies = Movie.consultNextPremier("NextPremier.json");
+        if (movies.size() > 5) {
+            lblPremierTitle1.setText(movies.get(0).getTitle());
+            lblPremierTitle2.setText(movies.get(1).getTitle());
+            lblPremierTitle3.setText(movies.get(2).getTitle());
+            lblPremierTitle4.setText(movies.get(3).getTitle());
+            lblPremierTitle5.setText(movies.get(4).getTitle());
+            lblPremierTitle6.setText(movies.get(5).getTitle());
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblMovieTitle1;
@@ -414,6 +422,7 @@ public class FrmAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel lblPremierTitle6;
     private javax.swing.JLabel lblPremiers;
     private javax.swing.JMenuItem mniAdminExit;
+    private javax.swing.JMenuItem mniDeletePremier;
     private javax.swing.JMenuItem mniRecorMovie;
     private javax.swing.JMenuItem mniRecordNextPremier;
     private javax.swing.JMenu mnuAdmin;

@@ -37,7 +37,7 @@ public abstract class Movie {
 
     public static ArrayList<Movie> consultMovies(String fileName) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        ArrayList<Movie> movies;
+        ArrayList<Movie> movies = new ArrayList<>();
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
         if (gson.fromJson(moviesJson, ArrayList.class) != null) {
@@ -46,12 +46,12 @@ public abstract class Movie {
             movies = gson.fromJson(moviesJson, typeMovies);
             return movies;
         }
-        return null;
+        return movies;
     }
     
     public static ArrayList<Movie> consultNextPremier(String fileName) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        ArrayList<Movie> movies;
+        ArrayList<Movie> movies = new ArrayList<>();
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
         if (gson.fromJson(moviesJson, ArrayList.class) != null) {
@@ -60,12 +60,12 @@ public abstract class Movie {
             movies = gson.fromJson(moviesJson, typeMovies);
             return movies;
         }
-        return null;
+        return movies;
     }
 
     public abstract String getTitle();
     
-    public abstract String getMonth();
+    public abstract Date getDateNextPremier();
     
     public abstract String getSinopsis();
     
