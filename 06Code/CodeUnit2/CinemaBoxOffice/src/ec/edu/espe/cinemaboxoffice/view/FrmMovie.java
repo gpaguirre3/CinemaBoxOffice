@@ -20,14 +20,26 @@ import javax.swing.JFrame;
  */
 public class FrmMovie extends javax.swing.JFrame {
     private int numberMovie;
+    private final Movie movie;
     
     /**
      * Creates new form FrmMovie
+     * @param movie
      */
-    public FrmMovie() {
+    public FrmMovie(Movie movie) {
         initComponents();
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.movie = movie;
+        
+        lblMoviePoster.setIcon(showPicture(movie.getNamePoster()));
+        lblMovieTitle.setText(movie.getTitle());
+        lblMoviegender.setText(movie.getGender());
+        lblMovieAgeRestriction.setText(movie.getAgeRestriction());
+        lblMovieDuration.setText(movie.getDuration()+" min");
+        lblMovieDate.setText(movie.getDate());
+        lblMoviePrice.setText("$ " + movie.getPrice());
+        txaMovieSinopsis.setText(movie.getSinopsis());
     }
 
     /**
@@ -198,36 +210,17 @@ public class FrmMovie extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMovieBuyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMovieBuyActionPerformed
-        try {
-            MovieBillboard movie = (MovieBillboard)Movie.consultMovies("Billboard.json").get(this.numberMovie);
-            FrmBill bill = new FrmBill(movie);
-            bill.setVisible(true);
-            bill.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        } catch (IOException ex) {}
+        FrmBill bill = new FrmBill((MovieBillboard) movie);
+        bill.setVisible(true);
+        bill.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btnMovieBuyActionPerformed
 
     private void btnMovieExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMovieExitActionPerformed
         dispose();
     }//GEN-LAST:event_btnMovieExitActionPerformed
 
-    
-    
     public int getNumberMovie(int numberMovie){
         return numberMovie;
-    }
-    
-    public void showDataMovie(int numberMovie, ArrayList<Movie> movies ) throws IOException{
-        this.numberMovie = numberMovie -1;
-        for (int i=0; i<movies.size(); i++){
-        lblMoviePoster.setIcon(showPicture(movies.get(this.numberMovie).getNamePoster()));
-        lblMovieTitle.setText(movies.get(this.numberMovie).getTitle());
-        lblMoviegender.setText(movies.get(this.numberMovie).getGender());
-        lblMovieAgeRestriction.setText(movies.get(this.numberMovie).getAgeRestriction());
-        lblMovieDuration.setText(movies.get(this.numberMovie).getDuration()+" min");
-        lblMovieDate.setText(movies.get(this.numberMovie).getDate());
-        lblMoviePrice.setText("$ " + movies.get(this.numberMovie).getPrice());
-        txaMovieSinopsis.setText(movies.get(this.numberMovie).getSinopsis());
-        }
     }
 
     public ImageIcon showPicture(String namePicture) {

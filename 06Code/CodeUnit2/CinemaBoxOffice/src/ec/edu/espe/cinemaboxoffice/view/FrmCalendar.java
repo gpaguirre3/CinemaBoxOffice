@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.view;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFrame;
 
 /**
  *
@@ -15,11 +16,16 @@ import java.util.logging.Logger;
  */
 public class FrmCalendar extends javax.swing.JFrame {
 
+    private final FrmCinemaBox parent;
+
     /**
      * Creates new form FrmCalendar
+     * @param parent
      */
-    public FrmCalendar() {
+    public FrmCalendar(FrmCinemaBox parent) {
         initComponents();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.parent = parent;
     }
 
     /**
@@ -98,10 +104,14 @@ public class FrmCalendar extends javax.swing.JFrame {
     private void btnConfirmDateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConfirmDateMouseClicked
         FrmCalendar.day = cldMovie.getDate().getDay();
         FrmCinemaBox frmCinema = new FrmCinemaBox();
+        
+        parent.dispose();
+        
         try {
             frmCinema.showBillboard(day);
             frmCinema.showDataNextPremier();
             frmCinema.setVisible(true);
+            dispose();
         } catch (IOException ex) {
             Logger.getLogger(FrmCalendar.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -110,41 +120,6 @@ public class FrmCalendar extends javax.swing.JFrame {
     private void btnExitCalendarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitCalendarMouseClicked
         this.setVisible(false);
     }//GEN-LAST:event_btnExitCalendarMouseClicked
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmCalendar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FrmCalendar().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnConfirmDate;

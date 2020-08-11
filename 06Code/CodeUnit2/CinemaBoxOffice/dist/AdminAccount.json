@@ -1,0 +1,38 @@
+[
+  {
+    "userName": "gpaguirre",
+    "password": "djofnb2",
+    "id": "1",
+    "name": "Gabriel Aguirre"
+  },
+  {
+    "userName": "jjaleman",
+    "password": "djofnb3",
+    "id": "2",
+    "name": "Josue Aleman"
+  },
+  {
+    "userName": "jhoeld",
+    "password": "djofnb4",
+    "id": "3",
+    "name": "Jhoel Chicaiza"
+  },
+  {
+    "userName": "kevinc",
+    "password": "djofnb5",
+    "id": "4",
+    "name": "Kevin Chuquimarca"
+  },
+  {
+    "userName": "anclavijo",
+    "password": "djofnb6",
+    "id": "5",
+    "name": "Alisson Clavijo"
+  },
+  {
+    "userName": "elascano",
+    "password": "djofnb7",
+    "id": "6",
+    "name": "Edison Lascano"
+  }
+]

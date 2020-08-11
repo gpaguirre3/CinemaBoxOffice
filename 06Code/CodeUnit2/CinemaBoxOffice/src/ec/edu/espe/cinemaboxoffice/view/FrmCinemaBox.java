@@ -940,121 +940,55 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mniCinemaExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniCinemaExitActionPerformed
+        new FrmAdmin().setVisible(false);
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_mniCinemaExitActionPerformed
 
     private void mnuCinemaAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCinemaAdminActionPerformed
-        this.setVisible(false);
         FrmAdminLogin frmLogin = new FrmAdminLogin();
         frmLogin.setVisible(true);
     }//GEN-LAST:event_mnuCinemaAdminActionPerformed
 
     private void btnMovie6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie6MouseClicked
-        this.setVisible(true);
-        FrmMovie frmMovie = new FrmMovie();
-        try {
-            frmMovie.showDataMovie(6, movies);
-        } catch (IOException ex) {
-            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Movie movie = movies.get(5);
+        FrmMovie frmMovie = new FrmMovie(movie);
         frmMovie.setVisible(true);
     }//GEN-LAST:event_btnMovie6MouseClicked
 
     private void btnMovie4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie4MouseClicked
-        this.setVisible(true);
-        FrmMovie frmMovie = new FrmMovie();
-        try {
-            frmMovie.showDataMovie(4, movies);
-        } catch (IOException ex) {
-            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Movie movie = movies.get(3);
+        FrmMovie frmMovie = new FrmMovie(movie);
         frmMovie.setVisible(true);
     }//GEN-LAST:event_btnMovie4MouseClicked
 
     private void btnMovie5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie5MouseClicked
-        this.setVisible(true);
-        FrmMovie frmMovie = new FrmMovie();
-        try {
-            frmMovie.showDataMovie(5, movies);
-        } catch (IOException ex) {
-            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Movie movie = movies.get(4);
+        FrmMovie frmMovie = new FrmMovie(movie);
         frmMovie.setVisible(true);
     }//GEN-LAST:event_btnMovie5MouseClicked
 
     private void btnMovie3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie3MouseClicked
-        this.setVisible(true);
-        FrmMovie frmMovie = new FrmMovie();
-        try {
-            frmMovie.showDataMovie(3, movies);
-        } catch (IOException ex) {
-            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Movie movie = movies.get(2);
+        FrmMovie frmMovie = new FrmMovie(movie);
         frmMovie.setVisible(true);
     }//GEN-LAST:event_btnMovie3MouseClicked
 
     private void btnMovie2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie2MouseClicked
-        this.setVisible(true);
-        FrmMovie frmMovie = new FrmMovie();
-        try {
-            frmMovie.showDataMovie(2, movies);
-        } catch (IOException ex) {
-            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Movie movie = movies.get(1);
+        FrmMovie frmMovie = new FrmMovie(movie);
         frmMovie.setVisible(true);
     }//GEN-LAST:event_btnMovie2MouseClicked
 
     private void btnMovie1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovie1MouseClicked
-        this.setVisible(true);
-        FrmMovie frmMovie = new FrmMovie();
-        try {
-            frmMovie.showDataMovie(1, movies);
-        } catch (IOException ex) {
-            Logger.getLogger(FrmCinemaBox.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Movie movie = movies.get(0);
+        FrmMovie frmMovie = new FrmMovie(movie);
         frmMovie.setVisible(true);
     }//GEN-LAST:event_btnMovie1MouseClicked
 
     private void mnuCalendarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mnuCalendarMouseClicked
-        new FrmCalendar().setVisible(true);
-        this.setVisible(true);
+        new FrmCalendar(this).setVisible(true);
     }//GEN-LAST:event_mnuCalendarMouseClicked
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmCinemaBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmCinemaBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmCinemaBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmCinemaBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FrmCinemaBox().setVisible(true);
-            }
-        });
-    }
 
     public void showBillboard(int day) throws IOException {
         movies = MovieDaily.getMoviesToday(Movie.consultMovies("Billboard.json"), day);
