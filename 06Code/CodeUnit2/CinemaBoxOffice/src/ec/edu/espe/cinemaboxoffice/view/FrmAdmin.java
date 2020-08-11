@@ -297,13 +297,12 @@ public class FrmAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mniRecordNextPremierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniRecordNextPremierActionPerformed
-        this.setVisible(true);
         FrmNextPremier frmPremier = new FrmNextPremier();
         frmPremier.setVisible(true);
     }//GEN-LAST:event_mniRecordNextPremierActionPerformed
 
     private void mniRecorMovieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniRecorMovieActionPerformed
-        this.setVisible(true);
+        
         FrmMovieBillboard frmBillboard = new FrmMovieBillboard();
         frmBillboard.setVisible(true);
     }//GEN-LAST:event_mniRecorMovieActionPerformed
@@ -325,7 +324,7 @@ public class FrmAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_mnuNewAdminActionPerformed
 
     private void mnuDaleteMovieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuDaleteMovieActionPerformed
-        this.setVisible(false);
+       
         FrmDeleteMovie frmDeleteMovie = new FrmDeleteMovie();
         try {
             frmDeleteMovie.showListMovies("Billboard.json");
@@ -336,7 +335,7 @@ public class FrmAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_mnuDaleteMovieActionPerformed
 
     private void mniDeletePremierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniDeletePremierActionPerformed
-        this.setVisible(false);
+       
         FrmDeleteMovie frmDeleteMovie = new FrmDeleteMovie();
         try {
             frmDeleteMovie.showListNextPremieres("NextPremier.json");
