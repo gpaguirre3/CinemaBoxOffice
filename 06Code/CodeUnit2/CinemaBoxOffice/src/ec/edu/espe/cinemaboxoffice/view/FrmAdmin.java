@@ -9,6 +9,7 @@ import ec.edu.espe.cinemaboxoffice.model.Movie;
 import java.awt.Color;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -75,53 +76,48 @@ public class FrmAdmin extends javax.swing.JFrame {
 
         lblMovieTitle2.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieTitle2.setForeground(new java.awt.Color(255, 255, 255));
-        lblMovieTitle2.setText("jLabel2");
+        lblMovieTitle2.setText("-");
 
         lblMovieTitle3.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieTitle3.setForeground(new java.awt.Color(255, 255, 255));
-        lblMovieTitle3.setText("jLabel3");
+        lblMovieTitle3.setText("-");
 
         lblMovieTitle1.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieTitle1.setForeground(new java.awt.Color(255, 255, 255));
-        lblMovieTitle1.setText("jLabel4");
+        lblMovieTitle1.setText("-");
 
         lblMovieTitle4.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieTitle4.setForeground(new java.awt.Color(255, 255, 255));
-        lblMovieTitle4.setText("jLabel5");
+        lblMovieTitle4.setText("-");
 
         lblMovieTitle5.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieTitle5.setForeground(new java.awt.Color(255, 255, 255));
-        lblMovieTitle5.setText("jLabel6");
+        lblMovieTitle5.setText("-");
 
         lblMovieTitle6.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieTitle6.setForeground(new java.awt.Color(255, 255, 255));
-        lblMovieTitle6.setText("jLabel7");
+        lblMovieTitle6.setText("-");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblMovieTitle3)
-                                    .addComponent(lblMovieTitle5))
-                                .addGap(186, 186, 186)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblMovieTitle4)
-                                    .addComponent(lblMovieTitle6)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(lblMovieTitle1)
-                                .addGap(186, 186, 186)
-                                .addComponent(lblMovieTitle2))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(240, 240, 240)
-                        .addComponent(lblMovies, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(240, 240, 240)
+                .addComponent(lblMovies, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblMovieTitle5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
+                    .addComponent(lblMovieTitle3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblMovieTitle1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblMovieTitle2, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                    .addComponent(lblMovieTitle4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblMovieTitle6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(97, 97, 97))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -136,38 +132,38 @@ public class FrmAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblMovieTitle3)
                     .addComponent(lblMovieTitle4))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblMovieTitle5)
                     .addComponent(lblMovieTitle6))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 51));
 
         lblPremierTitle2.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblPremierTitle2.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle2.setText("jLabel9");
+        lblPremierTitle2.setText("-");
 
         lblPremierTitle1.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblPremierTitle1.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle1.setText("jLabel10");
+        lblPremierTitle1.setText("-");
 
         lblPremierTitle3.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblPremierTitle3.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle3.setText("jLabel11");
+        lblPremierTitle3.setText("-");
 
         lblPremierTitle4.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblPremierTitle4.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle4.setText("jLabel12");
+        lblPremierTitle4.setText("-");
 
         lblPremierTitle6.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblPremierTitle6.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle6.setText("jLabel13");
+        lblPremierTitle6.setText("-");
 
         lblPremierTitle5.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblPremierTitle5.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle5.setText("jLabel14");
+        lblPremierTitle5.setText("-");
 
         lblPremiers.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremiers.setForeground(new java.awt.Color(255, 255, 255));
@@ -180,24 +176,20 @@ public class FrmAdmin extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(85, 85, 85)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblPremierTitle3)
-                                    .addComponent(lblPremierTitle5))
-                                .addGap(185, 185, 185)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblPremierTitle4)
-                                    .addComponent(lblPremierTitle6)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(lblPremierTitle1)
-                                .addGap(185, 185, 185)
-                                .addComponent(lblPremierTitle2))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(223, 223, 223)
-                        .addComponent(lblPremiers)))
-                .addContainerGap(196, Short.MAX_VALUE))
+                        .addComponent(lblPremiers))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblPremierTitle1, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
+                            .addComponent(lblPremierTitle5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblPremierTitle3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(57, 57, 57)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(lblPremierTitle2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                            .addComponent(lblPremierTitle4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblPremierTitle6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -318,6 +310,14 @@ public class FrmAdmin extends javax.swing.JFrame {
 
     private void mniAdminExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniAdminExitActionPerformed
         this.setVisible(false);
+        FrmCinemaBox frmCinema = new FrmCinemaBox();
+        try {
+            frmCinema.showBillboard(new Date().getDay());
+            frmCinema.showDataNextPremier();
+            frmCinema.setVisible(true);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCalendar.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_mniAdminExitActionPerformed
 
     private void mnuNewAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuNewAdminActionPerformed

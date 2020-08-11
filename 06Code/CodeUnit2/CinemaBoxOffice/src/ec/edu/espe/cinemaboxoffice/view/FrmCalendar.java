@@ -33,15 +33,23 @@ public class FrmCalendar extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         cldMovie = new com.toedter.calendar.JCalendar();
-        jButton1 = new javax.swing.JButton();
+        btnConfirmDate = new javax.swing.JButton();
+        btnExitCalendar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calendar");
 
-        jButton1.setText("Ok");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnConfirmDate.setText("Ok");
+        btnConfirmDate.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
+                btnConfirmDateMouseClicked(evt);
+            }
+        });
+
+        btnExitCalendar.setText("Exit");
+        btnExitCalendar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnExitCalendarMouseClicked(evt);
             }
         });
 
@@ -50,13 +58,16 @@ public class FrmCalendar extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(cldMovie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(cldMovie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(81, 81, 81)
+                        .addComponent(btnConfirmDate, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(76, 76, 76)
+                        .addComponent(btnExitCalendar, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(156, 156, 156))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -64,7 +75,9 @@ public class FrmCalendar extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(cldMovie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnConfirmDate)
+                    .addComponent(btnExitCalendar))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
@@ -82,7 +95,7 @@ public class FrmCalendar extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     private static int day;
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void btnConfirmDateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConfirmDateMouseClicked
         FrmCalendar.day = cldMovie.getDate().getDay();
         FrmCinemaBox frmCinema = new FrmCinemaBox();
         try {
@@ -92,7 +105,11 @@ public class FrmCalendar extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(FrmCalendar.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jButton1MouseClicked
+    }//GEN-LAST:event_btnConfirmDateMouseClicked
+
+    private void btnExitCalendarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitCalendarMouseClicked
+        this.setVisible(false);
+    }//GEN-LAST:event_btnExitCalendarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -130,8 +147,9 @@ public class FrmCalendar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnConfirmDate;
+    private javax.swing.JButton btnExitCalendar;
     private com.toedter.calendar.JCalendar cldMovie;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

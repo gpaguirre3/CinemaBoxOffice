@@ -7,6 +7,7 @@ package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.controller.LogInController;
 import java.io.IOException;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -252,6 +253,14 @@ public class FrmAdminLogin extends javax.swing.JFrame {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         this.setVisible(false);
+        FrmCinemaBox frmCinema = new FrmCinemaBox();
+        try {
+            frmCinema.showBillboard(new Date().getDay());
+            frmCinema.showDataNextPremier();
+            frmCinema.setVisible(true);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmCalendar.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void txtUsernameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsernameKeyTyped

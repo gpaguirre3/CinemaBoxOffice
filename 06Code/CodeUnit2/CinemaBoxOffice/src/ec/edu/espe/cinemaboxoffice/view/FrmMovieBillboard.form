@@ -24,12 +24,12 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="pnlMovieBillboard" min="-2" max="-2" attributes="0"/>
+          <Component id="pnlMovieBillboard" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="pnlMovieBillboard" alignment="1" max="32767" attributes="0"/>
+          <Component id="pnlMovieBillboard" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -80,57 +80,53 @@
                               <Component id="lblBillboardDate" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace pref="156" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Component id="dtcDateMovie" min="-2" pref="156" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="cbxBillboardHour" min="-2" pref="50" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="lblBillboardHour" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Component id="cbxBillboardMin" min="-2" pref="52" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
+                                      <Component id="btnBillboardExit" min="-2" pref="70" max="-2" attributes="0"/>
+                                      <Component id="lblBillboardMin" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace pref="46" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
                                           <Component id="btnBilboradDiscard" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                                           <Component id="btnBillboardSave" min="-2" pref="74" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
-                                          <Component id="btnBillboardExit" min="-2" pref="70" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="284" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="372" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jScrollPane1" min="-2" pref="304" max="-2" attributes="0"/>
                                               <Group type="102" attributes="0">
-                                                  <Component id="lblBillboardPoster" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                                  <Component id="txtPoster" min="-2" pref="162" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="lblBillboardPoster" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Component id="txtPoster" min="-2" pref="162" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
                                               </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                                  <Component id="cbxBillboardDay" min="-2" pref="56" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="lblBillboardDay" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="cbxBillboardMonth" min="-2" pref="54" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="lblBillboardMonth" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Component id="cbxBillboardYear" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="lblBillboardYear" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="cbxBillboardHour" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="lblBillboardHour" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="cbxBillboardMin" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="lblBillboardMin" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -155,9 +151,7 @@
                               <Component id="cbxAgeRestriction" min="-2" pref="162" max="-2" attributes="0"/>
                               <Component id="cbxBillboardGender" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" min="-2" pref="304" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -166,28 +160,35 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                          <Component id="lblMovieBillboard" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="txtTitle" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblBillboardTitle" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="lblMovieBillboard" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="txtTitle" min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblBillboardTitle" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblBillboardPoster" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lblBillboardPoster" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="txtPoster" min="-2" pref="29" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="txtPoster" min="-2" pref="29" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -217,7 +218,7 @@
                                   <Component id="lblBillboardPrice" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace type="separate" max="32767" attributes="0"/>
+                          <EmptySpace type="separate" pref="27" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -225,20 +226,17 @@
                                   <Component id="cbxBillboardGender" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblBillboardDate" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
-                              <Component id="cbxBillboardDay" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cbxBillboardMonth" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cbxBillboardYear" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cbxBillboardHour" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cbxBillboardMin" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblBillboardDay" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblBillboardMonth" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblBillboardYear" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblBillboardHour" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblBillboardMin" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblBillboardDate" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                  <Component id="cbxBillboardHour" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbxBillboardMin" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblBillboardHour" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblBillboardMin" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="dtcDateMovie" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -249,13 +247,10 @@
                                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="jScrollPane1" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnBilboradDiscard" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnBillboardSave" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -435,90 +430,6 @@
             <Property name="text" type="java.lang.String" value="Duration:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="cbxBillboardDay">
-          <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="30">
-                <StringItem index="0" value="01"/>
-                <StringItem index="1" value="02"/>
-                <StringItem index="2" value="03"/>
-                <StringItem index="3" value="04"/>
-                <StringItem index="4" value="05"/>
-                <StringItem index="5" value="06"/>
-                <StringItem index="6" value="07"/>
-                <StringItem index="7" value="08"/>
-                <StringItem index="8" value="09"/>
-                <StringItem index="9" value="10"/>
-                <StringItem index="10" value="11"/>
-                <StringItem index="11" value="12"/>
-                <StringItem index="12" value="13"/>
-                <StringItem index="13" value="14"/>
-                <StringItem index="14" value="15"/>
-                <StringItem index="15" value="16"/>
-                <StringItem index="16" value="17"/>
-                <StringItem index="17" value="18"/>
-                <StringItem index="18" value="19"/>
-                <StringItem index="19" value="20"/>
-                <StringItem index="20" value="21"/>
-                <StringItem index="21" value="22"/>
-                <StringItem index="22" value="23"/>
-                <StringItem index="23" value="24"/>
-                <StringItem index="24" value="25"/>
-                <StringItem index="25" value="26"/>
-                <StringItem index="26" value="27"/>
-                <StringItem index="27" value="28"/>
-                <StringItem index="28" value="29"/>
-                <StringItem index="29" value="30"/>
-              </StringArray>
-            </Property>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JComboBox" name="cbxBillboardMonth">
-          <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="12">
-                <StringItem index="0" value="01"/>
-                <StringItem index="1" value="02"/>
-                <StringItem index="2" value="03"/>
-                <StringItem index="3" value="04"/>
-                <StringItem index="4" value="05"/>
-                <StringItem index="5" value="06"/>
-                <StringItem index="6" value="07"/>
-                <StringItem index="7" value="08"/>
-                <StringItem index="8" value="09"/>
-                <StringItem index="9" value="10"/>
-                <StringItem index="10" value="11"/>
-                <StringItem index="11" value="12"/>
-              </StringArray>
-            </Property>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-          </AuxValues>
-        </Component>
-        <Component class="javax.swing.JComboBox" name="cbxBillboardYear">
-          <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="6">
-                <StringItem index="0" value="2020"/>
-                <StringItem index="1" value="2021"/>
-                <StringItem index="2" value="2022"/>
-                <StringItem index="3" value="2023"/>
-                <StringItem index="4" value="2024"/>
-                <StringItem index="5" value="2025"/>
-              </StringArray>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbxBillboardYearActionPerformed"/>
-          </Events>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-          </AuxValues>
-        </Component>
         <Component class="javax.swing.JSpinner" name="spnDuration">
           <Properties>
             <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
@@ -590,30 +501,6 @@
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lblBillboardDay">
-          <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="day"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lblBillboardMonth">
-          <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="month"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lblBillboardYear">
-          <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="year"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblBillboardHour">
           <Properties>
@@ -724,6 +611,8 @@
               <Image iconType="3" name="/ec/edu/espe/cinemaboxoffice/pictures/posterIcon.png"/>
             </Property>
           </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="dtcDateMovie">
         </Component>
       </SubComponents>
     </Container>

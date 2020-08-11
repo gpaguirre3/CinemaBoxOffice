@@ -559,7 +559,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
             .addGroup(pnlPremier1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblPremierPoster1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(pnlPremier1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblPremierTitle1)
                     .addComponent(lblPremierGender1)
@@ -940,12 +940,12 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mniCinemaExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniCinemaExitActionPerformed
-        new FrmAdmin().setVisible(false);
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_mniCinemaExitActionPerformed
 
     private void mnuCinemaAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCinemaAdminActionPerformed
+        this.setVisible(false);
         FrmAdminLogin frmLogin = new FrmAdminLogin();
         frmLogin.setVisible(true);
     }//GEN-LAST:event_mnuCinemaAdminActionPerformed
