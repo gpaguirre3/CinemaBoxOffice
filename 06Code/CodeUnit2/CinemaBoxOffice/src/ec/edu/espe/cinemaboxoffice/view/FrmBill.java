@@ -44,7 +44,17 @@ public class FrmBill extends javax.swing.JFrame {
         
         int hours = movie.getDurationValue() / 60;
         int minutes = movie.getDurationValue();
-        int seconds = movie.getDurationValue() * 60;
+            if(minutes > 180){
+                minutes = minutes - 180;
+            }
+            else if (minutes > 120){
+                minutes = minutes - 120;
+            }
+            else{
+                minutes = minutes - 60;
+            }
+            
+        int seconds = movie.getDurationValue()*0;
         
         lblTitle.setText(movie.getTitle());
         lblDuration.setText(String.format("%d:%d:%d", hours, minutes, seconds));

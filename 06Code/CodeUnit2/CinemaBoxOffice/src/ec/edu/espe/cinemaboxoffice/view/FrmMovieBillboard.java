@@ -133,7 +133,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         lblBillboardDuration.setForeground(new java.awt.Color(255, 255, 255));
         lblBillboardDuration.setText("Duration:");
 
-        spnDuration.setModel(new javax.swing.SpinnerNumberModel(1, 1, 9, 1));
+        spnDuration.setModel(new javax.swing.SpinnerNumberModel(1, 1, 300, 1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/cinema logo.png"))); // NOI18N
 
@@ -154,6 +154,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         lblBillboardMin.setForeground(new java.awt.Color(255, 255, 255));
         lblBillboardMin.setText("min");
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("min");
 
         jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
@@ -161,7 +162,9 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         jLabel4.setText("Synopsis");
 
         txaSinopsis.setColumns(20);
+        txaSinopsis.setLineWrap(true);
         txaSinopsis.setRows(5);
+        txaSinopsis.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txaSinopsis);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/titleIcon.png"))); // NOI18N
@@ -375,7 +378,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         String title = txtTitle.getText();
         String gender = cbxBillboardGender.getSelectedItem().toString();
         String age = cbxAgeRestriction.getSelectedItem().toString();
-        String sPrice = txtPrice.getText(); //El precio en String para validar la entrada.
+        String sPrice = txtPrice.getText(); 
         int duration = Integer.parseInt(spnDuration.getValue().toString());
         String namePoster = txtPoster.getText() + ".jpg";
         int roomNumber = Integer.parseInt(cbxBillboardRoom.getSelectedItem().
@@ -394,18 +397,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
             return;
         }
 
-        if (sPrice.trim().isEmpty()) {
-            JOptionPane.showMessageDialog(
-                    null, "Price is required!", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        } else if (!sPrice.matches("[-+]?[0-9]*\\\\.?[0-9]+")) {
-            JOptionPane.showMessageDialog(
-                    null, "Please, type price as a float",
-                    "Error", JOptionPane.ERROR_MESSAGE);
-            txtPrice.setText("");
-            return;
-        }
-        float price = Float.parseFloat(sPrice); //El precio es de tipo float despues de ser validado.
+        float price = Float.parseFloat(sPrice);
         
         CinemaRoom room = new CinemaRoom(roomNumber, record.
                 defineRoom(roomNumber), CinemaRoom.buildSeat());
