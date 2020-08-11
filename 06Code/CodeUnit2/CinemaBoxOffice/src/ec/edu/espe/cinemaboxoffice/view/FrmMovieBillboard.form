@@ -102,7 +102,7 @@
                                               <Group type="102" attributes="0">
                                                   <Component id="lblBillboardPoster" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                                  <Component id="txfBillboardPoster" min="-2" pref="162" max="-2" attributes="0"/>
+                                                  <Component id="txtPoster" min="-2" pref="162" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
@@ -150,8 +150,8 @@
                                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="cbxBillboardRoom" min="-2" pref="48" max="-2" attributes="0"/>
-                              <Component id="txtBillboardPrice" min="-2" pref="162" max="-2" attributes="0"/>
-                              <Component id="txfBillboardTitle" min="-2" pref="160" max="-2" attributes="0"/>
+                              <Component id="txtPrice" min="-2" pref="162" max="-2" attributes="0"/>
+                              <Component id="txtTitle" min="-2" pref="160" max="-2" attributes="0"/>
                               <Component id="cbxAgeRestriction" min="-2" pref="162" max="-2" attributes="0"/>
                               <Component id="cbxBillboardGender" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
                           </Group>
@@ -178,7 +178,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="txfBillboardTitle" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="txtTitle" min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblBillboardTitle" min="-2" max="-2" attributes="0"/>
@@ -187,7 +187,7 @@
                           <Component id="lblBillboardPoster" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="txfBillboardPoster" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="txtPoster" min="-2" pref="29" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -211,7 +211,7 @@
                           </Group>
                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="txtBillboardPrice" min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="txtPrice" min="-2" pref="29" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblBillboardPrice" min="-2" max="-2" attributes="0"/>
@@ -311,7 +311,7 @@
             <Property name="text" type="java.lang.String" value="Room:"/>
           </Properties>
         </Component>
-        <Component class="java.awt.TextField" name="txfBillboardPoster">
+        <Component class="java.awt.TextField" name="txtPoster">
         </Component>
         <Component class="javax.swing.JComboBox" name="cbxBillboardRoom">
           <Properties>
@@ -388,7 +388,7 @@
             <Property name="text" type="java.lang.String" value="Age Restriction:"/>
           </Properties>
         </Component>
-        <Component class="java.awt.TextField" name="txtBillboardPrice">
+        <Component class="java.awt.TextField" name="txtPrice">
         </Component>
         <Component class="javax.swing.JComboBox" name="cbxAgeRestriction">
           <Properties>
@@ -404,7 +404,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="java.awt.TextField" name="txfBillboardTitle">
+        <Component class="java.awt.TextField" name="txtTitle">
         </Component>
         <Component class="javax.swing.JComboBox" name="cbxBillboardGender">
           <Properties>

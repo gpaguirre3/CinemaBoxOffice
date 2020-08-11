@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -41,7 +42,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         lblBillboardDate = new javax.swing.JLabel();
         lblBillboardPrice = new javax.swing.JLabel();
         lblBillboardRoom = new javax.swing.JLabel();
-        txfBillboardPoster = new java.awt.TextField();
+        txtPoster = new java.awt.TextField();
         cbxBillboardRoom = new javax.swing.JComboBox<>();
         btnBilboradDiscard = new javax.swing.JButton();
         btnBillboardSave = new javax.swing.JButton();
@@ -49,9 +50,9 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         lblBillboardGender = new javax.swing.JLabel();
         lblBillboardPoster = new javax.swing.JLabel();
         lblBillboardAge = new javax.swing.JLabel();
-        txtBillboardPrice = new java.awt.TextField();
+        txtPrice = new java.awt.TextField();
         cbxAgeRestriction = new javax.swing.JComboBox<>();
-        txfBillboardTitle = new java.awt.TextField();
+        txtTitle = new java.awt.TextField();
         cbxBillboardGender = new javax.swing.JComboBox<>();
         lblBillboardDuration = new javax.swing.JLabel();
         cbxBillboardDay = new javax.swing.JComboBox<>();
@@ -259,7 +260,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                                             .addGroup(pnlMovieBillboardLayout.createSequentialGroup()
                                                 .addComponent(lblBillboardPoster)
                                                 .addGap(30, 30, 30)
-                                                .addComponent(txfBillboardPoster, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(txtPoster, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGap(61, 61, 61))))
                             .addGroup(pnlMovieBillboardLayout.createSequentialGroup()
                                 .addGap(75, 75, 75)
@@ -297,8 +298,8 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel1))
                             .addComponent(cbxBillboardRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtBillboardPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txfBillboardTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cbxAgeRestriction, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cbxBillboardGender, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(98, 98, 98)
@@ -317,14 +318,14 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                         .addComponent(lblMovieBillboard)))
                 .addGap(18, 18, 18)
                 .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txfBillboardTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel2)
                         .addComponent(lblBillboardTitle))
                     .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(lblBillboardPoster)
                         .addComponent(jLabel12))
-                    .addComponent(txfBillboardPoster, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPoster, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
@@ -343,7 +344,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                                 .addComponent(cbxAgeRestriction, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(24, 24, 24)
                         .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtBillboardPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel5)
                                 .addComponent(lblBillboardPrice)))
@@ -411,19 +412,45 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
 
     private void btnBillboardSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBillboardSaveMouseClicked
         MovieRecord record = new MovieRecord();
-        String title = txfBillboardTitle.getText();
+        String title = txtTitle.getText();
         String gender = cbxBillboardGender.getSelectedItem().toString();
         String age = cbxAgeRestriction.getSelectedItem().toString();
+        String sPrice = txtPrice.getText(); //El precio en String para validar la entrada.
         int duration = Integer.parseInt(spnDuration.getValue().toString());
-        String namePoster = txfBillboardPoster.getText() + ".jpg";
-        float price = Float.parseFloat(txtBillboardPrice.getText());
+        String namePoster = txtPoster.getText() + ".jpg";
         int roomNumber = Integer.parseInt(cbxBillboardRoom.getSelectedItem().
-            toString());
+                toString());
         String sinopsis = txaSinopsis.getText();
+
+        if (title.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(
+                    null, "Titles are required!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        } else if (!title.matches("^[ A-Za-z0-9]+$")) {
+            JOptionPane.showMessageDialog(
+                    null, "Special characters are not allowed on titles",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+            txtTitle.setText("");
+            return;
+        }
+
+        if (sPrice.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(
+                    null, "Price is required!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        } else if (!sPrice.matches("[-+]?[0-9]*\\\\.?[0-9]+")) {
+            JOptionPane.showMessageDialog(
+                    null, "Please, type price as a float",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+            txtPrice.setText("");
+            return;
+        }
+        float price = Float.parseFloat(sPrice); //El precio es de tipo float despues de ser validado.
+        
         CinemaRoom room = new CinemaRoom(roomNumber, record.
-            defineRoom(roomNumber), CinemaRoom.buildSeat());
+                defineRoom(roomNumber), CinemaRoom.buildSeat());
         MovieBillboard movie = new MovieBillboard(title, gender, age, duration,
-            namePoster, sinopsis,  recordDate(), price, room);
+                namePoster, sinopsis, recordDate(), price, room);
         try {
             record.recordMovie("Billboard.json", movie);
         } catch (IOException ex) {
@@ -431,7 +458,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnBillboardSaveMouseClicked
 
-    public Date recordDate(){
+    public Date recordDate() {
         int year = Integer.parseInt(cbxBillboardYear.getSelectedItem().toString()) - 1900;
         int month = Integer.parseInt(cbxBillboardMonth.getSelectedItem().toString()) - 1;
         int day = Integer.parseInt(cbxBillboardDay.getSelectedItem().toString());
@@ -439,7 +466,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         int minute = Integer.parseInt(cbxBillboardMin.getSelectedItem().toString());
         return new Date(year, month, day, hour, minute);
     }
-    
+
     /**
      * @param args the command line arguments
      */
@@ -517,8 +544,8 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
     private javax.swing.JPanel pnlMovieBillboard;
     private javax.swing.JSpinner spnDuration;
     private javax.swing.JTextArea txaSinopsis;
-    private java.awt.TextField txfBillboardPoster;
-    private java.awt.TextField txfBillboardTitle;
-    private java.awt.TextField txtBillboardPrice;
+    private java.awt.TextField txtPoster;
+    private java.awt.TextField txtPrice;
+    private java.awt.TextField txtTitle;
     // End of variables declaration//GEN-END:variables
 }
