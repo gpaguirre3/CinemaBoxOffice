@@ -80,7 +80,7 @@ public class MovieRecord {
         return movies;
     }
 
-    public void controlSeats(Movie movie, int x, int y) throws IOException {
+    public void controlSeats(Movie movie, int x, int y, boolean seatAvailability) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         ArrayList<Movie> movies = Movie.consultMovies("Billboard.json");
         for (int z = 0; z < movies.size(); z++) {
@@ -89,8 +89,7 @@ public class MovieRecord {
                 for (int i = 0; i < 15; i++) {
                     for (int j = 0; j < 10; j++) {
                         if (i == x & j == y) {
-                            movie.getRoom().getSeats()[cont].setSeatAvailability(true);
-                            System.out.println(movie.getRoom().getSeats()[cont].isSeatAvailableOrBusy());
+                            movies.get(z).getRoom().getSeats()[cont].setSeatAvailability(seatAvailability);
                         }
                         cont++;
                     }

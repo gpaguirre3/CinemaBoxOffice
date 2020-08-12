@@ -8,11 +8,11 @@ package ec.edu.espe.cinemaboxoffice.view;
 import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
-import ec.edu.espe.cinemaboxoffice.model.Seat;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -68,7 +68,15 @@ public class FrmSeatsControl extends javax.swing.JFrame {
             new String [] {
                 "Column 1", "Column 2", "Column 3", "Column 4", "Column 5", "Column 6", "Column 7", "Column 8", "Column 9", "Column 10"
             }
-        ));
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
         tblSeats.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tblSeatsMouseClicked(evt);
@@ -132,17 +140,22 @@ public class FrmSeatsControl extends javax.swing.JFrame {
 
     private void tblSeatsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblSeatsMouseClicked
         tblSeats.setEnabled(false);
-        if (evt.getClickCount() == 2) {
+        int x = tblSeats.rowAtPoint(evt.getPoint());
+        int y = tblSeats.columnAtPoint(evt.getPoint());
+        if ("available".equals(tblSeats.getValueAt(x, y))) {
             MovieRecord record = new MovieRecord();
             try {
-                record.controlSeats(movie, tblSeats.rowAtPoint(evt.getPoint()),
-                        tblSeats.columnAtPoint(evt.getPoint()));
+                record.controlSeats(movie, x, y, true);
                 FrmBill bill = new FrmBill((MovieBillboard) movie);
+                FrmBill.x = x;
+                FrmBill.y = y;
                 bill.setVisible(true);
                 bill.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             } catch (IOException ex) {
                 Logger.getLogger(FrmSeatsControl.class.getName()).log(Level.SEVERE, null, ex);
             }
+        } else {
+            JOptionPane.showMessageDialog(null, "seat not available", "Seat control", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_tblSeatsMouseClicked
 
@@ -157,11 +170,11 @@ public class FrmSeatsControl extends javax.swing.JFrame {
             for (int j = 0; j < 10; j++) {
                 seatAvailability = movie.getRoom().getSeats()[cont].isSeatAvailableOrBusy();
                 if (!seatAvailability) {
-                    tblSeats.setValueAt("available" , i, j);
+                    tblSeats.setValueAt("available", i, j);
                 } else {
-                    tblSeats.setValueAt("occupied" , i, j);
+                    tblSeats.setValueAt("occupied", i, j);
                 }
-                cont ++;
+                cont++;
             }
         }
     }

@@ -362,65 +362,37 @@ public class FrmNewAccounts extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSignUpActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        // TODO add your handling code here:
         this.setVisible(false);
         new FrmAdmin().setVisible(true);
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void txtIdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIdKeyTyped
         char c = evt.getKeyChar();
-        if(c<'0' || c>'9') evt.consume();
+        if (c < '0' || c > '9') {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtIdKeyTyped
 
     private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNameKeyTyped
         char c = evt.getKeyChar();
-        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'Ñ') && c !=KeyEvent.VK_SPACE)  evt.consume();
+        if ((c < 'a' || c > 'z') && (c < 'A') | c > 'Z' && (c < 'Ñ') && c != KeyEvent.VK_SPACE) {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtNameKeyTyped
 
     private void txtUsernameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsernameKeyTyped
         char c = evt.getKeyChar();
-        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'0') | c>'9' && (c<'Ñ'))  evt.consume();
+        if ((c < 'a' || c > 'z') && (c < 'A') | c > 'Z' && (c < '0') | c > '9' && (c < 'Ñ')) {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtUsernameKeyTyped
 
     private void pwfPassKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_pwfPassKeyTyped
         char c = evt.getKeyChar();
-        if((c<'a' || c>'z') && (c<'A') | c>'Z' && (c<'0') | c>'9' && (c<'Ñ'))  evt.consume();
-    }//GEN-LAST:event_pwfPassKeyTyped
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmNewAccounts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmNewAccounts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmNewAccounts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmNewAccounts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        if ((c < 'a' || c > 'z') && (c < 'A') | c > 'Z' && (c < '0') | c > '9' && (c < 'Ñ')) {
+            evt.consume();
         }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FrmNewAccounts().setVisible(true);
-            }
-        });
-    }
+    }//GEN-LAST:event_pwfPassKeyTyped
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnExit;

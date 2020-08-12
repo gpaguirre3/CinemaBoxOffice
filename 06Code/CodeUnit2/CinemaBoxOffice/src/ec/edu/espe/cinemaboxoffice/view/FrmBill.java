@@ -7,9 +7,11 @@ package ec.edu.espe.cinemaboxoffice.view;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
 import ec.edu.espe.cinemaboxoffice.model.Invoice;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
@@ -17,6 +19,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -24,8 +28,11 @@ import javax.swing.JOptionPane;
  * @author Gabriel Aguirre
  */
 public class FrmBill extends javax.swing.JFrame {
+
     private MovieBillboard movie;
-    
+    static int x;
+    static int y;
+
     /**
      * Creates new form FrmBill
      */
@@ -33,37 +40,35 @@ public class FrmBill extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         this.movie = movie;
-        
+
         this.movie = movie;
-        
+
         int currentYear = LocalDate.now().getYear();
-        
+
         for (int year = currentYear; year <= currentYear + 20; year++) {
             cmbxYear.addItem(String.valueOf(year));
         }
-        
+
         int hours = movie.getDurationValue() / 60;
         int minutes = movie.getDurationValue();
-            if(minutes > 180){
-                minutes = minutes - 180;
-            }
-            else if (minutes > 120){
-                minutes = minutes - 120;
-            }
-            else{
-                minutes = minutes - 60;
-            }
-            
-        int seconds = movie.getDurationValue()*0;
-        
+        if (minutes > 180) {
+            minutes = minutes - 180;
+        } else if (minutes > 120) {
+            minutes = minutes - 120;
+        } else {
+            minutes = minutes - 60;
+        }
+
+        int seconds = movie.getDurationValue() * 0;
+
         lblTitle.setText(movie.getTitle());
         lblDuration.setText(String.format("%d:%d:%d", hours, minutes, seconds));
         txaSinopsis.setText(movie.getSinopsis());
-        
+
         double subtotal = ((movie.getPriceValue()) - (movie.getPriceValue() * 0.12));
         double vat = (movie.getPriceValue() * 0.12);
         double total = subtotal + vat;
-        
+
         lblSubTotal.setText(new DecimalFormat("#.##").format(subtotal));
         lblVat.setText(new DecimalFormat("#.##").format(vat));
         lblTotal.setText(new DecimalFormat("#.##").format(total));
@@ -367,89 +372,96 @@ public class FrmBill extends javax.swing.JFrame {
         String identifyCard = txtIdentifyCard.getText();
         //int totalTickets = (int)spinnerTotalTickets.getValue();
         String creditCard = txtCreditCard.getText();
-        int year = Integer.parseInt((String)cmbxYear.getSelectedItem());
-        int month = Integer.parseInt((String)cmbxMonth.getSelectedItem());
+        int year = Integer.parseInt((String) cmbxYear.getSelectedItem());
+        int month = Integer.parseInt((String) cmbxMonth.getSelectedItem());
         String securityCode = txtSecurityCode.getText();
-        
+
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        
+
         if (fullName.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
-                null, "Full name is required", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "Full name is required", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!fullName.matches("^[a-zA-Z ]{2,24}+$")) {
             JOptionPane.showMessageDialog(
-                null, "Full name can have only letters and its length must be between 3 and 16", 
+                    null, "Full name can have only letters and its length must be between 3 and 16",
                     "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        
+
         if (identifyCard.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
-                null, "identify card is required", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "identify card is required", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!InputDataValidation.validateCI(identifyCard)) {
             JOptionPane.showMessageDialog(
-                null, "identify card was wrong", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "identify card was wrong", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        
+
         if (creditCard.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
-                null, "credit card was wrong", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "credit card was wrong", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!InputDataValidation.checkCard(creditCard)) {
             JOptionPane.showMessageDialog(
-                null, "credit card was wrong", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "credit card was wrong", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        
+
         if (securityCode.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
-                null, "security code is required", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "security code is required", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!securityCode.matches("^[0-9]{3}$")) {
             JOptionPane.showMessageDialog(
-                null, "invalid security code", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "invalid security code", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        
+
         Invoice invoice = new Invoice();
         invoice.setIdentifyCard(identifyCard);
         invoice.setLastCreditCardDigits(creditCard.substring(12));
         invoice.setMovieTitle(movie.getTitle());
         invoice.setCustomerName(fullName);
         invoice.setPrice(movie.getPriceValue());
-        
+
         String json;
         List<Invoice> invoices = new ArrayList<>();
         String jsonText;
-        
+
         try {
             jsonText = new String(Files.readAllBytes(Paths.get("data/invoices.json")));
         } catch (Exception e) {
             jsonText = null;
         }
-        
+
         Invoice[] invoicesArray = gson.fromJson(jsonText, Invoice[].class);
-        
+
         if (invoicesArray != null) {
             invoices.addAll(Arrays.asList(invoicesArray));
         }
-        
+
         invoices.add(invoice);
-        
+
         try {
             String jsonToSave = gson.toJson(invoices);
             Files.write(Paths.get("data/invoices.json"), jsonToSave.getBytes());
-            
+
             JOptionPane.showMessageDialog(
-                null, "Purchase has been completed, thanks", "Successful purchase ", JOptionPane.INFORMATION_MESSAGE);
+                    null, "Purchase has been completed, thanks", "Successful purchase ", JOptionPane.INFORMATION_MESSAGE);
             dispose();
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
     }//GEN-LAST:event_btnBuyActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        MovieRecord movieRecord = new MovieRecord();
+        try {
+            movieRecord.controlSeats(movie, x, y, false);
+        } catch (IOException ex) {
+            Logger.getLogger(FrmBill.class.getName()).log(Level.SEVERE, null, ex);
+        }
         dispose();
     }//GEN-LAST:event_btnCancelActionPerformed
 
