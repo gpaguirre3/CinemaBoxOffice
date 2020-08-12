@@ -21,14 +21,18 @@ public class CinemaRoom {
     }
 
     public static Seat[] buildSeat() {
-        Seat[] buildSeats = new Seat[149];
-        for (int i = 0; i < 149; i++) {
-            buildSeats[i] = new Seat(i);
+        Seat[] buildSeats = new Seat[150];
+        for (int i = 0; i < 150; i++) {
+            buildSeats[i] = new Seat(i + 1, false);
         }
         return buildSeats;
     }
 
     public int getRoomNumber() {
         return roomNumber;
+    }
+
+    public Seat[] getSeats() {
+        return seats;
     }
 }

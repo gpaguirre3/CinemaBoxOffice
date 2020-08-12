@@ -11,8 +11,22 @@ package ec.edu.espe.cinemaboxoffice.model;
  */
 public class Seat {
     private int seatNumber;
+    private boolean seatAvailability;
     
-    public Seat(int seatNumber) {
+    public Seat(int seatNumber, boolean SeatAvailableOrBusy) {
         this.seatNumber = seatNumber;
+        this.seatAvailability = SeatAvailableOrBusy;
     }
+
+    public boolean isSeatAvailableOrBusy() {
+        return seatAvailability;
+    }
+
+    public void setSeatAvailability(boolean seatAvailability) {
+        this.seatAvailability = seatAvailability;
+    }
+
+    public int getSeatNumber() {
+        return seatNumber;
+    }    
 }

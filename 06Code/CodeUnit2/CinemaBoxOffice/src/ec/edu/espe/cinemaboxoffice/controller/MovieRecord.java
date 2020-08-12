@@ -79,4 +79,25 @@ public class MovieRecord {
         }
         return movies;
     }
+
+    public void controlSeats(Movie movie, int x, int y) throws IOException {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        ArrayList<Movie> movies = Movie.consultMovies("Billboard.json");
+        for (int z = 0; z < movies.size(); z++) {
+            if (movie.getTitle().equals(movies.get(z).getTitle())) {
+                int cont = 0;
+                for (int i = 0; i < 15; i++) {
+                    for (int j = 0; j < 10; j++) {
+                        if (i == x & j == y) {
+                            movie.getRoom().getSeats()[cont].setSeatAvailability(true);
+                            System.out.println(movie.getRoom().getSeats()[cont].isSeatAvailableOrBusy());
+                        }
+                        cont++;
+                    }
+                }
+                FileManager.deleteFile("Billboard.json");
+                FileManager.writeFile("Billboard.json", gson.toJson(movies));
+            }
+        }
+    }
 }

@@ -4,461 +4,614 @@
     "date": "Aug 11, 2020 11:00:00 AM",
     "price": 5.36,
     "room": {
-      "roomNumber": 1.0,
+      "roomNumber": 1,
       "seats": [
         {
-          "seatNumber": 0.0
+          "seatNumber": 1,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 1.0
+          "seatNumber": 2,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 2.0
+          "seatNumber": 3,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 3.0
+          "seatNumber": 4,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 4.0
+          "seatNumber": 5,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 5.0
+          "seatNumber": 6,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 6.0
+          "seatNumber": 7,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 7.0
+          "seatNumber": 8,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 8.0
+          "seatNumber": 9,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 9.0
+          "seatNumber": 10,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 10.0
+          "seatNumber": 11,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 11.0
+          "seatNumber": 12,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 12.0
+          "seatNumber": 13,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 13.0
+          "seatNumber": 14,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 14.0
+          "seatNumber": 15,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 15.0
+          "seatNumber": 16,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 16.0
+          "seatNumber": 17,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 17.0
+          "seatNumber": 18,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 18.0
+          "seatNumber": 19,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 19.0
+          "seatNumber": 20,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 20.0
+          "seatNumber": 21,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 21.0
+          "seatNumber": 22,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 22.0
+          "seatNumber": 23,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 23.0
+          "seatNumber": 24,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 24.0
+          "seatNumber": 25,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 25.0
+          "seatNumber": 26,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 26.0
+          "seatNumber": 27,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 27.0
+          "seatNumber": 28,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 28.0
+          "seatNumber": 29,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 29.0
+          "seatNumber": 30,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 30.0
+          "seatNumber": 31,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 31.0
+          "seatNumber": 32,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 32.0
+          "seatNumber": 33,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 33.0
+          "seatNumber": 34,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 34.0
+          "seatNumber": 35,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 35.0
+          "seatNumber": 36,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 36.0
+          "seatNumber": 37,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 37.0
+          "seatNumber": 38,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 38.0
+          "seatNumber": 39,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 39.0
+          "seatNumber": 40,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 40.0
+          "seatNumber": 41,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 41.0
+          "seatNumber": 42,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 42.0
+          "seatNumber": 43,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 43.0
+          "seatNumber": 44,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 44.0
+          "seatNumber": 45,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 45.0
+          "seatNumber": 46,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 46.0
+          "seatNumber": 47,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 47.0
+          "seatNumber": 48,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 48.0
+          "seatNumber": 49,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 49.0
+          "seatNumber": 50,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 50.0
+          "seatNumber": 51,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 51.0
+          "seatNumber": 52,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 52.0
+          "seatNumber": 53,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 53.0
+          "seatNumber": 54,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 54.0
+          "seatNumber": 55,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 55.0
+          "seatNumber": 56,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 56.0
+          "seatNumber": 57,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 57.0
+          "seatNumber": 58,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 58.0
+          "seatNumber": 59,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 59.0
+          "seatNumber": 60,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 60.0
+          "seatNumber": 61,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 61.0
+          "seatNumber": 62,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 62.0
+          "seatNumber": 63,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 63.0
+          "seatNumber": 64,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 64.0
+          "seatNumber": 65,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 65.0
+          "seatNumber": 66,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 66.0
+          "seatNumber": 67,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 67.0
+          "seatNumber": 68,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 68.0
+          "seatNumber": 69,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 69.0
+          "seatNumber": 70,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 70.0
+          "seatNumber": 71,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 71.0
+          "seatNumber": 72,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 72.0
+          "seatNumber": 73,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 73.0
+          "seatNumber": 74,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 74.0
+          "seatNumber": 75,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 75.0
+          "seatNumber": 76,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 76.0
+          "seatNumber": 77,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 77.0
+          "seatNumber": 78,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 78.0
+          "seatNumber": 79,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 79.0
+          "seatNumber": 80,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 80.0
+          "seatNumber": 81,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 81.0
+          "seatNumber": 82,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 82.0
+          "seatNumber": 83,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 83.0
+          "seatNumber": 84,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 84.0
+          "seatNumber": 85,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 85.0
+          "seatNumber": 86,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 86.0
+          "seatNumber": 87,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 87.0
+          "seatNumber": 88,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 88.0
+          "seatNumber": 89,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 89.0
+          "seatNumber": 90,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 90.0
+          "seatNumber": 91,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 91.0
+          "seatNumber": 92,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 92.0
+          "seatNumber": 93,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 93.0
+          "seatNumber": 94,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 94.0
+          "seatNumber": 95,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 95.0
+          "seatNumber": 96,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 96.0
+          "seatNumber": 97,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 97.0
+          "seatNumber": 98,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 98.0
+          "seatNumber": 99,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 99.0
+          "seatNumber": 100,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 100.0
+          "seatNumber": 101,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 101.0
+          "seatNumber": 102,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 102.0
+          "seatNumber": 103,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 103.0
+          "seatNumber": 104,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 104.0
+          "seatNumber": 105,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 105.0
+          "seatNumber": 106,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 106.0
+          "seatNumber": 107,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 107.0
+          "seatNumber": 108,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 108.0
+          "seatNumber": 109,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 109.0
+          "seatNumber": 110,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 110.0
+          "seatNumber": 111,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 111.0
+          "seatNumber": 112,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 112.0
+          "seatNumber": 113,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 113.0
+          "seatNumber": 114,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 114.0
+          "seatNumber": 115,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 115.0
+          "seatNumber": 116,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 116.0
+          "seatNumber": 117,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 117.0
+          "seatNumber": 118,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 118.0
+          "seatNumber": 119,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 119.0
+          "seatNumber": 120,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 120.0
+          "seatNumber": 121,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 121.0
+          "seatNumber": 122,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 122.0
+          "seatNumber": 123,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 123.0
+          "seatNumber": 124,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 124.0
+          "seatNumber": 125,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 125.0
+          "seatNumber": 126,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 126.0
+          "seatNumber": 127,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 127.0
+          "seatNumber": 128,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 128.0
+          "seatNumber": 129,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 129.0
+          "seatNumber": 130,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 130.0
+          "seatNumber": 131,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 131.0
+          "seatNumber": 132,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 132.0
+          "seatNumber": 133,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 133.0
+          "seatNumber": 134,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 134.0
+          "seatNumber": 135,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 135.0
+          "seatNumber": 136,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 136.0
+          "seatNumber": 137,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 137.0
+          "seatNumber": 138,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 138.0
+          "seatNumber": 139,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 139.0
+          "seatNumber": 140,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 140.0
+          "seatNumber": 141,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 141.0
+          "seatNumber": 142,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 142.0
+          "seatNumber": 143,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 143.0
+          "seatNumber": 144,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 144.0
+          "seatNumber": 145,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 145.0
+          "seatNumber": 146,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 146.0
+          "seatNumber": 147,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 147.0
+          "seatNumber": 148,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 148.0
+          "seatNumber": 149,
+          "SeatAvailableOrBusy": false
+        },
+        {
+          "seatNumber": 150,
+          "SeatAvailableOrBusy": false
         }
       ]
     },
     "title": "Spiderman",
     "gender": "science fiction",
     "ageRestriction": "All public",
-    "duration": 145.0,
+    "duration": 145,
     "namePoster": "Spiderman.jpg"
   },
   {
@@ -466,461 +619,614 @@
     "date": "Aug 11, 2020 3:00:00 PM",
     "price": 4.26,
     "room": {
-      "roomNumber": 2.0,
+      "roomNumber": 2,
       "seats": [
         {
-          "seatNumber": 0.0
+          "seatNumber": 1,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 1.0
+          "seatNumber": 2,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 2.0
+          "seatNumber": 3,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 3.0
+          "seatNumber": 4,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 4.0
+          "seatNumber": 5,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 5.0
+          "seatNumber": 6,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 6.0
+          "seatNumber": 7,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 7.0
+          "seatNumber": 8,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 8.0
+          "seatNumber": 9,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 9.0
+          "seatNumber": 10,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 10.0
+          "seatNumber": 11,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 11.0
+          "seatNumber": 12,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 12.0
+          "seatNumber": 13,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 13.0
+          "seatNumber": 14,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 14.0
+          "seatNumber": 15,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 15.0
+          "seatNumber": 16,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 16.0
+          "seatNumber": 17,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 17.0
+          "seatNumber": 18,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 18.0
+          "seatNumber": 19,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 19.0
+          "seatNumber": 20,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 20.0
+          "seatNumber": 21,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 21.0
+          "seatNumber": 22,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 22.0
+          "seatNumber": 23,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 23.0
+          "seatNumber": 24,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 24.0
+          "seatNumber": 25,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 25.0
+          "seatNumber": 26,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 26.0
+          "seatNumber": 27,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 27.0
+          "seatNumber": 28,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 28.0
+          "seatNumber": 29,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 29.0
+          "seatNumber": 30,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 30.0
+          "seatNumber": 31,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 31.0
+          "seatNumber": 32,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 32.0
+          "seatNumber": 33,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 33.0
+          "seatNumber": 34,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 34.0
+          "seatNumber": 35,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 35.0
+          "seatNumber": 36,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 36.0
+          "seatNumber": 37,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 37.0
+          "seatNumber": 38,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 38.0
+          "seatNumber": 39,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 39.0
+          "seatNumber": 40,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 40.0
+          "seatNumber": 41,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 41.0
+          "seatNumber": 42,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 42.0
+          "seatNumber": 43,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 43.0
+          "seatNumber": 44,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 44.0
+          "seatNumber": 45,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 45.0
+          "seatNumber": 46,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 46.0
+          "seatNumber": 47,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 47.0
+          "seatNumber": 48,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 48.0
+          "seatNumber": 49,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 49.0
+          "seatNumber": 50,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 50.0
+          "seatNumber": 51,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 51.0
+          "seatNumber": 52,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 52.0
+          "seatNumber": 53,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 53.0
+          "seatNumber": 54,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 54.0
+          "seatNumber": 55,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 55.0
+          "seatNumber": 56,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 56.0
+          "seatNumber": 57,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 57.0
+          "seatNumber": 58,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 58.0
+          "seatNumber": 59,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 59.0
+          "seatNumber": 60,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 60.0
+          "seatNumber": 61,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 61.0
+          "seatNumber": 62,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 62.0
+          "seatNumber": 63,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 63.0
+          "seatNumber": 64,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 64.0
+          "seatNumber": 65,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 65.0
+          "seatNumber": 66,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 66.0
+          "seatNumber": 67,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 67.0
+          "seatNumber": 68,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 68.0
+          "seatNumber": 69,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 69.0
+          "seatNumber": 70,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 70.0
+          "seatNumber": 71,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 71.0
+          "seatNumber": 72,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 72.0
+          "seatNumber": 73,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 73.0
+          "seatNumber": 74,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 74.0
+          "seatNumber": 75,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 75.0
+          "seatNumber": 76,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 76.0
+          "seatNumber": 77,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 77.0
+          "seatNumber": 78,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 78.0
+          "seatNumber": 79,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 79.0
+          "seatNumber": 80,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 80.0
+          "seatNumber": 81,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 81.0
+          "seatNumber": 82,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 82.0
+          "seatNumber": 83,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 83.0
+          "seatNumber": 84,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 84.0
+          "seatNumber": 85,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 85.0
+          "seatNumber": 86,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 86.0
+          "seatNumber": 87,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 87.0
+          "seatNumber": 88,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 88.0
+          "seatNumber": 89,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 89.0
+          "seatNumber": 90,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 90.0
+          "seatNumber": 91,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 91.0
+          "seatNumber": 92,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 92.0
+          "seatNumber": 93,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 93.0
+          "seatNumber": 94,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 94.0
+          "seatNumber": 95,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 95.0
+          "seatNumber": 96,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 96.0
+          "seatNumber": 97,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 97.0
+          "seatNumber": 98,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 98.0
+          "seatNumber": 99,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 99.0
+          "seatNumber": 100,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 100.0
+          "seatNumber": 101,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 101.0
+          "seatNumber": 102,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 102.0
+          "seatNumber": 103,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 103.0
+          "seatNumber": 104,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 104.0
+          "seatNumber": 105,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 105.0
+          "seatNumber": 106,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 106.0
+          "seatNumber": 107,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 107.0
+          "seatNumber": 108,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 108.0
+          "seatNumber": 109,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 109.0
+          "seatNumber": 110,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 110.0
+          "seatNumber": 111,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 111.0
+          "seatNumber": 112,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 112.0
+          "seatNumber": 113,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 113.0
+          "seatNumber": 114,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 114.0
+          "seatNumber": 115,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 115.0
+          "seatNumber": 116,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 116.0
+          "seatNumber": 117,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 117.0
+          "seatNumber": 118,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 118.0
+          "seatNumber": 119,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 119.0
+          "seatNumber": 120,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 120.0
+          "seatNumber": 121,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 121.0
+          "seatNumber": 122,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 122.0
+          "seatNumber": 123,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 123.0
+          "seatNumber": 124,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 124.0
+          "seatNumber": 125,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 125.0
+          "seatNumber": 126,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 126.0
+          "seatNumber": 127,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 127.0
+          "seatNumber": 128,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 128.0
+          "seatNumber": 129,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 129.0
+          "seatNumber": 130,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 130.0
+          "seatNumber": 131,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 131.0
+          "seatNumber": 132,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 132.0
+          "seatNumber": 133,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 133.0
+          "seatNumber": 134,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 134.0
+          "seatNumber": 135,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 135.0
+          "seatNumber": 136,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 136.0
+          "seatNumber": 137,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 137.0
+          "seatNumber": 138,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 138.0
+          "seatNumber": 139,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 139.0
+          "seatNumber": 140,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 140.0
+          "seatNumber": 141,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 141.0
+          "seatNumber": 142,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 142.0
+          "seatNumber": 143,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 143.0
+          "seatNumber": 144,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 144.0
+          "seatNumber": 145,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 145.0
+          "seatNumber": 146,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 146.0
+          "seatNumber": 147,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 147.0
+          "seatNumber": 148,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 148.0
+          "seatNumber": 149,
+          "SeatAvailableOrBusy": false
+        },
+        {
+          "seatNumber": 150,
+          "SeatAvailableOrBusy": false
         }
       ]
     },
     "title": "TransFormers",
     "gender": "science fiction",
     "ageRestriction": "Over 18",
-    "duration": 154.0,
+    "duration": 154,
     "namePoster": "TransFormers.jpg"
   },
   {
@@ -928,461 +1234,614 @@
     "date": "Aug 11, 2020 6:45:00 PM",
     "price": 4.46,
     "room": {
-      "roomNumber": 3.0,
+      "roomNumber": 3,
       "seats": [
         {
-          "seatNumber": 0.0
+          "seatNumber": 1,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 1.0
+          "seatNumber": 2,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 2.0
+          "seatNumber": 3,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 3.0
+          "seatNumber": 4,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 4.0
+          "seatNumber": 5,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 5.0
+          "seatNumber": 6,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 6.0
+          "seatNumber": 7,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 7.0
+          "seatNumber": 8,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 8.0
+          "seatNumber": 9,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 9.0
+          "seatNumber": 10,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 10.0
+          "seatNumber": 11,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 11.0
+          "seatNumber": 12,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 12.0
+          "seatNumber": 13,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 13.0
+          "seatNumber": 14,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 14.0
+          "seatNumber": 15,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 15.0
+          "seatNumber": 16,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 16.0
+          "seatNumber": 17,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 17.0
+          "seatNumber": 18,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 18.0
+          "seatNumber": 19,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 19.0
+          "seatNumber": 20,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 20.0
+          "seatNumber": 21,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 21.0
+          "seatNumber": 22,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 22.0
+          "seatNumber": 23,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 23.0
+          "seatNumber": 24,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 24.0
+          "seatNumber": 25,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 25.0
+          "seatNumber": 26,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 26.0
+          "seatNumber": 27,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 27.0
+          "seatNumber": 28,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 28.0
+          "seatNumber": 29,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 29.0
+          "seatNumber": 30,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 30.0
+          "seatNumber": 31,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 31.0
+          "seatNumber": 32,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 32.0
+          "seatNumber": 33,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 33.0
+          "seatNumber": 34,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 34.0
+          "seatNumber": 35,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 35.0
+          "seatNumber": 36,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 36.0
+          "seatNumber": 37,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 37.0
+          "seatNumber": 38,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 38.0
+          "seatNumber": 39,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 39.0
+          "seatNumber": 40,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 40.0
+          "seatNumber": 41,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 41.0
+          "seatNumber": 42,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 42.0
+          "seatNumber": 43,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 43.0
+          "seatNumber": 44,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 44.0
+          "seatNumber": 45,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 45.0
+          "seatNumber": 46,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 46.0
+          "seatNumber": 47,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 47.0
+          "seatNumber": 48,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 48.0
+          "seatNumber": 49,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 49.0
+          "seatNumber": 50,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 50.0
+          "seatNumber": 51,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 51.0
+          "seatNumber": 52,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 52.0
+          "seatNumber": 53,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 53.0
+          "seatNumber": 54,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 54.0
+          "seatNumber": 55,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 55.0
+          "seatNumber": 56,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 56.0
+          "seatNumber": 57,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 57.0
+          "seatNumber": 58,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 58.0
+          "seatNumber": 59,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 59.0
+          "seatNumber": 60,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 60.0
+          "seatNumber": 61,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 61.0
+          "seatNumber": 62,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 62.0
+          "seatNumber": 63,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 63.0
+          "seatNumber": 64,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 64.0
+          "seatNumber": 65,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 65.0
+          "seatNumber": 66,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 66.0
+          "seatNumber": 67,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 67.0
+          "seatNumber": 68,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 68.0
+          "seatNumber": 69,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 69.0
+          "seatNumber": 70,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 70.0
+          "seatNumber": 71,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 71.0
+          "seatNumber": 72,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 72.0
+          "seatNumber": 73,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 73.0
+          "seatNumber": 74,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 74.0
+          "seatNumber": 75,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 75.0
+          "seatNumber": 76,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 76.0
+          "seatNumber": 77,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 77.0
+          "seatNumber": 78,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 78.0
+          "seatNumber": 79,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 79.0
+          "seatNumber": 80,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 80.0
+          "seatNumber": 81,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 81.0
+          "seatNumber": 82,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 82.0
+          "seatNumber": 83,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 83.0
+          "seatNumber": 84,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 84.0
+          "seatNumber": 85,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 85.0
+          "seatNumber": 86,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 86.0
+          "seatNumber": 87,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 87.0
+          "seatNumber": 88,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 88.0
+          "seatNumber": 89,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 89.0
+          "seatNumber": 90,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 90.0
+          "seatNumber": 91,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 91.0
+          "seatNumber": 92,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 92.0
+          "seatNumber": 93,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 93.0
+          "seatNumber": 94,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 94.0
+          "seatNumber": 95,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 95.0
+          "seatNumber": 96,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 96.0
+          "seatNumber": 97,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 97.0
+          "seatNumber": 98,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 98.0
+          "seatNumber": 99,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 99.0
+          "seatNumber": 100,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 100.0
+          "seatNumber": 101,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 101.0
+          "seatNumber": 102,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 102.0
+          "seatNumber": 103,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 103.0
+          "seatNumber": 104,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 104.0
+          "seatNumber": 105,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 105.0
+          "seatNumber": 106,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 106.0
+          "seatNumber": 107,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 107.0
+          "seatNumber": 108,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 108.0
+          "seatNumber": 109,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 109.0
+          "seatNumber": 110,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 110.0
+          "seatNumber": 111,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 111.0
+          "seatNumber": 112,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 112.0
+          "seatNumber": 113,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 113.0
+          "seatNumber": 114,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 114.0
+          "seatNumber": 115,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 115.0
+          "seatNumber": 116,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 116.0
+          "seatNumber": 117,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 117.0
+          "seatNumber": 118,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 118.0
+          "seatNumber": 119,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 119.0
+          "seatNumber": 120,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 120.0
+          "seatNumber": 121,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 121.0
+          "seatNumber": 122,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 122.0
+          "seatNumber": 123,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 123.0
+          "seatNumber": 124,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 124.0
+          "seatNumber": 125,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 125.0
+          "seatNumber": 126,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 126.0
+          "seatNumber": 127,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 127.0
+          "seatNumber": 128,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 128.0
+          "seatNumber": 129,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 129.0
+          "seatNumber": 130,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 130.0
+          "seatNumber": 131,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 131.0
+          "seatNumber": 132,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 132.0
+          "seatNumber": 133,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 133.0
+          "seatNumber": 134,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 134.0
+          "seatNumber": 135,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 135.0
+          "seatNumber": 136,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 136.0
+          "seatNumber": 137,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 137.0
+          "seatNumber": 138,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 138.0
+          "seatNumber": 139,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 139.0
+          "seatNumber": 140,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 140.0
+          "seatNumber": 141,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 141.0
+          "seatNumber": 142,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 142.0
+          "seatNumber": 143,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 143.0
+          "seatNumber": 144,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 144.0
+          "seatNumber": 145,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 145.0
+          "seatNumber": 146,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 146.0
+          "seatNumber": 147,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 147.0
+          "seatNumber": 148,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 148.0
+          "seatNumber": 149,
+          "SeatAvailableOrBusy": false
+        },
+        {
+          "seatNumber": 150,
+          "SeatAvailableOrBusy": false
         }
       ]
     },
     "title": "IT Chapter Two",
     "gender": "Horror",
     "ageRestriction": "Over 18",
-    "duration": 144.0,
+    "duration": 144,
     "namePoster": "It.jpg"
   },
   {
@@ -1390,461 +1849,614 @@
     "date": "Aug 11, 2020 5:00:00 PM",
     "price": 3.96,
     "room": {
-      "roomNumber": 4.0,
+      "roomNumber": 4,
       "seats": [
         {
-          "seatNumber": 0.0
+          "seatNumber": 1,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 1.0
+          "seatNumber": 2,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 2.0
+          "seatNumber": 3,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 3.0
+          "seatNumber": 4,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 4.0
+          "seatNumber": 5,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 5.0
+          "seatNumber": 6,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 6.0
+          "seatNumber": 7,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 7.0
+          "seatNumber": 8,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 8.0
+          "seatNumber": 9,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 9.0
+          "seatNumber": 10,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 10.0
+          "seatNumber": 11,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 11.0
+          "seatNumber": 12,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 12.0
+          "seatNumber": 13,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 13.0
+          "seatNumber": 14,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 14.0
+          "seatNumber": 15,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 15.0
+          "seatNumber": 16,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 16.0
+          "seatNumber": 17,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 17.0
+          "seatNumber": 18,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 18.0
+          "seatNumber": 19,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 19.0
+          "seatNumber": 20,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 20.0
+          "seatNumber": 21,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 21.0
+          "seatNumber": 22,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 22.0
+          "seatNumber": 23,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 23.0
+          "seatNumber": 24,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 24.0
+          "seatNumber": 25,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 25.0
+          "seatNumber": 26,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 26.0
+          "seatNumber": 27,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 27.0
+          "seatNumber": 28,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 28.0
+          "seatNumber": 29,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 29.0
+          "seatNumber": 30,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 30.0
+          "seatNumber": 31,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 31.0
+          "seatNumber": 32,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 32.0
+          "seatNumber": 33,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 33.0
+          "seatNumber": 34,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 34.0
+          "seatNumber": 35,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 35.0
+          "seatNumber": 36,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 36.0
+          "seatNumber": 37,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 37.0
+          "seatNumber": 38,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 38.0
+          "seatNumber": 39,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 39.0
+          "seatNumber": 40,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 40.0
+          "seatNumber": 41,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 41.0
+          "seatNumber": 42,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 42.0
+          "seatNumber": 43,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 43.0
+          "seatNumber": 44,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 44.0
+          "seatNumber": 45,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 45.0
+          "seatNumber": 46,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 46.0
+          "seatNumber": 47,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 47.0
+          "seatNumber": 48,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 48.0
+          "seatNumber": 49,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 49.0
+          "seatNumber": 50,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 50.0
+          "seatNumber": 51,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 51.0
+          "seatNumber": 52,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 52.0
+          "seatNumber": 53,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 53.0
+          "seatNumber": 54,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 54.0
+          "seatNumber": 55,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 55.0
+          "seatNumber": 56,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 56.0
+          "seatNumber": 57,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 57.0
+          "seatNumber": 58,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 58.0
+          "seatNumber": 59,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 59.0
+          "seatNumber": 60,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 60.0
+          "seatNumber": 61,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 61.0
+          "seatNumber": 62,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 62.0
+          "seatNumber": 63,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 63.0
+          "seatNumber": 64,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 64.0
+          "seatNumber": 65,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 65.0
+          "seatNumber": 66,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 66.0
+          "seatNumber": 67,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 67.0
+          "seatNumber": 68,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 68.0
+          "seatNumber": 69,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 69.0
+          "seatNumber": 70,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 70.0
+          "seatNumber": 71,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 71.0
+          "seatNumber": 72,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 72.0
+          "seatNumber": 73,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 73.0
+          "seatNumber": 74,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 74.0
+          "seatNumber": 75,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 75.0
+          "seatNumber": 76,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 76.0
+          "seatNumber": 77,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 77.0
+          "seatNumber": 78,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 78.0
+          "seatNumber": 79,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 79.0
+          "seatNumber": 80,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 80.0
+          "seatNumber": 81,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 81.0
+          "seatNumber": 82,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 82.0
+          "seatNumber": 83,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 83.0
+          "seatNumber": 84,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 84.0
+          "seatNumber": 85,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 85.0
+          "seatNumber": 86,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 86.0
+          "seatNumber": 87,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 87.0
+          "seatNumber": 88,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 88.0
+          "seatNumber": 89,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 89.0
+          "seatNumber": 90,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 90.0
+          "seatNumber": 91,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 91.0
+          "seatNumber": 92,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 92.0
+          "seatNumber": 93,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 93.0
+          "seatNumber": 94,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 94.0
+          "seatNumber": 95,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 95.0
+          "seatNumber": 96,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 96.0
+          "seatNumber": 97,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 97.0
+          "seatNumber": 98,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 98.0
+          "seatNumber": 99,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 99.0
+          "seatNumber": 100,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 100.0
+          "seatNumber": 101,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 101.0
+          "seatNumber": 102,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 102.0
+          "seatNumber": 103,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 103.0
+          "seatNumber": 104,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 104.0
+          "seatNumber": 105,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 105.0
+          "seatNumber": 106,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 106.0
+          "seatNumber": 107,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 107.0
+          "seatNumber": 108,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 108.0
+          "seatNumber": 109,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 109.0
+          "seatNumber": 110,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 110.0
+          "seatNumber": 111,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 111.0
+          "seatNumber": 112,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 112.0
+          "seatNumber": 113,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 113.0
+          "seatNumber": 114,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 114.0
+          "seatNumber": 115,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 115.0
+          "seatNumber": 116,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 116.0
+          "seatNumber": 117,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 117.0
+          "seatNumber": 118,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 118.0
+          "seatNumber": 119,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 119.0
+          "seatNumber": 120,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 120.0
+          "seatNumber": 121,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 121.0
+          "seatNumber": 122,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 122.0
+          "seatNumber": 123,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 123.0
+          "seatNumber": 124,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 124.0
+          "seatNumber": 125,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 125.0
+          "seatNumber": 126,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 126.0
+          "seatNumber": 127,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 127.0
+          "seatNumber": 128,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 128.0
+          "seatNumber": 129,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 129.0
+          "seatNumber": 130,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 130.0
+          "seatNumber": 131,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 131.0
+          "seatNumber": 132,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 132.0
+          "seatNumber": 133,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 133.0
+          "seatNumber": 134,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 134.0
+          "seatNumber": 135,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 135.0
+          "seatNumber": 136,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 136.0
+          "seatNumber": 137,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 137.0
+          "seatNumber": 138,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 138.0
+          "seatNumber": 139,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 139.0
+          "seatNumber": 140,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 140.0
+          "seatNumber": 141,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 141.0
+          "seatNumber": 142,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 142.0
+          "seatNumber": 143,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 143.0
+          "seatNumber": 144,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 144.0
+          "seatNumber": 145,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 145.0
+          "seatNumber": 146,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 146.0
+          "seatNumber": 147,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 147.0
+          "seatNumber": 148,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 148.0
+          "seatNumber": 149,
+          "SeatAvailableOrBusy": false
+        },
+        {
+          "seatNumber": 150,
+          "SeatAvailableOrBusy": false
         }
       ]
     },
     "title": "Once Upon A Time in Hollywood",
     "gender": "Comedy",
     "ageRestriction": "All public",
-    "duration": 135.0,
+    "duration": 135,
     "namePoster": "Once.jpg"
   },
   {
@@ -1852,461 +2464,614 @@
     "date": "Aug 11, 2020 8:30:00 PM",
     "price": 3.56,
     "room": {
-      "roomNumber": 5.0,
+      "roomNumber": 5,
       "seats": [
         {
-          "seatNumber": 0.0
+          "seatNumber": 1,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 1.0
+          "seatNumber": 2,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 2.0
+          "seatNumber": 3,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 3.0
+          "seatNumber": 4,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 4.0
+          "seatNumber": 5,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 5.0
+          "seatNumber": 6,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 6.0
+          "seatNumber": 7,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 7.0
+          "seatNumber": 8,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 8.0
+          "seatNumber": 9,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 9.0
+          "seatNumber": 10,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 10.0
+          "seatNumber": 11,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 11.0
+          "seatNumber": 12,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 12.0
+          "seatNumber": 13,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 13.0
+          "seatNumber": 14,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 14.0
+          "seatNumber": 15,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 15.0
+          "seatNumber": 16,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 16.0
+          "seatNumber": 17,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 17.0
+          "seatNumber": 18,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 18.0
+          "seatNumber": 19,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 19.0
+          "seatNumber": 20,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 20.0
+          "seatNumber": 21,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 21.0
+          "seatNumber": 22,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 22.0
+          "seatNumber": 23,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 23.0
+          "seatNumber": 24,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 24.0
+          "seatNumber": 25,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 25.0
+          "seatNumber": 26,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 26.0
+          "seatNumber": 27,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 27.0
+          "seatNumber": 28,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 28.0
+          "seatNumber": 29,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 29.0
+          "seatNumber": 30,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 30.0
+          "seatNumber": 31,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 31.0
+          "seatNumber": 32,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 32.0
+          "seatNumber": 33,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 33.0
+          "seatNumber": 34,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 34.0
+          "seatNumber": 35,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 35.0
+          "seatNumber": 36,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 36.0
+          "seatNumber": 37,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 37.0
+          "seatNumber": 38,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 38.0
+          "seatNumber": 39,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 39.0
+          "seatNumber": 40,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 40.0
+          "seatNumber": 41,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 41.0
+          "seatNumber": 42,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 42.0
+          "seatNumber": 43,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 43.0
+          "seatNumber": 44,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 44.0
+          "seatNumber": 45,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 45.0
+          "seatNumber": 46,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 46.0
+          "seatNumber": 47,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 47.0
+          "seatNumber": 48,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 48.0
+          "seatNumber": 49,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 49.0
+          "seatNumber": 50,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 50.0
+          "seatNumber": 51,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 51.0
+          "seatNumber": 52,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 52.0
+          "seatNumber": 53,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 53.0
+          "seatNumber": 54,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 54.0
+          "seatNumber": 55,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 55.0
+          "seatNumber": 56,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 56.0
+          "seatNumber": 57,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 57.0
+          "seatNumber": 58,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 58.0
+          "seatNumber": 59,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 59.0
+          "seatNumber": 60,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 60.0
+          "seatNumber": 61,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 61.0
+          "seatNumber": 62,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 62.0
+          "seatNumber": 63,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 63.0
+          "seatNumber": 64,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 64.0
+          "seatNumber": 65,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 65.0
+          "seatNumber": 66,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 66.0
+          "seatNumber": 67,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 67.0
+          "seatNumber": 68,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 68.0
+          "seatNumber": 69,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 69.0
+          "seatNumber": 70,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 70.0
+          "seatNumber": 71,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 71.0
+          "seatNumber": 72,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 72.0
+          "seatNumber": 73,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 73.0
+          "seatNumber": 74,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 74.0
+          "seatNumber": 75,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 75.0
+          "seatNumber": 76,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 76.0
+          "seatNumber": 77,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 77.0
+          "seatNumber": 78,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 78.0
+          "seatNumber": 79,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 79.0
+          "seatNumber": 80,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 80.0
+          "seatNumber": 81,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 81.0
+          "seatNumber": 82,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 82.0
+          "seatNumber": 83,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 83.0
+          "seatNumber": 84,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 84.0
+          "seatNumber": 85,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 85.0
+          "seatNumber": 86,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 86.0
+          "seatNumber": 87,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 87.0
+          "seatNumber": 88,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 88.0
+          "seatNumber": 89,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 89.0
+          "seatNumber": 90,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 90.0
+          "seatNumber": 91,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 91.0
+          "seatNumber": 92,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 92.0
+          "seatNumber": 93,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 93.0
+          "seatNumber": 94,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 94.0
+          "seatNumber": 95,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 95.0
+          "seatNumber": 96,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 96.0
+          "seatNumber": 97,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 97.0
+          "seatNumber": 98,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 98.0
+          "seatNumber": 99,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 99.0
+          "seatNumber": 100,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 100.0
+          "seatNumber": 101,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 101.0
+          "seatNumber": 102,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 102.0
+          "seatNumber": 103,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 103.0
+          "seatNumber": 104,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 104.0
+          "seatNumber": 105,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 105.0
+          "seatNumber": 106,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 106.0
+          "seatNumber": 107,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 107.0
+          "seatNumber": 108,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 108.0
+          "seatNumber": 109,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 109.0
+          "seatNumber": 110,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 110.0
+          "seatNumber": 111,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 111.0
+          "seatNumber": 112,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 112.0
+          "seatNumber": 113,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 113.0
+          "seatNumber": 114,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 114.0
+          "seatNumber": 115,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 115.0
+          "seatNumber": 116,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 116.0
+          "seatNumber": 117,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 117.0
+          "seatNumber": 118,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 118.0
+          "seatNumber": 119,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 119.0
+          "seatNumber": 120,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 120.0
+          "seatNumber": 121,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 121.0
+          "seatNumber": 122,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 122.0
+          "seatNumber": 123,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 123.0
+          "seatNumber": 124,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 124.0
+          "seatNumber": 125,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 125.0
+          "seatNumber": 126,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 126.0
+          "seatNumber": 127,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 127.0
+          "seatNumber": 128,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 128.0
+          "seatNumber": 129,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 129.0
+          "seatNumber": 130,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 130.0
+          "seatNumber": 131,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 131.0
+          "seatNumber": 132,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 132.0
+          "seatNumber": 133,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 133.0
+          "seatNumber": 134,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 134.0
+          "seatNumber": 135,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 135.0
+          "seatNumber": 136,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 136.0
+          "seatNumber": 137,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 137.0
+          "seatNumber": 138,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 138.0
+          "seatNumber": 139,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 139.0
+          "seatNumber": 140,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 140.0
+          "seatNumber": 141,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 141.0
+          "seatNumber": 142,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 142.0
+          "seatNumber": 143,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 143.0
+          "seatNumber": 144,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 144.0
+          "seatNumber": 145,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 145.0
+          "seatNumber": 146,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 146.0
+          "seatNumber": 147,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 147.0
+          "seatNumber": 148,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 148.0
+          "seatNumber": 149,
+          "SeatAvailableOrBusy": false
+        },
+        {
+          "seatNumber": 150,
+          "SeatAvailableOrBusy": false
         }
       ]
     },
     "title": "Jojo Rabbit",
     "gender": "Comedy",
     "ageRestriction": "All public",
-    "duration": 139.0,
+    "duration": 139,
     "namePoster": "Jojo.jpg"
   },
   {
@@ -2314,461 +3079,614 @@
     "date": "Aug 11, 2020 8:00:00 PM",
     "price": 5.85,
     "room": {
-      "roomNumber": 6.0,
+      "roomNumber": 6,
       "seats": [
         {
-          "seatNumber": 0.0
+          "seatNumber": 1,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 1.0
+          "seatNumber": 2,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 2.0
+          "seatNumber": 3,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 3.0
+          "seatNumber": 4,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 4.0
+          "seatNumber": 5,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 5.0
+          "seatNumber": 6,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 6.0
+          "seatNumber": 7,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 7.0
+          "seatNumber": 8,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 8.0
+          "seatNumber": 9,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 9.0
+          "seatNumber": 10,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 10.0
+          "seatNumber": 11,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 11.0
+          "seatNumber": 12,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 12.0
+          "seatNumber": 13,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 13.0
+          "seatNumber": 14,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 14.0
+          "seatNumber": 15,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 15.0
+          "seatNumber": 16,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 16.0
+          "seatNumber": 17,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 17.0
+          "seatNumber": 18,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 18.0
+          "seatNumber": 19,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 19.0
+          "seatNumber": 20,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 20.0
+          "seatNumber": 21,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 21.0
+          "seatNumber": 22,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 22.0
+          "seatNumber": 23,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 23.0
+          "seatNumber": 24,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 24.0
+          "seatNumber": 25,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 25.0
+          "seatNumber": 26,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 26.0
+          "seatNumber": 27,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 27.0
+          "seatNumber": 28,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 28.0
+          "seatNumber": 29,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 29.0
+          "seatNumber": 30,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 30.0
+          "seatNumber": 31,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 31.0
+          "seatNumber": 32,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 32.0
+          "seatNumber": 33,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 33.0
+          "seatNumber": 34,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 34.0
+          "seatNumber": 35,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 35.0
+          "seatNumber": 36,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 36.0
+          "seatNumber": 37,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 37.0
+          "seatNumber": 38,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 38.0
+          "seatNumber": 39,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 39.0
+          "seatNumber": 40,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 40.0
+          "seatNumber": 41,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 41.0
+          "seatNumber": 42,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 42.0
+          "seatNumber": 43,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 43.0
+          "seatNumber": 44,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 44.0
+          "seatNumber": 45,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 45.0
+          "seatNumber": 46,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 46.0
+          "seatNumber": 47,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 47.0
+          "seatNumber": 48,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 48.0
+          "seatNumber": 49,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 49.0
+          "seatNumber": 50,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 50.0
+          "seatNumber": 51,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 51.0
+          "seatNumber": 52,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 52.0
+          "seatNumber": 53,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 53.0
+          "seatNumber": 54,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 54.0
+          "seatNumber": 55,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 55.0
+          "seatNumber": 56,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 56.0
+          "seatNumber": 57,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 57.0
+          "seatNumber": 58,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 58.0
+          "seatNumber": 59,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 59.0
+          "seatNumber": 60,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 60.0
+          "seatNumber": 61,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 61.0
+          "seatNumber": 62,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 62.0
+          "seatNumber": 63,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 63.0
+          "seatNumber": 64,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 64.0
+          "seatNumber": 65,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 65.0
+          "seatNumber": 66,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 66.0
+          "seatNumber": 67,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 67.0
+          "seatNumber": 68,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 68.0
+          "seatNumber": 69,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 69.0
+          "seatNumber": 70,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 70.0
+          "seatNumber": 71,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 71.0
+          "seatNumber": 72,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 72.0
+          "seatNumber": 73,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 73.0
+          "seatNumber": 74,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 74.0
+          "seatNumber": 75,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 75.0
+          "seatNumber": 76,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 76.0
+          "seatNumber": 77,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 77.0
+          "seatNumber": 78,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 78.0
+          "seatNumber": 79,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 79.0
+          "seatNumber": 80,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 80.0
+          "seatNumber": 81,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 81.0
+          "seatNumber": 82,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 82.0
+          "seatNumber": 83,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 83.0
+          "seatNumber": 84,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 84.0
+          "seatNumber": 85,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 85.0
+          "seatNumber": 86,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 86.0
+          "seatNumber": 87,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 87.0
+          "seatNumber": 88,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 88.0
+          "seatNumber": 89,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 89.0
+          "seatNumber": 90,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 90.0
+          "seatNumber": 91,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 91.0
+          "seatNumber": 92,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 92.0
+          "seatNumber": 93,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 93.0
+          "seatNumber": 94,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 94.0
+          "seatNumber": 95,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 95.0
+          "seatNumber": 96,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 96.0
+          "seatNumber": 97,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 97.0
+          "seatNumber": 98,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 98.0
+          "seatNumber": 99,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 99.0
+          "seatNumber": 100,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 100.0
+          "seatNumber": 101,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 101.0
+          "seatNumber": 102,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 102.0
+          "seatNumber": 103,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 103.0
+          "seatNumber": 104,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 104.0
+          "seatNumber": 105,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 105.0
+          "seatNumber": 106,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 106.0
+          "seatNumber": 107,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 107.0
+          "seatNumber": 108,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 108.0
+          "seatNumber": 109,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 109.0
+          "seatNumber": 110,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 110.0
+          "seatNumber": 111,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 111.0
+          "seatNumber": 112,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 112.0
+          "seatNumber": 113,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 113.0
+          "seatNumber": 114,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 114.0
+          "seatNumber": 115,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 115.0
+          "seatNumber": 116,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 116.0
+          "seatNumber": 117,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 117.0
+          "seatNumber": 118,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 118.0
+          "seatNumber": 119,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 119.0
+          "seatNumber": 120,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 120.0
+          "seatNumber": 121,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 121.0
+          "seatNumber": 122,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 122.0
+          "seatNumber": 123,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 123.0
+          "seatNumber": 124,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 124.0
+          "seatNumber": 125,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 125.0
+          "seatNumber": 126,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 126.0
+          "seatNumber": 127,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 127.0
+          "seatNumber": 128,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 128.0
+          "seatNumber": 129,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 129.0
+          "seatNumber": 130,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 130.0
+          "seatNumber": 131,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 131.0
+          "seatNumber": 132,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 132.0
+          "seatNumber": 133,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 133.0
+          "seatNumber": 134,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 134.0
+          "seatNumber": 135,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 135.0
+          "seatNumber": 136,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 136.0
+          "seatNumber": 137,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 137.0
+          "seatNumber": 138,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 138.0
+          "seatNumber": 139,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 139.0
+          "seatNumber": 140,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 140.0
+          "seatNumber": 141,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 141.0
+          "seatNumber": 142,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 142.0
+          "seatNumber": 143,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 143.0
+          "seatNumber": 144,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 144.0
+          "seatNumber": 145,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 145.0
+          "seatNumber": 146,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 146.0
+          "seatNumber": 147,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 147.0
+          "seatNumber": 148,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 148.0
+          "seatNumber": 149,
+          "SeatAvailableOrBusy": false
+        },
+        {
+          "seatNumber": 150,
+          "SeatAvailableOrBusy": false
         }
       ]
     },
     "title": "Joker",
     "gender": "science fiction",
     "ageRestriction": "Over 18",
-    "duration": 158.0,
+    "duration": 158,
     "namePoster": "Joker.jpg"
   },
   {
@@ -2776,461 +3694,614 @@
     "date": "Aug 11, 2020 8:00:00 PM",
     "price": 5.85,
     "room": {
-      "roomNumber": 6.0,
+      "roomNumber": 6,
       "seats": [
         {
-          "seatNumber": 0.0
+          "seatNumber": 1,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 1.0
+          "seatNumber": 2,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 2.0
+          "seatNumber": 3,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 3.0
+          "seatNumber": 4,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 4.0
+          "seatNumber": 5,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 5.0
+          "seatNumber": 6,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 6.0
+          "seatNumber": 7,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 7.0
+          "seatNumber": 8,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 8.0
+          "seatNumber": 9,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 9.0
+          "seatNumber": 10,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 10.0
+          "seatNumber": 11,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 11.0
+          "seatNumber": 12,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 12.0
+          "seatNumber": 13,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 13.0
+          "seatNumber": 14,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 14.0
+          "seatNumber": 15,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 15.0
+          "seatNumber": 16,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 16.0
+          "seatNumber": 17,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 17.0
+          "seatNumber": 18,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 18.0
+          "seatNumber": 19,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 19.0
+          "seatNumber": 20,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 20.0
+          "seatNumber": 21,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 21.0
+          "seatNumber": 22,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 22.0
+          "seatNumber": 23,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 23.0
+          "seatNumber": 24,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 24.0
+          "seatNumber": 25,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 25.0
+          "seatNumber": 26,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 26.0
+          "seatNumber": 27,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 27.0
+          "seatNumber": 28,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 28.0
+          "seatNumber": 29,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 29.0
+          "seatNumber": 30,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 30.0
+          "seatNumber": 31,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 31.0
+          "seatNumber": 32,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 32.0
+          "seatNumber": 33,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 33.0
+          "seatNumber": 34,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 34.0
+          "seatNumber": 35,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 35.0
+          "seatNumber": 36,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 36.0
+          "seatNumber": 37,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 37.0
+          "seatNumber": 38,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 38.0
+          "seatNumber": 39,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 39.0
+          "seatNumber": 40,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 40.0
+          "seatNumber": 41,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 41.0
+          "seatNumber": 42,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 42.0
+          "seatNumber": 43,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 43.0
+          "seatNumber": 44,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 44.0
+          "seatNumber": 45,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 45.0
+          "seatNumber": 46,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 46.0
+          "seatNumber": 47,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 47.0
+          "seatNumber": 48,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 48.0
+          "seatNumber": 49,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 49.0
+          "seatNumber": 50,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 50.0
+          "seatNumber": 51,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 51.0
+          "seatNumber": 52,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 52.0
+          "seatNumber": 53,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 53.0
+          "seatNumber": 54,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 54.0
+          "seatNumber": 55,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 55.0
+          "seatNumber": 56,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 56.0
+          "seatNumber": 57,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 57.0
+          "seatNumber": 58,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 58.0
+          "seatNumber": 59,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 59.0
+          "seatNumber": 60,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 60.0
+          "seatNumber": 61,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 61.0
+          "seatNumber": 62,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 62.0
+          "seatNumber": 63,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 63.0
+          "seatNumber": 64,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 64.0
+          "seatNumber": 65,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 65.0
+          "seatNumber": 66,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 66.0
+          "seatNumber": 67,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 67.0
+          "seatNumber": 68,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 68.0
+          "seatNumber": 69,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 69.0
+          "seatNumber": 70,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 70.0
+          "seatNumber": 71,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 71.0
+          "seatNumber": 72,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 72.0
+          "seatNumber": 73,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 73.0
+          "seatNumber": 74,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 74.0
+          "seatNumber": 75,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 75.0
+          "seatNumber": 76,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 76.0
+          "seatNumber": 77,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 77.0
+          "seatNumber": 78,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 78.0
+          "seatNumber": 79,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 79.0
+          "seatNumber": 80,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 80.0
+          "seatNumber": 81,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 81.0
+          "seatNumber": 82,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 82.0
+          "seatNumber": 83,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 83.0
+          "seatNumber": 84,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 84.0
+          "seatNumber": 85,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 85.0
+          "seatNumber": 86,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 86.0
+          "seatNumber": 87,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 87.0
+          "seatNumber": 88,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 88.0
+          "seatNumber": 89,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 89.0
+          "seatNumber": 90,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 90.0
+          "seatNumber": 91,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 91.0
+          "seatNumber": 92,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 92.0
+          "seatNumber": 93,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 93.0
+          "seatNumber": 94,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 94.0
+          "seatNumber": 95,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 95.0
+          "seatNumber": 96,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 96.0
+          "seatNumber": 97,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 97.0
+          "seatNumber": 98,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 98.0
+          "seatNumber": 99,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 99.0
+          "seatNumber": 100,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 100.0
+          "seatNumber": 101,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 101.0
+          "seatNumber": 102,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 102.0
+          "seatNumber": 103,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 103.0
+          "seatNumber": 104,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 104.0
+          "seatNumber": 105,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 105.0
+          "seatNumber": 106,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 106.0
+          "seatNumber": 107,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 107.0
+          "seatNumber": 108,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 108.0
+          "seatNumber": 109,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 109.0
+          "seatNumber": 110,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 110.0
+          "seatNumber": 111,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 111.0
+          "seatNumber": 112,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 112.0
+          "seatNumber": 113,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 113.0
+          "seatNumber": 114,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 114.0
+          "seatNumber": 115,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 115.0
+          "seatNumber": 116,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 116.0
+          "seatNumber": 117,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 117.0
+          "seatNumber": 118,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 118.0
+          "seatNumber": 119,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 119.0
+          "seatNumber": 120,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 120.0
+          "seatNumber": 121,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 121.0
+          "seatNumber": 122,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 122.0
+          "seatNumber": 123,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 123.0
+          "seatNumber": 124,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 124.0
+          "seatNumber": 125,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 125.0
+          "seatNumber": 126,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 126.0
+          "seatNumber": 127,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 127.0
+          "seatNumber": 128,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 128.0
+          "seatNumber": 129,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 129.0
+          "seatNumber": 130,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 130.0
+          "seatNumber": 131,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 131.0
+          "seatNumber": 132,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 132.0
+          "seatNumber": 133,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 133.0
+          "seatNumber": 134,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 134.0
+          "seatNumber": 135,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 135.0
+          "seatNumber": 136,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 136.0
+          "seatNumber": 137,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 137.0
+          "seatNumber": 138,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 138.0
+          "seatNumber": 139,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 139.0
+          "seatNumber": 140,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 140.0
+          "seatNumber": 141,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 141.0
+          "seatNumber": 142,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 142.0
+          "seatNumber": 143,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 143.0
+          "seatNumber": 144,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 144.0
+          "seatNumber": 145,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 145.0
+          "seatNumber": 146,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 146.0
+          "seatNumber": 147,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 147.0
+          "seatNumber": 148,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 148.0
+          "seatNumber": 149,
+          "SeatAvailableOrBusy": false
+        },
+        {
+          "seatNumber": 150,
+          "SeatAvailableOrBusy": false
         }
       ]
     },
     "title": "Joker 3",
     "gender": "science fiction",
     "ageRestriction": "Over 18",
-    "duration": 158.0,
+    "duration": 158,
     "namePoster": "Joker.jpg"
   },
   {
@@ -3238,461 +4309,614 @@
     "date": "Aug 12, 2020 8:00:00 PM",
     "price": 5.85,
     "room": {
-      "roomNumber": 6.0,
+      "roomNumber": 6,
       "seats": [
         {
-          "seatNumber": 0.0
+          "seatNumber": 1,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 1.0
+          "seatNumber": 2,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 2.0
+          "seatNumber": 3,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 3.0
+          "seatNumber": 4,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 4.0
+          "seatNumber": 5,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 5.0
+          "seatNumber": 6,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 6.0
+          "seatNumber": 7,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 7.0
+          "seatNumber": 8,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 8.0
+          "seatNumber": 9,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 9.0
+          "seatNumber": 10,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 10.0
+          "seatNumber": 11,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 11.0
+          "seatNumber": 12,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 12.0
+          "seatNumber": 13,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 13.0
+          "seatNumber": 14,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 14.0
+          "seatNumber": 15,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 15.0
+          "seatNumber": 16,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 16.0
+          "seatNumber": 17,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 17.0
+          "seatNumber": 18,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 18.0
+          "seatNumber": 19,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 19.0
+          "seatNumber": 20,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 20.0
+          "seatNumber": 21,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 21.0
+          "seatNumber": 22,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 22.0
+          "seatNumber": 23,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 23.0
+          "seatNumber": 24,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 24.0
+          "seatNumber": 25,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 25.0
+          "seatNumber": 26,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 26.0
+          "seatNumber": 27,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 27.0
+          "seatNumber": 28,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 28.0
+          "seatNumber": 29,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 29.0
+          "seatNumber": 30,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 30.0
+          "seatNumber": 31,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 31.0
+          "seatNumber": 32,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 32.0
+          "seatNumber": 33,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 33.0
+          "seatNumber": 34,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 34.0
+          "seatNumber": 35,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 35.0
+          "seatNumber": 36,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 36.0
+          "seatNumber": 37,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 37.0
+          "seatNumber": 38,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 38.0
+          "seatNumber": 39,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 39.0
+          "seatNumber": 40,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 40.0
+          "seatNumber": 41,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 41.0
+          "seatNumber": 42,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 42.0
+          "seatNumber": 43,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 43.0
+          "seatNumber": 44,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 44.0
+          "seatNumber": 45,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 45.0
+          "seatNumber": 46,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 46.0
+          "seatNumber": 47,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 47.0
+          "seatNumber": 48,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 48.0
+          "seatNumber": 49,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 49.0
+          "seatNumber": 50,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 50.0
+          "seatNumber": 51,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 51.0
+          "seatNumber": 52,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 52.0
+          "seatNumber": 53,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 53.0
+          "seatNumber": 54,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 54.0
+          "seatNumber": 55,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 55.0
+          "seatNumber": 56,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 56.0
+          "seatNumber": 57,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 57.0
+          "seatNumber": 58,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 58.0
+          "seatNumber": 59,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 59.0
+          "seatNumber": 60,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 60.0
+          "seatNumber": 61,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 61.0
+          "seatNumber": 62,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 62.0
+          "seatNumber": 63,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 63.0
+          "seatNumber": 64,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 64.0
+          "seatNumber": 65,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 65.0
+          "seatNumber": 66,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 66.0
+          "seatNumber": 67,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 67.0
+          "seatNumber": 68,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 68.0
+          "seatNumber": 69,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 69.0
+          "seatNumber": 70,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 70.0
+          "seatNumber": 71,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 71.0
+          "seatNumber": 72,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 72.0
+          "seatNumber": 73,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 73.0
+          "seatNumber": 74,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 74.0
+          "seatNumber": 75,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 75.0
+          "seatNumber": 76,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 76.0
+          "seatNumber": 77,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 77.0
+          "seatNumber": 78,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 78.0
+          "seatNumber": 79,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 79.0
+          "seatNumber": 80,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 80.0
+          "seatNumber": 81,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 81.0
+          "seatNumber": 82,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 82.0
+          "seatNumber": 83,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 83.0
+          "seatNumber": 84,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 84.0
+          "seatNumber": 85,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 85.0
+          "seatNumber": 86,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 86.0
+          "seatNumber": 87,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 87.0
+          "seatNumber": 88,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 88.0
+          "seatNumber": 89,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 89.0
+          "seatNumber": 90,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 90.0
+          "seatNumber": 91,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 91.0
+          "seatNumber": 92,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 92.0
+          "seatNumber": 93,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 93.0
+          "seatNumber": 94,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 94.0
+          "seatNumber": 95,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 95.0
+          "seatNumber": 96,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 96.0
+          "seatNumber": 97,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 97.0
+          "seatNumber": 98,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 98.0
+          "seatNumber": 99,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 99.0
+          "seatNumber": 100,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 100.0
+          "seatNumber": 101,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 101.0
+          "seatNumber": 102,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 102.0
+          "seatNumber": 103,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 103.0
+          "seatNumber": 104,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 104.0
+          "seatNumber": 105,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 105.0
+          "seatNumber": 106,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 106.0
+          "seatNumber": 107,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 107.0
+          "seatNumber": 108,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 108.0
+          "seatNumber": 109,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 109.0
+          "seatNumber": 110,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 110.0
+          "seatNumber": 111,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 111.0
+          "seatNumber": 112,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 112.0
+          "seatNumber": 113,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 113.0
+          "seatNumber": 114,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 114.0
+          "seatNumber": 115,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 115.0
+          "seatNumber": 116,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 116.0
+          "seatNumber": 117,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 117.0
+          "seatNumber": 118,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 118.0
+          "seatNumber": 119,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 119.0
+          "seatNumber": 120,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 120.0
+          "seatNumber": 121,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 121.0
+          "seatNumber": 122,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 122.0
+          "seatNumber": 123,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 123.0
+          "seatNumber": 124,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 124.0
+          "seatNumber": 125,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 125.0
+          "seatNumber": 126,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 126.0
+          "seatNumber": 127,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 127.0
+          "seatNumber": 128,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 128.0
+          "seatNumber": 129,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 129.0
+          "seatNumber": 130,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 130.0
+          "seatNumber": 131,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 131.0
+          "seatNumber": 132,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 132.0
+          "seatNumber": 133,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 133.0
+          "seatNumber": 134,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 134.0
+          "seatNumber": 135,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 135.0
+          "seatNumber": 136,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 136.0
+          "seatNumber": 137,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 137.0
+          "seatNumber": 138,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 138.0
+          "seatNumber": 139,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 139.0
+          "seatNumber": 140,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 140.0
+          "seatNumber": 141,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 141.0
+          "seatNumber": 142,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 142.0
+          "seatNumber": 143,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 143.0
+          "seatNumber": 144,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 144.0
+          "seatNumber": 145,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 145.0
+          "seatNumber": 146,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 146.0
+          "seatNumber": 147,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 147.0
+          "seatNumber": 148,
+          "SeatAvailableOrBusy": false
         },
         {
-          "seatNumber": 148.0
+          "seatNumber": 149,
+          "SeatAvailableOrBusy": false
+        },
+        {
+          "seatNumber": 150,
+          "SeatAvailableOrBusy": false
         }
       ]
     },
     "title": "Joker 4",
     "gender": "science fiction",
     "ageRestriction": "Over 18",
-    "duration": 158.0,
+    "duration": 158,
     "namePoster": "Joker.jpg"
   }
 ]

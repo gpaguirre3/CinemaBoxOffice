@@ -8,9 +8,7 @@ package ec.edu.espe.cinemaboxoffice.view;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
 import java.awt.Image;
-import java.io.IOException;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
@@ -19,7 +17,6 @@ import javax.swing.JFrame;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class FrmMovie extends javax.swing.JFrame {
-    private int numberMovie;
     private final Movie movie;
     
     /**
@@ -210,18 +207,14 @@ public class FrmMovie extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMovieBuyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMovieBuyActionPerformed
-        FrmBill bill = new FrmBill((MovieBillboard) movie);
-        bill.setVisible(true);
-        bill.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        FrmSeatsControl frmSeats = new FrmSeatsControl(movie);
+        frmSeats.showSeats();
+        frmSeats.setVisible(true);
     }//GEN-LAST:event_btnMovieBuyActionPerformed
 
     private void btnMovieExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMovieExitActionPerformed
         dispose();
     }//GEN-LAST:event_btnMovieExitActionPerformed
-
-    public int getNumberMovie(int numberMovie){
-        return numberMovie;
-    }
 
     public ImageIcon showPicture(String namePicture) {
         ImageIcon image = new ImageIcon(Paths.get("pictures/" + namePicture).toString());

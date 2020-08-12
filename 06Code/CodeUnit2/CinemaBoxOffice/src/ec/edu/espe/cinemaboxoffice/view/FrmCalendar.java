@@ -104,7 +104,6 @@ public class FrmCalendar extends javax.swing.JFrame {
     private void btnConfirmDateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConfirmDateMouseClicked
         FrmCalendar.day = cldMovie.getDate().getDay();
         FrmCinemaBox frmCinema = new FrmCinemaBox();
-        
         parent.dispose();
         
         try {
