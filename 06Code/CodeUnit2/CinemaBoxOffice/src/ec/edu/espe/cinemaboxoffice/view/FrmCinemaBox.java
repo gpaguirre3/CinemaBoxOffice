@@ -532,23 +532,23 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         pnlPremier1.setBackground(new java.awt.Color(0, 0, 51));
 
         lblPremierPoster1.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierPoster1.setText("jLabel1");
+        lblPremierPoster1.setText("-");
 
         lblPremierTitle1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle1.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle1.setText("jLabel7");
+        lblPremierTitle1.setText("-");
 
         lblPremierGender1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender1.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierGender1.setText("jLabel8");
+        lblPremierGender1.setText("-");
 
         lblPremierMonth1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth1.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierMonth1.setText("jLabel9");
+        lblPremierMonth1.setText("-");
 
         lblPremierDuration1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration1.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierDuration1.setText("jLabel1");
+        lblPremierDuration1.setText("-");
 
         javax.swing.GroupLayout pnlPremier1Layout = new javax.swing.GroupLayout(pnlPremier1);
         pnlPremier1.setLayout(pnlPremier1Layout);
@@ -586,23 +586,23 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         pnlPremier2.setBackground(new java.awt.Color(0, 0, 51));
 
         lblPremierPoster2.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierPoster2.setText("jLabel3");
+        lblPremierPoster2.setText("-");
 
         lblPremierTitle2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle2.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle2.setText("jLabel10");
+        lblPremierTitle2.setText("-");
 
         lblPremierGender2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender2.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierGender2.setText("jLabel11");
+        lblPremierGender2.setText("-");
 
         lblPremierMonth2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth2.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierMonth2.setText("jLabel12");
+        lblPremierMonth2.setText("-");
 
         lblPremierDuration2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration2.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierDuration2.setText("jLabel2");
+        lblPremierDuration2.setText("-");
 
         javax.swing.GroupLayout pnlPremier2Layout = new javax.swing.GroupLayout(pnlPremier2);
         pnlPremier2.setLayout(pnlPremier2Layout);
@@ -641,23 +641,23 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         pnlPremier3.setBackground(new java.awt.Color(0, 0, 51));
 
         lblPremierPoster3.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierPoster3.setText("jLabel4");
+        lblPremierPoster3.setText("-");
 
         lblPremierTitle3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle3.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle3.setText("jLabel13");
+        lblPremierTitle3.setText("-");
 
         lblPremierGender3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender3.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierGender3.setText("jLabel14");
+        lblPremierGender3.setText("-");
 
         lblPremierMonth3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth3.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierMonth3.setText("jLabel15");
+        lblPremierMonth3.setText("-");
 
         lblPremierDuration3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration3.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierDuration3.setText("jLabel3");
+        lblPremierDuration3.setText("-");
 
         javax.swing.GroupLayout pnlPremier3Layout = new javax.swing.GroupLayout(pnlPremier3);
         pnlPremier3.setLayout(pnlPremier3Layout);
@@ -695,23 +695,23 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         pnlPremier5.setBackground(new java.awt.Color(0, 0, 51));
 
         lblPremierPoster5.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierPoster5.setText("jLabel5");
+        lblPremierPoster5.setText("-");
 
         lblPremierTitle5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle5.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle5.setText("jLabel22");
+        lblPremierTitle5.setText("-");
 
         lblPremierGender5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender5.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierGender5.setText("jLabel23");
+        lblPremierGender5.setText("-");
 
         lblPremierMonth5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth5.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierMonth5.setText("jLabel24");
+        lblPremierMonth5.setText("-");
 
         lblPremierDuration5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration5.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierDuration5.setText("jLabel5");
+        lblPremierDuration5.setText("-");
 
         javax.swing.GroupLayout pnlPremier5Layout = new javax.swing.GroupLayout(pnlPremier5);
         pnlPremier5.setLayout(pnlPremier5Layout);
@@ -749,23 +749,23 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         pnlPremier4.setBackground(new java.awt.Color(0, 0, 51));
 
         lblPremierPoster4.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierPoster4.setText("jLabel2");
+        lblPremierPoster4.setText("-");
 
         lblPremierTitle4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle4.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle4.setText("jLabel16");
+        lblPremierTitle4.setText("-");
 
         lblPremierGender4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender4.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierGender4.setText("jLabel17");
+        lblPremierGender4.setText("-");
 
         lblPremierMonth4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth4.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierMonth4.setText("jLabel18");
+        lblPremierMonth4.setText("-");
 
         lblPremierDuration4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration4.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierDuration4.setText("jLabel4");
+        lblPremierDuration4.setText("-");
 
         javax.swing.GroupLayout pnlPremier4Layout = new javax.swing.GroupLayout(pnlPremier4);
         pnlPremier4.setLayout(pnlPremier4Layout);
@@ -803,11 +803,11 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         pnlPremier6.setBackground(new java.awt.Color(0, 0, 51));
 
         lblPremierPoster6.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierPoster6.setText("jLabel6");
+        lblPremierPoster6.setText("-");
 
         lblPremierTitle6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierTitle6.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierTitle6.setText("jLabel19");
+        lblPremierTitle6.setText("-");
 
         lblPremierGender6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender6.setForeground(new java.awt.Color(255, 255, 255));
@@ -815,11 +815,11 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         lblPremierMonth6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth6.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierMonth6.setText("jLabel21");
+        lblPremierMonth6.setText("-");
 
         lblPremierDuration6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierDuration6.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierDuration6.setText("jLabel7");
+        lblPremierDuration6.setText("-");
 
         javax.swing.GroupLayout pnlPremier6Layout = new javax.swing.GroupLayout(pnlPremier6);
         pnlPremier6.setLayout(pnlPremier6Layout);
@@ -864,7 +864,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                     .addComponent(pnlPremier3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addGroup(pnlNextPremierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(pnlPremier4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1035,49 +1035,52 @@ public class FrmCinemaBox extends javax.swing.JFrame {
             lblPremierTitle1.setText(premiers.get(0).getTitle());
             lblPremierGender1.setText(premiers.get(0).getGender());
             lblPremierDuration1.setText(premiers.get(0).getDuration());
-            lblPremierMonth1.setText(premiers.get(0).getDateNextPremier().toGMTString());
+            lblPremierMonth1.setText(premiers.get(0).getDate());
         }
         if (premiers.size() > 1) {
             lblPremierPoster2.setIcon(showPicture(premiers.get(1).getNamePoster()));
             lblPremierTitle2.setText(premiers.get(1).getTitle());
             lblPremierGender2.setText(premiers.get(1).getGender());
             lblPremierDuration2.setText(premiers.get(1).getDuration());
-            lblPremierMonth2.setText(premiers.get(1).getDateNextPremier().toGMTString());
+            lblPremierMonth2.setText(premiers.get(1).getDate());
         }
         if (premiers.size() > 2) {
             lblPremierPoster3.setIcon(showPicture(premiers.get(2).getNamePoster()));
             lblPremierTitle3.setText(premiers.get(2).getTitle());
             lblPremierGender3.setText(premiers.get(2).getGender());
             lblPremierDuration3.setText(premiers.get(2).getDuration());
-            lblPremierMonth3.setText(premiers.get(2).getDateNextPremier().toGMTString());
+            lblPremierMonth3.setText(premiers.get(2).getDate());
         }
         if (premiers.size() > 3) {
             lblPremierPoster4.setIcon(showPicture(premiers.get(3).getNamePoster()));
             lblPremierTitle4.setText(premiers.get(3).getTitle());
             lblPremierGender4.setText(premiers.get(3).getGender());
             lblPremierDuration4.setText(premiers.get(3).getDuration());
-            lblPremierMonth4.setText(premiers.get(3).getDateNextPremier().toGMTString());
+            lblPremierMonth4.setText(premiers.get(3).getDate());
         }
         if (premiers.size() > 4) {
             lblPremierPoster5.setIcon(showPicture(premiers.get(4).getNamePoster()));
             lblPremierTitle5.setText(premiers.get(4).getTitle());
             lblPremierGender5.setText(premiers.get(4).getGender());
             lblPremierDuration5.setText(premiers.get(4).getDuration());
-            lblPremierMonth5.setText(premiers.get(4).getDateNextPremier().toGMTString());
+            lblPremierMonth5.setText(premiers.get(4).getDate());
         }
         if (premiers.size() > 5) {
             lblPremierPoster6.setIcon(showPicture(premiers.get(5).getNamePoster()));
             lblPremierTitle6.setText(premiers.get(5).getTitle());
             lblPremierGender6.setText(premiers.get(5).getGender());
             lblPremierDuration6.setText(premiers.get(5).getDuration());
-            lblPremierMonth6.setText(premiers.get(5).getDateNextPremier().toGMTString());
+            lblPremierMonth6.setText(premiers.get(5).getDate());
         }
     }
 
     public ImageIcon showPicture(String namePicture) {
-        ImageIcon image = new ImageIcon(Paths.get("pictures/" + namePicture).toString());
-        ImageIcon icon = new ImageIcon(image.getImage().getScaledInstance(100, 148, Image.SCALE_DEFAULT));
-        return icon;
+        if (Paths.get("pictures/" + namePicture).toString() != null) {
+            ImageIcon image = new ImageIcon(Paths.get("pictures/" + namePicture).toString());
+            ImageIcon icon = new ImageIcon(image.getImage().getScaledInstance(100, 148, Image.SCALE_DEFAULT));
+            return icon;
+        }
+        return null;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

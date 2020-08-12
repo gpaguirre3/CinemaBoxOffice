@@ -45,7 +45,7 @@ public class MovieBillboard extends Movie {
 
     @Override
     public String getDate() {
-        return date.toGMTString();
+        return date.toLocaleString();
     }
     
     @Override

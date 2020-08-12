@@ -276,8 +276,8 @@ public class FrmNextPremier extends javax.swing.JFrame {
         String age = cbxAgeRestriction.getSelectedItem().toString();
         int duration = Integer.parseInt(spnPremierDuration.getValue().toString());
         String namePoster = txfDNamePoster.getText() + ".jpg";
-        Date dateNextPremier = new Date(0, cbxMonthNextPremier.getMonth(),
-                Integer.parseInt(cbxYearNextPremier.getSelectedItem().toString()) - 1900);
+        Date dateNextPremier = new Date(Integer.parseInt(cbxYearNextPremier.
+                getSelectedItem().toString()) -1900, cbxMonthNextPremier.getMonth(), 1);
         Movie nextPremier = new NextPremier(title, gender, age, duration, namePoster, dateNextPremier);
         try {
             record.recordMovie("NextPremier.json", nextPremier);

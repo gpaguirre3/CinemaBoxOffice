@@ -214,7 +214,7 @@ public class FrmDeleteMovie extends javax.swing.JFrame {
         for (int i = 0; i < movies.size(); i++) {
             tblViewMoviesDelete.setValueAt(movies.get(i).getTitle(), i, 0);
             tblViewMoviesDelete.setValueAt(movies.get(i).getDate(), i, 1);
-            tblViewMoviesDelete.setValueAt(movies.get(i).getGender(), i, 2);
+            tblViewMoviesDelete.setValueAt("-" , i, 2);
         }
     }
 

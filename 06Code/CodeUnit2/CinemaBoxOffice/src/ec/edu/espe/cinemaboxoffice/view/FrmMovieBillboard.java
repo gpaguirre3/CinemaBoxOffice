@@ -377,8 +377,8 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         String sinopsis = txaSinopsis.getText();
 
         if (title.trim().isEmpty()) {
-            JOptionPane.showMessageDialog(
-                    null, "Titles are required!", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Titles are required!", 
+                    "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!title.matches("^[ A-Za-z0-9]+$")) {
             JOptionPane.showMessageDialog(

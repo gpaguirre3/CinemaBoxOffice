@@ -38,7 +38,8 @@ public class NextPremier extends Movie {
 
     @Override
     public String getDate() {
-        return null;
+        return (dateNextPremier.getMonth() + 1)+"" + "/"+ 
+                (dateNextPremier.getYear() + 1900) +"";
     }
 
     @Override

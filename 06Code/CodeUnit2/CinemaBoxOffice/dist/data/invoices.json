@@ -1,0 +1,44 @@
+[
+  {
+    "customerName": "Gabriel Aguirre",
+    "identifyCard": "1727620054",
+    "lastCreditCardDigits": "9978",
+    "movieTitle": "Spiderman",
+    "price": 5.36
+  },
+  {
+    "customerName": "patricio Aguirre",
+    "identifyCard": "1707856330",
+    "lastCreditCardDigits": "9978",
+    "movieTitle": "IT Chapter Two",
+    "price": 4.46
+  },
+  {
+    "customerName": "Jhoel Chicaiza",
+    "identifyCard": "1708740962",
+    "lastCreditCardDigits": "6780",
+    "movieTitle": "Spiderman",
+    "price": 5.36
+  },
+  {
+    "customerName": "gabriel Aguirre",
+    "identifyCard": "1727620054",
+    "lastCreditCardDigits": "3742",
+    "movieTitle": "Jojo Rabbit",
+    "price": 3.56
+  },
+  {
+    "customerName": "Maria Guanoluisa",
+    "identifyCard": "1708740962",
+    "lastCreditCardDigits": "7550",
+    "movieTitle": "Spiderman",
+    "price": 5.36
+  },
+  {
+    "customerName": "gabriel Aguirre ",
+    "identifyCard": "1727620054",
+    "lastCreditCardDigits": "8393",
+    "movieTitle": "Joker 4",
+    "price": 5.85
+  }
+]
