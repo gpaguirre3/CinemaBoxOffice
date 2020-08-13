@@ -40,5 +40,12 @@
     "lastCreditCardDigits": "8393",
     "movieTitle": "Joker 4",
     "price": 5.85
+  },
+  {
+    "customerName": "gabriel aguirre",
+    "identifyCard": "1727620054",
+    "lastCreditCardDigits": "5501",
+    "movieTitle": "Spiderman",
+    "price": 5.36
   }
 ]
