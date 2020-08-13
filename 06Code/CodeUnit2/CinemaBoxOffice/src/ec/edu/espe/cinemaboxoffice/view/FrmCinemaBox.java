@@ -938,13 +938,13 @@ public class FrmCinemaBox extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mniCinemaExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniCinemaExitActionPerformed
-        new FrmAdmin().setVisible(false);
+        new FrmAdmin(this).setVisible(false);
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_mniCinemaExitActionPerformed
 
     private void mnuCinemaAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCinemaAdminActionPerformed
-        FrmAdminLogin frmLogin = new FrmAdminLogin();
+        FrmAdminLogin frmLogin = new FrmAdminLogin(this);
         frmLogin.setVisible(true);
     }//GEN-LAST:event_mnuCinemaAdminActionPerformed
 

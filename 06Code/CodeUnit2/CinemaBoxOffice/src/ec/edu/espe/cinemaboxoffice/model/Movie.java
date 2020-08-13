@@ -36,7 +36,7 @@ public abstract class Movie {
     }
 
     public static ArrayList<Movie> consultMovies(String fileName) throws IOException {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setDateFormat("MMM d, yyyy HH:mm:ss a").setPrettyPrinting().create();
         ArrayList<Movie> movies = new ArrayList<>();
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
@@ -50,7 +50,7 @@ public abstract class Movie {
     }
     
     public static ArrayList<Movie> consultNextPremier(String fileName) throws IOException {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setDateFormat("MMM d, yyyy HH:mm:ss a").setPrettyPrinting().create();
         ArrayList<Movie> movies = new ArrayList<>();
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));

@@ -27,7 +27,7 @@ public class MovieRecord {
     InputDataValidation in = new InputDataValidation();
 
     public boolean recordMovie(String fileName, Movie movie) throws IOException {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setDateFormat("MMM d, yyyy HH:mm:ss a").setPrettyPrinting().create();
         ArrayList<Movie> movies = new ArrayList<>();
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
@@ -52,7 +52,7 @@ public class MovieRecord {
     }
 
     public boolean deleteMovie(String fileName, String titleMovie) throws IOException {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setDateFormat("MMM d, yyyy HH:mm:ss a").setPrettyPrinting().create();
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
         if (gson.fromJson(moviesJson, ArrayList.class) != null) {
@@ -81,7 +81,7 @@ public class MovieRecord {
     }
 
     public void controlSeats(Movie movie, int x, int y, boolean seatAvailability) throws IOException {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setDateFormat("MMM d, yyyy HH:mm:ss a").setPrettyPrinting().create();
         ArrayList<Movie> movies = Movie.consultMovies("Billboard.json");
         for (int z = 0; z < movies.size(); z++) {
             if (movie.getTitle().equals(movies.get(z).getTitle())) {

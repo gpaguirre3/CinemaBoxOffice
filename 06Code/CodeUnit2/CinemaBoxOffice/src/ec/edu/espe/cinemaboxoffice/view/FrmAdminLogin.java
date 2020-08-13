@@ -17,12 +17,15 @@ import javax.swing.JOptionPane;
  */
 public class FrmAdminLogin extends javax.swing.JFrame {
 
+    private final FrmCinemaBox parent;
+
     /**
      * Creates new form FrmAdminLogin
      */
-    public FrmAdminLogin() {
+    public FrmAdminLogin(FrmCinemaBox parent) {
         initComponents();
         setLocationRelativeTo(null);
+        this.parent = parent;
     }
 
     public void verifyAccount(String username, String password) throws IOException {
@@ -44,7 +47,7 @@ public class FrmAdminLogin extends javax.swing.JFrame {
                     JOptionPane.INFORMATION_MESSAGE
             );
             this.setVisible(false);
-            FrmAdmin frmAdmin = new FrmAdmin();
+            FrmAdmin frmAdmin = new FrmAdmin(parent);
             frmAdmin.showNamesMovies();
             frmAdmin.setVisible(true);
         } else {

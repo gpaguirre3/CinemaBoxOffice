@@ -18,14 +18,17 @@ import java.util.logging.Logger;
  * @author Kevin Chuquimarca ESPE-DCCO
  */
 public class FrmAdmin extends javax.swing.JFrame {
+    private final FrmCinemaBox parent;
 
     /**
      * Creates new form FrmAdmin
+     * @param parent
      */
-    public FrmAdmin() {
+    public FrmAdmin(FrmCinemaBox parent) {
         initComponents();
         this.getContentPane().setBackground(Color.darkGray);
         setLocationRelativeTo(null);
+        this.parent = parent;
     }
 
     /**
@@ -309,6 +312,8 @@ public class FrmAdmin extends javax.swing.JFrame {
 
     private void mniAdminExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniAdminExitActionPerformed
         this.setVisible(false);
+        parent.dispose();
+        
         FrmCinemaBox frmCinema = new FrmCinemaBox();
         try {
             frmCinema.showBillboard(new Date().getDay());
@@ -320,7 +325,7 @@ public class FrmAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_mniAdminExitActionPerformed
 
     private void mnuNewAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuNewAdminActionPerformed
-        new FrmNewAccounts().setVisible(true);
+        new FrmNewAccounts(parent).setVisible(true);
     }//GEN-LAST:event_mnuNewAdminActionPerformed
 
     private void mnuDaleteMovieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuDaleteMovieActionPerformed

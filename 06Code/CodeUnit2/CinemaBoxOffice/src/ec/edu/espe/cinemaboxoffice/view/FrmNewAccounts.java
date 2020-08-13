@@ -19,13 +19,15 @@ import javax.swing.JOptionPane;
  * @author Josue
  */
 public class FrmNewAccounts extends javax.swing.JFrame {
+    private final FrmCinemaBox parent;
 
     /**
      * Creates new form FrmNewAccounts
      */
-    public FrmNewAccounts() {
+    public FrmNewAccounts(FrmCinemaBox parent) {
         initComponents();
         setLocationRelativeTo(null);
+        this.parent = parent;
     }
 
     public boolean verify(String id) throws IOException {
@@ -363,7 +365,7 @@ public class FrmNewAccounts extends javax.swing.JFrame {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         this.setVisible(false);
-        new FrmAdmin().setVisible(true);
+        new FrmAdmin(parent).setVisible(true);
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void txtIdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIdKeyTyped
