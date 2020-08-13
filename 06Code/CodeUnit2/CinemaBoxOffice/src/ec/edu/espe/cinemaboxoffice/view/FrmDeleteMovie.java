@@ -197,9 +197,8 @@ public class FrmDeleteMovie extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDeleteMovieExitMouseClicked
 
     public void showListMovies(String fileName) throws IOException {
-        ArrayList<Movie> movies;
         CinemaRoom room;
-        movies = MovieDaily.getMovies(Movie.consultMovies(fileName), new Date().getDay());
+        ArrayList<Movie> movies = Movie.consultMovies(fileName);
         for (int i = 0; i < movies.size(); i++) {
             room = movies.get(i).getRoom();
             tblViewMoviesDelete.setValueAt(movies.get(i).getTitle(), i, 0);
