@@ -11,6 +11,7 @@ import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
 import ec.edu.espe.cinemaboxoffice.model.Invoice;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
+import ec.edu.espe.cinemaboxoffice.view.FrmTicket;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -114,6 +115,7 @@ public class FrmBill extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         btnBuy = new javax.swing.JButton();
         btnCancel = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Invoice");
@@ -328,12 +330,21 @@ public class FrmBill extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Print Ticket");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(70, 70, 70)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnBuy)
                 .addGap(18, 18, 18)
                 .addComponent(btnCancel)
@@ -345,7 +356,8 @@ public class FrmBill extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuy)
-                    .addComponent(btnCancel))
+                    .addComponent(btnCancel)
+                    .addComponent(jButton1))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -465,11 +477,19 @@ public class FrmBill extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnCancelActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+     
+       FrmTicket frmTicket= new FrmTicket(movie);
+       frmTicket.setVisible(true);
+
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuy;
     private javax.swing.JButton btnCancel;
     private javax.swing.JComboBox<String> cmbxMonth;
     private javax.swing.JComboBox<String> cmbxYear;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
