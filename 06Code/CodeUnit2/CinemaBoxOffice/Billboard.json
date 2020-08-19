@@ -4086,7 +4086,7 @@
         },
         {
           "seatNumber": 98,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 99,
@@ -4114,7 +4114,7 @@
         },
         {
           "seatNumber": 105,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 106,
@@ -4126,7 +4126,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -4541,7 +4541,7 @@
         },
         {
           "seatNumber": 58,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 59,
@@ -4661,7 +4661,7 @@
         },
         {
           "seatNumber": 88,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 89,
@@ -4697,7 +4697,7 @@
         },
         {
           "seatNumber": 97,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 98,
@@ -4821,7 +4821,7 @@
         },
         {
           "seatNumber": 128,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 129,
@@ -5472,7 +5472,7 @@
         },
         {
           "seatNumber": 137,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 138,
@@ -5923,7 +5923,7 @@
         },
         {
           "seatNumber": 96,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 97,
@@ -7161,7 +7161,7 @@
         },
         {
           "seatNumber": 98,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 99,
@@ -7189,7 +7189,7 @@
         },
         {
           "seatNumber": 105,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 106,
@@ -7201,7 +7201,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -7616,7 +7616,7 @@
         },
         {
           "seatNumber": 58,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 59,
@@ -7736,7 +7736,7 @@
         },
         {
           "seatNumber": 88,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 89,
@@ -7772,7 +7772,7 @@
         },
         {
           "seatNumber": 97,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 98,
@@ -7896,7 +7896,7 @@
         },
         {
           "seatNumber": 128,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 129,
@@ -8547,7 +8547,7 @@
         },
         {
           "seatNumber": 137,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 138,
@@ -8998,7 +8998,7 @@
         },
         {
           "seatNumber": 96,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 97,
@@ -10236,7 +10236,7 @@
         },
         {
           "seatNumber": 98,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 99,
@@ -10264,7 +10264,7 @@
         },
         {
           "seatNumber": 105,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 106,
@@ -10276,7 +10276,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -10691,7 +10691,7 @@
         },
         {
           "seatNumber": 58,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 59,
@@ -10811,7 +10811,7 @@
         },
         {
           "seatNumber": 88,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 89,
@@ -10847,7 +10847,7 @@
         },
         {
           "seatNumber": 97,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 98,
@@ -10971,7 +10971,7 @@
         },
         {
           "seatNumber": 128,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 129,
@@ -11622,7 +11622,7 @@
         },
         {
           "seatNumber": 137,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 138,
@@ -12073,7 +12073,7 @@
         },
         {
           "seatNumber": 96,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 97,
@@ -13311,7 +13311,7 @@
         },
         {
           "seatNumber": 98,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 99,
@@ -13339,7 +13339,7 @@
         },
         {
           "seatNumber": 105,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 106,
@@ -13351,7 +13351,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -13766,7 +13766,7 @@
         },
         {
           "seatNumber": 58,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 59,
@@ -13886,7 +13886,7 @@
         },
         {
           "seatNumber": 88,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 89,
@@ -13922,7 +13922,7 @@
         },
         {
           "seatNumber": 97,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 98,
@@ -14046,7 +14046,7 @@
         },
         {
           "seatNumber": 128,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 129,
@@ -14697,7 +14697,7 @@
         },
         {
           "seatNumber": 137,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 138,
@@ -15148,7 +15148,7 @@
         },
         {
           "seatNumber": 96,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 97,

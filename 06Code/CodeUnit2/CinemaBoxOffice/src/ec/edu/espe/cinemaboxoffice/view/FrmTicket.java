@@ -56,6 +56,7 @@ public class FrmTicket extends javax.swing.JFrame {
 
         jPanel4 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         pnlticket = new javax.swing.JPanel();
         lblMovieDuration = new javax.swing.JLabel();
         lblMoviegender = new javax.swing.JLabel();
@@ -70,11 +71,16 @@ public class FrmTicket extends javax.swing.JFrame {
         lbliconthree = new javax.swing.JLabel();
         lbliconfour = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         btnPrintTicket = new javax.swing.JButton();
         btnMovieExit = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 51));
         jPanel4.setForeground(new java.awt.Color(255, 255, 51));
@@ -96,84 +102,94 @@ public class FrmTicket extends javax.swing.JFrame {
         setTitle("Movie Ticket ");
         setBackground(new java.awt.Color(0, 0, 51));
 
-        pnlticket.setBackground(new java.awt.Color(0, 0, 51));
-        pnlticket.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 51));
+
+        pnlticket.setBackground(new java.awt.Color(255, 255, 255));
+        pnlticket.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 0, 0)));
+        pnlticket.setForeground(new java.awt.Color(255, 255, 204));
         pnlticket.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblMovieDuration.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        lblMovieDuration.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieDuration.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
+        lblMovieDuration.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieDuration.setText("-");
-        pnlticket.add(lblMovieDuration, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
+        pnlticket.add(lblMovieDuration, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
 
-        lblMoviegender.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        lblMoviegender.setForeground(new java.awt.Color(255, 255, 255));
+        lblMoviegender.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
+        lblMoviegender.setForeground(new java.awt.Color(0, 0, 0));
         lblMoviegender.setText("-");
-        pnlticket.add(lblMoviegender, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
+        pnlticket.add(lblMoviegender, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, -1, -1));
 
-        lblMovieTitle.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        lblMovieTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieTitle.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
+        lblMovieTitle.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieTitle.setText("-");
-        pnlticket.add(lblMovieTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
+        pnlticket.add(lblMovieTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 20, -1, -1));
 
-        lblMovieAgeRestriction.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        lblMovieAgeRestriction.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieAgeRestriction.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
+        lblMovieAgeRestriction.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieAgeRestriction.setText("-");
-        pnlticket.add(lblMovieAgeRestriction, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, -1, -1));
+        pnlticket.add(lblMovieAgeRestriction, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, -1, -1));
 
-        lblMovieDate.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        lblMovieDate.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieDate.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
+        lblMovieDate.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieDate.setText("-");
-        pnlticket.add(lblMovieDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
+        pnlticket.add(lblMovieDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, -1, -1));
 
-        lblMoviePrice.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        lblMoviePrice.setForeground(new java.awt.Color(255, 255, 255));
+        lblMoviePrice.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
+        lblMoviePrice.setForeground(new java.awt.Color(0, 0, 0));
         lblMoviePrice.setText("-");
-        pnlticket.add(lblMoviePrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, -1, -1));
+        pnlticket.add(lblMoviePrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 220, -1, -1));
 
         lblcinema.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 24)); // NOI18N
-        lblcinema.setForeground(new java.awt.Color(255, 255, 255));
+        lblcinema.setForeground(new java.awt.Color(0, 0, 0));
         lblcinema.setText("CINEMA");
-        pnlticket.add(lblcinema, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 120, 40));
+        pnlticket.add(lblcinema, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 120, 40));
 
         lblIconOne.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/boleto.png"))); // NOI18N
-        pnlticket.add(lblIconOne, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, 80));
+        pnlticket.add(lblIconOne, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, 80));
 
         lblicontwo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/cine.png"))); // NOI18N
-        pnlticket.add(lblicontwo, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 130, -1, -1));
+        pnlticket.add(lblicontwo, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, -1, -1));
 
         lblboxoffice.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 24)); // NOI18N
-        lblboxoffice.setForeground(new java.awt.Color(255, 255, 255));
+        lblboxoffice.setForeground(new java.awt.Color(0, 0, 0));
         lblboxoffice.setText("BOX OFFICE");
-        pnlticket.add(lblboxoffice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 180, 30));
+        pnlticket.add(lblboxoffice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 180, 30));
 
         lbliconthree.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/cine.png"))); // NOI18N
-        pnlticket.add(lbliconthree, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 70, -1, -1));
+        pnlticket.add(lbliconthree, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 70, -1, -1));
 
         lbliconfour.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/cine.png"))); // NOI18N
-        pnlticket.add(lbliconfour, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 10, -1, -1));
+        pnlticket.add(lbliconfour, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 0, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/cine.png"))); // NOI18N
-        pnlticket.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 190, -1, -1));
+        pnlticket.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/view/codigo-de-barras.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/codigo-de-barras.png"))); // NOI18N
+        pnlticket.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 80, 130, 130));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        jLabel1.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
+        jLabel1.setText("Title:");
+        pnlticket.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, -1, -1));
 
-        pnlticket.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 70, 130, 130));
+        jLabel4.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
+        jLabel4.setText("Gender:");
+        pnlticket.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 51));
-        jPanel1.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel6.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
+        jLabel6.setText("Age Restriction:");
+        pnlticket.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
+        jLabel7.setText("Duration:");
+        pnlticket.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
+        jLabel8.setText("Date:");
+        pnlticket.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, -1, 20));
+
+        jLabel9.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
+        jLabel9.setText("Price:");
+        pnlticket.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, -1, -1));
 
         btnPrintTicket.setText("Print Ticket");
         btnPrintTicket.addActionListener(new java.awt.event.ActionListener() {
@@ -189,40 +205,54 @@ public class FrmTicket extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(210, 210, 210)
-                .addComponent(btnPrintTicket)
-                .addGap(56, 56, 56)
-                .addComponent(btnMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("MOVIE TICKET");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(pnlticket, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(252, 252, 252)
+                        .addComponent(btnPrintTicket)
+                        .addGap(54, 54, 54)
+                        .addComponent(btnMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel10)
+                .addGap(279, 279, 279))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnPrintTicket)
-                    .addComponent(btnMovieExit))
-                .addContainerGap(23, Short.MAX_VALUE))
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(pnlticket, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnMovieExit)
+                    .addComponent(btnPrintTicket))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlticket, javax.swing.GroupLayout.DEFAULT_SIZE, 684, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(pnlticket, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -278,9 +308,15 @@ public class FrmTicket extends javax.swing.JFrame {
     private javax.swing.JButton btnMovieExit;
     private javax.swing.JButton btnPrintTicket;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel lblIconOne;
