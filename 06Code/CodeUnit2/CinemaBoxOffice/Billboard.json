@@ -4006,7 +4006,7 @@
         },
         {
           "seatNumber": 78,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 79,
@@ -7081,7 +7081,7 @@
         },
         {
           "seatNumber": 78,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 79,
@@ -10156,7 +10156,7 @@
         },
         {
           "seatNumber": 78,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 79,
@@ -13231,7 +13231,7 @@
         },
         {
           "seatNumber": 78,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 79,

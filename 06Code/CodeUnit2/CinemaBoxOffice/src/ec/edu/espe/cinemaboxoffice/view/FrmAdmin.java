@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFrame;
 
 /**
  *
@@ -40,6 +41,7 @@ public class FrmAdmin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuItem1 = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
         lblMovies = new javax.swing.JLabel();
         lblMovieTitle2 = new javax.swing.JLabel();
@@ -67,6 +69,10 @@ public class FrmAdmin extends javax.swing.JFrame {
         mniAdminExit = new javax.swing.JMenuItem();
         mnuAdmin = new javax.swing.JMenu();
         mnuNewAdmin = new javax.swing.JMenuItem();
+        mnuReports = new javax.swing.JMenu();
+        mnuItemBillReports = new javax.swing.JMenuItem();
+
+        jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cinema Box Office");
@@ -139,7 +145,7 @@ public class FrmAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblMovieTitle5)
                     .addComponent(lblMovieTitle6))
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 51));
@@ -214,7 +220,6 @@ public class FrmAdmin extends javax.swing.JFrame {
         );
 
         mnuAdminCinema.setText("Cinema");
-        mnuAdminCinema.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
 
         mnuRecord.setText("Record");
 
@@ -267,7 +272,6 @@ public class FrmAdmin extends javax.swing.JFrame {
         jMenuBar1.add(mnuAdminCinema);
 
         mnuAdmin.setText("Admin");
-        mnuAdmin.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
 
         mnuNewAdmin.setText("Sign up");
         mnuNewAdmin.addActionListener(new java.awt.event.ActionListener() {
@@ -278,6 +282,23 @@ public class FrmAdmin extends javax.swing.JFrame {
         mnuAdmin.add(mnuNewAdmin);
 
         jMenuBar1.add(mnuAdmin);
+
+        mnuReports.setText("Reports");
+        mnuReports.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuReportsActionPerformed(evt);
+            }
+        });
+
+        mnuItemBillReports.setText("bills");
+        mnuItemBillReports.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuItemBillReportsActionPerformed(evt);
+            }
+        });
+        mnuReports.add(mnuItemBillReports);
+
+        jMenuBar1.add(mnuReports);
 
         setJMenuBar(jMenuBar1);
 
@@ -350,6 +371,17 @@ public class FrmAdmin extends javax.swing.JFrame {
         frmDeleteMovie.setVisible(true);
     }//GEN-LAST:event_mniDeletePremierActionPerformed
 
+    private void mnuReportsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuReportsActionPerformed
+        
+    }//GEN-LAST:event_mnuReportsActionPerformed
+
+    private void mnuItemBillReportsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuItemBillReportsActionPerformed
+        FrmBillsReport report = new FrmBillsReport();
+        report.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        report.setTitle("Bills report");
+        report.setVisible(true);
+    }//GEN-LAST:event_mnuItemBillReportsActionPerformed
+
     public void showNamesMovies() throws IOException {
         ArrayList<Movie> movies;
         movies = Movie.consultMovies("Billboard.json");
@@ -374,6 +406,7 @@ public class FrmAdmin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblMovieTitle1;
@@ -398,7 +431,9 @@ public class FrmAdmin extends javax.swing.JFrame {
     private javax.swing.JMenu mnuAdminCinema;
     private javax.swing.JMenuItem mnuDaleteMovie;
     private javax.swing.JMenu mnuDelete;
+    private javax.swing.JMenuItem mnuItemBillReports;
     private javax.swing.JMenuItem mnuNewAdmin;
     private javax.swing.JMenu mnuRecord;
+    private javax.swing.JMenu mnuReports;
     // End of variables declaration//GEN-END:variables
 }
