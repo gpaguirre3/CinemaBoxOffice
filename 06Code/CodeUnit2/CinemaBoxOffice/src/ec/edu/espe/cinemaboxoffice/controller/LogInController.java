@@ -7,6 +7,8 @@ package ec.edu.espe.cinemaboxoffice.controller;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
 import ec.edu.espe.cinemaboxoffice.model.Admin;
 import ec.edu.espe.cinemaboxoffice.utils.PasswordEncryptor;
 import java.io.IOException;
@@ -19,6 +21,7 @@ import java.util.ArrayList;
  * @author Josue Aleman, ESPE
  */
 public class LogInController {
+
     public boolean findUser(String username, String pass) throws IOException {
         PasswordEncryptor decryptor = new PasswordEncryptor();
         boolean foundUser = false;
@@ -32,13 +35,13 @@ public class LogInController {
         }
         return foundUser;
     }
-    
+
     public boolean findId(String id) throws IOException {
         boolean idFound = false;
         ArrayList<Admin> admins = new ArrayList<>();
         admins = createAdminList();
         for (Admin admin : admins) {
-            if(admin.getId().equals(id)){
+            if (admin.getId().equals(id)) {
                 idFound = true;
             }
         }

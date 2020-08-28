@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.controller.DBManager;
 import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.NextPremier;
@@ -107,6 +108,11 @@ public class FrmNextPremier extends javax.swing.JFrame {
         btnSaveNextPremier.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnSaveNextPremierMouseClicked(evt);
+            }
+        });
+        btnSaveNextPremier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveNextPremierActionPerformed(evt);
             }
         });
 
@@ -271,23 +277,33 @@ public class FrmNextPremier extends javax.swing.JFrame {
 
     private void btnSaveNextPremierMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSaveNextPremierMouseClicked
         MovieRecord record = new MovieRecord();
+        String DBName = "CinemaBox";
+        String collectionName = "NextPremier";
         String title = txfTitleNextPremier.getText();
         String gender = cbxGenderNextPremier.getSelectedItem().toString();
         String age = cbxAgeRestriction.getSelectedItem().toString();
         int duration = Integer.parseInt(spnPremierDuration.getValue().toString());
         String namePoster = txfDNamePoster.getText() + ".jpg";
         Date dateNextPremier = new Date(Integer.parseInt(cbxYearNextPremier.
-                getSelectedItem().toString()) -1900, cbxMonthNextPremier.getMonth(), 1);
+                getSelectedItem().toString()) - 1900, cbxMonthNextPremier.getMonth(), 1);
         Movie nextPremier = new NextPremier(title, gender, age, duration, namePoster, dateNextPremier);
+
+        DBManager db = new DBManager();
+        db.saveFile(DBName, collectionName);
+        db.saveNextPremier(title, gender, age, duration, namePoster, dateNextPremier);
         try {
             record.recordMovie("NextPremier.json", nextPremier);
         } catch (IOException ex) {
             Logger.getLogger(FrmNextPremier.class.getName()).log(Level.SEVERE, null, ex);
         }
-        JOptionPane.showMessageDialog(null, "your movie has been registered", 
+        JOptionPane.showMessageDialog(null, "your movie has been registered",
                 "Registered movie ", JOptionPane.INFORMATION_MESSAGE);
         dispose();
     }//GEN-LAST:event_btnSaveNextPremierMouseClicked
+
+    private void btnSaveNextPremierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveNextPremierActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSaveNextPremierActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

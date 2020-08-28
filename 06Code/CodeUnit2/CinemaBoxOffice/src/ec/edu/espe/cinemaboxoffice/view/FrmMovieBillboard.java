@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.controller.DBManager;
 import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
 import ec.edu.espe.cinemaboxoffice.model.CinemaRoom;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
@@ -28,13 +29,15 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  * @author Alisson Clavijo
  */
 public class FrmMovieBillboard extends javax.swing.JFrame {
+
     private class PosterContext {
+
         public File path;
         public BufferedImage image;
     }
-    
+
     private PosterContext posterContext;
-    
+
     /**
      * Creates new form FrmMovieBillboard
      */
@@ -423,73 +426,77 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBillboardExitMouseClicked
 
     private void btnBillboardSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBillboardSaveMouseClicked
-        
+
     }//GEN-LAST:event_btnBillboardSaveMouseClicked
 
     private void btnChoosePosterFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChoosePosterFileActionPerformed
         JFileChooser fileChooser = new JFileChooser();
         FileFilter imageFilter = new FileNameExtensionFilter(
-            "Image files", ImageIO.getReaderFileSuffixes());
+                "Image files", ImageIO.getReaderFileSuffixes());
         fileChooser.setFileFilter(imageFilter);
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
         fileChooser.setMultiSelectionEnabled(false);
         fileChooser.setAcceptAllFileFilterUsed(false);
         int selection = fileChooser.showOpenDialog(this);
-        
+
         if (selection == JFileChooser.APPROVE_OPTION) {
             File imageFile = fileChooser.getSelectedFile();
             BufferedImage bufferedImage = null;
 
             try {
                 bufferedImage = ImageIO.read(imageFile);
-                
+
                 if (bufferedImage == null) {
                     JOptionPane.showMessageDialog(
-                        getRootPane(),
-                        "Selected file is not a valid image or has an invalid format",
-                        "Wrong image format",
-                        JOptionPane.ERROR_MESSAGE
+                            getRootPane(),
+                            "Selected file is not a valid image or has an invalid format",
+                            "Wrong image format",
+                            JOptionPane.ERROR_MESSAGE
                     );
                     return;
                 }
-                
+
                 if (bufferedImage.getWidth() < 100 || bufferedImage.getHeight() < 148) {
                     JOptionPane.showMessageDialog(
-                        getRootPane(),
-                        "Image size must be greater than or equal to 100x148",
-                        "Image too small",
-                        JOptionPane.ERROR_MESSAGE
+                            getRootPane(),
+                            "Image size must be greater than or equal to 100x148",
+                            "Image too small",
+                            JOptionPane.ERROR_MESSAGE
                     );
                     return;
                 }
-                
+
                 Image scaled = bufferedImage.getScaledInstance(100, 148, Image.SCALE_SMOOTH);
 
-
                 BufferedImage bimage = new BufferedImage(
-                    scaled.getWidth(null), scaled.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+                        scaled.getWidth(null), scaled.getHeight(null), BufferedImage.TYPE_INT_ARGB);
                 Graphics2D bGr = bimage.createGraphics();
                 bGr.drawImage(scaled, 0, 0, null);
                 bGr.dispose();
-                
+
                 PosterContext context = new PosterContext();
                 context.image = bimage;
                 context.path = imageFile;
-                
+
                 lblPoster.setIcon(new ImageIcon(bimage));
                 txtPosterFile.setText(imageFile.getAbsolutePath());
-                
+
                 posterContext = context;
-            } catch (IOException exception) {}
+            } catch (IOException exception) {
+            }
         }
     }//GEN-LAST:event_btnChoosePosterFileActionPerformed
 
     private void btnBillboardSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBillboardSaveActionPerformed
         MovieRecord record = new MovieRecord();
+        String DBName = "CinemaBox";
+        String collectionName = "Billboard";
         String title = txtTitle.getText();
         String gender = cbxBillboardGender.getSelectedItem().toString();
         String age = cbxAgeRestriction.getSelectedItem().toString();
         String sPrice = txtPrice.getText();
+        String durationn = spnDuration.getValue().toString();
+        String rooms = cbxBillboardRoom.getSelectedItem().toString();
         int duration = Integer.parseInt(spnDuration.getValue().toString());
         //String namePoster = txtPoster.getText() + ".jpg";
         int roomNumber = Integer.parseInt(cbxBillboardRoom.getSelectedItem().
@@ -497,7 +504,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         String sinopsis = txaSinopsis.getText();
 
         if (title.trim().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Titles are required!", 
+            JOptionPane.showMessageDialog(null, "Titles are required!",
                     "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!title.matches("^[ A-Za-z0-9]+$")) {
@@ -507,16 +514,16 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
             txtTitle.setText("");
             return;
         }
-        
+
         if (posterContext == null) {
             JOptionPane.showMessageDialog(
                     null, "Please select a poster to this movie",
                     "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        
+
         String posterName = "";
-        
+
         try {
             posterName = title.replace(" ", "_").toLowerCase();
             File outputPoster = new File("pictures/" + posterName + ".jpg");
@@ -535,14 +542,18 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                 defineRoom(roomNumber), CinemaRoom.buildSeat());
         MovieBillboard movie = new MovieBillboard(title, gender, age, duration,
                 posterName + ".jpg", sinopsis, recordDate(), price, room);
-        
+
+        DBManager db = new DBManager();
+        db.saveFile(DBName, collectionName);
+        db.saveMovies(title, gender, age, duration, posterName, sinopsis, recordDate(), sPrice, room);
+
         try {
             record.recordMovie("Billboard.json", movie);
         } catch (IOException ex) {
             ex.printStackTrace();
             Logger.getLogger(FrmMovieBillboard.class.getName()).log(Level.SEVERE, null, ex);
         }
-        JOptionPane.showMessageDialog(null, "your movie has been registered", 
+        JOptionPane.showMessageDialog(null, "your movie has been registered",
                 "Registered movie ", JOptionPane.INFORMATION_MESSAGE);
         dispose();
     }//GEN-LAST:event_btnBillboardSaveActionPerformed

@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
+import ec.edu.espe.cinemaboxoffice.controller.DBManager;
 import ec.edu.espe.cinemaboxoffice.controller.LogInController;
 import ec.edu.espe.cinemaboxoffice.controller.NewAccountsController;
 import ec.edu.espe.cinemaboxoffice.utils.PasswordEncryptor;
@@ -19,6 +20,7 @@ import javax.swing.JOptionPane;
  * @author Josue
  */
 public class FrmNewAccounts extends javax.swing.JFrame {
+
     private final FrmCinemaBox parent;
 
     /**
@@ -290,6 +292,10 @@ public class FrmNewAccounts extends javax.swing.JFrame {
         // TODO add your handling code here:
         NewAccountsController service = new NewAccountsController();
         PasswordEncryptor encryptor = new PasswordEncryptor();
+        DBManager db = new DBManager();
+
+        String DBName = "CinemaBox";
+        String fileName = "AdminAccounts";
 
         String id = txtId.getText();
         String name = txtName.getText();
@@ -347,7 +353,9 @@ public class FrmNewAccounts extends javax.swing.JFrame {
             return;
         }
 
-        service.addAccounts(id, name, username, password);
+        //service.addAccounts(id, name, username, password);
+        db.saveFile(DBName, fileName);
+        db.saveUsers(username, password, id, name);
 
         JOptionPane.showMessageDialog(
                 null,

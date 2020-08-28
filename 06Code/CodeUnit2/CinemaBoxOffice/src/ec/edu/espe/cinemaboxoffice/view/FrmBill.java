@@ -7,11 +7,11 @@ package ec.edu.espe.cinemaboxoffice.view;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import ec.edu.espe.cinemaboxoffice.controller.DBManager;
 import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
 import ec.edu.espe.cinemaboxoffice.model.Invoice;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
-import ec.edu.espe.cinemaboxoffice.view.FrmTicket;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -380,6 +380,8 @@ public class FrmBill extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBuyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuyActionPerformed
+        String DBName = "CinemaBox";
+        String collectionName = "Bill";
         String fullName = txtFullName.getText();
         String identifyCard = txtIdentifyCard.getText();
         //int totalTickets = (int)spinnerTotalTickets.getValue();
@@ -442,6 +444,10 @@ public class FrmBill extends javax.swing.JFrame {
         List<Invoice> invoices = new ArrayList<>();
         String jsonText;
 
+        DBManager db = new DBManager();
+        db.saveFile(DBName, collectionName);
+        db.saveBill(fullName, identifyCard, movie.getTitle(), movie.getPrice());
+
         try {
             jsonText = new String(Files.readAllBytes(Paths.get("data/invoices.json")));
         } catch (Exception e) {
@@ -478,9 +484,9 @@ public class FrmBill extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     
-       FrmTicket frmTicket= new FrmTicket(movie);
-       frmTicket.setVisible(true);
+
+        FrmTicket frmTicket = new FrmTicket(movie);
+        frmTicket.setVisible(true);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 

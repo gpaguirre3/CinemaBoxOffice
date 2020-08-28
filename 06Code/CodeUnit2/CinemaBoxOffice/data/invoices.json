@@ -131,5 +131,19 @@
     "lastCreditCardDigits": "8333",
     "movieTitle": "Spiderman",
     "price": 5.85
+  },
+  {
+    "customerName": "Josue Aleman",
+    "identifyCard": "0952465334",
+    "lastCreditCardDigits": "4388",
+    "movieTitle": "Patients of a Saint",
+    "price": 7.6
+  },
+  {
+    "customerName": "Dave Mustaine",
+    "identifyCard": "0952465334",
+    "lastCreditCardDigits": "4388",
+    "movieTitle": "Paradise hotel",
+    "price": 5.4
   }
 ]
