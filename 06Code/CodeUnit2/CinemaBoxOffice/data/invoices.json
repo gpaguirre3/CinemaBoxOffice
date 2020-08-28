@@ -145,5 +145,12 @@
     "lastCreditCardDigits": "4388",
     "movieTitle": "Paradise hotel",
     "price": 5.4
+  },
+  {
+    "customerName": "Paul Cabrera",
+    "identifyCard": "1707856330",
+    "lastCreditCardDigits": "6571",
+    "movieTitle": "Bloodshot",
+    "price": 8.6
   }
 ]
