@@ -22,21 +22,27 @@ import java.util.logging.Logger;
  */
 public class DBManager {
 
+    Mongo mongo;
     DB CinemaBox;
     DBCollection collectionName;
 
-    public void saveFile(String DBName, String fileName) {
+    public void connectToMongo() {
         try {
-            Mongo mongo = new Mongo("localhost", 27017);
-            this.CinemaBox = mongo.getDB(DBName);
-            this.collectionName = this.CinemaBox.getCollection(fileName);
-
+            mongo = new Mongo("localhost", 27017);
         } catch (UnknownHostException ex) {
             Logger.getLogger(FrmAdminLogin.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    public void saveFile(String collection) {
+
+        connectToMongo();
+        this.CinemaBox = mongo.getDB("CinemaBox");
+        this.collectionName = this.CinemaBox.getCollection(collection);
 
     }
 
+    
     public void saveUsers(String username, String password, String id, String name) {
         BasicDBObject document = new BasicDBObject();
         document.put("userName", "'" + username + "'");

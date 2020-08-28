@@ -277,8 +277,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
 
     private void btnSaveNextPremierMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSaveNextPremierMouseClicked
         MovieRecord record = new MovieRecord();
-        String DBName = "CinemaBox";
-        String collectionName = "NextPremier";
+
         String title = txfTitleNextPremier.getText();
         String gender = cbxGenderNextPremier.getSelectedItem().toString();
         String age = cbxAgeRestriction.getSelectedItem().toString();
@@ -289,7 +288,8 @@ public class FrmNextPremier extends javax.swing.JFrame {
         Movie nextPremier = new NextPremier(title, gender, age, duration, namePoster, dateNextPremier);
 
         DBManager db = new DBManager();
-        db.saveFile(DBName, collectionName);
+        String collectionName = "NextPremier";
+        db.saveFile(collectionName);
         db.saveNextPremier(title, gender, age, duration, namePoster, dateNextPremier);
         try {
             record.recordMovie("NextPremier.json", nextPremier);

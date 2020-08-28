@@ -60,7 +60,15 @@
     "title": "League of Legends the Movie",
     "gender": "science fiction",
     "ageRestriction": "All public",
-    "duration": 1,
+    "duration": 1.0,
     "namePoster": "lol.jpg"
+  },
+  {
+    "dateNextPremier": "Oct 1, 2022 00:00:00 AM",
+    "title": "How Strange",
+    "gender": "fantasy",
+    "ageRestriction": "All public",
+    "duration": 1,
+    "namePoster": ".jpg"
   }
 ]

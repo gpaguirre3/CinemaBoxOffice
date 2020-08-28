@@ -380,8 +380,7 @@ public class FrmBill extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBuyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuyActionPerformed
-        String DBName = "CinemaBox";
-        String collectionName = "Bill";
+
         String fullName = txtFullName.getText();
         String identifyCard = txtIdentifyCard.getText();
         //int totalTickets = (int)spinnerTotalTickets.getValue();
@@ -445,7 +444,8 @@ public class FrmBill extends javax.swing.JFrame {
         String jsonText;
 
         DBManager db = new DBManager();
-        db.saveFile(DBName, collectionName);
+        String collectionName = "Bill";
+        db.saveFile(collectionName);
         db.saveBill(fullName, identifyCard, movie.getTitle(), movie.getPrice());
 
         try {

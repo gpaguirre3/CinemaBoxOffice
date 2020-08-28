@@ -152,5 +152,12 @@
     "lastCreditCardDigits": "6571",
     "movieTitle": "Bloodshot",
     "price": 8.6
+  },
+  {
+    "customerName": "Josue Aleman",
+    "identifyCard": "0952465334",
+    "lastCreditCardDigits": "8111",
+    "movieTitle": "Onward",
+    "price": 5.4
   }
 ]

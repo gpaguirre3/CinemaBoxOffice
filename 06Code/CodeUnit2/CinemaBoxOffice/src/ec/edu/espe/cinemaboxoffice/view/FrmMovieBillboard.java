@@ -489,7 +489,6 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
 
     private void btnBillboardSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBillboardSaveActionPerformed
         MovieRecord record = new MovieRecord();
-        String DBName = "CinemaBox";
         String collectionName = "Billboard";
         String title = txtTitle.getText();
         String gender = cbxBillboardGender.getSelectedItem().toString();
@@ -544,7 +543,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                 posterName + ".jpg", sinopsis, recordDate(), price, room);
 
         DBManager db = new DBManager();
-        db.saveFile(DBName, collectionName);
+        db.saveFile(collectionName);
         db.saveMovies(title, gender, age, duration, posterName, sinopsis, recordDate(), sPrice, room);
 
         try {

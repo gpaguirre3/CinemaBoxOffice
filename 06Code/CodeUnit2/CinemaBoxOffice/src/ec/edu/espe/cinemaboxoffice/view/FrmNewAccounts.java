@@ -292,9 +292,8 @@ public class FrmNewAccounts extends javax.swing.JFrame {
         // TODO add your handling code here:
         NewAccountsController service = new NewAccountsController();
         PasswordEncryptor encryptor = new PasswordEncryptor();
-        DBManager db = new DBManager();
 
-        String DBName = "CinemaBox";
+        DBManager db = new DBManager();
         String fileName = "AdminAccounts";
 
         String id = txtId.getText();
@@ -353,8 +352,9 @@ public class FrmNewAccounts extends javax.swing.JFrame {
             return;
         }
 
-        //service.addAccounts(id, name, username, password);
-        db.saveFile(DBName, fileName);
+        service.addAccounts(id, name, username, password);
+
+        db.saveFile(fileName);
         db.saveUsers(username, password, id, name);
 
         JOptionPane.showMessageDialog(
