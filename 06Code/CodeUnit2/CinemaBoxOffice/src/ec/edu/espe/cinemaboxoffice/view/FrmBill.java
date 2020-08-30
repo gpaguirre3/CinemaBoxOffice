@@ -8,7 +8,7 @@ package ec.edu.espe.cinemaboxoffice.view;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import ec.edu.espe.cinemaboxoffice.controller.DBManager;
-import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
+import ec.edu.espe.cinemaboxoffice.controller.SeatControl;
 import ec.edu.espe.cinemaboxoffice.model.Invoice;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
@@ -474,9 +474,9 @@ public class FrmBill extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuyActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
-        MovieRecord movieRecord = new MovieRecord();
+        SeatControl seatControl = new SeatControl();
         try {
-            movieRecord.controlSeats(movie, x, y, false);
+            seatControl.controlSeats(movie, x, y, false);
         } catch (IOException ex) {
             Logger.getLogger(FrmBill.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -5,7 +5,7 @@
  */
 package ec.edu.espe.cinemaboxoffice.view;
 
-import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
+import ec.edu.espe.cinemaboxoffice.controller.SeatControl;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
 import java.io.IOException;
@@ -143,9 +143,9 @@ public class FrmSeatsControl extends javax.swing.JFrame {
         int x = tblSeats.rowAtPoint(evt.getPoint());
         int y = tblSeats.columnAtPoint(evt.getPoint());
         if ("available".equals(tblSeats.getValueAt(x, y))) {
-            MovieRecord record = new MovieRecord();
+            SeatControl seatControl = new SeatControl();
             try {
-                record.controlSeats(movie, x, y, true);
+                seatControl.controlSeats(movie, x, y, true);
                 FrmBill bill = new FrmBill((MovieBillboard) movie);
                 FrmBill.x = x;
                 FrmBill.y = y;

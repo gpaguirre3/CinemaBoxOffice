@@ -26,6 +26,11 @@ public class MovieRecord {
 
     InputDataValidation in = new InputDataValidation();
 
+    public static void saveRecord(String fileName, Gson gson, ArrayList<Movie> movies) {
+        FileManager.deleteFile(fileName);
+        FileManager.writeFile(fileName, gson.toJson(movies));
+    }
+
     public boolean recordMovie(String fileName, Movie movie) throws IOException {
         Gson gson = new GsonBuilder().setDateFormat("MMM d, yyyy HH:mm:ss a").setPrettyPrinting().create();
         ArrayList<Movie> movies = new ArrayList<>();
@@ -35,8 +40,7 @@ public class MovieRecord {
             movies = gson.fromJson(moviesJson, ArrayList.class);
         }
         movies.add(movie);
-        FileManager.deleteFile(fileName);
-        FileManager.writeFile(fileName, gson.toJson(movies));
+        saveRecord(fileName, gson, movies);
         return true;
     }
 
@@ -65,8 +69,7 @@ public class MovieRecord {
                 }.getType();
             }
             ArrayList<Movie> movies = gson.fromJson(moviesJson, typeMovies);
-            FileManager.deleteFile(fileName);
-            FileManager.writeFile(fileName, gson.toJson(delete(titleMovie, movies)));
+            saveRecord(fileName, gson, delete(titleMovie, movies));
         }
         return true;
     }
@@ -78,25 +81,5 @@ public class MovieRecord {
             }
         }
         return movies;
-    }
-
-    public void controlSeats(Movie movie, int x, int y, boolean seatAvailability) throws IOException {
-        Gson gson = new GsonBuilder().setDateFormat("MMM d, yyyy HH:mm:ss a").setPrettyPrinting().create();
-        ArrayList<Movie> movies = Movie.consultMovies("Billboard.json");
-        for (int z = 0; z < movies.size(); z++) {
-            if (movie.getTitle().equals(movies.get(z).getTitle())) {
-                int cont = 0;
-                for (int i = 0; i < 15; i++) {
-                    for (int j = 0; j < 10; j++) {
-                        if (i == x & j == y) {
-                            movies.get(z).getRoom().getSeats()[cont].setSeatAvailability(seatAvailability);
-                        }
-                        cont++;
-                    }
-                }
-                FileManager.deleteFile("Billboard.json");
-                FileManager.writeFile("Billboard.json", gson.toJson(movies));
-            }
-        }
     }
 }
