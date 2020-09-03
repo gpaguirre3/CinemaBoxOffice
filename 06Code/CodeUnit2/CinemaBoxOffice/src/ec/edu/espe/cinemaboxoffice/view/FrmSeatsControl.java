@@ -84,9 +84,9 @@ public class FrmSeatsControl extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tblSeats);
 
-        jLabel1.setText("Seats");
+        jLabel1.setText("Asientos");
 
-        jButton2.setText("Exit");
+        jButton2.setText("Salir");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);

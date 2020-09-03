@@ -14,7 +14,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="mnuCinemaAdmin">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Admin"/>
+                <Property name="text" type="java.lang.String" value="Administrador"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuCinemaAdminActionPerformed"/>
@@ -22,7 +22,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mniCinemaExit">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Exit"/>
+                <Property name="text" type="java.lang.String" value="Salir"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mniCinemaExitActionPerformed"/>
@@ -32,7 +32,7 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="mnuCalendar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Calendar"/>
+            <Property name="text" type="java.lang.String" value="Calendario"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Comic Sans MS" size="12" style="3"/>
             </Property>
@@ -95,8 +95,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Billboard">
-                <Property name="tabTitle" type="java.lang.String" value="Billboard"/>
+              <JTabbedPaneConstraints tabName="Cartelera">
+                <Property name="tabTitle" type="java.lang.String" value="Cartelera"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -117,7 +117,7 @@
                           <Component id="pnlBillboard6" min="-2" max="-2" attributes="0"/>
                           <Component id="pnlBillboard2" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="26" max="32767" attributes="0"/>
+                      <EmptySpace pref="48" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -160,16 +160,16 @@
                           <Component id="lblMoviePoster1" min="-2" pref="100" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                                  <Component id="btnMovie1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="lblMovieGender1" min="-2" max="-2" attributes="0"/>
                                       <Component id="lblMovieTitle1" min="-2" max="-2" attributes="0"/>
                                       <Component id="lblMovieAgeRestriction1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                                  <Component id="btnMovie1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
@@ -208,7 +208,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie1">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="View More"/>
+                    <Property name="text" type="java.lang.String" value="Ver m&#xe1;s"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie1MouseClicked"/>
@@ -286,18 +286,21 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="lblMoviePoster2" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
                                   <Component id="lblMovieTitle2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblMovieGender2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="lblMovieAgeRestriction2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                                  <EmptySpace pref="26" max="32767" attributes="0"/>
                                   <Component id="btnMovie2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="lblMoviePoster2" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -313,7 +316,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie2">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="View More"/>
+                    <Property name="text" type="java.lang.String" value="Ver m&#xe1;s"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie2MouseClicked"/>
@@ -369,16 +372,16 @@
                           <Component id="lblMoviePoster3" min="-2" pref="100" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
-                                  <Component id="btnMovie3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="lblMovieGender3" min="-2" max="-2" attributes="0"/>
                                       <Component id="lblMovieTitle3" min="-2" max="-2" attributes="0"/>
                                       <Component id="lblMovieAgeRestriction3" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="btnMovie3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
@@ -417,7 +420,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie3">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="View More"/>
+                    <Property name="text" type="java.lang.String" value="ver m&#xe1;s"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie3MouseClicked"/>
@@ -521,7 +524,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie5">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="View More"/>
+                    <Property name="text" type="java.lang.String" value="ver m&#xe1;s"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie5MouseClicked"/>
@@ -629,7 +632,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie4">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="View More"/>
+                    <Property name="text" type="java.lang.String" value="ver m&#xe1;s"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie4MouseClicked"/>
@@ -734,7 +737,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnMovie6">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="View More"/>
+                    <Property name="text" type="java.lang.String" value="ver m&#xe1;s"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMovie6MouseClicked"/>
@@ -785,8 +788,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Next Premier">
-                <Property name="tabTitle" type="java.lang.String" value="Next Premier"/>
+              <JTabbedPaneConstraints tabName="Pr&#xf3;ximos Estrenos">
+                <Property name="tabTitle" type="java.lang.String" value="Pr&#xf3;ximos Estrenos"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -801,7 +804,7 @@
                           <Component id="pnlPremier1" alignment="0" max="32767" attributes="0"/>
                           <Component id="pnlPremier5" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="79" max="32767" attributes="0"/>
+                      <EmptySpace pref="74" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Component id="pnlPremier4" alignment="0" max="32767" attributes="0"/>
                           <Component id="pnlPremier2" alignment="0" max="32767" attributes="0"/>

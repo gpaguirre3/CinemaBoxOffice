@@ -131,7 +131,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster1.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster1.setText("-");
 
-        btnMovie1.setText("View More");
+        btnMovie1.setText("Ver más");
         btnMovie1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnMovie1MouseClicked(evt);
@@ -159,14 +159,14 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                 .addComponent(lblMoviePoster1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(pnlBillboard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlBillboard1Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(btnMovie1))
-                    .addGroup(pnlBillboard1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(pnlBillboard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblMovieGender1)
                             .addComponent(lblMovieTitle1)
-                            .addComponent(lblMovieAgeRestriction1))))
+                            .addComponent(lblMovieAgeRestriction1)))
+                    .addGroup(pnlBillboard1Layout.createSequentialGroup()
+                        .addGap(96, 96, 96)
+                        .addComponent(btnMovie1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlBillboard1Layout.setVerticalGroup(
@@ -191,7 +191,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster2.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster2.setText("-");
 
-        btnMovie2.setText("View More");
+        btnMovie2.setText("Ver más");
         btnMovie2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnMovie2MouseClicked(evt);
@@ -236,15 +236,17 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(pnlBillboard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(pnlBillboard2Layout.createSequentialGroup()
+                        .addComponent(lblMoviePoster2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(pnlBillboard2Layout.createSequentialGroup()
                         .addComponent(lblMovieTitle2)
                         .addGap(18, 18, 18)
                         .addComponent(lblMovieGender2)
                         .addGap(18, 18, 18)
                         .addComponent(lblMovieAgeRestriction2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                        .addComponent(btnMovie2))
-                    .addComponent(lblMoviePoster2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addComponent(btnMovie2)
+                        .addGap(20, 20, 20))))
         );
 
         pnlBillboard3.setBackground(new java.awt.Color(0, 0, 51));
@@ -252,7 +254,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster3.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster3.setText("-");
 
-        btnMovie3.setText("View More");
+        btnMovie3.setText("ver más");
         btnMovie3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnMovie3MouseClicked(evt);
@@ -280,14 +282,14 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                 .addComponent(lblMoviePoster3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(pnlBillboard3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlBillboard3Layout.createSequentialGroup()
-                        .addGap(98, 98, 98)
-                        .addComponent(btnMovie3))
-                    .addGroup(pnlBillboard3Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(pnlBillboard3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblMovieGender3)
                             .addComponent(lblMovieTitle3)
-                            .addComponent(lblMovieAgeRestriction3))))
+                            .addComponent(lblMovieAgeRestriction3)))
+                    .addGroup(pnlBillboard3Layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(btnMovie3)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlBillboard3Layout.setVerticalGroup(
@@ -312,7 +314,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster5.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster5.setText("-");
 
-        btnMovie5.setText("View More");
+        btnMovie5.setText("ver más");
         btnMovie5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnMovie5MouseClicked(evt);
@@ -373,7 +375,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster4.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster4.setText("-");
 
-        btnMovie4.setText("View More");
+        btnMovie4.setText("ver más");
         btnMovie4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnMovie4MouseClicked(evt);
@@ -434,7 +436,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         lblMoviePoster6.setForeground(new java.awt.Color(255, 255, 255));
         lblMoviePoster6.setText("-");
 
-        btnMovie6.setText("View More");
+        btnMovie6.setText("ver más");
         btnMovie6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnMovie6MouseClicked(evt);
@@ -505,7 +507,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                     .addComponent(pnlBillboard4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pnlBillboard6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pnlBillboard2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         pnlBillboardLayout.setVerticalGroup(
             pnlBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -525,7 +527,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        tpnCinema.addTab("Billboard", pnlBillboard);
+        tpnCinema.addTab("Cartelera", pnlBillboard);
 
         pnlNextPremier.setBackground(new java.awt.Color(0, 0, 51));
 
@@ -864,7 +866,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                     .addComponent(pnlPremier3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
                 .addGroup(pnlNextPremierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(pnlPremier4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlPremier2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -889,12 +891,12 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        tpnCinema.addTab("Next Premier", pnlNextPremier);
+        tpnCinema.addTab("Próximos Estrenos", pnlNextPremier);
 
         mnuCinema.setText("Cinema");
         mnuCinema.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
 
-        mnuCinemaAdmin.setText("Admin");
+        mnuCinemaAdmin.setText("Administrador");
         mnuCinemaAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuCinemaAdminActionPerformed(evt);
@@ -902,7 +904,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         });
         mnuCinema.add(mnuCinemaAdmin);
 
-        mniCinemaExit.setText("Exit");
+        mniCinemaExit.setText("Salir");
         mniCinemaExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mniCinemaExitActionPerformed(evt);
@@ -912,7 +914,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         jMenuBar2.add(mnuCinema);
 
-        mnuCalendar.setText("Calendar");
+        mnuCalendar.setText("Calendario");
         mnuCalendar.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
         mnuCalendar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

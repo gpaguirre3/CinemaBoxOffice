@@ -53,7 +53,7 @@ public class FrmCalendar extends javax.swing.JFrame {
             }
         });
 
-        btnExitCalendar.setText("Exit");
+        btnExitCalendar.setText("Salir");
         btnExitCalendar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnExitCalendarMouseClicked(evt);

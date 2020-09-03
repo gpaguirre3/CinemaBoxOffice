@@ -57,7 +57,7 @@ public class FrmDeleteMovie extends javax.swing.JFrame {
 
         lblDeleteMovie.setFont(new java.awt.Font("Comic Sans MS", 3, 20)); // NOI18N
         lblDeleteMovie.setForeground(new java.awt.Color(255, 255, 255));
-        lblDeleteMovie.setText("Delete Movie");
+        lblDeleteMovie.setText("Eliminar Películas");
 
         tblViewMoviesDelete.setBorder(new javax.swing.border.MatteBorder(null));
         tblViewMoviesDelete.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
@@ -165,19 +165,19 @@ public class FrmDeleteMovie extends javax.swing.JFrame {
                 {null, null, null}
             },
             new String [] {
-                "Title ", "Date", "Room"
+                "Título", "Fecha", "Sala"
             }
         ));
         jScrollPane1.setViewportView(tblViewMoviesDelete);
 
-        btnDeleteMovie.setText("Delete");
+        btnDeleteMovie.setText("Eliminar");
         btnDeleteMovie.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnDeleteMovieMouseClicked(evt);
             }
         });
 
-        btnDeleteMovieExit.setText("Exit");
+        btnDeleteMovieExit.setText("Salir");
         btnDeleteMovieExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnDeleteMovieExitMouseClicked(evt);
@@ -186,7 +186,7 @@ public class FrmDeleteMovie extends javax.swing.JFrame {
 
         lblTitleMovie.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblTitleMovie.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitleMovie.setText("Title Movie:");
+        lblTitleMovie.setText("Titulo de película:");
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/smallCinemaLogo.png"))); // NOI18N
 
@@ -215,14 +215,14 @@ public class FrmDeleteMovie extends javax.swing.JFrame {
                                 .addComponent(jLabel1)
                                 .addGap(111, 111, 111)
                                 .addComponent(lblDeleteMovie)))
-                        .addGap(0, 96, Short.MAX_VALUE)))
+                        .addGap(0, 57, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(btnDeleteMovie)
                 .addGap(124, 124, 124)
-                .addComponent(btnDeleteMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(184, 184, 184))
+                .addComponent(btnDeleteMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(175, 175, 175))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
