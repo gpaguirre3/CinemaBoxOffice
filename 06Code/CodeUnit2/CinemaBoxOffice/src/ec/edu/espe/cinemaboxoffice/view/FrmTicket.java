@@ -117,7 +117,7 @@ public class FrmTicket extends javax.swing.JFrame {
         lblMoviegender.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
         lblMoviegender.setForeground(new java.awt.Color(0, 0, 0));
         lblMoviegender.setText("-");
-        pnlticket.add(lblMoviegender, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, -1, -1));
+        pnlticket.add(lblMoviegender, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
 
         lblMovieTitle.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
         lblMovieTitle.setForeground(new java.awt.Color(0, 0, 0));
@@ -127,12 +127,12 @@ public class FrmTicket extends javax.swing.JFrame {
         lblMovieAgeRestriction.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
         lblMovieAgeRestriction.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieAgeRestriction.setText("-");
-        pnlticket.add(lblMovieAgeRestriction, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, -1, -1));
+        pnlticket.add(lblMovieAgeRestriction, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, -1));
 
         lblMovieDate.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
         lblMovieDate.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieDate.setText("-");
-        pnlticket.add(lblMovieDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, -1, -1));
+        pnlticket.add(lblMovieDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, -1, -1));
 
         lblMoviePrice.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
         lblMoviePrice.setForeground(new java.awt.Color(0, 0, 0));
@@ -168,27 +168,27 @@ public class FrmTicket extends javax.swing.JFrame {
         pnlticket.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 80, 130, 130));
 
         jLabel1.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
-        jLabel1.setText("Title:");
+        jLabel1.setText("Titulo:");
         pnlticket.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
-        jLabel4.setText("Gender:");
+        jLabel4.setText("genero:");
         pnlticket.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
-        jLabel6.setText("Age Restriction:");
+        jLabel6.setText("edad de restriccion:");
         pnlticket.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
-        jLabel7.setText("Duration:");
+        jLabel7.setText("Duracion:");
         pnlticket.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
-        jLabel8.setText("Date:");
+        jLabel8.setText("Fecha:");
         pnlticket.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, -1, 20));
 
         jLabel9.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
-        jLabel9.setText("Price:");
+        jLabel9.setText("precio:");
         pnlticket.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, -1, -1));
 
         btnPrintTicket.setText("Print Ticket");
@@ -207,41 +207,39 @@ public class FrmTicket extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("MOVIE TICKET");
+        jLabel10.setText("ENTRADA DE CINE");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(pnlticket, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(252, 252, 252)
-                        .addComponent(btnPrintTicket)
-                        .addGap(54, 54, 54)
-                        .addComponent(btnMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                .addGap(267, 267, 267)
+                .addComponent(btnPrintTicket)
+                .addGap(39, 39, 39)
+                .addComponent(btnMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel10)
                 .addGap(279, 279, 279))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlticket, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(pnlticket, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnMovieExit)
                     .addComponent(btnPrintTicket))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
