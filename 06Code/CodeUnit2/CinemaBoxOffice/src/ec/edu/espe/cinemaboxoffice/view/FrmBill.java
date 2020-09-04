@@ -129,35 +129,35 @@ public class FrmBill extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Credit Card");
+        jLabel2.setText("Targeta de Credito");
 
         jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Full Name");
+        jLabel3.setText("Nombre Completo");
 
         jLabel4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Identify Card");
+        jLabel4.setText("Cedula de Identidad");
 
         jLabel5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Expiration Date");
+        jLabel5.setText("Fecha de Expiración");
 
         cmbxMonth.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
 
         jLabel6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Segurity Code");
+        jLabel6.setText("Codigo de Seguridad");
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
         jLabel7.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Title:");
+        jLabel7.setText("Titulo:");
 
         jLabel8.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Duration:");
+        jLabel8.setText("Duración");
 
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -171,7 +171,7 @@ public class FrmBill extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("VAT(12%)");
+        jLabel12.setText("IVA(12%)");
 
         jLabel13.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
@@ -212,17 +212,17 @@ public class FrmBill extends javax.swing.JFrame {
                     .addComponent(txtFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtIdentifyCard, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtCreditCard, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtSecurityCode, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(cmbxMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(cmbxYear, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addComponent(cmbxMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(cmbxYear, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(71, 71, 71)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -248,7 +248,7 @@ public class FrmBill extends javax.swing.JFrame {
                                             .addComponent(lblTotal)
                                             .addComponent(lblVat)
                                             .addComponent(lblSubTotal))))))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 2, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(174, 174, 174)
@@ -316,21 +316,22 @@ public class FrmBill extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 51));
 
-        btnBuy.setText("Buy");
+        btnBuy.setText("Comprar");
+        btnBuy.setToolTipText("");
         btnBuy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBuyActionPerformed(evt);
             }
         });
 
-        btnCancel.setText("Cancel");
+        btnCancel.setText("Cancelar");
         btnCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Print Ticket");
+        jButton1.setText("Imprimir Boleto");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -393,42 +394,42 @@ public class FrmBill extends javax.swing.JFrame {
 
         if (fullName.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
-                    null, "Full name is required", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "El nombre completo es requerido", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!fullName.matches("^[a-zA-Z ]{2,24}+$")) {
             JOptionPane.showMessageDialog(
-                    null, "Full name can have only letters and its length must be between 3 and 16",
+                    null, "El nombre completo solo puede tener letras y su longitud debe estar entre 3 y 16",
                     "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
         if (identifyCard.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
-                    null, "identify card is required", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "La cedula de identidad es requerida", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!InputDataValidation.validateCI(identifyCard)) {
             JOptionPane.showMessageDialog(
-                    null, "identify card was wrong", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "La cedula de identificación estaba incorrecta", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
         if (creditCard.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
-                    null, "credit card was wrong", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "La targeta de credito es requerida", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!InputDataValidation.checkCard(creditCard)) {
             JOptionPane.showMessageDialog(
-                    null, "credit card was wrong", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "La targeta de credito estaba incorrecta", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
         if (securityCode.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
-                    null, "security code is required", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "Su codigo de seguridad es requerido", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (!securityCode.matches("^[0-9]{3}$")) {
             JOptionPane.showMessageDialog(
-                    null, "invalid security code", "Error", JOptionPane.ERROR_MESSAGE);
+                    null, "Su codigo de seguridad es incorrecto", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
@@ -467,7 +468,7 @@ public class FrmBill extends javax.swing.JFrame {
             Files.write(Paths.get("data/invoices.json"), jsonToSave.getBytes());
 
             JOptionPane.showMessageDialog(
-                    null, "Purchase has been completed, thanks", "Successful purchase ", JOptionPane.INFORMATION_MESSAGE);
+                    null, "La compra se ha completado, gracias", "Compra exitosa ", JOptionPane.INFORMATION_MESSAGE);
             dispose();
         } catch (Exception e) {
         }

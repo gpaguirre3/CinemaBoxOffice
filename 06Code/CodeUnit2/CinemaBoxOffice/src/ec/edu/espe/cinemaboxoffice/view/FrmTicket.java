@@ -110,37 +110,30 @@ public class FrmTicket extends javax.swing.JFrame {
         pnlticket.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblMovieDuration.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
-        lblMovieDuration.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieDuration.setText("-");
         pnlticket.add(lblMovieDuration, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
 
         lblMoviegender.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
-        lblMoviegender.setForeground(new java.awt.Color(0, 0, 0));
         lblMoviegender.setText("-");
         pnlticket.add(lblMoviegender, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
 
         lblMovieTitle.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
-        lblMovieTitle.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieTitle.setText("-");
         pnlticket.add(lblMovieTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 20, -1, -1));
 
         lblMovieAgeRestriction.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
-        lblMovieAgeRestriction.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieAgeRestriction.setText("-");
         pnlticket.add(lblMovieAgeRestriction, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, -1));
 
         lblMovieDate.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
-        lblMovieDate.setForeground(new java.awt.Color(0, 0, 0));
         lblMovieDate.setText("-");
         pnlticket.add(lblMovieDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, -1, -1));
 
         lblMoviePrice.setFont(new java.awt.Font("Copperplate Gothic Light", 0, 14)); // NOI18N
-        lblMoviePrice.setForeground(new java.awt.Color(0, 0, 0));
         lblMoviePrice.setText("-");
         pnlticket.add(lblMoviePrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 220, -1, -1));
 
         lblcinema.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 24)); // NOI18N
-        lblcinema.setForeground(new java.awt.Color(0, 0, 0));
         lblcinema.setText("CINEMA");
         pnlticket.add(lblcinema, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 120, 40));
 
@@ -151,7 +144,6 @@ public class FrmTicket extends javax.swing.JFrame {
         pnlticket.add(lblicontwo, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, -1, -1));
 
         lblboxoffice.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 24)); // NOI18N
-        lblboxoffice.setForeground(new java.awt.Color(0, 0, 0));
         lblboxoffice.setText("BOX OFFICE");
         pnlticket.add(lblboxoffice, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 180, 30));
 
@@ -191,14 +183,14 @@ public class FrmTicket extends javax.swing.JFrame {
         jLabel9.setText("precio:");
         pnlticket.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, -1, -1));
 
-        btnPrintTicket.setText("Print Ticket");
+        btnPrintTicket.setText("Imprimir Boleto");
         btnPrintTicket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPrintTicketActionPerformed(evt);
             }
         });
 
-        btnMovieExit.setText("Cancel");
+        btnMovieExit.setText("Cancelar");
         btnMovieExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMovieExitActionPerformed(evt);

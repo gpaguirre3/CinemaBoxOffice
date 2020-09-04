@@ -66,7 +66,7 @@ public class FrmSeatsControl extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Column 1", "Column 2", "Column 3", "Column 4", "Column 5", "Column 6", "Column 7", "Column 8", "Column 9", "Column 10"
+                "Columna 1", "Columna 2", "Columna 3", "Columna 4", "Columna 5", "Columna 6", "Columna 7", "Columna 8", "Columna 9", "Columna 10"
             }
         ) {
             Class[] types = new Class [] {
@@ -83,6 +83,18 @@ public class FrmSeatsControl extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(tblSeats);
+        if (tblSeats.getColumnModel().getColumnCount() > 0) {
+            tblSeats.getColumnModel().getColumn(0).setPreferredWidth(90);
+            tblSeats.getColumnModel().getColumn(1).setPreferredWidth(90);
+            tblSeats.getColumnModel().getColumn(2).setPreferredWidth(90);
+            tblSeats.getColumnModel().getColumn(3).setPreferredWidth(90);
+            tblSeats.getColumnModel().getColumn(4).setPreferredWidth(90);
+            tblSeats.getColumnModel().getColumn(5).setPreferredWidth(90);
+            tblSeats.getColumnModel().getColumn(6).setPreferredWidth(90);
+            tblSeats.getColumnModel().getColumn(7).setPreferredWidth(90);
+            tblSeats.getColumnModel().getColumn(8).setPreferredWidth(90);
+            tblSeats.getColumnModel().getColumn(9).setPreferredWidth(90);
+        }
 
         jLabel1.setText("Asientos");
 
@@ -101,7 +113,7 @@ public class FrmSeatsControl extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 707, Short.MAX_VALUE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 756, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(341, 341, 341)
                         .addComponent(jLabel1)
@@ -132,7 +144,7 @@ public class FrmSeatsControl extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -142,7 +154,7 @@ public class FrmSeatsControl extends javax.swing.JFrame {
         tblSeats.setEnabled(false);
         int x = tblSeats.rowAtPoint(evt.getPoint());
         int y = tblSeats.columnAtPoint(evt.getPoint());
-        if ("available".equals(tblSeats.getValueAt(x, y))) {
+        if ("Desocupado".equals(tblSeats.getValueAt(x, y))) {
             SeatControl seatControl = new SeatControl();
             try {
                 seatControl.controlSeats(movie, x, y, true);
@@ -170,9 +182,9 @@ public class FrmSeatsControl extends javax.swing.JFrame {
             for (int j = 0; j < 10; j++) {
                 seatAvailability = movie.getRoom().getSeats()[cont].isSeatAvailableOrBusy();
                 if (!seatAvailability) {
-                    tblSeats.setValueAt("available", i, j);
+                    tblSeats.setValueAt("Desocupado", i, j);
                 } else {
-                    tblSeats.setValueAt("occupied", i, j);
+                    tblSeats.setValueAt("  Ocupado", i, j);
                 }
                 cont++;
             }

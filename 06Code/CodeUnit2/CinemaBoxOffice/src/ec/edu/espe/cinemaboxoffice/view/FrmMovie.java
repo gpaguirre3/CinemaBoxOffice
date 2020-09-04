@@ -94,14 +94,14 @@ public class FrmMovie extends javax.swing.JFrame {
         txaMovieSinopsis.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txaMovieSinopsis);
 
-        btnMovieBuy.setText("Buy");
+        btnMovieBuy.setText("Comprar");
         btnMovieBuy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMovieBuyActionPerformed(evt);
             }
         });
 
-        btnMovieExit.setText("Exit");
+        btnMovieExit.setText("Salir");
         btnMovieExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMovieExitActionPerformed(evt);
@@ -157,8 +157,8 @@ public class FrmMovie extends javax.swing.JFrame {
                                 .addComponent(lblMovieSinopsis))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(90, 90, 90)
-                                .addComponent(btnMovieBuy, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(94, 94, 94)
+                                .addComponent(btnMovieBuy)
+                                .addGap(87, 87, 87)
                                 .addComponent(btnMovieExit, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())

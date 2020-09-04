@@ -121,7 +121,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
 
         cbxBillboardRoom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7" }));
 
-        btnBillboardSave.setText("Save");
+        btnBillboardSave.setText("Guardar");
         btnBillboardSave.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBillboardSaveMouseClicked(evt);
@@ -157,7 +157,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/cinema logo.png"))); // NOI18N
 
-        btnBillboardExit.setText("Exit");
+        btnBillboardExit.setText("Salir");
         btnBillboardExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBillboardExitMouseClicked(evt);
@@ -169,13 +169,13 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         cbxBillboardMin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "15", "30", "45" }));
 
         lblBillboardHour.setForeground(new java.awt.Color(255, 255, 255));
-        lblBillboardHour.setText("hour");
+        lblBillboardHour.setText("horas");
 
         lblBillboardMin.setForeground(new java.awt.Color(255, 255, 255));
-        lblBillboardMin.setText("min");
+        lblBillboardMin.setText("minutos");
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("min");
+        jLabel1.setText("minutos");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -215,7 +215,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
 
         txtPosterFile.setEnabled(false);
 
-        btnChoosePosterFile.setText("Choose");
+        btnChoosePosterFile.setText("Insertar ");
         btnChoosePosterFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnChoosePosterFileActionPerformed(evt);
@@ -223,6 +223,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
         });
 
         jLabel14.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Hora:");
 
         javax.swing.GroupLayout pnlMovieBillboardLayout = new javax.swing.GroupLayout(pnlMovieBillboard);
@@ -312,27 +313,26 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(pnlMovieBillboardLayout.createSequentialGroup()
-                                .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(txtPosterFile)
-                                        .addGroup(pnlMovieBillboardLayout.createSequentialGroup()
-                                            .addComponent(jLabel10)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(lblBillboardDuration)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(spnDuration, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(txtPosterFile)
                                     .addGroup(pnlMovieBillboardLayout.createSequentialGroup()
-                                        .addGap(11, 11, 11)
-                                        .addComponent(btnBillboardSave, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(btnBillboardSave, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(pnlMovieBillboardLayout.createSequentialGroup()
+                                                .addComponent(jLabel10)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(lblBillboardDuration)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(spnDuration, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(18, 18, 18)
                                 .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(pnlMovieBillboardLayout.createSequentialGroup()
                                         .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel1)
                                             .addComponent(btnBillboardExit, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(110, 110, 110)
+                                        .addGap(120, 120, 120)
                                         .addComponent(lblPoster, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(btnChoosePosterFile, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(btnChoosePosterFile))))))
                 .addContainerGap())
         );
         pnlMovieBillboardLayout.setVerticalGroup(
@@ -372,7 +372,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
                                     .addComponent(lblBillboardDuration)
                                     .addComponent(spnDuration, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel1))
-                                .addGap(18, 18, 18)
+                                .addGap(28, 28, 28)
                                 .addGroup(pnlMovieBillboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(btnBillboardSave)
                                     .addComponent(btnBillboardExit))

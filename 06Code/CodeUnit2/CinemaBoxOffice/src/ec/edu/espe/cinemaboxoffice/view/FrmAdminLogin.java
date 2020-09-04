@@ -91,15 +91,15 @@ public class FrmAdminLogin extends javax.swing.JFrame {
 
         lblAdmin.setFont(new java.awt.Font("Comic Sans MS", 3, 20)); // NOI18N
         lblAdmin.setForeground(new java.awt.Color(255, 255, 255));
-        lblAdmin.setText("Admin");
+        lblAdmin.setText("Administrador");
 
         lblAdminUser.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblAdminUser.setForeground(new java.awt.Color(255, 255, 255));
-        lblAdminUser.setText("User:");
+        lblAdminUser.setText("Usuario:");
 
         lblAminkey.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblAminkey.setForeground(new java.awt.Color(255, 255, 255));
-        lblAminkey.setText("Password:");
+        lblAminkey.setText("Contraseña:");
 
         txtUsername.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -113,7 +113,7 @@ public class FrmAdminLogin extends javax.swing.JFrame {
             }
         });
 
-        btnAdminLogin.setText("Login");
+        btnAdminLogin.setText("Iniciar Sesion");
         btnAdminLogin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdminLoginMouseClicked(evt);
@@ -127,7 +127,7 @@ public class FrmAdminLogin extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/smallCinemaLogo.png"))); // NOI18N
 
-        btnExit.setText("Exit");
+        btnExit.setText("Salir");
         btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExitActionPerformed(evt);
@@ -151,9 +151,9 @@ public class FrmAdminLogin extends javax.swing.JFrame {
                             .addComponent(jLabel4))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(67, 67, 67)
+                                .addGap(61, 61, 61)
                                 .addComponent(btnAdminLogin)
-                                .addGap(121, 121, 121)
+                                .addGap(89, 89, 89)
                                 .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
@@ -171,8 +171,8 @@ public class FrmAdminLogin extends javax.swing.JFrame {
                         .addGap(27, 27, 27)
                         .addComponent(jLabel1)
                         .addGap(106, 106, 106)
-                        .addComponent(lblAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(47, Short.MAX_VALUE))
+                        .addComponent(lblAdmin)))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

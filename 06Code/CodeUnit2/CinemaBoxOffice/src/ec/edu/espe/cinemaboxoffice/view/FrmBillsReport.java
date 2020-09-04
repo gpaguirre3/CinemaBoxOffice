@@ -63,14 +63,14 @@ public class FrmBillsReport extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Bills Report");
+        jLabel1.setText("Reporte de Facturas");
 
         tblReport.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Costumer", "Identify card", "Credit card", "Movie", "Subtotal", "VAT (12%)", "Total"
+                "Cliente", "Cedula de Identidad", "Targeta de credito", "Pelicula", "Subtotal", "VAT (12%)", "Total"
             }
         ) {
             Class[] types = new Class [] {
@@ -89,8 +89,12 @@ public class FrmBillsReport extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(tblReport);
+        if (tblReport.getColumnModel().getColumnCount() > 0) {
+            tblReport.getColumnModel().getColumn(1).setPreferredWidth(100);
+            tblReport.getColumnModel().getColumn(2).setPreferredWidth(110);
+        }
 
-        btnPrintReport.setText("Print report");
+        btnPrintReport.setText("Imprimir Reporte");
         btnPrintReport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPrintReportActionPerformed(evt);

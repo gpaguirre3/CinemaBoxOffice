@@ -95,7 +95,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Imagne");
+        jLabel6.setText("Imagen");
 
         jLabel7.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -105,7 +105,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
 
         cbxAgeRestrictionNextPremier.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todo publico", "mayores de 12 años", "mayores de 18 años" }));
 
-        btnSaveNextPremier.setText("Save");
+        btnSaveNextPremier.setText("Guardar");
         btnSaveNextPremier.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnSaveNextPremierMouseClicked(evt);
@@ -124,7 +124,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/smallCinemaLogo.png"))); // NOI18N
         jLabel8.setToolTipText("");
 
-        btnPremierExit.setText("Exit");
+        btnPremierExit.setText("Salir");
         btnPremierExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnPremierExitMouseClicked(evt);
@@ -143,7 +143,8 @@ public class FrmNextPremier extends javax.swing.JFrame {
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/ageIcon.png"))); // NOI18N
 
-        lblDurationMinutes.setText("min");
+        lblDurationMinutes.setForeground(new java.awt.Color(255, 255, 255));
+        lblDurationMinutes.setText("minutos");
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
 

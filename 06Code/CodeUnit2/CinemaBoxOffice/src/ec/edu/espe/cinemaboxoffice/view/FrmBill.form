@@ -56,19 +56,19 @@
                       <Component id="txtFullName" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
                       <Component id="txtIdentifyCard" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
                       <Component id="txtCreditCard" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
-                      <Component id="jLabel3" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
                       <Component id="txtSecurityCode" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
-                      <Component id="jLabel4" alignment="0" min="-2" pref="101" max="-2" attributes="0"/>
-                      <Component id="jLabel2" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
-                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="cmbxMonth" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="cmbxYear" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="jLabel5" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="cmbxMonth" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="cmbxYear" min="-2" pref="60" max="-2" attributes="0"/>
                       </Group>
+                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel3" alignment="0" min="-2" pref="138" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
                   <Component id="jSeparator2" min="-2" max="-2" attributes="0"/>
@@ -101,7 +101,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="2" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -208,7 +208,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Credit Card"/>
+            <Property name="text" type="java.lang.String" value="Targeta de Credito"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtFullName">
@@ -221,7 +221,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Full Name"/>
+            <Property name="text" type="java.lang.String" value="Nombre Completo"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtIdentifyCard">
@@ -234,7 +234,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Identify Card"/>
+            <Property name="text" type="java.lang.String" value="Cedula de Identidad"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtCreditCard">
@@ -247,7 +247,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Expiration Date"/>
+            <Property name="text" type="java.lang.String" value="Fecha de Expiraci&#xf3;n"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtSecurityCode">
@@ -293,7 +293,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Segurity Code"/>
+            <Property name="text" type="java.lang.String" value="Codigo de Seguridad"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator2">
@@ -309,7 +309,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Title:"/>
+            <Property name="text" type="java.lang.String" value="Titulo:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
@@ -320,7 +320,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Duration:"/>
+            <Property name="text" type="java.lang.String" value="Duraci&#xf3;n"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblTitle">
@@ -360,7 +360,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="VAT(12%)"/>
+            <Property name="text" type="java.lang.String" value="IVA(12%)"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel13">
@@ -479,7 +479,8 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnBuy">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Buy"/>
+            <Property name="text" type="java.lang.String" value="Comprar"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuyActionPerformed"/>
@@ -487,7 +488,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnCancel">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Cancel"/>
+            <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelActionPerformed"/>
@@ -495,7 +496,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Print Ticket"/>
+            <Property name="text" type="java.lang.String" value="Imprimir Boleto"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>

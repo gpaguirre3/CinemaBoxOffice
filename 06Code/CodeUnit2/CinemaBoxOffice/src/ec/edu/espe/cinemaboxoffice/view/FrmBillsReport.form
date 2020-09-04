@@ -57,7 +57,7 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Bills Report"/>
+        <Property name="text" type="java.lang.String" value="Reporte de Facturas"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -71,10 +71,10 @@
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="7" rowCount="0">
-                <Column editable="false" title="Costumer" type="java.lang.String"/>
-                <Column editable="false" title="Identify card" type="java.lang.String"/>
-                <Column editable="false" title="Credit card" type="java.lang.String"/>
-                <Column editable="false" title="Movie" type="java.lang.String"/>
+                <Column editable="false" title="Cliente" type="java.lang.String"/>
+                <Column editable="false" title="Cedula de Identidad" type="java.lang.String"/>
+                <Column editable="false" title="Targeta de credito" type="java.lang.String"/>
+                <Column editable="false" title="Pelicula" type="java.lang.String"/>
                 <Column editable="false" title="Subtotal" type="java.lang.String"/>
                 <Column editable="false" title="VAT (12%)" type="java.lang.String"/>
                 <Column editable="false" title="Total" type="java.lang.String"/>
@@ -87,12 +87,12 @@
                   <Editor/>
                   <Renderer/>
                 </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="100" resizable="true">
                   <Title/>
                   <Editor/>
                   <Renderer/>
                 </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
                   <Title/>
                   <Editor/>
                   <Renderer/>
@@ -128,7 +128,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnPrintReport">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Print report"/>
+        <Property name="text" type="java.lang.String" value="Imprimir Reporte"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPrintReportActionPerformed"/>

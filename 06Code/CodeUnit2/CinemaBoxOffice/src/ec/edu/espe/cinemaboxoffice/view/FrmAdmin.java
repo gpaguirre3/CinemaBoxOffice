@@ -81,7 +81,7 @@ public class FrmAdmin extends javax.swing.JFrame {
 
         lblMovies.setFont(new java.awt.Font("Comic Sans MS", 3, 20)); // NOI18N
         lblMovies.setForeground(new java.awt.Color(255, 255, 255));
-        lblMovies.setText("Movies");
+        lblMovies.setText("Peliculas");
 
         lblMovieTitle2.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblMovieTitle2.setForeground(new java.awt.Color(255, 255, 255));
@@ -112,21 +112,21 @@ public class FrmAdmin extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(240, 240, 240)
-                .addComponent(lblMovies, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(57, 57, 57)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(lblMovieTitle5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
                     .addComponent(lblMovieTitle3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblMovieTitle1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(lblMovieTitle2, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
                     .addComponent(lblMovieTitle4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblMovieTitle6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(97, 97, 97))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(240, 240, 240)
+                .addComponent(lblMovies, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,7 +145,7 @@ public class FrmAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblMovieTitle5)
                     .addComponent(lblMovieTitle6))
-                .addContainerGap(51, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 51));
@@ -174,9 +174,9 @@ public class FrmAdmin extends javax.swing.JFrame {
         lblPremierTitle5.setForeground(new java.awt.Color(255, 255, 255));
         lblPremierTitle5.setText("-");
 
-        lblPremiers.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblPremiers.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         lblPremiers.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremiers.setText("Next Premiers");
+        lblPremiers.setText("Proximos Estrenos");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -184,9 +184,6 @@ public class FrmAdmin extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(223, 223, 223)
-                        .addComponent(lblPremiers))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(53, 53, 53)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -197,13 +194,17 @@ public class FrmAdmin extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(lblPremierTitle2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
                             .addComponent(lblPremierTitle4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblPremierTitle6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(101, Short.MAX_VALUE))
+                            .addComponent(lblPremierTitle6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(212, 212, 212)
+                        .addComponent(lblPremiers, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(lblPremiers)
+                .addContainerGap()
+                .addComponent(lblPremiers, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPremierTitle2)
@@ -221,9 +222,9 @@ public class FrmAdmin extends javax.swing.JFrame {
 
         mnuAdminCinema.setText("Cinema");
 
-        mnuRecord.setText("Record");
+        mnuRecord.setText("Agregar");
 
-        mniRecorMovie.setText("Movie");
+        mniRecorMovie.setText("Pelicula");
         mniRecorMovie.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mniRecorMovieActionPerformed(evt);
@@ -231,7 +232,7 @@ public class FrmAdmin extends javax.swing.JFrame {
         });
         mnuRecord.add(mniRecorMovie);
 
-        mniRecordNextPremier.setText("NextPremier");
+        mniRecordNextPremier.setText("Proximo Estreno");
         mniRecordNextPremier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mniRecordNextPremierActionPerformed(evt);
@@ -241,9 +242,9 @@ public class FrmAdmin extends javax.swing.JFrame {
 
         mnuAdminCinema.add(mnuRecord);
 
-        mnuDelete.setText("Delete");
+        mnuDelete.setText("Borrar");
 
-        mnuDaleteMovie.setText("Movie");
+        mnuDaleteMovie.setText("Pelicula");
         mnuDaleteMovie.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuDaleteMovieActionPerformed(evt);
@@ -251,7 +252,7 @@ public class FrmAdmin extends javax.swing.JFrame {
         });
         mnuDelete.add(mnuDaleteMovie);
 
-        mniDeletePremier.setText("Next Premier");
+        mniDeletePremier.setText("Proximo Estreno");
         mniDeletePremier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mniDeletePremierActionPerformed(evt);
@@ -261,7 +262,7 @@ public class FrmAdmin extends javax.swing.JFrame {
 
         mnuAdminCinema.add(mnuDelete);
 
-        mniAdminExit.setText("Exit");
+        mniAdminExit.setText("Salir");
         mniAdminExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mniAdminExitActionPerformed(evt);
@@ -271,9 +272,9 @@ public class FrmAdmin extends javax.swing.JFrame {
 
         jMenuBar1.add(mnuAdminCinema);
 
-        mnuAdmin.setText("Admin");
+        mnuAdmin.setText("Administrador");
 
-        mnuNewAdmin.setText("Sign up");
+        mnuNewAdmin.setText("Registrarse");
         mnuNewAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuNewAdminActionPerformed(evt);
@@ -283,14 +284,14 @@ public class FrmAdmin extends javax.swing.JFrame {
 
         jMenuBar1.add(mnuAdmin);
 
-        mnuReports.setText("Reports");
+        mnuReports.setText("Reporte");
         mnuReports.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuReportsActionPerformed(evt);
             }
         });
 
-        mnuItemBillReports.setText("bills");
+        mnuItemBillReports.setText("Facturas");
         mnuItemBillReports.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuItemBillReportsActionPerformed(evt);

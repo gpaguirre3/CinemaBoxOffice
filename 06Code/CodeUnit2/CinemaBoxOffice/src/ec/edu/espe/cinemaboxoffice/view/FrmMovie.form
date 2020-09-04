@@ -78,8 +78,8 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Component id="btnMovieBuy" min="-2" pref="66" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="btnMovieBuy" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
                                   <Component id="btnMovieExit" min="-2" pref="62" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -192,7 +192,7 @@
         </Container>
         <Component class="javax.swing.JButton" name="btnMovieBuy">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Buy"/>
+            <Property name="text" type="java.lang.String" value="Comprar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMovieBuyActionPerformed"/>
@@ -200,7 +200,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnMovieExit">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Exit"/>
+            <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMovieExitActionPerformed"/>
