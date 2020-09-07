@@ -45,46 +45,46 @@ public class DBManager {
     
     public void saveUsers(String username, String password, String id, String name) {
         BasicDBObject document = new BasicDBObject();
-        document.put("userName", "'" + username + "'");
-        document.put("password", "'" + password + "'");
-        document.put("id", "'" + id + "'");
-        document.put("name", "'" + name + "'");
+        document.put("userName", username);
+        document.put("password", password);
+        document.put("id", id);
+        document.put("name", name);
         collectionName.insert(document);
     }
 
     public void saveMovies(String title, String gender, String age,
             int duration, String namePoster, String sinopsis, Date date, String price, CinemaRoom room) {
         BasicDBObject document = new BasicDBObject();
-        document.put("title", "'" + title + "'");
-        document.put("gender", "'" + gender + "'");
-        document.put("ageRestriction", "'" + age + "'");
-        document.put("price", "'" + price + "'");
-        document.put("duration", "'" + duration + "'");
-        document.put("roomNumber", "'" + room + "'");
-        document.put("sinopsis", "'" + sinopsis + "'");
-        document.put("Date", "'" + date + "'");
-        document.put("NamePoster", "'" + namePoster + "'");
+        document.put("title", title);
+        document.put("gender", gender);
+        document.put("ageRestriction", age);
+        document.put("price", price);
+        document.put("duration", duration);
+        document.put("roomNumber", room);
+        document.put("sinopsis", sinopsis);
+        document.put("Date", date);
+        document.put("NamePoster", namePoster);
         collectionName.insert(document);
     }
 
     public void saveNextPremier(String title, String gender, String age, int duration, String namePoster, Date dateNextPremier) {
         BasicDBObject document = new BasicDBObject();
-        document.put("title", "'" + title + "'");
-        document.put("gender", "'" + gender + "'");
-        document.put("ageRestriction", "'" + age + "'");
-        document.put("duration", "'" + duration + "'");
-        document.put("NamePoster", "'" + namePoster + "'");
-        document.put("Date", "'" + dateNextPremier + "'");
+        document.put("title", title);
+        document.put("gender", gender);
+        document.put("ageRestriction", age);
+        document.put("duration", duration);
+        document.put("NamePoster", namePoster);
+        document.put("Date", dateNextPremier);
         collectionName.insert(document);
     }
 
     public void saveBill(String customerName, String iCard, String title, String price) {
 
         BasicDBObject document = new BasicDBObject();
-        document.put("Customer", "'" + customerName + "'");
-        document.put("Identify Card", "'" + iCard + "'");
-        document.put("Movie title", "'" + title + "'");
-        document.put("Price", "'" + price + "'");
+        document.put("Customer", customerName);
+        document.put("Identify Card", iCard);
+        document.put("Movie title", title);
+        document.put("Price", price);
         collectionName.insert(document);
     }
 

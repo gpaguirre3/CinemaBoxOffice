@@ -32,7 +32,7 @@ public class MovieRecord {
     }
 
     public boolean recordMovie(String fileName, Movie movie) throws IOException {
-        Gson gson = new GsonBuilder().setDateFormat("MMM d, yyyy HH:mm:ss a").setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
         ArrayList<Movie> movies = new ArrayList<>();
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
@@ -56,7 +56,7 @@ public class MovieRecord {
     }
 
     public boolean deleteMovie(String fileName, String titleMovie) throws IOException {
-        Gson gson = new GsonBuilder().setDateFormat("MMM d, yyyy HH:mm:ss a").setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
         if (gson.fromJson(moviesJson, ArrayList.class) != null) {

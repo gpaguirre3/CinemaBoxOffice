@@ -46,5 +46,37 @@
     "ageRestriction": 18.0,
     "duration": 126.0,
     "namePoster": "Antlers.jpg"
+  },
+  {
+    "dateNextPremier": "Aug 1, 2020 00:00:00 AM",
+    "title": "WonderWoman84",
+    "gender": "science fiction",
+    "ageRestriction": "All public",
+    "duration": 1.0,
+    "namePoster": "ww84.jpg"
+  },
+  {
+    "dateNextPremier": "Aug 1, 2020 00:00:00 AM",
+    "title": "League of Legends the Movie",
+    "gender": "science fiction",
+    "ageRestriction": "All public",
+    "duration": 1.0,
+    "namePoster": "lol.jpg"
+  },
+  {
+    "dateNextPremier": "Oct 1, 2022 00:00:00 AM",
+    "title": "How Strange",
+    "gender": "fantasy",
+    "ageRestriction": "All public",
+    "duration": 1.0,
+    "namePoster": ".jpg"
+  },
+  {
+    "dateNextPremier": "Sep 1, 2020 12:00:00 AM",
+    "title": "Avatar",
+    "gender": "Ciencia Ficcion",
+    "ageRestriction": "All public",
+    "duration": 1,
+    "namePoster": "Avatar.jpg"
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "sinopsis": "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
-    "date": "Aug 12, 2020 11:00:00 AM",
+    "date": "Sep 6, 2020 11:00:00 AM",
     "price": 5.36,
     "room": {
       "roomNumber": 1,
@@ -616,7 +616,7 @@
   },
   {
     "sinopsis": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager.",
-    "date": "Aug 12, 2020 03:00:00 AM",
+    "date": "Sep 6, 2020 03:00:00 AM",
     "price": 4.26,
     "room": {
       "roomNumber": 2,
@@ -1231,7 +1231,7 @@
   },
   {
     "sinopsis": "Twenty-seven years after their first encounter with the terrifying Pennywise, the Losers Club have grown up and moved away, until a devastating phone call brings them back.",
-    "date": "Aug 12, 2020 06:45:00 AM",
+    "date": "Sep 6, 2020 06:45:00 AM",
     "price": 4.46,
     "room": {
       "roomNumber": 3,
@@ -1846,7 +1846,7 @@
   },
   {
     "sinopsis": "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood\u0027s Golden Age in 1969 Los Angeles.",
-    "date": "Aug 12, 2020 05:00:00 AM",
+    "date": "Sep 6, 2020 05:00:00 AM",
     "price": 3.96,
     "room": {
       "roomNumber": 4,
@@ -2461,7 +2461,7 @@
   },
   {
     "sinopsis": "A young boy in Hitler\u0027s army finds out his mother is hiding a Jewish girl in their home.",
-    "date": "Aug 12, 2020 08:30:00 AM",
+    "date": "Sep 6, 2020 08:30:00 AM",
     "price": 3.56,
     "room": {
       "roomNumber": 5,
@@ -3076,7 +3076,7 @@
   },
   {
     "sinopsis": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
-    "date": "Aug 12, 2020 08:00:00 AM",
+    "date": "Sep 6, 2020 08:00:00 AM",
     "price": 5.85,
     "room": {
       "roomNumber": 6,
@@ -3691,7 +3691,7 @@
   },
   {
     "sinopsis": "When medical trails are pushed to the limit, the most extreme trials end on the island of St. Leonards in the North Atlantic. A redesigned prison for some of the most violent criminals in the world. But when an experiment goes awry, the entire island turns into a terrifying, disease-ridden maze for desperate survivors.",
-    "date": "Aug 13, 2020 19:30:00 PM",
+    "date": "Sep 6, 2020 19:30:00 PM",
     "price": 7.6,
     "room": {
       "roomNumber": 2,
@@ -3834,7 +3834,7 @@
         },
         {
           "seatNumber": 35,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 36,
@@ -3918,7 +3918,7 @@
         },
         {
           "seatNumber": 56,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 57,
@@ -3954,7 +3954,7 @@
         },
         {
           "seatNumber": 65,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 66,
@@ -3998,7 +3998,7 @@
         },
         {
           "seatNumber": 76,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 77,
@@ -4006,7 +4006,7 @@
         },
         {
           "seatNumber": 78,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 79,
@@ -4038,7 +4038,7 @@
         },
         {
           "seatNumber": 86,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 87,
@@ -4086,7 +4086,7 @@
         },
         {
           "seatNumber": 98,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 99,
@@ -4114,7 +4114,7 @@
         },
         {
           "seatNumber": 105,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 106,
@@ -4126,7 +4126,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -4158,7 +4158,7 @@
         },
         {
           "seatNumber": 116,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 117,
@@ -4210,7 +4210,7 @@
         },
         {
           "seatNumber": 129,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 130,
@@ -4238,7 +4238,7 @@
         },
         {
           "seatNumber": 136,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 137,
@@ -4306,7 +4306,7 @@
   },
   {
     "sinopsis": "Murray Ray Garrison is resurrected by a team of scientists. Enhanced with nanotechnology, he becomes a superhuman biotech killing machine. When Ray first trains with other super soldiers, he doesn\u0027t remember anything from his previous life. But when he remembers being killed, he leaves the facility to get revenge, only to find that the conspiracy goes further than he thought.",
-    "date": "Aug 13, 2020 20:45:00 PM",
+    "date": "Sep 6, 2020 20:45:00 PM",
     "price": 8.6,
     "room": {
       "roomNumber": 3,
@@ -4541,7 +4541,7 @@
         },
         {
           "seatNumber": 58,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 59,
@@ -4605,7 +4605,7 @@
         },
         {
           "seatNumber": 74,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 75,
@@ -4653,7 +4653,7 @@
         },
         {
           "seatNumber": 86,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 87,
@@ -4661,7 +4661,7 @@
         },
         {
           "seatNumber": 88,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 89,
@@ -4697,7 +4697,7 @@
         },
         {
           "seatNumber": 97,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 98,
@@ -4733,7 +4733,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -4821,7 +4821,7 @@
         },
         {
           "seatNumber": 128,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 129,
@@ -4921,7 +4921,7 @@
   },
   {
     "sinopsis": "Students are assigned to conduct university research on a woman believed to have practiced witchcraft. During the investigation they arrive at an isolated town that is home to a cult where macabre rituals are performed. They will soon discover the sinister secret of this place.",
-    "date": "Aug 13, 2020 20:30:00 PM",
+    "date": "Sep 6, 2020 20:30:00 PM",
     "price": 7.7,
     "room": {
       "roomNumber": 4,
@@ -5188,7 +5188,7 @@
         },
         {
           "seatNumber": 66,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 67,
@@ -5348,7 +5348,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -5424,15 +5424,15 @@
         },
         {
           "seatNumber": 125,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 126,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 127,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 128,
@@ -5464,15 +5464,15 @@
         },
         {
           "seatNumber": 135,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 136,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 137,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 138,
@@ -5508,7 +5508,7 @@
         },
         {
           "seatNumber": 146,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 147,
@@ -5536,7 +5536,7 @@
   },
   {
     "sinopsis": "In an extravagant and unusual hotel in the middle of the desert, a pre-adolescent introvert on a family trip will have to overcome his lack of confidence and his school bully to win the girl of his dreams. In this adolescent journey, Guillermo will discover the allies he least expected: a crazy lifeguard, his talent for music and his family.",
-    "date": "Aug 13, 2020 18:30:00 PM",
+    "date": "Sep 7, 2020 18:30:00 PM",
     "price": 5.4,
     "room": {
       "roomNumber": 5,
@@ -5887,7 +5887,7 @@
         },
         {
           "seatNumber": 87,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 88,
@@ -5923,7 +5923,7 @@
         },
         {
           "seatNumber": 96,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 97,
@@ -5971,7 +5971,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -5983,7 +5983,7 @@
         },
         {
           "seatNumber": 111,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 112,
@@ -6003,7 +6003,7 @@
         },
         {
           "seatNumber": 116,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 117,
@@ -6011,7 +6011,7 @@
         },
         {
           "seatNumber": 118,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 119,
@@ -6151,7 +6151,7 @@
   },
   {
     "sinopsis": "A beautiful, contemporary narrative of Colin Thiele\u0027s classic Australian tale. \u0027Storm Boy\u0027 has grown into Michael Kingley, a successful businessman and retired grandfather. When Kingley begins to see images of his past that he cannot explain, he is forced to recall his forgotten childhood, growing up on an isolated coast with his father. He tells his granddaughter the story of how, as a child, he rescued and raised an extraordinary orphaned pelican, Mr. Percival. Their remarkable adventures and their very special bond have a profound effect on his entire life.",
-    "date": "Aug 13, 2020 20:15:00 PM",
+    "date": "Sep 7, 2020 20:15:00 PM",
     "price": 9.5,
     "room": {
       "roomNumber": 6,
@@ -6578,7 +6578,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -6766,7 +6766,7 @@
   },
   {
     "sinopsis": "When medical trails are pushed to the limit, the most extreme trials end on the island of St. Leonards in the North Atlantic. A redesigned prison for some of the most violent criminals in the world. But when an experiment goes awry, the entire island turns into a terrifying, disease-ridden maze for desperate survivors.",
-    "date": "Aug 14, 2020 19:30:00 PM",
+    "date": "Sep 7, 2020 19:30:00 PM",
     "price": 7.6,
     "room": {
       "roomNumber": 2,
@@ -6909,7 +6909,7 @@
         },
         {
           "seatNumber": 35,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 36,
@@ -6993,7 +6993,7 @@
         },
         {
           "seatNumber": 56,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 57,
@@ -7029,7 +7029,7 @@
         },
         {
           "seatNumber": 65,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 66,
@@ -7073,7 +7073,7 @@
         },
         {
           "seatNumber": 76,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 77,
@@ -7081,7 +7081,7 @@
         },
         {
           "seatNumber": 78,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 79,
@@ -7113,7 +7113,7 @@
         },
         {
           "seatNumber": 86,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 87,
@@ -7161,7 +7161,7 @@
         },
         {
           "seatNumber": 98,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 99,
@@ -7189,7 +7189,7 @@
         },
         {
           "seatNumber": 105,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 106,
@@ -7201,7 +7201,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -7233,7 +7233,7 @@
         },
         {
           "seatNumber": 116,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 117,
@@ -7285,7 +7285,7 @@
         },
         {
           "seatNumber": 129,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 130,
@@ -7313,7 +7313,7 @@
         },
         {
           "seatNumber": 136,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 137,
@@ -7381,7 +7381,7 @@
   },
   {
     "sinopsis": "Murray Ray Garrison is resurrected by a team of scientists. Enhanced with nanotechnology, he becomes a superhuman biotech killing machine. When Ray first trains with other super soldiers, he doesn\u0027t remember anything from his previous life. But when he remembers being killed, he leaves the facility to get revenge, only to find that the conspiracy goes further than he thought.",
-    "date": "Aug 14, 2020 20:45:00 PM",
+    "date": "Sep 7, 2020 20:45:00 PM",
     "price": 8.6,
     "room": {
       "roomNumber": 3,
@@ -7616,7 +7616,7 @@
         },
         {
           "seatNumber": 58,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 59,
@@ -7680,7 +7680,7 @@
         },
         {
           "seatNumber": 74,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 75,
@@ -7728,7 +7728,7 @@
         },
         {
           "seatNumber": 86,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 87,
@@ -7736,7 +7736,7 @@
         },
         {
           "seatNumber": 88,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 89,
@@ -7772,7 +7772,7 @@
         },
         {
           "seatNumber": 97,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 98,
@@ -7808,7 +7808,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -7896,7 +7896,7 @@
         },
         {
           "seatNumber": 128,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 129,
@@ -7996,7 +7996,7 @@
   },
   {
     "sinopsis": "Students are assigned to conduct university research on a woman believed to have practiced witchcraft. During the investigation they arrive at an isolated town that is home to a cult where macabre rituals are performed. They will soon discover the sinister secret of this place.",
-    "date": "Aug 14, 2020 20:30:00 PM",
+    "date": "Sep 7, 2020 20:30:00 PM",
     "price": 7.7,
     "room": {
       "roomNumber": 4,
@@ -8263,7 +8263,7 @@
         },
         {
           "seatNumber": 66,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 67,
@@ -8423,7 +8423,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -8499,15 +8499,15 @@
         },
         {
           "seatNumber": 125,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 126,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 127,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 128,
@@ -8539,15 +8539,15 @@
         },
         {
           "seatNumber": 135,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 136,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 137,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 138,
@@ -8583,7 +8583,7 @@
         },
         {
           "seatNumber": 146,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 147,
@@ -8611,7 +8611,7 @@
   },
   {
     "sinopsis": "In an extravagant and unusual hotel in the middle of the desert, a pre-adolescent introvert on a family trip will have to overcome his lack of confidence and his school bully to win the girl of his dreams. In this adolescent journey, Guillermo will discover the allies he least expected: a crazy lifeguard, his talent for music and his family.",
-    "date": "Aug 14, 2020 18:30:00 PM",
+    "date": "Sep 7, 2020 18:30:00 PM",
     "price": 5.4,
     "room": {
       "roomNumber": 5,
@@ -8962,7 +8962,7 @@
         },
         {
           "seatNumber": 87,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 88,
@@ -8998,7 +8998,7 @@
         },
         {
           "seatNumber": 96,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 97,
@@ -9046,7 +9046,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -9058,7 +9058,7 @@
         },
         {
           "seatNumber": 111,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 112,
@@ -9078,7 +9078,7 @@
         },
         {
           "seatNumber": 116,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 117,
@@ -9086,7 +9086,7 @@
         },
         {
           "seatNumber": 118,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 119,
@@ -9226,7 +9226,7 @@
   },
   {
     "sinopsis": "A beautiful, contemporary narrative of Colin Thiele\u0027s classic Australian tale. \u0027Storm Boy\u0027 has grown into Michael Kingley, a successful businessman and retired grandfather. When Kingley begins to see images of his past that he cannot explain, he is forced to recall his forgotten childhood, growing up on an isolated coast with his father. He tells his granddaughter the story of how, as a child, he rescued and raised an extraordinary orphaned pelican, Mr. Percival. Their remarkable adventures and their very special bond have a profound effect on his entire life.",
-    "date": "Aug 14, 2020 20:15:00 PM",
+    "date": "Sep 8, 2020 20:15:00 PM",
     "price": 9.5,
     "room": {
       "roomNumber": 6,
@@ -9653,7 +9653,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -9841,7 +9841,7 @@
   },
   {
     "sinopsis": "When medical trails are pushed to the limit, the most extreme trials end on the island of St. Leonards in the North Atlantic. A redesigned prison for some of the most violent criminals in the world. But when an experiment goes awry, the entire island turns into a terrifying, disease-ridden maze for desperate survivors.",
-    "date": "Aug 15, 2020 19:30:00 PM",
+    "date": "Sep 8, 2020 19:30:00 PM",
     "price": 7.6,
     "room": {
       "roomNumber": 2,
@@ -9984,7 +9984,7 @@
         },
         {
           "seatNumber": 35,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 36,
@@ -10068,7 +10068,7 @@
         },
         {
           "seatNumber": 56,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 57,
@@ -10104,7 +10104,7 @@
         },
         {
           "seatNumber": 65,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 66,
@@ -10148,7 +10148,7 @@
         },
         {
           "seatNumber": 76,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 77,
@@ -10156,7 +10156,7 @@
         },
         {
           "seatNumber": 78,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 79,
@@ -10188,7 +10188,7 @@
         },
         {
           "seatNumber": 86,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 87,
@@ -10236,7 +10236,7 @@
         },
         {
           "seatNumber": 98,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 99,
@@ -10264,7 +10264,7 @@
         },
         {
           "seatNumber": 105,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 106,
@@ -10276,7 +10276,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -10308,7 +10308,7 @@
         },
         {
           "seatNumber": 116,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 117,
@@ -10360,7 +10360,7 @@
         },
         {
           "seatNumber": 129,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 130,
@@ -10388,7 +10388,7 @@
         },
         {
           "seatNumber": 136,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 137,
@@ -10456,7 +10456,7 @@
   },
   {
     "sinopsis": "Murray Ray Garrison is resurrected by a team of scientists. Enhanced with nanotechnology, he becomes a superhuman biotech killing machine. When Ray first trains with other super soldiers, he doesn\u0027t remember anything from his previous life. But when he remembers being killed, he leaves the facility to get revenge, only to find that the conspiracy goes further than he thought.",
-    "date": "Aug 15, 2020 20:45:00 PM",
+    "date": "Sep 8, 2020 20:45:00 PM",
     "price": 8.6,
     "room": {
       "roomNumber": 3,
@@ -10691,7 +10691,7 @@
         },
         {
           "seatNumber": 58,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 59,
@@ -10755,7 +10755,7 @@
         },
         {
           "seatNumber": 74,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 75,
@@ -10803,7 +10803,7 @@
         },
         {
           "seatNumber": 86,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 87,
@@ -10811,7 +10811,7 @@
         },
         {
           "seatNumber": 88,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 89,
@@ -10847,7 +10847,7 @@
         },
         {
           "seatNumber": 97,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 98,
@@ -10883,7 +10883,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -10971,7 +10971,7 @@
         },
         {
           "seatNumber": 128,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 129,
@@ -11071,7 +11071,7 @@
   },
   {
     "sinopsis": "Students are assigned to conduct university research on a woman believed to have practiced witchcraft. During the investigation they arrive at an isolated town that is home to a cult where macabre rituals are performed. They will soon discover the sinister secret of this place.",
-    "date": "Aug 15, 2020 20:30:00 PM",
+    "date": "Sep 8, 2020 20:30:00 PM",
     "price": 7.7,
     "room": {
       "roomNumber": 4,
@@ -11338,7 +11338,7 @@
         },
         {
           "seatNumber": 66,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 67,
@@ -11498,7 +11498,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -11574,15 +11574,15 @@
         },
         {
           "seatNumber": 125,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 126,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 127,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 128,
@@ -11614,15 +11614,15 @@
         },
         {
           "seatNumber": 135,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 136,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 137,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 138,
@@ -11658,7 +11658,7 @@
         },
         {
           "seatNumber": 146,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 147,
@@ -11686,7 +11686,7 @@
   },
   {
     "sinopsis": "In an extravagant and unusual hotel in the middle of the desert, a pre-adolescent introvert on a family trip will have to overcome his lack of confidence and his school bully to win the girl of his dreams. In this adolescent journey, Guillermo will discover the allies he least expected: a crazy lifeguard, his talent for music and his family.",
-    "date": "Aug 15, 2020 18:30:00 PM",
+    "date": "Sep 8, 2020 18:30:00 PM",
     "price": 5.4,
     "room": {
       "roomNumber": 5,
@@ -12037,7 +12037,7 @@
         },
         {
           "seatNumber": 87,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 88,
@@ -12073,7 +12073,7 @@
         },
         {
           "seatNumber": 96,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 97,
@@ -12121,7 +12121,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -12133,7 +12133,7 @@
         },
         {
           "seatNumber": 111,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 112,
@@ -12153,7 +12153,7 @@
         },
         {
           "seatNumber": 116,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 117,
@@ -12161,7 +12161,7 @@
         },
         {
           "seatNumber": 118,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 119,
@@ -12301,7 +12301,7 @@
   },
   {
     "sinopsis": "A beautiful, contemporary narrative of Colin Thiele\u0027s classic Australian tale. \u0027Storm Boy\u0027 has grown into Michael Kingley, a successful businessman and retired grandfather. When Kingley begins to see images of his past that he cannot explain, he is forced to recall his forgotten childhood, growing up on an isolated coast with his father. He tells his granddaughter the story of how, as a child, he rescued and raised an extraordinary orphaned pelican, Mr. Percival. Their remarkable adventures and their very special bond have a profound effect on his entire life.",
-    "date": "Aug 15, 2020 20:15:00 PM",
+    "date": "Sep 8, 2020 20:15:00 PM",
     "price": 9.5,
     "room": {
       "roomNumber": 6,
@@ -12728,7 +12728,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -12916,7 +12916,7 @@
   },
   {
     "sinopsis": "When medical trails are pushed to the limit, the most extreme trials end on the island of St. Leonards in the North Atlantic. A redesigned prison for some of the most violent criminals in the world. But when an experiment goes awry, the entire island turns into a terrifying, disease-ridden maze for desperate survivors.",
-    "date": "Aug 16, 2020 19:30:00 PM",
+    "date": "Sep 9, 2020 19:30:00 PM",
     "price": 7.6,
     "room": {
       "roomNumber": 2,
@@ -13059,7 +13059,7 @@
         },
         {
           "seatNumber": 35,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 36,
@@ -13143,7 +13143,7 @@
         },
         {
           "seatNumber": 56,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 57,
@@ -13179,7 +13179,7 @@
         },
         {
           "seatNumber": 65,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 66,
@@ -13223,7 +13223,7 @@
         },
         {
           "seatNumber": 76,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 77,
@@ -13231,7 +13231,7 @@
         },
         {
           "seatNumber": 78,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 79,
@@ -13263,7 +13263,7 @@
         },
         {
           "seatNumber": 86,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 87,
@@ -13311,7 +13311,7 @@
         },
         {
           "seatNumber": 98,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 99,
@@ -13339,7 +13339,7 @@
         },
         {
           "seatNumber": 105,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 106,
@@ -13351,7 +13351,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -13383,7 +13383,7 @@
         },
         {
           "seatNumber": 116,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 117,
@@ -13435,7 +13435,7 @@
         },
         {
           "seatNumber": 129,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 130,
@@ -13463,7 +13463,7 @@
         },
         {
           "seatNumber": 136,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 137,
@@ -13531,7 +13531,7 @@
   },
   {
     "sinopsis": "Murray Ray Garrison is resurrected by a team of scientists. Enhanced with nanotechnology, he becomes a superhuman biotech killing machine. When Ray first trains with other super soldiers, he doesn\u0027t remember anything from his previous life. But when he remembers being killed, he leaves the facility to get revenge, only to find that the conspiracy goes further than he thought.",
-    "date": "Aug 16, 2020 20:45:00 PM",
+    "date": "Sep 9, 2020 20:45:00 PM",
     "price": 8.6,
     "room": {
       "roomNumber": 3,
@@ -13766,7 +13766,7 @@
         },
         {
           "seatNumber": 58,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 59,
@@ -13830,7 +13830,7 @@
         },
         {
           "seatNumber": 74,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 75,
@@ -13878,7 +13878,7 @@
         },
         {
           "seatNumber": 86,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 87,
@@ -13886,7 +13886,7 @@
         },
         {
           "seatNumber": 88,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 89,
@@ -13922,7 +13922,7 @@
         },
         {
           "seatNumber": 97,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 98,
@@ -13958,7 +13958,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -14046,7 +14046,7 @@
         },
         {
           "seatNumber": 128,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 129,
@@ -14146,7 +14146,7 @@
   },
   {
     "sinopsis": "Students are assigned to conduct university research on a woman believed to have practiced witchcraft. During the investigation they arrive at an isolated town that is home to a cult where macabre rituals are performed. They will soon discover the sinister secret of this place.",
-    "date": "Aug 16, 2020 20:30:00 PM",
+    "date": "Sep 9, 2020 20:30:00 PM",
     "price": 7.7,
     "room": {
       "roomNumber": 4,
@@ -14413,7 +14413,7 @@
         },
         {
           "seatNumber": 66,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 67,
@@ -14573,7 +14573,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -14649,15 +14649,15 @@
         },
         {
           "seatNumber": 125,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 126,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 127,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 128,
@@ -14689,15 +14689,15 @@
         },
         {
           "seatNumber": 135,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 136,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 137,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 138,
@@ -14733,7 +14733,7 @@
         },
         {
           "seatNumber": 146,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 147,
@@ -14761,7 +14761,7 @@
   },
   {
     "sinopsis": "In an extravagant and unusual hotel in the middle of the desert, a pre-adolescent introvert on a family trip will have to overcome his lack of confidence and his school bully to win the girl of his dreams. In this adolescent journey, Guillermo will discover the allies he least expected: a crazy lifeguard, his talent for music and his family.",
-    "date": "Aug 16, 2020 18:30:00 PM",
+    "date": "Sep 9, 2020 18:30:00 PM",
     "price": 5.4,
     "room": {
       "roomNumber": 5,
@@ -15112,7 +15112,7 @@
         },
         {
           "seatNumber": 87,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 88,
@@ -15148,7 +15148,7 @@
         },
         {
           "seatNumber": 96,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 97,
@@ -15196,7 +15196,7 @@
         },
         {
           "seatNumber": 108,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 109,
@@ -15208,7 +15208,7 @@
         },
         {
           "seatNumber": 111,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 112,
@@ -15228,7 +15228,7 @@
         },
         {
           "seatNumber": 116,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 117,
@@ -15236,7 +15236,7 @@
         },
         {
           "seatNumber": 118,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 119,
@@ -15376,7 +15376,7 @@
   },
   {
     "sinopsis": "A beautiful, contemporary narrative of Colin Thiele\u0027s classic Australian tale. \u0027Storm Boy\u0027 has grown into Michael Kingley, a successful businessman and retired grandfather. When Kingley begins to see images of his past that he cannot explain, he is forced to recall his forgotten childhood, growing up on an isolated coast with his father. He tells his granddaughter the story of how, as a child, he rescued and raised an extraordinary orphaned pelican, Mr. Percival. Their remarkable adventures and their very special bond have a profound effect on his entire life.",
-    "date": "Aug 16, 2020 20:15:00 PM",
+    "date": "Sep 9, 2020 20:15:00 PM",
     "price": 9.5,
     "room": {
       "roomNumber": 6,
@@ -15803,7 +15803,7 @@
         },
         {
           "seatNumber": 106,
-          "seatAvailability": false
+          "seatAvailability": true
         },
         {
           "seatNumber": 107,
@@ -15991,622 +15991,7 @@
   },
   {
     "sinopsis": "Set in a suburban fantasy world, two teenage elf brothers, Ian and Barley Lightfood, embark on an adventure in which they set out to discover if there is still any magic in the world that will allow them to spend one last day with their father, who he passed away when they were still too young to remember him.",
-    "date": "Aug 14, 2020 20:30:00 PM",
-    "price": 5.4,
-    "room": {
-      "roomNumber": 1,
-      "seats": [
-        {
-          "seatNumber": 1,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 2,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 3,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 4,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 5,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 6,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 7,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 8,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 9,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 10,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 11,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 12,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 13,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 14,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 15,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 16,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 17,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 18,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 19,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 20,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 21,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 22,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 23,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 24,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 25,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 26,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 27,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 28,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 29,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 30,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 31,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 32,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 33,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 34,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 35,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 36,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 37,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 38,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 39,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 40,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 41,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 42,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 43,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 44,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 45,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 46,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 47,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 48,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 49,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 50,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 51,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 52,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 53,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 54,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 55,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 56,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 57,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 58,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 59,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 60,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 61,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 62,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 63,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 64,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 65,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 66,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 67,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 68,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 69,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 70,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 71,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 72,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 73,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 74,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 75,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 76,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 77,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 78,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 79,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 80,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 81,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 82,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 83,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 84,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 85,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 86,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 87,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 88,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 89,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 90,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 91,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 92,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 93,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 94,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 95,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 96,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 97,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 98,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 99,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 100,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 101,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 102,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 103,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 104,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 105,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 106,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 107,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 108,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 109,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 110,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 111,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 112,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 113,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 114,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 115,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 116,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 117,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 118,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 119,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 120,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 121,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 122,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 123,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 124,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 125,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 126,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 127,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 128,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 129,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 130,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 131,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 132,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 133,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 134,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 135,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 136,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 137,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 138,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 139,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 140,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 141,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 142,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 143,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 144,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 145,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 146,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 147,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 148,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 149,
-          "seatAvailability": false
-        },
-        {
-          "seatNumber": 150,
-          "seatAvailability": false
-        }
-      ]
-    },
-    "title": "Onward",
-    "gender": "Science fiction",
-    "ageRestriction": "All public",
-    "duration": 114,
-    "namePoster": "onward.jpg"
-  },
-  {
-    "sinopsis": "Set in a suburban fantasy world, two teenage elf brothers, Ian and Barley Lightfood, embark on an adventure in which they set out to discover if there is still any magic in the world that will allow them to spend one last day with their father, who he passed away when they were still too young to remember him.",
-    "date": "Aug 9, 2020 18:30:00 PM",
+    "date": "Sep 9, 2020 18:30:00 PM",
     "price": 5.7,
     "room": {
       "roomNumber": 1,
@@ -16913,6 +16298,1236 @@
         },
         {
           "seatNumber": 76,
+          "seatAvailability": true
+        },
+        {
+          "seatNumber": 77,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 78,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 79,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 80,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 81,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 82,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 83,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 84,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 85,
+          "seatAvailability": true
+        },
+        {
+          "seatNumber": 86,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 87,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 88,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 89,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 90,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 91,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 92,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 93,
+          "seatAvailability": true
+        },
+        {
+          "seatNumber": 94,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 95,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 96,
+          "seatAvailability": true
+        },
+        {
+          "seatNumber": 97,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 98,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 99,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 100,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 101,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 102,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 103,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 104,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 105,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 106,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 107,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 108,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 109,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 110,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 111,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 112,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 113,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 114,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 115,
+          "seatAvailability": true
+        },
+        {
+          "seatNumber": 116,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 117,
+          "seatAvailability": true
+        },
+        {
+          "seatNumber": 118,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 119,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 120,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 121,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 122,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 123,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 124,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 125,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 126,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 127,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 128,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 129,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 130,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 131,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 132,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 133,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 134,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 135,
+          "seatAvailability": true
+        },
+        {
+          "seatNumber": 136,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 137,
+          "seatAvailability": true
+        },
+        {
+          "seatNumber": 138,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 139,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 140,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 141,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 142,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 143,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 144,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 145,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 146,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 147,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 148,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 149,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 150,
+          "seatAvailability": false
+        }
+      ]
+    },
+    "title": "Onward",
+    "gender": "Fantasy",
+    "ageRestriction": "All public",
+    "duration": 114,
+    "namePoster": "onward.jpg"
+  },
+  {
+    "sinopsis": "The End by the Doors",
+    "date": "Sep 11, 2020 05:00:00 AM",
+    "price": 7.9,
+    "room": {
+      "roomNumber": 1,
+      "seats": [
+        {
+          "seatNumber": 1,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 2,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 3,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 4,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 5,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 6,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 7,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 8,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 9,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 10,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 11,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 12,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 13,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 14,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 15,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 16,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 17,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 18,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 19,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 20,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 21,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 22,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 23,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 24,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 25,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 26,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 27,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 28,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 29,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 30,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 31,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 32,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 33,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 34,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 35,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 36,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 37,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 38,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 39,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 40,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 41,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 42,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 43,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 44,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 45,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 46,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 47,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 48,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 49,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 50,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 51,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 52,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 53,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 54,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 55,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 56,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 57,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 58,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 59,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 60,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 61,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 62,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 63,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 64,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 65,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 66,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 67,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 68,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 69,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 70,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 71,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 72,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 73,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 74,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 75,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 76,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 77,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 78,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 79,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 80,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 81,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 82,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 83,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 84,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 85,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 86,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 87,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 88,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 89,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 90,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 91,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 92,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 93,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 94,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 95,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 96,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 97,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 98,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 99,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 100,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 101,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 102,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 103,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 104,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 105,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 106,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 107,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 108,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 109,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 110,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 111,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 112,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 113,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 114,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 115,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 116,
+          "seatAvailability": true
+        },
+        {
+          "seatNumber": 117,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 118,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 119,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 120,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 121,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 122,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 123,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 124,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 125,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 126,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 127,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 128,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 129,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 130,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 131,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 132,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 133,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 134,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 135,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 136,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 137,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 138,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 139,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 140,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 141,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 142,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 143,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 144,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 145,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 146,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 147,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 148,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 149,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 150,
+          "seatAvailability": false
+        }
+      ]
+    },
+    "title": "The End",
+    "gender": "Comedy",
+    "ageRestriction": "Over 18",
+    "duration": 150,
+    "namePoster": "the_end.jpg"
+  },
+  {
+    "sinopsis": "In 2026, a new machine named Augma is developed to compete against the NerveGear and its successor, the Amusphere. A next-generation portable device, the Augma doesn\u0027t have a full immersive feature like its predecessors. Instead, it uses Augmented Reality (AR) to introduce players to the game. It\u0027s safe, easy to use, and allows users to play while conscious, making it an instant hit on the market. The most popular game in the system is \"Ordinal Scale\" (OS), an ARMMORPG developed exclusively for the Augma. Asuna and the band have already been playing OS for a while, and soon Kirito decides to join them. However, they are about to discover that Ordinal Scale is not all fun and games. Sequel to Sword Art Online II. (FILMAFFINITY)",
+    "date": "Sep 11, 2020 04:45:00 AM",
+    "price": 8.63,
+    "room": {
+      "roomNumber": 5,
+      "seats": [
+        {
+          "seatNumber": 1,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 2,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 3,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 4,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 5,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 6,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 7,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 8,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 9,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 10,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 11,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 12,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 13,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 14,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 15,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 16,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 17,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 18,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 19,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 20,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 21,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 22,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 23,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 24,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 25,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 26,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 27,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 28,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 29,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 30,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 31,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 32,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 33,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 34,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 35,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 36,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 37,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 38,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 39,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 40,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 41,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 42,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 43,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 44,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 45,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 46,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 47,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 48,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 49,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 50,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 51,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 52,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 53,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 54,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 55,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 56,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 57,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 58,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 59,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 60,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 61,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 62,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 63,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 64,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 65,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 66,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 67,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 68,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 69,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 70,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 71,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 72,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 73,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 74,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 75,
+          "seatAvailability": false
+        },
+        {
+          "seatNumber": 76,
           "seatAvailability": false
         },
         {
@@ -17213,10 +17828,10 @@
         }
       ]
     },
-    "title": "Onward",
-    "gender": "Fantasy",
+    "title": "Sword Art Online",
+    "gender": "Romance",
     "ageRestriction": "All public",
-    "duration": 114,
-    "namePoster": "onward.jpg"
+    "duration": 124,
+    "namePoster": "sword_art_online.jpg"
   }
 ]
