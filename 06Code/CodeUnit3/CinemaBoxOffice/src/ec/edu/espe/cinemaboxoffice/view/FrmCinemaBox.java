@@ -565,7 +565,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                     .addComponent(lblPremierGender1)
                     .addComponent(lblPremierMonth1)
                     .addComponent(lblPremierDuration1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(192, Short.MAX_VALUE))
         );
         pnlPremier1Layout.setVerticalGroup(
             pnlPremier1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -619,7 +619,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                     .addComponent(lblPremierGender2)
                     .addComponent(lblPremierMonth2)
                     .addComponent(lblPremierDuration2))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(192, Short.MAX_VALUE))
         );
         pnlPremier2Layout.setVerticalGroup(
             pnlPremier2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -674,7 +674,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                     .addComponent(lblPremierGender3)
                     .addComponent(lblPremierMonth3)
                     .addComponent(lblPremierDuration3))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(192, Short.MAX_VALUE))
         );
         pnlPremier3Layout.setVerticalGroup(
             pnlPremier3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -782,7 +782,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
                     .addComponent(lblPremierGender4)
                     .addComponent(lblPremierMonth4)
                     .addComponent(lblPremierDuration4))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(192, Short.MAX_VALUE))
         );
         pnlPremier4Layout.setVerticalGroup(
             pnlPremier4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -813,7 +813,7 @@ public class FrmCinemaBox extends javax.swing.JFrame {
 
         lblPremierGender6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierGender6.setForeground(new java.awt.Color(255, 255, 255));
-        lblPremierGender6.setText("jLabel20");
+        lblPremierGender6.setText("-");
 
         lblPremierMonth6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblPremierMonth6.setForeground(new java.awt.Color(255, 255, 255));
@@ -861,17 +861,21 @@ public class FrmCinemaBox extends javax.swing.JFrame {
         pnlNextPremierLayout.setHorizontalGroup(
             pnlNextPremierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlNextPremierLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnlNextPremierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(pnlPremier3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlPremier1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlPremier5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
-                .addGroup(pnlNextPremierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(pnlPremier4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlPremier2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlPremier6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(19, 19, 19))
+                .addGroup(pnlNextPremierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlNextPremierLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(pnlPremier1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlNextPremierLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(pnlNextPremierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pnlPremier3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pnlPremier5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                .addGroup(pnlNextPremierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnlPremier4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlPremier2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlPremier6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28))
         );
         pnlNextPremierLayout.setVerticalGroup(
             pnlNextPremierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

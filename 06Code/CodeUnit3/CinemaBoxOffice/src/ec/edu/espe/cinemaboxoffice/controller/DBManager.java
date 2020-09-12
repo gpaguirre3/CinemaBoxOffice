@@ -60,7 +60,7 @@ public class DBManager {
         document.put("ageRestriction", age);
         document.put("price", price);
         document.put("duration", duration);
-        document.put("roomNumber", room);
+        //document.put("roomNumber", room);
         document.put("sinopsis", sinopsis);
         document.put("Date", date);
         document.put("NamePoster", namePoster);

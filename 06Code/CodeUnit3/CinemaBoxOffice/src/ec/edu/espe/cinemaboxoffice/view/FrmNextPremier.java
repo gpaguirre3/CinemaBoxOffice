@@ -9,11 +9,20 @@ import ec.edu.espe.cinemaboxoffice.controller.DBManager;
 import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.NextPremier;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
@@ -21,6 +30,14 @@ import javax.swing.JOptionPane;
  */
 public class FrmNextPremier extends javax.swing.JFrame {
 
+    private class PosterContext {
+
+        public File path;
+        public BufferedImage image;
+    }
+    
+    private PosterContext posterContext;
+    
     /**
      * Creates new form FrmNextPremier
      */
@@ -48,7 +65,6 @@ public class FrmNextPremier extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txfTitleNextPremier = new java.awt.TextField();
-        txfDNamePoster = new java.awt.TextField();
         cbxGenderNextPremier = new javax.swing.JComboBox<>();
         cbxAgeRestrictionNextPremier = new javax.swing.JComboBox<>();
         btnSaveNextPremier = new javax.swing.JButton();
@@ -65,6 +81,9 @@ public class FrmNextPremier extends javax.swing.JFrame {
         cbxMonthNextPremier = new com.toedter.calendar.JMonthChooser();
         lblDurationMinutes = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        lblPosterIcon = new javax.swing.JLabel();
+        txtPosterFile = new javax.swing.JTextField();
+        btnInsert = new javax.swing.JButton();
 
         cbxAgeRestriction.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All public", "over 12", "Over 18" }));
 
@@ -95,7 +114,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Imagen");
+        jLabel6.setText("Imagen de la película");
 
         jLabel7.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -143,10 +162,22 @@ public class FrmNextPremier extends javax.swing.JFrame {
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/ageIcon.png"))); // NOI18N
 
+        lblDurationMinutes.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         lblDurationMinutes.setForeground(new java.awt.Color(255, 255, 255));
         lblDurationMinutes.setText("minutos");
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        lblPosterIcon.setText("-");
+
+        txtPosterFile.setEnabled(false);
+
+        btnInsert.setText("Buscar Imagen");
+        btnInsert.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnInsertMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -160,15 +191,30 @@ public class FrmNextPremier extends javax.swing.JFrame {
                             .addComponent(jLabel9)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel10)
-                                    .addComponent(jLabel11))
-                                .addGap(9, 9, 9)))
+                                    .addComponent(jLabel14)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel11)
+                                        .addComponent(jLabel12))
+                                    .addComponent(jLabel10))
+                                .addGap(11, 11, 11)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel5))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(12, 12, 12)
+                                        .addComponent(spnPremierDuration, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblDurationMinutes))
+                                    .addComponent(txfTitleNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
                                 .addGap(18, 18, 18)
-                                .addComponent(txfTitleNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(cbxAgeRestrictionNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addGap(18, 18, 18)
@@ -178,44 +224,31 @@ public class FrmNextPremier extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(cbxMonthNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(cbxYearNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(184, 184, 184)
-                                .addComponent(btnSaveNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(cbxYearNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(btnPremierExit, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel14)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel4)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(cbxAgeRestrictionNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel12)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel5)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(spnPremierDuration, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(lblDurationMinutes))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jLabel13)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jLabel6)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(txfDNamePoster, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(jLabel6))
+                                    .addComponent(btnInsert)
+                                    .addComponent(txtPosterFile, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(21, 21, 21)
+                                .addComponent(lblPosterIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnSaveNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(56, 56, 56)
+                                .addComponent(btnPremierExit, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(23, 23, 23))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel8)
                         .addGap(134, 134, 134)
                         .addComponent(jLabel1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -231,53 +264,55 @@ public class FrmNextPremier extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jLabel5)
-                                            .addComponent(spnPremierDuration, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lblDurationMinutes))
-                                        .addGap(16, 16, 16)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel6)
-                                            .addComponent(txfDNamePoster, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel12)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel13)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel13)
+                                    .addComponent(jLabel6))
                                 .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel14)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel4)
-                                        .addComponent(cbxAgeRestrictionNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addComponent(txtPosterFile, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnInsert))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblPosterIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnPremierExit)
+                                    .addComponent(btnSaveNextPremier)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(53, 53, 53)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel9)
-                            .addComponent(txfTitleNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel4)
+                                .addComponent(cbxAgeRestrictionNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel10)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel9)
+                                    .addComponent(txfTitleNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(23, 23, 23)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel12)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel3)
-                                        .addComponent(cbxGenderNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
+                                        .addComponent(spnPremierDuration, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel5)
+                                        .addComponent(lblDurationMinutes)))
+                                .addGap(22, 22, 22)
+                                .addComponent(jLabel14)))
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel10)
+                                    .addComponent(jLabel3)
+                                    .addComponent(cbxGenderNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(cbxMonthNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel11)
-                                    .addComponent(cbxMonthNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(cbxYearNextPremier, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(14, 14, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSaveNextPremier)
-                    .addComponent(btnPremierExit))
-                .addContainerGap(29, Short.MAX_VALUE))
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING)))
+                            .addComponent(cbxYearNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -288,7 +323,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -305,15 +340,30 @@ public class FrmNextPremier extends javax.swing.JFrame {
         String gender = cbxGenderNextPremier.getSelectedItem().toString();
         String age = cbxAgeRestriction.getSelectedItem().toString();
         int duration = Integer.parseInt(spnPremierDuration.getValue().toString());
-        String namePoster = txfDNamePoster.getText() + ".jpg";
         Date dateNextPremier = new Date(Integer.parseInt(cbxYearNextPremier.
                 getSelectedItem().toString()) - 1900, cbxMonthNextPremier.getMonth(), 1);
-        Movie nextPremier = new NextPremier(title, gender, age, duration, namePoster, dateNextPremier);
+        
+        String posterName = "";
+
+        try {
+            posterName = title.replace(" ", "_").toLowerCase();
+            File outputPoster = new File("pictures/" + posterName + ".jpg");
+            ImageIO.write(posterContext.image, "jpg", outputPoster);
+        } catch (Exception exception) {
+            JOptionPane.showMessageDialog(
+                    null, "Error al guardar la imagen, porfavor vuelva a intentar",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+            exception.printStackTrace();
+            return;
+        }
+        
+        Movie nextPremier = new NextPremier(title, gender, age, duration, 
+                posterName + ".jpg", dateNextPremier);
 
         DBManager db = new DBManager();
         String collectionName = "NextPremier";
         db.saveFile(collectionName);
-        db.saveNextPremier(title, gender, age, duration, namePoster, dateNextPremier);
+        db.saveNextPremier(title, gender, age, duration, posterName, dateNextPremier);
         try {
             record.recordMovie("NextPremier.json", nextPremier);
         } catch (IOException ex) {
@@ -328,8 +378,68 @@ public class FrmNextPremier extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSaveNextPremierActionPerformed
 
+    private void btnInsertMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInsertMouseClicked
+        JFileChooser fileChooser = new JFileChooser();
+        FileFilter imageFilter = new FileNameExtensionFilter(
+                "Image files", ImageIO.getReaderFileSuffixes());
+        fileChooser.setFileFilter(imageFilter);
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        fileChooser.setMultiSelectionEnabled(false);
+        fileChooser.setAcceptAllFileFilterUsed(false);
+        int selection = fileChooser.showOpenDialog(this);
+
+        if (selection == JFileChooser.APPROVE_OPTION) {
+            File imageFile = fileChooser.getSelectedFile();
+            BufferedImage bufferedImage = null;
+
+            try {
+                bufferedImage = ImageIO.read(imageFile);
+
+                if (bufferedImage == null) {
+                    JOptionPane.showMessageDialog(
+                            getRootPane(),
+                            "Selected file is not a valid image or has an invalid format",
+                            "Wrong image format",
+                            JOptionPane.ERROR_MESSAGE
+                    );
+                    return;
+                }
+
+                if (bufferedImage.getWidth() < 100 || bufferedImage.getHeight() < 148) {
+                    JOptionPane.showMessageDialog(
+                            getRootPane(),
+                            "Image size must be greater than or equal to 100x148",
+                            "Image too small",
+                            JOptionPane.ERROR_MESSAGE
+                    );
+                    return;
+                }
+
+                Image scaled = bufferedImage.getScaledInstance(100, 148, Image.SCALE_SMOOTH);
+
+                BufferedImage bimage = new BufferedImage(
+                        scaled.getWidth(null), scaled.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+                Graphics2D bGr = bimage.createGraphics();
+                bGr.drawImage(scaled, 0, 0, null);
+                bGr.dispose();
+
+                PosterContext context = new PosterContext();
+                context.image = bimage;
+                context.path = imageFile;
+
+                lblPosterIcon.setIcon(new ImageIcon(bimage));
+                txtPosterFile.setText(imageFile.getAbsolutePath());
+
+                posterContext = context;
+            } catch (IOException ex) {
+                Logger.getLogger(FrmNextPremier.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_btnInsertMouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnInsert;
     private javax.swing.JButton btnPremierExit;
     private javax.swing.JButton btnSaveNextPremier;
     private javax.swing.JComboBox<String> cbxAgeRestriction;
@@ -354,8 +464,9 @@ public class FrmNextPremier extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel lblDurationMinutes;
+    private javax.swing.JLabel lblPosterIcon;
     private javax.swing.JSpinner spnPremierDuration;
-    private java.awt.TextField txfDNamePoster;
     private java.awt.TextField txfTitleNextPremier;
+    private javax.swing.JTextField txtPosterFile;
     // End of variables declaration//GEN-END:variables
 }
