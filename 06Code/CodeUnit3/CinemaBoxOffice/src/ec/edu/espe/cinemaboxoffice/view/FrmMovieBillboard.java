@@ -572,7 +572,7 @@ public class FrmMovieBillboard extends javax.swing.JFrame {
 
         DBManager db = new DBManager();
         db.saveFile(collectionName);
-        db.saveMovies(title, gender, age, duration, posterName, sinopsis, recordDate(), sPrice, room);
+        db.saveMovie(movie);
 
         try {
             record.recordMovie("Billboard.json", movie);

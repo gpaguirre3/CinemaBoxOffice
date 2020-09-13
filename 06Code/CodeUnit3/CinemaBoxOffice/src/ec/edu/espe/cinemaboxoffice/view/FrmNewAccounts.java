@@ -8,6 +8,7 @@ package ec.edu.espe.cinemaboxoffice.view;
 import ec.edu.espe.cinemaboxoffice.controller.DBManager;
 import ec.edu.espe.cinemaboxoffice.controller.LogInController;
 import ec.edu.espe.cinemaboxoffice.controller.NewAccountsController;
+import ec.edu.espe.cinemaboxoffice.model.Admin;
 import ec.edu.espe.cinemaboxoffice.utils.PasswordEncryptor;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
@@ -298,7 +299,7 @@ public class FrmNewAccounts extends javax.swing.JFrame {
 
         String id = txtId.getText();
         String name = txtName.getText();
-        String username = txtUsername.getText();
+        String userName = txtUsername.getText();
         String password = pwfPass.getText();
         password = encryptor.encryptPassword(password);
 
@@ -332,7 +333,7 @@ public class FrmNewAccounts extends javax.swing.JFrame {
             return;
         }
 
-        if (username.trim().isEmpty()) {
+        if (userName.trim().isEmpty()) {
             JOptionPane.showMessageDialog(
                     null,
                     "Username is required",
@@ -352,10 +353,10 @@ public class FrmNewAccounts extends javax.swing.JFrame {
             return;
         }
 
-        service.addAccounts(id, name, username, password);
+        service.addAccounts(id, name, userName, password);
 
         db.saveFile(fileName);
-        db.saveUsers(username, password, id, name);
+        db.saveAdmin(new Admin(id, name, userName, password));
 
         JOptionPane.showMessageDialog(
                 null,

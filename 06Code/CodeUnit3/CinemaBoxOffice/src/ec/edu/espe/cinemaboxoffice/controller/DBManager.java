@@ -9,7 +9,10 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.Mongo;
+import ec.edu.espe.cinemaboxoffice.model.Admin;
 import ec.edu.espe.cinemaboxoffice.model.CinemaRoom;
+import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
+import ec.edu.espe.cinemaboxoffice.model.NextPremier;
 import ec.edu.espe.cinemaboxoffice.view.FrmAdminLogin;
 import java.net.UnknownHostException;
 import java.util.Date;
@@ -41,40 +44,38 @@ public class DBManager {
         this.collectionName = this.CinemaBox.getCollection(collection);
 
     }
-
     
-    public void saveUsers(String username, String password, String id, String name) {
+    public void saveAdmin(Admin admin){
         BasicDBObject document = new BasicDBObject();
-        document.put("userName", username);
-        document.put("password", password);
-        document.put("id", id);
-        document.put("name", name);
+        document.put("userName", admin.getUserName());
+        document.put("password", admin.getPassword());
+        document.put("id", admin.getId());
+        document.put("name", admin.getName());
         collectionName.insert(document);
     }
-
-    public void saveMovies(String title, String gender, String age,
-            int duration, String namePoster, String sinopsis, Date date, String price, CinemaRoom room) {
+    
+    public void saveMovie(MovieBillboard movie){
         BasicDBObject document = new BasicDBObject();
-        document.put("title", title);
-        document.put("gender", gender);
-        document.put("ageRestriction", age);
-        document.put("price", price);
-        document.put("duration", duration);
+        document.put("title", movie.getTitle());
+        document.put("gender", movie.getGender());
+        document.put("ageRestriction", movie.getAgeRestriction());
+        document.put("price", movie.getPrice());
+        document.put("duration", movie.getDuration());
         //document.put("roomNumber", room);
-        document.put("sinopsis", sinopsis);
-        document.put("Date", date);
-        document.put("NamePoster", namePoster);
+        document.put("sinopsis", movie.getSinopsis());
+        document.put("Date", movie.getDate());
+        document.put("NamePoster", movie.getNamePoster());
         collectionName.insert(document);
     }
-
-    public void saveNextPremier(String title, String gender, String age, int duration, String namePoster, Date dateNextPremier) {
+    
+    public void saveNextPremier(NextPremier premier){
         BasicDBObject document = new BasicDBObject();
-        document.put("title", title);
-        document.put("gender", gender);
-        document.put("ageRestriction", age);
-        document.put("duration", duration);
-        document.put("NamePoster", namePoster);
-        document.put("Date", dateNextPremier);
+        document.put("title", premier.getTitle());
+        document.put("gender", premier.getGender());
+        document.put("ageRestriction", premier.getAgeRestriction());
+        document.put("duration", premier.getDuration());
+        document.put("NamePoster", premier.getNamePoster());
+        document.put("Date", premier.getDate());
         collectionName.insert(document);
     }
 
@@ -87,5 +88,4 @@ public class DBManager {
         document.put("Price", price);
         collectionName.insert(document);
     }
-
 }

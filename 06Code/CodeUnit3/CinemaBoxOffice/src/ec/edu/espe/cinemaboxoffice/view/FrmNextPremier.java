@@ -357,15 +357,15 @@ public class FrmNextPremier extends javax.swing.JFrame {
             return;
         }
         
-        Movie nextPremier = new NextPremier(title, gender, age, duration, 
+        NextPremier premier = new NextPremier(title, gender, age, duration, 
                 posterName + ".jpg", dateNextPremier);
 
         DBManager db = new DBManager();
         String collectionName = "NextPremier";
         db.saveFile(collectionName);
-        db.saveNextPremier(title, gender, age, duration, posterName, dateNextPremier);
+        db.saveNextPremier(premier);
         try {
-            record.recordMovie("NextPremier.json", nextPremier);
+            record.recordMovie("NextPremier.json", premier);
         } catch (IOException ex) {
             Logger.getLogger(FrmNextPremier.class.getName()).log(Level.SEVERE, null, ex);
         }

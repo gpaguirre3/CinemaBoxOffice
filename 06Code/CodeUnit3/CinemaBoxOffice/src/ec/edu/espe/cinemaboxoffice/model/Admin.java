@@ -26,6 +26,7 @@ public class Admin extends Person {
         return admin;
     }
 
+    @Override
     public String getId() {
         return id;
     }
@@ -38,6 +39,7 @@ public class Admin extends Person {
         return password;
     }
 
+    @Override
     public String getName() {
         return name;
     }
