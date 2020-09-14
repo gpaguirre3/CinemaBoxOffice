@@ -6,7 +6,6 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.model.Movie;
-import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
 import java.awt.Image;
 import java.nio.file.Paths;
 import javax.swing.ImageIcon;
@@ -50,7 +49,7 @@ public class FrmMovie extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        pnlMovie = new javax.swing.JPanel();
         lblMoviePoster = new javax.swing.JLabel();
         lblMovieDuration = new javax.swing.JLabel();
         lblMoviegender = new javax.swing.JLabel();
@@ -63,13 +62,13 @@ public class FrmMovie extends javax.swing.JFrame {
         lblMovieDate = new javax.swing.JLabel();
         lblMoviePrice = new javax.swing.JLabel();
         lblMovieSinopsis = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblSinopsisIcon = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Synopsis");
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 51));
-        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        pnlMovie.setBackground(new java.awt.Color(0, 0, 51));
+        pnlMovie.setForeground(new java.awt.Color(255, 255, 255));
 
         lblMoviePoster.setText("-");
 
@@ -124,23 +123,23 @@ public class FrmMovie extends javax.swing.JFrame {
         lblMovieSinopsis.setForeground(new java.awt.Color(255, 255, 255));
         lblMovieSinopsis.setText(" Synopsis");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/synopsisIcon.png"))); // NOI18N
-        jLabel1.setToolTipText("");
+        lblSinopsisIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/synopsisIcon.png"))); // NOI18N
+        lblSinopsisIcon.setToolTipText("");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlMovieLayout = new javax.swing.GroupLayout(pnlMovie);
+        pnlMovie.setLayout(pnlMovieLayout);
+        pnlMovieLayout.setHorizontalGroup(
+            pnlMovieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlMovieLayout.createSequentialGroup()
+                .addGroup(pnlMovieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlMovieLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnlMovieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGroup(pnlMovieLayout.createSequentialGroup()
                                 .addComponent(lblMoviePoster, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(pnlMovieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lblMoviegender)
                                     .addComponent(lblMovieTitle)
                                     .addComponent(lblMovieAgeRestriction)
@@ -148,14 +147,14 @@ public class FrmMovie extends javax.swing.JFrame {
                                     .addComponent(lblMovieDuration)
                                     .addComponent(lblMoviePrice))
                                 .addGap(0, 165, Short.MAX_VALUE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(pnlMovieLayout.createSequentialGroup()
+                        .addGroup(pnlMovieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlMovieLayout.createSequentialGroup()
                                 .addGap(14, 14, 14)
-                                .addComponent(jLabel1)
+                                .addComponent(lblSinopsisIcon)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblMovieSinopsis))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGroup(pnlMovieLayout.createSequentialGroup()
                                 .addGap(90, 90, 90)
                                 .addComponent(btnMovieBuy)
                                 .addGap(87, 87, 87)
@@ -163,12 +162,12 @@ public class FrmMovie extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        pnlMovieLayout.setVerticalGroup(
+            pnlMovieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlMovieLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(pnlMovieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlMovieLayout.createSequentialGroup()
                         .addComponent(lblMovieTitle)
                         .addGap(18, 18, 18)
                         .addComponent(lblMoviegender)
@@ -182,13 +181,13 @@ public class FrmMovie extends javax.swing.JFrame {
                         .addComponent(lblMoviePrice))
                     .addComponent(lblMoviePoster, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(pnlMovieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblMovieSinopsis)
-                    .addComponent(jLabel1))
+                    .addComponent(lblSinopsisIcon))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(pnlMovieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnMovieExit)
                     .addComponent(btnMovieBuy))
                 .addGap(20, 20, 20))
@@ -198,11 +197,11 @@ public class FrmMovie extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlMovie, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlMovie, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -230,8 +229,6 @@ public class FrmMovie extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMovieBuy;
     private javax.swing.JButton btnMovieExit;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblMovieAgeRestriction;
     private javax.swing.JLabel lblMovieDate;
@@ -241,6 +238,8 @@ public class FrmMovie extends javax.swing.JFrame {
     private javax.swing.JLabel lblMovieSinopsis;
     private javax.swing.JLabel lblMovieTitle;
     private javax.swing.JLabel lblMoviegender;
+    private javax.swing.JLabel lblSinopsisIcon;
+    private javax.swing.JPanel pnlMovie;
     private javax.swing.JTextArea txaMovieSinopsis;
     // End of variables declaration//GEN-END:variables
 }

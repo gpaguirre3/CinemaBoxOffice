@@ -6,7 +6,7 @@
 package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.model.Movie;
-import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
+import ec.edu.espe.cinemaboxoffice.model.BillboardMovie;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;

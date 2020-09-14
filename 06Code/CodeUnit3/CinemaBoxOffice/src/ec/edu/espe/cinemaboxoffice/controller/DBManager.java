@@ -10,12 +10,10 @@ import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.Mongo;
 import ec.edu.espe.cinemaboxoffice.model.Admin;
-import ec.edu.espe.cinemaboxoffice.model.CinemaRoom;
-import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
+import ec.edu.espe.cinemaboxoffice.model.BillboardMovie;
 import ec.edu.espe.cinemaboxoffice.model.NextPremier;
 import ec.edu.espe.cinemaboxoffice.view.FrmAdminLogin;
 import java.net.UnknownHostException;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -54,7 +52,7 @@ public class DBManager {
         collectionName.insert(document);
     }
     
-    public void saveMovie(MovieBillboard movie){
+    public void saveMovie(BillboardMovie movie){
         BasicDBObject document = new BasicDBObject();
         document.put("title", movie.getTitle());
         document.put("gender", movie.getGender());

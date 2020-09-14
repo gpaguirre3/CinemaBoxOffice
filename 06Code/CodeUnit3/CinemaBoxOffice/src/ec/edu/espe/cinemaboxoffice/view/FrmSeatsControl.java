@@ -7,7 +7,7 @@ package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.controller.SeatControl;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
-import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
+import ec.edu.espe.cinemaboxoffice.model.BillboardMovie;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -158,7 +158,7 @@ public class FrmSeatsControl extends javax.swing.JFrame {
             SeatControl seatControl = new SeatControl();
             try {
                 seatControl.controlSeats(movie, x, y, true);
-                FrmBill bill = new FrmBill((MovieBillboard) movie);
+                FrmBill bill = new FrmBill((BillboardMovie) movie);
                 FrmBill.x = x;
                 FrmBill.y = y;
                 bill.setVisible(true);

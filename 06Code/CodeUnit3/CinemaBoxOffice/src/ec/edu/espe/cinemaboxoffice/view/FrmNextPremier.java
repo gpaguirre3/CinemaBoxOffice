@@ -7,7 +7,6 @@ package ec.edu.espe.cinemaboxoffice.view;
 
 import ec.edu.espe.cinemaboxoffice.controller.DBManager;
 import ec.edu.espe.cinemaboxoffice.controller.MovieRecord;
-import ec.edu.espe.cinemaboxoffice.model.Movie;
 import ec.edu.espe.cinemaboxoffice.model.NextPremier;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -70,14 +69,14 @@ public class FrmNextPremier extends javax.swing.JFrame {
         btnSaveNextPremier = new javax.swing.JButton();
         cbxYearNextPremier = new javax.swing.JComboBox<>();
         spnPremierDuration = new javax.swing.JSpinner();
-        jLabel8 = new javax.swing.JLabel();
+        lblCinemaTitleicon = new javax.swing.JLabel();
         btnPremierExit = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        lblTitleIcon = new javax.swing.JLabel();
+        lblGendericon = new javax.swing.JLabel();
+        lblDateIcon = new javax.swing.JLabel();
+        lblDurationIcon = new javax.swing.JLabel();
+        lblPicturIcon = new javax.swing.JLabel();
+        lblAgeRestrictionIcon = new javax.swing.JLabel();
         cbxMonthNextPremier = new com.toedter.calendar.JMonthChooser();
         lblDurationMinutes = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -140,8 +139,8 @@ public class FrmNextPremier extends javax.swing.JFrame {
 
         spnPremierDuration.setModel(new javax.swing.SpinnerNumberModel(1, 1, 9, 1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/smallCinemaLogo.png"))); // NOI18N
-        jLabel8.setToolTipText("");
+        lblCinemaTitleicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/smallCinemaLogo.png"))); // NOI18N
+        lblCinemaTitleicon.setToolTipText("");
 
         btnPremierExit.setText("Salir");
         btnPremierExit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -150,17 +149,17 @@ public class FrmNextPremier extends javax.swing.JFrame {
             }
         });
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/titleIcon.png"))); // NOI18N
+        lblTitleIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/titleIcon.png"))); // NOI18N
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/genderIcon.png"))); // NOI18N
+        lblGendericon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/genderIcon.png"))); // NOI18N
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/calendarIcon.png"))); // NOI18N
+        lblDateIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/calendarIcon.png"))); // NOI18N
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/durationIcon.png"))); // NOI18N
+        lblDurationIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/durationIcon.png"))); // NOI18N
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/posterIcon.png"))); // NOI18N
+        lblPicturIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/posterIcon.png"))); // NOI18N
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/ageIcon.png"))); // NOI18N
+        lblAgeRestrictionIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/cinemaboxoffice/pictures/ageIcon.png"))); // NOI18N
 
         lblDurationMinutes.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         lblDurationMinutes.setForeground(new java.awt.Color(255, 255, 255));
@@ -188,14 +187,14 @@ public class FrmNextPremier extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel9)
+                            .addComponent(lblTitleIcon)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel14)
+                                    .addComponent(lblAgeRestrictionIcon)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel11)
-                                        .addComponent(jLabel12))
-                                    .addComponent(jLabel10))
+                                        .addComponent(lblDateIcon)
+                                        .addComponent(lblDurationIcon))
+                                    .addComponent(lblGendericon))
                                 .addGap(11, 11, 11)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -232,7 +231,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel13)
+                                        .addComponent(lblPicturIcon)
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel6))
                                     .addComponent(btnInsert)
@@ -245,7 +244,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
                                 .addComponent(btnPremierExit, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(23, 23, 23))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
+                        .addComponent(lblCinemaTitleicon)
                         .addGap(134, 134, 134)
                         .addComponent(jLabel1)))
                 .addContainerGap(32, Short.MAX_VALUE))
@@ -256,7 +255,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(24, 24, 24)
-                        .addComponent(jLabel8))
+                        .addComponent(lblCinemaTitleicon))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(50, 50, 50)
                         .addComponent(jLabel1)))
@@ -267,7 +266,7 @@ public class FrmNextPremier extends javax.swing.JFrame {
                             .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel13)
+                                    .addComponent(lblPicturIcon)
                                     .addComponent(jLabel6))
                                 .addGap(18, 18, 18)
                                 .addComponent(txtPosterFile, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -288,29 +287,29 @@ public class FrmNextPremier extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel2)
-                                    .addComponent(jLabel9)
+                                    .addComponent(lblTitleIcon)
                                     .addComponent(txfTitleNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(23, 23, 23)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel12)
+                                    .addComponent(lblDurationIcon)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(spnPremierDuration, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel5)
                                         .addComponent(lblDurationMinutes)))
                                 .addGap(22, 22, 22)
-                                .addComponent(jLabel14)))
+                                .addComponent(lblAgeRestrictionIcon)))
                         .addGap(20, 20, 20)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel10)
+                                    .addComponent(lblGendericon)
                                     .addComponent(jLabel3)
                                     .addComponent(cbxGenderNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(cbxMonthNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel11)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING)))
+                                    .addComponent(lblDateIcon)
+                                    .addComponent(jLabel7)))
                             .addComponent(cbxYearNextPremier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
@@ -448,23 +447,23 @@ public class FrmNextPremier extends javax.swing.JFrame {
     private com.toedter.calendar.JMonthChooser cbxMonthNextPremier;
     private javax.swing.JComboBox<String> cbxYearNextPremier;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JLabel lblAgeRestrictionIcon;
+    private javax.swing.JLabel lblCinemaTitleicon;
+    private javax.swing.JLabel lblDateIcon;
+    private javax.swing.JLabel lblDurationIcon;
     private javax.swing.JLabel lblDurationMinutes;
+    private javax.swing.JLabel lblGendericon;
+    private javax.swing.JLabel lblPicturIcon;
     private javax.swing.JLabel lblPosterIcon;
+    private javax.swing.JLabel lblTitleIcon;
     private javax.swing.JSpinner spnPremierDuration;
     private java.awt.TextField txfTitleNextPremier;
     private javax.swing.JTextField txtPosterFile;

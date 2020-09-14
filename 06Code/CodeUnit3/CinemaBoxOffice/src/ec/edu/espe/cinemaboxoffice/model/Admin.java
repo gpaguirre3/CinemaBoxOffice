@@ -9,7 +9,7 @@ package ec.edu.espe.cinemaboxoffice.model;
  *
  * @author Josue Aleman, ESPE
  */
-public class Admin extends Person {
+public class Admin extends User {
     private String userName;
     private String password;
     

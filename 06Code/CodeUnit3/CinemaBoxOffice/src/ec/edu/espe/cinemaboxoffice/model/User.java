@@ -9,11 +9,11 @@ package ec.edu.espe.cinemaboxoffice.model;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public abstract class Person {
+public abstract class User {
     protected String id;
     protected String name;
 
-    public Person(String id, String name){
+    public User(String id, String name){
         this.name = name;
         this.id = id;
     }

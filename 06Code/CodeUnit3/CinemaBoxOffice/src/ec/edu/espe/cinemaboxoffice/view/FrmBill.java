@@ -10,7 +10,7 @@ import com.google.gson.GsonBuilder;
 import ec.edu.espe.cinemaboxoffice.controller.DBManager;
 import ec.edu.espe.cinemaboxoffice.controller.SeatControl;
 import ec.edu.espe.cinemaboxoffice.model.Invoice;
-import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
+import ec.edu.espe.cinemaboxoffice.model.BillboardMovie;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -30,14 +30,14 @@ import javax.swing.JOptionPane;
  */
 public class FrmBill extends javax.swing.JFrame {
 
-    private MovieBillboard movie;
+    private BillboardMovie movie;
     static int x;
     static int y;
 
     /**
      * Creates new form FrmBill
      */
-    public FrmBill(MovieBillboard movie) {
+    public FrmBill(BillboardMovie movie) {
         initComponents();
         setLocationRelativeTo(null);
         this.movie = movie;
@@ -63,7 +63,7 @@ public class FrmBill extends javax.swing.JFrame {
         int seconds = movie.getDurationValue() * 0;
 
         lblTitle.setText(movie.getTitle());
-        lblDuration.setText(String.format("%d:%d:%d", hours, minutes, seconds));
+        lblMovieDuration.setText(String.format("%d:%d:%d", hours, minutes, seconds));
         txaSinopsis.setText(movie.getSinopsis());
 
         double subtotal = ((movie.getPriceValue()) - (movie.getPriceValue() * 0.12));
@@ -84,76 +84,76 @@ public class FrmBill extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        pnlBill = new javax.swing.JPanel();
+        lblBillTitle = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLabel2 = new javax.swing.JLabel();
+        lblCard = new javax.swing.JLabel();
         txtFullName = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        lblName = new javax.swing.JLabel();
         txtIdentifyCard = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        lblCd = new javax.swing.JLabel();
         txtCreditCard = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        lblExpirationDate = new javax.swing.JLabel();
         txtSecurityCode = new javax.swing.JTextField();
         cmbxMonth = new javax.swing.JComboBox<>();
         cmbxYear = new javax.swing.JComboBox<>();
-        jLabel6 = new javax.swing.JLabel();
+        lblSecurityCode = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jLabel7 = new javax.swing.JLabel();
+        lblTitleBill = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
-        lblDuration = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        lblMovieDuration = new javax.swing.JLabel();
+        lblTotalPrice = new javax.swing.JLabel();
+        lblIVA = new javax.swing.JLabel();
+        lblSubtotalPrice = new javax.swing.JLabel();
         lblSubTotal = new javax.swing.JLabel();
         lblVat = new javax.swing.JLabel();
         lblTotal = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
+        lblMovieSinopsis = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txaSinopsis = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
         btnBuy = new javax.swing.JButton();
         btnCancel = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnPrint = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Invoice");
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 51));
+        pnlBill.setBackground(new java.awt.Color(0, 0, 51));
 
-        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 3, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Shipping Details");
-        jLabel1.setPreferredSize(new java.awt.Dimension(35, 15));
+        lblBillTitle.setFont(new java.awt.Font("Comic Sans MS", 3, 16)); // NOI18N
+        lblBillTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lblBillTitle.setText("Shipping Details");
+        lblBillTitle.setPreferredSize(new java.awt.Dimension(35, 15));
 
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Targeta de Credito");
+        lblCard.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblCard.setForeground(new java.awt.Color(255, 255, 255));
+        lblCard.setText("Targeta de Credito");
 
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Nombre Completo");
+        lblName.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblName.setForeground(new java.awt.Color(255, 255, 255));
+        lblName.setText("Nombre Completo");
 
-        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Cedula de Identidad");
+        lblCd.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblCd.setForeground(new java.awt.Color(255, 255, 255));
+        lblCd.setText("Cedula de Identidad");
 
-        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Fecha de Expiración");
+        lblExpirationDate.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblExpirationDate.setForeground(new java.awt.Color(255, 255, 255));
+        lblExpirationDate.setText("Fecha de Expiración");
 
         cmbxMonth.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
 
-        jLabel6.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Codigo de Seguridad");
+        lblSecurityCode.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblSecurityCode.setForeground(new java.awt.Color(255, 255, 255));
+        lblSecurityCode.setText("Codigo de Seguridad");
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Titulo:");
+        lblTitleBill.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblTitleBill.setForeground(new java.awt.Color(255, 255, 255));
+        lblTitleBill.setText("Titulo:");
 
         jLabel8.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -161,21 +161,21 @@ public class FrmBill extends javax.swing.JFrame {
 
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
 
-        lblDuration.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        lblDuration.setForeground(new java.awt.Color(255, 255, 255));
-        lblDuration.setText("00:00:00");
+        lblMovieDuration.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        lblMovieDuration.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieDuration.setText("00:00:00");
 
-        jLabel11.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Total:");
+        lblTotalPrice.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblTotalPrice.setForeground(new java.awt.Color(255, 255, 255));
+        lblTotalPrice.setText("Total:");
 
-        jLabel12.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("IVA(12%)");
+        lblIVA.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblIVA.setForeground(new java.awt.Color(255, 255, 255));
+        lblIVA.setText("IVA(12%)");
 
-        jLabel13.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Subtotal:");
+        lblSubtotalPrice.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblSubtotalPrice.setForeground(new java.awt.Color(255, 255, 255));
+        lblSubtotalPrice.setText("Subtotal:");
 
         lblSubTotal.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         lblSubTotal.setForeground(new java.awt.Color(255, 255, 255));
@@ -189,9 +189,9 @@ public class FrmBill extends javax.swing.JFrame {
         lblTotal.setForeground(new java.awt.Color(255, 255, 255));
         lblTotal.setText("0.00");
 
-        jLabel17.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("Synopsis:");
+        lblMovieSinopsis.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        lblMovieSinopsis.setForeground(new java.awt.Color(255, 255, 255));
+        lblMovieSinopsis.setText("Synopsis:");
 
         txaSinopsis.setEditable(false);
         txaSinopsis.setBackground(new java.awt.Color(153, 255, 255));
@@ -201,115 +201,115 @@ public class FrmBill extends javax.swing.JFrame {
         txaSinopsis.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txaSinopsis);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout pnlBillLayout = new javax.swing.GroupLayout(pnlBill);
+        pnlBill.setLayout(pnlBillLayout);
+        pnlBillLayout.setHorizontalGroup(
+            pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(pnlBillLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtIdentifyCard, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtCreditCard, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtSecurityCode, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(pnlBillLayout.createSequentialGroup()
                         .addComponent(cmbxMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(cmbxYear, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(lblExpirationDate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblSecurityCode, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblCard)
+                    .addComponent(lblCd)
+                    .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(71, 71, 71)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel17)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBillLayout.createSequentialGroup()
+                        .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMovieSinopsis)
+                            .addGroup(pnlBillLayout.createSequentialGroup()
+                                .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(lblTitleBill, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblSubtotalPrice, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblIVA, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblTotalPrice, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblDuration, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblMovieDuration, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblTitle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addGroup(pnlBillLayout.createSequentialGroup()
                                         .addGap(15, 15, 15)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(lblTotal)
                                             .addComponent(lblVat)
                                             .addComponent(lblSubTotal))))))
-                        .addGap(0, 2, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(pnlBillLayout.createSequentialGroup()
                 .addGap(174, 174, 174)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblBillTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        pnlBillLayout.setVerticalGroup(
+            pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBillLayout.createSequentialGroup()
                 .addContainerGap(24, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblBillTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(pnlBillLayout.createSequentialGroup()
+                        .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtFullName, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCd, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtIdentifyCard, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCard, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtCreditCard, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblExpirationDate, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cmbxMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cmbxYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblSecurityCode, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtSecurityCode, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
+                    .addGroup(pnlBillLayout.createSequentialGroup()
+                        .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblTitleBill)
                             .addComponent(lblTitle))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
-                            .addComponent(lblDuration))
+                            .addComponent(lblMovieDuration))
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel17)
+                        .addComponent(lblMovieSinopsis)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13)
+                        .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblSubtotalPrice)
                             .addComponent(lblSubTotal))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel12)
+                        .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblIVA)
                             .addComponent(lblVat))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel11)
+                        .addGroup(pnlBillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblTotalPrice)
                             .addComponent(lblTotal))
                         .addGap(22, 22, 22))))
         );
@@ -331,10 +331,10 @@ public class FrmBill extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Imprimir Boleto");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnPrint.setText("Imprimir Boleto");
+        btnPrint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnPrintActionPerformed(evt);
             }
         });
 
@@ -344,7 +344,7 @@ public class FrmBill extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(70, 70, 70)
-                .addComponent(jButton1)
+                .addComponent(btnPrint)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnBuy)
                 .addGap(18, 18, 18)
@@ -358,7 +358,7 @@ public class FrmBill extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuy)
                     .addComponent(btnCancel)
-                    .addComponent(jButton1))
+                    .addComponent(btnPrint))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -366,13 +366,13 @@ public class FrmBill extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlBill, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlBill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -484,41 +484,41 @@ public class FrmBill extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnCancelActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintActionPerformed
 
         FrmTicket frmTicket = new FrmTicket(movie);
         frmTicket.setVisible(true);
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnPrintActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuy;
     private javax.swing.JButton btnCancel;
+    private javax.swing.JButton btnPrint;
     private javax.swing.JComboBox<String> cmbxMonth;
     private javax.swing.JComboBox<String> cmbxYear;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JLabel lblDuration;
+    private javax.swing.JLabel lblBillTitle;
+    private javax.swing.JLabel lblCard;
+    private javax.swing.JLabel lblCd;
+    private javax.swing.JLabel lblExpirationDate;
+    private javax.swing.JLabel lblIVA;
+    private javax.swing.JLabel lblMovieDuration;
+    private javax.swing.JLabel lblMovieSinopsis;
+    private javax.swing.JLabel lblName;
+    private javax.swing.JLabel lblSecurityCode;
     private javax.swing.JLabel lblSubTotal;
+    private javax.swing.JLabel lblSubtotalPrice;
     private javax.swing.JLabel lblTitle;
+    private javax.swing.JLabel lblTitleBill;
     private javax.swing.JLabel lblTotal;
+    private javax.swing.JLabel lblTotalPrice;
     private javax.swing.JLabel lblVat;
+    private javax.swing.JPanel pnlBill;
     private javax.swing.JTextArea txaSinopsis;
     private javax.swing.JTextField txtCreditCard;
     private javax.swing.JTextField txtFullName;

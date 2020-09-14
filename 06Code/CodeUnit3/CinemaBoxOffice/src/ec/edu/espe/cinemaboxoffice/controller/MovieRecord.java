@@ -9,7 +9,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import ec.edu.espe.cinemaboxoffice.model.Movie;
-import ec.edu.espe.cinemaboxoffice.model.MovieBillboard;
+import ec.edu.espe.cinemaboxoffice.model.BillboardMovie;
 import ec.edu.espe.cinemaboxoffice.model.NextPremier;
 import ec.edu.espe.cinemaboxoffice.utils.InputDataValidation;
 import ec.edu.espe.filemanagerlibrary.FileManager;
@@ -62,7 +62,7 @@ public class MovieRecord {
         if (gson.fromJson(moviesJson, ArrayList.class) != null) {
             java.lang.reflect.Type typeMovies;
             if ("Billboard.json".equals(fileName)) {
-                typeMovies = new TypeToken<ArrayList<MovieBillboard>>() {
+                typeMovies = new TypeToken<ArrayList<BillboardMovie>>() {
                 }.getType();
             } else {
                 typeMovies = new TypeToken<ArrayList<NextPremier>>() {

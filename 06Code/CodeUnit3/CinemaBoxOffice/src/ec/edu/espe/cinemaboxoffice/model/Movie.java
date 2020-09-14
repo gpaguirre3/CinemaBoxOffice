@@ -41,7 +41,7 @@ public abstract class Movie {
         FileManager.createFile(fileName);
         String moviesJson = new String(Files.readAllBytes(Paths.get(fileName)));
         if (gson.fromJson(moviesJson, ArrayList.class) != null) {
-            java.lang.reflect.Type typeMovies = new TypeToken<ArrayList<MovieBillboard>>() {
+            java.lang.reflect.Type typeMovies = new TypeToken<ArrayList<BillboardMovie>>() {
             }.getType();
             movies = gson.fromJson(moviesJson, typeMovies);
             return movies;

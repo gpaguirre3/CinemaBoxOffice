@@ -11,13 +11,13 @@ import java.util.Date;
  *
  * @author Kevin Chuquimarca ESPE-DCCO
  */
-public class MovieBillboard extends Movie {
+public class BillboardMovie extends Movie {
     private String sinopsis; 
     private Date date;
     private float price;
     private CinemaRoom room;
 
-    public MovieBillboard(String title, String gender, String ageRestriction, 
+    public BillboardMovie(String title, String gender, String ageRestriction, 
             int duration, String namePoster, String sinopsis, Date date, float 
                     price, CinemaRoom room) {
         super(title, gender, ageRestriction, duration, namePoster);

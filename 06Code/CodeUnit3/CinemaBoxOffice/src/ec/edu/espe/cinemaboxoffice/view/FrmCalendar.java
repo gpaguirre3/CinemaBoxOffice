@@ -39,7 +39,7 @@ public class FrmCalendar extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        cldMovie = new com.toedter.calendar.JCalendar();
+        cldCalendar = new com.toedter.calendar.JCalendar();
         btnConfirmDate = new javax.swing.JButton();
         btnExitCalendar = new javax.swing.JButton();
 
@@ -72,14 +72,14 @@ public class FrmCalendar extends javax.swing.JFrame {
                 .addGap(63, 63, 63))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cldMovie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cldCalendar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(cldMovie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cldCalendar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnConfirmDate)
@@ -102,7 +102,7 @@ public class FrmCalendar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     private static int day;
     private void btnConfirmDateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConfirmDateMouseClicked
-        FrmCalendar.day = cldMovie.getDate().getDay();
+        FrmCalendar.day = cldCalendar.getDate().getDay();
         FrmCinemaBox frmCinema = new FrmCinemaBox();
         parent.dispose();
         
@@ -123,7 +123,7 @@ public class FrmCalendar extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnConfirmDate;
     private javax.swing.JButton btnExitCalendar;
-    private com.toedter.calendar.JCalendar cldMovie;
+    private com.toedter.calendar.JCalendar cldCalendar;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
