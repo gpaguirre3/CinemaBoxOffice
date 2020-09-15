@@ -29,6 +29,11 @@ public class CreditCardAndCITest {
         assertEquals(expResult, result);
         
     }
+    
+    /**
+     * Test of checkCard method, of class CreditCardAndCI.
+     */
+    @Test
     public void testCheckCard2() {
         System.out.println("checkCard");
         String card = "4608003816501748";
@@ -36,13 +41,23 @@ public class CreditCardAndCITest {
         boolean result = CreditCardAndCI.checkCard(card);
         assertEquals(expResult, result);
     }
+    
+    /**
+     * Test of checkCard method, of class CreditCardAndCI.
+     */
+    @Test
     public void testCheckCard3() {
         System.out.println("checkCard");
-        String card = "4618681820176819";
+        String card = "4618681820176810";
         boolean expResult = true;
         boolean result = CreditCardAndCI.checkCard(card);
         assertEquals(expResult, result);
     }
+    
+    /**
+     * Test of checkCard method, of class CreditCardAndCI.
+     */
+    @Test
     public void testCheckCard4() {
         System.out.println("checkCard");
         String card = "4835774663674896";
@@ -50,6 +65,11 @@ public class CreditCardAndCITest {
         boolean result = CreditCardAndCI.checkCard(card);
         assertEquals(expResult, result);
     }
+    
+    /**
+     * Test of checkCard method, of class CreditCardAndCI.
+     */
+    @Test
     public void testCheckCard5() {
         System.out.println("checkCard");
         String card = "4528804794441477";
@@ -69,6 +89,11 @@ public class CreditCardAndCITest {
         boolean result = CreditCardAndCI.validateCI(CI);
         assertEquals(expResult, result);
     }
+    
+    /**
+     * Test of checkCard method, of class CreditCardAndCI.
+     */
+    @Test
     public void testValidateCI2() {
         System.out.println("validateCI");
         String CI = "1721482998";
@@ -76,6 +101,11 @@ public class CreditCardAndCITest {
         boolean result = CreditCardAndCI.validateCI(CI);
         assertEquals(expResult, result);
     }
+    
+    /**
+     * Test of checkCard method, of class CreditCardAndCI.
+     */
+    @Test
     public void testValidateCI3() {
         System.out.println("validateCI");
         String CI = "1751364819";
@@ -83,6 +113,11 @@ public class CreditCardAndCITest {
         boolean result = CreditCardAndCI.validateCI(CI);
         assertEquals(expResult, result);
     }
+    
+    /**
+     * Test of checkCard method, of class CreditCardAndCI.
+     */
+    @Test
     public void testValidateCI4() {
         System.out.println("validateCI");
         String CI = "0952465334";
@@ -90,6 +125,11 @@ public class CreditCardAndCITest {
         boolean result = CreditCardAndCI.validateCI(CI);
         assertEquals(expResult, result);
     }
+    
+    /**
+     * Test of checkCard method, of class CreditCardAndCI.
+     */
+    @Test
     public void testValidateCI5() {
         System.out.println("validateCI");
         String CI = "1708740962";
