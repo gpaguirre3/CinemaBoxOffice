@@ -68,7 +68,15 @@
     "title": "How Strange",
     "gender": "fantasy",
     "ageRestriction": "All public",
-    "duration": 1,
+    "duration": 1.0,
     "namePoster": ".jpg"
+  },
+  {
+    "dateNextPremier": "Oct 1, 2020 12:00:00 AM",
+    "title": "Bob Esponja",
+    "gender": "Fantasia",
+    "ageRestriction": "All public",
+    "duration": 2,
+    "namePoster": "bob_esponja.jpg"
   }
 ]

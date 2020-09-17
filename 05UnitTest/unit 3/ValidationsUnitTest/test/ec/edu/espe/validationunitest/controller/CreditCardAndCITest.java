@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ed.edu.espe.validationunitest.controller;
+package ec.edu.espe.validationunitest.controller;
 
+import ec.edu.espe.validationunitest.controller.CreditCardAndCI;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -48,7 +49,7 @@ public class CreditCardAndCITest {
     @Test
     public void testCheckCard3() {
         System.out.println("checkCard");
-        String card = "4618681820176810";
+        String card = "4608003816501748";
         boolean expResult = true;
         boolean result = CreditCardAndCI.checkCard(card);
         assertEquals(expResult, result);
