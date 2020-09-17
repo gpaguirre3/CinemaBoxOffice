@@ -129,7 +129,7 @@ public class FrmBill extends javax.swing.JFrame {
 
         lblCard.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblCard.setForeground(new java.awt.Color(255, 255, 255));
-        lblCard.setText("Targeta de Credito");
+        lblCard.setText("Tarjeta de Crédito ");
 
         lblName.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         lblName.setForeground(new java.awt.Color(255, 255, 255));
